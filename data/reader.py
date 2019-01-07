@@ -167,7 +167,7 @@ class DataReader:
         plan_hyp = {}
         for g, p, t, s in self.data:
             plan_ref[p].append(s)
-            plan_ref[p] = t
+            plan_hyp[p] = t
 
         hypothesis = [plan_hyp[p] for p in plan_ref.keys()]
         references = list(plan_ref.values())

@@ -58,10 +58,16 @@ def relex(sentence: str):
             else:
                 r = str(number)
 
-        sentence = sentence.replace("ent_" + e + "_ent", r)
+        insensitive_ent = re.compile(re.escape("ent_" + e + "_ent"), re.IGNORECASE)
+        sentence = insensitive_ent.sub(r, sentence)
+
 
     return sentence
 
 
-print(relex("ent_13017_dot_0_quot__lp_minutes_rp__ent"))
-print(relex("ent_13017_dot_0_ent"))
+if __name__ == "__main__":
+    print(relex("ent_13017_dot_0_quot__lp_minutes_rp__ent"))
+    print(relex("ent_13017_dot_0_ent"))
+    sen = "ENT_ABILENE_REGIONAL_AIRPORT_ENT serves the city of ENT_ABILENE_COMMA__TEXAS_ENT ."
+    print(get_entities(sen))
+    print(relex(sen))

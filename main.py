@@ -1,3 +1,5 @@
+import random
+
 from process.evaluation import EvaluationPipeline
 from process.learn_score import LearnScorePipeline
 from process.pre_process import TrainingPreProcessPipeline, TestingPreProcessPipeline
@@ -15,4 +17,16 @@ MainPipeline.enqueue("evaluate", "Evaluate Translations", EvaluationPipeline)
 
 if __name__ == "__main__":
     res = MainPipeline.execute("Main")
-    print(res["evaluate"])
+
+    print()
+
+    g, p, t, s = random.choice(res["translate"].data)
+    print("Random Sample:")
+    print("Graph:", g.as_rdf())
+    print("Plan:", p)
+    print("Translation:", t)
+    print("Reference:  ", s)
+
+    print()
+
+    print("BLEU", res["evaluate"])

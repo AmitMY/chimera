@@ -50,7 +50,7 @@ class Pipeline:
             pn = path.join(previous_name, key)
             pnf = pn + ".sav"
 
-            if path.isfile(pnf):
+            if key != "out" and path.isfile(pnf):
                 self.params[key] = pickle.load(open(pnf, "rb"))
             else:
                 if isinstance(method, Pipeline):

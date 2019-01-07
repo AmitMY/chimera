@@ -79,6 +79,6 @@ def BLEU(hyps, refs, single_ref=False, tokenizer=None, hyp_tokenizer=None, ref_t
 
 
 if __name__ == "__main__":
-    sen = "A small, tiny sentence with these_underlines to be tokenized!"
+    sen = "A small, TINY sentence with these_underlines to be tokenized!"
     print(naive_tokenizer(sen))
     print(BLEU([sen], [[sen]], tokenizer=naive_tokenizer))

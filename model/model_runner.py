@@ -1,6 +1,5 @@
 from typing import List
 
-from data.reader import DataReader
 from eval.bleu.eval import BLEU, naive_tokenizer
 
 
@@ -8,7 +7,7 @@ class Model:
     def translate(self, plans: List[str]) -> List[str]:  # Translate entire reader file using a model
         raise NotImplementedError("Must implement translate")
 
-    def evaluate(self, reader: DataReader):
+    def evaluate(self, reader):
         ft = reader.for_translation()
         plans = list(ft.keys())
         references = list(ft.values())

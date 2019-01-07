@@ -60,7 +60,7 @@ class OpenNMTModel(Model):
 
         map_lines = {n: out for n, out in zip(n_lines, out_lines)}
 
-        return [". ".join([map_lines[s] for s in lines]) for lines in o_lines]
+        return [" ".join([map_lines[s] for s in lines]) for lines in o_lines]
 
 
 class OpenNMTModelRunner(ModelRunner):

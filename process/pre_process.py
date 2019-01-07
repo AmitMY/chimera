@@ -26,6 +26,7 @@ TestCorpusPreProcessPipeline.enqueue("out", "Make output for parent", lambda f, 
 
 TestingPreProcessPipeline = Pipeline()
 TestingPreProcessPipeline.enqueue("test", "Test Set", TestCorpusPreProcessPipeline.mutate({"set": DataSetType.TEST}))
+TestingPreProcessPipeline.enqueue("out", "Make output for parent", lambda f, _: f["test"].copy())
 
 if __name__ == "__main__":
     TrainingPreProcessPipeline.execute("Pre-Process")
