@@ -33,13 +33,13 @@ class RelationTransitionsExpert(Expert):
 
             return self.probs[r1][r2]
 
-        product = 1
+        scores = []
 
         for p in plan.split("."):
             matches = get_relations(p)
 
             for i in range(len(matches) - 1):
-                product *= get_prob(matches[i][1], matches[i + 1][1])
-            product *= get_prob(matches[-1][1], "EOS")
+                scores.append(get_prob(matches[i][1], matches[i + 1][1]))
+            scores.append(get_prob(matches[-1][1], "EOS"))
 
-        return product
+        return scores

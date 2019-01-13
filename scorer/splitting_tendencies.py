@@ -19,7 +19,7 @@ class SplittingTendenciesExpert(Expert):
             self.probs[e]["UNK"] = 1 / total
 
     def split(self, plan):
-        return "-".join([str(len(get_relations(p)) for p in plan.split("."))])
+        return "-".join([str(len(get_relations(p))) for p in plan.split(".")])
 
     def eval(self, plan: str):
         matches = get_relations(plan)

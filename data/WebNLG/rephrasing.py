@@ -150,4 +150,7 @@ def rephrase_if_must(entity):
     #     for permutation in itertools.permutations(p.split(" ")):
     #         phrasings.add(" ".join(permutation))
 
-    return set(phrasings)
+    phrasings = set(phrasings)
+    if "" in phrasings:
+        phrasings.remove("")
+    return phrasings

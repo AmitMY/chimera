@@ -16,7 +16,7 @@ class RDFFileReader:
 
         structure = xmltodict.parse(content)
         for entry in structure["benchmark"]["entries"]["entry"]:
-            triplets = [tuple(r.split("|")) for r in self.triplets_from_object(entry["modifiedtripleset"], "mtriple")]
+            triplets = [tuple(map(str.strip, r.split("|"))) for r in self.triplets_from_object(entry["modifiedtripleset"], "mtriple")]
             sentences = list(self.extract_sentences(entry["lex"]))
 
             for s in sentences:

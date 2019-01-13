@@ -90,20 +90,22 @@ def un_concat_entity(e):
 
 
 class Delexicalize:
-    def __init__(self, rephrase_f, rephrase_if_must_f, bound=0.7):
+    def __init__(self, rephrase_f, rephrase_if_must_f, bound=0.75):
         self.rephrase = rephrase_f if rephrase_f else (lambda s: [s])
         self.rephrase_if_must = rephrase_if_must_f if rephrase_if_must_f else (lambda s: [s])
         self.bound = bound
-        self.cutoff = self.bound * 0.7
+        self.cutoff = self.bound * self.bound
 
     def closest_substring(self, phrases, subs):
         ratios = []
+
         for sub in subs:
             clean = clean_extra(sub)
             if clean != "":
                 ratios.append((sub, max(
-                    [0] + [max(lev_ratio(phrase, sub), lev_ratio(phrase, sub.replace(" ", ""))) for phrase in phrases
-                           if len(sub) * self.cutoff <= len(phrase) < len(sub) / self.cutoff])))
+                    [0] + [max(lev_ratio(phrase, clean), lev_ratio(phrase, clean.replace(" ", ""))) for phrase in
+                           phrases
+                           if len(clean) * self.cutoff <= len(phrase) <= len(clean) / self.cutoff])))
 
         if len(ratios) == 0:
             return "", 0
@@ -151,18 +153,22 @@ class Delexicalize:
                 # Update subs because changed the date
                 subs = sorted_substrings(s)
 
-            [subs, score] = self.closest_substring(self.rephrase(lower), subs)
+            [n_subs, score] = self.closest_substring(self.rephrase(lower), subs)
             if score < self.bound:
-                [subs, score] = self.closest_substring(self.rephrase_if_must(lower), subs)
+                [n_subs, score] = self.closest_substring(self.rephrase_if_must(lower), subs)
+
                 if score < self.bound:
-                    # print "\nDelex Failed!"
-                    # print clean_extra(s)
-                    # print entity
+                    print("\nDelex Failed!")
+                    print(clean_extra(s))
+                    print(entity)
+                    print("subs", subs)
+                    print("rephrase", self.rephrase(lower))
+                    print("rephrase", self.rephrase_if_must(lower))
 
                     success = False
                     continue
 
-            for sub in subs:
+            for sub in n_subs:
                 s = s.replace(sub, sub[0] + placeholder(i) + sub[-1])
 
         s = clean_extra(s)
@@ -178,19 +184,31 @@ if __name__ == "__main__":
     delex = Delexicalize(rephrase_f=rephrase, rephrase_if_must_f=rephrase_if_must)
 
     examples = [
+        # [
+        #     "Paris Culins and Gary Cohn are the creators of the comics character Bolt.",
+        #     ['Gary_Cohn_(comics)', 'Paris_Cullins', 'Bolt_(comicsCharacter)']
+        # ], [
+        #     "William Anders was a member of the Apollo 8 crew (operated by NASA) and he retired on September 1st, 1969. Frank Borman was the commander of Apollo 8 and Buzz Aldrin was a back up pilot.",
+        #     ['Frank_Borman', 'William_Anders', 'Buzz_Aldrin', 'Apollo_8', '"1969-09-01"', 'NASA']
+        # ], [
+        #     "The Accademia di Architettura di Mendrisio is located in Mendrisio, Switzerland. It was established in 1996 and its dean is Mario Botta. It has 600 students. The leader of Switzerland is Federal Chancellor Johann Schneider-Ammann.",
+        #     ["Accademia_di_Architettura_di_Mendrisio", "Switzerland", "Mario_Botta", "1996", "600", "Mendrisio",
+        #      "Federal_Chancellor_of_Switzerland", "Johann_Schneider-Ammann"]
+        # ],
+
         [
-            "Paris Culins and Gary Cohn are the creators of the comics character Bolt.",
-            ['Gary_Cohn_(comics)', 'Paris_Cullins', 'Bolt_(comicsCharacter)']
+            "ENT_ANDREWS_COUNTY_AIRPORT_ENT runway is 8 meters long.",
+            ['andrews county airport', '8.0']
         ], [
-            "William Anders was a member of the Apollo 8 crew (operated by NASA) and he retired on September 1st, 1969. Frank Borman was the commander of Apollo 8 and Buzz Aldrin was a back up pilot.",
-            ['Frank_Borman', 'William_Anders', 'Buzz_Aldrin', 'Apollo_8', '"1969-09-01"', 'NASA']
-        ], [
-            "The Accademia di Architettura di Mendrisio is located in Mendrisio, Switzerland. It was established in 1996 and its dean is Mario Botta. It has 600 students. The leader of Switzerland is Federal Chancellor Johann Schneider-Ammann.",
-            ["Accademia_di_Architettura_di_Mendrisio", "Switzerland", "Mario_Botta", "1996", "600", "Mendrisio",
-             "Federal_Chancellor_of_Switzerland", "Johann_Schneider-Ammann"]
+            "5 is.",
+            ['5']
+        ],
+        [
+            "The architect of 200 Public Square is HOK.",
+            ['200_Public_Square ', 'HOK_(firm)']
         ]
     ]
 
     for sentence, entities in examples:
-        print(sentence)
-        print(delex.run(sentence, entities, True))
+        # print(sentence)the architect of
+        delex.run(sentence, entities, True)
