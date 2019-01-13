@@ -55,11 +55,15 @@ If the cache is removed, the pipeline will continue from its last un-cached proc
 
 
 ## Example
+Output running for the first time:
+![First Run Pipeline](git-assets/first-run.png)
+
 Output running for the second time: (runs for just a few seconds to load the caches)
 
 ![Second Run Pipeline](git-assets/second-run.png)
 
 The expected result (will show on screen) reported by `multi-bleu.perl` is around:
 
-**BLEU [47.27, 79.6, 55.3, 39.4, 28.7]**
+- BLEU [47.27, 79.6, 55.3, 39.4, 28.7]
+- BLEU [46.87, 79.2, 54.8, 39.1, 28.4]
 
