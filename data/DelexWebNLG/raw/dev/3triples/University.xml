@@ -1,0 +1,474 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="University" eid="Id1" size="3">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</otriple>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | &quot;600&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</mtriple>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">The Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Switzerland" number="2" tag="PATIENT-1" type="name">Switzerland</reference>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="3" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="Mario_Botta" number="4" tag="PATIENT-2" type="name">Mario Botta</reference>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="5" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="600" number="6" tag="PATIENT-3" type="name">600</reference>
+				</references>
+				<text>The Accademia di Architettura di Mendrisio is in Switzerland. Its dean is Mario Botta and it has 600 students.</text>
+				<template>AGENT-1 is in PATIENT-1 . AGENT-1 dean is PATIENT-2 and AGENT-1 has PATIENT-3 students .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+					<striple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">The Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Switzerland" number="2" tag="PATIENT-1" type="name">Switzerland</reference>
+					<reference entity="600" number="3" tag="PATIENT-3" type="name">600</reference>
+					<reference entity="Mario_Botta" number="4" tag="PATIENT-2" type="name">Mario Botta</reference>
+				</references>
+				<text>The Accademia di Architettura di Mendrisio of Switzerland has 600 students and the dean is called Mario Botta.</text>
+				<template>AGENT-1 of PATIENT-1 has PATIENT-3 students and the dean is called PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | Switzerland</entity>
+				<entity>PATIENT-2 | Mario_Botta</entity>
+				<entity>PATIENT-3 | 600</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id2" size="3">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | country | &quot;India&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | country | &quot;India&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="2" tag="PATIENT-1" type="name">Bangalore</reference>
+					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-3" type="name">India</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="pronoun">its</reference>
+				</references>
+				<text>The Acharya Institute of Technology is located in Bangalore, India and its motto is: &quot;Nurturing Excellence&quot;.</text>
+				<template>AGENT-1 is located in PATIENT-1 , PATIENT-3 and AGENT-1 motto is : `` PATIENT-2 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="2" tag="PATIENT-1" type="name">Bangalore</reference>
+					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-3" type="name">India</reference>
+				</references>
+				<text>The Acharya Institute of Technology in Bangalore, India has the motto &quot;Nurturing Excellence&quot;.</text>
+				<template>AGENT-1 in PATIENT-1 , PATIENT-3 has the motto `` PATIENT-2 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="2" tag="PATIENT-1" type="name">Bangalore</reference>
+					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-3" type="name">India</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="pronoun">its</reference>
+				</references>
+				<text>Acharya Institute of Technology is in Bangalore, India and its motto is&quot;Nurturing Excellence&quot;.</text>
+				<template>AGENT-1 is in PATIENT-1 , PATIENT-3 and AGENT-1 motto is `` PATIENT-2 '' .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Bangalore</entity>
+				<entity>PATIENT-2 | &quot;Nurturing Excellence&quot;</entity>
+				<entity>PATIENT-3 | &quot;India&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id3" size="3">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+				<otriple>Acharya_Institute_of_Technology | country | &quot;India&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | city | Bangalore</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | country | &quot;India&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;B.M. Reddy&quot;" number="1" tag="PATIENT-1" type="name">B .M . Reddy</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="3" tag="PATIENT-2" type="name">Bangalore</reference>
+					<reference entity="&quot;India&quot;" number="4" tag="PATIENT-3" type="name">India</reference>
+				</references>
+				<text>B.M. Reddy is the president of the Acharya Institute of Technology, which is located in Bangalore, India.</text>
+				<template>PATIENT-1 is the president of AGENT-1 , which is located in PATIENT-2 , PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="2" tag="PATIENT-2" type="name">Bangalore</reference>
+					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-3" type="name">India</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="&quot;B.M. Reddy&quot;" number="5" tag="PATIENT-1" type="name">B</reference>
+				</references>
+				<text>The Acharya Institute of Technology is in Bangalore, India. Its president is B.M. Reddy.</text>
+				<template>AGENT-1 is in PATIENT-2 , PATIENT-3 . AGENT-1 president is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology </reference>
+					<reference entity="&quot;B.M. Reddy&quot;" number="4" tag="PATIENT-1" type="name">B . M . Reddy</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="5" tag="AGENT-1" type="pronoun">its</reference>
+				</references>
+				<text>The Acharya Institute of Technology (Bangalore, India) has B. M. Reddy as its president.</text>
+				<template>AGENT-1 ( PATIENT-2 , PATIENT-3 ) has PATIENT-1 as AGENT-1 president .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;B.M. Reddy&quot;</entity>
+				<entity>PATIENT-2 | Bangalore</entity>
+				<entity>PATIENT-3 | &quot;India&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id4" size="3">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | sport | Tennis</otriple>
+				<otriple>Acharya_Institute_of_Technology | established | 2000</otriple>
+				<otriple>Tennis | union | International_Tennis_Federation</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | sportsOffered | Tennis</mtriple>
+				<mtriple>Acharya_Institute_of_Technology | established | 2000</mtriple>
+				<mtriple>Tennis | sportsGoverningBody | International_Tennis_Federation</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
+					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
+					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Insitute of Technology</reference>
+					<reference entity="Tennis" number="2" tag="BRIDGE-1" type="name">tennis</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="2000" number="4" tag="PATIENT-1" type="name">2000</reference>
+					<reference entity="Tennis" number="5" tag="BRIDGE-1" type="description">The tennis</reference>
+					<reference entity="International_Tennis_Federation" number="6" tag="PATIENT-2" type="description">the International Tennis Federation</reference>
+				</references>
+				<text>The Acharya Insitute of Technology offers tennis and it was established in 2000. The tennis governing body is the International Tennis Federation.</text>
+				<template>AGENT-1 offers BRIDGE-1 and AGENT-1 was established in PATIENT-1 . BRIDGE-1 governing body is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
+					<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
+					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="International_Tennis_Federation" number="1" tag="PATIENT-2" type="description">The International Tennis Federation</reference>
+					<reference entity="Tennis" number="2" tag="BRIDGE-1" type="description">the sport</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+					<reference entity="2000" number="4" tag="PATIENT-1" type="name">2000</reference>
+				</references>
+				<text>The International Tennis Federation is the governing body for the sport which is offered at the Acharya Institute of Technology which was established in 2000.</text>
+				<template>PATIENT-2 is the governing body for BRIDGE-1 which is offered at AGENT-1 which was established in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>BRIDGE-1 | Tennis</entity>
+				<entity>PATIENT-1 | 2000</entity>
+				<entity>PATIENT-2 | International_Tennis_Federation</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id5" size="3">
+			<originaltripleset>
+				<otriple>India | largestCity | Mumbai</otriple>
+				<otriple>AWH_Engineering_College | country | India</otriple>
+				<otriple>India | river | Ganges</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>India | largestCity | Mumbai</mtriple>
+				<mtriple>AWH_Engineering_College | country | India</mtriple>
+				<mtriple>India | river | Ganges</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | country | India</striple>
+					<striple>India | largestCity | Mumbai</striple>
+					<striple>India | river | Ganges</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="India" number="2" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Mumbai" number="3" tag="PATIENT-1" type="name">Mumbai</reference>
+					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Ganges" number="5" tag="PATIENT-2" type="description">The river Ganges</reference>
+					<reference entity="India" number="6" tag="BRIDGE-1" type="name">India</reference>
+				</references>
+				<text>AWH Engineering College is in India. Mumbai is the largest city in India. The river Ganges runs through India.</text>
+				<template>AGENT-1 is in BRIDGE-1 . PATIENT-1 is the largest city in BRIDGE-1 . PATIENT-2 runs through BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | country | India</striple>
+					<striple>India | largestCity | Mumbai</striple>
+					<striple>India | river | Ganges</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="India" number="2" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Mumbai" number="3" tag="PATIENT-1" type="name">Mumbai</reference>
+					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Ganges" number="5" tag="PATIENT-2" type="description">the Ganges</reference>
+				</references>
+				<text>AWH Engineering College is located in the country of India, whose capital city is Mumbai. One of the rivers in India is called the Ganges.</text>
+				<template>AGENT-1 is located in the country of BRIDGE-1 , whose capital city is PATIENT-1 . One of the rivers in BRIDGE-1 is called PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>PATIENT-1 | Mumbai</entity>
+				<entity>PATIENT-2 | Ganges</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id6" size="3">
+			<originaltripleset>
+				<otriple>Romania | leaderTitle | Prime_Minister_of_Romania</otriple>
+				<otriple>Romania | leaderName | Klaus_Iohannis</otriple>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | country | Romania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | leaderTitle | Prime_Minister_of_Romania</mtriple>
+				<mtriple>Romania | leaderName | Klaus_Iohannis</mtriple>
+				<mtriple>1_Decembrie_1918_University | country | Romania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
+					<striple>Romania | leaderName | Klaus_Iohannis</striple>
+					<striple>1_Decembrie_1918_University | country | Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="BRIDGE-1" type="name">Romania</reference>
+					<reference entity="Prime_Minister_of_Romania" number="2" tag="PATIENT-1" type="name">Prime</reference>
+					<reference entity="Klaus_Iohannis" number="3" tag="PATIENT-2" type="name">Minister Klaus Lohannis</reference>
+					<reference entity="1_Decembrie_1918_University" number="4" tag="AGENT-1" type="description">The 1 Decembrie 1918 University</reference>
+					<reference entity="Romania" number="5" tag="BRIDGE-1" type="name">Romania</reference>
+				</references>
+				<text>The leader of Romania is Prime Minister Klaus Lohannis. The 1 Decembrie 1918 University is in Romania.</text>
+				<template>The leader of BRIDGE-1 is PATIENT-1 PATIENT-2 . AGENT-1 is in BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset/>
+				<references>
+					<reference entity="Prime_Minister_of_Romania" number="1" tag="PATIENT-1" type="description">The Prime Minister of Romania</reference>
+					<reference entity="Klaus_Iohannis" number="2" tag="PATIENT-2" type="name">Klaus Iohannis</reference>
+					<reference entity="1_Decembrie_1918_University" number="3" tag="AGENT-1" type="description">The University of Romania</reference>
+				</references>
+				<text>The Prime Minister of Romania is Klaus Iohannis. The University of Romania was established on 1 Decembrie 1918.</text>
+				<template>PATIENT-1 is PATIENT-2 . AGENT-1 was established on 1 Decembrie 1918 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | country | Romania</striple>
+					<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
+					<striple>Romania | leaderName | Klaus_Iohannis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="name">1 Decembrie 1918 University</reference>
+					<reference entity="Romania" number="2" tag="BRIDGE-1" type="name">Romania</reference>
+					<reference entity="Romania" number="3" tag="BRIDGE-1" type="description">The</reference>
+					<reference entity="Prime_Minister_of_Romania" number="4" tag="PATIENT-1" type="name">country 's Prime Minister</reference>
+					<reference entity="Klaus_Iohannis" number="5" tag="PATIENT-2" type="name">Klaus Johannis</reference>
+				</references>
+				<text>1 Decembrie 1918 University is located in Romania. The country's Prime Minister is Klaus Johannis.</text>
+				<template>AGENT-1 is located in BRIDGE-1 . BRIDGE-1 PATIENT-1 is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>BRIDGE-1 | Romania</entity>
+				<entity>PATIENT-1 | Prime_Minister_of_Romania</entity>
+				<entity>PATIENT-2 | Klaus_Iohannis</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id7" size="3">
+			<originaltripleset>
+				<otriple>Romania | patronSaint | Andrew_the_Apostle</otriple>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | latinName | &quot;Universitas Apulensis&quot;@en</otriple>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | country | Romania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | patronSaint | Andrew_the_Apostle</mtriple>
+				<mtriple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</mtriple>
+				<mtriple>1_Decembrie_1918_University | country | Romania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | country | Romania</striple>
+					<striple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</striple>
+					<striple>Romania | patronSaint | Andrew_the_Apostle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="name">1 Decembrie 1918 University</reference>
+					<reference entity="Romania" number="2" tag="BRIDGE-1" type="name">Romania</reference>
+					<reference entity="1_Decembrie_1918_University" number="3" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="Romania" number="5" tag="BRIDGE-1" type="name">Romania</reference>
+					<reference entity="Andrew_the_Apostle" number="6" tag="PATIENT-1" type="name">Andrew the Apostle</reference>
+				</references>
+				<text>1 Decembrie 1918 University is located in Romania. Its Latin name is &quot;Universitas Apulensis&quot;. The patron saint of Romania is Andrew the Apostle.</text>
+				<template>AGENT-1 is located in BRIDGE-1 . AGENT-1 Latin name is `` PATIENT-2 '' . The patron saint of BRIDGE-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</striple>
+					<striple>1_Decembrie_1918_University | country | Romania</striple>
+					<striple>Romania | patronSaint | Andrew_the_Apostle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Universitas Apulensis&quot;" number="1" tag="PATIENT-2" type="name">Universitas Apulensis</reference>
+					<reference entity="1_Decembrie_1918_University" number="2" tag="AGENT-1" type="description">the 1 Decembrie 1918 University</reference>
+					<reference entity="Romania" number="3" tag="BRIDGE-1" type="name">Romania</reference>
+					<reference entity="Romania" number="4" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="Andrew_the_Apostle" number="5" tag="PATIENT-1" type="name">Andrew the Apostle</reference>
+				</references>
+				<text>Universitas Apulensis is the latin name of the 1 Decembrie 1918 University in Romania. The patron saint of the country is Andrew the Apostle.</text>
+				<template>PATIENT-2 is the latin name of AGENT-1 in BRIDGE-1 . The patron saint of BRIDGE-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</striple>
+					<striple>1_Decembrie_1918_University | country | Romania</striple>
+					<striple>Romania | patronSaint | Andrew_the_Apostle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="description">The 1 Decembrie 1918 University</reference>
+					<reference entity="&quot;Universitas Apulensis&quot;" number="2" tag="PATIENT-2" type="name">Universitas Apulensis</reference>
+					<reference entity="1_Decembrie_1918_University" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Romania" number="4" tag="BRIDGE-1" type="name">Romania</reference>
+					<reference entity="Andrew_the_Apostle" number="5" tag="PATIENT-1" type="description">the patron Saint Andrew the Apostle</reference>
+				</references>
+				<text>The 1 Decembrie 1918 University has the Latin name, Universitas Apulensis. It is situated in Romania, which has the patron Saint Andrew the Apostle.</text>
+				<template>AGENT-1 has the Latin name , PATIENT-2 . AGENT-1 is situated in BRIDGE-1 , which has PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>BRIDGE-1 | Romania</entity>
+				<entity>PATIENT-1 | Andrew_the_Apostle</entity>
+				<entity>PATIENT-2 | &quot;Universitas Apulensis&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id8" size="3">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | faculty | 737</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | students | 16000</otriple>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | established | 1928</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</mtriple>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</mtriple>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | established | 1928</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+					<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
+					<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="1928" number="2" tag="PATIENT-3" type="name">1928</reference>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="737" number="4" tag="PATIENT-1" type="name">737</reference>
+					<reference entity="16000" number="5" tag="PATIENT-2" type="name">16 ,000</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University was established in 1928. It has 737 academic staff and 16,000 students.</text>
+				<template>AGENT-1 was established in PATIENT-3 . AGENT-1 has PATIENT-1 academic staff and PATIENT-2 students. .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+					<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+					<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at Aarhus University</reference>
+					<reference entity="1928" number="2" tag="PATIENT-3" type="name">1928</reference>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="16000" number="4" tag="PATIENT-2" type="name">16000</reference>
+					<reference entity="737" number="5" tag="PATIENT-1" type="name">737</reference>
+				</references>
+				<text>The School of Business and Social Sciences at Aarhus University was established in 1928. It has 16000 students and an academic staff of 737.</text>
+				<template>AGENT-1 was established in PATIENT-3 . AGENT-1 has PATIENT-2 students and an academic staff of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+					<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
+					<striple>School of Business and Social Sciences at the Aarhus University | numberOfStudents | 16000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="1928" number="2" tag="PATIENT-3" type="name">1928</reference>
+					<reference entity="737" number="3" tag="PATIENT-1" type="name">737</reference>
+					<reference entity="16000" number="4" tag="PATIENT-2" type="name">16000</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University was established in 1928 and currently has a staff of 737 and a student population of 16000.</text>
+				<template>AGENT-1 was established in PATIENT-3 and currently has a staff of PATIENT-1 and a student population of PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | 737</entity>
+				<entity>PATIENT-2 | 16000</entity>
+				<entity>PATIENT-3 | 1928</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

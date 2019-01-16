@@ -5,7 +5,7 @@ from os.path import isdir
 import xmltodict
 
 from data.WebNLG.rephrasing import rephrase, rephrase_if_must
-from data.reader import DataReader, TextType, DataSetType
+from data.reader import DataReader, DataSetType, Datum
 
 
 class RDFFileReader:
@@ -20,7 +20,7 @@ class RDFFileReader:
             sentences = list(self.extract_sentences(entry["lex"]))
 
             for s in sentences:
-                self.data.append((triplets, s))
+                self.data.append(Datum(rdfs=triplets, text=s))
 
     def extract_sentences(self, lex):
         sentences = lex
@@ -132,7 +132,7 @@ class WebNLGDataReader(DataReader):
         files = self.recurse_files(path.join(path.dirname(path.realpath(__file__)), "raw", set.value))
         data = list(chain.from_iterable([RDFFileReader(f).data for f in files]))
 
-        super().__init__(data, TextType.NO_ENTS, misspelling=misspelling, rephrase=(rephrase, rephrase_if_must))
+        super().__init__(data, misspelling=misspelling, rephrase=(rephrase, rephrase_if_must))
 
     def recurse_files(self, folder):
         if isdir(folder):

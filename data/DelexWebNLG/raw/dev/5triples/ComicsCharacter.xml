@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id1" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | John_Geering</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Tim_Brooke-Taylor</mtriple>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | John_Geering</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | John_Geering</striple>
+					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-2" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">3 October 1983</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="4" tag="PATIENT-5" type="name">15 April 1986</reference>
+					<reference entity="Bananaman" number="5" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="John_Geering" number="6" tag="PATIENT-3" type="name">John Geering</reference>
+					<reference entity="Tim_Brooke-Taylor" number="7" tag="PATIENT-1" type="name">Tim Brooke Taylor</reference>
+				</references>
+				<text>Bananaman was shown on the BBC, first airing on 3 October 1983 and the final broadcast being 15 April 1986. It was created by John Geering and starred Tim Brooke Taylor.</text>
+				<template>AGENT-1 was shown on PATIENT-2 , first airing on PATIENT-4 and the final broadcast being PATIENT-5 . AGENT-1 was created by PATIENT-3 and starred PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | John_Geering</striple>
+					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="PATIENT-2" type="description">The BBC</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">October 3rd , 1983</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="4" tag="PATIENT-5" type="name">April 15th , 1986</reference>
+					<reference entity="John_Geering" number="5" tag="PATIENT-3" type="name">John Geering</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Tim_Brooke-Taylor" number="7" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
+				</references>
+				<text>The BBC began airing Bananaman October 3rd, 1983 and the last episode was broadcast on April 15th, 1986. John Geering is one of the creators of Bananaman which also starred Tim Brooke-Taylor.</text>
+				<template>PATIENT-2 began airing AGENT-1 PATIENT-4 and the last episode was broadcast on PATIENT-5 . PATIENT-3 is one of the creators of AGENT-1 which also starred PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bananaman | creator | John_Geering</striple>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="description">The TV character Bananaman</reference>
+					<reference entity="John_Geering" number="2" tag="PATIENT-3" type="name">John Geering</reference>
+					<reference entity="Bananaman" number="3" tag="AGENT-1" type="description">The programme</reference>
+					<reference entity="BBC" number="4" tag="PATIENT-2" type="description">the BBC</reference>
+					<reference entity="Tim_Brooke-Taylor" number="5" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="7" tag="PATIENT-4" type="description">the 10th March 1983</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="8" tag="PATIENT-5" type="name">April 15th 1986</reference>
+				</references>
+				<text>The TV character Bananaman was created by John Geering. The programme was broadcast by the BBC and starred Tim Brooke-Taylor. It first aired on the 10th March 1983 and was last shown on April 15th 1986.</text>
+				<template>AGENT-1 was created by PATIENT-3 . AGENT-1 was broadcast by PATIENT-2 and starred PATIENT-1 . AGENT-1 first aired on PATIENT-4 and was last shown on PATIENT-5 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-2 | BBC</entity>
+				<entity>PATIENT-3 | John_Geering</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id2" size="5">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Scott_Adsit</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
+					<reference entity="Scott_Adsit" number="3" tag="PATIENT-3" type="name">Scott Adsit</reference>
+					<reference entity="Baymax" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Steven_T._Seagle" number="5" tag="PATIENT-2" type="name">Steven T Seagle</reference>
+					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+				</references>
+				<text>Baymax is a character from the film Big Hero 6 starring Scott Adsit. He was created by Steven T Seagle and the American, Duncan Rouleau.</text>
+				<template>AGENT-1 is a character from BRIDGE-2 starring PATIENT-3 . AGENT-1 was created by PATIENT-2 and the American , BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Duncan_Rouleau" number="1" tag="BRIDGE-1" type="name">American Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-2" type="name">Steve T . Seagle</reference>
+					<reference entity="Baymax" number="3" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Baymax" number="4" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="5" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Scott_Adsit" number="6" tag="PATIENT-3" type="name">Scott Adsit</reference>
+				</references>
+				<text>American Duncan Rouleau and Steve T. Seagle created Baymax. Baymax is a character in Big Hero 6 which starred Scott Adsit.</text>
+				<template>BRIDGE-1 and PATIENT-2 created AGENT-1 . AGENT-1 is a character in BRIDGE-2 which starred PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Duncan_Rouleau" number="2" tag="BRIDGE-1" type="name">American Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="3" tag="PATIENT-2" type="name">Steven T</reference>
+					<reference entity="Baymax" number="4" tag="AGENT-1" type="name">Seagle . Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="5" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Scott_Adsit" number="6" tag="PATIENT-3" type="name">Scott Adsit</reference>
+				</references>
+				<text>Baymax was created by American Duncan Rouleau and Steven T. Seagle. Baymax is a character in Big Hero 6 which stars Scott Adsit.</text>
+				<template>AGENT-1 was created by BRIDGE-1 and PATIENT-2 . AGENT-1 is a character in BRIDGE-2 which stars PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
+				<entity>PATIENT-3 | Scott_Adsit</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

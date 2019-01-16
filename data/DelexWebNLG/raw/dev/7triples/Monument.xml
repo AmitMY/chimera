@@ -1,0 +1,287 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Monument" eid="Id1" size="7">
+			<originaltripleset>
+				<otriple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;@en</otriple>
+				<otriple>Adams_County,_Pennsylvania | southeast | Carroll_County,_Maryland</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | established | 2000</otriple>
+				<otriple>Adams_County,_Pennsylvania | north | Cumberland_County,_Pennsylvania</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</otriple>
+				<otriple>11th_Mississippi_Infantry_Monument | region | Adams_County,_Pennsylvania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</mtriple>
+				<mtriple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</mtriple>
+				<mtriple>11th_Mississippi_Infantry_Monument | established | 2000</mtriple>
+				<mtriple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</mtriple>
+				<mtriple>11th_Mississippi_Infantry_Monument | category | Contributing_property</mtriple>
+				<mtriple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</mtriple>
+				<mtriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</striple>
+					<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
+					<striple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</striple>
+					<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
+					<striple>11th_Mississippi_Infantry_Monument | established | 2000</striple>
+					<striple>11th_Mississippi_Infantry_Monument | category | Contributing_property</striple>
+					<striple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gettysburg,_Pennsylvania" number="1" tag="PATIENT-6" type="name">Gettysburg</reference>
+					<reference entity="Adams_County,_Pennsylvania" number="2" tag="BRIDGE-1" type="name">Adams County , Pennsylvania</reference>
+					<reference entity="Cumberland_County,_Pennsylvania" number="3" tag="PATIENT-4" type="name">Cumberland County</reference>
+					<reference entity="Carroll_County,_Maryland" number="4" tag="PATIENT-2" type="name">Carroll County , Maryland</reference>
+					<reference entity="Adams_County,_Pennsylvania" number="5" tag="BRIDGE-1" type="pronoun">It</reference>
+					<reference entity="11th_Mississippi_Infantry_Monument" number="6" tag="AGENT-1" type="description">the 11th Mississippi Infantry monument</reference>
+					<reference entity="2000" number="7" tag="PATIENT-3" type="name">2000</reference>
+					<reference entity="Contributing_property" number="8" tag="PATIENT-5" type="description">a contributing property</reference>
+					<reference entity="&quot;United States&quot;" number="9" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>The Municipality of Gettysburg is located in Adams County, Pennsylvania which lies to the south of Cumberland County and to the northwest of Carroll County, Maryland. It is the location of the 11th Mississippi Infantry monument which was established in 2000 and categorised as a contributing property within the United States.</text>
+				<template>The Municipality of PATIENT-6 is located in BRIDGE-1 which lies to the south of PATIENT-4 and to the northwest of PATIENT-2 . BRIDGE-1 is the location of AGENT-1 which was established in PATIENT-3 and categorised as PATIENT-5 within PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>11th_Mississippi_Infantry_Monument | country | &quot;United States&quot;</striple>
+					<striple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</striple>
+					<striple>11th_Mississippi_Infantry_Monument | established | 2000</striple>
+					<striple>11th_Mississippi_Infantry_Monument | category | Contributing_property</striple>
+					<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
+					<striple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</striple>
+					<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="11th_Mississippi_Infantry_Monument" number="1" tag="AGENT-1" type="description">The 11th Mississippi Infantry monument</reference>
+					<reference entity="&quot;United States&quot;" number="2" tag="PATIENT-1" type="description">the</reference>
+					<reference entity="Gettysburg,_Pennsylvania" number="3" tag="PATIENT-6" type="name">Gettysburg , Adams County</reference>
+					<reference entity="2000" number="4" tag="PATIENT-3" type="name">2000</reference>
+					<reference entity="Contributing_property" number="5" tag="PATIENT-5" type="description">a contributing property</reference>
+					<reference entity="Adams_County,_Pennsylvania" number="6" tag="BRIDGE-1" type="name">Adams County</reference>
+					<reference entity="Cumberland_County,_Pennsylvania" number="7" tag="PATIENT-4" type="name">Cumberland County</reference>
+					<reference entity="Carroll_County,_Maryland" number="8" tag="PATIENT-2" type="name">Carrol County , Maryland</reference>
+				</references>
+				<text>The 11th Mississippi Infantry monument which was erected in the municipality of Gettysburg, Adams County in 2000 is categorised as a contributing property. Adams County is located south of Cumberland County in the same state, and Carrol County, Maryland is situated to the southeast.</text>
+				<template>AGENT-1 which was erected in PATIENT-1 municipality of PATIENT-6 in PATIENT-3 is categorised as PATIENT-5 . BRIDGE-1 is located south of PATIENT-4 in the same state , and PATIENT-2 is situated to the southeast .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
+				<entity>BRIDGE-1 | Adams_County,_Pennsylvania</entity>
+				<entity>PATIENT-1 | &quot;United States&quot;</entity>
+				<entity>PATIENT-2 | Carroll_County,_Maryland</entity>
+				<entity>PATIENT-3 | 2000</entity>
+				<entity>PATIENT-4 | Cumberland_County,_Pennsylvania</entity>
+				<entity>PATIENT-5 | Contributing_property</entity>
+				<entity>PATIENT-6 | Gettysburg,_Pennsylvania</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id2" size="7">
+			<originaltripleset>
+				<otriple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</otriple>
+				<otriple>Turkey | leaderName | Ahmet_Davutoğlu</otriple>
+				<otriple>Turkey | capital | Ankara</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;@en</otriple>
+				<otriple>Turkey | currency | Turkish_lira</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | open | &quot;1932-07-27&quot;^^xsd:date</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | location | Turkey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</mtriple>
+				<mtriple>Turkey | leaderName | Ahmet_Davutoğlu</mtriple>
+				<mtriple>Turkey | capital | Ankara</mtriple>
+				<mtriple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;</mtriple>
+				<mtriple>Turkey | currency | Turkish_lira</mtriple>
+				<mtriple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</mtriple>
+				<mtriple>Atatürk_Monument_(İzmir) | location | Turkey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Turkey | capital | Ankara</striple>
+					<striple>Turkey | currency | Turkish_lira</striple>
+					<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+					<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					<striple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;</striple>
+					<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+					<striple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ankara" number="1" tag="PATIENT-3" type="name">Ankara</reference>
+					<reference entity="Turkey" number="2" tag="BRIDGE-1" type="name">Turkey</reference>
+					<reference entity="Turkish_lira" number="3" tag="PATIENT-5" type="description">the Turkish lira</reference>
+					<reference entity="Ahmet_Davutoğlu" number="4" tag="PATIENT-2" type="name">Ahmet Davutoglu</reference>
+					<reference entity="Turkey" number="5" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="&quot;Bronze&quot;" number="6" tag="PATIENT-4" type="description">the</reference>
+					<reference entity="Atatürk_Monument_(İzmir)" number="7" tag="AGENT-1" type="name">bronze Ataturk Monument</reference>
+					<reference entity="&quot;1932-07-27&quot;" number="8" tag="PATIENT-6" type="name">27 July 1932</reference>
+					<reference entity="Pietro_Canonica" number="9" tag="PATIENT-1" type="name">Pietro Canonica</reference>
+				</references>
+				<text>Ankara is the capital of Turkey where the currency is the Turkish lira and the leader is Ahmet Davutoglu. Izmir is located in the country and is the site of the bronze Ataturk Monument which was inaugurated in Izmir on 27 July 1932, having been designed by Pietro Canonica.</text>
+				<template>PATIENT-3 is the capital of BRIDGE-1 where the currency is PATIENT-5 and the leader is PATIENT-2 . Izmir is located in BRIDGE-1 and is the site of PATIENT-4 AGENT-1 which was inaugurated in Izmir on PATIENT-6 , having been designed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+					<striple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;</striple>
+					<striple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</striple>
+					<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+					<striple>Turkey | capital | Ankara</striple>
+					<striple>Turkey | currency | Turkish_lira</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atatürk_Monument_(İzmir)" number="1" tag="AGENT-1" type="description">The Atatürk Monument</reference>
+					<reference entity="Turkey" number="2" tag="BRIDGE-1" type="name">Turkey</reference>
+					<reference entity="Ahmet_Davutoğlu" number="3" tag="PATIENT-2" type="name">Ahmet Davutoğlu</reference>
+					<reference entity="Atatürk_Monument_(İzmir)" number="4" tag="AGENT-1" type="description">The monument</reference>
+					<reference entity="&quot;Bronze&quot;" number="5" tag="PATIENT-4" type="name">bronze</reference>
+					<reference entity="Pietro_Canonica" number="6" tag="PATIENT-1" type="name">Pietro Canonica</reference>
+					<reference entity="&quot;1932-07-27&quot;" number="7" tag="PATIENT-6" type="description">the 27th of July , 1932</reference>
+					<reference entity="Turkey" number="8" tag="BRIDGE-1" type="name">Turkey 's</reference>
+					<reference entity="Ankara" number="9" tag="PATIENT-3" type="name">Ankara</reference>
+					<reference entity="Turkish_lira" number="10" tag="PATIENT-5" type="description">the Turkish lira</reference>
+				</references>
+				<text>The Atatürk Monument is located in İzmir, in the country of Turkey, whose leader is Ahmet Davutoğlu. The monument is made of bronze, was designed by Pietro Canonica and was inaugurated on the 27th of July, 1932. Turkey's capital city is Ankara and the currency is the Turkish lira.</text>
+				<template>AGENT-1 is located in Izmir, in the country of BRIDGE-1 , whose leader is PATIENT-2 . AGENT-1 is made of PATIENT-4 , was designed by PATIENT-1 and was inaugurated on PATIENT-6 . BRIDGE-1 capital city is PATIENT-3 and the currency is PATIENT-5 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Turkey | currency | Turkish_lira</striple>
+					<striple>Turkey | leaderName | Ahmet_Davutoğlu</striple>
+					<striple>Turkey | capital | Ankara</striple>
+					<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					<striple>Atatürk_Monument_(İzmir) | material | &quot;Bronze&quot;</striple>
+					<striple>Atatürk_Monument_(İzmir) | designer | Pietro_Canonica</striple>
+					<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Turkish_lira" number="1" tag="PATIENT-5" type="description">The Turkish lira</reference>
+					<reference entity="Turkey" number="2" tag="BRIDGE-1" type="name">Turkey</reference>
+					<reference entity="Ahmet_Davutoğlu" number="3" tag="PATIENT-2" type="name">Ahmet Davutoglu</reference>
+					<reference entity="Ankara" number="4" tag="PATIENT-3" type="name">Ankara</reference>
+					<reference entity="Atatürk_Monument_(İzmir)" number="5" tag="AGENT-1" type="description">The Ataturk Monument</reference>
+					<reference entity="&quot;Bronze&quot;" number="6" tag="PATIENT-4" type="name">bronze</reference>
+					<reference entity="Pietro_Canonica" number="7" tag="PATIENT-1" type="name">Pietro Canonica</reference>
+					<reference entity="&quot;1932-07-27&quot;" number="8" tag="PATIENT-6" type="name">27 July 1932</reference>
+				</references>
+				<text>The Turkish lira is the currency of Turkey where Ahmet Davutoglu is the leader and Ankara is the capital. The Ataturk Monument designed in bronze by Pietro Canonica is located in Izmir and was inaugurated on 27 July 1932.</text>
+				<template>PATIENT-5 is the currency of BRIDGE-1 where PATIENT-2 is the leader and PATIENT-3 is the capital . AGENT-1 designed in PATIENT-4 by PATIENT-1 is located in Izmir and was inaugurated on PATIENT-6 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atatürk_Monument_(İzmir)</entity>
+				<entity>BRIDGE-1 | Turkey</entity>
+				<entity>PATIENT-1 | Pietro_Canonica</entity>
+				<entity>PATIENT-2 | Ahmet_Davutoğlu</entity>
+				<entity>PATIENT-3 | Ankara</entity>
+				<entity>PATIENT-4 | &quot;Bronze&quot;</entity>
+				<entity>PATIENT-5 | Turkish_lira</entity>
+				<entity>PATIENT-6 | &quot;1932-07-27&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id3" size="7">
+			<originaltripleset>
+				<otriple>Azerbaijan | capital | Baku</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;@en</otriple>
+				<otriple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | location | Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;@en</otriple>
+				<otriple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Azerbaijan | capital | Baku</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;</mtriple>
+				<mtriple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | location | Azerbaijan</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</mtriple>
+				<mtriple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+					<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
+					<striple>Azerbaijan | capital | Baku</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="National_Assembly_(Azerbaijan)" number="1" tag="PATIENT-6" type="description">The National Assembly</reference>
+					<reference entity="Azerbaijan" number="2" tag="BRIDGE-1" type="name">Azerbaijan</reference>
+					<reference entity="Prime_Minister_of_Azerbaijan" number="3" tag="PATIENT-3" type="description">a Prime Minister</reference>
+					<reference entity="Baku" number="4" tag="PATIENT-1" type="name">Baku</reference>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="5" tag="AGENT-1" type="description">the memorial</reference>
+					<reference entity="&quot;Red granite and white marble&quot;" number="6" tag="PATIENT-2" type="name">red granite and white marble</reference>
+					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="7" tag="PATIENT-5" type="name">Huseyin Butuner and Hilmi Guner</reference>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="8" tag="AGENT-1" type="description">The memorial</reference>
+					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="9" tag="PATIENT-4" type="description">the Ottoman army soldiers who were killed in the Battle of Baku</reference>
+				</references>
+				<text>The National Assembly is the official legislature of Azerbaijan which is lead by a Prime Minister. The capital city is Baku which is the location of the memorial designed in red granite and white marble by Huseyin Butuner and Hilmi Guner. The memorial is dedicated to the Ottoman army soldiers who were killed in the Battle of Baku.</text>
+				<template>PATIENT-6 is the official legislature of BRIDGE-1 which is lead by PATIENT-3 . The capital city is PATIENT-1 which is the location of AGENT-1 designed in PATIENT-2 by PATIENT-5 . AGENT-1 is dedicated to PATIENT-4.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Azerbaijan | capital | Baku</striple>
+					<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
+					<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku" number="1" tag="PATIENT-1" type="name">Baku</reference>
+					<reference entity="Azerbaijan" number="2" tag="BRIDGE-1" type="name">Azerbaijan</reference>
+					<reference entity="Prime_Minister_of_Azerbaijan" number="3" tag="PATIENT-3" type="name">Prime Minister</reference>
+					<reference entity="National_Assembly_(Azerbaijan)" number="4" tag="PATIENT-6" type="description">the National Assembly</reference>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="5" tag="AGENT-1" type="description">the Baku Turkish Martyrs memorial</reference>
+					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="6" tag="PATIENT-5" type="name">Huseyin Butuner and Hilmi Guner</reference>
+					<reference entity="&quot;Red granite and white marble&quot;" number="7" tag="PATIENT-2" type="name">red granite and white marble</reference>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="8" tag="AGENT-1" type="description">The memorial</reference>
+					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="9" tag="PATIENT-4" type="description">the soldiers of the Ottoman army who died in the Battle of Baku</reference>
+				</references>
+				<text>Baku is the capital of Azerbaijan where the leader's title is Prime Minister and the legislature is the National Assembly. The city is the location of the Baku Turkish Martyrs memorial which was designed by Huseyin Butuner and Hilmi Guner in red granite and white marble. The memorial is dedicated to the soldiers of the Ottoman army who died in the Battle of Baku.</text>
+				<template>PATIENT-1 is the capital of BRIDGE-1 where the leader 's title is PATIENT-3 and the legislature is PATIENT-6 . The city is the location of AGENT-1 which was designed by PATIENT-5 in PATIENT-2 . AGENT-1 is dedicated to PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
+					<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
+					<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="1" tag="PATIENT-5" type="name">Huyseyin Butuner and Hilmi Guner</reference>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="2" tag="AGENT-1" type="description">the Baku Turkish Martyrs ' Memorial</reference>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Baku" number="4" tag="PATIENT-1" type="name">Baku</reference>
+					<reference entity="Azerbaijan" number="5" tag="BRIDGE-1" type="name">Azerbaijan</reference>
+					<reference entity="National_Assembly_(Azerbaijan)" number="6" tag="PATIENT-6" type="name">National Assembly</reference>
+					<reference entity="Prime_Minister_of_Azerbaijan" number="7" tag="PATIENT-3" type="description">the Prime Minster</reference>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="8" tag="AGENT-1" type="description">The memorial</reference>
+					<reference entity="&quot;Red granite and white marble&quot;" number="9" tag="PATIENT-2" type="name">red granite and white marble</reference>
+					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="10" tag="PATIENT-4" type="description">the Ottoman Army Soldiers killed in the Battle of Baku</reference>
+				</references>
+				<text>Huyseyin Butuner and Hilmi Guner designed the Baku Turkish Martyrs' Memorial. It is located in Baku, Azerbaijan, which has legislature of National Assembly, and led by the Prime Minster. The memorial is made from red granite and white marble, and is dedicated to the Ottoman Army Soldiers killed in the Battle of Baku.</text>
+				<template>PATIENT-5 designed AGENT-1 . AGENT-1 is located in PATIENT-1, BRIDGE-1 , which has legislature of PATIENT-6 , and led by PATIENT-3 . AGENT-1 is made from PATIENT-2 , and is dedicated to PATIENT-4 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>BRIDGE-1 | Azerbaijan</entity>
+				<entity>PATIENT-1 | Baku</entity>
+				<entity>PATIENT-2 | &quot;Red granite and white marble&quot;</entity>
+				<entity>PATIENT-3 | Prime_Minister_of_Azerbaijan</entity>
+				<entity>PATIENT-4 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-5 | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</entity>
+				<entity>PATIENT-6 | National_Assembly_(Azerbaijan)</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

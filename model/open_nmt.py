@@ -56,7 +56,9 @@ class OpenNMTModel(Model):
             "batch_size": 64
         })
 
-        out_lines = open(target_path, "r", encoding="utf-8").read().splitlines()
+        out_lines_f = open(target_path, "r", encoding="utf-8")
+        out_lines = out_lines_f.read().splitlines()
+        out_lines_f.close()
 
         map_lines = {n: out for n, out in zip(n_lines, out_lines)}
 
@@ -70,10 +72,10 @@ class OpenNMTModelRunner(ModelRunner):
     def pre_process(self):
         save_data = temp_dir()
 
-        train_src = save_temp([p for g, p, s in self.train_reader.data])
-        train_tgt = save_temp([s for g, p, s in self.train_reader.data])
-        valid_src = save_temp([p for g, p, s in self.dev_reader.data])
-        valid_tgt = save_temp([s for g, p, s in self.dev_reader.data])
+        train_src = save_temp([d.plan for d in self.train_reader.data])
+        train_tgt = save_temp([d.delex for d in self.train_reader.data])
+        valid_src = save_temp([d.plan for d in self.dev_reader.data])
+        valid_tgt = save_temp([d.delex for d in self.dev_reader.data])
 
         run_param('preprocess.py', {
             "train_src": train_src,
@@ -117,7 +119,10 @@ class OpenNMTModelRunner(ModelRunner):
         max_dev = {"score": 0, "model": None}
         dev_scores = []
         for model_path in checkpoints:
-            model = OpenNMTModel(open(model_path, "rb").read())
+            f = open(model_path, "rb")
+            model = OpenNMTModel(f.read())
+            f.close()
+
             bleu = model.evaluate(self.dev_reader)[0]
 
             dev_scores.append(bleu)

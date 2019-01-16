@@ -21,6 +21,9 @@ class ModelRunner:
         self.train_reader = train_reader
         self.dev_reader = dev_reader
 
+    def expose_train(self):
+        return "\n\n".join([d.plan + "\n" + d.delex for d in self.train_reader.data])
+
     def pre_process(self):  # Do any manipulations to the train and dev sets
         raise NotImplementedError("Must implement pre_process")
 

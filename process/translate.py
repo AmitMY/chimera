@@ -2,7 +2,7 @@ from utils.pipeline import Pipeline
 
 
 def unique_plans_outputs(reader):
-    mapper = {p: t for g, p, t, s in reader.data}
+    mapper = {d.plan: d.hyp for d in reader.data}
     print(len(mapper))
     return list(mapper.values())
 

@@ -1,14 +1,12 @@
 import multiprocessing
-import numpy as np
 import pickle
 import re
+from collections import defaultdict
 from enum import Enum
 from multiprocessing.pool import Pool
 from typing import List, Tuple, Dict, Callable
 
-from collections import defaultdict
-
-from tqdm import tqdm
+import numpy as np
 
 from eval.bleu.eval import BLEU, naive_tokenizer
 from model.model_runner import Model
@@ -20,16 +18,51 @@ from utils.relex import relex
 from utils.tokens import SPLITABLES, tokenize, tokenize_sentences
 
 
-class TextType(Enum):
-    NO_ENTS = "NO_ENTITIES"
-    ENTITIES = "ENTITIES"
-    ENTITIES_AND_REFERENCES = "ENTITIES_AND_REFERENCES"
-
-
 class DataSetType(Enum):
     TRAIN = "train"
     DEV = "dev"
     TEST = "test"
+
+
+class Datum:
+    def __init__(self, rdfs: List[Tuple[str, str, str]] = None,
+                 graph: Graph = None,
+                 text: str = None,
+                 delex: str = None,
+                 hyp: str = None,
+                 plan: str = None,
+                 plans: List[str] = None):
+        self.rdfs = rdfs
+        self.graph = graph
+        self.text = text
+        self.delex = delex
+        self.hyp = hyp
+        self.plan = plan
+        self.plans = plans
+
+    def set_graph(self, graph: Graph):
+        self.graph = graph
+        return self
+
+    def set_text(self, text: str):
+        self.text = text
+        return self
+
+    def set_delex(self, delex: str):
+        self.delex = delex
+        return self
+
+    def set_hyp(self, hyp: str):
+        self.hyp = hyp
+        return self
+
+    def set_plan(self, plan: str):
+        self.plan = plan
+        return self
+
+    def set_plans(self, plans: str):
+        self.plans = plans
+        return self
 
 
 def create_plan(params: Tuple[Graph, ProductOfExperts]):
@@ -43,8 +76,9 @@ def create_plan(params: Tuple[Graph, ProductOfExperts]):
     return all_plans[max_i]
 
 
-def match_plan(params: Tuple[Graph, str]):
-    g, s = params
+def match_plan(d: Datum):
+    g = d.graph
+    s = d.delex
 
     s_s = tokenize_sentences(s)
 
@@ -80,12 +114,10 @@ def match_plan(params: Tuple[Graph, str]):
 
 
 class DataReader:
-    def __init__(self, data: List[Tuple[List[Tuple[str, str, str]], str]],
-                 text_type: TextType = TextType.NO_ENTS,
+    def __init__(self, data: List[Datum],
                  misspelling: Dict[str, str] = {},
                  rephrase: Tuple[Callable, Callable] = (None, None)):
         self.data = data
-        self.text_type = text_type
         self.misspelling = misspelling
         self.rephrase = rephrase
 
@@ -93,7 +125,7 @@ class DataReader:
         return pickle.loads(pickle.dumps(self))
 
     def generate_graphs(self):
-        self.data = [(Graph(g), s) for g, s in self.data]
+        self.data = [d.set_graph(Graph(d.rdfs)) for d in self.data]
         return self
 
     def fix_spelling(self):
@@ -103,27 +135,24 @@ class DataReader:
             source = regex_splittable + misspelling + regex_splittable
             target = "\1" + fix + "\2"
 
-            self.data = [(g, re.sub(source, target, s)) for g, s in self.data]
+            self.data = [d.set_text(re.sub(source, target, d.text)) for d in self.data]
 
         return self
 
     def match_entities(self):
-        if self.text_type != TextType.NO_ENTS:  # No need to match entities
-            return self
-
         delex = Delexicalize(rephrase_f=self.rephrase[0], rephrase_if_must_f=self.rephrase[1])
-        self.data = [(g, delex.run(s, g.nodes)) for g, s in self.data]
-        self.data = [(g, s) for g, s in self.data if s]  # Filter out failed delex
+        self.data = [d if d.delex else d.set_delex(delex.run(d.text, d.graph.nodes)) for d in self.data]
+        self.data = [d for d in self.data if d.delex]  # Filter out failed delex
         return self
 
     def match_plans(self):
         pool = Pool(multiprocessing.cpu_count() - 1)
         plans = list(reversed(list(pool.map(match_plan, list(reversed(self.data))))))
-        self.data = [(g, p, s) for (g, s), plans in zip(self.data, plans) for p in plans]
+        self.data = [d.set_plan(p) for d, plans in zip(self.data, plans) for p in plans]
         return self
 
     def create_plans(self, scorer):
-        unique = {g.unique_key(): g for g, s in self.data}
+        unique = {d.graph.unique_key(): d.graph for d in self.data}
         unique_graphs = list(unique.values())
 
         params = [(g, scorer) for g in reversed(unique_graphs)]
@@ -131,11 +160,15 @@ class DataReader:
         plans = list(reversed(list(pool.imap(create_plan, params))))
         # plans = list(reversed(list([create_plan(p) for p in tqdm(params)])))
         graph_plans = {g.unique_key(): p for g, p in zip(unique_graphs, plans)}
-        self.data = [(g, graph_plans[g.unique_key()], s) for g, s in self.data]
+        self.data = [d.set_plan(graph_plans[d.graph.unique_key()]) for d in self.data]
         return self
 
-    def tokenize(self):
-        self.data = [(g, " ".join(tokenize(p)), " ".join(tokenize(s))) for g, p, s in self.data]
+    def tokenize_plans(self):
+        self.data = [d.set_plan(" ".join(tokenize(d.plan))) for d in self.data]
+        return self
+
+    def tokenize_delex(self):
+        self.data = [d.set_delex(" ".join(tokenize(d.delex))) for d in self.data]
         return self
 
     def report(self):
@@ -143,31 +176,31 @@ class DataReader:
 
     def for_translation(self):
         plan_sentences = defaultdict(list)
-        for g, p, s in self.data:
-            plan_sentences[p].append(s)
+        for d in self.data:
+            plan_sentences[d.plan].append(d.delex)
 
         return plan_sentences
 
     def translate_plans(self, model: Model):
-        plans = list(set([p for g, p, s in self.data]))
+        plans = list(set([d.plan for d in self.data]))
         translations = model.translate(plans)
         mapper = {p: t for p, t in zip(plans, translations)}
-        self.data = [(g, p, mapper[p], s) for g, p, s in self.data]
+        self.data = [d.set_hyp(mapper[d.plan]) for d in self.data]
         return self
 
     def post_process(self):
         def process(text: str):
             return relex(text)
 
-        self.data = [(g, p, process(t), s) for g, p, t, s in self.data]
+        self.data = [d.set_hyp(process(d.hyp)) for d in self.data]
         return self
 
     def evaluate(self):
         plan_ref = defaultdict(list)
         plan_hyp = {}
-        for g, p, t, s in self.data:
-            plan_ref[p].append(s)
-            plan_hyp[p] = t
+        for d in self.data:
+            plan_ref[d.plan].append(d.text)
+            plan_hyp[d.plan] = d.hyp
 
         hypothesis = [plan_hyp[p] for p in plan_ref.keys()]
         references = list(plan_ref.values())

@@ -1,0 +1,3835 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id1" size="1">
+			<originaltripleset>
+				<otriple>Airman_(comics) | alterEgo | &quot;Drake Stevens&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airman_(comicsCharacter) | alternativeName | &quot;Drake Stevens&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | alternativeName | &quot;Drake Stevens&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airman_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character Airman</reference>
+				</references>
+				<text>&quot;Drake Stevens&quot; is known as the comic character Airman.</text>
+				<template>`` PATIENT-1 '' is known as AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | alternativeName | &quot;Drake Stevens&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airman_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Airman 's</reference>
+					<reference entity="&quot;Drake Stevens&quot;" number="2" tag="PATIENT-1" type="name">Drake Stevens</reference>
+				</references>
+				<text>Airman's alternative name is Drake Stevens.</text>
+				<template>AGENT-1 alternative name is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | alternativeName | &quot;Drake Stevens&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The alternative name of Airman (comics character) is &quot;Drake Stevens&quot;.</text>
+				<template>The alternative name of AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airman_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Drake Stevens&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id2" size="1">
+			<originaltripleset>
+				<otriple>Airman_(comics) | creators | George_Kapitan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airman_(comicsCharacter) | creator | George_Kapitan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | creator | George_Kapitan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airman_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Airman ,  (comics character )</reference>
+					<reference entity="George_Kapitan" number="2" tag="PATIENT-1" type="name">George Kapitan</reference>
+				</references>
+				<text>The creator of Airman, (comics character) is George Kapitan.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | creator | George_Kapitan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airman_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Airman  (comics character )</reference>
+					<reference entity="George_Kapitan" number="2" tag="PATIENT-1" type="name">George Kapitan</reference>
+				</references>
+				<text>The creator of Airman (comics character) is George Kapitan.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | creator | George_Kapitan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="George_Kapitan" number="1" tag="PATIENT-1" type="name">George Kapitan</reference>
+					<reference entity="Airman_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character Airman</reference>
+				</references>
+				<text>George Kapitan created the comic character Airman.</text>
+				<template>PATIENT-1 created AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airman_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | George_Kapitan</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id3" size="1">
+			<originaltripleset>
+				<otriple>Airman_(comics) | creators | Harry_Sahle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Airman_(comicsCharacter) | creator | Harry_Sahle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | creator | Harry_Sahle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airman_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Airman ,</reference>
+					<reference entity="Harry_Sahle" number="2" tag="PATIENT-1" type="name">Harry Sahle</reference>
+				</references>
+				<text>The comic character, Airman, was created by Harry Sahle.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | creator | Harry_Sahle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airman_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Airman  (comics character )</reference>
+					<reference entity="Harry_Sahle" number="2" tag="PATIENT-1" type="name">Harry Sahle</reference>
+				</references>
+				<text>The creator of Airman (comics character) is Harry Sahle.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Airman_(comicsCharacter) | creator | Harry_Sahle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Airman_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Airman</reference>
+					<reference entity="Harry_Sahle" number="2" tag="PATIENT-1" type="name">Harry Sahle</reference>
+				</references>
+				<text>The comic book character Airman was created by Harry Sahle.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Airman_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Harry_Sahle</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id4" size="1">
+			<originaltripleset>
+				<otriple>Amazing-Man_(Centaur_Publications) | alterEgo | &quot;John Aman&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amazing-Man_(comicsCharacter) | alternativeName | &quot;John Aman&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Amazing-Man_(comicsCharacter) | alternativeName | &quot;John Aman&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;John Aman&quot;" number="1" tag="PATIENT-1" type="name">John Aman ,</reference>
+					<reference entity="Amazing-Man_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Amazing-Man</reference>
+				</references>
+				<text>John Aman, is the alternative name for the comic character, Amazing-Man.</text>
+				<template>PATIENT-1 is the alternative name for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Amazing-Man_(comicsCharacter) | alternativeName | &quot;John Aman&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amazing-Man_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Amazing-Man 's</reference>
+					<reference entity="&quot;John Aman&quot;" number="2" tag="PATIENT-1" type="name">John Aman</reference>
+				</references>
+				<text>The comic book character Amazing-Man's alter ego is John Aman.</text>
+				<template>AGENT-1 alter ego is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Amazing-Man_(comicsCharacter) | alternativeName | &quot;John Aman&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;John Aman&quot;" number="1" tag="PATIENT-1" type="name">John Aman</reference>
+					<reference entity="Amazing-Man_(comicsCharacter)" number="2" tag="AGENT-1" type="name">Amazing-Man</reference>
+				</references>
+				<text>John Aman is also known as Amazing-Man in the comics genre.</text>
+				<template>PATIENT-1 is also known as AGENT-1 in the comics genre .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amazing-Man_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;John Aman&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id5" size="1">
+			<originaltripleset>
+				<otriple>Amazing-Man_(Centaur_Publications) | creators | Bill_Everett</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amazing-Man_(comicsCharacter) | creator | Bill_Everett</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Amazing-Man_(comicsCharacter) | creator | Bill_Everett</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bill_Everett" number="1" tag="PATIENT-1" type="name">Bill Everett</reference>
+					<reference entity="Amazing-Man_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Amazing-Man</reference>
+				</references>
+				<text>Bill Everett is the creator of the comic character, Amazing-Man.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Amazing-Man_(comicsCharacter) | creator | Bill_Everett</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amazing-Man_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Amazing-Man</reference>
+					<reference entity="Bill_Everett" number="2" tag="PATIENT-1" type="name">Bill Everett</reference>
+				</references>
+				<text>The comic book character Amazing-Man was created by Bill Everett.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Amazing-Man_(comicsCharacter) | creator | Bill_Everett</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amazing-Man_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Amazing Man</reference>
+					<reference entity="Bill_Everett" number="2" tag="PATIENT-1" type="name">Bill Everett</reference>
+				</references>
+				<text>The comic character Amazing Man was created by Bill Everett.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amazing-Man_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Bill_Everett</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id6" size="1">
+			<originaltripleset>
+				<otriple>April_O'Neil | creators | Peter_Laird</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>April_O'Neil | creator | Peter_Laird</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>April_ONeil | creator | Peter_Laird</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="April_ONeil" number="1" tag="AGENT-1" type="description">The character , April O 'Neal ,</reference>
+					<reference entity="Peter_Laird" number="2" tag="PATIENT-1" type="name">Peter Laird</reference>
+				</references>
+				<text>The character, April O'Neal, was created by Peter Laird.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>April_ONeil | creator | Peter_Laird</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="April_ONeil" number="1" tag="AGENT-1" type="name">April O 'Neil</reference>
+					<reference entity="Peter_Laird" number="2" tag="PATIENT-1" type="name">Peter Laird</reference>
+				</references>
+				<text>April O'Neil was created by Peter Laird.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>April_ONeil | creator | Peter_Laird</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="April_ONeil" number="1" tag="AGENT-1" type="name">April O 'Neil</reference>
+					<reference entity="Peter_Laird" number="2" tag="PATIENT-1" type="name">Peter Laird</reference>
+				</references>
+				<text>The creator of April O'Neil is Peter Laird.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | April_ONeil</entity>
+				<entity>PATIENT-1 | Peter_Laird</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id7" size="1">
+			<originaltripleset>
+				<otriple>Arion_(comics) | alterEgo | &quot;Ahri'ahn&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arion_(comicsCharacter) | alternativeName | &quot;Ahri'ahn&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Arion_(comicsCharacter) | alternativeName | &quot;Ahriahn&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Arion ,</reference>
+					<reference entity="Arion_(comicsCharacter)" number="2" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;Ahriahn&quot;" number="3" tag="PATIENT-1" type="name">Ahri 'ahn</reference>
+				</references>
+				<text>The comic character, Arion, is also known by he name Ahri'ahn.</text>
+				<template>AGENT-1 is also known by AGENT-1 name PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Arion_(comicsCharacter) | alternativeName | &quot;Ahriahn&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Arion</reference>
+					<reference entity="&quot;Ahriahn&quot;" number="2" tag="PATIENT-1" type="name">Ahri 'ahn</reference>
+				</references>
+				<text>The comic book character Arion is also known as Ahri'ahn.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Arion_(comicsCharacter) | alternativeName | &quot;Ahriahn&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Arion</reference>
+					<reference entity="&quot;Ahriahn&quot;" number="2" tag="PATIENT-1" type="name">Ahri 'ahn</reference>
+				</references>
+				<text>The comic character Arion is also known as Ahri'ahn.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arion_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Ahriahn&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id8" size="1">
+			<originaltripleset>
+				<otriple>Arion_(comics) | creators | Jan_Duursema</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arion_(comicsCharacter) | creator | Jan_Duursema</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Arion_(comicsCharacter) | creator | Jan_Duursema</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Arion ,</reference>
+					<reference entity="Jan_Duursema" number="2" tag="PATIENT-1" type="name">Jan Duursema</reference>
+				</references>
+				<text>The comic character, Arion, was created by Jan Duursema.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Arion_(comicsCharacter) | creator | Jan_Duursema</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Arion</reference>
+					<reference entity="Jan_Duursema" number="2" tag="PATIENT-1" type="name">Jan Duursema</reference>
+				</references>
+				<text>The comic book character Arion was created by Jan Duursema.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arion_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Jan_Duursema</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id9" size="1">
+			<originaltripleset>
+				<otriple>Arion_(comics) | creators | Paul_Kupperberg</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arion_(comicsCharacter) | creator | Paul_Kupperberg</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Arion_(comicsCharacter) | creator | Paul_Kupperberg</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paul_Kupperberg" number="1" tag="PATIENT-1" type="name">Paul Kupperberg</reference>
+					<reference entity="Arion_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Arion</reference>
+				</references>
+				<text>Paul Kupperberg is the creator of the comic character, Arion.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Arion_(comicsCharacter) | creator | Paul_Kupperberg</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Arion</reference>
+					<reference entity="Paul_Kupperberg" number="2" tag="PATIENT-1" type="name">Paul Kupperberg</reference>
+				</references>
+				<text>The comic book character Arion was created by Paul Kupperberg.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Arion_(comicsCharacter) | creator | Paul_Kupperberg</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Arion</reference>
+					<reference entity="Paul_Kupperberg" number="2" tag="PATIENT-1" type="name">Paul Kupperberg</reference>
+				</references>
+				<text>The comic character Arion was created by Paul Kupperberg.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arion_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Paul_Kupperberg</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id10" size="1">
+			<originaltripleset>
+				<otriple>Asterix_(character) | alterEgo | &quot;Astérix&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asterix_(comicsCharacter) | alternativeName | &quot;Astérix&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Asterix_(comicsCharacter) | alternativeName | &quot;Astérix&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The alternative name of Asterix (comics character) is &quot;Astérix&quot;.</text>
+				<template>The alternative name of AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Asterix_(comicsCharacter) | alternativeName | &quot;Astérix&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asterix_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Asterix</reference>
+					<reference entity="&quot;Astérix&quot;" number="2" tag="PATIENT-1" type="name">Astérix</reference>
+				</references>
+				<text>The comic character Asterix is also known as Astérix.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Asterix_(comicsCharacter) | alternativeName | &quot;Astérix&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asterix_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Asterix</reference>
+				</references>
+				<text>The comic character Asterix is sometimes called &quot;Astérix&quot;.</text>
+				<template>AGENT-1 is sometimes called `` PATIENT-1 '' .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asterix_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Astérix&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id11" size="1">
+			<originaltripleset>
+				<otriple>Asterix_(character) | creator | Albert_Uderzo</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asterix_(comicsCharacter) | creator | Albert_Uderzo</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Asterix_(comicsCharacter) | creator | Albert_Uderzo</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Albert_Uderzo" number="1" tag="PATIENT-1" type="name">Albert Uderzo</reference>
+					<reference entity="Asterix_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Asterix</reference>
+				</references>
+				<text>Albert Uderzo is the creator of the comic character, Asterix.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Asterix_(comicsCharacter) | creator | Albert_Uderzo</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asterix_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Asterix</reference>
+					<reference entity="Albert_Uderzo" number="2" tag="PATIENT-1" type="name">Albert Uderzo</reference>
+				</references>
+				<text>The comic book character Asterix was created by Albert Uderzo.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Asterix_(comicsCharacter) | creator | Albert_Uderzo</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asterix_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic strip character Asterix</reference>
+					<reference entity="Albert_Uderzo" number="2" tag="PATIENT-1" type="name">Albert Uderzo</reference>
+				</references>
+				<text>The comic strip character Asterix was created by Albert Uderzo.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asterix_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Albert_Uderzo</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id12" size="1">
+			<originaltripleset>
+				<otriple>Aurakles | alterEgo | &quot;Aurakles&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aurakles | alternativeName | &quot;Aurakles&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset/>
+				<references>
+					<reference entity="&quot;Aurakles&quot;" number="1" tag="PATIENT-1" type="name">Aurakles</reference>
+				</references>
+				<text>Aurakles is also known as ''Aurakles''.</text>
+				<template>PATIENT-1 is also known as '' PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Aurakles | alternativeName | &quot;Aurakles&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aurakles" number="1" tag="AGENT-1" type="name">Aurakles</reference>
+					<reference entity="&quot;Aurakles&quot;" number="2" tag="PATIENT-1" type="name">Aurakles</reference>
+				</references>
+				<text>An alternative name for Aurakles is Aurakles.</text>
+				<template>An alternative name for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Aurakles | alternativeName | &quot;Aurakles&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aurakles" number="1" tag="AGENT-1" type="name">Aurakles</reference>
+					<reference entity="&quot;Aurakles&quot;" number="2" tag="PATIENT-1" type="name">Aurakles</reference>
+				</references>
+				<text>Aurakles alternative name is also Aurakles.</text>
+				<template>AGENT-1 alternative name is also PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aurakles</entity>
+				<entity>PATIENT-1 | &quot;Aurakles&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id13" size="1">
+			<originaltripleset>
+				<otriple>Aurakles | creator | Dick_Dillin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aurakles | creator | Dick_Dillin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Aurakles | creator | Dick_Dillin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dick_Dillin" number="1" tag="PATIENT-1" type="name">Dick Dillin</reference>
+					<reference entity="Aurakles" number="2" tag="AGENT-1" type="name">Aurakles</reference>
+				</references>
+				<text>Dick Dillin is the creator of Aurakles.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Aurakles | creator | Dick_Dillin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aurakles" number="1" tag="AGENT-1" type="description">The comic book character Aurakles</reference>
+					<reference entity="Dick_Dillin" number="2" tag="PATIENT-1" type="name">Dick Dillin</reference>
+				</references>
+				<text>The comic book character Aurakles was created by Dick Dillin.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Aurakles | creator | Dick_Dillin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aurakles" number="1" tag="AGENT-1" type="name">Aurakles</reference>
+					<reference entity="Dick_Dillin" number="2" tag="PATIENT-1" type="name">Dick Dillin</reference>
+				</references>
+				<text>Aurakles is a fictional character created by Dick Dillin.</text>
+				<template>AGENT-1 is a fictional character created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aurakles</entity>
+				<entity>PATIENT-1 | Dick_Dillin</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id14" size="1">
+			<originaltripleset>
+				<otriple>Aurakles | creator | Len_Wein</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aurakles | creator | Len_Wein</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Aurakles | creator | Len_Wein</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aurakles" number="1" tag="AGENT-1" type="description">The character , Aurakles ,</reference>
+					<reference entity="Len_Wein" number="2" tag="PATIENT-1" type="name">Len Wein</reference>
+				</references>
+				<text>The character, Aurakles, was created by Len Wein.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Aurakles | creator | Len_Wein</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aurakles" number="1" tag="AGENT-1" type="name">Aurakles</reference>
+					<reference entity="Len_Wein" number="2" tag="PATIENT-1" type="name">Len Wein</reference>
+				</references>
+				<text>Aurakles was created by Len Wein.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aurakles</entity>
+				<entity>PATIENT-1 | Len_Wein</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id15" size="1">
+			<originaltripleset>
+				<otriple>Auron_(comics) | creator | Karl_Kesel</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Auron_(comicsCharacter) | creator | Karl_Kesel</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Auron  (comics character )</reference>
+					<reference entity="Karl_Kesel" number="2" tag="PATIENT-1" type="name">Karl Kesel</reference>
+				</references>
+				<text>The creator of Auron (comics character) is Karl Kesel.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Auron</reference>
+					<reference entity="Karl_Kesel" number="2" tag="PATIENT-1" type="name">Karl Kesel</reference>
+				</references>
+				<text>The comic book character Auron was created by Karl Kesel.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Karl_Kesel" number="1" tag="PATIENT-1" type="name">Karl Kesel</reference>
+					<reference entity="Auron_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Auron</reference>
+				</references>
+				<text>Karl Kesel is the creator of the comic character, Auron.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Karl_Kesel</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id16" size="1">
+			<originaltripleset>
+				<otriple>Auron_(comics) | creators | Walt_Simonson</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Auron_(comicsCharacter) | creator | Walt_Simonson</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Auron_(comicsCharacter) | creator | Walt_Simonson</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Auron ,</reference>
+					<reference entity="Walt_Simonson" number="2" tag="PATIENT-1" type="name">Walt Simonson</reference>
+				</references>
+				<text>The comic character, Auron, was created by Walt Simonson.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Auron_(comicsCharacter) | creator | Walt_Simonson</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Auron</reference>
+					<reference entity="Walt_Simonson" number="2" tag="PATIENT-1" type="name">Walt Simonson</reference>
+				</references>
+				<text>Auron was created by Walt Simonson.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Walt_Simonson</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id17" size="1">
+			<originaltripleset>
+				<otriple>Auron_(comics) | fullName | &quot;Lambien&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Auron_(comicsCharacter) | fullName | &quot;Lambien&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Auron_(comicsCharacter) | fullName | &quot;Lambien&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>the full name of Auron (comics character) is &quot;Lambien&quot;.</text>
+				<template>AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Auron_(comicsCharacter) | fullName | &quot;Lambien&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Auron 's</reference>
+					<reference entity="&quot;Lambien&quot;" number="2" tag="PATIENT-1" type="name">Lambien ,</reference>
+				</references>
+				<text>The comic character Auron's full name is Lambien,.</text>
+				<template>AGENT-1 full name is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Auron_(comicsCharacter) | fullName | &quot;Lambien&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Auron</reference>
+					<reference entity="&quot;Lambien&quot;" number="2" tag="PATIENT-1" type="name">Lambien</reference>
+				</references>
+				<text>The comic character, Auron's full name is Lambien.</text>
+				<template>AGENT-1 's full name is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Lambien&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id18" size="1">
+			<originaltripleset>
+				<otriple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="name">BBC</reference>
+					<reference entity="John_Reith,_1st_Baron_Reith" number="2" tag="PATIENT-1" type="name">John Reith 1st Baron Reith</reference>
+				</references>
+				<text>BBC was founded by John Reith 1st Baron Reith.</text>
+				<template>AGENT-1 was founded by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="description">The BBC</reference>
+					<reference entity="John_Reith,_1st_Baron_Reith" number="2" tag="PATIENT-1" type="name">John Reith , 1st Baron Reith</reference>
+				</references>
+				<text>The BBC was founded by John Reith, 1st Baron Reith.</text>
+				<template>AGENT-1 was founded by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Reith,_1st_Baron_Reith" number="1" tag="PATIENT-1" type="name">1st Baron , John Reith</reference>
+					<reference entity="BBC" number="2" tag="AGENT-1" type="description">the BBC</reference>
+				</references>
+				<text>1st Baron, John Reith was the founder of the BBC.</text>
+				<template>PATIENT-1 was the founder of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | BBC</entity>
+				<entity>PATIENT-1 | John_Reith,_1st_Baron_Reith</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id19" size="1">
+			<originaltripleset>
+				<otriple>BBC | keyPeople | Rona_Fairhead</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>BBC | keyPerson | Rona_Fairhead</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>BBC | keyPerson | Rona_Fairhead</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rona_Fairhead" number="1" tag="PATIENT-1" type="name">Rona Fairhead</reference>
+					<reference entity="BBC" number="2" tag="AGENT-1" type="name">BBC</reference>
+				</references>
+				<text>Rona Fairhead is the key person for BBC.</text>
+				<template>PATIENT-1 is the key person for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>BBC | keyPerson | Rona_Fairhead</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rona_Fairhead" number="1" tag="PATIENT-1" type="name">Rona Fairhead</reference>
+					<reference entity="BBC" number="2" tag="AGENT-1" type="description">the BBC</reference>
+				</references>
+				<text>Rona Fairhead was a key person at the BBC.</text>
+				<template>PATIENT-1 was a key person at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>BBC | keyPerson | Rona_Fairhead</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="name">BBC</reference>
+					<reference entity="Rona_Fairhead" number="2" tag="PATIENT-1" type="name">Rona Fairhead</reference>
+				</references>
+				<text>The key person for BBC is Rona Fairhead.</text>
+				<template>The key person for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | BBC</entity>
+				<entity>PATIENT-1 | Rona_Fairhead</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id20" size="1">
+			<originaltripleset>
+				<otriple>BBC | keyPeople | Tony_Hall,_Baron_Hall_of_Birkenhead</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>BBC | keyPerson | Tony_Hall,_Baron_Hall_of_Birkenhead</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>BBC | keyPerson | Tony_Hall,_Baron_Hall_of_Birkenhead</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="description">the BBC</reference>
+					<reference entity="Tony_Hall,_Baron_Hall_of_Birkenhead" number="2" tag="PATIENT-1" type="name">Baron Hall of Birkenhead , Tony Hall</reference>
+				</references>
+				<text>A key person at the BBC is Baron Hall of Birkenhead, Tony Hall.</text>
+				<template>A key person at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>BBC | keyPerson | Tony_Hall,_Baron_Hall_of_Birkenhead</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="description">the BBC</reference>
+					<reference entity="Tony_Hall,_Baron_Hall_of_Birkenhead" number="2" tag="PATIENT-1" type="name">Tony Hall , Baron Hall of Birkenhead</reference>
+				</references>
+				<text>A key person at the BBC is Tony Hall, Baron Hall of Birkenhead.</text>
+				<template>A key person at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>BBC | keyPerson | Tony_Hall,_Baron_Hall_of_Birkenhead</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tony_Hall,_Baron_Hall_of_Birkenhead" number="1" tag="PATIENT-1" type="name">Tony Hall , the Baron Hall of Birkenhead ,</reference>
+					<reference entity="BBC" number="2" tag="AGENT-1" type="description">the BBC</reference>
+				</references>
+				<text>Tony Hall, the Baron Hall of Birkenhead, is a key person with the BBC.</text>
+				<template>PATIENT-1 is a key person with AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | BBC</entity>
+				<entity>PATIENT-1 | Tony_Hall,_Baron_Hall_of_Birkenhead</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id21" size="1">
+			<originaltripleset>
+				<otriple>BBC | locationCity | Broadcasting_House</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>BBC | locationCity | Broadcasting_House</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>BBC | locationCity | Broadcasting_House</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="description">the BBC</reference>
+					<reference entity="Broadcasting_House" number="2" tag="PATIENT-1" type="description">the Broadcasting House in London</reference>
+				</references>
+				<text>The location of the BBC is the Broadcasting House in London.</text>
+				<template>The location of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>BBC | locationCity | Broadcasting_House</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="name">BBC</reference>
+					<reference entity="Broadcasting_House" number="2" tag="PATIENT-1" type="name">Broadcasting House</reference>
+				</references>
+				<text>The BBC headquarters is called Broadcasting House.</text>
+				<template>The AGENT-1 headquarters is called PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>BBC | locationCity | Broadcasting_House</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Broadcasting_House" number="1" tag="PATIENT-1" type="name">Broadcasting House</reference>
+					<reference entity="BBC" number="2" tag="AGENT-1" type="description">the BBC which is based in London</reference>
+				</references>
+				<text>Broadcasting House is the home of the BBC which is based in London.</text>
+				<template>PATIENT-1 is the home of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | BBC</entity>
+				<entity>PATIENT-1 | Broadcasting_House</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id22" size="1">
+			<originaltripleset>
+				<otriple>BBC | locationCity | London</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>BBC | locationCity | London</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>BBC | locationCity | London</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="name">BBC</reference>
+					<reference entity="London" number="2" tag="PATIENT-1" type="name">London</reference>
+				</references>
+				<text>BBC is located in London.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>BBC | locationCity | London</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="name">BBC</reference>
+					<reference entity="London" number="2" tag="PATIENT-1" type="name">London</reference>
+				</references>
+				<text>The BBC location city is London.</text>
+				<template>The AGENT-1 location city is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>BBC | locationCity | London</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="description">The BBC</reference>
+					<reference entity="London" number="2" tag="PATIENT-1" type="name">London</reference>
+				</references>
+				<text>The BBC is located in London.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | BBC</entity>
+				<entity>PATIENT-1 | London</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id23" size="1">
+			<originaltripleset>
+				<otriple>BBC | product | BBC_Radio</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>BBC | product | BBC_Radio</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>BBC | product | BBC_Radio</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="name">BCC</reference>
+					<reference entity="BBC_Radio" number="2" tag="PATIENT-1" type="name">BCC radio</reference>
+				</references>
+				<text>One of the products of BCC is BCC radio.</text>
+				<template>One of the products of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>BBC | product | BBC_Radio</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC_Radio" number="1" tag="PATIENT-1" type="name">BBC</reference>
+					<reference entity="BBC" number="2" tag="AGENT-1" type="description">the BBC</reference>
+				</references>
+				<text>BBC radio is one of the products of the BBC.</text>
+				<template>PATIENT-1 radio is one of the products of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>BBC | product | BBC_Radio</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="AGENT-1" type="description">The BBC</reference>
+					<reference entity="BBC_Radio" number="2" tag="PATIENT-1" type="name">BBC Radio</reference>
+				</references>
+				<text>The BBC produces BBC Radio.</text>
+				<template>AGENT-1 produces PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | BBC</entity>
+				<entity>PATIENT-1 | BBC_Radio</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id24" size="1">
+			<originaltripleset>
+				<otriple>Balder_(comics) | alterEgo | &quot;Balder Odinson&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Balder_(comicsCharacter) | alternativeName | &quot;Balder Odinson&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Balder_(comicsCharacter) | alternativeName | &quot;Balder Odinson&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Balder_(comicsCharacter)" number="1" tag="AGENT-1" type="description">the comic character Balder</reference>
+					<reference entity="&quot;Balder Odinson&quot;" number="2" tag="PATIENT-1" type="name">Balder Odinson</reference>
+				</references>
+				<text>An alternative name for the comic character Balder is Balder Odinson.</text>
+				<template>An alternative name for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Balder_(comicsCharacter) | alternativeName | &quot;Balder Odinson&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Balder Odinson&quot;" number="1" tag="PATIENT-1" type="name">Balder Odinson</reference>
+					<reference entity="Balder_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the name Balder</reference>
+				</references>
+				<text>Balder Odinson is also known by the name Balder.</text>
+				<template>PATIENT-1 is also known by AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Balder_(comicsCharacter) | alternativeName | &quot;Balder Odinson&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Balder_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Balder 's</reference>
+				</references>
+				<text>The comic character, Balder's alternative name, is Balder Odinson.</text>
+				<template>AGENT-1 alternative name is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Balder_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Balder Odinson&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id25" size="1">
+			<originaltripleset>
+				<otriple>Balder_(comics) | creators | Stan_Lee</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Balder_(comicsCharacter) | creator | Stan_Lee</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Balder_(comicsCharacter) | creator | Stan_Lee</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Stan_Lee" number="1" tag="PATIENT-1" type="name">Stan Lee</reference>
+					<reference entity="Balder_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character Balder</reference>
+				</references>
+				<text>Stan Lee created the comic character Balder.</text>
+				<template>PATIENT-1 created AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Balder_(comicsCharacter) | creator | Stan_Lee</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Balder_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Balder ,</reference>
+					<reference entity="Stan_Lee" number="2" tag="PATIENT-1" type="name">Stan Lee</reference>
+				</references>
+				<text>The comic character, Balder, was created by Stan Lee.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Balder_(comicsCharacter) | creator | Stan_Lee</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Balder_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Balder</reference>
+					<reference entity="Stan_Lee" number="2" tag="PATIENT-1" type="name">Stan Lee</reference>
+				</references>
+				<text>The comic character Balder was created by Stan Lee.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Balder_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Stan_Lee</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id26" size="1">
+			<originaltripleset>
+				<otriple>Ballistic_(DC_Comics) | alterEgo | &quot;Kelvin Mao&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ballistic_(comicsCharacter) | alternativeName | &quot;Kelvin Mao&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ballistic_(comicsCharacter) | alternativeName | &quot;Kelvin Mao&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ballistic_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Ballistic ,</reference>
+					<reference entity="&quot;Kelvin Mao&quot;" number="2" tag="PATIENT-1" type="name">, Kelvin Mao</reference>
+				</references>
+				<text>The comic character, Ballistic, has the alternative name, Kelvin Mao.</text>
+				<template>AGENT-1 has the alternative name PATIENT-1 .</template>
+			</lex>
+			<lex comment="toFix" lid="Id2">
+				<sortedtripleset>
+					<striple>Ballistic_(comicsCharacter) | alternativeName | &quot;Kelvin Mao&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ballistic_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Ballistic is a fictional comic superhero who</reference>
+					<reference entity="&quot;Kelvin Mao&quot;" number="2" tag="PATIENT-1" type="name">Kelvin Mao</reference>
+				</references>
+				<text>Ballistic is a fictional comic superhero who is sometimes known as Kelvin Mao.</text>
+				<template>AGENT-1 is sometimes known as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ballistic_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Kelvin Mao&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id27" size="1">
+			<originaltripleset>
+				<otriple>Ballistic_(DC_Comics) | creators | &quot;Michael Manley&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ballistic_(comicsCharacter) | creator | &quot;Michael Manley&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ballistic_(comicsCharacter) | creator | &quot;Michael Manley&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ballistic_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Ballistic</reference>
+					<reference entity="&quot;Michael Manley&quot;" number="2" tag="PATIENT-1" type="name">Michael Manley</reference>
+				</references>
+				<text>The comic character Ballistic was created by Michael Manley.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ballistic_(comicsCharacter) | creator | &quot;Michael Manley&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ballistic_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Ballistic</reference>
+					<reference entity="&quot;Michael Manley&quot;" number="2" tag="PATIENT-1" type="name">Michael Manley</reference>
+				</references>
+				<text>The comic book character Ballistic was created by Michael Manley.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ballistic_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Michael Manley&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id28" size="1">
+			<originaltripleset>
+				<otriple>Ballistic_(DC_Comics) | creator | Doug_Moench</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ballistic_(comicsCharacter) | creator | Doug_Moench</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ballistic_(comicsCharacter) | creator | Doug_Moench</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ballistic_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Ballistic</reference>
+					<reference entity="Doug_Moench" number="2" tag="PATIENT-1" type="name">Doug Moench</reference>
+				</references>
+				<text>The comic character Ballistic was created by Doug Moench.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ballistic_(comicsCharacter) | creator | Doug_Moench</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Doug_Moench" number="1" tag="PATIENT-1" type="name">Doug Moench ,</reference>
+					<reference entity="Ballistic_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Ballistic</reference>
+				</references>
+				<text>Doug Moench, was the creator of the comic character, Ballistic.</text>
+				<template>PATIENT-1 was the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Ballistic_(comicsCharacter) | creator | Doug_Moench</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Doug_Moench" number="1" tag="PATIENT-1" type="name">Doug Moench</reference>
+					<reference entity="Ballistic_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character Ballistic</reference>
+				</references>
+				<text>Doug Moench created the comic character Ballistic.</text>
+				<template>PATIENT-1 created AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ballistic_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Doug_Moench</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id29" size="1">
+			<originaltripleset>
+				<otriple>Bananaman | creator | John_Geering</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | creator | John_Geering</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | creator | John_Geering</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Geering" number="1" tag="PATIENT-1" type="name">John Geering</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>John Geering is the creator of Bananaman.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | creator | John_Geering</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="description">The TV character Bananaman</reference>
+					<reference entity="John_Geering" number="2" tag="PATIENT-1" type="name">John Geering</reference>
+				</references>
+				<text>The TV character Bananaman was created by John Geering.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bananaman | creator | John_Geering</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="description">The fictional comic superhero Bananaman</reference>
+					<reference entity="John_Geering" number="2" tag="PATIENT-1" type="name">John Geering</reference>
+				</references>
+				<text>The fictional comic superhero Bananaman was created by John Geering.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | John_Geering</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id30" size="1">
+			<originaltripleset>
+				<otriple>Bananaman | creator | Steve_Bright</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Steve_Bright" number="1" tag="PATIENT-1" type="name">Steve Bright</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>Steve Bright is the creator of Bananaman.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Steve_Bright" number="2" tag="PATIENT-1" type="name">Steve Bright</reference>
+				</references>
+				<text>Bananaman was created by Steve Bright.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Steve_Bright" number="2" tag="PATIENT-1" type="name">Steve Bright</reference>
+				</references>
+				<text>The creator of Bananaman is Steve Bright.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Steve_Bright</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id31" size="1">
+			<originaltripleset>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="2" tag="PATIENT-1" type="name">April 15th 1986</reference>
+				</references>
+				<text>Bananaman last aired on April 15th 1986.</text>
+				<template>AGENT-1 last aired on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="2" tag="PATIENT-1" type="name">15th April 1986</reference>
+				</references>
+				<text>Bananaman last aired on 15th April 1986.</text>
+				<template>AGENT-1 last aired on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id32" size="1">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Graeme_Garden</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Graeme_Garden</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Graeme_Garden" number="1" tag="PATIENT-1" type="name">Graeme Garden</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>Graeme Garden stars in Bananaman.</text>
+				<template>PATIENT-1 stars in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Graeme_Garden" number="2" tag="PATIENT-1" type="name">Graeme Garden</reference>
+				</references>
+				<text>Bananaman stars Graeme Garden.</text>
+				<template>AGENT-1 stars PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Graeme_Garden</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id33" size="1">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Jill_Shilling</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Jill_Shilling</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | starring | Jill_Shilling</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jill_Shilling" number="1" tag="PATIENT-1" type="name">Jill Shilling</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>Jill Shilling stared in Bananaman.</text>
+				<template>PATIENT-1 stared in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | starring | Jill_Shilling</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jill_Shilling" number="1" tag="PATIENT-1" type="name">Jill Shilling</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>Jill Shilling starred in Bananaman.</text>
+				<template>PATIENT-1 starred in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Jill_Shilling</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id34" size="1">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Tim_Brooke-Taylor</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+				</references>
+				<text>Tim Brooke-Taylor starred in Bananaman.</text>
+				<template>PATIENT-1 starred in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id35" size="1">
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Duncan_Rouleau" number="2" tag="PATIENT-1" type="name">Duncan Rouleau</reference>
+				</references>
+				<text>Baymax was created by Duncan Rouleau.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Duncan_Rouleau" number="1" tag="PATIENT-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="name">Baymax</reference>
+				</references>
+				<text>Duncan Rouleau created Baymax.</text>
+				<template>PATIENT-1 created AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>PATIENT-1 | Duncan_Rouleau</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id36" size="1">
+			<originaltripleset>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Steven_T._Seagle" number="1" tag="PATIENT-1" type="name">Steven T . Seagle</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="name">Baymax</reference>
+				</references>
+				<text>Steven T. Seagle is the creator of Baymax.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-1" type="name">Steven T</reference>
+				</references>
+				<text>The creator of Baymax is Steven T. Seagle.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-1" type="name">Steve T</reference>
+				</references>
+				<text>Baymax was created by Steve T. Seagle.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>PATIENT-1 | Steven_T._Seagle</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id37" size="1">
+			<originaltripleset>
+				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="PATIENT-1" type="name">Big Hero 6</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="name">Baymax 's</reference>
+				</references>
+				<text>Big Hero 6 was Baymax's first film appearance.</text>
+				<template>PATIENT-1 was AGENT-1 first film appearance .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="description">the character Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="name">Big Hero 6</reference>
+				</references>
+				<text>The first appearance in a film for the character Baymax was Big Hero 6.</text>
+				<template>The first appearance in a film for AGENT-1 was PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
+				</references>
+				<text>Baymax first appeared in the film Big Hero 6.</text>
+				<template>AGENT-1 first appeared in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>PATIENT-1 | Big_Hero_6_(film)</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id38" size="1">
+			<originaltripleset>
+				<otriple>Baymax | voice | Scott_Adsit</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baymax | voice | Scott_Adsit</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | voice | Scott_Adsit</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Scott_Adsit" number="1" tag="PATIENT-1" type="name">Scott Adsit</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="name">Baymax</reference>
+				</references>
+				<text>Scott Adsit does the voice for Baymax.</text>
+				<template>PATIENT-1 does the voice for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | voice | Scott_Adsit</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Scott_Adsit" number="1" tag="PATIENT-1" type="name">Scott Adsit</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">the character Baymax</reference>
+				</references>
+				<text>Scott Adsit provides the voice for the character Baymax.</text>
+				<template>PATIENT-1 provides the voice for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baymax | voice | Scott_Adsit</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="description">The character Baymax</reference>
+					<reference entity="Scott_Adsit" number="2" tag="PATIENT-1" type="name">Scott Adsit</reference>
+				</references>
+				<text>The character Baymax is voiced by Scott Adsit.</text>
+				<template>AGENT-1 is voiced by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>PATIENT-1 | Scott_Adsit</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id39" size="1">
+			<originaltripleset>
+				<otriple>Ben_Urich | creators | Gene_Colan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ben_Urich | creator | Gene_Colan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ben_Urich | creator | Gene_Colan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gene_Colan" number="1" tag="PATIENT-1" type="name">Gene Colan</reference>
+					<reference entity="Ben_Urich" number="2" tag="AGENT-1" type="name">Ben Urich</reference>
+				</references>
+				<text>Gene Colan created Ben Urich.</text>
+				<template>PATIENT-1 created AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ben_Urich | creator | Gene_Colan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ben_Urich" number="1" tag="AGENT-1" type="name">Ben Urich</reference>
+					<reference entity="Gene_Colan" number="2" tag="PATIENT-1" type="name">Gene Colan</reference>
+				</references>
+				<text>Ben Urich was created by Gene Colan.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Ben_Urich | creator | Gene_Colan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ben_Urich" number="1" tag="AGENT-1" type="description">The character Ben Urich</reference>
+					<reference entity="Gene_Colan" number="2" tag="PATIENT-1" type="name">Gene Colan</reference>
+				</references>
+				<text>The character Ben Urich, was created by Gene Colan.</text>
+				<template>AGENT-1 , was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ben_Urich</entity>
+				<entity>PATIENT-1 | Gene_Colan</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id40" size="1">
+			<originaltripleset>
+				<otriple>Ben_Urich | creators | Roger_McKenzie_(comics)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roger_McKenzie_(comic_book_writer)" number="1" tag="PATIENT-1" type="description">The comic book writer , Roger McKenzie ,</reference>
+					<reference entity="Ben_Urich" number="2" tag="AGENT-1" type="name">Ben Urich</reference>
+				</references>
+				<text>The comic book writer, Roger McKenzie, is the creator of Ben Urich.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ben_Urich" number="1" tag="AGENT-1" type="name">Ben Urich</reference>
+					<reference entity="Roger_McKenzie_(comic_book_writer)" number="2" tag="PATIENT-1" type="description">the comic book writer Roger McKenzie</reference>
+				</references>
+				<text>Ben Urich was created by the comic book writer Roger McKenzie.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ben_Urich" number="1" tag="AGENT-1" type="description">The Comic book character Ben Urich</reference>
+					<reference entity="Roger_McKenzie_(comic_book_writer)" number="2" tag="PATIENT-1" type="name">Roger McKenzie</reference>
+				</references>
+				<text>The Comic book character Ben Urich was created by Roger McKenzie.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ben_Urich</entity>
+				<entity>PATIENT-1 | Roger_McKenzie_(comic_book_writer)</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id41" size="1">
+			<originaltripleset>
+				<otriple>Bianca_Castafiore | creators | Hergé</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bianca_Castafiore | creator | Hergé</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bianca_Castafiore | creator | Hergé</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Hergé" number="1" tag="PATIENT-1" type="name">Hergé</reference>
+					<reference entity="Bianca_Castafiore" number="2" tag="AGENT-1" type="description">the character Bianca Castafiore</reference>
+				</references>
+				<text>Hergé was the creator of the character Bianca Castafiore.</text>
+				<template>PATIENT-1 was the creator of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bianca_Castafiore</entity>
+				<entity>PATIENT-1 | Hergé</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id42" size="1">
+			<originaltripleset>
+				<otriple>Bibbo_Bibbowski | creators | Marv_Wolfman</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bibbo_Bibbowski | creator | Marv_Wolfman</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marv_Wolfman" number="1" tag="PATIENT-1" type="name">Marv Wolfman</reference>
+					<reference entity="Bibbo_Bibbowski" number="2" tag="AGENT-1" type="name">Bibbo Bibowski</reference>
+				</references>
+				<text>Marv Wolfman was the creator of Bibbo Bibowski.</text>
+				<template>PATIENT-1 was the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bibbo_Bibbowski" number="1" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
+					<reference entity="Marv_Wolfman" number="2" tag="PATIENT-1" type="name">Marv Wolfman</reference>
+				</references>
+				<text>Bibbo Bibbowski was created by Marv Wolfman.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bibbo_Bibbowski</entity>
+				<entity>PATIENT-1 | Marv_Wolfman</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id43" size="1">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Walt_Disney_Studios_Motion_Pictures" number="1" tag="PATIENT-1" type="name">Walt Disney Studios Motion Pictures</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="AGENT-1" type="description">the film  , Big Hero 6</reference>
+				</references>
+				<text>Walt Disney Studios Motion Pictures is the distributor of the film , Big Hero 6.</text>
+				<template>PATIENT-1 is the distributor of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="name">Big Hero 6  (film )</reference>
+					<reference entity="Walt_Disney_Studios_Motion_Pictures" number="2" tag="PATIENT-1" type="name">Walt Disney Studios Motion Pictures</reference>
+				</references>
+				<text>The distributor of Big Hero 6 (film) is Walt Disney Studios Motion Pictures.</text>
+				<template>The distributor of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | distributor | Walt_Disney_Studios_Motion_Pictures</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="name">Big Hero 6</reference>
+					<reference entity="Walt_Disney_Studios_Motion_Pictures" number="2" tag="PATIENT-1" type="name">Walt Disney Studios Motion Pictures</reference>
+				</references>
+				<text>Big Hero 6 was a film distributed by Walt Disney Studios Motion Pictures.</text>
+				<template>AGENT-1 was a film distributed by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Walt_Disney_Studios_Motion_Pictures</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id44" size="1">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Alan_Tudyk</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Alan_Tudyk</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Tudyk" number="1" tag="PATIENT-1" type="name">Alan Tudyk</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="AGENT-1" type="description">the film , Big Hero 6</reference>
+				</references>
+				<text>Alan Tudyk stars in the film, Big Hero 6.</text>
+				<template>PATIENT-1 stars in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="description">The film , Big Hero 6 ,</reference>
+					<reference entity="Alan_Tudyk" number="2" tag="PATIENT-1" type="name">Alan Tudyk</reference>
+				</references>
+				<text>The film, Big Hero 6, starred Alan Tudyk.</text>
+				<template>AGENT-1 starred PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Alan_Tudyk</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id45" size="1">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="description">The</reference>
+					<reference entity="Damon_Wayans,_Jr." number="2" tag="PATIENT-1" type="name">film Big Hero 6 stars actor Damon Wayans Jr</reference>
+				</references>
+				<text>The film Big Hero 6 stars actor Damon Wayans Jr.</text>
+				<template>AGENT-1 PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="name">Big Hero 6</reference>
+					<reference entity="Damon_Wayans,_Jr." number="2" tag="PATIENT-1" type="name">Damon Wayans , Jr</reference>
+				</references>
+				<text>The film Big Hero 6 stars Damon Wayans, Jr.</text>
+				<template>The film AGENT-1 stars PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Damon_Wayans,_Jr.</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id46" size="1">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Jamie_Chung</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Jamie_Chung</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="description">The film Big Hero 6</reference>
+					<reference entity="Jamie_Chung" number="2" tag="PATIENT-1" type="name">Jamie Chung</reference>
+				</references>
+				<text>The film Big Hero 6 starred Jamie Chung.</text>
+				<template>AGENT-1 starred PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="description">The film Big Hero 6 ,</reference>
+					<reference entity="Jamie_Chung" number="2" tag="PATIENT-1" type="name">Jamie Chung</reference>
+				</references>
+				<text>The film Big Hero 6, stars Jamie Chung.</text>
+				<template>AGENT-1 stars PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jamie_Chung" number="1" tag="PATIENT-1" type="name">Jamie Chung</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="AGENT-1" type="description">the film Big Hero 6</reference>
+				</references>
+				<text>Jamie Chung starred in the film Big Hero 6.</text>
+				<template>PATIENT-1 starred in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Jamie_Chung</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id47" size="1">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Maya_Rudolph</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Maya_Rudolph</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="name">Big Hero 6</reference>
+					<reference entity="Maya_Rudolph" number="2" tag="PATIENT-1" type="name">Maya Rudolph</reference>
+				</references>
+				<text>Big Hero 6 stars Maya Rudolph.</text>
+				<template>AGENT-1 stars PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="name">Big Hero 6  (film )</reference>
+					<reference entity="Maya_Rudolph" number="2" tag="PATIENT-1" type="name">Maya Rudolph</reference>
+				</references>
+				<text>The starring of Big Hero 6 (film) is Maya Rudolph.</text>
+				<template>The starring of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Maya_Rudolph" number="1" tag="PATIENT-1" type="name">Maya Rudolph</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="AGENT-1" type="description">the film Big Hero 6</reference>
+				</references>
+				<text>Maya Rudolph, was one of the stars, in the film Big Hero 6.</text>
+				<template>PATIENT-1 , was one of the stars , in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Maya_Rudolph</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id48" size="1">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Ryan_Potter</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Ryan_Potter</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="description">The film , Big Hero 6 ,</reference>
+					<reference entity="Ryan_Potter" number="2" tag="PATIENT-1" type="name">Ryan Potter</reference>
+				</references>
+				<text>The film, Big Hero 6, stars Ryan Potter.</text>
+				<template>AGENT-1 stars PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ryan_Potter" number="1" tag="PATIENT-1" type="name">Ryan Potter</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="AGENT-1" type="description">the film Big Hero 6</reference>
+				</references>
+				<text>Ryan Potter starred in the film Big Hero 6.</text>
+				<template>PATIENT-1 starred in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="name">Big Hero 6</reference>
+					<reference entity="Ryan_Potter" number="2" tag="PATIENT-1" type="name">Ryan Potter</reference>
+				</references>
+				<text>Big Hero 6 stars Ryan Potter.</text>
+				<template>AGENT-1 stars PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Ryan_Potter</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id49" size="1">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Scott_Adsit</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Big_Hero_6_(film)" number="1" tag="AGENT-1" type="description">The film , Big hero 6 ,</reference>
+					<reference entity="Scott_Adsit" number="2" tag="PATIENT-1" type="name">Scott Adsit</reference>
+				</references>
+				<text>The film, Big hero 6, stars Scott Adsit.</text>
+				<template>AGENT-1 stars PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Scott_Adsit" number="1" tag="PATIENT-1" type="name">Scott Adsit</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="AGENT-1" type="description">the film Big Hero 6</reference>
+				</references>
+				<text>Scott Adsit starred in the film Big Hero 6.</text>
+				<template>PATIENT-1 starred in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Scott_Adsit</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id50" size="1">
+			<originaltripleset>
+				<otriple>Bill_Oddie | birthPlace | Rochdale</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bill_Oddie | birthPlace | Rochdale</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bill_Oddie | birthPlace | Rochdale</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bill_Oddie" number="1" tag="AGENT-1" type="name">Bill Oddie</reference>
+					<reference entity="Rochdale" number="2" tag="PATIENT-1" type="name">Rochdale</reference>
+				</references>
+				<text>Bill Oddie was born in Rochdale.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bill_Oddie</entity>
+				<entity>PATIENT-1 | Rochdale</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id51" size="1">
+			<originaltripleset>
+				<otriple>Black_Pirate | creator | Sheldon_Moldoff</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Black_Pirate | creator | Sheldon_Moldoff</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Black_Pirate | creator | Sheldon_Moldoff</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sheldon_Moldoff" number="1" tag="PATIENT-1" type="name">Sheldon Moldoff</reference>
+					<reference entity="Black_Pirate" number="2" tag="AGENT-1" type="name">Black Pirate</reference>
+				</references>
+				<text>Sheldon Moldoff is the creator of Black Pirate.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Black_Pirate | creator | Sheldon_Moldoff</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sheldon_Moldoff" number="1" tag="PATIENT-1" type="name">Sheldon Moldoff</reference>
+					<reference entity="Black_Pirate" number="2" tag="AGENT-1" type="description">the Black Pirate</reference>
+				</references>
+				<text>Sheldon Moldoff created the Black Pirate.</text>
+				<template>PATIENT-1 created AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Black_Pirate | creator | Sheldon_Moldoff</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Black_Pirate" number="1" tag="AGENT-1" type="description">The Black Pirate</reference>
+					<reference entity="Sheldon_Moldoff" number="2" tag="PATIENT-1" type="name">Sheldon Moldoff</reference>
+				</references>
+				<text>The Black Pirate was created by Sheldon Moldoff.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Black_Pirate</entity>
+				<entity>PATIENT-1 | Sheldon_Moldoff</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id52" size="1">
+			<originaltripleset>
+				<otriple>Blockbuster_(DC_Comics) | alterEgo | &quot;Mark Desmond&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Mark Desmond&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Mark Desmond&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character Blockbuster</reference>
+				</references>
+				<text>&quot;Mark Desmond&quot; is also known as the comic character Blockbuster.</text>
+				<template>`` PATIENT-1 '' is also known as AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Mark Desmond&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Blockbuster ,</reference>
+					<reference entity="&quot;Mark Desmond&quot;" number="2" tag="PATIENT-1" type="name">Mark Desmond</reference>
+				</references>
+				<text>The comic character, Blockbuster, has the alternative name, Mark Desmond.</text>
+				<template>AGENT-1 has the alternative name , PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Mark Desmond&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Blockbuster</reference>
+					<reference entity="&quot;Mark Desmond&quot;" number="2" tag="PATIENT-1" type="name">Mark Desmond</reference>
+				</references>
+				<text>The comic character Blockbuster is also known as Mark Desmond.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Blockbuster_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Mark Desmond&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id53" size="1">
+			<originaltripleset>
+				<otriple>Blockbuster_(DC_Comics) | alterEgo | &quot;Roland Desmond&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Roland Desmond&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Roland Desmond&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Blockbuster</reference>
+					<reference entity="&quot;Roland Desmond&quot;" number="2" tag="PATIENT-1" type="name">Roland Desmond</reference>
+				</references>
+				<text>The comic character Blockbuster is also known as Roland Desmond.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Roland Desmond&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Blockbuster 's</reference>
+					<reference entity="&quot;Roland Desmond&quot;" number="2" tag="PATIENT-1" type="name">Roland Desmond</reference>
+				</references>
+				<text>The comic book character Blockbuster's alter ego is Roland Desmond.</text>
+				<template>AGENT-1 alter ego is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Roland Desmond&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Blockbuster 's</reference>
+					<reference entity="&quot;Roland Desmond&quot;" number="2" tag="PATIENT-1" type="name">Roland Desmond</reference>
+				</references>
+				<text>The comic character, Blockbuster's alternative name is Roland Desmond.</text>
+				<template>AGENT-1 alternative name is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Blockbuster_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Roland Desmond&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id54" size="1">
+			<originaltripleset>
+				<otriple>Blockbuster_(DC_Comics) | creators | Carmine_Infantino</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Blockbuster_(comicsCharacter) | creator | Carmine_Infantino</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Carmine_Infantino</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Blockbuster ,</reference>
+					<reference entity="Carmine_Infantino" number="2" tag="PATIENT-1" type="name">Carmine Infantino</reference>
+				</references>
+				<text>The comic character, Blockbuster, was created by Carmine Infantino.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Carmine_Infantino</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Blockbuster  (comics character )</reference>
+					<reference entity="Carmine_Infantino" number="2" tag="PATIENT-1" type="name">Carmine Infantino</reference>
+				</references>
+				<text>The creator of Blockbuster (comics character) is Carmine Infantino.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Carmine_Infantino</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Blockbuster</reference>
+					<reference entity="Carmine_Infantino" number="2" tag="PATIENT-1" type="name">Carmine Infantino</reference>
+				</references>
+				<text>The comic character Blockbuster was created by Carmine Infantino.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Blockbuster_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Carmine_Infantino</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id55" size="1">
+			<originaltripleset>
+				<otriple>Blockbuster_(DC_Comics) | creator | Gardner_Fox</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Blockbuster_(comicsCharacter) | creator | Gardner_Fox</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Gardner_Fox</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Blockbuster ,</reference>
+					<reference entity="Gardner_Fox" number="2" tag="PATIENT-1" type="name">Gardner Fox</reference>
+				</references>
+				<text>The comic character, Blockbuster, was created by Gardner Fox.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Gardner_Fox</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Blockbuster  (comics character )</reference>
+					<reference entity="Gardner_Fox" number="2" tag="PATIENT-1" type="name">Gardner Fox</reference>
+				</references>
+				<text>The creator of Blockbuster (comics character) is Gardner Fox.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Gardner_Fox</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Blockbuster</reference>
+					<reference entity="Gardner_Fox" number="2" tag="PATIENT-1" type="name">Gardner Fox</reference>
+				</references>
+				<text>The comic book character Blockbuster was created by Gardner Fox.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Blockbuster_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Gardner_Fox</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id56" size="1">
+			<originaltripleset>
+				<otriple>Blockbuster_(DC_Comics) | creators | Roger_Stern</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Blockbuster_(comicsCharacter) | creator | Roger_Stern</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Roger_Stern</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roger_Stern" number="1" tag="PATIENT-1" type="name">Roger Stern</reference>
+					<reference entity="Blockbuster_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Blockbuster</reference>
+				</references>
+				<text>Roger Stern is the creator of the comic character, Blockbuster.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Roger_Stern</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Blockbuster</reference>
+					<reference entity="Roger_Stern" number="2" tag="PATIENT-1" type="name">Roger Stern</reference>
+				</references>
+				<text>The comic character Blockbuster was created by Roger Stern.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Roger_Stern</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Blockbuster</reference>
+					<reference entity="Roger_Stern" number="2" tag="PATIENT-1" type="name">Roger Stern</reference>
+				</references>
+				<text>The comic book character Blockbuster was created by Roger Stern.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Blockbuster_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Roger_Stern</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id57" size="1">
+			<originaltripleset>
+				<otriple>Blockbuster_(DC_Comics) | creator | Tom_Lyle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Blockbuster_(comicsCharacter) | creator | Tom_Lyle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Tom_Lyle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Blockbuster ,</reference>
+					<reference entity="Tom_Lyle" number="2" tag="PATIENT-1" type="name">Tom Lyle</reference>
+				</references>
+				<text>The comic character, Blockbuster, was created by Tom Lyle.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Tom_Lyle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Blockbuster  (comics character )</reference>
+					<reference entity="Tom_Lyle" number="2" tag="PATIENT-1" type="name">Tom Lyle</reference>
+				</references>
+				<text>The creator of Blockbuster (comics character) is Tom Lyle.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Blockbuster_(comicsCharacter) | creator | Tom_Lyle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Blockbuster</reference>
+					<reference entity="Tom_Lyle" number="2" tag="PATIENT-1" type="name">Tom Lyle</reference>
+				</references>
+				<text>The comic character Blockbuster was created by Tom Lyle.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Blockbuster_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Tom_Lyle</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id58" size="1">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">the comic character Bolt</reference>
+					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-1" type="name">Larry Bolatinsky</reference>
+				</references>
+				<text>An alternative name for the comic character Bolt is Larry Bolatinsky.</text>
+				<template>An alternative name for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Larry Bolatinsky&quot;" number="1" tag="PATIENT-1" type="name">Larry Bolatinsky</reference>
+					<reference entity="Bolt_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , Bolt</reference>
+				</references>
+				<text>Larry Bolatinsky is the alternative name for the comic character, Bolt.</text>
+				<template>PATIENT-1 is the alternative name for AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Larry Bolatinsky&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id59" size="1">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Ernie_Colón</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bolt_(comicsCharacter) | creator | Ernie_Colón</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Bolt</reference>
+					<reference entity="Ernie_Colón" number="2" tag="PATIENT-1" type="name">Ernie Colon</reference>
+				</references>
+				<text>Bolt is created by Ernie Colon.</text>
+				<template>AGENT-1 is created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ernie_Colón" number="1" tag="PATIENT-1" type="name">Ernie Colón</reference>
+					<reference entity="Bolt_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character Bolt</reference>
+				</references>
+				<text>Ernie Colón was one of the creators of the comic character Bolt.</text>
+				<template>PATIENT-1 was one of the creators of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt</reference>
+					<reference entity="Ernie_Colón" number="2" tag="PATIENT-1" type="name">Ernie Colon</reference>
+				</references>
+				<text>The comic character Bolt was created by Ernie Colon.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Ernie_Colón</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id60" size="1">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Gary_Cohn_(comics)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Bolt ,</reference>
+					<reference entity="Gary_Cohn_(comics)" number="2" tag="PATIENT-1" type="name">comic book writer Gary Cohn</reference>
+				</references>
+				<text>The comic character, Bolt, was created by comic book writer Gary Cohn.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Bolf  (comics character )</reference>
+					<reference entity="Gary_Cohn_(comics)" number="2" tag="PATIENT-1" type="name">Gary Cohn</reference>
+				</references>
+				<text>The creator of Bolf (comics character) is Gary Cohn.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt</reference>
+					<reference entity="Gary_Cohn_(comics)" number="2" tag="PATIENT-1" type="name">Gary Cohn</reference>
+				</references>
+				<text>The comic character Bolt was created by Gary Cohn.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Gary_Cohn_(comics)</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id61" size="1">
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Paris_Cullins</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bolt_(comicsCharacter) | creator | Paris_Cullins</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Bolt  (comics character )</reference>
+					<reference entity="Paris_Cullins" number="2" tag="PATIENT-1" type="name">Paris Cullins</reference>
+				</references>
+				<text>The creator of Bolt (comics character) is Paris Cullins.</text>
+				<template>The creator of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt</reference>
+					<reference entity="Paris_Cullins" number="2" tag="PATIENT-1" type="name">Paris Cullins</reference>
+				</references>
+				<text>The comic character Bolt, was created by Paris Cullins.</text>
+				<template>AGENT-1 , was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Paris_Cullins</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id62" size="1">
+			<originaltripleset>
+				<otriple>Bozo_the_Iron_Man | creator | George_Brenner</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bozo_the_Iron_Man | creator | George_Brenner</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bozo_the_Iron_Man | creator | George_Brenner</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bozo_the_Iron_Man" number="1" tag="AGENT-1" type="name">Bozo the Iron Man</reference>
+					<reference entity="George_Brenner" number="2" tag="PATIENT-1" type="name">George Brenner</reference>
+				</references>
+				<text>Bozo the Iron Man was created by George Brenner.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bozo_the_Iron_Man | creator | George_Brenner</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="George_Brenner" number="1" tag="PATIENT-1" type="name">George Brenner</reference>
+					<reference entity="Bozo_the_Iron_Man" number="2" tag="AGENT-1" type="name">Bozo the Iron Man</reference>
+				</references>
+				<text>George Brenner is the creator of Bozo the Iron Man.</text>
+				<template>PATIENT-1 is the creator of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bozo_the_Iron_Man | creator | George_Brenner</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bozo_the_Iron_Man" number="1" tag="AGENT-1" type="name">Bozo , the Iron Man</reference>
+					<reference entity="George_Brenner" number="2" tag="PATIENT-1" type="name">George Brenner</reference>
+				</references>
+				<text>Bozo, the Iron Man was created by George Brenner.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bozo_the_Iron_Man</entity>
+				<entity>PATIENT-1 | George_Brenner</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id63" size="1">
+			<originaltripleset>
+				<otriple>Black_Knight_(Dane_Whitman) | alterEgo | &quot;Dane Whitman&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dane_Whitman_Black_Knight_(comicsCharacter) | alternativeName | &quot;Dane Whitman&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset/>
+				<references>
+					<reference entity="&quot;Dane Whitman&quot;" number="1" tag="PATIENT-1" type="name">Dane Whitman</reference>
+					<reference entity="&quot;Dane Whitman&quot;" number="2" tag="PATIENT-1" type="description">the comic character , Dane Whitman Black Knight</reference>
+				</references>
+				<text>Dane Whitman is the alternative name for the comic character, Dane Whitman Black Knight.</text>
+				<template>PATIENT-1 is the alternative name for PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Dane_Whitman_Black_Knight_(comicsCharacter) | alternativeName | &quot;Dane Whitman&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dane_Whitman_Black_Knight_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Dane Whitman Black Knight</reference>
+					<reference entity="&quot;Dane Whitman&quot;" number="2" tag="PATIENT-1" type="name">Dane Whitman</reference>
+				</references>
+				<text>The comic character Dane Whitman Black Knight is also known as simply Dane Whitman.</text>
+				<template>AGENT-1 is also known as simply PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dane_Whitman_Black_Knight_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Dane Whitman&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id64" size="1">
+			<originaltripleset>
+				<otriple>Black_Knight_(Dane_Whitman) | creator | John_Buscema</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dane_Whitman_Black_Knight_(comicsCharacter) | creator | John_Buscema</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Dane_Whitman_Black_Knight_(comicsCharacter) | creator | John_Buscema</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dane_Whitman_Black_Knight_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Dane Whitman , alter ego Black Knight ,</reference>
+					<reference entity="John_Buscema" number="2" tag="PATIENT-1" type="name">John Buscema</reference>
+				</references>
+				<text>Dane Whitman, alter ego Black Knight, was created by John Buscema.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Dane_Whitman_Black_Knight_(comicsCharacter) | creator | John_Buscema</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dane_Whitman_Black_Knight_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Dane Whitman , a .k .a . Black Knight ,</reference>
+					<reference entity="John_Buscema" number="2" tag="PATIENT-1" type="name">John Buscema</reference>
+				</references>
+				<text>Dane Whitman, a.k.a. Black Knight, was created by John Buscema in the comics genre.</text>
+				<template>AGENT-1 was created by PATIENT-1 in the comics genre .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Dane_Whitman_Black_Knight_(comicsCharacter) | creator | John_Buscema</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dane_Whitman_Black_Knight_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Dane Whitman from the Black Knight</reference>
+					<reference entity="John_Buscema" number="2" tag="PATIENT-1" type="name">John Buscema</reference>
+				</references>
+				<text>Dane Whitman from the Black Knight was created by John Buscema.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dane_Whitman_Black_Knight_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | John_Buscema</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id65" size="1">
+			<originaltripleset>
+				<otriple>Black_Knight_(Dane_Whitman) | creator | Roy_Thomas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dane_Whitman_Black_Knight_(comicsCharacter) | creator | Roy_Thomas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Dane_Whitman_Black_Knight_(comicsCharacter) | creator | Roy_Thomas</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dane_Whitman_Black_Knight_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Dane Whitman Black Knight</reference>
+					<reference entity="Roy_Thomas" number="2" tag="PATIENT-1" type="name">Roy Thomas</reference>
+				</references>
+				<text>The comic character, Dane Whitman Black Knight was created by Roy Thomas.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Dane_Whitman_Black_Knight_(comicsCharacter) | creator | Roy_Thomas</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dane_Whitman_Black_Knight_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Dane Whitman Black Knight</reference>
+					<reference entity="Roy_Thomas" number="2" tag="PATIENT-1" type="name">Roy Thomas</reference>
+				</references>
+				<text>Dane Whitman Black Knight is a comic character created by Roy Thomas.</text>
+				<template>AGENT-1 is a comic character created by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Dane_Whitman_Black_Knight_(comicsCharacter) | creator | Roy_Thomas</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dane_Whitman_Black_Knight_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Dane Whitman , alter ego Black Knight ,</reference>
+					<reference entity="Roy_Thomas" number="2" tag="PATIENT-1" type="name">Roy Thomas</reference>
+				</references>
+				<text>The comic book character Dane Whitman, alter ego Black Knight, was created by Roy Thomas.</text>
+				<template>AGENT-1 was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dane_Whitman_Black_Knight_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Roy_Thomas</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id66" size="1">
+			<originaltripleset>
+				<otriple>Dick_Dillin | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dick_Dillin | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Dick_Dillin | nationality | United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dick_Dillin" number="1" tag="AGENT-1" type="name">Dick Dillian</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
+				</references>
+				<text>Dick Dillian is from the United States.</text>
+				<template>AGENT-1 is from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Dick_Dillin | nationality | United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dick_Dillin" number="1" tag="AGENT-1" type="name">Dick Dillin</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>The nationality of Dick Dillin is United States.</text>
+				<template>The nationality of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dick_Dillin</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id67" size="1">
+			<originaltripleset>
+				<otriple>Doug_Moench | award | Eagle_Award_(comics)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Doug_Moench | award | Eagle_Award_(comics)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Doug_Moench | award | Eagle_Award_(comics)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Doug_Moench" number="1" tag="AGENT-1" type="name">Doug Moench</reference>
+					<reference entity="Eagle_Award_(comics)" number="2" tag="PATIENT-1" type="description">the Eagle Award  (comics )</reference>
+				</references>
+				<text>Doug Moench won the Eagle Award (comics).</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Doug_Moench | award | Eagle_Award_(comics)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Doug_Moench" number="1" tag="AGENT-1" type="name">Doug Moench</reference>
+					<reference entity="Eagle_Award_(comics)" number="2" tag="PATIENT-1" type="description">an Eagle Award</reference>
+				</references>
+				<text>Doug Moench has won an Eagle Award.</text>
+				<template>AGENT-1 has won PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Doug_Moench | award | Eagle_Award_(comics)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Doug_Moench" number="1" tag="AGENT-1" type="name">Doug Moench</reference>
+					<reference entity="Eagle_Award_(comics)" number="2" tag="PATIENT-1" type="description">the Eagle Award</reference>
+				</references>
+				<text>Doug Moench received the Eagle Award in the comics field.</text>
+				<template>AGENT-1 received PATIENT-1 in the comics field .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Doug_Moench</entity>
+				<entity>PATIENT-1 | Eagle_Award_(comics)</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id68" size="1">
+			<originaltripleset>
+				<otriple>Doug_Moench | award | Inkpot_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Doug_Moench | award | Inkpot_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Doug_Moench | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Doug_Moench" number="1" tag="AGENT-1" type="name">Doug Moench</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="description">the Inkpot Award</reference>
+				</references>
+				<text>Doug Moench won the Inkpot Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Doug_Moench</entity>
+				<entity>PATIENT-1 | Inkpot_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id69" size="1">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Duncan_Rouleau" number="1" tag="AGENT-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>The nationality of Duncan Rouleau is American.</text>
+				<template>The nationality of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Duncan_Rouleau" number="1" tag="AGENT-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>Duncan Rouleau is American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Duncan_Rouleau" number="1" tag="AGENT-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>Duncan Rouleau is an American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Duncan_Rouleau</entity>
+				<entity>PATIENT-1 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id70" size="1">
+			<originaltripleset>
+				<otriple>Ernie_Colón | nationality | Puerto_Ricans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ernie_Colón | nationality | Puerto_Ricans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ernie_Colón" number="1" tag="AGENT-1" type="name">Ernie Colón</reference>
+					<reference entity="Puerto_Ricans" number="2" tag="PATIENT-1" type="name">Puerto Rico</reference>
+					<reference entity="Ernie_Colón" number="3" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Puerto_Ricans" number="4" tag="PATIENT-1" type="name">Puerto Rican</reference>
+				</references>
+				<text>Ernie Colón is a national of Puerto Rico so he is considered Puerto Rican.</text>
+				<template>AGENT-1 is a national of PATIENT-1 so AGENT-1 is considered PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ernie_Colón" number="1" tag="AGENT-1" type="name">Ernie Colon</reference>
+					<reference entity="Puerto_Ricans" number="2" tag="PATIENT-1" type="name">Puerto Rican</reference>
+				</references>
+				<text>Ernie Colon is a Puerto Rican national.</text>
+				<template>AGENT-1 is a PATIENT-1 national .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ernie_Colón</entity>
+				<entity>PATIENT-1 | Puerto_Ricans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id71" size="1">
+			<originaltripleset>
+				<otriple>Gene_Colan | award | Eisner_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Gene_Colan | award | Eisner_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Gene_Colan | award | Eisner_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gene_Colan" number="1" tag="AGENT-1" type="name">Gene Colan</reference>
+					<reference entity="Eisner_Award" number="2" tag="PATIENT-1" type="description">the Eisner Award</reference>
+				</references>
+				<text>Gene Colan has been awarded the Eisner Award.</text>
+				<template>AGENT-1 has been awarded PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Gene_Colan | award | Eisner_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gene_Colan" number="1" tag="AGENT-1" type="name">Gene Colan</reference>
+					<reference entity="Eisner_Award" number="2" tag="PATIENT-1" type="description">the Eisner Award</reference>
+				</references>
+				<text>Gene Colan won the Eisner Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Gene_Colan</entity>
+				<entity>PATIENT-1 | Eisner_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id72" size="1">
+			<originaltripleset>
+				<otriple>Gene_Colan | nationality | Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Gene_Colan | nationality | Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Gene_Colan | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gene_Colan" number="1" tag="AGENT-1" type="name">Gene Colan</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>Gene Colan is an American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Gene_Colan | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Gene_Colan" number="1" tag="AGENT-1" type="name">Gene Colan 's</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>Gene Colan's nationality is American.</text>
+				<template>AGENT-1 nationality is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Gene_Colan</entity>
+				<entity>PATIENT-1 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id73" size="1">
+			<originaltripleset>
+				<otriple>Graeme_Garden | birthPlace | Aberdeen</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Graeme_Garden | birthPlace | Aberdeen</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Graeme_Garden | birthPlace | Aberdeen</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Graeme_Garden" number="1" tag="AGENT-1" type="name">Graeme Garden</reference>
+					<reference entity="Aberdeen" number="2" tag="PATIENT-1" type="name">Aberdeen</reference>
+				</references>
+				<text>Graeme Garden was born in Aberdeen.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Graeme_Garden | birthPlace | Aberdeen</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Graeme_Garden" number="1" tag="AGENT-1" type="name">Graeme Garden</reference>
+					<reference entity="Aberdeen" number="2" tag="PATIENT-1" type="name">Aberdeen</reference>
+				</references>
+				<text>The birth place of Graeme Garden is Aberdeen.</text>
+				<template>The birth place of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Graeme_Garden</entity>
+				<entity>PATIENT-1 | Aberdeen</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id74" size="1">
+			<originaltripleset>
+				<otriple>Jack_Kirby | nationality | Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Jack_Kirby | nationality | Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Jack_Kirby | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jack_Kirby" number="1" tag="AGENT-1" type="name">Jack Kirby</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>Jack Kirby is an American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset/>
+				<references>
+					<reference entity="Jack_Kirby" number="1" tag="AGENT-1" type="name">Jack Kirby 's</reference>
+				</references>
+				<text>Jack Kirby's nationality is American.</text>
+				<template>AGENT-1 nationality is American .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Jack_Kirby | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jack_Kirby" number="1" tag="AGENT-1" type="name">Jack Kirby</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>Jack Kirby was an American.</text>
+				<template>AGENT-1 was PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Jack_Kirby</entity>
+				<entity>PATIENT-1 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id75" size="1">
+			<originaltripleset>
+				<otriple>Jan_Duursema | awards | Eisner_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Jan_Duursema | award | Eisner_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Jan_Duursema | award | Eisner_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jan_Duursema" number="1" tag="AGENT-1" type="name">Jan Duursema</reference>
+					<reference entity="Eisner_Award" number="2" tag="PATIENT-1" type="description">the Eisner Award</reference>
+				</references>
+				<text>Jan Duursema has won the Eisner Award.</text>
+				<template>AGENT-1 has won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Jan_Duursema</entity>
+				<entity>PATIENT-1 | Eisner_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id76" size="1">
+			<originaltripleset>
+				<otriple>Jerry_Ordway | nationality | Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Jerry_Ordway | nationality | Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Jerry_Ordway | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jerry_Ordway" number="1" tag="AGENT-1" type="name">Jerry Ordway 's</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>Jerry Ordway's nationality is American.</text>
+				<template>AGENT-1 nationality is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Jerry_Ordway | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jerry_Ordway" number="1" tag="AGENT-1" type="name">Jerry Ordway</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>Jerry Ordway is American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Jerry_Ordway</entity>
+				<entity>PATIENT-1 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id77" size="1">
+			<originaltripleset>
+				<otriple>John_Buscema | award | Academy_of_Comic_Book_Arts</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>John_Buscema | award | Academy_of_Comic_Book_Arts</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>John_Buscema | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>John Buscema was awarded an award by the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 was awarded an award by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>John_Buscema | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>John Buscema has been awarded by the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 has been awarded by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>John_Buscema | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>John Buscema won an award at the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 won an award at PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | John_Buscema</entity>
+				<entity>PATIENT-1 | Academy_of_Comic_Book_Arts</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id78" size="1">
+			<originaltripleset>
+				<otriple>John_Buscema | award | Alley_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>John_Buscema | award | Alley_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>John_Buscema | award | Alley_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema</reference>
+					<reference entity="Alley_Award" number="2" tag="PATIENT-1" type="description">the Alley Award</reference>
+				</references>
+				<text>John Buscema won the Alley Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | John_Buscema</entity>
+				<entity>PATIENT-1 | Alley_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id79" size="1">
+			<originaltripleset>
+				<otriple>John_Buscema | award | Inkpot_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>John_Buscema | award | Inkpot_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>John_Buscema | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="description">the Inkpot Award</reference>
+				</references>
+				<text>John Buscema won the Inkpot Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>John_Buscema | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="description">the Inkpot Award</reference>
+				</references>
+				<text>John Buscema has won the Inkpot Award.</text>
+				<template>AGENT-1 has won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | John_Buscema</entity>
+				<entity>PATIENT-1 | Inkpot_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id80" size="1">
+			<originaltripleset>
+				<otriple>John_Buscema | nationality | Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>John_Buscema | nationality | Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>John_Buscema | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Americans" number="1" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="John_Buscema" number="2" tag="AGENT-1" type="name">John Buscema</reference>
+				</references>
+				<text>American was the nationality of John Buscema.</text>
+				<template>PATIENT-1 was the nationality of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>John_Buscema | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>John Buscema is an American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>John_Buscema | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Buscema" number="1" tag="AGENT-1" type="name">John Buscema 's</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>John Buscema's nationality is American.</text>
+				<template>AGENT-1 nationality is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | John_Buscema</entity>
+				<entity>PATIENT-1 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id81" size="1">
+			<originaltripleset>
+				<otriple>Len_Wein | award | Academy_of_Comic_Book_Arts</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Len_Wein | award | Academy_of_Comic_Book_Arts</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Len_Wein | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Len_Wein" number="1" tag="AGENT-1" type="name">Len Wein</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>Len Wein collected an award from the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 collected an award from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Len_Wein | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Len_Wein" number="1" tag="AGENT-1" type="name">Len Wein</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>Len Wein has won awards from the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 has won awards from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Len_Wein</entity>
+				<entity>PATIENT-1 | Academy_of_Comic_Book_Arts</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id82" size="1">
+			<originaltripleset>
+				<otriple>Len_Wein | award | Inkpot_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Len_Wein | award | Inkpot_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Len_Wein | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Len_Wein" number="1" tag="AGENT-1" type="name">Len Wein</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="description">the Inkpot Award</reference>
+				</references>
+				<text>Len Wein won the Inkpot Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Len_Wein | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Len_Wein" number="1" tag="AGENT-1" type="name">Len Wein</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="name">Inkpot Award</reference>
+				</references>
+				<text>Len Wein is an Inkpot Award winner.</text>
+				<template>AGENT-1 is an PATIENT-1 winner .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Len_Wein</entity>
+				<entity>PATIENT-1 | Inkpot_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id83" size="1">
+			<originaltripleset>
+				<otriple>Marv_Wolfman | award | Academy_of_Comic_Book_Arts</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Marv_Wolfman | award | Academy_of_Comic_Book_Arts</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Marv_Wolfman | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marv_Wolfman" number="1" tag="AGENT-1" type="name">Marv Wolfwan</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>Marv Wolfwan won an award at the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 won an award at PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Marv_Wolfman</entity>
+				<entity>PATIENT-1 | Academy_of_Comic_Book_Arts</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id84" size="1">
+			<originaltripleset>
+				<otriple>Marv_Wolfman | award | Inkpot_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Marv_Wolfman | award | Inkpot_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Marv_Wolfman | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marv_Wolfman" number="1" tag="AGENT-1" type="name">Marv Wolfman</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="description">the Inkpot Award</reference>
+				</references>
+				<text>Marv Wolfman won the Inkpot Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Marv_Wolfman | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marv_Wolfman" number="1" tag="AGENT-1" type="name">Marv Wolfman</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="description">the Inkpot Award</reference>
+				</references>
+				<text>Marv Wolfman was awarded the Inkpot Award.</text>
+				<template>AGENT-1 was awarded PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Marv_Wolfman</entity>
+				<entity>PATIENT-1 | Inkpot_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id85" size="1">
+			<originaltripleset>
+				<otriple>Paris_Cullins | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Paris_Cullins | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Paris_Cullins | nationality | United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paris_Cullins" number="1" tag="AGENT-1" type="name">Paris Cullins</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>Paris Cullins is a United States national.</text>
+				<template>AGENT-1 is a PATIENT-1 national .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Paris_Cullins | nationality | United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paris_Cullins" number="1" tag="AGENT-1" type="name">Paris Cullins</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>The nationality of Paris Cullins is United States.</text>
+				<template>The nationality of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Paris_Cullins</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id86" size="1">
+			<originaltripleset>
+				<otriple>René_Goscinny | nationality | French_people</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>René_Goscinny | nationality | French_people</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>René_Goscinny | nationality | French_people</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="René_Goscinny" number="1" tag="AGENT-1" type="name">Rene Goscinny</reference>
+					<reference entity="French_people" number="2" tag="PATIENT-1" type="description">a French</reference>
+				</references>
+				<text>Rene Goscinny is a French national.</text>
+				<template>AGENT-1 is PATIENT-1 national .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>René_Goscinny | nationality | French_people</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="René_Goscinny" number="1" tag="AGENT-1" type="name">René Goscinny</reference>
+					<reference entity="French_people" number="2" tag="PATIENT-1" type="name">French</reference>
+				</references>
+				<text>The nationality of René Goscinny is French.</text>
+				<template>The nationality of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | René_Goscinny</entity>
+				<entity>PATIENT-1 | French_people</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id87" size="1">
+			<originaltripleset>
+				<otriple>Roger_McKenzie_(comics) | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Roger_McKenzie_(comic_book_writer) | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Roger_McKenzie_(comic_book_writer) | nationality | United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roger_McKenzie_(comic_book_writer)" number="1" tag="AGENT-1" type="description">The comic book writer , Roger McKenzie ,</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">United States</reference>
+				</references>
+				<text>The comic book writer, Roger McKenzie, is a United States national.</text>
+				<template>AGENT-1 is a PATIENT-1 national .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Roger_McKenzie_(comic_book_writer) | nationality | United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roger_McKenzie_(comic_book_writer)" number="1" tag="AGENT-1" type="description">The comic book writer , Roger McKenzie</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>The comic book writer, Roger McKenzie is an American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Roger_McKenzie_(comic_book_writer)</entity>
+				<entity>PATIENT-1 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id88" size="1">
+			<originaltripleset>
+				<otriple>Roy_Thomas | award | Academy_of_Comic_Book_Arts</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Roy_Thomas | award | Academy_of_Comic_Book_Arts</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Roy_Thomas | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roy_Thomas" number="1" tag="AGENT-1" type="name">Roy Thomas</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>Roy Thomas was an award winner at the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 was an award winner at PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Roy_Thomas | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roy_Thomas" number="1" tag="AGENT-1" type="name">Roy Thomas</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>Roy Thomas received an award from the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 received an award from PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Roy_Thomas | award | Academy_of_Comic_Book_Arts</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roy_Thomas" number="1" tag="AGENT-1" type="name">Roy Thomas</reference>
+					<reference entity="Academy_of_Comic_Book_Arts" number="2" tag="PATIENT-1" type="description">the Academy of Comic Book Arts</reference>
+				</references>
+				<text>Roy Thomas won an award from the Academy of Comic Book Arts.</text>
+				<template>AGENT-1 won an award from PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Roy_Thomas</entity>
+				<entity>PATIENT-1 | Academy_of_Comic_Book_Arts</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id89" size="1">
+			<originaltripleset>
+				<otriple>Roy_Thomas | award | Alley_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Roy_Thomas | award | Alley_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Roy_Thomas | award | Alley_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roy_Thomas" number="1" tag="AGENT-1" type="name">Roy Thomas</reference>
+					<reference entity="Alley_Award" number="2" tag="PATIENT-1" type="description">the Alley Award</reference>
+				</references>
+				<text>Roy Thomas was awarded the Alley Award.</text>
+				<template>AGENT-1 was awarded PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Roy_Thomas | award | Alley_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Roy_Thomas" number="1" tag="AGENT-1" type="name">Roy Thomas</reference>
+					<reference entity="Alley_Award" number="2" tag="PATIENT-1" type="description">the Alley Award</reference>
+				</references>
+				<text>Roy Thomas won the Alley Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Roy_Thomas</entity>
+				<entity>PATIENT-1 | Alley_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id90" size="1">
+			<originaltripleset>
+				<otriple>Sheldon_Moldoff | award | Inkpot_Award</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Sheldon_Moldoff | award | Inkpot_Award</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Sheldon_Moldoff | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sheldon_Moldoff" number="1" tag="AGENT-1" type="name">Sheldon Moldoff</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="description">the Inkpot Award</reference>
+				</references>
+				<text>Sheldon Moldoff won the Inkpot Award.</text>
+				<template>AGENT-1 won PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Sheldon_Moldoff | award | Inkpot_Award</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sheldon_Moldoff" number="1" tag="AGENT-1" type="name">Sheldon Moldoff</reference>
+					<reference entity="Inkpot_Award" number="2" tag="PATIENT-1" type="description">the Inkpot Award</reference>
+				</references>
+				<text>Sheldon Moldoff has won the Inkpot Award.</text>
+				<template>AGENT-1 has won PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Sheldon_Moldoff</entity>
+				<entity>PATIENT-1 | Inkpot_Award</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id91" size="1">
+			<originaltripleset>
+				<otriple>Sheldon_Moldoff | nationality | Americans</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Sheldon_Moldoff | nationality | Americans</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Sheldon_Moldoff | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sheldon_Moldoff" number="1" tag="AGENT-1" type="name">Sheldon Moldoff</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+				</references>
+				<text>Sheldon Moldoff was an American national.</text>
+				<template>AGENT-1 was an PATIENT-1 national .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Sheldon_Moldoff | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sheldon_Moldoff" number="1" tag="AGENT-1" type="name">Sheldon Moldoff</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>Sheldon Moldoff is an American.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Sheldon_Moldoff</entity>
+				<entity>PATIENT-1 | Americans</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id92" size="1">
+			<originaltripleset>
+				<otriple>Arrow_(comics) | alterEgo | &quot;Ralph Payne&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>The_Arrow_(comicsCharacter) | alternativeName | &quot;Ralph Payne&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>The_Arrow_(comicsCharacter) | alternativeName | &quot;Ralph Payne&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="The_Arrow_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The Arrow</reference>
+					<reference entity="&quot;Ralph Payne&quot;" number="2" tag="PATIENT-1" type="name">Ralph Payne</reference>
+				</references>
+				<text>The Arrow is otherwise known as Ralph Payne.</text>
+				<template>AGENT-1 is otherwise known as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>The_Arrow_(comicsCharacter) | alternativeName | &quot;Ralph Payne&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="The_Arrow_(comicsCharacter)" number="1" tag="AGENT-1" type="description">the comic character , the Arrow ,</reference>
+					<reference entity="&quot;Ralph Payne&quot;" number="2" tag="PATIENT-1" type="name">Ralph Payne</reference>
+				</references>
+				<text>The alternative name for the comic character, the Arrow, is Ralph Payne.</text>
+				<template>The alternative name for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | The_Arrow_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Ralph Payne&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id93" size="1">
+			<originaltripleset>
+				<otriple>Arrow_(comics) | alterEgo | &quot;Rick Parker&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>The_Arrow_(comicsCharacter) | alternativeName | &quot;Rick Parker&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>The_Arrow_(comicsCharacter) | alternativeName | &quot;Rick Parker&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Rick Parker&quot;" number="1" tag="PATIENT-1" type="name">Rick Parker</reference>
+					<reference entity="The_Arrow_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic character , the Arrow</reference>
+				</references>
+				<text>Rick Parker, is the alternative name for the comic character, the Arrow.</text>
+				<template>PATIENT-1 , is the alternative name for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>The_Arrow_(comicsCharacter) | alternativeName | &quot;Rick Parker&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The alternative name for The Arrow (comics character) is &quot;Rick Parker&quot;.</text>
+				<template>The alternative name for AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>The_Arrow_(comicsCharacter) | alternativeName | &quot;Rick Parker&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="The_Arrow_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character The Arrow 's</reference>
+					<reference entity="&quot;Rick Parker&quot;" number="2" tag="PATIENT-1" type="name">Rick Parker</reference>
+				</references>
+				<text>The comic book character The Arrow's alter ego is Rick Parker.</text>
+				<template>AGENT-1 alter ego is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | The_Arrow_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | &quot;Rick Parker&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id94" size="1">
+			<originaltripleset>
+				<otriple>Arrow_(comics) | creator | Paul_Gustavson</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>The_Arrow_(comicsCharacter) | creator | Paul_Gustavson</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>The_Arrow_(comicsCharacter) | creator | Paul_Gustavson</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paul_Gustavson" number="1" tag="PATIENT-1" type="name">Paul Gustavson</reference>
+					<reference entity="The_Arrow_(comicsCharacter)" number="2" tag="AGENT-1" type="description">The Arrow</reference>
+				</references>
+				<text>Paul Gustavson created The Arrow.</text>
+				<template>PATIENT-1 created AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>The_Arrow_(comicsCharacter) | creator | Paul_Gustavson</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="The_Arrow_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character</reference>
+					<reference entity="Paul_Gustavson" number="2" tag="PATIENT-1" type="name">Paul Gustavson</reference>
+				</references>
+				<text>The comic character, The Arrow, was created by Paul Gustavson.</text>
+				<template>AGENT-1 , The Arrow , was created by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | The_Arrow_(comicsCharacter)</entity>
+				<entity>PATIENT-1 | Paul_Gustavson</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id95" size="1">
+			<originaltripleset>
+				<otriple>Tim_Brooke-Taylor | birthPlace | Buxton</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Tim_Brooke-Taylor | birthPlace | Buxton</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | Buxton</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="AGENT-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="Buxton" number="2" tag="PATIENT-1" type="name">Buxton</reference>
+				</references>
+				<text>Tim Brooke-Taylor was born in Buxton.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | Buxton</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buxton" number="1" tag="PATIENT-1" type="name">Buxton</reference>
+					<reference entity="Tim_Brooke-Taylor" number="2" tag="AGENT-1" type="name">Tim Brooke-Taylor</reference>
+				</references>
+				<text>Buxton is the birthplace of Tim Brooke-Taylor.</text>
+				<template>PATIENT-1 is the birthplace of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-1 | Buxton</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id96" size="1">
+			<originaltripleset>
+				<otriple>Tim_Brooke-Taylor | birthPlace | Derbyshire</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Tim_Brooke-Taylor | birthPlace | Derbyshire</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | Derbyshire</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="AGENT-1" type="name">Tim Brooke Taylor</reference>
+					<reference entity="Derbyshire" number="2" tag="PATIENT-1" type="name">Derbyshire</reference>
+				</references>
+				<text>Tim Brooke Taylor was born in Derbyshire.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | Derbyshire</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="AGENT-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="Derbyshire" number="2" tag="PATIENT-1" type="name">Derbyshire</reference>
+				</references>
+				<text>Tim Brooke-Taylor was born in Derbyshire.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-1 | Derbyshire</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id97" size="1">
+			<originaltripleset>
+				<otriple>Tim_Brooke-Taylor | birthPlace | England</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Tim_Brooke-Taylor | birthPlace | England</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | England</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="AGENT-1" type="name">Tim Brooke Taylor</reference>
+					<reference entity="England" number="2" tag="PATIENT-1" type="name">England</reference>
+				</references>
+				<text>Tim Brooke Taylor was born in England.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | England</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="AGENT-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="England" number="2" tag="PATIENT-1" type="name">England</reference>
+				</references>
+				<text>Tim Brooke-Taylor was born in England.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-1 | England</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id98" size="1">
+			<originaltripleset>
+				<otriple>Tim_Brooke-Taylor | birthPlace | United_Kingdom</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Tim_Brooke-Taylor | birthPlace | United_Kingdom</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | United_Kingdom</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="AGENT-1" type="name">Tim Brooke-Taylor 's</reference>
+					<reference entity="United_Kingdom" number="2" tag="PATIENT-1" type="description">the United Kingdom</reference>
+				</references>
+				<text>Tim Brooke-Taylor's birth place is the United Kingdom.</text>
+				<template>AGENT-1 birth place is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | United_Kingdom</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="AGENT-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="United_Kingdom" number="2" tag="PATIENT-1" type="description">the UK</reference>
+				</references>
+				<text>Tim Brooke-Taylor was born in the UK.</text>
+				<template>AGENT-1 was born in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Tim_Brooke-Taylor | birthPlace | United_Kingdom</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tim_Brooke-Taylor" number="1" tag="AGENT-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="United_Kingdom" number="2" tag="PATIENT-1" type="name">United Kingdom</reference>
+				</references>
+				<text>The birth place of Tim Brooke-Taylor is United Kingdom.</text>
+				<template>The birth place of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-1 | United_Kingdom</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

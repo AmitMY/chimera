@@ -1,0 +1,840 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="ComicsCharacter" eid="Id1" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | John_Geering</otriple>
+				<otriple>Bananaman | starring | Graeme_Garden</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | John_Geering</mtriple>
+				<mtriple>Bananaman | starring | Graeme_Garden</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset/>
+				<references/>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. Bananaman last aired on 15th April 1986. Graeme Garden is one of the stars of the series which was created by John Geering.</text>
+				<template/>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | John_Geering</striple>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">October 3rd , 1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">broadcast its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">April 15th , 1986</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="description">The fictional comic superhero Bananaman</reference>
+					<reference entity="John_Geering" number="7" tag="PATIENT-2" type="name">John Geering</reference>
+					<reference entity="Graeme_Garden" number="8" tag="PATIENT-3" type="name">stars Graeme Garden</reference>
+				</references>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. The fictional comic superhero Bananaman was created by John Geering and stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-1 on PATIENT-4 and AGENT-1 last episode on PATIENT-5 . AGENT-1 was created by PATIENT-2 and PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+					<striple>Bananaman | creator | John_Geering</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">October 3rd , 1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">broadcast its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">April 15th , 1986</reference>
+					<reference entity="Graeme_Garden" number="6" tag="PATIENT-3" type="name">Graeme Garden</reference>
+					<reference entity="John_Geering" number="7" tag="PATIENT-2" type="name">John Geering</reference>
+				</references>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. Graeme Garden was one of the stars on the series which was created by John Geering.</text>
+				<template>AGENT-1 first aired on PATIENT-1 on PATIENT-4 and AGENT-1 last episode on PATIENT-5 . PATIENT-3 was one of the stars on the series which was created by PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | John_Geering</entity>
+				<entity>PATIENT-3 | Graeme_Garden</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id2" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | starring | Bill_Oddie</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | starring | Bill_Oddie</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset/>
+				<references/>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. Steve Bright created the series which starred Bill Oddie.</text>
+				<template/>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Bill_Oddie</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">3 October 1985</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="4" tag="PATIENT-5" type="name">15 April 1986</reference>
+					<reference entity="Bananaman" number="5" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Steve_Bright" number="6" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="Bill_Oddie" number="7" tag="PATIENT-3" type="name">Bill Oddie</reference>
+				</references>
+				<text>Bananaman was shown by the BBC and aired between 3 October 1985 and 15 April 1986. It was created by Steve Bright and starred Bill Oddie.</text>
+				<template>AGENT-1 was shown by PATIENT-1 and aired between PATIENT-4 and PATIENT-5 . AGENT-1 was created by PATIENT-2 and starred PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Bill_Oddie</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="description">the TV series</reference>
+					<reference entity="BBC" number="3" tag="PATIENT-1" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="4" tag="PATIENT-4" type="name">3 October 1983</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">15 April 1986</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Steve_Bright" number="7" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="Bill_Oddie" number="8" tag="PATIENT-3" type="name">Bill Oddie</reference>
+				</references>
+				<text>Bananaman was the TV series shown by the BBC between 3 October 1983 and 15 April 1986. It was created by Steve Bright and starred Bill Oddie.</text>
+				<template>AGENT-1 was AGENT-1 shown by PATIENT-1 between PATIENT-4 and PATIENT-5 . AGENT-1 was created by PATIENT-2 and starred PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | Bill_Oddie</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id3" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | starring | Graeme_Garden</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | starring | Graeme_Garden</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">BBC 10/03/1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">15th April 1986</reference>
+					<reference entity="Steve_Bright" number="6" tag="PATIENT-2" type="description">The creator of Bananaman</reference>
+					<reference entity="Steve_Bright" number="7" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="Bananaman" number="8" tag="AGENT-1" type="description">the show</reference>
+					<reference entity="Graeme_Garden" number="9" tag="PATIENT-3" type="name">Graeme Garden</reference>
+				</references>
+				<text>Bananaman first aired on the BBC 10/03/1983 and its last broadcast was 15th April 1986. The creator of Bananaman is Steve Bright and the show stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-1 PATIENT-4 and AGENT-1 last broadcast was PATIENT-5 . PATIENT-2 is PATIENT-2 and AGENT-1 stars PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">October 3rd , 1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">broadcast its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">April 15th , 1986</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Steve_Bright" number="7" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="Graeme_Garden" number="8" tag="PATIENT-3" type="name">Graeme Garden</reference>
+				</references>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. It was created by Steve Bright and stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-1 on PATIENT-4 and AGENT-1 last episode on PATIENT-5 . AGENT-1 was created by PATIENT-2 and stars PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | Graeme_Garden</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id4" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | starring | Jill_Shilling</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | starring | Jill_Shilling</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Jill_Shilling</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="PATIENT-1" type="description">The BBC</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="description">the TV series</reference>
+					<reference entity="Bananaman" number="3" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="4" tag="PATIENT-4" type="name">3 October 1983</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">15 April 1986</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Steve_Bright" number="7" tag="PATIENT-3" type="name">Steve Bright</reference>
+					<reference entity="Jill_Shilling" number="8" tag="PATIENT-2" type="name">Jill Shilling</reference>
+				</references>
+				<text>The BBC aired the TV series of Bananaman between 3 October 1983 and 15 April 1986. It was created by Steve Bright and starred Jill Shilling.</text>
+				<template>PATIENT-1 aired AGENT-1 of AGENT-1 between PATIENT-4 and PATIENT-5 . AGENT-1 was created by PATIENT-3 and starred PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Jill_Shilling</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">10/03/1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">April 15th , 1986</reference>
+					<reference entity="Steve_Bright" number="6" tag="PATIENT-3" type="description">The creator</reference>
+					<reference entity="Bananaman" number="7" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Steve_Bright" number="8" tag="PATIENT-3" type="name">Steve Bright</reference>
+					<reference entity="Bananaman" number="9" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Jill_Shilling" number="10" tag="PATIENT-2" type="name">Jill Shilling</reference>
+				</references>
+				<text>Bananaman began airing on the BBC on 10/03/1983 and its last broadcast was April 15th, 1986. The creator of Bananaman is Steve Bright and among its stars are Jill Shilling.</text>
+				<template>AGENT-1 began airing on PATIENT-1 on PATIENT-4 and AGENT-1 last broadcast was PATIENT-5 . PATIENT-3 of AGENT-1 is PATIENT-3 and among AGENT-1 stars are PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Jill_Shilling</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">3 October 1983</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="4" tag="PATIENT-5" type="name">15 April 1986</reference>
+					<reference entity="Bananaman" number="5" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Steve_Bright" number="6" tag="PATIENT-3" type="name">Steve Bright</reference>
+					<reference entity="Jill_Shilling" number="7" tag="PATIENT-2" type="name">Jill Shilling</reference>
+				</references>
+				<text>Bananaman was broadcast by the BBC, airing between 3 October 1983 and 15 April 1986. It was created by Steve Bright and starred Jill Shilling.</text>
+				<template>AGENT-1 was broadcast by PATIENT-1 , airing between PATIENT-4 and PATIENT-5 . AGENT-1 was created by PATIENT-3 and starred PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | BBC</entity>
+				<entity>PATIENT-2 | Jill_Shilling</entity>
+				<entity>PATIENT-3 | Steve_Bright</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id5" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | creator | John_Geering</otriple>
+				<otriple>Bananaman | starring | Graeme_Garden</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | network | &quot;STV&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | creator | John_Geering</mtriple>
+				<mtriple>Bananaman | starring | Graeme_Garden</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | John_Geering</striple>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;STV&quot;" number="2" tag="PATIENT-5" type="name">STV</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-3" type="name">October 3rd , 1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">broadcast its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-4" type="name">April 15th , 1986</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="description">The series</reference>
+					<reference entity="John_Geering" number="7" tag="PATIENT-1" type="name">John Geering</reference>
+					<reference entity="Graeme_Garden" number="8" tag="PATIENT-2" type="name">stars Graeme Garden</reference>
+				</references>
+				<text>Bananaman first aired on STV on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. The series, which was created by John Geering, stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-5 on PATIENT-3 and AGENT-1 last episode on PATIENT-4 . AGENT-1 , which was created by PATIENT-1 , PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | creator | John_Geering</striple>
+					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="description">The TV character Bananaman</reference>
+					<reference entity="John_Geering" number="2" tag="PATIENT-1" type="name">John Geering</reference>
+					<reference entity="Bananaman" number="3" tag="AGENT-1" type="description">The programme</reference>
+					<reference entity="&quot;STV&quot;" number="4" tag="PATIENT-5" type="name">STV</reference>
+					<reference entity="Graeme_Garden" number="5" tag="PATIENT-2" type="name">Graeme Garden</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="7" tag="PATIENT-3" type="name">10th March 1983</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="8" tag="PATIENT-4" type="name">15th April 1986</reference>
+				</references>
+				<text>The TV character Bananaman was created by John Geering. The programme was broadcast by STV and starred Graeme Garden. Bananaman was first shown on 10th March 1983 and last aired on 15th April 1986.</text>
+				<template>AGENT-1 was created by PATIENT-1 . AGENT-1 was broadcast by PATIENT-5 and starred PATIENT-2 . AGENT-1 was first shown on PATIENT-3 and last aired on PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | John_Geering</striple>
+					<striple>Bananaman | starring | Graeme_Garden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;STV&quot;" number="2" tag="PATIENT-5" type="name">STV</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-3" type="name">October 3rd , 1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">broadcast its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-4" type="name">April 15th , 1986</reference>
+					<reference entity="John_Geering" number="6" tag="PATIENT-1" type="name">John Geering</reference>
+					<reference entity="Bananaman" number="7" tag="AGENT-1" type="description">the series</reference>
+					<reference entity="Graeme_Garden" number="8" tag="PATIENT-2" type="name">Graeme Garden</reference>
+				</references>
+				<text>Bananaman first aired on STV on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. John Geering created the series which stars Graeme Garden.</text>
+				<template>AGENT-1 first aired on PATIENT-5 on PATIENT-3 and AGENT-1 last episode on PATIENT-4 . PATIENT-1 created AGENT-1 which stars PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | John_Geering</entity>
+				<entity>PATIENT-2 | Graeme_Garden</entity>
+				<entity>PATIENT-3 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-4 | &quot;1986-04-15&quot;</entity>
+				<entity>PATIENT-5 | &quot;STV&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id6" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Jill_Shilling</otriple>
+				<otriple>Bananaman | creator | Steve_Bright</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | network | &quot;STV&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Jill_Shilling</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Jill_Shilling</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;STV&quot;" number="2" tag="PATIENT-5" type="name">STV</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-3" type="name">3 October 1983</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="4" tag="PATIENT-4" type="name">15 April 1986</reference>
+					<reference entity="Bananaman" number="5" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Steve_Bright" number="6" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="Jill_Shilling" number="7" tag="PATIENT-1" type="name">Jill Shilling</reference>
+				</references>
+				<text>Bananaman was broadcast by STV between 3 October 1983 and 15 April 1986. It was created by Steve Bright and starred Jill Shilling.</text>
+				<template>AGENT-1 was broadcast by PATIENT-5 between PATIENT-3 and PATIENT-4 . AGENT-1 was created by PATIENT-2 and starred PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Jill_Shilling</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;STV&quot;" number="2" tag="PATIENT-5" type="name">STV</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-3" type="name">October 3rd , 1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">broadcast its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-4" type="name">April 15th , 1986</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="description">The series</reference>
+					<reference entity="Steve_Bright" number="7" tag="PATIENT-2" type="name">Steve Bright</reference>
+					<reference entity="Jill_Shilling" number="8" tag="PATIENT-1" type="name">Jill Shilling</reference>
+				</references>
+				<text>Bananaman first aired on STV on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. The series was created by Steve Bright and starred Jill Shilling.</text>
+				<template>AGENT-1 first aired on PATIENT-5 on PATIENT-3 and AGENT-1 last episode on PATIENT-4 . AGENT-1 was created by PATIENT-2 and starred PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset/>
+				<references/>
+				<text>Bananaman was broadcast by STV from 3 October 1983 until 15 April 1986. It was created by Steve Bright and starred Jill Shilling.</text>
+				<template/>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Jill_Shilling</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
+				<entity>PATIENT-3 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-4 | &quot;1986-04-15&quot;</entity>
+				<entity>PATIENT-5 | &quot;STV&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id7" size="5">
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+				<otriple>Bananaman | lastAired | &quot;1986-04-15&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bananaman | starring | Tim_Brooke-Taylor</mtriple>
+				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
+				<mtriple>Bananaman | creator | Steve_Bright</mtriple>
+				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
+				<mtriple>Bananaman | lastAired | &quot;1986-04-15&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="BBC" number="1" tag="PATIENT-2" type="description">The BBC</reference>
+					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">10/03/1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">April 15th , 1986</reference>
+					<reference entity="Steve_Bright" number="6" tag="PATIENT-3" type="name">Steve Bright</reference>
+					<reference entity="Bananaman" number="7" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="Tim_Brooke-Taylor" number="8" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
+					<reference entity="Bananaman" number="9" tag="AGENT-1" type="pronoun">its</reference>
+				</references>
+				<text>The BBC began broadcasting Bananaman on 10/03/1983 and its last episode went to air on April 15th, 1986. Steve Bright is one of the creators of Bananaman which has Tim Brooke-Taylor as one of its stars.</text>
+				<template>PATIENT-2 began broadcasting AGENT-1 on PATIENT-4 and AGENT-1 last episode went to air on PATIENT-5 . PATIENT-3 is one of the creators of AGENT-1 which has PATIENT-1 as one of AGENT-1 stars .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bananaman | broadcastedBy | BBC</striple>
+					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
+					<striple>Bananaman | lastAired | &quot;1986-04-15&quot;</striple>
+					<striple>Bananaman | creator | Steve_Bright</striple>
+					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
+					<reference entity="BBC" number="2" tag="PATIENT-2" type="description">the BBC</reference>
+					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">October 3rd , 1983</reference>
+					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">broadcast its</reference>
+					<reference entity="&quot;1986-04-15&quot;" number="5" tag="PATIENT-5" type="name">April 15th , 1986</reference>
+					<reference entity="Bananaman" number="6" tag="AGENT-1" type="pronoun">Its</reference>
+					<reference entity="Steve_Bright" number="7" tag="PATIENT-3" type="name">Steve Bright</reference>
+					<reference entity="Tim_Brooke-Taylor" number="8" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
+				</references>
+				<text>Bananaman first aired on the BBC on October 3rd, 1983 and broadcast its last episode on April 15th, 1986. Its creator was Steve Bright and the series starred Tim Brooke-Taylor.</text>
+				<template>AGENT-1 first aired on PATIENT-2 on PATIENT-4 and AGENT-1 last episode on PATIENT-5 . AGENT-1 creator was PATIENT-3 and the series starred PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bananaman</entity>
+				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
+				<entity>PATIENT-2 | BBC</entity>
+				<entity>PATIENT-3 | Steve_Bright</entity>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-5 | &quot;1986-04-15&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id8" size="5">
+			<originaltripleset>
+				<otriple>Big_Hero_6_(film) | starring | Ryan_Potter</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Big_Hero_6_(film) | starring | Ryan_Potter</mtriple>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-2" type="description">the American</reference>
+					<reference entity="Duncan_Rouleau" number="3" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="4" tag="PATIENT-3" type="name">Steven T Seagle</reference>
+					<reference entity="Baymax" number="5" tag="AGENT-1" type="description">The character</reference>
+					<reference entity="Big_Hero_6_(film)" number="6" tag="BRIDGE-2" type="name">Big Hero</reference>
+					<reference entity="Ryan_Potter" number="7" tag="PATIENT-1" type="name">Ryan Potter</reference>
+				</references>
+				<text>Baymax was created by the American, Duncan Rouleau and Steven T Seagle. The character appeared in Big Hero 6 which stars Ryan Potter.</text>
+				<template>AGENT-1 was created by PATIENT-2 , BRIDGE-1 and PATIENT-3 . AGENT-1 appeared in BRIDGE-2 6 which stars PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Ryan_Potter</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="description">The character of Baymax</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Ryan_Potter" number="3" tag="PATIENT-1" type="name">Ryan Potter</reference>
+					<reference entity="Baymax" number="4" tag="AGENT-1" type="pronoun">He</reference>
+				</references>
+				<text>The character of Baymax appeared in Big Hero 6 which stars Ryan Potter. He was created by Steven T Seagle and the American, Duncan Rouleau.</text>
+				<template>AGENT-1 appeared in BRIDGE-2 which stars PATIENT-1 . AGENT-1 was created by PATIENT-3 and , BRIDGE-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Ryan_Potter</entity>
+				<entity>PATIENT-2 | Americans</entity>
+				<entity>PATIENT-3 | Steven_T._Seagle</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id9" size="5">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="3" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the</reference>
+					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">american Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="6" tag="PATIENT-2" type="name">Steven T</reference>
+					<reference entity="Damon_Wayans,_Jr." number="7" tag="PATIENT-3" type="name">Seagle . Damon Wayans , Jr .</reference>
+					<reference entity="Big_Hero_6_(film)" number="8" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
+				</references>
+				<text>Baymax, a character in Big Hero 6, was created by the american Duncan Rouleau and by Steven T. Seagle. Damon Wayans, Jr. starred in the film Big Hero 6.</text>
+				<template>AGENT-1 , AGENT-1 in BRIDGE-2 , was created by PATIENT-1 BRIDGE-1 and by PATIENT-2 . PATIENT-3 starred in BRIDGE-2.</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="3" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the</reference>
+					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">american Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="6" tag="PATIENT-2" type="name">Steven T</reference>
+					<reference entity="Damon_Wayans,_Jr." number="7" tag="PATIENT-3" type="name">Seagle . Damon Wayans , Jr .</reference>
+					<reference entity="Baymax" number="8" tag="AGENT-1" type="description">the film</reference>
+					<reference entity="Big_Hero_6_(film)" number="9" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+				</references>
+				<text>Baymax, a character in Big Hero 6, was created by the american Duncan Rouleau and by Steven T. Seagle. Damon Wayans, Jr. starred in the film version of Big Hero 6.</text>
+				<template>AGENT-1 , AGENT-1 in BRIDGE-2, was created by PATIENT-1 BRIDGE-1 and by PATIENT-2 . PATIENT-3 starred in AGENT-1 version of BRIDGE-2.</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="3" tag="BRIDGE-2" type="description">the</reference>
+					<reference entity="Big_Hero_6_(film)" number="4" tag="BRIDGE-2" type="name">film Big Hero 6</reference>
+					<reference entity="Damon_Wayans,_Jr." number="5" tag="PATIENT-3" type="name">Damon Wayans Jr</reference>
+					<reference entity="Baymax" number="6" tag="AGENT-1" type="pronoun">He</reference>
+				</references>
+				<text>Baymax is a character in the film Big Hero 6 which stars Damon Wayans Jr. He was created by Steven t Seagle and the American, Duncan Rouleau.</text>
+				<template>AGENT-1 is AGENT-1 in BRIDGE-2 BRIDGE-2 which stars PATIENT-3 . AGENT-1 was created by PATIENT-2  and , BRIDGE-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
+				<entity>PATIENT-3 | Damon_Wayans,_Jr.</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id10" size="5">
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Jamie_Chung</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Jamie_Chung</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="3" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Jamie_Chung" number="4" tag="PATIENT-3" type="name">Jamie Chung</reference>
+					<reference entity="Steven_T._Seagle" number="5" tag="PATIENT-2" type="name">Steve T . Seagle</reference>
+					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Americans" number="7" tag="PATIENT-1" type="description">an American</reference>
+				</references>
+				<text>Baymax is a character in Big Hero 6 which stars Jamie Chung and was created by Steve T. Seagle and Duncan Rouleau, an American.</text>
+				<template>AGENT-1 is AGENT-1 in BRIDGE-2 which stars PATIENT-3 and was created by PATIENT-2 and BRIDGE-1 , PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="7" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Jamie_Chung" number="8" tag="PATIENT-3" type="name">Jamie Chung</reference>
+				</references>
+				<text>Baymax is a character created by Steven T Seagle and the American, Duncan Rouleau. He appears in Big Hero 6 that stars Jamie Chung.</text>
+				<template>AGENT-1 is AGENT-1 created by PATIENT-2 and , PATIENT-1 BRIDGE-1 . AGENT-1 appears in BRIDGE-2 that stars PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="3" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Jamie_Chung" number="4" tag="PATIENT-3" type="name">Jamie Chung</reference>
+					<reference entity="Baymax" number="5" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Americans" number="6" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="Duncan_Rouleau" number="7" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="8" tag="PATIENT-2" type="name">Steven T</reference>
+				</references>
+				<text>Baymax is a character in Big Hero 6 which stars Jamie Chung. Baymax was created by American Duncan Rouleau and Steven T. Seagle.</text>
+				<template>AGENT-1 is AGENT-1 in BRIDGE-2 which stars PATIENT-3 . AGENT-1 was created by PATIENT-1 BRIDGE-1 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
+				<entity>PATIENT-3 | Jamie_Chung</entity>
+			</entitymap>
+		</entry>
+		<entry category="ComicsCharacter" eid="Id11" size="5">
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Maya_Rudolph</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
+				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
+				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
+				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
+				<mtriple>Big_Hero_6_(film) | starring | Maya_Rudolph</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Americans" number="3" tag="PATIENT-1" type="description">the</reference>
+					<reference entity="Duncan_Rouleau" number="4" tag="BRIDGE-1" type="name">american Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="5" tag="PATIENT-2" type="name">Steve T</reference>
+					<reference entity="Maya_Rudolph" number="6" tag="PATIENT-3" type="name">Seagle . Maya Rudolph</reference>
+					<reference entity="Big_Hero_6_(film)" number="7" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+				</references>
+				<text>Baymax a character in Big Hero 6 was created by the american Duncan Rouleau and by Steve T. Seagle. Maya Rudolph was one of the stars in the film version of Big Hero 6.</text>
+				<template>AGENT-1 in BRIDGE-2 was created by PATIENT-1 BRIDGE-1 and by PATIENT-2 . PATIENT-3 was one of the stars in the film version of BRIDGE-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="3" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Steven_T._Seagle" number="4" tag="PATIENT-2" type="name">Steve T . Seagle</reference>
+					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Americans" number="6" tag="PATIENT-1" type="description">an American</reference>
+					<reference entity="Baymax" number="7" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="Maya_Rudolph" number="8" tag="PATIENT-3" type="name">Maya Rudolph</reference>
+				</references>
+				<text>Baymax, is a character in Big Hero 6 whose creators are Steve T. Seagle and Duncan Rouleau, an American and it stars Maya Rudolph.</text>
+				<template>AGENT-1 , is AGENT-1 in BRIDGE-2 whose creators are PATIENT-2 and BRIDGE-1 , PATIENT-1 and AGENT-1 stars PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baymax | creator | Duncan_Rouleau</striple>
+					<striple>Duncan_Rouleau | nationality | Americans</striple>
+					<striple>Baymax | creator | Steven_T._Seagle</striple>
+					<striple>Baymax | series | Big_Hero_6_(film)</striple>
+					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
+					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="Duncan_Rouleau" number="3" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
+					<reference entity="Steven_T._Seagle" number="4" tag="PATIENT-2" type="name">Steven T</reference>
+					<reference entity="Baymax" number="5" tag="AGENT-1" type="name">Seagle . Baymax</reference>
+					<reference entity="Baymax" number="6" tag="AGENT-1" type="description">a character</reference>
+					<reference entity="Big_Hero_6_(film)" number="7" tag="BRIDGE-2" type="name">Big Hero 6</reference>
+					<reference entity="Maya_Rudolph" number="8" tag="PATIENT-3" type="name">Maya Rudolph</reference>
+				</references>
+				<text>Baymax was created by American Duncan Rouleau and Steven T. Seagle. Baymax is a character in Big Hero 6 which stars Maya Rudolph.</text>
+				<template>AGENT-1 was created by PATIENT-1 BRIDGE-1 and PATIENT-2 . AGENT-1 is AGENT-1 in BRIDGE-2 which stars PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baymax</entity>
+				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-1 | Americans</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
+				<entity>PATIENT-3 | Maya_Rudolph</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

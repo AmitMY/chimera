@@ -1,0 +1,937 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id1" size="6">
+			<originaltripleset>
+				<otriple>Alan_Bean | mission | Apollo_12</otriple>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Apollo_12 | operator | NASA</otriple>
+				<otriple>Apollo_12 | crew1Up | David_Scott</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+				<otriple>Alan_Bean | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Bean | was a crew member of | Apollo_12</mtriple>
+				<mtriple>Alan_Bean | nationality | United_States</mtriple>
+				<mtriple>Apollo_12 | operator | NASA</mtriple>
+				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
+				<mtriple>Alan_Bean | birthPlace | Wheeler,_Texas</mtriple>
+				<mtriple>Alan_Bean | status | &quot;Retired&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Bean | nationality | United_States</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+					<striple>Apollo_12 | commander | David_Scott</striple>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="name">American Alan Bean was a member of NASA 's</reference>
+					<reference entity="NASA" number="3" tag="PATIENT-2" type="name">NASA 's</reference>
+					<reference entity="Apollo_12" number="4" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="David_Scott" number="5" tag="PATIENT-3" type="name">David Scott</reference>
+					<reference entity="Alan_Bean" number="6" tag="AGENT-1" type="name">Bean</reference>
+					<reference entity="Wheeler,_Texas" number="7" tag="PATIENT-4" type="name">Wheeler , Texas</reference>
+					<reference entity="&quot;Retired&quot;" number="8" tag="PATIENT-5" type="name">retired</reference>
+				</references>
+				<text>American Alan Bean was a member of NASA's @ Apollo 12 which was commanded by David Scott. Bean, who was born in Wheeler, Texas, is now retired.</text>
+				<template>PATIENT-1 @ AGENT-1 was a member of PATIENT-2 @ BRIDGE-1 which was commanded by PATIENT-3 . AGENT-1 , who was born in PATIENT-4 , is now PATIENT-5 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Bean | nationality | United_States</striple>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+					<striple>Apollo_12 | commander | David_Scott</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="Alan_Bean" number="2" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="Wheeler,_Texas" number="3" tag="PATIENT-4" type="name">Wheeler , Texas</reference>
+					<reference entity="&quot;Retired&quot;" number="4" tag="PATIENT-5" type="name">retired</reference>
+					<reference entity="Alan_Bean" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_12" number="6" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="NASA" number="7" tag="PATIENT-2" type="name">NASA</reference>
+					<reference entity="David_Scott" number="8" tag="PATIENT-3" type="name">David Scott</reference>
+					<reference entity="Apollo_12" number="9" tag="BRIDGE-1" type="name">Apollo 12</reference>
+				</references>
+				<text>American @ Alan Bean was born in Wheeler, Texas and is retired. He was on the crew of Apollo 12, whose operator was NASA and David Scott was the commander of Apollo 12.</text>
+				<template>PATIENT-1 @ AGENT-1 was born in PATIENT-4 and is PATIENT-5 . AGENT-1 was on the crew of BRIDGE-1 , whose operator was PATIENT-2 and PATIENT-3 was the commander of BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+					<striple>Apollo_12 | commander | David_Scott</striple>
+					<striple>Alan_Bean | status | &quot;Retired&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="Wheeler,_Texas" number="2" tag="PATIENT-4" type="name">Wheeler , Texas</reference>
+					<reference entity="NASA" number="3" tag="PATIENT-2" type="name">NASA</reference>
+					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Apollo_12" number="5" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="David_Scott" number="6" tag="PATIENT-3" type="name">David Scott</reference>
+					<reference entity="Alan_Bean" number="7" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="Alan_Bean" number="8" tag="AGENT-1" type="name">Mr Bean</reference>
+					<reference entity="&quot;Retired&quot;" number="9" tag="PATIENT-5" type="name">retired</reference>
+				</references>
+				<text>Alan Bean is originally from Wheeler, Texas and joined NASA where he became a crew member of Apollo 12. David Scott was his commander and Mr Bean is now retired.</text>
+				<template>AGENT-1 is originally from PATIENT-4 and joined PATIENT-2 where AGENT-1 became a crew member of BRIDGE-1 . PATIENT-3 was AGENT-1 commander and AGENT-1 is now PATIENT-5 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | NASA</entity>
+				<entity>PATIENT-3 | David_Scott</entity>
+				<entity>PATIENT-4 | Wheeler,_Texas</entity>
+				<entity>PATIENT-5 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id2" size="6">
+			<originaltripleset>
+				<otriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;@en</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | selection | 1959</otriple>
+				<otriple>Alan_Shepard | nationality | United_States</otriple>
+				<otriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | was selected by NASA | 1959</mtriple>
+				<mtriple>Alan_Shepard | nationality | United_States</mtriple>
+				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Shepard | nationality | United_States</striple>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-5" type="description">The American</reference>
+					<reference entity="Alan_Shepard" number="2" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="3" tag="PATIENT-6" type="name">November 18 , 1923</reference>
+					<reference entity="New_Hampshire" number="4" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="Alan_Shepard" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="6" tag="PATIENT-1" type="description">an M .A . from NWC in 1957</reference>
+					<reference entity="1959" number="7" tag="PATIENT-4" type="name">1959</reference>
+					<reference entity="Alan_Shepard" number="8" tag="AGENT-1" type="name">Shepard</reference>
+					<reference entity="California" number="9" tag="PATIENT-2" type="name">California</reference>
+				</references>
+				<text>The American @ Alan Shepard was born on November 18, 1923, in New Hampshire. He graduated with an M.A. from NWC in 1957, and was hired by NASA in 1959. Shepard died in California.</text>
+				<template>PATIENT-5 @ AGENT-1 was born on PATIENT-6 , in PATIENT-3 . AGENT-1 graduated with PATIENT-1 , and was hired by NASA in PATIENT-4 . AGENT-1 died in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Shepard | nationality | United_States</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-5" type="description">an American</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="3" tag="PATIENT-1" type="name">NWC and graduated with an MA in 1957</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="1959" number="5" tag="PATIENT-4" type="name">1959</reference>
+					<reference entity="Alan_Shepard" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="New_Hampshire" number="7" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="8" tag="PATIENT-6" type="name">November 18 , 1923</reference>
+					<reference entity="California" number="9" tag="PATIENT-2" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was an American who went to school at NWC and graduated with an MA in 1957. He was selected by NASA in 1959. He was born in New Hampshire on November 18, 1923 and died in California.</text>
+				<template>AGENT-1 was PATIENT-5 who went to school at PATIENT-1 . AGENT-1 was selected by NASA in PATIENT-4 . AGENT-1 was born in PATIENT-3 on PATIENT-6 and died in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | &quot;NWC, M.A. 1957&quot;</entity>
+				<entity>PATIENT-2 | California</entity>
+				<entity>PATIENT-3 | New_Hampshire</entity>
+				<entity>PATIENT-4 | 1959</entity>
+				<entity>PATIENT-5 | United_States</entity>
+				<entity>PATIENT-6 | &quot;1923-11-18&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id3" size="6">
+			<originaltripleset>
+				<otriple>Alan_Shepard | status | &quot;Deceased&quot;@en</otriple>
+				<otriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;@en</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | selection | 1959</otriple>
+				<otriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | status | &quot;Deceased&quot;</mtriple>
+				<mtriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | was selected by NASA | 1959</mtriple>
+				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="2" tag="PATIENT-6" type="description">the 18th of November , 1923</reference>
+					<reference entity="New_Hampshire" number="3" tag="PATIENT-4" type="name">New Hampshire</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="5" tag="PATIENT-2" type="name">NWC with a M .A . in 1957</reference>
+					<reference entity="1959" number="6" tag="PATIENT-5" type="name">1959</reference>
+					<reference entity="Alan_Shepard" number="7" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="California" number="8" tag="PATIENT-3" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was born on the 18th of November, 1923 in New Hampshire. He graduated from NWC with a M.A. in 1957 and was selected by NASA in 1959. His death place was California.</text>
+				<template>AGENT-1 was born on PATIENT-6 in PATIENT-4 . AGENT-1 graduated from PATIENT-2 and was selected by NASA in PATIENT-5 . AGENT-1 death place was PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="2" tag="PATIENT-6" type="name">November 18th , 1923</reference>
+					<reference entity="New_Hampshire" number="3" tag="PATIENT-4" type="name">New Hampshire</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="5" tag="PATIENT-2" type="name">NWC with a M .A . in 1957</reference>
+					<reference entity="1959" number="6" tag="PATIENT-5" type="name">1959</reference>
+					<reference entity="Alan_Shepard" number="7" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="California" number="8" tag="PATIENT-3" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was born November 18th, 1923 in New Hampshire. He graduated from NWC with a M.A. in 1957 and was selected by NASA in 1959. He passed away in California.</text>
+				<template>AGENT-1 was born PATIENT-6 in PATIENT-4 . AGENT-1 graduated from PATIENT-2 and was selected by NASA in PATIENT-5 . AGENT-1 passed away in PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
+				<entity>PATIENT-2 | &quot;NWC, M.A. 1957&quot;</entity>
+				<entity>PATIENT-3 | California</entity>
+				<entity>PATIENT-4 | New_Hampshire</entity>
+				<entity>PATIENT-5 | 1959</entity>
+				<entity>PATIENT-6 | &quot;1923-11-18&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id4" size="6">
+			<originaltripleset>
+				<otriple>Alan_Shepard | mission | Apollo_14</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | dateOfRet | &quot;1974-08-01&quot;^^xsd:date</otriple>
+				<otriple>Apollo_14 | operator | NASA</otriple>
+				<otriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | was a crew member of | Apollo_14</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</mtriple>
+				<mtriple>Apollo_14 | operator | NASA</mtriple>
+				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+					<striple>Apollo_14 | operator | NASA</striple>
+					<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="2" tag="PATIENT-5" type="name">November 18 , 1923</reference>
+					<reference entity="New_Hampshire" number="3" tag="PATIENT-2" type="name">New Hampshire</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="NASA" number="5" tag="PATIENT-4" type="name">NASA 's</reference>
+					<reference entity="Apollo_14" number="6" tag="BRIDGE-1" type="name">Apollo 14</reference>
+					<reference entity="&quot;1974-08-01&quot;" number="7" tag="PATIENT-3" type="name">August 1 , 1974</reference>
+					<reference entity="Alan_Shepard" number="8" tag="AGENT-1" type="name">Shepard</reference>
+					<reference entity="California" number="9" tag="PATIENT-1" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was born on November 18, 1923, in New Hampshire. He served as a crew member on NASA's @ Apollo 14 mission before retiring on August 1, 1974. Shepard passed away in California.</text>
+				<template>AGENT-1 was born on PATIENT-5 , in PATIENT-2 . AGENT-1 served as a crew member on PATIENT-4 @ BRIDGE-1 mission before retiring on PATIENT-3 . AGENT-1 passed away in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+					<striple>Apollo_14 | operator | NASA</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="NASA" number="2" tag="PATIENT-4" type="name">NASA 's</reference>
+					<reference entity="Apollo_14" number="3" tag="BRIDGE-1" type="name">Apollo 14</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="New_Hampshire" number="5" tag="PATIENT-2" type="name">New Hampshire</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="6" tag="PATIENT-5" type="name">November 18th</reference>
+					<reference entity="Alan_Shepard" number="7" tag="AGENT-1" type="name">1923 , he</reference>
+					<reference entity="&quot;1974-08-01&quot;" number="8" tag="PATIENT-3" type="name">August 1st , 1974</reference>
+					<reference entity="California" number="9" tag="PATIENT-1" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was part of NASA's @ Apollo 14 crew. He was born in New Hampshire on November 18th, 1923, he retired August 1st, 1974 and died in California.</text>
+				<template>AGENT-1 was part of PATIENT-4 @ BRIDGE-1 crew . AGENT-1 was born in PATIENT-2 on PATIENT-5 , AGENT-1 retired PATIENT-3 and died in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+					<striple>Apollo_14 | operator | NASA</striple>
+					<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="2" tag="PATIENT-5" type="name">1923</reference>
+					<reference entity="New_Hampshire" number="3" tag="PATIENT-2" type="name">New Hampshire </reference>
+					<reference entity="NASA" number="5" tag="PATIENT-4" type="name">NASA</reference>
+					<reference entity="Apollo_14" number="6" tag="BRIDGE-1" type="name">Apollo 14</reference>
+					<reference entity="Alan_Shepard" number="7" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;1974-08-01&quot;" number="8" tag="PATIENT-3" type="name">August 1974</reference>
+					<reference entity="Alan_Shepard" number="9" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="California" number="10" tag="PATIENT-1" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was born in 1923 in New Hampshire . He worked for NASA and became a crew member for Apollo 14 before he retired in August 1974. He later died in California.</text>
+				<template>AGENT-1 was born in PATIENT-5 in PATIENT-2 . AGENT-1 worked for PATIENT-4 and became a crew member for BRIDGE-1 before AGENT-1 retired in PATIENT-3 . AGENT-1 later died in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Apollo_14</entity>
+				<entity>PATIENT-1 | California</entity>
+				<entity>PATIENT-2 | New_Hampshire</entity>
+				<entity>PATIENT-3 | &quot;1974-08-01&quot;</entity>
+				<entity>PATIENT-4 | NASA</entity>
+				<entity>PATIENT-5 | &quot;1923-11-18&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id5" size="6">
+			<originaltripleset>
+				<otriple>Alan_Shepard | ribbon | &quot;American Defense Service ribbon.svg&quot;@en</otriple>
+				<otriple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;^^xsd:date</otriple>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | was awarded | &quot;American Defense Service ribbon.svg&quot;</mtriple>
+				<mtriple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</mtriple>
+				<mtriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | was awarded | &quot;American Defense Service ribbon.svg&quot;</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+					<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shephard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="Alan_Shepard" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;American Defense Service ribbon.svg&quot;" number="4" tag="PATIENT-1" type="description">the American Defence Service Ribbon</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="5" tag="BRIDGE-1" type="description">The United States Navy</reference>
+					<reference entity="Alan_Shepard" number="6" tag="AGENT-1" type="pronoun">him</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="7" tag="BRIDGE-1" type="description">the Distinguished Service Medal</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="8" tag="PATIENT-3" type="description">the Department of Commerce Gold Medal</reference>
+					<reference entity="Alan_Shepard" number="9" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;1998-07-21&quot;" number="10" tag="PATIENT-2" type="name">July 21st , 1998</reference>
+				</references>
+				<text>Alan Shephard was born in New Hampshire. He was won the American Defence Service Ribbon. The United States Navy also awarded him @ the Distinguished Service Medal, which is higher than the Department of Commerce Gold Medal. He died on July 21st, 1998.</text>
+				<template>AGENT-1 was born in PATIENT-5 . AGENT-1 was won PATIENT-1 . BRIDGE-1 also awarded AGENT-1 @ BRIDGE-1 , which is higher than PATIENT-3 . AGENT-1 died on PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | was awarded | &quot;American Defense Service ribbon.svg&quot;</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+					<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;1998-07-21&quot;" number="2" tag="PATIENT-2" type="description">the 21st of July , 1998</reference>
+					<reference entity="California" number="3" tag="PATIENT-4" type="name">California</reference>
+					<reference entity="New_Hampshire" number="4" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="Alan_Shepard" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;American Defense Service ribbon.svg&quot;" number="6" tag="PATIENT-1" type="name">American Defense Service ribbon</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="7" tag="BRIDGE-1" type="description">the Distinguished Service Medal by the United States Navy</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="8" tag="BRIDGE-1" type="description">The Distinguished Service Medal of the United States Navy</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="9" tag="PATIENT-3" type="description">the Department of Commerce Gold Medal</reference>
+				</references>
+				<text>Alan Shepard (who died on the 21st of July, 1998 in California) was born in New Hampshire. He was awarded American Defense Service ribbon, as well as the Distinguished Service Medal by the United States Navy. The Distinguished Service Medal of the United States Navy is ranked higher than the Department of Commerce Gold Medal.</text>
+				<template>AGENT-1 ( who died on PATIENT-2 in PATIENT-4 ) was born in PATIENT-5 . AGENT-1 was awarded PATIENT-1 , as well as BRIDGE-1 . BRIDGE-1 is ranked higher than PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+					<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | was awarded | &quot;American Defense Service ribbon.svg&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="1" tag="BRIDGE-1" type="description">The U .S Navy</reference>
+					<reference entity="Alan_Shepard" number="2" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="3" tag="BRIDGE-1" type="description">the Distinguished Service Medal</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="4" tag="PATIENT-3" type="description">the Department of Commerce Gold Medal</reference>
+					<reference entity="Alan_Shepard" number="5" tag="AGENT-1" type="name">Shepard</reference>
+					<reference entity="New_Hampshire" number="6" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="&quot;1998-07-21&quot;" number="7" tag="PATIENT-2" type="name">July 21st , 1998</reference>
+					<reference entity="California" number="8" tag="PATIENT-4" type="name">California</reference>
+					<reference entity="&quot;American Defense Service ribbon.svg&quot;" number="9" tag="PATIENT-1" type="description">the American Defense Service Ribbon</reference>
+				</references>
+				<text>The U.S Navy awarded Alan Shepard @ the Distinguished Service Medal, an award that ranks higher than the Department of Commerce Gold Medal. Shepard who was born in New Hampshire and died July 21st, 1998 in California, was also the recipient of the American Defense Service Ribbon.</text>
+				<template>BRIDGE-1 awarded AGENT-1 @ BRIDGE-1 , an award that ranks higher than PATIENT-3 . AGENT-1 who was born in PATIENT-5 and died PATIENT-2 in PATIENT-4 , was also the recipient of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | &quot;American Defense Service ribbon.svg&quot;</entity>
+				<entity>PATIENT-2 | &quot;1998-07-21&quot;</entity>
+				<entity>PATIENT-3 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-4 | California</entity>
+				<entity>PATIENT-5 | New_Hampshire</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id6" size="6">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | occupation | Fighter_pilot</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Fighter_pilot" number="2" tag="PATIENT-4" type="description">a fighter pilot</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="4" tag="PATIENT-6" type="name">January 20th , 1930</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="6" tag="PATIENT-2" type="name">Edwin E . Aldrin Jr .</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="7" tag="PATIENT-5" type="name">MIT with a doctorate in Science in 1963</reference>
+					<reference entity="Buzz_Aldrin" number="8" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Apollo_11" number="9" tag="PATIENT-3" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin was a fighter pilot who was born in Glen Ridge, New Jersey om January 20th, 1930. His real name is Edwin E. Aldrin Jr. and after graduating from MIT with a doctorate in Science in 1963, he became a member of Apollo 11.</text>
+				<template>AGENT-1 was PATIENT-4 who was born in PATIENT-1 om PATIENT-6 . AGENT-1 real name is PATIENT-2 and after graduating from PATIENT-5 , AGENT-1 became a member of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , NJ</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="3" tag="PATIENT-6" type="name">January 20th 1930</reference>
+					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">His</reference>
+					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="5" tag="PATIENT-2" type="name">Edwin E</reference>
+					<reference entity="Buzz_Aldrin" number="6" tag="AGENT-1" type="name">Aldrin , Jr . He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="7" tag="PATIENT-5" type="name">MIT with a Sc</reference>
+					<reference entity="Apollo_11" number="10" tag="PATIENT-3" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge, NJ on January 20th 1930. His real name was Edwin E. Aldrin, Jr. He graduated from MIT with a Sc.D in 1963. He was a fighter pilot and crew member of Apollo 11.</text>
+				<template>AGENT-1 was born in PATIENT-1 on PATIENT-6 . AGENT-1 real name was PATIENT-2 . AGENT-1 graduated from PATIENT-5 . AGENT-1 was PATIENT-4 and crew member of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
+					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="1" tag="PATIENT-2" type="name">Edwin E Aldrin Jr</reference>
+					<reference entity="Buzz_Aldrin" number="2" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge New Jersey</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="4" tag="PATIENT-6" type="name">1930</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="5" tag="PATIENT-5" type="name">MIT with a Doctorate in Science in 1963</reference>
+					<reference entity="Buzz_Aldrin" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Fighter_pilot" number="7" tag="PATIENT-4" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_11" number="8" tag="PATIENT-3" type="name">Apollo 11</reference>
+				</references>
+				<text>Edwin E Aldrin Jr, more commonly known as Buzz Aldrin was born in Glen Ridge New Jersey in 1930 and graduated from MIT with a Doctorate in Science in 1963. He was a fighter pilot and a crew member of Apollo 11.</text>
+				<template>PATIENT-2 , more commonly known as AGENT-1 was born in PATIENT-1 in PATIENT-6 and graduated from PATIENT-5 . AGENT-1 was PATIENT-4 and a crew member of PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | &quot;Edwin E. Aldrin, Jr.&quot;</entity>
+				<entity>PATIENT-3 | Apollo_11</entity>
+				<entity>PATIENT-4 | Fighter_pilot</entity>
+				<entity>PATIENT-5 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-6 | &quot;1930-01-20&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id7" size="6">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;^^xsd:date</otriple>
+				<otriple>Buzz_Aldrin | status | &quot;Retired&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</mtriple>
+				<mtriple>Buzz_Aldrin | was selected by NASA | 1963</mtriple>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</mtriple>
+				<mtriple>Buzz_Aldrin | status | &quot;Retired&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge New Jersey</reference>
+					<reference entity="&quot;1930-01-20&quot;" number="3" tag="PATIENT-5" type="name">1930</reference>
+					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="5" tag="PATIENT-4" type="name">MIT in 1963</reference>
+					<reference entity="1963" number="6" tag="PATIENT-2" type="name">in the same year</reference>
+					<reference entity="Buzz_Aldrin" number="7" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Apollo_11" number="8" tag="PATIENT-3" type="name">Apollo 11</reference>
+					<reference entity="&quot;Retired&quot;" number="9" tag="PATIENT-6" type="name">retired</reference>
+				</references>
+				<text>Buzz Aldrin was born in Glen Ridge New Jersey in 1930. He graduated from MIT in 1963 and was hired by NASA in the same year. He was a member of the Apollo 11 crew and is now retired.</text>
+				<template>AGENT-1 was born in PATIENT-1 in PATIENT-5 . AGENT-1 graduated from PATIENT-4 and was hired by NASA PATIENT-2 . AGENT-1 was a member of the PATIENT-3 crew and is now PATIENT-6 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					<striple>Buzz_Aldrin | birthDate | &quot;1930-01-20&quot;</striple>
+					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;1930-01-20&quot;" number="4" tag="PATIENT-5" type="name">January 20 1930</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="5" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="Buzz_Aldrin" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="1963" number="7" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="Buzz_Aldrin" number="8" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="9" tag="PATIENT-4" type="name">MIT</reference>
+				</references>
+				<text>Retired Apollo 11 crew member Buzz Aldrin was born January 20 1930 in Glen Ridge, New Jersey. He was selected by NASA in 1963 when he graduated from MIT with a Sc. D.</text>
+				<template>PATIENT-6 @ PATIENT-3 crew AGENT-1 was born PATIENT-5 in PATIENT-1 . AGENT-1 was selected by NASA in PATIENT-2 when AGENT-1 graduated from PATIENT-4</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="3" tag="PATIENT-4" type="name">in 1963 from Massachusetts Institute of Technology</reference>
+					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="1963" number="5" tag="PATIENT-2" type="name">1963</reference>
+					<reference entity="Apollo_11" number="6" tag="PATIENT-3" type="name">Apollo 11</reference>
+					<reference entity="Buzz_Aldrin" number="7" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;Retired&quot;" number="8" tag="PATIENT-6" type="name">retired</reference>
+				</references>
+				<text>Buzz Aldrin was originally from Glen Ridge, New Jersey and graduated in 1963 from Massachusetts Institute of Technology. He then went on to join NASA in 1963 and became a member of the Apollo 11 crew before he @ retired.</text>
+				<template>AGENT-1 was originally from PATIENT-1 and graduated PATIENT-4 . AGENT-1 then went on to join NASA in PATIENT-2 and became a member of the PATIENT-3 crew before AGENT-1 @ PATIENT-6 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
+				<entity>PATIENT-2 | 1963</entity>
+				<entity>PATIENT-3 | Apollo_11</entity>
+				<entity>PATIENT-4 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-5 | &quot;1930-01-20&quot;</entity>
+				<entity>PATIENT-6 | &quot;Retired&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id8" size="6">
+			<originaltripleset>
+				<otriple>Buzz_Aldrin | mission | Apollo_11</otriple>
+				<otriple>Buzz_Aldrin | selection | 1963</otriple>
+				<otriple>Buzz_Aldrin | occupation | Fighter_pilot</otriple>
+				<otriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;@en</otriple>
+				<otriple>Apollo_11 | crew2Up | William_Anders</otriple>
+				<otriple>Apollo_11 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
+				<mtriple>Buzz_Aldrin | was selected by NASA | 1963</mtriple>
+				<mtriple>Buzz_Aldrin | occupation | Fighter_pilot</mtriple>
+				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
+				<mtriple>Apollo_11 | backup pilot | William_Anders</mtriple>
+				<mtriple>Apollo_11 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					<striple>Apollo_11 | operator | NASA</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="2" tag="PATIENT-3" type="name">Massachusetts Institute of Technology with a Sc .D in 1963</reference>
+					<reference entity="Fighter_pilot" number="3" tag="PATIENT-2" type="description">a fighter pilot</reference>
+					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="NASA" number="5" tag="PATIENT-5" type="name">NASA</reference>
+					<reference entity="1963" number="6" tag="PATIENT-1" type="name">1963</reference>
+					<reference entity="Apollo_11" number="7" tag="BRIDGE-1" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin graduated from Massachusetts Institute of Technology with a Sc.D in 1963 and became a fighter pilot. He was selected to work for NASA in 1963, and was chosen as a crew member (serving as backup pilot) of the NASA operated Apollo 11 mission.</text>
+				<template>AGENT-1 graduated from PATIENT-3 and became PATIENT-2 . AGENT-1 was selected to work for PATIENT-5 in PATIENT-1 , and was chosen as a crew member ( serving as backup pilot ) of the NASA operated BRIDGE-1 mission .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
+					<striple>Buzz_Aldrin | was selected by NASA | 1963</striple>
+					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
+					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
+					<striple>Apollo_11 | operator | NASA</striple>
+					<striple>Apollo_11 | backup pilot | William_Anders</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
+					<reference entity="Fighter_pilot" number="2" tag="PATIENT-2" type="description">a fighter pilot</reference>
+					<reference entity="1963" number="3" tag="PATIENT-1" type="name">1963</reference>
+					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="5" tag="PATIENT-3" type="name">Massachusetts Institute of Technology with a doctorate in Science</reference>
+					<reference entity="NASA" number="6" tag="PATIENT-5" type="name">NASA 's</reference>
+					<reference entity="Apollo_11" number="7" tag="BRIDGE-1" type="name">Apollo 11</reference>
+					<reference entity="William_Anders" number="8" tag="PATIENT-4" type="name">William Anders</reference>
+					<reference entity="Apollo_11" number="9" tag="BRIDGE-1" type="name">Apollo 11</reference>
+				</references>
+				<text>Buzz Aldrin was a fighter pilot. In 1963, he graduated from Massachusetts Institute of Technology with a doctorate in Science and was selected to be part of NASA's @ Apollo 11 crew. William Anders was the backup pilot on Apollo 11.</text>
+				<template>AGENT-1 was PATIENT-2 . In PATIENT-1 , AGENT-1 graduated from PATIENT-3 and was selected to be part of PATIENT-5 @ BRIDGE-1 crew . PATIENT-4 was the backup pilot on BRIDGE-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
+				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>PATIENT-1 | 1963</entity>
+				<entity>PATIENT-2 | Fighter_pilot</entity>
+				<entity>PATIENT-3 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-4 | William_Anders</entity>
+				<entity>PATIENT-5 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id9" size="6">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | status | &quot;Deceased&quot;@en</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | deathDate | &quot;1966-02-28&quot;^^xsd:date</otriple>
+				<otriple>Elliot_See | nationality | United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>Elliot_See | status | &quot;Deceased&quot;</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
+				<mtriple>Elliot_See | nationality | United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | nationality | United_States</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-4" type="name">Dallas</reference>
+					<reference entity="United_States" number="3" tag="PATIENT-6" type="name">US national</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="Elliot_See" number="5" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="6" tag="PATIENT-5" type="description">the 28th of February 1966</reference>
+					<reference entity="St._Louis" number="7" tag="PATIENT-3" type="name">St Louis</reference>
+				</references>
+				<text>Elliot See was born in Dallas as US national and graduated from the University of Texas at Austin. Elliot See has died on the 28th of February 1966 in St Louis.</text>
+				<template>AGENT-1 was born in PATIENT-4 as PATIENT-6 and graduated from PATIENT-1 . AGENT-1 has died on PATIENT-5 in PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Elliot_See | nationality | United_States</striple>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="PATIENT-6" type="name">United States</reference>
+					<reference entity="Elliot_See" number="2" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="3" tag="PATIENT-4" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="PATIENT-1" type="name">University of Texas at Austin</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="5" tag="PATIENT-5" type="description">the 28th of February , 1996</reference>
+					<reference entity="Elliot_See" number="6" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="St._Louis" number="7" tag="PATIENT-3" type="name">St</reference>
+				</references>
+				<text>United States national Elliot See was born in Dallas, and studied at University of Texas at Austin. On the 28th of February, 1996 @ he passed away in St. Louis.</text>
+				<template>PATIENT-6 national AGENT-1 was born in PATIENT-4 , and studied at PATIENT-1 . On PATIENT-5 @ AGENT-1 passed away in PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | &quot;Deceased&quot;</entity>
+				<entity>PATIENT-3 | St._Louis</entity>
+				<entity>PATIENT-4 | Dallas</entity>
+				<entity>PATIENT-5 | &quot;1966-02-28&quot;</entity>
+				<entity>PATIENT-6 | United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id10" size="6">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</otriple>
+				<otriple>Elliot_See | birthDate | &quot;1927-07-23&quot;^^xsd:date</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | status | &quot;Deceased&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</mtriple>
+				<mtriple>Elliot_See | birthDate | &quot;1927-07-23&quot;</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | status | &quot;Deceased&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1927-07-23&quot;" number="2" tag="PATIENT-2" type="name">07/23/1927</reference>
+					<reference entity="Dallas" number="3" tag="PATIENT-3" type="name">Dallas</reference>
+					<reference entity="St._Louis" number="4" tag="PATIENT-4" type="name">St</reference>
+					<reference entity="Elliot_See" number="5" tag="AGENT-1" type="name">Louis . He</reference>
+					<reference entity="University_of_Texas_at_Austin" number="6" tag="BRIDGE-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="University_of_Texas_System" number="7" tag="PATIENT-1" type="description">the university of Texas system</reference>
+				</references>
+				<text>Elliot See was born on 07/23/1927 in Dallas and died in St. Louis. He attended the University of Texas at Austin which is a part of the university of Texas system.</text>
+				<template>AGENT-1 was born on PATIENT-2 in PATIENT-3 and died in PATIENT-4 . AGENT-1 attended BRIDGE-1 which is a part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="toFix" lid="Id2">
+				<sortedtripleset>
+					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1927-07-23&quot;" number="2" tag="PATIENT-2" type="name">07/23/1927</reference>
+					<reference entity="Dallas" number="3" tag="PATIENT-3" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="BRIDGE-1" type="description">the University of Texas</reference>
+					<reference entity="University_of_Texas_System" number="5" tag="PATIENT-1" type="description">the university of Texas System</reference>
+					<reference entity="&quot;Deceased&quot;" number="6" tag="PATIENT-5" type="name">deceased</reference>
+					<reference entity="St._Louis" number="7" tag="PATIENT-4" type="name">St Louis</reference>
+				</references>
+				<text>Elliot See was born on 07/23/1927 in Dallas has graduated from the University of Texas which affiliated to the university of Texas System has died and deceased in St Louis.</text>
+				<template>AGENT-1 was born on PATIENT-2 in PATIENT-3 has graduated from BRIDGE-1 which affiliated to PATIENT-1 has died and PATIENT-5 in PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-3" type="name">Dallas</reference>
+					<reference entity="&quot;1927-07-23&quot;" number="3" tag="PATIENT-2" type="name">July 23rd 1927</reference>
+					<reference entity="Elliot_See" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="University_of_Texas_at_Austin" number="5" tag="BRIDGE-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="University_of_Texas_System" number="6" tag="PATIENT-1" type="description">the university of texas system</reference>
+					<reference entity="Elliot_See" number="7" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="St._Louis" number="8" tag="PATIENT-4" type="name">St</reference>
+				</references>
+				<text>Elliot See was born in Dallas on July 23rd 1927. He graduated from the University of Texas at Austin which is affiliated to the university of texas system. Elliot See died in St.Louis.</text>
+				<template>AGENT-1 was born in PATIENT-3 on PATIENT-2 . AGENT-1 graduated from BRIDGE-1 which is affiliated to PATIENT-1 . AGENT-1 died in PATIENT-4 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>BRIDGE-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-1 | University_of_Texas_System</entity>
+				<entity>PATIENT-2 | &quot;1927-07-23&quot;</entity>
+				<entity>PATIENT-3 | Dallas</entity>
+				<entity>PATIENT-4 | St._Louis</entity>
+				<entity>PATIENT-5 | &quot;Deceased&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id11" size="6">
+			<originaltripleset>
+				<otriple>William_Anders | dateOfRet | &quot;1969-09-01&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | birthDate | &quot;1933-10-17&quot;^^xsd:date</otriple>
+				<otriple>William_Anders | occupation | Fighter_pilot</otriple>
+				<otriple>William_Anders | birthPlace | British_Hong_Kong</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</mtriple>
+				<mtriple>William_Anders | birthDate | &quot;1933-10-17&quot;</mtriple>
+				<mtriple>William_Anders | occupation | Fighter_pilot</mtriple>
+				<mtriple>William_Anders | birthPlace | British_Hong_Kong</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+				<mtriple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
+					<striple>William_Anders | occupation | Fighter_pilot</striple>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="2" tag="PATIENT-2" type="name">October 17 , 1933</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-4" type="name">British Hong Kong</reference>
+					<reference entity="William_Anders" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;AFIT, M.S. 1962&quot;" number="5" tag="PATIENT-6" type="name">AFIT in 1962 with an M .S .</reference>
+					<reference entity="Fighter_pilot" number="6" tag="PATIENT-3" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_8" number="7" tag="PATIENT-5" type="name">Apollo 8</reference>
+					<reference entity="William_Anders" number="8" tag="AGENT-1" type="name">Anders</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="9" tag="PATIENT-1" type="name">September 1 , 1969</reference>
+				</references>
+				<text>William Anders was born on October 17, 1933, in British Hong Kong. He graduated from AFIT in 1962 with an M.S., and would go on to serve as a fighter pilot, and as a crew member on Apollo 8. Anders retired on September 1, 1969.</text>
+				<template>AGENT-1 was born on PATIENT-2 , in PATIENT-4 . AGENT-1 graduated from PATIENT-6 , and would go on to serve as PATIENT-3 , and as a crew member on PATIENT-5 . AGENT-1 retired on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
+					<striple>William_Anders | occupation | Fighter_pilot</striple>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="2" tag="PATIENT-2" type="description">the 17th of October 1933</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-4" type="name">British Hong Kong</reference>
+					<reference entity="William_Anders" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;AFIT, M.S. 1962&quot;" number="5" tag="PATIENT-6" type="name">in 1962 from AFIT with a M .S .</reference>
+					<reference entity="Fighter_pilot" number="6" tag="PATIENT-3" type="description">a fighter pilot</reference>
+					<reference entity="Apollo_8" number="7" tag="PATIENT-5" type="name">Apollo 8</reference>
+					<reference entity="William_Anders" number="8" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="9" tag="PATIENT-1" type="name">1969</reference>
+				</references>
+				<text>William Anders was born on the 17th of October 1933 in British Hong Kong. He graduated in 1962 from AFIT with a M.S. and went on to become a fighter pilot and a crew member on Apollo 8 before he retired in 1969.</text>
+				<template>AGENT-1 was born on PATIENT-2 in PATIENT-4 . AGENT-1 graduated PATIENT-6 and went on to become PATIENT-3 and a crew member on PATIENT-5 before AGENT-1 retired in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
+					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
+					<striple>William_Anders | almaMater | &quot;AFIT, M.S. 1962&quot;</striple>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;1933-10-17&quot;" number="2" tag="PATIENT-2" type="name">1933</reference>
+					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-4" type="name">British Hong Kong</reference>
+					<reference entity="&quot;AFIT, M.S. 1962&quot;" number="4" tag="PATIENT-6" type="name">in 1962 from AFIT with a M</reference>
+					<reference entity="Apollo_8" number="6" tag="PATIENT-5" type="description">the Apollo 8</reference>
+					<reference entity="William_Anders" number="7" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="8" tag="PATIENT-1" type="name">1969</reference>
+				</references>
+				<text>William Anders was born in 1933 in British Hong Kong and graduated in 1962 from AFIT with a M.S. He then went on to become a test pilot and joined the Apollo 8 crew before he retired in 1969.</text>
+				<template>AGENT-1 was born in PATIENT-2 in PATIENT-4 and graduated PATIENT-6 . AGENT-1 then went on to become a test pilot and joined PATIENT-5 crew before AGENT-1 retired in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
+				<entity>PATIENT-2 | &quot;1933-10-17&quot;</entity>
+				<entity>PATIENT-3 | Fighter_pilot</entity>
+				<entity>PATIENT-4 | British_Hong_Kong</entity>
+				<entity>PATIENT-5 | Apollo_8</entity>
+				<entity>PATIENT-6 | &quot;AFIT, M.S. 1962&quot;</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

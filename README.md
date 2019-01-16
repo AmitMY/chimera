@@ -55,15 +55,29 @@ If the cache is removed, the pipeline will continue from its last un-cached proc
 
 
 ## Example
+
+### WebNLG
+Setting the `config` parameter to be `Config(reader=WebNLGDataReader)`
+
 Output running for the first time:
 ![First Run Pipeline](git-assets/first-run.png)
 
 Output running for the second time: (runs for just a few seconds to load the caches)
-
 ![Second Run Pipeline](git-assets/second-run.png)
 
 The expected result (will show on screen) reported by `multi-bleu.perl` is around:
-
 - BLEU [47.27, 79.6, 55.3, 39.4, 28.7]
 - BLEU [46.87, 79.2, 54.8, 39.1, 28.4]
+- BLEU [46.70, 79.3, 55.0, 38.9, 28.0]
 
+### [Delexicalized WebNLG](https://github.com/ThiagoCF05/webnlg)
+This dataset does not use a heuristic for entity matches, instead it was constructed manually.
+This means it is of higher quality and easier to find a correct plan-match in train time.
+
+Setting the `config` parameter to be `Config(reader=DelexWebNLGDataReader, test_reader=WebNLGDataReader)`
+
+The expected result is around:
+- BLEU [45.26, 80.1, 54.8, 37.9, 26.6]
+- BLEU [44.77, 79.9, 54.0, 37.1, 25.9]
+
+We attribute the worse BLEU to the fact the delexicalizations also remove articles and other text around it, and without proper referring expressions generations while the texts should have better structure, they are worse in fluency.

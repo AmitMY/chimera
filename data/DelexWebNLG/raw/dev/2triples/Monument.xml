@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Monument" eid="Id1" size="2">
+			<originaltripleset>
+				<otriple>Atatürk_Monument_(İzmir) | open | &quot;1932-07-27&quot;^^xsd:date</otriple>
+				<otriple>Atatürk_Monument_(İzmir) | location | Turkey</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</mtriple>
+				<mtriple>Atatürk_Monument_(İzmir) | location | Turkey</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atatürk_Monument_(İzmir)" number="1" tag="AGENT-1" type="description">the Atatürk Monument </reference>
+					<reference entity="&quot;1932-07-27&quot;" number="3" tag="PATIENT-1" type="name">1932-07-27</reference>
+				</references>
+				<text>The inauguration date for the Atatürk Monument (İzmir, Turkey) is 1932-07-27.</text>
+				<template>The inauguration date for AGENT-1 ( PATIENT-2 ) is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atatürk_Monument_(İzmir)" number="1" tag="AGENT-1" type="description">The Ataturk Monument</reference>
+					<reference entity="Turkey" number="2" tag="PATIENT-2" type="name">Izmir Turkey</reference>
+					<reference entity="&quot;1932-07-27&quot;" number="3" tag="PATIENT-1" type="name">July 27 , 1932</reference>
+				</references>
+				<text>The Ataturk Monument is in Izmir Turkey and was founded on July 27, 1932.</text>
+				<template>AGENT-1 is in PATIENT-2 and was founded on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Atatürk_Monument_(İzmir) | location | Turkey</striple>
+					<striple>Atatürk_Monument_(İzmir) | inaugurationDate | &quot;1932-07-27&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Atatürk_Monument_(İzmir)" number="1" tag="AGENT-1" type="description">the Atatürk Monument  (İzmir )</reference>
+					<reference entity="Turkey" number="2" tag="PATIENT-2" type="name">Turkey</reference>
+					<reference entity="&quot;1932-07-27&quot;" number="3" tag="PATIENT-1" type="name">1932-07-27</reference>
+				</references>
+				<text>The inauguration date for the Atatürk Monument (İzmir), which is in Turkey, is 1932-07-27.</text>
+				<template>The inauguration date for AGENT-1 , which is in PATIENT-2 , is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Atatürk_Monument_(İzmir)</entity>
+				<entity>PATIENT-1 | &quot;1932-07-27&quot;</entity>
+				<entity>PATIENT-2 | Turkey</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id2" size="2">
+			<originaltripleset>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs Memorial</reference>
+					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="2" tag="PATIENT-1" type="name">Ottoman Army soldiers killed in the Battle of Baku</reference>
+					<reference entity="&quot;Red granite and white marble&quot;" number="3" tag="PATIENT-2" type="name">red granite and white marble</reference>
+				</references>
+				<text>The Baku Turkish Martyrs Memorial has been dedicated to Ottoman Army soldiers killed in the Battle of Baku and is made of red granite and white marble.</text>
+				<template>AGENT-1 has been dedicated to PATIENT-1 and is made of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs Memorial</reference>
+					<reference entity="&quot;Red granite and white marble&quot;" number="2" tag="PATIENT-2" type="name">red granite and white marble</reference>
+					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="3" tag="PATIENT-1" type="description">the Ottoman Army soldiers killed in the Battle of Baku</reference>
+				</references>
+				<text>The Baku Turkish Martyrs Memorial, created in red granite and white marble, is dedicated to the Ottoman Army soldiers killed in the Battle of Baku.</text>
+				<template>AGENT-1 , created in PATIENT-2 , is dedicated to PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>PATIENT-1 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-2 | &quot;Red granite and white marble&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id3" size="2">
+			<originaltripleset>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</mtriple>
+				<mtriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">the Baku Turkish Martyrs ' Memorial</reference>
+					<reference entity="&quot;Türk Şehitleri Anıtı&quot;" number="2" tag="PATIENT-1" type="name">Turk Sehitleri Aniti</reference>
+					<reference entity="&quot;Red granite and white marble&quot;" number="3" tag="PATIENT-2" type="name">red granite and white marble</reference>
+				</references>
+				<text>The native name of the Baku Turkish Martyrs' Memorial is Turk Sehitleri Aniti and is made of red granite and white marble.</text>
+				<template>The native name of AGENT-1 is PATIENT-1 and is made of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyr 's Memorial</reference>
+					<reference entity="&quot;Türk Şehitleri Anıtı&quot;" number="2" tag="PATIENT-1" type="name">Turk Sehitleri Aniti</reference>
+					<reference entity="&quot;Red granite and white marble&quot;" number="3" tag="PATIENT-2" type="name">red granite and white marble</reference>
+				</references>
+				<text>The Baku Turkish Martyr's Memorial is known in Turkish as Turk Sehitleri Aniti and is created in red granite and white marble.</text>
+				<template>AGENT-1 is known in Turkish as PATIENT-1 and is created in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
+					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="name">Baku Turkish Martyrs ' Memorial</reference>
+					<reference entity="&quot;Red granite and white marble&quot;" number="2" tag="PATIENT-2" type="name">red granite and white marble</reference>
+					<reference entity="&quot;Türk Şehitleri Anıtı&quot;" number="3" tag="PATIENT-1" type="name">Turk Sehitleri Aniti</reference>
+				</references>
+				<text>Baku Turkish Martyrs' Memorial is made from red granite and white marble and is called Turk Sehitleri Aniti.</text>
+				<template>AGENT-1 is made from PATIENT-2 and is called PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>PATIENT-1 | &quot;Türk Şehitleri Anıtı&quot;</entity>
+				<entity>PATIENT-2 | &quot;Red granite and white marble&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Monument" eid="Id4" size="2">
+			<originaltripleset>
+				<otriple>Dead_Man's_Plack | dedicatedTo | Æthelwald,_Ealdorman_of_East_Anglia</otriple>
+				<otriple>Dead_Man's_Plack | material | Rock_(geology)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dead_Man's_Plack | dedicatedTo | Æthelwald,_Ealdorman_of_East_Anglia</mtriple>
+				<mtriple>Dead_Man's_Plack | material | Rock_(geology)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Dead_Mans_Plack | material | Rock_(geology)</striple>
+					<striple>Dead_Mans_Plack | dedicatedTo | Æthelwald,_Ealdorman_of_East_Anglia</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dead_Mans_Plack" number="1" tag="AGENT-1" type="description">The Dead Man 's Plack</reference>
+					<reference entity="Rock_(geology)" number="2" tag="PATIENT-2" type="name">rock</reference>
+					<reference entity="Æthelwald,_Ealdorman_of_East_Anglia" number="3" tag="PATIENT-1" type="name">Æthelwald , Ealdorman of East Anglia</reference>
+				</references>
+				<text>The Dead Man's Plack, which is made of rock, is dedicated to Æthelwald, Ealdorman of East Anglia.</text>
+				<template>AGENT-1 , which is made of PATIENT-2 , is dedicated to PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dead_Mans_Plack</entity>
+				<entity>PATIENT-1 | Æthelwald,_Ealdorman_of_East_Anglia</entity>
+				<entity>PATIENT-2 | Rock_(geology)</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

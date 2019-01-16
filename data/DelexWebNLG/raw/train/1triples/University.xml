@@ -1,0 +1,2629 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="University" eid="Id1" size="1">
+			<originaltripleset>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | city | Alba_Iulia</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1_Decembrie_1918_University | city | Alba_Iulia</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | city | Alba_Iulia</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alba_Iulia" number="2" tag="PATIENT-1" type="description">the city Alba Iulia</reference>
+				</references>
+				<text>The &quot;1 Decembrie 1918 University&quot; is in the city Alba Iulia.</text>
+				<template>`` AGENT-1 '' is in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | city | Alba_Iulia</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The city of Alba Iulia has a University called &quot;1 Decembrie 1918 University&quot;.</text>
+				<template>The city of PATIENT-1 has `` AGENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | city | Alba_Iulia</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="description">The 1 Decembrie 1918 University</reference>
+					<reference entity="Alba_Iulia" number="2" tag="PATIENT-1" type="name">Alba Iulia</reference>
+				</references>
+				<text>The 1 Decembrie 1918 University is located in the city of Alba Iulia.</text>
+				<template>AGENT-1 is located in the city of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>PATIENT-1 | Alba_Iulia</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id2" size="1">
+			<originaltripleset>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | country | Romania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1_Decembrie_1918_University | country | Romania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | country | Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="description">The 1 Decembrie 1918 University</reference>
+					<reference entity="Romania" number="2" tag="PATIENT-1" type="name">Romania</reference>
+				</references>
+				<text>The 1 Decembrie 1918 University is located in the country of Romania.</text>
+				<template>AGENT-1 is located in the country of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | country | Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="description">The 1 Decembrie 1918 University</reference>
+					<reference entity="Romania" number="2" tag="PATIENT-1" type="name">Romania</reference>
+				</references>
+				<text>The 1 Decembrie 1918 University is located in Romania.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>PATIENT-1 | Romania</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id3" size="1">
+			<originaltripleset>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | latinName | &quot;Universitas Apulensis&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The Latin name of the 1 Decembrie 1918 University is &quot;Universitas Apulensis&quot;.</text>
+				<template>The Latin name of AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="name">1 Decembrie 1918 University</reference>
+					<reference entity="&quot;Universitas Apulensis&quot;" number="2" tag="PATIENT-1" type="name">Universitas Apulensis</reference>
+				</references>
+				<text>The Latin name of 1 Decembrie 1918 University is Universitas Apulensis.</text>
+				<template>The Latin name of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | latinName | &quot;Universitas Apulensis&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="name">1 Decembrie 1918 University</reference>
+					<reference entity="&quot;Universitas Apulensis&quot;" number="2" tag="PATIENT-1" type="name">Universitas Apulensis</reference>
+				</references>
+				<text>The latin name for 1 Decembrie 1918 University is Universitas Apulensis.</text>
+				<template>The latin name for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>PATIENT-1 | &quot;Universitas Apulensis&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id4" size="1">
+			<originaltripleset>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | nickname | Uab</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1_Decembrie_1918_University | nickname | Uab</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | nickname | Uab</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="description">The 1 Decembrie 1918 University</reference>
+					<reference entity="Uab" number="2" tag="PATIENT-1" type="name">Uab</reference>
+				</references>
+				<text>The 1 Decembrie 1918 University has the nickname Uab.</text>
+				<template>AGENT-1 has the nickname PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>PATIENT-1 | Uab</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id5" size="1">
+			<originaltripleset>
+				<otriple>1_Decembrie_1918_University,_Alba_Iulia | rector | &quot;Breaz Valer Daniel&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1_Decembrie_1918_University | rector | &quot;Breaz Valer Daniel&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | rector | &quot;Breaz Valer Daniel&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Breaz Valer Daniel&quot;" number="1" tag="PATIENT-1" type="name">Breaz Valer Daniel</reference>
+					<reference entity="1_Decembrie_1918_University" number="2" tag="AGENT-1" type="description">the 1 Decembrie 1918 University</reference>
+				</references>
+				<text>Breaz Valer Daniel is rector of the 1 Decembrie 1918 University.</text>
+				<template>PATIENT-1 is rector of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>1_Decembrie_1918_University | rector | &quot;Breaz Valer Daniel&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="description">the 1 Decembrie 1918 University</reference>
+					<reference entity="&quot;Breaz Valer Daniel&quot;" number="2" tag="PATIENT-1" type="name">Breaz Valer Daniel</reference>
+				</references>
+				<text>The rector of the 1 Decembrie 1918 University is Breaz Valer Daniel.</text>
+				<template>The rector of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
+				<entity>PATIENT-1 | &quot;Breaz Valer Daniel&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id6" size="1">
+			<originaltripleset>
+				<otriple>AWH_Engineering_College | facultySize | &quot;250&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AWH_Engineering_College | academicStaffSize | 250</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="description">the AWH Engineering College</reference>
+					<reference entity="250" number="2" tag="PATIENT-1" type="name">250</reference>
+				</references>
+				<text>The academic staff at the AWH Engineering College number 250.</text>
+				<template>The academic staff at AGENT-1 number PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="description">The AWH Engineering College</reference>
+					<reference entity="250" number="2" tag="PATIENT-1" type="name">250</reference>
+				</references>
+				<text>The AWH Engineering College has academic staff size of 250.</text>
+				<template>AGENT-1 has academic staff size of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="250" number="2" tag="PATIENT-1" type="name">250</reference>
+				</references>
+				<text>AWH Engineering College has an academic staff of 250.</text>
+				<template>AGENT-1 has an academic staff of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>PATIENT-1 | 250</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id7" size="1">
+			<originaltripleset>
+				<otriple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="description">The AWH Engineering College</reference>
+					<reference entity="&quot;Kuttikkattoor&quot;" number="2" tag="PATIENT-1" type="name">Kuttikkattoor</reference>
+				</references>
+				<text>The AWH Engineering College is located in Kuttikkattoor.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="&quot;Kuttikkattoor&quot;" number="2" tag="PATIENT-1" type="name">Kuttikkattoor</reference>
+				</references>
+				<text>AWH Engineering College is in the city of Kuttikkattoor.</text>
+				<template>AGENT-1 is in the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="&quot;Kuttikkattoor&quot;" number="2" tag="PATIENT-1" type="name">Kuttikkattoor</reference>
+				</references>
+				<text>AWH Engineering College is located in Kuttikkattoor.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>PATIENT-1 | &quot;Kuttikkattoor&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id8" size="1">
+			<originaltripleset>
+				<otriple>AWH_Engineering_College | country | India</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AWH_Engineering_College | country | India</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | country | India</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="India" number="2" tag="PATIENT-1" type="name">India</reference>
+				</references>
+				<text>AWH Engineering College is located in India.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>PATIENT-1 | India</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id9" size="1">
+			<originaltripleset>
+				<otriple>AWH_Engineering_College | established | 2001</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AWH_Engineering_College | established | 2001</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | established | 2001</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="description">The AWH Engineering College</reference>
+					<reference entity="2001" number="2" tag="PATIENT-1" type="name">2001</reference>
+				</references>
+				<text>The AWH Engineering College was established in 2001.</text>
+				<template>AGENT-1 was established in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>PATIENT-1 | 2001</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id10" size="1">
+			<originaltripleset>
+				<otriple>AWH_Engineering_College | state | Kerala</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AWH_Engineering_College | state | Kerala</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | state | Kerala</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
+					<reference entity="Kerala" number="2" tag="PATIENT-1" type="name">Kerala</reference>
+				</references>
+				<text>AWH Engineering College is located in Kerala state.</text>
+				<template>AGENT-1 is located in PATIENT-1 state .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>AWH_Engineering_College | state | Kerala</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="description">The AWH Engineering College</reference>
+					<reference entity="Kerala" number="2" tag="PATIENT-1" type="name">Kerala</reference>
+				</references>
+				<text>The AWH Engineering College is in the State of Kerala.</text>
+				<template>AGENT-1 is in the State of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>PATIENT-1 | Kerala</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id11" size="1">
+			<originaltripleset>
+				<otriple>Aarhus | governmentType | Magistrate</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aarhus | governmentType | Magistrate</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Aarhus | governmentType | Magistrate</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aarhus" number="1" tag="AGENT-1" type="name">Aarhus</reference>
+					<reference entity="Magistrate" number="2" tag="PATIENT-1" type="name">magistrate</reference>
+				</references>
+				<text>The type of government of Aarhus is magistrate.</text>
+				<template>The type of government of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="toFix" lid="Id2">
+				<sortedtripleset>
+					<striple>Aarhus | governmentType | Magistrate</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aarhus" number="1" tag="AGENT-1" type="name">Aarhus</reference>
+					<reference entity="Magistrate" number="2" tag="PATIENT-1" type="name">Magistrates</reference>
+				</references>
+				<text>The city of Aarhus is governed by Magistrates.</text>
+				<template>The city of AGENT-1 is governed by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aarhus</entity>
+				<entity>PATIENT-1 | Magistrate</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id12" size="1">
+			<originaltripleset>
+				<otriple>Aarhus | northeast | Mols</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aarhus | has to its northeast | Mols</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Aarhus | has to its northeast | Mols</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mols" number="1" tag="PATIENT-1" type="name">Mols</reference>
+					<reference entity="Aarhus" number="2" tag="AGENT-1" type="name">Aarhus</reference>
+				</references>
+				<text>Mols is to the northeast of Aarhus.</text>
+				<template>PATIENT-1 is to the northeast of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Aarhus | has to its northeast | Mols</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aarhus" number="1" tag="AGENT-1" type="name">Aarhus</reference>
+					<reference entity="Aarhus" number="2" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Mols" number="3" tag="PATIENT-1" type="name">Mols</reference>
+				</references>
+				<text>Aarhus has to its northeast Mols.</text>
+				<template>AGENT-1 has to AGENT-1 northeast PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Aarhus | has to its northeast | Mols</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mols" number="1" tag="PATIENT-1" type="name">Mols</reference>
+					<reference entity="Aarhus" number="2" tag="AGENT-1" type="name">Aarhus</reference>
+				</references>
+				<text>Mols is the area to the northeast of Aarhus.</text>
+				<template>PATIENT-1 is the area to the northeast of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aarhus</entity>
+				<entity>PATIENT-1 | Mols</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id13" size="1">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | city | Mendrisio</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | city | Mendrisio</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | city | Mendrisio</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="name">Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Mendrisio" number="2" tag="PATIENT-1" type="name">Mendrisio</reference>
+				</references>
+				<text>Accademia di Architettura di Mendrisio is located in the city of Mendrisio.</text>
+				<template>AGENT-1 is located in the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | city | Mendrisio</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">The Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Mendrisio" number="2" tag="PATIENT-1" type="name">Mendrisio</reference>
+				</references>
+				<text>The Accademia di Architettura di Mendrisio is located in the city of Mendrisio.</text>
+				<template>AGENT-1 is located in the city of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | Mendrisio</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id14" size="1">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">The Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Switzerland" number="2" tag="PATIENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>The Accademia di Architettura di Mendrisio is located in Switzerland.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="name">Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Switzerland" number="2" tag="PATIENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>Accademia di Architettura di Mendrisio is located in Switzerland.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | country | Switzerland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="name">Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Switzerland" number="2" tag="PATIENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>Accademia di Architettura di Mendrisio is in Switzerland.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | Switzerland</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id15" size="1">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">the Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Mario_Botta" number="2" tag="PATIENT-1" type="name">Mario Botta</reference>
+				</references>
+				<text>The dean of the Accademia di Architettura di Mendrisio is Mario Botta.</text>
+				<template>The dean of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | dean | Mario_Botta</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="name">Accademia di Architettura di Mendrisio 's</reference>
+					<reference entity="Mario_Botta" number="2" tag="PATIENT-1" type="name">Mario Botta</reference>
+				</references>
+				<text>Accademia di Architettura di Mendrisio's dean is Mario Botta.</text>
+				<template>AGENT-1 dean is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | Mario_Botta</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id16" size="1">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | established | 1996</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | established | 1996</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | established | 1996</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">The Accademia di Architettura di Mendrisio</reference>
+					<reference entity="1996" number="2" tag="PATIENT-1" type="name">1996</reference>
+				</references>
+				<text>The Accademia di Architettura di Mendrisio was established in 1996.</text>
+				<template>AGENT-1 was established in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | 1996</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id17" size="1">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | canton | Ticino</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | location | Ticino</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | location | Ticino</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">The Accademia di Architettura di Mendrisio</reference>
+					<reference entity="Ticino" number="2" tag="PATIENT-1" type="name">Ticino</reference>
+				</references>
+				<text>The Accademia di Architettura di Mendrisio is located in Ticino.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | location | Ticino</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ticino" number="1" tag="PATIENT-1" type="name">Ticino</reference>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="2" tag="AGENT-1" type="description">the Accademia di Architettura di Mendrisio</reference>
+				</references>
+				<text>Ticino is the location of the Accademia di Architettura di Mendrisio.</text>
+				<template>PATIENT-1 is the location of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | Ticino</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id18" size="1">
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | &quot;600&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="600" number="1" tag="PATIENT-1" type="name">600</reference>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="2" tag="AGENT-1" type="description">the Accademia di Architettura di Mendrisio</reference>
+				</references>
+				<text>There are 600 students at the Accademia di Architettura di Mendrisio.</text>
+				<template>There are PATIENT-1 students at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="600" number="1" tag="PATIENT-1" type="name">Six hundred</reference>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="2" tag="AGENT-1" type="description">the Accademia di Architettura di Mendriso</reference>
+				</references>
+				<text>Six hundred students attend the Accademia di Architettura di Mendriso.</text>
+				<template>PATIENT-1 students attend AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">The Accademia di Architettura di Mendrisio</reference>
+					<reference entity="600" number="2" tag="PATIENT-1" type="name">600</reference>
+				</references>
+				<text>The Accademia di Architettura di Mendrisio has 600 students.</text>
+				<template>AGENT-1 has PATIENT-1 students .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="name">Accademia di Architettura di Mendrisio</reference>
+					<reference entity="600" number="2" tag="PATIENT-1" type="name">600</reference>
+				</references>
+				<text>Accademia di Architettura di Mendrisio has 600 students enrolled.</text>
+				<template>AGENT-1 has PATIENT-1 students enrolled .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<striple>Accademia_di_Architettura_di_Mendrisio | numberOfStudents | 600</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="600" number="1" tag="PATIENT-1" type="name">600</reference>
+					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="2" tag="AGENT-1" type="description">the Accademia di Architettura di Mendrisio</reference>
+				</references>
+				<text>There are 600 students attending the Accademia di Architettura di Mendrisio.</text>
+				<template>There are PATIENT-1 students attending AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Accademia_di_Architettura_di_Mendrisio</entity>
+				<entity>PATIENT-1 | 600</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id19" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | academicStaff | &quot;~500&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | academicStaffSize | &quot;~500&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | academicStaffSize | &quot;~500&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology 's</reference>
+					<reference entity="&quot;~500&quot;" number="2" tag="PATIENT-1" type="name">~500</reference>
+				</references>
+				<text>Acharya Institute of Technology's academic staff total is ~500.</text>
+				<template>AGENT-1 academic staff total is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | academicStaffSize | &quot;~500&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="&quot;~500&quot;" number="2" tag="PATIENT-1" type="name">500</reference>
+				</references>
+				<text>The Acharya Institute of Technology employs about 500 academic staff.</text>
+				<template>AGENT-1 employs about PATIENT-1 academic staff .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | academicStaffSize | &quot;~500&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;~500&quot;" number="1" tag="PATIENT-1" type="name">500</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+				</references>
+				<text>Approximately 500 employees make up the academic staff at Acharya Institute of Technology.</text>
+				<template>Approximately PATIENT-1 employees make up the academic staff at AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;~500&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id20" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Visvesvaraya_Technological_University" number="2" tag="PATIENT-1" type="name">Visvesvaraya Technologial University</reference>
+				</references>
+				<text>The Acharya Institute of Technology is affiliated with Visvesvaraya Technologial University.</text>
+				<template>AGENT-1 is affiliated with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Visvesvaraya_Technological_University" number="2" tag="PATIENT-1" type="name">Visvesvaraya Technological University</reference>
+				</references>
+				<text>Acharya Institute of Technology is affiliated to Visvesvaraya Technological University.</text>
+				<template>AGENT-1 is affiliated to PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Visvesvaraya_Technological_University" number="2" tag="PATIENT-1" type="description">the Visvesvaraya Technological University</reference>
+				</references>
+				<text>The Acharya Institute of Technology is affiliated with the Visvesvaraya Technological University.</text>
+				<template>AGENT-1 is affiliated with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Visvesvaraya_Technological_University" number="2" tag="PATIENT-1" type="description">the Visvesvaraya Technological University</reference>
+				</references>
+				<text>Acharya Institute of Technology is affiliated to the Visvesvaraya Technological University.</text>
+				<template>AGENT-1 is affiliated to PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Visvesvaraya_Technological_University" number="2" tag="PATIENT-1" type="name">Visvesvaraya Technological University</reference>
+				</references>
+				<text>Acharya Institute of Technology is affilaited with Visvesvaraya Technological University.</text>
+				<template>AGENT-1 is affilaited with PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Visvesvaraya_Technological_University</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id21" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | city | Bangalore</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | city | Bangalore</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="2" tag="PATIENT-1" type="name">Bangalore</reference>
+				</references>
+				<text>The Acharya Institute of Technology is located in the city of Bangalore.</text>
+				<template>AGENT-1 is located in the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="2" tag="PATIENT-1" type="name">Bangalore</reference>
+				</references>
+				<text>Acharya Institute of Technology is located in Bangalore.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Bangalore" number="2" tag="PATIENT-1" type="name">Bangalore</reference>
+				</references>
+				<text>Acharya Institute of Technology is in Bangalore.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Bangalore</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id22" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | country | &quot;India&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | country | &quot;India&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="&quot;India&quot;" number="2" tag="PATIENT-1" type="name">India</reference>
+				</references>
+				<text>Acharya Institute of Technology can be found in India.</text>
+				<template>AGENT-1 can be found in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="&quot;India&quot;" number="2" tag="PATIENT-1" type="name">India</reference>
+				</references>
+				<text>Acharya Institute of Technology is located in India.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="&quot;India&quot;" number="2" tag="PATIENT-1" type="name">India</reference>
+				</references>
+				<text>The Acharya Institute of Technology is located in India.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;India&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id23" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="1" tag="PATIENT-1" type="name">Dr . G . P . Prabhukumar</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+				</references>
+				<text>Dr. G. P. Prabhukumar is the director of the Acharya Institute of Technology.</text>
+				<template>PATIENT-1 is the director of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="2" tag="PATIENT-1" type="name">Dr</reference>
+				</references>
+				<text>The director of Acharya Institute of Technology is Dr. G. P. Prabhukumar.</text>
+				<template>The director of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology 's</reference>
+					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="2" tag="PATIENT-1" type="name">Dr</reference>
+				</references>
+				<text>Acharya Institute of Technology's director is Dr. G. P. Prabhukumar.</text>
+				<template>AGENT-1 director is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;Dr. G. P. Prabhukumar&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id24" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | established | 2000</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | established | 2000</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="2000" number="2" tag="PATIENT-1" type="description">the year 2000</reference>
+				</references>
+				<text>The Acharya Institute of Technology was established in the year 2000.</text>
+				<template>AGENT-1 was established in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="2000" number="2" tag="PATIENT-1" type="name">2000</reference>
+				</references>
+				<text>The Acharya Institute of Technology was established in 2000.</text>
+				<template>AGENT-1 was established in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | 2000</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id25" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology 's</reference>
+					<reference entity="&quot;Nurturing Excellence&quot;" number="2" tag="PATIENT-1" type="name">Nurturing Excellence</reference>
+				</references>
+				<text>Acharya Institute of Technology's motto is Nurturing Excellence.</text>
+				<template>AGENT-1 motto is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The motto of the Acharya Institute of Technology is 'Nurturing Excellence.'.</text>
+				<template>The motto of AGENT-1 is ` PATIENT-1 . ' .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The motto of the Acharya Institute of Technology is &quot;Nurturing Excellence&quot;.</text>
+				<template>The motto of AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;Nurturing Excellence&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id26" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | nickname | &quot;AIT&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | nickname | &quot;AIT&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | nickname | &quot;AIT&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;AIT&quot;" number="1" tag="PATIENT-1" type="name">AIT</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+				</references>
+				<text>AIT is the nickname for the Acharya Institute of Technology.</text>
+				<template>PATIENT-1 is the nickname for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | nickname | &quot;AIT&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+					<reference entity="&quot;AIT&quot;" number="2" tag="PATIENT-1" type="name">AIT</reference>
+				</references>
+				<text>The nickname of the Acharya Institute of Technology is AIT.</text>
+				<template>The nickname of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | nickname | &quot;AIT&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="&quot;AIT&quot;" number="2" tag="PATIENT-1" type="name">AIT</reference>
+				</references>
+				<text>Acharya Institute of Technology is known as AIT.</text>
+				<template>AGENT-1 is known as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;AIT&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id27" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | &quot;700&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+					<reference entity="700" number="2" tag="PATIENT-1" type="name">700</reference>
+				</references>
+				<text>The number of post graduate students at the Acharya Institute of Technology is about 700.</text>
+				<template>The number of post graduate students at AGENT-1 is about PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+				</references>
+				<text>The number of postgraduate students in Acharya Institute of Technology is ~700.</text>
+				<template>The number of postgraduate students in AGENT-1 is ~ PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="700" number="1" tag="PATIENT-1" type="name">700</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+				</references>
+				<text>There are around 700 postgraduate students at the Acharya Institute of Technology.</text>
+				<template>There are around PATIENT-1 postgraduate students at AGENT-1 .</template>
+			</lex>
+			<lex comment="toFix" lid="Id4">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="700" number="1" tag="PATIENT-1" type="name">700</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+				</references>
+				<text>There are about 700 post graduate students at the Acharya Institute of Technology.</text>
+				<template>There are about PATIENT-1 post graduate students at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="700" number="2" tag="PATIENT-1" type="name">700</reference>
+				</references>
+				<text>Acharya Institute of Technology has 700 postgraduate students.</text>
+				<template>AGENT-1 has PATIENT-1 postgraduate students .</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="700" number="1" tag="PATIENT-1" type="name">700</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+				</references>
+				<text>700 students are enrolled in a post-graduate program at Acharya Institute of Technology.</text>
+				<template>PATIENT-1 students are enrolled in a post-graduate program at AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | 700</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id28" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | undergrad | &quot;~10000&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | numberOfUndergraduateStudents | 10000</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfUndergraduateStudents | 10000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+					<reference entity="10000" number="2" tag="PATIENT-1" type="name">10000</reference>
+				</references>
+				<text>The number of undergraduates attending the Acharya Institute of Technology is roughly 10000 students.</text>
+				<template>The number of undergraduates attending AGENT-1 is roughly PATIENT-1 students .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfUndergraduateStudents | 10000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology 's</reference>
+				</references>
+				<text>Acharya Institute of Technology's number of Undergraduate students total to ~10000.</text>
+				<template>AGENT-1 number of Undergraduate students total to ~ PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfUndergraduateStudents | 10000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="10000" number="1" tag="PATIENT-1" type="name">10000</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+				</references>
+				<text>There are around 10000 undergraduate students at the Acharya Institute of Technology.</text>
+				<template>There are around PATIENT-1 undergraduate students at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfUndergraduateStudents | 10000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institude of Technology</reference>
+					<reference entity="10000" number="2" tag="PATIENT-1" type="name">10000</reference>
+				</references>
+				<text>The Acharya Institude of Technology has 10000 undergraduate students.</text>
+				<template>AGENT-1 has PATIENT-1 undergraduate students .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfUndergraduateStudents | 10000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="10000" number="2" tag="PATIENT-1" type="name">10000</reference>
+				</references>
+				<text>The Acharya Institute of Technology has 10000 undergraduate students.</text>
+				<template>AGENT-1 has PATIENT-1 undergraduate students .</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | numberOfUndergraduateStudents | 10000</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="10000" number="2" tag="PATIENT-1" type="name">10 ,000 undergraduate students</reference>
+				</references>
+				<text>Acharya Institute of Technology has 10,000 undergraduate students.</text>
+				<template>AGENT-1 has PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | 10000</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id29" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | colours | &quot;Blue, White and Orange&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Blue, White and Orange&quot;" number="1" tag="PATIENT-1" type="name">Blue , white and orange</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+				</references>
+				<text>Blue, white and orange are the colours adopted by Acharya Institute of Technology.</text>
+				<template>PATIENT-1 are the colours adopted by AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Blue, White and Orange&quot;" number="1" tag="PATIENT-1" type="name">Blue , white and orange</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+				</references>
+				<text>Blue, white and orange are the colours of Acharya Institute of Technology.</text>
+				<template>PATIENT-1 are the colours of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology 's</reference>
+					<reference entity="&quot;Blue, White and Orange&quot;" number="2" tag="PATIENT-1" type="name">Blue , White and Orange</reference>
+				</references>
+				<text>Acharya Institute of Technology's official colors are Blue, White and Orange.</text>
+				<template>AGENT-1 official colors are PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Archarya Institute of Technology</reference>
+					<reference entity="&quot;Blue, White and Orange&quot;" number="2" tag="PATIENT-1" type="name">blue , white and orange</reference>
+				</references>
+				<text>The official school colours of the Archarya Institute of Technology are blue, white and orange.</text>
+				<template>The official school colours of AGENT-1 are PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="&quot;Blue, White and Orange&quot;" number="2" tag="PATIENT-1" type="name">Blue White and Orange</reference>
+				</references>
+				<text>Acharya Institute of Technology official school colors are Blue White and Orange.</text>
+				<template>AGENT-1 official school colors are PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institue of Technology</reference>
+					<reference entity="&quot;Blue, White and Orange&quot;" number="2" tag="PATIENT-1" type="name">blue , white and orange</reference>
+				</references>
+				<text>Acharya Institue of Technology official school colours are blue, white and orange.</text>
+				<template>AGENT-1 official school colours are PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | &quot;Blue, White and Orange&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id30" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | outlook | 63</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | outlookRanking | 63</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | outlookRanking | 63</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+					<reference entity="63" number="2" tag="PATIENT-1" type="name">63</reference>
+				</references>
+				<text>The outlook ranking for the Acharya Institute of Technology is 63.</text>
+				<template>The outlook ranking for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | outlookRanking | 63</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="63" number="2" tag="PATIENT-1" type="name">63</reference>
+				</references>
+				<text>Acharya Institute of Technology's outlook ranking is 63.</text>
+				<template>AGENT-1 's outlook ranking is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | outlookRanking | 63</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="63" number="2" tag="PATIENT-1" type="name">63</reference>
+				</references>
+				<text>Acharya Institute of Technology has an outlook ranking of 63.</text>
+				<template>AGENT-1 has an outlook ranking of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | 63</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id31" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | sport | Tennis</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | sportsOffered | Tennis</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tennis" number="1" tag="PATIENT-1" type="name">Tennis</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+				</references>
+				<text>Tennis is one of the sports offered at the Acharya Institute of Technology.</text>
+				<template>PATIENT-1 is one of the sports offered at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Tennis" number="2" tag="PATIENT-1" type="name">Tennis</reference>
+				</references>
+				<text>Acharya Institute of Technology offers Tennis as a sport.</text>
+				<template>AGENT-1 offers PATIENT-1 as a sport .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+					<reference entity="Tennis" number="2" tag="PATIENT-1" type="name">tennis</reference>
+				</references>
+				<text>One of the sports offered at the Acharya Institute of Technology is tennis.</text>
+				<template>One of the sports offered at AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Tennis" number="2" tag="PATIENT-1" type="name">tennis</reference>
+				</references>
+				<text>The Acharya Institute of Technology offers sports including tennis.</text>
+				<template>AGENT-1 offers sports including PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Tennis</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id32" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | state | Karnataka</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | state | Karnataka</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
+					<reference entity="Karnataka" number="2" tag="PATIENT-1" type="name">Karnataka</reference>
+				</references>
+				<text>The Acharya Institute of Technology is in the state of Karnataka.</text>
+				<template>AGENT-1 is in the state of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Karnataka" number="2" tag="PATIENT-1" type="name">Karnataka</reference>
+				</references>
+				<text>Acharya Institute of Technology is located in the state of Karnataka.</text>
+				<template>AGENT-1 is located in the state of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="Karnataka" number="2" tag="PATIENT-1" type="name">Karnataka</reference>
+				</references>
+				<text>Acharya Institute of Technology is in Karnataka state.</text>
+				<template>AGENT-1 is in PATIENT-1 state .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | Karnataka</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id33" size="1">
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | free | All_India_Council_for_Technical_Education</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="All_India_Council_for_Technical_Education" number="1" tag="PATIENT-1" type="description">The All India Council for Technical Education</reference>
+					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
+				</references>
+				<text>The All India Council for Technical Education was proud to give the Technical Campus status to the Acharya Institute of Technology.</text>
+				<template>PATIENT-1 was proud to give the Technical Campus status to AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="All_India_Council_for_Technical_Education" number="2" tag="PATIENT-1" type="description">the All India Council for Technical Education</reference>
+				</references>
+				<text>Acharya Institute of Technology was given the Technical Campus status by the All India Council for Technical Education.</text>
+				<template>AGENT-1 was given the Technical Campus status by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
+					<reference entity="All_India_Council_for_Technical_Education" number="2" tag="PATIENT-1" type="name">All India Council for Technical Education</reference>
+				</references>
+				<text>Acharya Institute of Technology was given the 'Technical Campus' status by All India Council for Technical Education.</text>
+				<template>AGENT-1 was given the ` Technical Campus ' status by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
+				<entity>PATIENT-1 | All_India_Council_for_Technical_Education</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id34" size="1">
+			<originaltripleset>
+				<otriple>All_India_Council_for_Technical_Education | location | Mumbai</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>All_India_Council_for_Technical_Education | location | Mumbai</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>All_India_Council_for_Technical_Education | location | Mumbai</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="All_India_Council_for_Technical_Education" number="1" tag="AGENT-1" type="name">All India Council for Technical Education</reference>
+					<reference entity="Mumbai" number="2" tag="PATIENT-1" type="name">Mumbai</reference>
+				</references>
+				<text>All India Council for Technical Education is located in Mumbai.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>All_India_Council_for_Technical_Education | location | Mumbai</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="All_India_Council_for_Technical_Education" number="1" tag="AGENT-1" type="description">The All India Council for Technical Education</reference>
+					<reference entity="Mumbai" number="2" tag="PATIENT-1" type="name">Mumbai</reference>
+				</references>
+				<text>The All India Council for Technical Education is located in Mumbai.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | All_India_Council_for_Technical_Education</entity>
+				<entity>PATIENT-1 | Mumbai</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id35" size="1">
+			<originaltripleset>
+				<otriple>Bangalore | founder | Kempe_Gowda_I</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bangalore | founder | Kempe_Gowda_I</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bangalore | founder | Kempe_Gowda_I</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kempe_Gowda_I" number="1" tag="PATIENT-1" type="name">Kempe Gowda I</reference>
+					<reference entity="Bangalore" number="2" tag="AGENT-1" type="name">Bangalore</reference>
+				</references>
+				<text>Kempe Gowda I founded Bangalore.</text>
+				<template>PATIENT-1 founded AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bangalore | founder | Kempe_Gowda_I</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bangalore" number="1" tag="AGENT-1" type="name">Bangalore</reference>
+					<reference entity="Kempe_Gowda_I" number="2" tag="PATIENT-1" type="name">Kempe Gowda</reference>
+				</references>
+				<text>The founder of Bangalore was Kempe Gowda.</text>
+				<template>The founder of AGENT-1 was PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bangalore | founder | Kempe_Gowda_I</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kempe_Gowda_I" number="1" tag="PATIENT-1" type="name">Kempe Gowda I</reference>
+					<reference entity="Bangalore" number="2" tag="AGENT-1" type="name">Bangalore</reference>
+				</references>
+				<text>Kempe Gowda I was the founder of Bangalore.</text>
+				<template>PATIENT-1 was the founder of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bangalore</entity>
+				<entity>PATIENT-1 | Kempe_Gowda_I</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id36" size="1">
+			<originaltripleset>
+				<otriple>Denmark | leaderName | Lars_Løkke_Rasmussen</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Denmark | leaderName | Lars_Løkke_Rasmussen</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Lars_Løkke_Rasmussen" number="1" tag="PATIENT-1" type="name">Lars Lokke Rasmussen</reference>
+					<reference entity="Denmark" number="2" tag="AGENT-1" type="name">Denmark</reference>
+				</references>
+				<text>Lars Lokke Rasmussen is the leader of Denmark.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark 's</reference>
+					<reference entity="Lars_Løkke_Rasmussen" number="2" tag="PATIENT-1" type="name">Lars Lokke Rasmussen</reference>
+				</references>
+				<text>One of Denmark's leaders is Lars Lokke Rasmussen.</text>
+				<template>One of AGENT-1 leaders is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark 's</reference>
+					<reference entity="Lars_Løkke_Rasmussen" number="2" tag="PATIENT-1" type="name">Lars L ? ?kke Rasmussen</reference>
+				</references>
+				<text>Denmark's leader is Lars L??kke Rasmussen.</text>
+				<template>AGENT-1 leader is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark</reference>
+					<reference entity="Lars_Løkke_Rasmussen" number="2" tag="PATIENT-1" type="name">Lars Lokke Rasmussen</reference>
+				</references>
+				<text>The leader of Denmark is Lars Lokke Rasmussen.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark</reference>
+					<reference entity="Lars_Løkke_Rasmussen" number="2" tag="PATIENT-1" type="name">Lars L ? ?kke Rasmussen</reference>
+				</references>
+				<text>The Leader of Denmark is Lars L??kke Rasmussen.</text>
+				<template>The Leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<striple>Denmark | leaderName | Lars_Løkke_Rasmussen</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Lars_Løkke_Rasmussen" number="1" tag="PATIENT-1" type="name">Lars L ? ?kke Rasmussen</reference>
+					<reference entity="Denmark" number="2" tag="AGENT-1" type="name">Denmark</reference>
+				</references>
+				<text>Lars L??kke Rasmussen is the leader of Denmark.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Denmark</entity>
+				<entity>PATIENT-1 | Lars_Løkke_Rasmussen</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id37" size="1">
+			<originaltripleset>
+				<otriple>Denmark | leaderTitle | Monarchy_of_Denmark</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Denmark | leaderTitle | Monarchy_of_Denmark</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Denmark | leaderTitle | Monarchy_of_Denmark</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark</reference>
+					<reference entity="Monarchy_of_Denmark" number="2" tag="PATIENT-1" type="description">a Monarch</reference>
+				</references>
+				<text>Denmark is led by a Monarch.</text>
+				<template>AGENT-1 is led by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Denmark | leaderTitle | Monarchy_of_Denmark</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Monarchy_of_Denmark" number="1" tag="PATIENT-1" type="description">The Monarch</reference>
+					<reference entity="Denmark" number="2" tag="AGENT-1" type="name">Denmark</reference>
+				</references>
+				<text>The Monarch of Denmark is the country's leader.</text>
+				<template>PATIENT-1 of AGENT-1 is the country 's leader .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Denmark</entity>
+				<entity>PATIENT-1 | Monarchy_of_Denmark</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id38" size="1">
+			<originaltripleset>
+				<otriple>Denmark | religion | Church_of_Denmark</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Denmark | religion | Church_of_Denmark</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Denmark | religion | Church_of_Denmark</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark</reference>
+					<reference entity="Church_of_Denmark" number="2" tag="PATIENT-1" type="description">the Church of Denmark</reference>
+				</references>
+				<text>The official religion of Denmark is the Church of Denmark.</text>
+				<template>The official religion of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Denmark | religion | Church_of_Denmark</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Denmark" number="1" tag="AGENT-1" type="name">Denmark 's</reference>
+					<reference entity="Church_of_Denmark" number="2" tag="PATIENT-1" type="name">Church of Denmark</reference>
+				</references>
+				<text>Denmark's religion is led by Church of Denmark.</text>
+				<template>AGENT-1 religion is led by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Denmark | religion | Church_of_Denmark</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Church_of_Denmark" number="1" tag="PATIENT-1" type="name">Church of Denmark</reference>
+					<reference entity="Denmark" number="2" tag="AGENT-1" type="name">Denmark</reference>
+				</references>
+				<text>Church of Denmark is the religion of Denmark.</text>
+				<template>PATIENT-1 is the religion of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Denmark</entity>
+				<entity>PATIENT-1 | Church_of_Denmark</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id39" size="1">
+			<originaltripleset>
+				<otriple>European_University_Association | headquarters | Brussels</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>European_University_Association | headquarters | Brussels</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>European_University_Association | headquarters | Brussels</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="European_University_Association" number="1" tag="AGENT-1" type="description">the European University Association</reference>
+					<reference entity="Brussels" number="2" tag="PATIENT-1" type="name">Brussels</reference>
+				</references>
+				<text>The headquarters of the European University Association is in Brussels.</text>
+				<template>The headquarters of AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>European_University_Association | headquarters | Brussels</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="European_University_Association" number="1" tag="AGENT-1" type="description">The European University Associatian</reference>
+					<reference entity="Brussels" number="2" tag="PATIENT-1" type="name">Brussels</reference>
+				</references>
+				<text>The European University Associatian headquarter is in Brussels.</text>
+				<template>AGENT-1 headquarter is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | European_University_Association</entity>
+				<entity>PATIENT-1 | Brussels</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id40" size="1">
+			<originaltripleset>
+				<otriple>India | largestCity | Mumbai</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>India | largestCity | Mumbai</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>India | largestCity | Mumbai</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="India" number="1" tag="AGENT-1" type="name">India</reference>
+					<reference entity="Mumbai" number="2" tag="PATIENT-1" type="name">Mumbai</reference>
+				</references>
+				<text>The largest city in India is Mumbai.</text>
+				<template>The largest city in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>India | largestCity | Mumbai</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mumbai" number="1" tag="PATIENT-1" type="name">Mumbai</reference>
+					<reference entity="India" number="2" tag="AGENT-1" type="name">India 's</reference>
+				</references>
+				<text>Mumbai is India's largest city.</text>
+				<template>PATIENT-1 is AGENT-1 largest city .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | India</entity>
+				<entity>PATIENT-1 | Mumbai</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id41" size="1">
+			<originaltripleset>
+				<otriple>India | river | Ganges</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>India | river | Ganges</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>India | river | Ganges</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ganges" number="1" tag="PATIENT-1" type="description">The Ganges</reference>
+					<reference entity="India" number="2" tag="AGENT-1" type="name">India</reference>
+				</references>
+				<text>The Ganges is a river in India.</text>
+				<template>PATIENT-1 is a river in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>India | river | Ganges</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ganges" number="1" tag="PATIENT-1" type="description">The Ganges</reference>
+					<reference entity="India" number="2" tag="AGENT-1" type="name">India 's</reference>
+				</references>
+				<text>The Ganges is India's most well known river.</text>
+				<template>PATIENT-1 is AGENT-1 most well known river .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | India</entity>
+				<entity>PATIENT-1 | Ganges</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id42" size="1">
+			<originaltripleset>
+				<otriple>Karnataka | northeast | Telangana</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Karnataka | has to its northeast | Telangana</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Karnataka | has to its northeast | Telangana</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Karnataka" number="1" tag="AGENT-1" type="name">Karnataka</reference>
+					<reference entity="Telangana" number="2" tag="PATIENT-1" type="name">Telangana</reference>
+					<reference entity="Karnataka" number="3" tag="AGENT-1" type="pronoun">its</reference>
+				</references>
+				<text>Karnataka neighbors Telangana to its northeast.</text>
+				<template>AGENT-1 neighbors PATIENT-1 to AGENT-1 northeast .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Karnataka | has to its northeast | Telangana</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Karnataka" number="1" tag="AGENT-1" type="name">Karnataka</reference>
+					<reference entity="Karnataka" number="2" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Telangana" number="3" tag="PATIENT-1" type="name">Telangana</reference>
+				</references>
+				<text>Karnataka has to its northeast Telangana.</text>
+				<template>AGENT-1 has to AGENT-1 northeast PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Karnataka | has to its northeast | Telangana</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Karnataka" number="1" tag="AGENT-1" type="name">Karnataka</reference>
+					<reference entity="Telangana" number="2" tag="PATIENT-1" type="name">Telagana</reference>
+				</references>
+				<text>To the northeast of Karnataka is Telagana.</text>
+				<template>To the northeast of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Karnataka</entity>
+				<entity>PATIENT-1 | Telangana</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id43" size="1">
+			<originaltripleset>
+				<otriple>Karnataka | west | Arabian_Sea</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Karnataka | has to its west | Arabian_Sea</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Karnataka | has to its west | Arabian_Sea</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arabian_Sea" number="1" tag="PATIENT-1" type="description">The Arabian Sea</reference>
+					<reference entity="Karnataka" number="2" tag="AGENT-1" type="name">Karnataka</reference>
+				</references>
+				<text>The Arabian Sea is west of Karnataka.</text>
+				<template>PATIENT-1 is west of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Karnataka | has to its west | Arabian_Sea</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Karnataka" number="1" tag="AGENT-1" type="name">Karnataka</reference>
+					<reference entity="Arabian_Sea" number="2" tag="PATIENT-1" type="description">the Arabian Sea</reference>
+				</references>
+				<text>The west of Karnataka is the Arabian Sea.</text>
+				<template>The west of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Karnataka | has to its west | Arabian_Sea</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Karnataka" number="1" tag="AGENT-1" type="name">Karnataka</reference>
+					<reference entity="Arabian_Sea" number="2" tag="PATIENT-1" type="description">the Arabian Sea</reference>
+				</references>
+				<text>To the west Karnataka borders on the Arabian Sea.</text>
+				<template>To the west AGENT-1 borders on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Karnataka</entity>
+				<entity>PATIENT-1 | Arabian_Sea</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id44" size="1">
+			<originaltripleset>
+				<otriple>Kerala | leaderName | Kochi</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Kerala | leaderName | Kochi</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Kerala | leaderName | Kochi</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kochi" number="1" tag="PATIENT-1" type="name">Kochi</reference>
+					<reference entity="Kerala" number="2" tag="AGENT-1" type="name">Kerala</reference>
+				</references>
+				<text>Kochi is the leader of Kerala.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Kerala | leaderName | Kochi</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kerala" number="1" tag="AGENT-1" type="name">Kerala</reference>
+					<reference entity="Kochi" number="2" tag="PATIENT-1" type="name">Kochi</reference>
+				</references>
+				<text>The leader of Kerala is Kochi.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Kerala | leaderName | Kochi</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Kerala" number="1" tag="AGENT-1" type="name">Kerala</reference>
+					<reference entity="Kochi" number="2" tag="PATIENT-1" type="name">Kochi</reference>
+				</references>
+				<text>The Kerala leader is in Kochi.</text>
+				<template>The AGENT-1 leader is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Kerala</entity>
+				<entity>PATIENT-1 | Kochi</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id45" size="1">
+			<originaltripleset>
+				<otriple>Romania | anthem | Deșteaptă-te,_române!</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | anthem | Deșteaptă-te,_române!</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Romania | anthem | Deșteaptă-te,_române!</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania</reference>
+					<reference entity="Deșteaptă-te,_române!" number="2" tag="PATIENT-1" type="name">Desteapta te romane</reference>
+				</references>
+				<text>The anthem of Romania is called Desteapta te romane.</text>
+				<template>The anthem of AGENT-1 is called PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Romania | anthem | Deșteaptă-te,_române!</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Deșteaptă-te,_române!" number="1" tag="PATIENT-1" type="name">Desteapta te , romane</reference>
+					<reference entity="Romania" number="2" tag="AGENT-1" type="name">Romanan</reference>
+				</references>
+				<text>Desteapta te, romane is the Romanan anthem.</text>
+				<template>PATIENT-1 is the AGENT-1 anthem .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Romania | anthem | Deșteaptă-te,_române!</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania</reference>
+					<reference entity="Deșteaptă-te,_române!" number="2" tag="PATIENT-1" type="name">Desteapta-te , romane</reference>
+				</references>
+				<text>The national anthem of Romania is Desteapta-te, romane!</text>
+				<template>The national anthem of AGENT-1 is PATIENT-1 !</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Romania</entity>
+				<entity>PATIENT-1 | Deșteaptă-te,_române!</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id46" size="1">
+			<originaltripleset>
+				<otriple>Romania | ethnicGroup | Germans_of_Romania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | ethnicGroup | Germans_of_Romania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Romania | ethnicGroup | Germans_of_Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania</reference>
+					<reference entity="Germans_of_Romania" number="2" tag="PATIENT-1" type="description">the Germans of Romania</reference>
+				</references>
+				<text>One of the ethnic groups in Romania are the Germans of Romania.</text>
+				<template>One of the ethnic groups in AGENT-1 are PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Romania | ethnicGroup | Germans_of_Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Germans_of_Romania" number="1" tag="PATIENT-1" type="name">Germans of Romania</reference>
+					<reference entity="Romania" number="2" tag="AGENT-1" type="name">Romania</reference>
+				</references>
+				<text>Germans of Romania is an ethnic group in Romania.</text>
+				<template>PATIENT-1 is an ethnic group in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Romania | ethnicGroup | Germans_of_Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Germans_of_Romania" number="1" tag="PATIENT-1" type="description">The Germans of Romania</reference>
+					<reference entity="Romania" number="2" tag="AGENT-1" type="name">Romania</reference>
+				</references>
+				<text>The Germans of Romania are an ethnic group in Romania.</text>
+				<template>PATIENT-1 are an ethnic group in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Romania | ethnicGroup | Germans_of_Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania</reference>
+					<reference entity="Germans_of_Romania" number="2" tag="PATIENT-1" type="name">Germans</reference>
+				</references>
+				<text>Romania has many ethnic groups one of which are Germans.</text>
+				<template>AGENT-1 has many ethnic groups one of which are PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Romania</entity>
+				<entity>PATIENT-1 | Germans_of_Romania</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id47" size="1">
+			<originaltripleset>
+				<otriple>Romania | leaderName | Klaus_Iohannis</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | leaderName | Klaus_Iohannis</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Romania | leaderName | Klaus_Iohannis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania</reference>
+					<reference entity="Klaus_Iohannis" number="2" tag="PATIENT-1" type="name">Klaus Iohannis</reference>
+				</references>
+				<text>The leader of Romania is Klaus Iohannis.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Romania | leaderName | Klaus_Iohannis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania 's</reference>
+					<reference entity="Klaus_Iohannis" number="2" tag="PATIENT-1" type="name">Klaus Iohannis</reference>
+				</references>
+				<text>Romania's leader is Klaus Iohannis.</text>
+				<template>AGENT-1 leader is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Romania</entity>
+				<entity>PATIENT-1 | Klaus_Iohannis</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id48" size="1">
+			<originaltripleset>
+				<otriple>Romania | leaderTitle | Prime_Minister_of_Romania</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Romania | leaderTitle | Prime_Minister_of_Romania</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania</reference>
+					<reference entity="Prime_Minister_of_Romania" number="2" tag="PATIENT-1" type="description">the Prime Minister</reference>
+				</references>
+				<text>The leader of Romania is known as the Prime Minister.</text>
+				<template>The leader of AGENT-1 is known as PATIENT-1 .</template>
+			</lex>
+			<lex comment="toFix" lid="Id2">
+				<sortedtripleset>
+					<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania 's</reference>
+					<reference entity="Prime_Minister_of_Romania" number="2" tag="PATIENT-1" type="description">the Prime Minister of Romania</reference>
+				</references>
+				<text>Romania's leader is call the Prime Minister of Romania.</text>
+				<template>AGENT-1 leader is call PATIENT-1 .</template>
+			</lex>
+			<lex comment="toFix" lid="Id3">
+				<sortedtripleset>
+					<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The title of the leader of Romania is &quot;Prime Minister&quot;.</text>
+				<template>The title of the leader of AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Romania</entity>
+				<entity>PATIENT-1 | Prime_Minister_of_Romania</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id49" size="1">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliation | European_University_Association</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The Aarhus University School of Business and Social Sciences</reference>
+					<reference entity="European_University_Association" number="2" tag="PATIENT-1" type="description">the European University Association</reference>
+				</references>
+				<text>The Aarhus University School of Business and Social Sciences is affiliated with the European University Association.</text>
+				<template>AGENT-1 is affiliated with PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="European_University_Association" number="2" tag="PATIENT-1" type="name">European University Association</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University is affiliated to European University Association.</text>
+				<template>AGENT-1 is affiliated to PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at Aarhus University</reference>
+					<reference entity="European_University_Association" number="2" tag="PATIENT-1" type="description">the European University Association</reference>
+				</references>
+				<text>The School of Business and Social Sciences at Aarhus University is affiliated to the European University Association.</text>
+				<template>AGENT-1 is affiliated to PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="European_University_Association" number="2" tag="PATIENT-1" type="description">the European University Association</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University is affiliated with the European University Association.</text>
+				<template>AGENT-1 is affiliated with PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | European_University_Association</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id50" size="1">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | city | Aarhus</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The Aarhus University School of Business and Social Sciences</reference>
+					<reference entity="Aarhus" number="2" tag="PATIENT-1" type="name">Aarhus</reference>
+				</references>
+				<text>The Aarhus University School of Business and Social Sciences is in the city of Aarhus.</text>
+				<template>AGENT-1 is in the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at Aarhus University</reference>
+					<reference entity="Aarhus" number="2" tag="PATIENT-1" type="name">Aarhus</reference>
+				</references>
+				<text>The School of Business and Social Sciences at Aarhus University is situated in the city of Aarhus.</text>
+				<template>AGENT-1 is situated in the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | city | Aarhus</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="Aarhus" number="2" tag="PATIENT-1" type="name">Aarhus</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University is located in the city of Aarhus.</text>
+				<template>AGENT-1 is located in the city of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | Aarhus</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id51" size="1">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | established | 1928</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | established | 1928</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at Aarhus University</reference>
+					<reference entity="1928" number="2" tag="PATIENT-1" type="name">1928</reference>
+				</references>
+				<text>The School of Business and Social Sciences at Aarhus University was established in 1928.</text>
+				<template>AGENT-1 was established in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="name">Aarhus University School of Business and Social Sciences</reference>
+					<reference entity="1928" number="2" tag="PATIENT-1" type="name">1928</reference>
+				</references>
+				<text>Aarhus University School of Business and Social Sciences was established in 1928.</text>
+				<template>AGENT-1 was established in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="1928" number="2" tag="PATIENT-1" type="name">1928</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University was established in 1928.</text>
+				<template>AGENT-1 was established in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | established | 1928</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="1928" number="2" tag="PATIENT-1" type="name">1928</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University is established in 1928.</text>
+				<template>AGENT-1 is established in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | 1928</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id52" size="1">
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | latinName | &quot;Universitas Aarhusiensis&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>School of Business and Social Sciences at the Aarhus University | latinName | &quot;Universitas Aarhusiensis&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | latinName | &quot;Universitas Aarhusiensis&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The latin name of School of Business and Social Sciences at the Aarhus University is &quot;Universitas Aarhusiensis&quot;.</text>
+				<template>The latin name of AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | latinName | &quot;Universitas Aarhusiensis&quot;</striple>
+				</sortedtripleset>
+				<references/>
+				<text>The latin name of the School of Business and Social Sciences at Aarhus University is &quot;universitas Aarhusiensis&quot;.</text>
+				<template>The latin name of AGENT-1 is `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>School of Business and Social Sciences at the Aarhus University | latinName | &quot;Universitas Aarhusiensis&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
+					<reference entity="&quot;Universitas Aarhusiensis&quot;" number="2" tag="PATIENT-1" type="name">Universitas Aarhusiensis</reference>
+				</references>
+				<text>The School of Business and Social Sciences at the Aarhus University has the latin name Universitas Aarhusiensis.</text>
+				<template>AGENT-1 has the latin name PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
+				<entity>PATIENT-1 | &quot;Universitas Aarhusiensis&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id53" size="1">
+			<originaltripleset>
+				<otriple>Switzerland | anthem | Swiss_Psalm</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Switzerland | anthem | Swiss_Psalm</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Switzerland | anthem | Swiss_Psalm</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Swiss_Psalm" number="1" tag="PATIENT-1" type="description">The Swiss Psalm</reference>
+					<reference entity="Switzerland" number="2" tag="AGENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>The Swiss Psalm is the anthem of Switzerland.</text>
+				<template>PATIENT-1 is the anthem of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Switzerland | anthem | Swiss_Psalm</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Switzerland" number="1" tag="AGENT-1" type="name">Switzerland</reference>
+					<reference entity="Swiss_Psalm" number="2" tag="PATIENT-1" type="description">the Swiss Psalm</reference>
+				</references>
+				<text>The anthem of Switzerland is called the Swiss Psalm.</text>
+				<template>The anthem of AGENT-1 is called PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Switzerland</entity>
+				<entity>PATIENT-1 | Swiss_Psalm</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id54" size="1">
+			<originaltripleset>
+				<otriple>Switzerland | leaderName | Johann_Schneider-Ammann</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Switzerland | leaderName | Johann_Schneider-Ammann</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Johann_Schneider-Ammann" number="1" tag="PATIENT-1" type="name">Johann Schneider Ammann</reference>
+					<reference entity="Switzerland" number="2" tag="AGENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>Johann Schneider Ammann is the leader of Switzerland.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Johann_Schneider-Ammann" number="1" tag="PATIENT-1" type="name">Johann Schneider-Ammann</reference>
+					<reference entity="Switzerland" number="2" tag="AGENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>Johann Schneider-Ammann is the leader of Switzerland.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Switzerland" number="1" tag="AGENT-1" type="name">Switzerland</reference>
+					<reference entity="Johann_Schneider-Ammann" number="2" tag="PATIENT-1" type="name">Johann Schneider-Ammann</reference>
+				</references>
+				<text>The leader of Switzerland is Johann Schneider-Ammann.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Switzerland" number="1" tag="AGENT-1" type="name">Switzerland</reference>
+					<reference entity="Johann_Schneider-Ammann" number="2" tag="PATIENT-1" type="name">Johann Schneider Ammann</reference>
+				</references>
+				<text>Switzerland has a leader called Johann Schneider Ammann.</text>
+				<template>AGENT-1 has a leader called PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Johann_Schneider-Ammann" number="1" tag="PATIENT-1" type="name">Johann Schneider Ammann</reference>
+					<reference entity="Switzerland" number="2" tag="AGENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>Johann Schneider Ammann is the name of the leader of Switzerland.</text>
+				<template>PATIENT-1 is the name of the leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<striple>Switzerland | leaderName | Johann_Schneider-Ammann</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Switzerland" number="1" tag="AGENT-1" type="name">Switzerland</reference>
+					<reference entity="Johann_Schneider-Ammann" number="2" tag="PATIENT-1" type="name">Johann  'Schneider-Ammann</reference>
+				</references>
+				<text>The leader of Switzerland is Johann 'Schneider-Ammann.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Switzerland</entity>
+				<entity>PATIENT-1 | Johann_Schneider-Ammann</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id55" size="1">
+			<originaltripleset>
+				<otriple>Switzerland | leaderTitle | Federal_Chancellor_of_Switzerland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Switzerland | leaderTitle | Federal_Chancellor_of_Switzerland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Switzerland | leaderTitle | Federal_Chancellor_of_Switzerland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Federal_Chancellor_of_Switzerland" number="1" tag="PATIENT-1" type="description">The Federal Chancellor of Switzerland</reference>
+					<reference entity="Switzerland" number="2" tag="AGENT-1" type="description">the country</reference>
+				</references>
+				<text>The Federal Chancellor of Switzerland helps to lead the country.</text>
+				<template>PATIENT-1 helps to lead AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Switzerland | leaderTitle | Federal_Chancellor_of_Switzerland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Federal_Chancellor_of_Switzerland" number="1" tag="PATIENT-1" type="description">The Federal Chancellor of Switzerland</reference>
+					<reference entity="Switzerland" number="2" tag="AGENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>The Federal Chancellor of Switzerland is the title of the leader of Switzerland.</text>
+				<template>PATIENT-1 is the title of the leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Switzerland | leaderTitle | Federal_Chancellor_of_Switzerland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Switzerland" number="1" tag="AGENT-1" type="name">Switzerland</reference>
+					<reference entity="Federal_Chancellor_of_Switzerland" number="2" tag="PATIENT-1" type="description">the Federal Chancellor of Switzerland</reference>
+				</references>
+				<text>The leader of Switzerland is titled the Federal Chancellor of Switzerland.</text>
+				<template>The leader of AGENT-1 is titled PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Switzerland</entity>
+				<entity>PATIENT-1 | Federal_Chancellor_of_Switzerland</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id56" size="1">
+			<originaltripleset>
+				<otriple>Switzerland | legislature | Federal_Assembly_(Switzerland)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Switzerland | legislature | Federal_Assembly_(Switzerland)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Switzerland | legislature | Federal_Assembly_(Switzerland)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Switzerland" number="1" tag="AGENT-1" type="name">Switzerland 's</reference>
+					<reference entity="Federal_Assembly_(Switzerland)" number="2" tag="PATIENT-1" type="description">the Federal Assembly</reference>
+				</references>
+				<text>Switzerland's legislature is formed in the Federal Assembly.</text>
+				<template>AGENT-1 legislature is formed in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Switzerland | legislature | Federal_Assembly_(Switzerland)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Switzerland" number="1" tag="AGENT-1" type="name">Switzerland 's</reference>
+					<reference entity="Federal_Assembly_(Switzerland)" number="2" tag="PATIENT-1" type="description">the Federal Assembly</reference>
+				</references>
+				<text>Switzerland's legislature is known as the Federal Assembly.</text>
+				<template>AGENT-1 legislature is known as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Switzerland | legislature | Federal_Assembly_(Switzerland)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Federal_Assembly_(Switzerland)" number="1" tag="PATIENT-1" type="description">The Federal Assembly</reference>
+					<reference entity="Switzerland" number="2" tag="AGENT-1" type="name">Switzerland</reference>
+				</references>
+				<text>The Federal Assembly legislates in Switzerland.</text>
+				<template>PATIENT-1 legislates in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Switzerland</entity>
+				<entity>PATIENT-1 | Federal_Assembly_(Switzerland)</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id57" size="1">
+			<originaltripleset>
+				<otriple>Tennis | union | International_Tennis_Federation</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Tennis | sportsGoverningBody | International_Tennis_Federation</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tennis" number="1" tag="AGENT-1" type="description">The sport Tennis</reference>
+					<reference entity="International_Tennis_Federation" number="2" tag="PATIENT-1" type="description">the International Tennis Federation</reference>
+				</references>
+				<text>The sport Tennis has a Governing Body called the International Tennis Federation.</text>
+				<template>AGENT-1 has a Governing Body called PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="International_Tennis_Federation" number="1" tag="PATIENT-1" type="description">The International Tennis Federation</reference>
+					<reference entity="Tennis" number="2" tag="AGENT-1" type="description">the tennis sport</reference>
+				</references>
+				<text>The International Tennis Federation is the Governing Body for the tennis sport.</text>
+				<template>PATIENT-1 is the Governing Body for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tennis" number="1" tag="AGENT-1" type="description">The tennis sport</reference>
+					<reference entity="International_Tennis_Federation" number="2" tag="PATIENT-1" type="description">the International Tennis Federation</reference>
+				</references>
+				<text>The tennis sport is governed by the International Tennis Federation.</text>
+				<template>AGENT-1 is governed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id4">
+				<sortedtripleset>
+					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="International_Tennis_Federation" number="1" tag="PATIENT-1" type="description">The International Tennis Federation</reference>
+					<reference entity="Tennis" number="2" tag="AGENT-1" type="name">tennis</reference>
+				</references>
+				<text>The International Tennis Federation is the Governing Body of the sport of tennis.</text>
+				<template>PATIENT-1 is the Governing Body of the sport of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id5">
+				<sortedtripleset>
+					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="International_Tennis_Federation" number="1" tag="PATIENT-1" type="description">The International Tennis Federation</reference>
+					<reference entity="Tennis" number="2" tag="AGENT-1" type="name">tennis</reference>
+				</references>
+				<text>The International Tennis Federation is the governing body of tennis.</text>
+				<template>PATIENT-1 is the governing body of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id6">
+				<sortedtripleset>
+					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Tennis" number="1" tag="AGENT-1" type="name">tennis</reference>
+					<reference entity="International_Tennis_Federation" number="2" tag="PATIENT-1" type="description">the International Tennis Federation</reference>
+				</references>
+				<text>The sports governing body of tennis is the International Tennis Federation.</text>
+				<template>The sports governing body of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Tennis</entity>
+				<entity>PATIENT-1 | International_Tennis_Federation</entity>
+			</entitymap>
+		</entry>
+		<entry category="University" eid="Id58" size="1">
+			<originaltripleset>
+				<otriple>Visvesvaraya_Technological_University | city | Belgaum</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Visvesvaraya_Technological_University | city | Belgaum</mtriple>
+			</modifiedtripleset>
+			<lex comment="toFix" lid="Id1">
+				<sortedtripleset>
+					<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Visvesvaraya_Technological_University" number="1" tag="AGENT-1" type="description">The Visvesvaraya Technologiccal University</reference>
+					<reference entity="Belgaum" number="2" tag="PATIENT-1" type="name">Belgaum</reference>
+				</references>
+				<text>The Visvesvaraya Technologiccal University is in the city of Belgaum.</text>
+				<template>AGENT-1 is in the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Visvesvaraya_Technological_University" number="1" tag="AGENT-1" type="name">Visvesvaraya Technological University</reference>
+					<reference entity="Belgaum" number="2" tag="PATIENT-1" type="name">Belgaum</reference>
+				</references>
+				<text>Visvesvaraya Technological University is in the city of Belgaum.</text>
+				<template>AGENT-1 is in the city of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Visvesvaraya_Technological_University" number="1" tag="AGENT-1" type="name">Visvesvaraya Technological University</reference>
+					<reference entity="Belgaum" number="2" tag="PATIENT-1" type="name">Belgaum</reference>
+				</references>
+				<text>Visvesvaraya Technological University is located in Belgaum.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Visvesvaraya_Technological_University</entity>
+				<entity>PATIENT-1 | Belgaum</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

@@ -2,7 +2,7 @@ from model.open_nmt import OpenNMTModelRunner
 from utils.pipeline import Pipeline
 
 train_opts = {
-    "train_steps": 40000,
+    "train_steps": 20000,
     "save_checkpoint_steps": 1000,
     "batch_size": 16,
     "word_vec_size": 300,
@@ -14,6 +14,8 @@ train_opts = {
 TrainModelPipeline = Pipeline()
 TrainModelPipeline.enqueue("model", "Initialize OpenNMT",
                            lambda f, x: OpenNMTModelRunner(x["pre-process"]["train"], x["pre-process"]["dev"]))
+TrainModelPipeline.enqueue("expose", "Expose Train Data",
+                           lambda f, x: f["model"].expose_train())
 TrainModelPipeline.enqueue("pre-process", "Pre-process Train and Dev", lambda f, x: f["model"].pre_process())
 TrainModelPipeline.enqueue("train", "Train model", lambda f, x: f["model"].train(f["pre-process"], train_opts))
 TrainModelPipeline.enqueue("find-best", "Find best model", lambda f, x: f["model"].find_best(f["train"]))

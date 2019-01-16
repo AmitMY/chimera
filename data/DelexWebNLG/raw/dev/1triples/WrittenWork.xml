@@ -1,0 +1,1096 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="WrittenWork" eid="Id1" size="1">
+			<originaltripleset>
+				<otriple>1634:_The_Bavarian_Crisis | author | Eric_Flint</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Bavarian_Crisis | author | Eric_Flint</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1634:_The_Bavarian_Crisis | author | Eric_Flint</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Eric_Flint" number="1" tag="PATIENT-1" type="name">Eric Flint</reference>
+					<reference entity="1634:_The_Bavarian_Crisis" number="2" tag="AGENT-1" type="name">1634 : The Bavarian Crisis</reference>
+				</references>
+				<text>Eric Flint is the author of 1634: The Bavarian Crisis.</text>
+				<template>PATIENT-1 is the author of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>1634:_The_Bavarian_Crisis | author | Eric_Flint</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1634:_The_Bavarian_Crisis" number="1" tag="AGENT-1" type="name">1634 : The Bavarian Crisis</reference>
+					<reference entity="Eric_Flint" number="2" tag="PATIENT-1" type="name">Eric Flint</reference>
+				</references>
+				<text>1634: The Bavarian Crisis was written by Eric Flint.</text>
+				<template>AGENT-1 was written by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Bavarian_Crisis</entity>
+				<entity>PATIENT-1 | Eric_Flint</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id2" size="1">
+			<originaltripleset>
+				<otriple>1634:_The_Bavarian_Crisis | previousWork | The_Grantville_Gazettes</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Bavarian_Crisis | precededBy | The_Grantville_Gazettes</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1634:_The_Bavarian_Crisis | precededBy | The_Grantville_Gazettes</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1634:_The_Bavarian_Crisis" number="1" tag="AGENT-1" type="name">1634 : The Bavarian crisis</reference>
+					<reference entity="The_Grantville_Gazettes" number="2" tag="PATIENT-1" type="description">The Grantville Gazettes</reference>
+				</references>
+				<text>1634: The Bavarian crisis is the sequel to The Grantville Gazettes.</text>
+				<template>AGENT-1 is the sequel to PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>1634:_The_Bavarian_Crisis | precededBy | The_Grantville_Gazettes</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1634:_The_Bavarian_Crisis" number="1" tag="AGENT-1" type="name">1634 : The Bavarian Crisis</reference>
+					<reference entity="The_Grantville_Gazettes" number="2" tag="PATIENT-1" type="description">The Grantville Gazettes</reference>
+				</references>
+				<text>1634: The Bavarian Crisis is preceded by The Grantville Gazettes.</text>
+				<template>AGENT-1 is preceded by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Bavarian_Crisis</entity>
+				<entity>PATIENT-1 | The_Grantville_Gazettes</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id3" size="1">
+			<originaltripleset>
+				<otriple>1634:_The_Ram_Rebellion | subsequentWork | 1635:_The_Cannon_Law</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>1634:_The_Ram_Rebellion | followedBy | 1635:_The_Cannon_Law</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>1634:_The_Ram_Rebellion | followedBy | 1635:_The_Cannon_Law</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1634:_The_Ram_Rebellion" number="1" tag="AGENT-1" type="name">1634 : The Ram Rebellion</reference>
+					<reference entity="1635:_The_Cannon_Law" number="2" tag="PATIENT-1" type="name">1635 : The Cannon Law</reference>
+				</references>
+				<text>1634: The Ram Rebellion was followed by 1635: The Cannon Law.</text>
+				<template>AGENT-1 was followed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>1634:_The_Ram_Rebellion | followedBy | 1635:_The_Cannon_Law</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="1634:_The_Ram_Rebellion" number="1" tag="AGENT-1" type="name">1634 : The Ram Rebellion</reference>
+					<reference entity="1635:_The_Cannon_Law" number="2" tag="PATIENT-1" type="name">1635 : The Cannon Law</reference>
+				</references>
+				<text>1634: The Ram Rebellion is followed by 1635: The Cannon Law.</text>
+				<template>AGENT-1 is followed by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 1634:_The_Ram_Rebellion</entity>
+				<entity>PATIENT-1 | 1635:_The_Cannon_Law</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id4" size="1">
+			<originaltripleset>
+				<otriple>AIP_Advances | eissn | 2158</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>AIP_Advances | EISSN_number | 2158</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>AIP_Advances | EISSN_number | 2158</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIP_Advances" number="1" tag="AGENT-1" type="name">AIP Advances</reference>
+					<reference entity="2158" number="2" tag="PATIENT-1" type="name">2158</reference>
+				</references>
+				<text>AIP Advances had the EISSNnumber 2158.</text>
+				<template>AGENT-1 had the EISSNnumber PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>AIP_Advances | EISSN_number | 2158</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="AIP_Advances" number="1" tag="AGENT-1" type="name">AIP Advances</reference>
+					<reference entity="2158" number="2" tag="PATIENT-1" type="name">2158</reference>
+				</references>
+				<text>The EISSN number of AIP Advances is 2158.</text>
+				<template>The EISSN number of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | AIP_Advances</entity>
+				<entity>PATIENT-1 | 2158</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id5" size="1">
+			<originaltripleset>
+				<otriple>A_Fortress_of_Grey_Ice | mediaType | Hardcover</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Fortress_of_Grey_Ice | mediaType | Hardcover</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>A_Fortress_of_Grey_Ice | mediaType | Hardcover</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="A_Fortress_of_Grey_Ice" number="1" tag="AGENT-1" type="description">A Fortress of Grey Ice</reference>
+					<reference entity="Hardcover" number="2" tag="PATIENT-1" type="description">a hardcover book</reference>
+				</references>
+				<text>A Fortress of Grey Ice is a hardcover book.</text>
+				<template>AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>A_Fortress_of_Grey_Ice | mediaType | Hardcover</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="A_Fortress_of_Grey_Ice" number="1" tag="AGENT-1" type="description">A Fortress of Grey Ice</reference>
+					<reference entity="Hardcover" number="2" tag="PATIENT-1" type="name">hardcover</reference>
+				</references>
+				<text>A Fortress of Grey Ice was made in hardcover.</text>
+				<template>AGENT-1 was made in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>A_Fortress_of_Grey_Ice | mediaType | Hardcover</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="A_Fortress_of_Grey_Ice" number="1" tag="AGENT-1" type="description">A Fortress of Grey Ice</reference>
+					<reference entity="Hardcover" number="2" tag="PATIENT-1" type="name">Hardcover</reference>
+				</references>
+				<text>A Fortress of Grey Ice was produced in Hardcover.</text>
+				<template>AGENT-1 was produced in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Fortress_of_Grey_Ice</entity>
+				<entity>PATIENT-1 | Hardcover</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id6" size="1">
+			<originaltripleset>
+				<otriple>A_Long_Long_Way | isbn | &quot;0-670-03380-4&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Long_Long_Way | ISBN_number | &quot;0-670-03380-4&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>A_Long_Long_Way | ISBN_number | &quot;0-670-03380-4&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="A_Long_Long_Way" number="1" tag="AGENT-1" type="description">A Long Long Way</reference>
+					<reference entity="&quot;0-670-03380-4&quot;" number="2" tag="PATIENT-1" type="name">0-670-03380-4</reference>
+				</references>
+				<text>The ISBN number of A Long Long Way is 0-670-03380-4.</text>
+				<template>The ISBN number of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>A_Long_Long_Way | ISBN_number | &quot;0-670-03380-4&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="A_Long_Long_Way" number="1" tag="AGENT-1" type="description">A Long Long Way</reference>
+					<reference entity="&quot;0-670-03380-4&quot;" number="2" tag="PATIENT-1" type="name">0-670-03380-4</reference>
+				</references>
+				<text>The ISBN number to A Long Long Way is 0-670-03380-4.</text>
+				<template>The ISBN number to AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Long_Long_Way</entity>
+				<entity>PATIENT-1 | &quot;0-670-03380-4&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id7" size="1">
+			<originaltripleset>
+				<otriple>A_Loyal_Character_Dancer | isbn | &quot;1-56947-301-3&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Loyal_Character_Dancer | ISBN_number | &quot;1-56947-301-3&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>A_Loyal_Character_Dancer | ISBN_number | &quot;1-56947-301-3&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="A_Loyal_Character_Dancer" number="1" tag="AGENT-1" type="description">The book , A Loyal Character Dancer ,</reference>
+					<reference entity="&quot;1-56947-301-3&quot;" number="2" tag="PATIENT-1" type="name">1-56947 -301-3</reference>
+				</references>
+				<text>The book, A Loyal Character Dancer, has the ISBN number of 1-56947-301-3.</text>
+				<template>AGENT-1 has the ISBN number of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Loyal_Character_Dancer</entity>
+				<entity>PATIENT-1 | &quot;1-56947-301-3&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id8" size="1">
+			<originaltripleset>
+				<otriple>A_Severed_Wasp | author | Madeleine_L'Engle</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Severed_Wasp | author | Madeleine_L'Engle</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>A_Severed_Wasp | author | Madeleine_LEngle</striple>
+				</sortedtripleset>
+				<references/>
+				<text>Madeleine L'Engle wrote &quot;A Severed Wasp&quot;.</text>
+				<template>PATIENT-1 wrote `` AGENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>A_Severed_Wasp | author | Madeleine_LEngle</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Madeleine_LEngle" number="1" tag="PATIENT-1" type="name">Madeleine L 'Engle</reference>
+					<reference entity="A_Severed_Wasp" number="2" tag="AGENT-1" type="description">A Severed Wasp</reference>
+				</references>
+				<text>Madeleine L'Engle is the author of A Severed Wasp.</text>
+				<template>PATIENT-1 is the author of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Severed_Wasp</entity>
+				<entity>PATIENT-1 | Madeleine_LEngle</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id9" size="1">
+			<originaltripleset>
+				<otriple>A_Wizard_of_Mars | language | English_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>A_Wizard_of_Mars | language | English_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>A_Wizard_of_Mars | language | English_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="A_Wizard_of_Mars" number="1" tag="AGENT-1" type="description">A Wizard of Mars</reference>
+					<reference entity="English_language" number="2" tag="PATIENT-1" type="name">English</reference>
+				</references>
+				<text>A Wizard of Mars is published in English.</text>
+				<template>AGENT-1 is published in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>A_Wizard_of_Mars | language | English_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="A_Wizard_of_Mars" number="1" tag="AGENT-1" type="description">A Wizard of Mars</reference>
+					<reference entity="English_language" number="2" tag="PATIENT-1" type="name">English</reference>
+				</references>
+				<text>A Wizard of Mars is written in English.</text>
+				<template>AGENT-1 is written in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | A_Wizard_of_Mars</entity>
+				<entity>PATIENT-1 | English_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id10" size="1">
+			<originaltripleset>
+				<otriple>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg | lccn | &quot;32024459&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg | LCCN_number | 32024459</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg | LCCN_number | 32024459</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg" number="1" tag="AGENT-1" type="name">Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</reference>
+					<reference entity="32024459" number="2" tag="PATIENT-1" type="name">32024459</reference>
+				</references>
+				<text>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg has the LCCN number 32024459.</text>
+				<template>AGENT-1 has the LCCN number PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg | LCCN_number | 32024459</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg" number="1" tag="AGENT-1" type="description">The Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</reference>
+					<reference entity="32024459" number="2" tag="PATIENT-1" type="name">32024459</reference>
+				</references>
+				<text>The Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg has an LCCN number of 32024459.</text>
+				<template>AGENT-1 has an LCCN number of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg | LCCN_number | 32024459</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg" number="1" tag="AGENT-1" type="name">Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</reference>
+					<reference entity="32024459" number="2" tag="PATIENT-1" type="name">32024459</reference>
+				</references>
+				<text>The LCCN number of Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg is 32024459.</text>
+				<template>The LCCN number of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universität_Hamburg</entity>
+				<entity>PATIENT-1 | 32024459</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id11" size="1">
+			<originaltripleset>
+				<otriple>Above_the_Veil | mediaType | Hardcover</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Above_the_Veil | mediaType | Hardcover</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Above_the_Veil | mediaType | Hardcover</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Above_the_Veil" number="1" tag="AGENT-1" type="name">Above the Veil</reference>
+					<reference entity="Hardcover" number="2" tag="PATIENT-1" type="name">hardcover</reference>
+				</references>
+				<text>Above the Veil is available in hardcover.</text>
+				<template>AGENT-1 is available in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Above_the_Veil</entity>
+				<entity>PATIENT-1 | Hardcover</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id12" size="1">
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="name">Acta Mathematica Hungarica</reference>
+					<reference entity="&quot;Acta Math. Hungar.&quot;" number="2" tag="PATIENT-1" type="name">Acta Math</reference>
+				</references>
+				<text>Acta Mathematica Hungarica is also known as Acta Math. Hungar.</text>
+				<template>AGENT-1 is also known as PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="name">Acta Mathematica Hungarica</reference>
+				</references>
+				<text>Acta Mathematica Hungarica has the abbreviation of &quot;Acta Math. Hungar.&quot;.</text>
+				<template>AGENT-1 has the abbreviation of `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="name">Acta Mathematica Hungarica</reference>
+					<reference entity="&quot;Acta Math. Hungar.&quot;" number="2" tag="PATIENT-1" type="name">Acta Math</reference>
+				</references>
+				<text>The abbreviation of Acta Mathematica Hungarica is Acta Math. Hungar.</text>
+				<template>The abbreviation of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acta_Mathematica_Hungarica</entity>
+				<entity>PATIENT-1 | &quot;Acta Math. Hungar.&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id13" size="1">
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | discipline | Mathematics</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acta_Mathematica_Hungarica | academicDiscipline | Mathematics</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acta_Mathematica_Hungarica | academicDiscipline | Mathematics</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="description">The Acta Mathematica Hungarica</reference>
+					<reference entity="Mathematics" number="2" tag="PATIENT-1" type="name">Mathematics</reference>
+				</references>
+				<text>The Acta Mathematica Hungarica covers the academic discipline of Mathematics.</text>
+				<template>AGENT-1 covers the academic discipline of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acta_Mathematica_Hungarica | academicDiscipline | Mathematics</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="description">The Acta Mathematica Hungarica</reference>
+					<reference entity="Mathematics" number="2" tag="PATIENT-1" type="name">Math</reference>
+				</references>
+				<text>The Acta Mathematica Hungarica discipline is Math.</text>
+				<template>AGENT-1 discipline is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acta_Mathematica_Hungarica</entity>
+				<entity>PATIENT-1 | Mathematics</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id14" size="1">
+			<originaltripleset>
+				<otriple>Acta_Palaeontologica_Polonica | coden | &quot;APGPAC&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Acta_Palaeontologica_Polonica | CODEN_code | &quot;APGPAC&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Acta_Palaeontologica_Polonica | CODEN_code | &quot;APGPAC&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acta_Palaeontologica_Polonica" number="1" tag="AGENT-1" type="name">Acta Palaeontologica Polonica</reference>
+					<reference entity="&quot;APGPAC&quot;" number="2" tag="PATIENT-1" type="name">APGPAC</reference>
+				</references>
+				<text>Acta Palaeontologica Polonica has the CODEN code APGPAC.</text>
+				<template>AGENT-1 has the CODEN code PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Acta_Palaeontologica_Polonica | CODEN_code | &quot;APGPAC&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acta_Palaeontologica_Polonica" number="1" tag="AGENT-1" type="description">The Acta Palaeontologica Polonica</reference>
+				</references>
+				<text>The Acta Palaeontologica Polonica CODEN code is &quot;APGPAC&quot;.</text>
+				<template>AGENT-1 CODEN code is `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Acta_Palaeontologica_Polonica | CODEN_code | &quot;APGPAC&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Acta_Palaeontologica_Polonica" number="1" tag="AGENT-1" type="description">the Acta Palaeontologica Polonica</reference>
+					<reference entity="&quot;APGPAC&quot;" number="2" tag="PATIENT-1" type="name">APGPAC</reference>
+				</references>
+				<text>The CODEN code for the Acta Palaeontologica Polonica is APGPAC.</text>
+				<template>The CODEN code for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Acta_Palaeontologica_Polonica</entity>
+				<entity>PATIENT-1 | &quot;APGPAC&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id15" size="1">
+			<originaltripleset>
+				<otriple>Addiction_(journal) | oclc | &quot;27367194&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Addiction_(journal) | OCLC_number | 27367194</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Addiction_(journal) | OCLC_number | 27367194</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Addiction_(journal)" number="1" tag="AGENT-1" type="name">Addiction  (journal )</reference>
+					<reference entity="27367194" number="2" tag="PATIENT-1" type="name">27367194</reference>
+				</references>
+				<text>The OCLC number of Addiction (journal) is 27367194.</text>
+				<template>The OCLC number of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Addiction_(journal) | OCLC_number | 27367194</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Addiction_(journal)" number="1" tag="AGENT-1" type="name">Addiction journal</reference>
+					<reference entity="27367194" number="2" tag="PATIENT-1" type="name">27367194</reference>
+				</references>
+				<text>The OCLC number for Addiction journal is 27367194.</text>
+				<template>The OCLC number for AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Addiction_(journal) | OCLC_number | 27367194</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Addiction_(journal)" number="1" tag="AGENT-1" type="name">Addiction  (journal )</reference>
+					<reference entity="27367194" number="2" tag="PATIENT-1" type="name">27367194</reference>
+				</references>
+				<text>Addiction (journal) has an OCLC number 27367194.</text>
+				<template>AGENT-1 has an OCLC number PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Addiction_(journal)</entity>
+				<entity>PATIENT-1 | 27367194</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id16" size="1">
+			<originaltripleset>
+				<otriple>Addiction_(journal) | publisher | Wiley-Blackwell</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Addiction_(journal) | publisher | Wiley-Blackwell</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Addiction_(journal) | publisher | Wiley-Blackwell</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Wiley-Blackwell" number="1" tag="PATIENT-1" type="name">Wiley-Blackwell</reference>
+					<reference entity="Addiction_(journal)" number="2" tag="AGENT-1" type="description">the journal Addiction</reference>
+				</references>
+				<text>Wiley-Blackwell is the publisher of the journal Addiction.</text>
+				<template>PATIENT-1 is the publisher of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Addiction_(journal) | publisher | Wiley-Blackwell</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Wiley-Blackwell" number="1" tag="PATIENT-1" type="name">Wiley-Blackwell</reference>
+					<reference entity="Addiction_(journal)" number="2" tag="AGENT-1" type="name">Addiction  (journal )</reference>
+				</references>
+				<text>Wiley-Blackwell is the publisher of Addiction (journal).</text>
+				<template>PATIENT-1 is the publisher of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Addiction_(journal) | publisher | Wiley-Blackwell</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Addiction_(journal)" number="1" tag="AGENT-1" type="name">Addiction journal</reference>
+					<reference entity="Wiley-Blackwell" number="2" tag="PATIENT-1" type="name">Wiley-Blackwell</reference>
+				</references>
+				<text>Addiction journal is published by Wiley-Blackwell.</text>
+				<template>AGENT-1 is published by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Addiction_(journal)</entity>
+				<entity>PATIENT-1 | Wiley-Blackwell</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id17" size="1">
+			<originaltripleset>
+				<otriple>Administrative_Science_Quarterly | lccn | 57059226</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Administrative_Science_Quarterly | LCCN_number | 57059226</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Administrative_Science_Quarterly | LCCN_number | 57059226</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Administrative_Science_Quarterly" number="1" tag="AGENT-1" type="description">the Administrative Science Quarterly</reference>
+					<reference entity="57059226" number="2" tag="PATIENT-1" type="name">57059226</reference>
+				</references>
+				<text>The LCCN number of the Administrative Science Quarterly is 57059226.</text>
+				<template>The LCCN number of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Administrative_Science_Quarterly | LCCN_number | 57059226</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Administrative_Science_Quarterly" number="1" tag="AGENT-1" type="name">Administrative Science Quarterly</reference>
+					<reference entity="57059226" number="2" tag="PATIENT-1" type="name">57059226</reference>
+				</references>
+				<text>Administrative Science Quarterly's LLCN number is 57059226.</text>
+				<template>AGENT-1 's LLCN number is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Administrative_Science_Quarterly</entity>
+				<entity>PATIENT-1 | 57059226</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id18" size="1">
+			<originaltripleset>
+				<otriple>Aenir | oclc | &quot;45644811&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Aenir | OCLC_number | 45644811</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Aenir | OCLC_number | 45644811</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="45644811" number="1" tag="PATIENT-1" type="name">45644811</reference>
+					<reference entity="Aenir" number="2" tag="AGENT-1" type="name">Aenir</reference>
+				</references>
+				<text>OCLC number 45644811 is Aenir.</text>
+				<template>OCLC number PATIENT-1 is AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Aenir | OCLC_number | 45644811</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="45644811" number="1" tag="PATIENT-1" type="name">45644811</reference>
+					<reference entity="Aenir" number="2" tag="AGENT-1" type="name">Aenir</reference>
+				</references>
+				<text>OCLC number 45644811 is for Aenir.</text>
+				<template>OCLC number PATIENT-1 is for AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Aenir | OCLC_number | 45644811</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aenir" number="1" tag="AGENT-1" type="name">Aenir</reference>
+					<reference entity="45644811" number="2" tag="PATIENT-1" type="name">45644811</reference>
+				</references>
+				<text>The OCLC number of Aenir is 45644811.</text>
+				<template>The OCLC number of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Aenir</entity>
+				<entity>PATIENT-1 | 45644811</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id19" size="1">
+			<originaltripleset>
+				<otriple>Alcatraz_Versus_the_Evil_Librarians | oclc | &quot;78771100&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alcatraz_Versus_the_Evil_Librarians | OCLC_number | 78771100</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | OCLC_number | 78771100</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="1" tag="AGENT-1" type="name">Alcatraz Versus The Evil Librarian</reference>
+					<reference entity="78771100" number="2" tag="PATIENT-1" type="name">78771100</reference>
+				</references>
+				<text>Alcatraz Versus The Evil Librarian OCLC number is 78771100.</text>
+				<template>AGENT-1 OCLC number is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | OCLC_number | 78771100</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="1" tag="AGENT-1" type="name">Alcatraz Versus the Evil Librarians</reference>
+					<reference entity="78771100" number="2" tag="PATIENT-1" type="name">7877110</reference>
+				</references>
+				<text>Alcatraz Versus the Evil Librarians has the OCLC number of 7877110.</text>
+				<template>AGENT-1 has the OCLC number of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | OCLC_number | 78771100</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="1" tag="AGENT-1" type="name">Alcatraz Versus the Evil Librarians</reference>
+					<reference entity="78771100" number="2" tag="PATIENT-1" type="name">78771100</reference>
+				</references>
+				<text>Alcatraz Versus the Evil Librarians has an OCLC number of 78771100.</text>
+				<template>AGENT-1 has an OCLC number of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alcatraz_Versus_the_Evil_Librarians</entity>
+				<entity>PATIENT-1 | 78771100</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id20" size="1">
+			<originaltripleset>
+				<otriple>Alcatraz_Versus_the_Evil_Librarians | followedBy | Alcatraz_Versus_the_Scrivener's_Bones</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alcatraz_Versus_the_Evil_Librarians | followedBy | Alcatraz_Versus_the_Scrivener's_Bones</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | followedBy | Alcatraz_Versus_the_Scriveners_Bones</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="1" tag="AGENT-1" type="description">The book Alcatraz Versus the Evil Librarians</reference>
+					<reference entity="Alcatraz_Versus_the_Scriveners_Bones" number="2" tag="PATIENT-1" type="description">the book Alcatraz Versus the Scrivener 's Bones</reference>
+				</references>
+				<text>The book Alcatraz Versus the Evil Librarians is followed by the book Alcatraz Versus the Scrivener's Bones.</text>
+				<template>AGENT-1 is followed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | followedBy | Alcatraz_Versus_the_Scriveners_Bones</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="1" tag="AGENT-1" type="name">Alcatraz Versus the Evil Librarians</reference>
+					<reference entity="Alcatraz_Versus_the_Scriveners_Bones" number="2" tag="PATIENT-1" type="name">Alcatraz Versus the Scrivener 's Bones</reference>
+				</references>
+				<text>Alcatraz Versus the Evil Librarians was followed by Alcatraz Versus the Scrivener's Bones.</text>
+				<template>AGENT-1 was followed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alcatraz_Versus_the_Evil_Librarians | followedBy | Alcatraz_Versus_the_Scriveners_Bones</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="1" tag="AGENT-1" type="name">Alcatraz versus the Evil Librarians</reference>
+					<reference entity="Alcatraz_Versus_the_Scriveners_Bones" number="2" tag="PATIENT-1" type="name">Alcatraz Versus the Scrivener 's Bones</reference>
+				</references>
+				<text>Alcatraz versus the Evil Librarians is followed by Alcatraz Versus the Scrivener's Bones.</text>
+				<template>AGENT-1 is followed by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alcatraz_Versus_the_Evil_Librarians</entity>
+				<entity>PATIENT-1 | Alcatraz_Versus_the_Scriveners_Bones</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id21" size="1">
+			<originaltripleset>
+				<otriple>American_Journal_of_Mathematics | impact | &quot;1.337&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>American_Journal_of_Mathematics | impactFactor | &quot;1.337&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>American_Journal_of_Mathematics | impactFactor | &quot;1.337&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="American_Journal_of_Mathematics" number="1" tag="AGENT-1" type="description">the American Journal of Mathematics</reference>
+					<reference entity="&quot;1.337&quot;" number="2" tag="PATIENT-1" type="name">1</reference>
+				</references>
+				<text>The impact factor of the American Journal of Mathematics is 1.337.</text>
+				<template>The impact factor of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>American_Journal_of_Mathematics | impactFactor | &quot;1.337&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="American_Journal_of_Mathematics" number="1" tag="AGENT-1" type="description">The American Journal of Mathematics</reference>
+					<reference entity="&quot;1.337&quot;" number="2" tag="PATIENT-1" type="name">1</reference>
+				</references>
+				<text>The American Journal of Mathematics has an impact Factor of 1.337.</text>
+				<template>AGENT-1 has an impact Factor of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | American_Journal_of_Mathematics</entity>
+				<entity>PATIENT-1 | &quot;1.337&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id22" size="1">
+			<originaltripleset>
+				<otriple>Castle_(novel) | subsequentWork | Aenir</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Castle_(novel) | followedBy | Aenir</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Castle_(novel) | followedBy | Aenir</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Castle_(novel)" number="1" tag="AGENT-1" type="description">The novel Castle</reference>
+					<reference entity="Aenir" number="2" tag="PATIENT-1" type="name">Aenir</reference>
+				</references>
+				<text>The novel Castle is followed by Aenir.</text>
+				<template>AGENT-1 is followed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Castle_(novel) | followedBy | Aenir</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Aenir" number="1" tag="PATIENT-1" type="name">Aenir</reference>
+					<reference entity="Castle_(novel)" number="2" tag="AGENT-1" type="description">the novel Castle</reference>
+				</references>
+				<text>Aenir followed the novel Castle.</text>
+				<template>PATIENT-1 followed AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Castle_(novel) | followedBy | Aenir</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Castle_(novel)" number="1" tag="AGENT-1" type="name">Castle</reference>
+					<reference entity="Aenir" number="2" tag="PATIENT-1" type="name">Aenir</reference>
+				</references>
+				<text>Castle is followed by Aenir.</text>
+				<template>AGENT-1 is followed by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Castle_(novel)</entity>
+				<entity>PATIENT-1 | Aenir</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id23" size="1">
+			<originaltripleset>
+				<otriple>Cornell_University | nickname | Cornell_Big_Red</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Cornell_University | nickname | Cornell_Big_Red</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Cornell_University | nickname | Cornell_Big_Red</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Cornell_University" number="1" tag="AGENT-1" type="name">Cornwell University</reference>
+					<reference entity="Cornell_Big_Red" number="2" tag="PATIENT-1" type="name">Cornell Big Red</reference>
+				</references>
+				<text>Cornwell University is nicknamed Cornell Big Red.</text>
+				<template>AGENT-1 is nicknamed PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Cornell_University | nickname | Cornell_Big_Red</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Cornell_Big_Red" number="1" tag="PATIENT-1" type="name">Cornell Big Red</reference>
+					<reference entity="Cornell_University" number="2" tag="AGENT-1" type="name">Cornell University</reference>
+				</references>
+				<text>Cornell Big Red is the nickname of Cornell University.</text>
+				<template>PATIENT-1 is the nickname of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Cornell_University | nickname | Cornell_Big_Red</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Cornell_Big_Red" number="1" tag="PATIENT-1" type="name">Cornell Big Red</reference>
+					<reference entity="Cornell_University" number="2" tag="AGENT-1" type="name">Cornell University</reference>
+				</references>
+				<text>Cornell Big Red is the nickname for Cornell University.</text>
+				<template>PATIENT-1 is the nickname for AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Cornell_University</entity>
+				<entity>PATIENT-1 | Cornell_Big_Red</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id24" size="1">
+			<originaltripleset>
+				<otriple>HIV | genus | Lentivirus</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>HIV | genus | Lentivirus</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>HIV | genus | Lentivirus</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="HIV" number="1" tag="AGENT-1" type="description">The HIV virus</reference>
+					<reference entity="Lentivirus" number="2" tag="PATIENT-1" type="name">Lentivirus</reference>
+				</references>
+				<text>The HIV virus is from the genus Lentivirus.</text>
+				<template>AGENT-1 is from the genus PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>HIV | genus | Lentivirus</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="HIV" number="1" tag="AGENT-1" type="name">HIV</reference>
+					<reference entity="Lentivirus" number="2" tag="PATIENT-1" type="name">Lentivirus</reference>
+				</references>
+				<text>HIV is genus Lentivirus.</text>
+				<template>AGENT-1 is genus PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>HIV | genus | Lentivirus</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="HIV" number="1" tag="AGENT-1" type="name">HIV</reference>
+					<reference entity="Lentivirus" number="2" tag="PATIENT-1" type="name">Lentivirus</reference>
+				</references>
+				<text>HIV genus is categorised as Lentivirus.</text>
+				<template>AGENT-1 genus is categorised as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | HIV</entity>
+				<entity>PATIENT-1 | Lentivirus</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id25" size="1">
+			<originaltripleset>
+				<otriple>John_Cowper_Powys | notableWork | Wolf_Solent</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>John_Cowper_Powys | notableWork | Wolf_Solent</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>John_Cowper_Powys | notableWork | Wolf_Solent</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Wolf_Solent" number="1" tag="PATIENT-1" type="name">Wolf Solent</reference>
+					<reference entity="John_Cowper_Powys" number="2" tag="AGENT-1" type="name">John Cowper Powys</reference>
+				</references>
+				<text>Wolf Solent is a notable work by John Cowper Powys.</text>
+				<template>PATIENT-1 is a notable work by AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>John_Cowper_Powys | notableWork | Wolf_Solent</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Wolf_Solent" number="1" tag="PATIENT-1" type="name">Wolf Solent</reference>
+					<reference entity="John_Cowper_Powys" number="2" tag="AGENT-1" type="name">John Cowper Powys</reference>
+				</references>
+				<text>Wolf Solent is one of John Cowper Powys notable works.</text>
+				<template>PATIENT-1 is one of AGENT-1 notable works .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>John_Cowper_Powys | notableWork | Wolf_Solent</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Wolf_Solent" number="1" tag="PATIENT-1" type="name">Wolf Solent</reference>
+					<reference entity="John_Cowper_Powys" number="2" tag="AGENT-1" type="name">author John Cowper Powys</reference>
+				</references>
+				<text>Wolf Solent is a notable work of author John Cowper Powys.</text>
+				<template>PATIENT-1 is a notable work of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | John_Cowper_Powys</entity>
+				<entity>PATIENT-1 | Wolf_Solent</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id26" size="1">
+			<originaltripleset>
+				<otriple>United_Kingdom | leaderName | Elizabeth_II</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_Kingdom | leaderName | Elizabeth_II</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elizabeth_II" number="1" tag="PATIENT-1" type="name">Elizabeth II</reference>
+					<reference entity="United_Kingdom" number="2" tag="AGENT-1" type="description">the United Kingdom</reference>
+				</references>
+				<text>Elizabeth II is a leader in the United Kingdom.</text>
+				<template>PATIENT-1 is a leader in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_Kingdom" number="1" tag="AGENT-1" type="description">the United Kingdom</reference>
+					<reference entity="Elizabeth_II" number="2" tag="PATIENT-1" type="name">Elizabeth II</reference>
+				</references>
+				<text>The leader of the United Kingdom is Elizabeth II.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elizabeth_II" number="1" tag="PATIENT-1" type="name">Elizabeth II</reference>
+					<reference entity="United_Kingdom" number="2" tag="AGENT-1" type="description">the</reference>
+				</references>
+				<text>Elizabeth II is the leader in the UK.</text>
+				<template>PATIENT-1 is AGENT-1 leader in the UK.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_Kingdom</entity>
+				<entity>PATIENT-1 | Elizabeth_II</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id27" size="1">
+			<originaltripleset>
+				<otriple>United_States | leader | Joe_Biden</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | leaderName | Joe_Biden</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>United_States | leaderName | Joe_Biden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Joe_Biden" number="1" tag="PATIENT-1" type="name">Joe Biden</reference>
+					<reference entity="United_States" number="2" tag="AGENT-1" type="description">a United States</reference>
+				</references>
+				<text>Joe Biden is a United States leader.</text>
+				<template>PATIENT-1 is AGENT-1 leader .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>United_States | leaderName | Joe_Biden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Joe_Biden" number="1" tag="PATIENT-1" type="name">Joe Biden</reference>
+					<reference entity="United_States" number="2" tag="AGENT-1" type="description">the U</reference>
+				</references>
+				<text>Joe Biden is a leader in the U.S.</text>
+				<template>PATIENT-1 is a leader in AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>United_States | leaderName | Joe_Biden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="AGENT-1" type="description">the United States</reference>
+					<reference entity="Joe_Biden" number="2" tag="PATIENT-1" type="name">Joe Biden</reference>
+				</references>
+				<text>A leader in the United States is Joe Biden.</text>
+				<template>A leader in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_States</entity>
+				<entity>PATIENT-1 | Joe_Biden</entity>
+			</entitymap>
+		</entry>
+		<entry category="WrittenWork" eid="Id28" size="1">
+			<originaltripleset>
+				<otriple>Wolf_Solent | author | John_Cowper_Powys</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Wolf_Solent | author | John_Cowper_Powys</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Wolf_Solent | author | John_Cowper_Powys</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Cowper_Powys" number="1" tag="PATIENT-1" type="name">John Cowper Powys</reference>
+					<reference entity="Wolf_Solent" number="2" tag="AGENT-1" type="name">Wolf Solent</reference>
+				</references>
+				<text>John Cowper Powys is the author of Wolf Solent.</text>
+				<template>PATIENT-1 is the author of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Wolf_Solent | author | John_Cowper_Powys</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="John_Cowper_Powys" number="1" tag="PATIENT-1" type="name">John Cowper Powys</reference>
+				</references>
+				<text>John Cowper Powys is the author of &quot;Wolf Solent&quot;.</text>
+				<template>PATIENT-1 is the author of `` AGENT-1 '' .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Wolf_Solent</entity>
+				<entity>PATIENT-1 | John_Cowper_Powys</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

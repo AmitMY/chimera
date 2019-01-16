@@ -1,0 +1,1984 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Food" eid="Id1" size="5">
+			<originaltripleset>
+				<otriple>Ajoblanco | country | Spain</otriple>
+				<otriple>Ajoblanco | mainIngredient | &quot;Bread, almonds, garlic, water, olive oil&quot;@en</otriple>
+				<otriple>Ajoblanco | region | Andalusia</otriple>
+				<otriple>Ajoblanco | alias | &quot;Ajo blanco&quot;@en</otriple>
+				<otriple>Ajoblanco | ingredient | Bread</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ajoblanco | country | Spain</mtriple>
+				<mtriple>Ajoblanco | mainIngredients | &quot;Bread, almonds, garlic, water, olive oil&quot;</mtriple>
+				<mtriple>Ajoblanco | region | Andalusia</mtriple>
+				<mtriple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</mtriple>
+				<mtriple>Ajoblanco | ingredient | Bread</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ajoblanco | region | Andalusia</striple>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andalusia" number="1" tag="PATIENT-3" type="name">Andalusia</reference>
+					<reference entity="Spain" number="2" tag="PATIENT-1" type="name">Spain</reference>
+					<reference entity="Ajoblanco" number="3" tag="AGENT-1" type="name">Ajoblanco</reference>
+					<reference entity="&quot;Bread, almonds, garlic, water, olive oil&quot;" number="4" tag="PATIENT-2" type="name">bread , almonds , garlic , water and olive oil</reference>
+					<reference entity="&quot;Ajo blanco&quot;" number="5" tag="PATIENT-4" type="name">Ajo blanco</reference>
+					<reference entity="Ajoblanco" number="6" tag="AGENT-1" type="name">Ajoblanco</reference>
+				</references>
+				<text>From Andalusia, Spain, Ajoblanco is made with bread, almonds, garlic, water and olive oil. Ajo blanco is an alternative name to Ajoblanco.</text>
+				<template>From PATIENT-3 , PATIENT-1 , AGENT-1 is made with PATIENT-2. PATIENT-4 is an alternative name to AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</striple>
+					<striple>Ajoblanco | region | Andalusia</striple>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Ajoblanco | mainIngredients | &quot;Bread, almonds, garlic, water, olive oil&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ajoblanco" number="1" tag="AGENT-1" type="name">Ajoblanco</reference>
+					<reference entity="&quot;Ajo blanco&quot;" number="2" tag="PATIENT-4" type="name">Ajo blanco</reference>
+					<reference entity="Andalusia" number="3" tag="PATIENT-3" type="description">the Andalusian region</reference>
+					<reference entity="Spain" number="4" tag="PATIENT-1" type="name">Spain</reference>
+					<reference entity="&quot;Bread, almonds, garlic, water, olive oil&quot;" number="5" tag="PATIENT-2" type="name">bread , almonds , garlic , water and olive oil</reference>
+				</references>
+				<text>Ajoblanco, also known as Ajo blanco is a dish from the Andalusian region of Spain and includes the main ingredients of bread, almonds, garlic, water and olive oil.</text>
+				<template>AGENT-1 , also known as PATIENT-4 is a dish from PATIENT-3 of PATIENT-1 and includes the main ingredients of PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Ajoblanco | region | Andalusia</striple>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Ajoblanco | alternativeName | &quot;Ajo blanco&quot;</striple>
+					<striple>Ajoblanco | mainIngredients | &quot;Bread, almonds, garlic, water, olive oil&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Andalusia" number="1" tag="PATIENT-3" type="description">the Andalusian region</reference>
+					<reference entity="Spain" number="2" tag="PATIENT-1" type="name">Spain</reference>
+					<reference entity="Ajoblanco" number="5" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;Bread, almonds, garlic, water, olive oil&quot;" number="6" tag="PATIENT-2" type="name">bread , almonds , garlic , water and olive oil</reference>
+				</references>
+				<text>A dish found in the Andalusian region of Spain is called Ajoblanco (or Ajo blanco). It contains bread, almonds, garlic, water and olive oil.</text>
+				<template>A dish found in PATIENT-3 of PATIENT-1 is called AGENT-1 ( or PATIENT-4 ) . AGENT-1 contains PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ajoblanco</entity>
+				<entity>PATIENT-1 | Spain</entity>
+				<entity>PATIENT-2 | &quot;Bread, almonds, garlic, water, olive oil&quot;</entity>
+				<entity>PATIENT-3 | Andalusia</entity>
+				<entity>PATIENT-4 | &quot;Ajo blanco&quot;</entity>
+				<entity>PATIENT-5 | Bread</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id2" size="5">
+			<originaltripleset>
+				<otriple>Amatriciana_sauce | region | Lazio</otriple>
+				<otriple>Amatriciana_sauce | country | Italy</otriple>
+				<otriple>Amatriciana_sauce | ingredient | Guanciale</otriple>
+				<otriple>Amatriciana_sauce | course | Italian_meal_structure</otriple>
+				<otriple>Amatriciana_sauce | mainIngredient | &quot;Tomatoes, guanciale, cheese , olive oil&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amatriciana_sauce | region | Lazio</mtriple>
+				<mtriple>Amatriciana_sauce | country | Italy</mtriple>
+				<mtriple>Amatriciana_sauce | ingredient | Guanciale</mtriple>
+				<mtriple>Amatriciana_sauce | course | Italian_meal_structure</mtriple>
+				<mtriple>Amatriciana_sauce | mainIngredients | &quot;Tomatoes, guanciale, cheese, olive oil&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Amatriciana_sauce | mainIngredients | &quot;Tomatoes, guanciale, cheese, olive oil&quot;</striple>
+					<striple>Amatriciana_sauce | region | Lazio</striple>
+					<striple>Amatriciana_sauce | course | Italian_meal_structure</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Tomatoes, guanciale, cheese, olive oil&quot;" number="1" tag="PATIENT-5" type="name">Tomatoes , guanciale , cheese , and olive oil</reference>
+					<reference entity="Lazio" number="3" tag="PATIENT-1" type="name">Lazio</reference>
+					<reference entity="Italian_meal_structure" number="4" tag="PATIENT-4" type="description">an Italian meal</reference>
+				</references>
+				<text>Tomatoes, guanciale, cheese, and olive oil are main ingredients in the traditional Amatriciana sauce, which comes from the region of Lazio and can be found in an Italian meal.</text>
+				<template>PATIENT-5 are main ingredients in traditional AGENT-1 , which comes from the region of PATIENT-1 and can be found in PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Amatriciana_sauce | region | Lazio</striple>
+					<striple>Amatriciana_sauce | country | Italy</striple>
+					<striple>Amatriciana_sauce | mainIngredients | &quot;Tomatoes, guanciale, cheese, olive oil&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amatriciana_sauce" number="1" tag="AGENT-1" type="name">Amatriciana</reference>
+					<reference entity="Lazio" number="2" tag="PATIENT-1" type="name">Lazio</reference>
+					<reference entity="Italy" number="3" tag="PATIENT-2" type="name">Italy</reference>
+					<reference entity="Amatriciana_sauce" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;Tomatoes, guanciale, cheese, olive oil&quot;" number="5" tag="PATIENT-5" type="name">cheese along with tomatoes , guanciale and olive oil</reference>
+				</references>
+				<text>Amatriciana is a traditional sauce from Lazio, Italy. It includes cheese along with tomatoes, guanciale and olive oil.</text>
+				<template>AGENT-1 is a traditional sauce from PATIENT-1 , PATIENT-2 . AGENT-1 includes PATIENT-5 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Amatriciana_sauce | mainIngredients | &quot;Tomatoes, guanciale, cheese, olive oil&quot;</striple>
+					<striple>Amatriciana_sauce | country | Italy</striple>
+					<striple>Amatriciana_sauce | region | Lazio</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amatriciana_sauce" number="1" tag="AGENT-1" type="name">Amatriciana sauce</reference>
+					<reference entity="&quot;Tomatoes, guanciale, cheese, olive oil&quot;" number="2" tag="PATIENT-5" type="name">Italian food</reference>
+					<reference entity="Italy" number="3" tag="PATIENT-2" type="description">the</reference>
+					<reference entity="Lazio" number="4" tag="PATIENT-1" type="name">country 's Lazio</reference>
+					<reference entity="Amatriciana_sauce" number="5" tag="AGENT-1" type="description">the sauce</reference>
+					<reference entity="&quot;Tomatoes, guanciale, cheese, olive oil&quot;" number="6" tag="PATIENT-5" type="name">guanciale ,tomatoes ,cheese , and olive oil</reference>
+				</references>
+				<text>Amatriciana sauce can be found in Italian food and comes from the country's Lazio region.The main ingredients of the sauce are guanciale,tomatoes,cheese, and olive oil.</text>
+				<template>AGENT-1 can be found in PATIENT-5 and comes from PATIENT-2 PATIENT-1 region.The main ingredients of AGENT-1 are PATIENT-5.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amatriciana_sauce</entity>
+				<entity>PATIENT-1 | Lazio</entity>
+				<entity>PATIENT-2 | Italy</entity>
+				<entity>PATIENT-3 | Guanciale</entity>
+				<entity>PATIENT-4 | Italian_meal_structure</entity>
+				<entity>PATIENT-5 | &quot;Tomatoes, guanciale, cheese, olive oil&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id3" size="5">
+			<originaltripleset>
+				<otriple>Arem-arem | country | Indonesia</otriple>
+				<otriple>Arem-arem | region | Javanese_cuisine</otriple>
+				<otriple>Indonesia | leaderName | Joko_Widodo</otriple>
+				<otriple>Indonesia | currency | Indonesian_rupiah</otriple>
+				<otriple>Indonesia | language | Indonesian_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arem-arem | country | Indonesia</mtriple>
+				<mtriple>Arem-arem | region | Javanese_cuisine</mtriple>
+				<mtriple>Indonesia | leaderName | Joko_Widodo</mtriple>
+				<mtriple>Indonesia | currency | Indonesian_rupiah</mtriple>
+				<mtriple>Indonesia | language | Indonesian_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Arem-arem | region | Javanese_cuisine</striple>
+					<striple>Arem-arem | country | Indonesia</striple>
+					<striple>Indonesia | leaderName | Joko_Widodo</striple>
+					<striple>Indonesia | currency | Indonesian_rupiah</striple>
+					<striple>Indonesia | language | Indonesian_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arem-arem" number="1" tag="AGENT-1" type="name">Arem-arem</reference>
+					<reference entity="Javanese_cuisine" number="2" tag="PATIENT-1" type="description">a Javanese dish</reference>
+					<reference entity="Indonesia" number="3" tag="BRIDGE-1" type="name">Indonesia</reference>
+					<reference entity="Joko_Widodo" number="4" tag="PATIENT-2" type="name">Joko Widodo</reference>
+					<reference entity="Indonesia" number="5" tag="BRIDGE-1" type="pronoun">It</reference>
+					<reference entity="Indonesian_rupiah" number="6" tag="PATIENT-3" type="description">the Indonesian rupiah</reference>
+					<reference entity="Indonesian_language" number="7" tag="PATIENT-4" type="name">Indonesian language</reference>
+				</references>
+				<text>Arem-arem, a Javanese dish, is commonly served in Indonesia where the leader is Joko Widodo. It is also where the currency is the Indonesian rupiah and where Indonesian language is the language spoken.</text>
+				<template>AGENT-1 , PATIENT-1 , is commonly served in BRIDGE-1 where the leader is PATIENT-2 . BRIDGE-1  is also where the currency is PATIENT-3 and where PATIENT-4 is the language spoken .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arem-arem</entity>
+				<entity>BRIDGE-1 | Indonesia</entity>
+				<entity>PATIENT-1 | Javanese_cuisine</entity>
+				<entity>PATIENT-2 | Joko_Widodo</entity>
+				<entity>PATIENT-3 | Indonesian_rupiah</entity>
+				<entity>PATIENT-4 | Indonesian_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id4" size="5">
+			<originaltripleset>
+				<otriple>Arrabbiata_sauce | country | Italy</otriple>
+				<otriple>Italy | demonym | Italians</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Italy | language | Italian_language</otriple>
+				<otriple>Italy | leader | Sergio_Mattarella</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arrabbiata_sauce | country | Italy</mtriple>
+				<mtriple>Italy | demonym | Italians</mtriple>
+				<mtriple>Italy | capital | Rome</mtriple>
+				<mtriple>Italy | language | Italian_language</mtriple>
+				<mtriple>Italy | leaderName | Sergio_Mattarella</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Italy | leaderName | Sergio_Mattarella</striple>
+					<striple>Italy | capital | Rome</striple>
+					<striple>Italy | demonym | Italians</striple>
+					<striple>Italy | language | Italian_language</striple>
+					<striple>Arrabbiata_sauce | country | Italy</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sergio_Mattarella" number="1" tag="PATIENT-4" type="name">Sergio Mattarella</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Italy" number="3" tag="BRIDGE-1" type="description">a country</reference>
+					<reference entity="Rome" number="4" tag="PATIENT-2" type="name">Rome</reference>
+					<reference entity="Italians" number="5" tag="PATIENT-1" type="description">the people</reference>
+					<reference entity="Italian_language" number="6" tag="PATIENT-3" type="description">the language spoken</reference>
+					<reference entity="Arrabbiata_sauce" number="7" tag="AGENT-1" type="name">Arrabbiata sauce</reference>
+					<reference entity="Italy" number="8" tag="BRIDGE-1" type="name">Italy</reference>
+				</references>
+				<text>Sergio Mattarella is a leader in Italy, a country where Rome is the capital,and both the people and the language spoken are Italian. Arrabbiata sauce can be found in Italy.</text>
+				<template>PATIENT-4 is a leader in BRIDGE-1 , BRIDGE-1 where PATIENT-2 is the capital , and both PATIENT-1 and PATIENT-3 are Italian . AGENT-1 can be found in BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Arrabbiata_sauce | country | Italy</striple>
+					<striple>Italy | capital | Rome</striple>
+					<striple>Italy | language | Italian_language</striple>
+					<striple>Italy | leaderName | Sergio_Mattarella</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arrabbiata_sauce" number="1" tag="AGENT-1" type="name">Arrabbiata sauce</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="3" tag="PATIENT-2" type="name">Rome</reference>
+					<reference entity="Italian_language" number="4" tag="PATIENT-3" type="name">Italian</reference>
+					<reference entity="Sergio_Mattarella" number="5" tag="PATIENT-4" type="name">Sergio Mattarella</reference>
+				</references>
+				<text>Arrabbiata sauce is from Italy where the capital is Rome, Italian is the language spoken and Sergio Mattarella is a leader.</text>
+				<template>AGENT-1 is from BRIDGE-1 where the capital is PATIENT-2 , PATIENT-3 is the language spoken and PATIENT-4 is a leader .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arrabbiata_sauce</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Italians</entity>
+				<entity>PATIENT-2 | Rome</entity>
+				<entity>PATIENT-3 | Italian_language</entity>
+				<entity>PATIENT-4 | Sergio_Mattarella</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id5" size="5">
+			<originaltripleset>
+				<otriple>Arròs_negre | region | Valencian_Community</otriple>
+				<otriple>Valencian_Community | leaderName | Ximo_Puig</otriple>
+				<otriple>Arròs_negre | country | Spain</otriple>
+				<otriple>Spain | demonym | Spaniards</otriple>
+				<otriple>Spain | leader | Felipe_VI_of_Spain</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Arròs_negre | region | Valencian_Community</mtriple>
+				<mtriple>Valencian_Community | leaderName | Ximo_Puig</mtriple>
+				<mtriple>Arròs_negre | country | Spain</mtriple>
+				<mtriple>Spain | demonym | Spaniards</mtriple>
+				<mtriple>Spain | leaderName | Felipe_VI_of_Spain</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Valencian_Community | leaderName | Ximo_Puig</striple>
+					<striple>Arròs_negre | region | Valencian_Community</striple>
+					<striple>Arròs_negre | country | Spain</striple>
+					<striple>Spain | demonym | Spaniards</striple>
+					<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ximo_Puig" number="1" tag="PATIENT-1" type="name">Ximo Puig</reference>
+					<reference entity="Valencian_Community" number="2" tag="BRIDGE-1" type="description">the Valencian Community</reference>
+					<reference entity="Arròs_negre" number="3" tag="AGENT-1" type="name">Arros negre</reference>
+					<reference entity="Arròs_negre" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Spain" number="5" tag="BRIDGE-2" type="name">Spain</reference>
+					<reference entity="Spaniards" number="6" tag="PATIENT-2" type="name">Spaniards</reference>
+					<reference entity="Felipe_VI_of_Spain" number="7" tag="PATIENT-3" type="name">Felipe VI of Spain</reference>
+				</references>
+				<text>Ximo Puig is a leader of the Valencian Community which is where Arros negre comes from. It is a a traditional dish from Spain, where the people are called Spaniards and the leader is Felipe VI of Spain.</text>
+				<template>PATIENT-1 is a leader of BRIDGE-1 which is where AGENT-1 comes from . AGENT-1 is a traditional dish from BRIDGE-2 , where the people are called PATIENT-2 and the leader is PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Arròs_negre | region | Valencian_Community</striple>
+					<striple>Arròs_negre | country | Spain</striple>
+					<striple>Spain | demonym | Spaniards</striple>
+					<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+					<striple>Valencian_Community | leaderName | Ximo_Puig</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Arròs_negre" number="1" tag="AGENT-1" type="name">Arros negre</reference>
+					<reference entity="Valencian_Community" number="2" tag="BRIDGE-1" type="description">the Valencian Community</reference>
+					<reference entity="Spain" number="3" tag="BRIDGE-2" type="name">Spain</reference>
+					<reference entity="Spaniards" number="4" tag="PATIENT-2" type="description">the Spaniards</reference>
+					<reference entity="Felipe_VI_of_Spain" number="5" tag="PATIENT-3" type="name">Felipe VI</reference>
+					<reference entity="Ximo_Puig" number="6" tag="PATIENT-1" type="name">Ximo Puig</reference>
+				</references>
+				<text>Arros negre is from the Valencian Community of Spain, home to the Spaniards, led by Felipe VI and Ximo Puig.</text>
+				<template>AGENT-1 is from BRIDGE-1 of BRIDGE-2 , home to PATIENT-2 , led by PATIENT-3 and PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Arròs_negre</entity>
+				<entity>BRIDGE-1 | Valencian_Community</entity>
+				<entity>BRIDGE-2 | Spain</entity>
+				<entity>PATIENT-1 | Ximo_Puig</entity>
+				<entity>PATIENT-2 | Spaniards</entity>
+				<entity>PATIENT-3 | Felipe_VI_of_Spain</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id6" size="5">
+			<originaltripleset>
+				<otriple>Asam_pedas | country | Malaysia</otriple>
+				<otriple>Malaysia | ethnicGroup | Malaysian_Chinese</otriple>
+				<otriple>Malaysia | capital | Kuala_Lumpur</otriple>
+				<otriple>Malaysia | ethnicGroups | Malaysian_Indian</otriple>
+				<otriple>Asam_pedas | region | Malay_Peninsula</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asam_pedas | country | Malaysia</mtriple>
+				<mtriple>Malaysia | ethnicGroup | Malaysian_Chinese</mtriple>
+				<mtriple>Malaysia | capital | Kuala_Lumpur</mtriple>
+				<mtriple>Malaysia | ethnicGroup | Malaysian_Indian</mtriple>
+				<mtriple>Asam_pedas | region | Malay_Peninsula</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Asam_pedas | region | Malay_Peninsula</striple>
+					<striple>Asam_pedas | country | Malaysia</striple>
+					<striple>Malaysia | capital | Kuala_Lumpur</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Chinese</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Indian</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asam_pedas" number="1" tag="AGENT-1" type="name">Asam pedas</reference>
+					<reference entity="Malay_Peninsula" number="2" tag="PATIENT-4" type="description">the Malay Peninsula</reference>
+					<reference entity="Malaysia" number="3" tag="BRIDGE-1" type="name">Malaysia</reference>
+					<reference entity="Kuala_Lumpur" number="4" tag="PATIENT-2" type="name">Kuala Lumpur</reference>
+					<reference entity="Malaysian_Chinese" number="5" tag="PATIENT-1" type="description">the Malaysian Chinese</reference>
+					<reference entity="Malaysian_Indian" number="6" tag="PATIENT-3" type="name">Malaysian Indians</reference>
+				</references>
+				<text>Asam pedas is a food found in the Malay Peninsula of Malaysia, whose capital is Kuala Lumpur, and includes the Malaysian Chinese and Malaysian Indians.</text>
+				<template>AGENT-1 is a food found in PATIENT-4 of BRIDGE-1 , whose capital is PATIENT-2 , and includes PATIENT-1 and PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Asam_pedas | region | Malay_Peninsula</striple>
+					<striple>Asam_pedas | country | Malaysia</striple>
+					<striple>Malaysia | capital | Kuala_Lumpur</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Indian</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Chinese</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asam_pedas" number="1" tag="AGENT-1" type="name">Asam pedas</reference>
+					<reference entity="Malay_Peninsula" number="2" tag="PATIENT-4" type="description">the Malay Peninsula</reference>
+					<reference entity="Malaysia" number="3" tag="BRIDGE-1" type="name">Malaysia</reference>
+					<reference entity="Kuala_Lumpur" number="4" tag="PATIENT-2" type="name">Kuala Lumpur</reference>
+					<reference entity="Malaysian_Indian" number="5" tag="PATIENT-3" type="name">Malaysian Indians</reference>
+					<reference entity="Malaysian_Chinese" number="6" tag="PATIENT-1" type="name">Malaysian Chinese</reference>
+				</references>
+				<text>Asam pedas is a food found in the Malay Peninsula in Malaysia, whose capital is Kuala Lumpur, where Malaysian Indians and Malaysian Chinese are ethnic groups.</text>
+				<template>AGENT-1 is a food found in PATIENT-4 in BRIDGE-1 , whose capital is PATIENT-2 , where PATIENT-3 and PATIENT-1 are ethnic groups .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Asam_pedas | country | Malaysia</striple>
+					<striple>Asam_pedas | region | Malay_Peninsula</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Chinese</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Indian</striple>
+					<striple>Malaysia | capital | Kuala_Lumpur</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Malaysia" number="1" tag="BRIDGE-1" type="name">Malaysia</reference>
+					<reference entity="Malay_Peninsula" number="2" tag="PATIENT-4" type="description">the Malay Peninsula</reference>
+					<reference entity="Asam_pedas" number="3" tag="AGENT-1" type="name">Asam pedas</reference>
+					<reference entity="Malaysian_Chinese" number="4" tag="PATIENT-1" type="name">Malaysian Chinese</reference>
+					<reference entity="Malaysian_Indian" number="5" tag="PATIENT-3" type="name">Indian</reference>
+					<reference entity="Malaysia" number="6" tag="BRIDGE-1" type="name">Malaysia</reference>
+					<reference entity="Kuala_Lumpur" number="7" tag="PATIENT-2" type="name">Kuala Lumpur</reference>
+				</references>
+				<text>Malaysia and the Malay Peninsula are home to the dish Asam pedas. The capital of Malaysian Chinese and Indian inhabited Malaysia is Kuala Lumpur.</text>
+				<template>BRIDGE-1 and PATIENT-4 are home to the dish AGENT-1 . The capital of PATIENT-1 and PATIENT-3 inhabited BRIDGE-1 is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asam_pedas</entity>
+				<entity>BRIDGE-1 | Malaysia</entity>
+				<entity>PATIENT-1 | Malaysian_Chinese</entity>
+				<entity>PATIENT-2 | Kuala_Lumpur</entity>
+				<entity>PATIENT-3 | Malaysian_Indian</entity>
+				<entity>PATIENT-4 | Malay_Peninsula</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id7" size="5">
+			<originaltripleset>
+				<otriple>Asam_pedas | country | Malaysia</otriple>
+				<otriple>Malaysia | ethnicGroups | Malaysian_Chinese</otriple>
+				<otriple>Malaysia | leader | Arifin_Zakaria</otriple>
+				<otriple>Malaysia | ethnicGroup | Malaysian_Indian</otriple>
+				<otriple>Asam_pedas | region | Malay_Peninsula</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asam_pedas | country | Malaysia</mtriple>
+				<mtriple>Malaysia | ethnicGroup | Malaysian_Chinese</mtriple>
+				<mtriple>Malaysia | leaderName | Arifin_Zakaria</mtriple>
+				<mtriple>Malaysia | ethnicGroup | Malaysian_Indian</mtriple>
+				<mtriple>Asam_pedas | region | Malay_Peninsula</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Malaysia | ethnicGroup | Malaysian_Indian</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Chinese</striple>
+					<striple>Malaysia | leaderName | Arifin_Zakaria</striple>
+					<striple>Asam_pedas | country | Malaysia</striple>
+					<striple>Asam_pedas | region | Malay_Peninsula</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Malaysian_Indian" number="1" tag="PATIENT-3" type="name">Malaysian Indian</reference>
+					<reference entity="Malaysian_Chinese" number="2" tag="PATIENT-1" type="name">Malaysian chinese</reference>
+					<reference entity="Malaysia" number="3" tag="BRIDGE-1" type="name">Malaysia</reference>
+					<reference entity="Arifin_Zakaria" number="4" tag="PATIENT-2" type="name">Arifin Zakaria</reference>
+					<reference entity="Asam_pedas" number="5" tag="AGENT-1" type="name">Asam pedas</reference>
+					<reference entity="Malaysia" number="6" tag="BRIDGE-1" type="name">Malaysia</reference>
+					<reference entity="Malay_Peninsula" number="7" tag="PATIENT-4" type="description">the Malay Peninsula</reference>
+				</references>
+				<text>Malaysian Indian and Malaysian chinese are two of the ethnic groups in Malaysia where Arifin Zakaria is the leader. Asam pedas is found in Malaysia and is from the Malay Peninsula region.</text>
+				<template>PATIENT-3 and PATIENT-1 are two of the groups in BRIDGE-1 where PATIENT-2 is the leader . AGENT-1 is found in BRIDGE-1 and is from PATIENT-4 region .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Asam_pedas | region | Malay_Peninsula</striple>
+					<striple>Asam_pedas | country | Malaysia</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Indian</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Chinese</striple>
+					<striple>Malaysia | leaderName | Arifin_Zakaria</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asam_pedas" number="1" tag="AGENT-1" type="name">Asam pedas</reference>
+					<reference entity="Malay_Peninsula" number="2" tag="PATIENT-4" type="description">the Malay Peninsula</reference>
+					<reference entity="Malaysia" number="3" tag="BRIDGE-1" type="name">Malaysia</reference>
+					<reference entity="Malaysian_Indian" number="4" tag="PATIENT-3" type="name">Malaysian Indian</reference>
+					<reference entity="Malaysian_Chinese" number="5" tag="PATIENT-1" type="name">Chinese</reference>
+					<reference entity="Arifin_Zakaria" number="6" tag="PATIENT-2" type="name">Arifin Zakaria</reference>
+					<reference entity="Malaysia" number="7" tag="BRIDGE-1" type="description">the country 's</reference>
+				</references>
+				<text>Asam pedas is a food found in the Malay Peninsula region, Malaysia, where ethnic groups include Malaysian Indian and Chinese. Arifin Zakaria is the country's leader.</text>
+				<template>AGENT-1 is a food found in PATIENT-4 region , BRIDGE-1 , where ethnic groups include PATIENT-3 and PATIENT-1 . PATIENT-2 is BRIDGE-1 leader .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Malaysia | leaderName | Arifin_Zakaria</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Indian</striple>
+					<striple>Malaysia | ethnicGroup | Malaysian_Chinese</striple>
+					<striple>Asam_pedas | country | Malaysia</striple>
+					<striple>Asam_pedas | region | Malay_Peninsula</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Malaysia" number="1" tag="BRIDGE-1" type="name">Malaysia</reference>
+					<reference entity="Arifin_Zakaria" number="2" tag="PATIENT-2" type="name">Arifin Zakaria</reference>
+					<reference entity="Malaysian_Indian" number="3" tag="PATIENT-3" type="description">the Malaysian Indian</reference>
+					<reference entity="Malaysian_Chinese" number="4" tag="PATIENT-1" type="name">Chinese</reference>
+					<reference entity="Asam_pedas" number="5" tag="AGENT-1" type="description">the asam pedas</reference>
+					<reference entity="Malay_Peninsula" number="6" tag="PATIENT-4" type="description">the Malay Peninsula</reference>
+				</references>
+				<text>Malaysia, led by Arifin Zakaria, is home to the Malaysian Indian and Chinese, as well as the asam pedas of the Malay Peninsula region.</text>
+				<template>BRIDGE-1 , led by PATIENT-2 , is home to PATIENT-3 and PATIENT-1 , as well as AGENT-1 of PATIENT-4 region .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asam_pedas</entity>
+				<entity>BRIDGE-1 | Malaysia</entity>
+				<entity>PATIENT-1 | Malaysian_Chinese</entity>
+				<entity>PATIENT-2 | Arifin_Zakaria</entity>
+				<entity>PATIENT-3 | Malaysian_Indian</entity>
+				<entity>PATIENT-4 | Malay_Peninsula</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id8" size="5">
+			<originaltripleset>
+				<otriple>Ayam_penyet | region | &quot;Nationwide, also can be found in Malaysia and Singapore&quot;@en</otriple>
+				<otriple>Ayam_penyet | country | Java</otriple>
+				<otriple>Ayam_penyet | ingredient | Fried_chicken</otriple>
+				<otriple>Ayam_penyet | ingredientName | &quot;\&quot;Squeezed\&quot; or \&quot;smashed\&quot;fried chickenserved withsambal&quot;</otriple>
+				<otriple>Ayam_penyet | servingTemperature | &quot;Hot&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ayam_penyet | region | &quot;Nationwide, also can be found in Malaysia and Singapore&quot;</mtriple>
+				<mtriple>Ayam_penyet | country | Java</mtriple>
+				<mtriple>Ayam_penyet | ingredient | Fried_chicken</mtriple>
+				<mtriple>Ayam_penyet | mainIngredients | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</mtriple>
+				<mtriple>Ayam_penyet | servingTemperature | &quot;Hot&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ayam_penyet | region | &quot;Nationwide, also can be found in Malaysia and Singapore&quot;</striple>
+					<striple>Ayam_penyet | mainIngredients | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Nationwide, also can be found in Malaysia and Singapore&quot;" number="2" tag="PATIENT-1" type="name">made nationwide , and can also be found in Malaysia and Singapore</reference>
+					<reference entity="Ayam_penyet" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal" number="4" tag="PATIENT-4" type="name">squeezed or smashed fried chicken served with sambal</reference>
+				</references>
+				<text>Ayam penyet is a Javanese dish made nationwide, and can also be found in Malaysia and Singapore. It should be served hot and contains the main ingredients of squeezed or smashed fried chicken served with sambal.</text>
+				<template>AGENT-1 is Javanese dish PATIENT-1 . AGENT-1 should be served hot and contains the main ingredients of PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ayam_penyet | region | &quot;Nationwide, also can be found in Malaysia and Singapore&quot;</striple>
+					<striple>Ayam_penyet | mainIngredients | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ayam_penyet" number="1" tag="AGENT-1" type="name">Ayam penyet</reference>
+					<reference entity="&quot;Nationwide, also can be found in Malaysia and Singapore&quot;" number="2" tag="PATIENT-1" type="name">Java</reference>
+					<reference entity="&quot;Nationwide, also can be found in Malaysia and Singapore&quot;" number="3" tag="PATIENT-1" type="name">Malaysia and Singapore</reference>
+					<reference entity="&quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal" number="4" tag="PATIENT-4" type="name">fried chicken and sambal sauce</reference>
+				</references>
+				<text>Ayam penyet is a hot food dish found in Java, Malaysia and Singapore and consists of fried chicken and sambal sauce.</text>
+				<template>AGENT-1 is a hot food found in PATIENT-1 , PATIENT-1 and consists of PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Ayam_penyet | mainIngredients | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ayam_penyet" number="1" tag="AGENT-1" type="name">Ayam penyet</reference>
+					<reference entity="Java" number="2" tag="PATIENT-2" type="name">Java</reference>
+					<reference entity="Ayam_penyet" number="3" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal" number="4" tag="PATIENT-4" type="name">fried chicken that is smashed and served hot with sambal</reference>
+				</references>
+				<text>Ayam penyet is a food made in Java regions of Malaysia and Singapore. It contains fried chicken that is smashed and served hot with sambal.</text>
+				<template>AGENT-1 is a food made in PATIENT-2 regions of Singapore . AGENT-1 contains PATIENT-4 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ayam_penyet</entity>
+				<entity>PATIENT-1 | &quot;Nationwide, also can be found in Malaysia and Singapore&quot;</entity>
+				<entity>PATIENT-2 | Java</entity>
+				<entity>PATIENT-3 | Fried_chicken</entity>
+				<entity>PATIENT-4 | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</entity>
+				<entity>PATIENT-5 | &quot;Hot&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id9" size="5">
+			<originaltripleset>
+				<otriple>Ayam_penyet | region | Malaysia</otriple>
+				<otriple>Malaysia | ethnicGroup | Malaysian_Chinese</otriple>
+				<otriple>Ayam_penyet | ingredient | Fried_chicken</otriple>
+				<otriple>Ayam_penyet | country | Indonesia</otriple>
+				<otriple>Ayam_penyet | mainIngredient | &quot;\&quot;Squeezed\&quot; or \&quot;smashed\&quot; fried chicken served with sambal&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ayam_penyet | region | Malaysia</mtriple>
+				<mtriple>Malaysia | ethnicGroup | Malaysian_Chinese</mtriple>
+				<mtriple>Ayam_penyet | ingredient | Fried_chicken</mtriple>
+				<mtriple>Ayam_penyet | country | Indonesia</mtriple>
+				<mtriple>Ayam_penyet | mainIngredients | &quot;Squeezed&quot; or &quot;smashed&quot; fried chicken served with sambal</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset/>
+				<references/>
+				<text/>
+				<template/>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset/>
+				<references/>
+				<text/>
+				<template/>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset/>
+				<references/>
+				<text/>
+				<template/>
+			</lex>
+			<entitymap/>
+		</entry>
+		<entry category="Food" eid="Id10" size="5">
+			<originaltripleset>
+				<otriple>Bacon_Explosion | country | United_States</otriple>
+				<otriple>United_States | leader | Barack_Obama</otriple>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+				<otriple>United_States | capital | Washington,_D.C.</otriple>
+				<otriple>United_States | language | English_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bacon_Explosion | country | United_States</mtriple>
+				<mtriple>United_States | leaderName | Barack_Obama</mtriple>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+				<mtriple>United_States | capital | Washington,_D.C.</mtriple>
+				<mtriple>United_States | language | English_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>United_States | language | English_language</striple>
+					<striple>United_States | capital | Washington,_D.C.</striple>
+					<striple>United_States | leaderName | Barack_Obama</striple>
+					<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bacon_Explosion" number="1" tag="AGENT-1" type="name">Bacon Explosion</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States ,</reference>
+					<reference entity="English_language" number="3" tag="PATIENT-4" type="name">English</reference>
+					<reference entity="Washington,_D.C." number="4" tag="PATIENT-3" type="name">Washington DC</reference>
+					<reference entity="Barack_Obama" number="5" tag="PATIENT-1" type="name">Barack Obama</reference>
+					<reference entity="United_States" number="6" tag="BRIDGE-1" type="description">the US</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="7" tag="PATIENT-2" type="name">Native Americans</reference>
+					<reference entity="United_States" number="8" tag="BRIDGE-1" type="description">the country</reference>
+				</references>
+				<text>Bacon Explosion is a dish that originates in the United States, where English is the language spoken and the capital is Washington DC. Barack Obama is leader of the US and Native Americans are one of the ethnic groups of the country.</text>
+				<template>AGENT-1 is a dish that originates in BRIDGE-1 where PATIENT-4 is the language spoken and the capital is PATIENT-3 . PATIENT-1 is leader of BRIDGE-1 and PATIENT-2 are one of the ethnic groups of BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>United_States | leaderName | Barack_Obama</striple>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+					<striple>United_States | capital | Washington,_D.C.</striple>
+					<striple>United_States | language | English_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barack_Obama" number="1" tag="PATIENT-1" type="name">Barack Obama</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="name">United States</reference>
+					<reference entity="Bacon_Explosion" number="3" tag="AGENT-1" type="name">Bacon Explosion</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="4" tag="PATIENT-2" type="name">Native Americans</reference>
+					<reference entity="United_States" number="5" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="Washington,_D.C." number="6" tag="PATIENT-3" type="name">Washington DC</reference>
+					<reference entity="English_language" number="7" tag="PATIENT-4" type="name">English</reference>
+				</references>
+				<text>Barack Obama is leader of United States, the home of the dish Bacon Explosion. Native Americans are one of the ethnic groups of the country, where Washington DC is the capital and English is the language spoken.</text>
+				<template>PATIENT-1 is leader of BRIDGE-1 , the home of the dish AGENT-1 . PATIENT-2 are one of the ethnic groups of BRIDGE-1 , where PATIENT-3 is the capital and PATIENT-4 is the language spoken .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bacon_Explosion | country | United_States</striple>
+					<striple>United_States | leaderName | Barack_Obama</striple>
+					<striple>United_States | language | English_language</striple>
+					<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bacon_Explosion" number="1" tag="AGENT-1" type="name">Bacon Explosion</reference>
+					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Barack_Obama" number="3" tag="PATIENT-1" type="name">Barack Obama</reference>
+					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the United States</reference>
+					<reference entity="Washington,_D.C." number="5" tag="PATIENT-3" type="name">Washington , D .C .</reference>
+					<reference entity="English_language" number="6" tag="PATIENT-4" type="name">English</reference>
+					<reference entity="Native_Americans_in_the_United_States" number="7" tag="PATIENT-2" type="name">Native Americans</reference>
+					<reference entity="United_States" number="8" tag="BRIDGE-1" type="description">the country</reference>
+				</references>
+				<text>Bacon Explosion comes from the United States whose leader is Barack Obama. The capital of the United States is Washington, D.C., the spoken language is English and Native Americans are one of the ethnic groups of the country.</text>
+				<template>AGENT-1 comes from BRIDGE-1 whose leader is PATIENT-1 . The capital of BRIDGE-1 is PATIENT-3, the spoken language is PATIENT-4 and PATIENT-2 are one of the ethnic groups of BRIDGE-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bacon_Explosion</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>PATIENT-1 | Barack_Obama</entity>
+				<entity>PATIENT-2 | Native_Americans_in_the_United_States</entity>
+				<entity>PATIENT-3 | Washington,_D.C.</entity>
+				<entity>PATIENT-4 | English_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id11" size="5">
+			<originaltripleset>
+				<otriple>Baked_Alaska | country | France</otriple>
+				<otriple>Hong_Kong | leader | Carrie_Lam_(politician)</otriple>
+				<otriple>France | leaderName | Gérard_Larcher</otriple>
+				<otriple>France | language | French_language</otriple>
+				<otriple>Baked_Alaska | region | Hong_Kong</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Baked_Alaska | country | France</mtriple>
+				<mtriple>Hong_Kong | leaderName | Carrie_Lam_(politician)</mtriple>
+				<mtriple>France | leaderName | Gérard_Larcher</mtriple>
+				<mtriple>France | language | French_language</mtriple>
+				<mtriple>Baked_Alaska | region | Hong_Kong</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Baked_Alaska | country | France</striple>
+					<striple>France | language | French_language</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+					<striple>Baked_Alaska | region | Hong_Kong</striple>
+					<striple>Hong_Kong | leaderName | Carrie_Lam_(politician)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baked_Alaska" number="1" tag="AGENT-1" type="name">Baked Alaska</reference>
+					<reference entity="France" number="2" tag="BRIDGE-1" type="name">France</reference>
+					<reference entity="French_language" number="3" tag="PATIENT-3" type="name">French</reference>
+					<reference entity="Gérard_Larcher" number="4" tag="PATIENT-2" type="name">Gerard Larcher</reference>
+					<reference entity="Hong_Kong" number="5" tag="BRIDGE-2" type="name">Hong Kong</reference>
+					<reference entity="Carrie_Lam_(politician)" number="6" tag="PATIENT-1" type="name">Carrie Lam</reference>
+				</references>
+				<text>Baked Alaska originates from France where the national language is French and one of the leader is Gerard Larcher. The dessert is served in Hong Kong as well where the leader is Carrie Lam.</text>
+				<template>AGENT-1 originates from BRIDGE-1 where the national language is PATIENT-3 and one of the leader is PATIENT-2 . The dessert is served in BRIDGE-2 as well where the leader is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Baked_Alaska | country | France</striple>
+					<striple>France | language | French_language</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+					<striple>Baked_Alaska | region | Hong_Kong</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baked_Alaska" number="1" tag="AGENT-1" type="name">Baked Alaska</reference>
+					<reference entity="France" number="2" tag="BRIDGE-1" type="name">France</reference>
+					<reference entity="Gérard_Larcher" number="5" tag="PATIENT-2" type="name">Gerard Larcher</reference>
+					<reference entity="Hong_Kong" number="6" tag="BRIDGE-2" type="name">Hong Kong</reference>
+				</references>
+				<text>Baked Alaska comes from France where the spoken language is French,and the country's leader is Gerard Larcher. This dessert is also served in Hong Kong.</text>
+				<template>AGENT-1 comes from BRIDGE-1 where the spoken language is PATIENT-3 , and BRIDGE-1 leader is PATIENT-2 . This dessert is also served in BRIDGE-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Baked_Alaska | region | Hong_Kong</striple>
+					<striple>Hong_Kong | leaderName | Carrie_Lam_(politician)</striple>
+					<striple>Baked_Alaska | country | France</striple>
+					<striple>France | language | French_language</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baked_Alaska" number="1" tag="AGENT-1" type="name">Baked Alaska</reference>
+					<reference entity="Hong_Kong" number="2" tag="BRIDGE-2" type="name">Hong Kong</reference>
+					<reference entity="Carrie_Lam_(politician)" number="3" tag="PATIENT-1" type="name">Carrie Lam</reference>
+					<reference entity="France" number="4" tag="BRIDGE-1" type="name">France</reference>
+					<reference entity="French_language" number="5" tag="PATIENT-3" type="name">French</reference>
+					<reference entity="Gérard_Larcher" number="6" tag="PATIENT-2" type="name">Gerard Larcher</reference>
+				</references>
+				<text>Baked Alaska, served in Hong Kong, who's political leader is Carrie Lam, but is actually from France where the national language is French and the leader is Gerard Larcher.</text>
+				<template>AGENT-1 , served in BRIDGE-2 , who 's political leader is PATIENT-1 , but is actually from BRIDGE-1 where the national language is PATIENT-3 and the leader is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Baked_Alaska</entity>
+				<entity>BRIDGE-1 | France</entity>
+				<entity>BRIDGE-2 | Hong_Kong</entity>
+				<entity>PATIENT-1 | Carrie_Lam_(politician)</entity>
+				<entity>PATIENT-2 | Gérard_Larcher</entity>
+				<entity>PATIENT-3 | French_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id12" size="5">
+			<originaltripleset>
+				<otriple>Bakewell_pudding | region | Derbyshire_Dales</otriple>
+				<otriple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</otriple>
+				<otriple>Bakewell_pudding | hasVariant | Bakewell_tart</otriple>
+				<otriple>Derbyshire_Dales | isPartOf | Derbyshire</otriple>
+				<otriple>Bakewell_tart | ingredient | Shortcrust_pastry</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bakewell_pudding | region | Derbyshire_Dales</mtriple>
+				<mtriple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</mtriple>
+				<mtriple>Bakewell_pudding | dishVariation | Bakewell_tart</mtriple>
+				<mtriple>Derbyshire_Dales | isPartOf | Derbyshire</mtriple>
+				<mtriple>Bakewell_tart | ingredient | Shortcrust_pastry</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+					<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+					<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+					<striple>Bakewell_tart | ingredient | Shortcrust_pastry</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Derbyshire_Dales" number="3" tag="BRIDGE-1" type="description">the Derbyshire Dales</reference>
+					<reference entity="Derbyshire" number="4" tag="PATIENT-2" type="name">Derbyshire</reference>
+					<reference entity="Patrick_McLoughlin" number="5" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+					<reference entity="Bakewell_tart" number="6" tag="BRIDGE-2" type="description">The tart</reference>
+					<reference entity="Shortcrust_pastry" number="7" tag="PATIENT-3" type="name">shortcrust pastry</reference>
+				</references>
+				<text>Bakewell Tart (or pudding) is from the Derbyshire Dales area of Derbyshire where Patrick McLoughlin is a leader. The tart is made with shortcrust pastry.</text>
+				<template>AGENT-1 ( or AGENT-1 ) is from BRIDGE-1 area of PATIENT-2 where PATIENT-1 is a leader . BRIDGE-2 is made with PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+					<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Shortcrust_pastry" number="1" tag="PATIENT-3" type="description">The</reference>
+					<reference entity="Derbyshire_Dales" number="4" tag="BRIDGE-1" type="description">the Derbyshire Dales</reference>
+					<reference entity="Derbyshire" number="5" tag="PATIENT-2" type="name">Derbyshire</reference>
+					<reference entity="Patrick_McLoughlin" number="6" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+				</references>
+				<text>The shortcrust pastry-based dessert Bakewell Tart (or pudding) hails from the Derbyshire Dales area of Derbyshire where Patrick McLoughlin is a leader.</text>
+				<template>PATIENT-3 AGENT-1 ( or AGENT-1 ) hails from BRIDGE-1 area of PATIENT-2 where PATIENT-1 is a leader .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+					<striple>Bakewell_tart | ingredient | Shortcrust_pastry</striple>
+					<striple>Bakewell_pudding | region | Derbyshire_Dales</striple>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bakewell_pudding" number="1" tag="AGENT-1" type="name">bakewell pudding</reference>
+					<reference entity="Bakewell_tart" number="2" tag="BRIDGE-2" type="name">bakewell tart</reference>
+					<reference entity="Shortcrust_pastry" number="3" tag="PATIENT-3" type="name">Shortcrust pastry</reference>
+					<reference entity="Bakewell_pudding" number="4" tag="AGENT-1" type="name">Bakewell pudding</reference>
+					<reference entity="Derbyshire_Dales" number="5" tag="BRIDGE-1" type="description">the Derbyshire Dales</reference>
+					<reference entity="Patrick_McLoughlin" number="6" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+				</references>
+				<text>A variant of bakewell pudding is bakewell tart, which key ingredient is Shortcrust pastry. Bakewell pudding originates from the Derbyshire Dales, which leader is Patrick McLoughlin.</text>
+				<template>A variant of AGENT-1 is BRIDGE-2 , which key ingredient is PATIENT-3 . AGENT-1 originates from BRIDGE-1 , which leader is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>BRIDGE-1 | Derbyshire_Dales</entity>
+				<entity>BRIDGE-2 | Bakewell_tart</entity>
+				<entity>PATIENT-1 | Patrick_McLoughlin</entity>
+				<entity>PATIENT-2 | Derbyshire</entity>
+				<entity>PATIENT-3 | Shortcrust_pastry</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id13" size="5">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | ingredient | Lemon</otriple>
+				<otriple>Lemon | family | Rutaceae</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+				<otriple>Bandeja_paisa | region | Paisa_Region</otriple>
+				<otriple>Lemon | genus | Citrus</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bandeja_paisa | ingredient | Lemon</mtriple>
+				<mtriple>Lemon | family | Rutaceae</mtriple>
+				<mtriple>Bandeja_paisa | country | Colombian_cuisine</mtriple>
+				<mtriple>Bandeja_paisa | region | Paisa_Region</mtriple>
+				<mtriple>Lemon | genus | Citrus</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+					<striple>Bandeja_paisa | region | Paisa_Region</striple>
+					<striple>Bandeja_paisa | ingredient | Lemon</striple>
+					<striple>Lemon | family | Rutaceae</striple>
+					<striple>Lemon | genus | Citrus</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Colombian_cuisine" number="2" tag="PATIENT-2" type="name">Colombian cuisine</reference>
+					<reference entity="Paisa_Region" number="3" tag="PATIENT-3" type="description">the Paisa region</reference>
+					<reference entity="Bandeja_paisa" number="4" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Lemon" number="5" tag="BRIDGE-1" type="name">lemon</reference>
+					<reference entity="Rutaceae" number="6" tag="PATIENT-1" type="description">the family Rutaceae</reference>
+					<reference entity="Citrus" number="7" tag="PATIENT-4" type="description">the genus citrus</reference>
+				</references>
+				<text>Bandeja paisa is a dish from Colombian cuisine and originates from the Paisa region. One of the ingredients in Bandeja paisa is lemon which is a member of the family Rutaceae and is from the genus citrus.</text>
+				<template>AGENT-1 is a dish from PATIENT-2 and originates from PATIENT-3 . One of the ingredients in AGENT-1 is BRIDGE-1 which is a member of PATIENT-1 and is from PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bandeja_paisa | region | Paisa_Region</striple>
+					<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+					<striple>Bandeja_paisa | ingredient | Lemon</striple>
+					<striple>Lemon | family | Rutaceae</striple>
+					<striple>Lemon | genus | Citrus</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Paisa_Region" number="2" tag="PATIENT-3" type="description">the Paisa region</reference>
+					<reference entity="Colombian_cuisine" number="3" tag="PATIENT-2" type="name">Colombia</reference>
+					<reference entity="Lemon" number="4" tag="BRIDGE-1" type="name">Lemon</reference>
+					<reference entity="Bandeja_paisa" number="5" tag="AGENT-1" type="pronoun">its</reference>
+					<reference entity="Rutaceae" number="6" tag="PATIENT-1" type="description">the family Rutaceae</reference>
+					<reference entity="Citrus" number="7" tag="PATIENT-4" type="description">the genus citrus</reference>
+				</references>
+				<text>Bandeja paisa is a traditional dish from the Paisa region, Colombia. Lemon is one of its ingredients and is a member of the family Rutaceae and is from the genus citrus.</text>
+				<template>AGENT-1 is a traditional dish from PATIENT-3 , PATIENT-2 . BRIDGE-1 is one of AGENT-1 ingredients and is a member of PATIENT-1 and is from PATIENT-4 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>BRIDGE-1 | Lemon</entity>
+				<entity>PATIENT-1 | Rutaceae</entity>
+				<entity>PATIENT-2 | Colombian_cuisine</entity>
+				<entity>PATIENT-3 | Paisa_Region</entity>
+				<entity>PATIENT-4 | Citrus</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id14" size="5">
+			<originaltripleset>
+				<otriple>Bandeja_paisa | ingredient | Lemon</otriple>
+				<otriple>Lemon | order | Rosids</otriple>
+				<otriple>Lemon | family | Rutaceae</otriple>
+				<otriple>Bandeja_paisa | country | Colombian_cuisine</otriple>
+				<otriple>Bandeja_paisa | region | Paisa_Region</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bandeja_paisa | ingredient | Lemon</mtriple>
+				<mtriple>Lemon | order | Rosids</mtriple>
+				<mtriple>Lemon | family | Rutaceae</mtriple>
+				<mtriple>Bandeja_paisa | country | Colombian_cuisine</mtriple>
+				<mtriple>Bandeja_paisa | region | Paisa_Region</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bandeja_paisa | country | Colombian_cuisine</striple>
+					<striple>Bandeja_paisa | region | Paisa_Region</striple>
+					<striple>Bandeja_paisa | ingredient | Lemon</striple>
+					<striple>Lemon | family | Rutaceae</striple>
+					<striple>Lemon | order | Rosids</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bandeja_paisa" number="1" tag="AGENT-1" type="name">Bandeja paisa</reference>
+					<reference entity="Colombian_cuisine" number="2" tag="PATIENT-3" type="name">Colombian cuisine</reference>
+					<reference entity="Paisa_Region" number="3" tag="PATIENT-4" type="description">the Paisa region</reference>
+					<reference entity="Lemon" number="4" tag="BRIDGE-1" type="name">lemon</reference>
+					<reference entity="Lemon" number="5" tag="BRIDGE-1" type="description">The lemon</reference>
+					<reference entity="Rutaceae" number="6" tag="PATIENT-2" type="description">the rutaceae</reference>
+					<reference entity="Rosids" number="7" tag="PATIENT-1" type="name">Rosids</reference>
+				</references>
+				<text>Bandeja paisa is typical Colombian cuisine that originates from the Paisa region and contains lemon. The lemon belongs to the rutaceae family and the order of Rosids.</text>
+				<template>AGENT-1 is typical PATIENT-3 that originates from PATIENT-4 and contains BRIDGE-1 . BRIDGE-1 belongs to PATIENT-2 family and the order of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bandeja_paisa</entity>
+				<entity>BRIDGE-1 | Lemon</entity>
+				<entity>PATIENT-1 | Rosids</entity>
+				<entity>PATIENT-2 | Rutaceae</entity>
+				<entity>PATIENT-3 | Colombian_cuisine</entity>
+				<entity>PATIENT-4 | Paisa_Region</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id15" size="5">
+			<originaltripleset>
+				<otriple>Barny_Cakes | country | France</otriple>
+				<otriple>France | leader | Gérard_Larcher</otriple>
+				<otriple>France | language | French_language</otriple>
+				<otriple>France | leaderName | Claude_Bartolone</otriple>
+				<otriple>Barny_Cakes | ingredient | Sponge_cake</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Barny_Cakes | country | France</mtriple>
+				<mtriple>France | language | French_language</mtriple>
+				<mtriple>France | leaderName | Gérard_Larcher</mtriple>
+				<mtriple>France | leaderName | Claude_Bartolone</mtriple>
+				<mtriple>Barny_Cakes | ingredient | Sponge_cake</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Barny_Cakes | ingredient | Sponge_cake</striple>
+					<striple>Barny_Cakes | country | France</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+					<striple>France | leaderName | Claude_Bartolone</striple>
+					<striple>France | language | French_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barny_Cakes" number="1" tag="AGENT-1" type="name">Barny Cakes</reference>
+					<reference entity="Sponge_cake" number="2" tag="PATIENT-4" type="name">sponge cake</reference>
+					<reference entity="France" number="3" tag="BRIDGE-1" type="name">France</reference>
+					<reference entity="Gérard_Larcher" number="4" tag="PATIENT-2" type="name">Gerard Larcher</reference>
+					<reference entity="Claude_Bartolone" number="5" tag="PATIENT-3" type="name">Claude Bartolone</reference>
+					<reference entity="French_language" number="6" tag="PATIENT-1" type="name">French</reference>
+				</references>
+				<text>Barny Cakes, which are made from sponge cake, are from France, where Gerard Larcher and Claude Bartolone are leaders and French is the language spoken.</text>
+				<template>AGENT-1 , which are made from PATIENT-4 , are from BRIDGE-1 , where PATIENT-2 and PATIENT-3 are leaders and PATIENT-1 is the language spoken .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Barny_Cakes | ingredient | Sponge_cake</striple>
+					<striple>Barny_Cakes | country | France</striple>
+					<striple>France | language | French_language</striple>
+					<striple>France | leaderName | Claude_Bartolone</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barny_Cakes" number="1" tag="AGENT-1" type="name">Barny cakes</reference>
+					<reference entity="Sponge_cake" number="2" tag="PATIENT-4" type="name">sponge cake</reference>
+					<reference entity="France" number="3" tag="BRIDGE-1" type="name">France</reference>
+					<reference entity="French_language" number="4" tag="PATIENT-1" type="name">French</reference>
+					<reference entity="Claude_Bartolone" number="5" tag="PATIENT-3" type="name">Claude Bartolone</reference>
+					<reference entity="Gérard_Larcher" number="6" tag="PATIENT-2" type="name">Gerard Larcher</reference>
+				</references>
+				<text>Barny cakes, made with sponge cake, are found in France, where French is spoken and whose leaders are Claude Bartolone and Gerard Larcher.</text>
+				<template>AGENT-1 , made with PATIENT-4 , are found in BRIDGE-1 , where PATIENT-1 is spoken and whose leaders are PATIENT-3 and PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Barny_Cakes</entity>
+				<entity>BRIDGE-1 | France</entity>
+				<entity>PATIENT-1 | French_language</entity>
+				<entity>PATIENT-2 | Gérard_Larcher</entity>
+				<entity>PATIENT-3 | Claude_Bartolone</entity>
+				<entity>PATIENT-4 | Sponge_cake</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id16" size="5">
+			<originaltripleset>
+				<otriple>Barny_Cakes | country | France</otriple>
+				<otriple>France | leader | Gérard_Larcher</otriple>
+				<otriple>France | language | French_language</otriple>
+				<otriple>Mondelez_International | foundationPlace | Chicago</otriple>
+				<otriple>Barny_Cakes | creator | Mondelez_International</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Barny_Cakes | country | France</mtriple>
+				<mtriple>France | leaderName | Gérard_Larcher</mtriple>
+				<mtriple>France | language | French_language</mtriple>
+				<mtriple>Mondelez_International | foundationPlace | Chicago</mtriple>
+				<mtriple>Barny_Cakes | creator | Mondelez_International</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Mondelez_International | foundationPlace | Chicago</striple>
+					<striple>Barny_Cakes | creator | Mondelez_International</striple>
+					<striple>Barny_Cakes | country | France</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+					<striple>France | language | French_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chicago" number="2" tag="PATIENT-3" type="name">Chicago</reference>
+					<reference entity="Barny_Cakes" number="3" tag="AGENT-1" type="name">Barny Cakes</reference>
+					<reference entity="France" number="4" tag="BRIDGE-1" type="name">France</reference>
+					<reference entity="Gérard_Larcher" number="5" tag="PATIENT-1" type="name">Gerard Larcher</reference>
+					<reference entity="French_language" number="6" tag="PATIENT-2" type="name">French</reference>
+				</references>
+				<text>Created by Mondelez International (founded in Chicago), Barny Cakes come from France where Gerard Larcher is leader and they speak French.</text>
+				<template>Created by BRIDGE-2 ( founded in PATIENT-3 ) , AGENT-1 come from BRIDGE-1 where PATIENT-1 is leader and they speak PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Barny_Cakes | creator | Mondelez_International</striple>
+					<striple>Mondelez_International | foundationPlace | Chicago</striple>
+					<striple>Barny_Cakes | country | France</striple>
+					<striple>France | leaderName | Gérard_Larcher</striple>
+					<striple>France | language | French_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Barny_Cakes" number="1" tag="AGENT-1" type="name">Barny cakes</reference>
+					<reference entity="Mondelez_International" number="2" tag="BRIDGE-2" type="name">Mondelez International</reference>
+					<reference entity="Chicago" number="3" tag="PATIENT-3" type="name">Chicago</reference>
+					<reference entity="Barny_Cakes" number="4" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="France" number="5" tag="BRIDGE-1" type="name">France</reference>
+					<reference entity="Gérard_Larcher" number="6" tag="PATIENT-1" type="name">Gérard Larcher</reference>
+					<reference entity="French_language" number="7" tag="PATIENT-2" type="name">French</reference>
+				</references>
+				<text>Barny cakes is created by Mondelez International, which was founded in Chicago. It comes from France, which leader is Gérard Larcher and the language is French.</text>
+				<template>AGENT-1 is created by BRIDGE-2 , which was founded in PATIENT-3 . AGENT-1 comes from BRIDGE-1 , which leader is PATIENT-1 and the language is PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Barny_Cakes</entity>
+				<entity>BRIDGE-1 | France</entity>
+				<entity>BRIDGE-2 | Mondelez_International</entity>
+				<entity>PATIENT-1 | Gérard_Larcher</entity>
+				<entity>PATIENT-2 | French_language</entity>
+				<entity>PATIENT-3 | Chicago</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id17" size="5">
+			<originaltripleset>
+				<otriple>Beef_kway_teow | region | Singapore</otriple>
+				<otriple>Singapore | language | English_language</otriple>
+				<otriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;@en</otriple>
+				<otriple>Singapore | leaderName | Tony_Tan</otriple>
+				<otriple>Singapore | leader | Halimah_Yacob</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Beef_kway_teow | region | Singapore</mtriple>
+				<mtriple>Singapore | language | English_language</mtriple>
+				<mtriple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</mtriple>
+				<mtriple>Singapore | leaderName | Tony_Tan</mtriple>
+				<mtriple>Singapore | leaderName | Halimah_Yacob</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Singapore | language | English_language</striple>
+					<striple>Singapore | leaderName | Tony_Tan</striple>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					<striple>Beef_kway_teow | region | Singapore</striple>
+					<striple>Beef_kway_teow | country | &quot;Singapore and Indonesia&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="English_language" number="1" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="Singapore" number="2" tag="BRIDGE-1" type="name">Singapore</reference>
+					<reference entity="Tony_Tan" number="3" tag="PATIENT-3" type="name">Tony Tan</reference>
+					<reference entity="Halimah_Yacob" number="4" tag="PATIENT-4" type="name">Halimah Yacob</reference>
+					<reference entity="Beef_kway_teow" number="5" tag="AGENT-1" type="name">Beef kway teow</reference>
+					<reference entity="&quot;Singapore and Indonesia&quot;" number="6" tag="PATIENT-2" type="name">Indonesia</reference>
+				</references>
+				<text>English speaking Singapore, led by Tony Tan and Halimah Yacob, offers the dish Beef kway teow, also found in Indonesia.</text>
+				<template>PATIENT-1 speaking BRIDGE-1 , led by PATIENT-3 and PATIENT-4 , offers the dish AGENT-1 , also found in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-2 | &quot;Singapore and Indonesia&quot;</entity>
+				<entity>PATIENT-3 | Tony_Tan</entity>
+				<entity>PATIENT-4 | Halimah_Yacob</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id18" size="5">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>Bhajji | region | Karnataka</otriple>
+				<otriple>Bhajji | mainIngredient | &quot;Gram flour, vegetables&quot;@en</otriple>
+				<otriple>Bhajji | alias | &quot;Bhaji, bajji&quot;@en</otriple>
+				<otriple>Bhajji | ingredient | Vegetable</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bhajji | country | India</mtriple>
+				<mtriple>Bhajji | region | Karnataka</mtriple>
+				<mtriple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</mtriple>
+				<mtriple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</mtriple>
+				<mtriple>Bhajji | ingredient | Vegetable</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</striple>
+					<striple>Bhajji | region | Karnataka</striple>
+					<striple>Bhajji | country | India</striple>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bhajji" number="1" tag="AGENT-1" type="name">Bhajji</reference>
+					<reference entity="&quot;Bhaji, bajji&quot;" number="2" tag="PATIENT-4" type="name">Bhaji or bajj</reference>
+					<reference entity="Karnataka" number="3" tag="PATIENT-2" type="description">the Karnataka</reference>
+					<reference entity="India" number="4" tag="PATIENT-1" type="name">India</reference>
+					<reference entity="Bhajji" number="5" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="&quot;Gram flour, vegetables&quot;" number="6" tag="PATIENT-3" type="name">vegetables and gram flour</reference>
+				</references>
+				<text>Bhajji is also known as Bhaji or bajj, originates from the Karnataka region of India. It is usually made up of vegetables and gram flour.</text>
+				<template>AGENT-1 is also known as PATIENT-4 , originates from PATIENT-2 region of PATIENT-1 . AGENT-1 is usually made up of PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</striple>
+					<striple>Bhajji | country | India</striple>
+					<striple>Bhajji | region | Karnataka</striple>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bhajji" number="1" tag="AGENT-1" type="name">Bhajji</reference>
+					<reference entity="&quot;Bhaji, bajji&quot;" number="2" tag="PATIENT-4" type="name">Bhaji or bajji</reference>
+					<reference entity="India" number="3" tag="PATIENT-1" type="name">India</reference>
+					<reference entity="Karnataka" number="4" tag="PATIENT-2" type="name">Karnataka</reference>
+					<reference entity="&quot;Gram flour, vegetables&quot;" number="5" tag="PATIENT-3" type="name">gram flour and vegetables</reference>
+				</references>
+				<text>Bhajji, also known as Bhaji or bajji, originates from India in the Karnataka region and the main ingredients are gram flour and vegetables.</text>
+				<template>AGENT-1 , also known as PATIENT-4 , originates from PATIENT-1 in the PATIENT-2 region and the main ingredients are PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bhajji | alternativeName | &quot;Bhaji, bajji&quot;</striple>
+					<striple>Bhajji | ingredient | Vegetable</striple>
+					<striple>Bhajji | mainIngredients | &quot;Gram flour, vegetables&quot;</striple>
+					<striple>Bhajji | region | Karnataka</striple>
+					<striple>Bhajji | country | India</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bhajji" number="1" tag="AGENT-1" type="name">Bhajji</reference>
+					<reference entity="&quot;Bhaji, bajji&quot;" number="2" tag="PATIENT-4" type="name"> (Bhaji ) , or bajji</reference>
+					<reference entity="Vegetable" number="3" tag="PATIENT-5" type="name">vegetables</reference>
+					<reference entity="&quot;Gram flour, vegetables&quot;" number="4" tag="PATIENT-3" type="name">gram flour</reference>
+					<reference entity="Bhajji" number="5" tag="AGENT-1" type="pronoun">it</reference>
+					<reference entity="Karnataka" number="6" tag="PATIENT-2" type="name">Karnataka</reference>
+					<reference entity="India" number="7" tag="PATIENT-1" type="name">India</reference>
+				</references>
+				<text>Bhajji (Bhaji), or bajji, contains vegetables and gram flour; it originates from the Karnataka region of India.</text>
+				<template>AGENT-1 PATIENT-4 , contains PATIENT-5 and PATIENT-3 ; AGENT-1 originates from the PATIENT-2 region of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>PATIENT-1 | India</entity>
+				<entity>PATIENT-2 | Karnataka</entity>
+				<entity>PATIENT-3 | &quot;Gram flour, vegetables&quot;</entity>
+				<entity>PATIENT-4 | &quot;Bhaji, bajji&quot;</entity>
+				<entity>PATIENT-5 | Vegetable</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id19" size="5">
+			<originaltripleset>
+				<otriple>Bhajji | country | India</otriple>
+				<otriple>India | demonym | Indian_people</otriple>
+				<otriple>India | leader | Sumitra_Mahajan</otriple>
+				<otriple>Bhajji | region | Karnataka</otriple>
+				<otriple>Karnataka | leaderName | Vajubhai_Vala</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bhajji | country | India</mtriple>
+				<mtriple>India | demonym | Indian_people</mtriple>
+				<mtriple>India | leaderName | Sumitra_Mahajan</mtriple>
+				<mtriple>Bhajji | region | Karnataka</mtriple>
+				<mtriple>Karnataka | leaderName | Vajubhai_Vala</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>India | demonym | Indian_people</striple>
+					<striple>India | leaderName | Sumitra_Mahajan</striple>
+					<striple>Bhajji | country | India</striple>
+					<striple>Karnataka | leaderName | Vajubhai_Vala</striple>
+					<striple>Bhajji | region | Karnataka</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Indian_people" number="1" tag="PATIENT-1" type="name">Indians</reference>
+					<reference entity="India" number="2" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Sumitra_Mahajan" number="3" tag="PATIENT-2" type="name">Sumitra Mahajan</reference>
+					<reference entity="Vajubhai_Vala" number="4" tag="PATIENT-3" type="name">Vajubhai Vala</reference>
+					<reference entity="Bhajji" number="5" tag="AGENT-1" type="name">Bhajji</reference>
+					<reference entity="Karnataka" number="6" tag="BRIDGE-2" type="description">the Karnataka</reference>
+					<reference entity="India" number="7" tag="BRIDGE-1" type="name">India</reference>
+				</references>
+				<text>Indians is the name given to people from India and the leaders are Sumitra Mahajan and Vajubhai Vala. Bhajji is from the Karnataka region of India.</text>
+				<template>PATIENT-1 is the name given to people from BRIDGE-1 and the leaders are PATIENT-2 and PATIENT-3 . AGENT-1 is from BRIDGE-2 region of BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bhajji | region | Karnataka</striple>
+					<striple>Bhajji | country | India</striple>
+					<striple>Karnataka | leaderName | Vajubhai_Vala</striple>
+					<striple>India | demonym | Indian_people</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bhajji" number="1" tag="AGENT-1" type="name">Bhajji</reference>
+					<reference entity="Karnataka" number="2" tag="BRIDGE-2" type="description">the Karantake region</reference>
+					<reference entity="India" number="3" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Vajubhai_Vala" number="5" tag="PATIENT-3" type="name">Vajubhai Vala</reference>
+					<reference entity="Indian_people" number="6" tag="PATIENT-1" type="description">the Indian people</reference>
+				</references>
+				<text>Bhajji is from the Karantake region of India. India is led by Vajubhai Vala and home to the Indian people.</text>
+				<template>AGENT-1 is from BRIDGE-2 of BRIDGE-1 . BRIDGE-1 is led by PATIENT-3 and home to PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bhajji | region | Karnataka</striple>
+					<striple>Karnataka | leaderName | Vajubhai_Vala</striple>
+					<striple>Bhajji | country | India</striple>
+					<striple>India | demonym | Indian_people</striple>
+					<striple>India | leaderName | Sumitra_Mahajan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bhajji" number="1" tag="AGENT-1" type="name">Bhajji</reference>
+					<reference entity="Vajubhai_Vala" number="3" tag="PATIENT-3" type="name">Vajubhai Vala</reference>
+					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Indian_people" number="5" tag="PATIENT-1" type="description">The Indians</reference>
+					<reference entity="India" number="6" tag="BRIDGE-1" type="name">India</reference>
+					<reference entity="Sumitra_Mahajan" number="7" tag="PATIENT-2" type="name">Sumitra Mahajan</reference>
+				</references>
+				<text>Bhajji originates from the Karnataka region (led by Vajubhai Vala) of India. The Indians of India are led by Sumitra Mahajan.</text>
+				<template>AGENT-1 originates from BRIDGE-2 region ( led by PATIENT-3 ) of BRIDGE-1 . PATIENT-1 of BRIDGE-1 are led by PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bhajji</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>BRIDGE-2 | Karnataka</entity>
+				<entity>PATIENT-1 | Indian_people</entity>
+				<entity>PATIENT-2 | Sumitra_Mahajan</entity>
+				<entity>PATIENT-3 | Vajubhai_Vala</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id20" size="5">
+			<originaltripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Bionico | region | Jalisco</otriple>
+				<otriple>Jalisco | leaderName | Jesús_Casillas_Romero</otriple>
+				<otriple>Dessert | hasVariant | Cake</otriple>
+				<otriple>Bionico | course | Dessert</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bionico | country | Mexico</mtriple>
+				<mtriple>Bionico | region | Jalisco</mtriple>
+				<mtriple>Jalisco | leaderName | Jesús_Casillas_Romero</mtriple>
+				<mtriple>Dessert | dishVariation | Cake</mtriple>
+				<mtriple>Bionico | course | Dessert</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Bionico | region | Jalisco</striple>
+					<striple>Bionico | country | Mexico</striple>
+					<striple>Jalisco | leaderName | Jesús_Casillas_Romero</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bionico" number="1" tag="AGENT-1" type="name">Bionico</reference>
+					<reference entity="Jalisco" number="2" tag="BRIDGE-1" type="name">Jalisco</reference>
+					<reference entity="Mexico" number="3" tag="PATIENT-1" type="name">Mexio</reference>
+					<reference entity="Jalisco" number="4" tag="BRIDGE-1" type="name">Jalisco</reference>
+					<reference entity="Jesús_Casillas_Romero" number="5" tag="PATIENT-2" type="name">Jesus Casillas Romero</reference>
+					<reference entity="Cake" number="6" tag="PATIENT-3" type="description">a cake</reference>
+				</references>
+				<text>Bionico is a dessert from Jalisco, Mexio. The leader in Jalisco is Jesus Casillas Romero. Another dessert is a cake.</text>
+				<template>AGENT-1 is a dessert from BRIDGE-1 , PATIENT-1 . The leader in BRIDGE-1 is PATIENT-2 . Another dessert is PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bionico | region | Jalisco</striple>
+					<striple>Bionico | country | Mexico</striple>
+					<striple>Jalisco | leaderName | Jesús_Casillas_Romero</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bionico" number="1" tag="AGENT-1" type="name">Bionico</reference>
+					<reference entity="Jalisco" number="2" tag="BRIDGE-1" type="description">the Jalisco</reference>
+					<reference entity="Mexico" number="3" tag="PATIENT-1" type="name">Mexico</reference>
+					<reference entity="Jalisco" number="4" tag="BRIDGE-1" type="name">Jalisco</reference>
+					<reference entity="Jesús_Casillas_Romero" number="5" tag="PATIENT-2" type="name">Jesus Casillas Romero</reference>
+					<reference entity="Cake" number="6" tag="PATIENT-3" type="description">a cake</reference>
+				</references>
+				<text>Bionico is a dessert found in the Jalisco region of Mexico. The name of the leader in Jalisco is Jesus Casillas Romero. Another dessert is a cake.</text>
+				<template>AGENT-1 is a dessert found in BRIDGE-1 region of PATIENT-1 . The name of the leader in BRIDGE-1 is PATIENT-2 . Another dessert is PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>BRIDGE-1 | Jalisco</entity>
+				<entity>BRIDGE-2 | Dessert</entity>
+				<entity>PATIENT-1 | Mexico</entity>
+				<entity>PATIENT-2 | Jesús_Casillas_Romero</entity>
+				<entity>PATIENT-3 | Cake</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id21" size="5">
+			<originaltripleset>
+				<otriple>Bionico | country | Mexico</otriple>
+				<otriple>Dessert | hasVariant | Cake</otriple>
+				<otriple>Mexico | leaderName | Enrique_Peña_Nieto</otriple>
+				<otriple>Bionico | course | Dessert</otriple>
+				<otriple>Bionico | region | Guadalajara</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Bionico | country | Mexico</mtriple>
+				<mtriple>Dessert | dishVariation | Cake</mtriple>
+				<mtriple>Mexico | leaderName | Enrique_Peña_Nieto</mtriple>
+				<mtriple>Bionico | course | Dessert</mtriple>
+				<mtriple>Bionico | region | Guadalajara</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Dessert | dishVariation | Cake</striple>
+					<striple>Bionico | course | Dessert</striple>
+					<striple>Bionico | region | Guadalajara</striple>
+					<striple>Bionico | country | Mexico</striple>
+					<striple>Mexico | leaderName | Enrique_Peña_Nieto</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dessert" number="1" tag="BRIDGE-2" type="name">dessert</reference>
+					<reference entity="Cake" number="2" tag="PATIENT-1" type="description">a cake</reference>
+					<reference entity="Bionico" number="3" tag="AGENT-1" type="name">bionico</reference>
+					<reference entity="Cake" number="4" tag="PATIENT-1" type="description">a cake</reference>
+					<reference entity="Dessert" number="5" tag="BRIDGE-2" type="description">a dessert</reference>
+					<reference entity="Guadalajara" number="6" tag="PATIENT-3" type="name">Guadalajara</reference>
+					<reference entity="Mexico" number="7" tag="BRIDGE-1" type="name">Mexico</reference>
+					<reference entity="Mexico" number="8" tag="BRIDGE-1" type="name">Mexico</reference>
+					<reference entity="Enrique_Peña_Nieto" number="9" tag="PATIENT-2" type="name">Enrique Pena Nieto</reference>
+				</references>
+				<text>A type of dessert is a cake. However, bionico is not a cake, and instead a dessert from the Guadalajara region, in Mexico. Mexico is where Enrique Pena Nieto is the leader.</text>
+				<template>A type of BRIDGE-2 is PATIENT-1 . However , AGENT-1 is not PATIENT-1 , and instead BRIDGE-2 from the PATIENT-3 region , in BRIDGE-1 . BRIDGE-1 is where PATIENT-2 is the leader .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bionico | course | Dessert</striple>
+					<striple>Bionico | region | Guadalajara</striple>
+					<striple>Bionico | country | Mexico</striple>
+					<striple>Mexico | leaderName | Enrique_Peña_Nieto</striple>
+					<striple>Dessert | dishVariation | Cake</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bionico" number="1" tag="AGENT-1" type="name">Bionico</reference>
+					<reference entity="Dessert" number="2" tag="BRIDGE-2" type="description">a dessert</reference>
+					<reference entity="Guadalajara" number="3" tag="PATIENT-3" type="name">Guadalajara</reference>
+					<reference entity="Mexico" number="4" tag="BRIDGE-1" type="name">Mexico</reference>
+					<reference entity="Enrique_Peña_Nieto" number="5" tag="PATIENT-2" type="name">Enrique Pena Nieto</reference>
+					<reference entity="Cake" number="6" tag="PATIENT-1" type="description">a cake</reference>
+				</references>
+				<text>Bionico is a dessert from Guadalajara, Mexico where the leader is Enrique Pena Nieto. Another dessert is a cake.</text>
+				<template>AGENT-1 is BRIDGE-2 from PATIENT-3 , BRIDGE-1 where the leader is PATIENT-2 . Another dessert is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bionico</entity>
+				<entity>BRIDGE-1 | Mexico</entity>
+				<entity>BRIDGE-2 | Dessert</entity>
+				<entity>PATIENT-1 | Cake</entity>
+				<entity>PATIENT-2 | Enrique_Peña_Nieto</entity>
+				<entity>PATIENT-3 | Guadalajara</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id22" size="5">
+			<originaltripleset>
+				<otriple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</otriple>
+				<otriple>Bakewell_pudding | hasVariant | Bakewell_tart</otriple>
+				<otriple>Bakewell_tart | region | Derbyshire_Dales</otriple>
+				<otriple>Derbyshire_Dales | subdivisionName | Derbyshire</otriple>
+				<otriple>Bakewell_tart | ingredient | Frangipane</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</mtriple>
+				<mtriple>Bakewell_pudding | dishVariation | Bakewell_tart</mtriple>
+				<mtriple>Bakewell_tart | region | Derbyshire_Dales</mtriple>
+				<mtriple>Derbyshire_Dales | administrativeCounty | Derbyshire</mtriple>
+				<mtriple>Bakewell_tart | ingredient | Frangipane</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+					<striple>Bakewell_tart | region | Derbyshire_Dales</striple>
+					<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+					<striple>Bakewell_tart | ingredient | Frangipane</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Patrick_McLoughlin" number="1" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+					<reference entity="Derbyshire_Dales" number="2" tag="BRIDGE-2" type="name">Derbyshire Dales</reference>
+					<reference entity="Derbyshire_Dales" number="3" tag="BRIDGE-2" type="name">Derbyshire</reference>
+					<reference entity="Bakewell_tart" number="4" tag="BRIDGE-1" type="name">Bakewell tart</reference>
+					<reference entity="Bakewell_pudding" number="5" tag="AGENT-1" type="name">Bakewell pudding</reference>
+					<reference entity="Derbyshire_Dales" number="6" tag="BRIDGE-2" type="description">the Derbyshire Dales</reference>
+					<reference entity="Frangipane" number="7" tag="PATIENT-3" type="name">frangipane</reference>
+				</references>
+				<text>Patrick McLoughlin is the leader of Derbyshire Dales which is in the County of Derbyshire. Bakewell tart, a variation of Bakewell pudding, comes from the Derbyshire Dales and contains frangipane.</text>
+				<template>PATIENT-1 is the leader of BRIDGE-2 which is in the County of BRIDGE-2 . BRIDGE-1 , a variation of AGENT-1 , comes from BRIDGE-2 and contains PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+					<striple>Derbyshire_Dales | administrativeCounty | Derbyshire</striple>
+					<striple>Bakewell_tart | region | Derbyshire_Dales</striple>
+					<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+					<striple>Bakewell_tart | ingredient | Frangipane</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Patrick_McLoughlin" number="1" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+					<reference entity="Derbyshire" number="3" tag="PATIENT-2" type="name">Derbyshire</reference>
+					<reference entity="Bakewell_tart" number="4" tag="BRIDGE-1" type="description">the Bakewell tart</reference>
+					<reference entity="Bakewell_pudding" number="5" tag="AGENT-1" type="demonstrative">This dish</reference>
+					<reference entity="Frangipane" number="6" tag="PATIENT-3" type="name">frangipane</reference>
+					<reference entity="Bakewell_pudding" number="7" tag="AGENT-1" type="name">Bakewell pudding</reference>
+				</references>
+				<text>Patrick McLoughlin is a leader in the Derbyshire Dales (in the county of Derbyshire) where the Bakewell tart is a popular dish. This dish contains frangipane and has a variant called Bakewell pudding.</text>
+				<template>PATIENT-1 is a leader in BRIDGE-2 ( in the county of PATIENT-2 ) where BRIDGE-1 is a popular dish . AGENT-1 contains PATIENT-3 and has a variant called AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+					<striple>Bakewell_tart | region | Derbyshire_Dales</striple>
+					<striple>Bakewell_tart | ingredient | Frangipane</striple>
+					<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Patrick_McLoughlin" number="1" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+					<reference entity="Derbyshire_Dales" number="2" tag="BRIDGE-2" type="name">Derbyshire Dales</reference>
+					<reference entity="Derbyshire" number="3" tag="PATIENT-2" type="name">Derbyshire The frangipane Bakewell tart , a variation of Bakewell pudding , is popular in the Derbyshire Dales area</reference>
+					<reference entity="Bakewell_pudding" number="6" tag="AGENT-1" type="name">Bakewell pudding</reference>
+					<reference entity="Derbyshire_Dales" number="7" tag="BRIDGE-2" type="description">the Derbyshire Dales</reference>
+				</references>
+				<text>Patrick McLoughlin is a leader in Derbyshire Dales in the County of Derbyshire The frangipane Bakewell tart, a variation of Bakewell pudding, is popular in the Derbyshire Dales area.</text>
+				<template>PATIENT-1 is a leader in BRIDGE-2 in the County of PATIENT-2. PATIENT-3 BRIDGE-1 , a variation of AGENT-1 , is popular in BRIDGE-2 area .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>BRIDGE-1 | Bakewell_tart</entity>
+				<entity>BRIDGE-2 | Derbyshire_Dales</entity>
+				<entity>PATIENT-1 | Patrick_McLoughlin</entity>
+				<entity>PATIENT-2 | Derbyshire</entity>
+				<entity>PATIENT-3 | Frangipane</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id23" size="5">
+			<originaltripleset>
+				<otriple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</otriple>
+				<otriple>Bakewell_pudding | hasVariant | Bakewell_tart</otriple>
+				<otriple>Bakewell_tart | region | Derbyshire_Dales</otriple>
+				<otriple>Derbyshire_Dales | isPartOf | Derbyshire</otriple>
+				<otriple>Bakewell_tart | ingredient | Frangipane</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</mtriple>
+				<mtriple>Bakewell_pudding | dishVariation | Bakewell_tart</mtriple>
+				<mtriple>Bakewell_tart | region | Derbyshire_Dales</mtriple>
+				<mtriple>Derbyshire_Dales | isPartOf | Derbyshire</mtriple>
+				<mtriple>Bakewell_tart | ingredient | Frangipane</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+					<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					<striple>Bakewell_tart | region | Derbyshire_Dales</striple>
+					<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+					<striple>Bakewell_tart | ingredient | Frangipane</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Patrick_McLoughlin" number="1" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+					<reference entity="Derbyshire_Dales" number="2" tag="BRIDGE-2" type="name">Derbyshire Dales</reference>
+					<reference entity="Derbyshire" number="3" tag="PATIENT-2" type="name">Derbyshire</reference>
+					<reference entity="Derbyshire_Dales" number="4" tag="BRIDGE-2" type="description">the Derbyshire Dales</reference>
+					<reference entity="Bakewell_pudding" number="6" tag="AGENT-1" type="name">Bakewell pudding</reference>
+					<reference entity="Frangipane" number="7" tag="PATIENT-3" type="name">Frangipane</reference>
+				</references>
+				<text>Patrick McLoughlin is the leader of Derbyshire Dales which is part of Derbyshire. Coming from the Derbyshire Dales region is Bakewell tart (a variation of Bakewell pudding) which has Frangipane as an ingredient.</text>
+				<template>PATIENT-1 is the leader of BRIDGE-2 which is part of PATIENT-2 . Coming from BRIDGE-2 region is BRIDGE-1 ( a variation of AGENT-1 ) which has PATIENT-3 as an ingredient .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+					<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					<striple>Bakewell_tart | region | Derbyshire_Dales</striple>
+					<striple>Bakewell_pudding | dishVariation | Bakewell_tart</striple>
+					<striple>Bakewell_tart | ingredient | Frangipane</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Derbyshire_Dales" number="1" tag="BRIDGE-2" type="description">The Derbyshire Dales</reference>
+					<reference entity="Patrick_McLoughlin" number="2" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+					<reference entity="Derbyshire" number="3" tag="PATIENT-2" type="name">Derbyshire</reference>
+					<reference entity="Bakewell_tart" number="4" tag="BRIDGE-1" type="name">Bakewell tarts</reference>
+					<reference entity="Bakewell_tart" number="5" tag="BRIDGE-1" type="name">Bakewell tart</reference>
+					<reference entity="Bakewell_pudding" number="6" tag="AGENT-1" type="name">Bakewell pudding</reference>
+					<reference entity="Frangipane" number="7" tag="PATIENT-3" type="name">frangipane</reference>
+				</references>
+				<text>The Derbyshire Dales, whose leader is Patrick McLoughlin, is part of Derbyshire and is where Bakewell tarts come from. Bakewell tart is a variation of Bakewell pudding and one of the ingredients is frangipane.</text>
+				<template>BRIDGE-2 , whose leader is PATIENT-1 , is part of PATIENT-2 and is where BRIDGE-1 come from . BRIDGE-1 is a variation of AGENT-1 and one of the ingredients is PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Derbyshire_Dales | isPartOf | Derbyshire</striple>
+					<striple>Derbyshire_Dales | leaderName | Patrick_McLoughlin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Derbyshire_Dales" number="3" tag="BRIDGE-2" type="description">the Derbyshire Dales</reference>
+					<reference entity="Derbyshire" number="4" tag="PATIENT-2" type="name">Derbyshire</reference>
+					<reference entity="Patrick_McLoughlin" number="5" tag="PATIENT-1" type="name">Patrick McLoughlin</reference>
+				</references>
+				<text>The Frangipane -based dessert Bakewell Tart (or pudding) is popular in the Derbyshire Dales area of Derbyshire where Patrick McLoughlin is a leader.</text>
+				<template>PATIENT-3 - based AGENT-1 is popular in BRIDGE-2 area of PATIENT-2 where PATIENT-1 is a leader .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakewell_pudding</entity>
+				<entity>BRIDGE-1 | Bakewell_tart</entity>
+				<entity>BRIDGE-2 | Derbyshire_Dales</entity>
+				<entity>PATIENT-1 | Patrick_McLoughlin</entity>
+				<entity>PATIENT-2 | Derbyshire</entity>
+				<entity>PATIENT-3 | Frangipane</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id24" size="5">
+			<originaltripleset>
+				<otriple>Indonesia | capital | Jakarta</otriple>
+				<otriple>Indonesia | language | Indonesian_language</otriple>
+				<otriple>Indonesia | leaderName | Jusuf_Kalla</otriple>
+				<otriple>Bakso | region | Indonesia</otriple>
+				<otriple>Bakso | country | &quot;Indonesia, derived from Chinese meat ball&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Indonesia | capital | Jakarta</mtriple>
+				<mtriple>Indonesia | language | Indonesian_language</mtriple>
+				<mtriple>Indonesia | leaderName | Jusuf_Kalla</mtriple>
+				<mtriple>Bakso | region | Indonesia</mtriple>
+				<mtriple>Bakso | country | Indonesia</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Indonesia | capital | Jakarta</striple>
+					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+					<striple>Indonesia | language | Indonesian_language</striple>
+					<striple>Bakso | region | Indonesia</striple>
+					<striple>Bakso | country | Indonesia</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Jakarta" number="1" tag="PATIENT-1" type="name">Jakarta</reference>
+					<reference entity="Indonesia" number="2" tag="BRIDGE-1" type="name">Indonesia</reference>
+					<reference entity="Jusuf_Kalla" number="3" tag="PATIENT-3" type="name">Jusuf Kalla</reference>
+					<reference entity="Indonesia" number="4" tag="BRIDGE-1" type="pronoun">they</reference>
+					<reference entity="Indonesian_language" number="5" tag="PATIENT-2" type="name">Indonesian</reference>
+					<reference entity="Bakso" number="6" tag="AGENT-1" type="name">bakso</reference>
+				</references>
+				<text>Jakarta is the capital of Indonesia where the leader is Jusuf Kalla, they speak Indonesian and eat bakso.</text>
+				<template>PATIENT-1 is the capital of BRIDGE-1 where the leader is PATIENT-3 , BRIDGE-1 speak PATIENT-2 and eat AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Bakso | region | Indonesia</striple>
+					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+					<striple>Indonesia | capital | Jakarta</striple>
+					<striple>Indonesia | language | Indonesian_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bakso" number="1" tag="AGENT-1" type="name">Bakso</reference>
+					<reference entity="Indonesia" number="2" tag="BRIDGE-1" type="description">the country of Indonesia</reference>
+					<reference entity="Jusuf_Kalla" number="3" tag="PATIENT-3" type="name">Jusuf Kalla</reference>
+					<reference entity="Jakarta" number="4" tag="PATIENT-1" type="name">Jakarta</reference>
+					<reference entity="Indonesian_language" number="5" tag="PATIENT-2" type="name">Indonesian</reference>
+				</references>
+				<text>Bakso is a dish from the country of Indonesia, which leader is Jusuf Kalla, the capital is Jakarta and the language is Indonesian.</text>
+				<template>AGENT-1 is a dish from BRIDGE-1 , which leader is PATIENT-3 , the capital is PATIENT-1 and the language is PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Bakso | region | Indonesia</striple>
+					<striple>Indonesia | capital | Jakarta</striple>
+					<striple>Indonesia | language | Indonesian_language</striple>
+					<striple>Indonesia | leaderName | Jusuf_Kalla</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bakso" number="1" tag="AGENT-1" type="name">Bakso</reference>
+					<reference entity="Indonesia" number="2" tag="BRIDGE-1" type="name">Indonesia</reference>
+					<reference entity="Jakarta" number="3" tag="PATIENT-1" type="name">Jakarta</reference>
+					<reference entity="Indonesian_language" number="4" tag="PATIENT-2" type="name">Indonesia</reference>
+					<reference entity="Jusuf_Kalla" number="5" tag="PATIENT-3" type="name">Jusuf Kalla</reference>
+				</references>
+				<text>Bakso is a food and a dish found in Indonesia, where the capital is Jakarta, the language is Indonesia and Jusuf Kalla is the leader.</text>
+				<template>AGENT-1 is a food and a dish found in BRIDGE-1 , where the capital is PATIENT-1 , the language is PATIENT-2 and PATIENT-3 is the leader .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Bakso</entity>
+				<entity>BRIDGE-1 | Indonesia</entity>
+				<entity>PATIENT-1 | Jakarta</entity>
+				<entity>PATIENT-2 | Indonesian_language</entity>
+				<entity>PATIENT-3 | Jusuf_Kalla</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id25" size="5">
+			<originaltripleset>
+				<otriple>Italy | demonym | Italians</otriple>
+				<otriple>Italy | capital | Rome</otriple>
+				<otriple>Italy | leaderName | Matteo_Renzi</otriple>
+				<otriple>Amatriciana_sauce | country | Italy</otriple>
+				<otriple>Italy | leader | Sergio_Mattarella</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Italy | demonym | Italians</mtriple>
+				<mtriple>Italy | capital | Rome</mtriple>
+				<mtriple>Italy | leaderName | Matteo_Renzi</mtriple>
+				<mtriple>Amatriciana_sauce | country | Italy</mtriple>
+				<mtriple>Italy | leaderName | Sergio_Mattarella</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Amatriciana_sauce | country | Italy</striple>
+					<striple>Italy | demonym | Italians</striple>
+					<striple>Italy | capital | Rome</striple>
+					<striple>Italy | leaderName | Matteo_Renzi</striple>
+					<striple>Italy | leaderName | Sergio_Mattarella</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Italy" number="1" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Amatriciana_sauce" number="2" tag="AGENT-1" type="name">Amatriciana sauce</reference>
+					<reference entity="Italians" number="3" tag="PATIENT-1" type="name">Italians</reference>
+					<reference entity="Rome" number="4" tag="PATIENT-2" type="name">Rome</reference>
+					<reference entity="Matteo_Renzi" number="5" tag="PATIENT-3" type="name">Matteo Renzi</reference>
+					<reference entity="Sergio_Mattarella" number="6" tag="PATIENT-4" type="name">Sergio Mattarella</reference>
+				</references>
+				<text>Italy is the country Amatriciana sauce comes from and people there are called Italians. The capital is Rome and the leaders are Matteo Renzi and Sergio Mattarella.</text>
+				<template>BRIDGE-1 is the country AGENT-1 comes from and people there are called PATIENT-1 . The capital is PATIENT-2 and the leaders are PATIENT-3 and PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Italy | capital | Rome</striple>
+					<striple>Italy | leaderName | Matteo_Renzi</striple>
+					<striple>Italy | leaderName | Sergio_Mattarella</striple>
+					<striple>Amatriciana_sauce | country | Italy</striple>
+					<striple>Italy | demonym | Italians</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Rome" number="1" tag="PATIENT-2" type="name">Rome</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Matteo_Renzi" number="3" tag="PATIENT-3" type="name">Matteo Renzi</reference>
+					<reference entity="Sergio_Mattarella" number="4" tag="PATIENT-4" type="name">Sergio Mattarella</reference>
+					<reference entity="Amatriciana_sauce" number="5" tag="AGENT-1" type="name">Amatriciana sauce</reference>
+					<reference entity="Italians" number="6" tag="PATIENT-1" type="name">Italians</reference>
+				</references>
+				<text>Rome is the capital of Italy where the leaders are Matteo Renzi and Sergio Mattarella. Amatriciana sauce can be found there and people are called Italians.</text>
+				<template>PATIENT-2 is the capital of BRIDGE-1 where the leaders are PATIENT-3 and PATIENT-4 . AGENT-1 can be found there and people are called PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Amatriciana_sauce | country | Italy</striple>
+					<striple>Italy | capital | Rome</striple>
+					<striple>Italy | demonym | Italians</striple>
+					<striple>Italy | leaderName | Sergio_Mattarella</striple>
+					<striple>Italy | leaderName | Matteo_Renzi</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Amatriciana_sauce" number="1" tag="AGENT-1" type="name">Amatriciana sauce</reference>
+					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
+					<reference entity="Rome" number="3" tag="PATIENT-2" type="name">Rome</reference>
+					<reference entity="Italians" number="4" tag="PATIENT-1" type="name">Italians</reference>
+					<reference entity="Italy" number="5" tag="BRIDGE-1" type="description">the country</reference>
+					<reference entity="Sergio_Mattarella" number="6" tag="PATIENT-4" type="name">Sergio Mattarella</reference>
+					<reference entity="Matteo_Renzi" number="7" tag="PATIENT-3" type="name">Matteo Renzi</reference>
+				</references>
+				<text>Amatriciana sauce is from Italy, where Rome is the capital and where Italians live. Leaders of the country include Sergio Mattarella and Matteo Renzi.</text>
+				<template>AGENT-1 is from BRIDGE-1 , where PATIENT-2 is the capital and where PATIENT-1 live . Leaders of BRIDGE-1 include PATIENT-4 and PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amatriciana_sauce</entity>
+				<entity>BRIDGE-1 | Italy</entity>
+				<entity>PATIENT-1 | Italians</entity>
+				<entity>PATIENT-2 | Rome</entity>
+				<entity>PATIENT-3 | Matteo_Renzi</entity>
+				<entity>PATIENT-4 | Sergio_Mattarella</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id26" size="5">
+			<originaltripleset>
+				<otriple>Java | ethnicGroup | Baduy</otriple>
+				<otriple>Singapore | language | English_language</otriple>
+				<otriple>Singapore | leaderName | Halimah_Yacob</otriple>
+				<otriple>Ayam_penyet | region | Singapore</otriple>
+				<otriple>Ayam_penyet | country | Java</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Java | ethnicGroup | Baduy</mtriple>
+				<mtriple>Singapore | language | English_language</mtriple>
+				<mtriple>Singapore | leaderName | Halimah_Yacob</mtriple>
+				<mtriple>Ayam_penyet | region | Singapore</mtriple>
+				<mtriple>Ayam_penyet | country | Java</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					<striple>Singapore | language | English_language</striple>
+					<striple>Ayam_penyet | region | Singapore</striple>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Java | ethnicGroup | Baduy</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Halimah_Yacob" number="1" tag="PATIENT-3" type="name">Halimah Yacob</reference>
+					<reference entity="Singapore" number="2" tag="BRIDGE-1" type="name">Singapore</reference>
+					<reference entity="English_language" number="3" tag="PATIENT-2" type="name">English</reference>
+					<reference entity="Ayam_penyet" number="4" tag="AGENT-1" type="description">the dish Ayam penyet</reference>
+					<reference entity="Ayam_penyet" number="5" tag="AGENT-1" type="pronoun">It</reference>
+					<reference entity="Java" number="6" tag="BRIDGE-2" type="name">Java</reference>
+					<reference entity="Java" number="7" tag="BRIDGE-2" type="description">a country</reference>
+					<reference entity="Baduy" number="8" tag="PATIENT-1" type="description">the Baduy</reference>
+				</references>
+				<text>Halimah Yacob is the leader in Singapore where English is spoken and the dish Ayam penyet is from. It is also from Java, a country where one of the ethnic groups are the Baduy.</text>
+				<template>PATIENT-3 is the leader in BRIDGE-1 where PATIENT-2 is spoken and AGENT-1 is from . AGENT-1 is also from BRIDGE-2 , BRIDGE-2 where one of the ethnic groups are PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Java | ethnicGroup | Baduy</striple>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Ayam_penyet | region | Singapore</striple>
+					<striple>Singapore | language | English_language</striple>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Baduy" number="1" tag="PATIENT-1" type="description">The Baduy</reference>
+					<reference entity="Java" number="2" tag="BRIDGE-2" type="name">Java</reference>
+					<reference entity="Ayam_penyet" number="3" tag="AGENT-1" type="name">Ayam penyet</reference>
+					<reference entity="Ayam_penyet" number="4" tag="AGENT-1" type="demonstrative">This dish</reference>
+					<reference entity="Singapore" number="5" tag="BRIDGE-1" type="name">Singapore</reference>
+					<reference entity="English_language" number="6" tag="PATIENT-2" type="name">English</reference>
+					<reference entity="Halimah_Yacob" number="7" tag="PATIENT-3" type="name">Halimah Yacob</reference>
+				</references>
+				<text>The Baduy is an ethnic group in Java where Ayam penyet is from. This dish is also from Singapore where English is spoken and Halimah Yacob is the leader.</text>
+				<template>PATIENT-1 is an ethnic group in BRIDGE-2 where AGENT-1 is from . AGENT-1 is also from BRIDGE-1 where PATIENT-2 is spoken and PATIENT-3 is the leader .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Ayam_penyet | country | Java</striple>
+					<striple>Java | ethnicGroup | Baduy</striple>
+					<striple>Ayam_penyet | region | Singapore</striple>
+					<striple>Singapore | language | English_language</striple>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ayam_penyet" number="1" tag="AGENT-1" type="name">Ayam penyet</reference>
+					<reference entity="Java" number="2" tag="BRIDGE-2" type="name">Java</reference>
+					<reference entity="Baduy" number="3" tag="PATIENT-1" type="name">Baduy people</reference>
+					<reference entity="Singapore" number="4" tag="BRIDGE-1" type="name">Singapore</reference>
+					<reference entity="English_language" number="5" tag="PATIENT-2" type="name">English</reference>
+					<reference entity="Halimah_Yacob" number="6" tag="PATIENT-3" type="name">Halimah Yacob</reference>
+				</references>
+				<text>Ayam penyet originates from Java where Baduy people are one of the ethnic groups.The food can also be found in Singapore where English is mainly spoken and Halimah Yacob is the president.</text>
+				<template>AGENT-1 originates from BRIDGE-2 where PATIENT-1 are one of the ethnic groups.AGENT-1 can also be found in BRIDGE-1 where PATIENT-2 is mainly spoken and PATIENT-3 is the president .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ayam_penyet</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>BRIDGE-2 | Java</entity>
+				<entity>PATIENT-1 | Baduy</entity>
+				<entity>PATIENT-2 | English_language</entity>
+				<entity>PATIENT-3 | Halimah_Yacob</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id27" size="5">
+			<originaltripleset>
+				<otriple>Philippines | ethnicGroups | Ilocano_people</otriple>
+				<otriple>Philippines | language | Arabic</otriple>
+				<otriple>Philippines | officialLanguage | Philippine_English</otriple>
+				<otriple>Batchoy | country | Philippines</otriple>
+				<otriple>Philippines | ethnicGroup | Igorot_people</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Philippines | ethnicGroup | Ilocano_people</mtriple>
+				<mtriple>Philippines | language | Arabic</mtriple>
+				<mtriple>Philippines | officialLanguage | Philippine_English</mtriple>
+				<mtriple>Batchoy | country | Philippines</mtriple>
+				<mtriple>Philippines | ethnicGroup | Igorot_people</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Batchoy | country | Philippines</striple>
+					<striple>Philippines | ethnicGroup | Ilocano_people</striple>
+					<striple>Philippines | ethnicGroup | Igorot_people</striple>
+					<striple>Philippines | language | Arabic</striple>
+					<striple>Philippines | officialLanguage | Philippine_English</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Philippines" number="1" tag="BRIDGE-1" type="name">Philippines</reference>
+					<reference entity="Batchoy" number="2" tag="AGENT-1" type="description">the dish Batchoy</reference>
+					<reference entity="Ilocano_people" number="3" tag="PATIENT-1" type="description">The llocano</reference>
+					<reference entity="Igorot_people" number="4" tag="PATIENT-4" type="name">Igorot peoples</reference>
+					<reference entity="Philippines" number="5" tag="BRIDGE-1" type="description">the Philippines</reference>
+					<reference entity="Arabic" number="6" tag="PATIENT-2" type="name">Arabic</reference>
+					<reference entity="Philippine_English" number="7" tag="PATIENT-3" type="name">Phillippine English</reference>
+				</references>
+				<text>Philippines is the country the dish Batchoy comes from. The llocano and Igorot peoples are ethnic groups from the Philippines, where languages spoken include Arabic and Phillippine English.</text>
+				<template>BRIDGE-1 is the country AGENT-1 comes from . PATIENT-1 and PATIENT-4 are ethnic groups from BRIDGE-1 , where languages spoken include PATIENT-2 and PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Batchoy | country | Philippines</striple>
+					<striple>Philippines | officialLanguage | Philippine_English</striple>
+					<striple>Philippines | language | Arabic</striple>
+					<striple>Philippines | ethnicGroup | Ilocano_people</striple>
+					<striple>Philippines | ethnicGroup | Igorot_people</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Batchoy" number="1" tag="AGENT-1" type="name">Batchoy</reference>
+					<reference entity="Philippines" number="2" tag="BRIDGE-1" type="description">the Philippines</reference>
+					<reference entity="Arabic" number="4" tag="PATIENT-2" type="name">Arabic</reference>
+					<reference entity="Ilocano_people" number="5" tag="PATIENT-1" type="description">the Ilocano</reference>
+					<reference entity="Igorot_people" number="6" tag="PATIENT-4" type="name">Igorot peoples</reference>
+				</references>
+				<text>Batchoy is eaten in the Philippines, languages spoken there include English (official language) and also Arabic. Ethnic groups there include the Ilocano and Igorot peoples.</text>
+				<template>AGENT-1 is eaten in BRIDGE-1 , languages spoken there include PATIENT-3 ( official language ) and also PATIENT-2 . Ethnic groups there include PATIENT-1 and PATIENT-4 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Batchoy</entity>
+				<entity>BRIDGE-1 | Philippines</entity>
+				<entity>PATIENT-1 | Ilocano_people</entity>
+				<entity>PATIENT-2 | Arabic</entity>
+				<entity>PATIENT-3 | Philippine_English</entity>
+				<entity>PATIENT-4 | Igorot_people</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id28" size="5">
+			<originaltripleset>
+				<otriple>Singapore | language | English_language</otriple>
+				<otriple>Beef_kway_teow | country | Singapore</otriple>
+				<otriple>Beef_kway_teow | region | &quot;Nationwide in Singapore and Indonesia&quot;@en</otriple>
+				<otriple>Singapore | leaderName | Tony_Tan</otriple>
+				<otriple>Singapore | leader | Halimah_Yacob</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Singapore | language | English_language</mtriple>
+				<mtriple>Beef_kway_teow | country | Singapore</mtriple>
+				<mtriple>Beef_kway_teow | region | &quot;Nationwide in Singapore and Indonesia&quot;</mtriple>
+				<mtriple>Singapore | leaderName | Tony_Tan</mtriple>
+				<mtriple>Singapore | leaderName | Halimah_Yacob</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Beef_kway_teow | region | &quot;Nationwide in Singapore and Indonesia&quot;</striple>
+					<striple>Beef_kway_teow | country | Singapore</striple>
+					<striple>Singapore | language | English_language</striple>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					<striple>Singapore | leaderName | Tony_Tan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;Nationwide in Singapore and Indonesia&quot;" number="1" tag="PATIENT-2" type="name">Available nationwide in Indonesia and Singapore</reference>
+					<reference entity="Beef_kway_teow" number="2" tag="AGENT-1" type="name">Beef kway teow</reference>
+					<reference entity="Singapore" number="3" tag="BRIDGE-1" type="name">Singapore</reference>
+					<reference entity="English_language" number="4" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="Singapore" number="5" tag="BRIDGE-1" type="pronoun">It</reference>
+					<reference entity="Halimah_Yacob" number="6" tag="PATIENT-4" type="name">Halimah Yacob</reference>
+					<reference entity="Tony_Tan" number="7" tag="PATIENT-3" type="name">Tony Tan</reference>
+				</references>
+				<text>Available nationwide in Indonesia and Singapore, Beef kway teow is a dish which comes from Singapore, where English is spoken. It is also where two of the leaders are Halimah Yacob and Tony Tan.</text>
+				<template>PATIENT-2 , AGENT-1 is a dish which comes from BRIDGE-1 , where PATIENT-1 is spoken . BRIDGE-1 is also where two of the leaders are PATIENT-4 and PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Beef_kway_teow | country | Singapore</striple>
+					<striple>Singapore | language | English_language</striple>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					<striple>Singapore | leaderName | Tony_Tan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Beef_kway_teow" number="1" tag="AGENT-1" type="name">Beef kway teow</reference>
+					<reference entity="Singapore" number="4" tag="BRIDGE-1" type="demonstrative">this country</reference>
+					<reference entity="English_language" number="5" tag="PATIENT-1" type="name">English</reference>
+					<reference entity="Halimah_Yacob" number="6" tag="PATIENT-4" type="name">Halimah Yacob</reference>
+					<reference entity="Tony_Tan" number="7" tag="PATIENT-3" type="name">Tony Tan</reference>
+				</references>
+				<text>Just like in Indonesia, Beef kway teow is popular nationwide is Singapore (where it comes from). In this country, English is spoken and two of the leaders are Halimah Yacob and Tony Tan.</text>
+				<template>Just like in Indonesia , AGENT-1 is popular nationwide is BRIDGE-1 ( where AGENT-1 comes from ) . In BRIDGE-1 , PATIENT-1 is spoken and two of the leaders are PATIENT-4 and PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Beef_kway_teow | region | &quot;Nationwide in Singapore and Indonesia&quot;</striple>
+					<striple>Beef_kway_teow | country | Singapore</striple>
+					<striple>Singapore | leaderName | Tony_Tan</striple>
+					<striple>Singapore | leaderName | Halimah_Yacob</striple>
+					<striple>Singapore | language | English_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Beef_kway_teow" number="1" tag="AGENT-1" type="name">Beef kway teow</reference>
+					<reference entity="&quot;Nationwide in Singapore and Indonesia&quot;" number="2" tag="PATIENT-2" type="name">Singapore and Indonesia</reference>
+					<reference entity="Tony_Tan" number="3" tag="PATIENT-3" type="name">Tony Tan</reference>
+					<reference entity="Halimah_Yacob" number="4" tag="PATIENT-4" type="name">Halimah Yacob</reference>
+					<reference entity="Singapore" number="5" tag="BRIDGE-1" type="name">Singapore</reference>
+					<reference entity="English_language" number="6" tag="PATIENT-1" type="name">English</reference>
+				</references>
+				<text>Beef kway teow is a popular dish in Singapore and Indonesia. Tony Tan and Halimah Yacob are leaders in Singapore where English is spoken.</text>
+				<template>AGENT-1 is a popular dish in PATIENT-2 . PATIENT-3 and PATIENT-4 are leaders in BRIDGE-1 where PATIENT-1 is spoken .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Beef_kway_teow</entity>
+				<entity>BRIDGE-1 | Singapore</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-2 | &quot;Nationwide in Singapore and Indonesia&quot;</entity>
+				<entity>PATIENT-3 | Tony_Tan</entity>
+				<entity>PATIENT-4 | Halimah_Yacob</entity>
+			</entitymap>
+		</entry>
+		<entry category="Food" eid="Id29" size="5">
+			<originaltripleset>
+				<otriple>Spain | leader | Felipe_VI_of_Spain</otriple>
+				<otriple>Spain | language | Spanish_language</otriple>
+				<otriple>Spain | currency | Euro</otriple>
+				<otriple>Ajoblanco | country | Spain</otriple>
+				<otriple>Spain | demonym | Spaniards</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Spain | leaderName | Felipe_VI_of_Spain</mtriple>
+				<mtriple>Spain | language | Spanish_language</mtriple>
+				<mtriple>Spain | currency | Euro</mtriple>
+				<mtriple>Ajoblanco | country | Spain</mtriple>
+				<mtriple>Spain | demonym | Spaniards</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Spain | currency | Euro</striple>
+					<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+					<striple>Spain | language | Spanish_language</striple>
+					<striple>Spain | demonym | Spaniards</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ajoblanco" number="1" tag="AGENT-1" type="name">Ajoblanco</reference>
+					<reference entity="Spain" number="2" tag="BRIDGE-1" type="name">Spain</reference>
+					<reference entity="Euro" number="3" tag="PATIENT-3" type="description">the euro</reference>
+					<reference entity="Felipe_VI_of_Spain" number="4" tag="PATIENT-1" type="name">Felipe VI</reference>
+					<reference entity="Spanish_language" number="5" tag="PATIENT-2" type="name">Spanish</reference>
+					<reference entity="Spaniards" number="6" tag="PATIENT-4" type="name">Spaniards</reference>
+				</references>
+				<text>Ajoblanco is a dish from Spain, where the currency is the euro, the leader is Felipe VI, the language spoken is Spanish and the people that live there are called Spaniards.</text>
+				<template>AGENT-1 is a dish from BRIDGE-1 , where the currency is PATIENT-3 , the leader is PATIENT-1 , the language spoken is PATIENT-2 and the people that live there are called PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ajoblanco | country | Spain</striple>
+					<striple>Spain | language | Spanish_language</striple>
+					<striple>Spain | leaderName | Felipe_VI_of_Spain</striple>
+					<striple>Spain | demonym | Spaniards</striple>
+					<striple>Spain | currency | Euro</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ajoblanco" number="1" tag="AGENT-1" type="name">Ajoblanco</reference>
+					<reference entity="Spanish_language" number="2" tag="PATIENT-2" type="name">Spanish</reference>
+					<reference entity="Felipe_VI_of_Spain" number="3" tag="PATIENT-1" type="name">Felipe VI</reference>
+					<reference entity="Spain" number="4" tag="BRIDGE-1" type="name">Spain</reference>
+					<reference entity="Spain" number="5" tag="BRIDGE-1" type="pronoun">It</reference>
+					<reference entity="Spaniards" number="6" tag="PATIENT-4" type="description">the Spaniards</reference>
+					<reference entity="Euro" number="7" tag="PATIENT-3" type="description">the Euro</reference>
+				</references>
+				<text>Ajoblanco is a food found in Spanish speaking and Felipe VI led Spain. It is also home to the Spaniards and can be purchased with the Euro.</text>
+				<template>AGENT-1 is a food found in PATIENT-2 speaking and PATIENT-1 led BRIDGE-1 . BRIDGE-1 is also home to PATIENT-4 and can be purchased with PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ajoblanco</entity>
+				<entity>BRIDGE-1 | Spain</entity>
+				<entity>PATIENT-1 | Felipe_VI_of_Spain</entity>
+				<entity>PATIENT-2 | Spanish_language</entity>
+				<entity>PATIENT-3 | Euro</entity>
+				<entity>PATIENT-4 | Spaniards</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

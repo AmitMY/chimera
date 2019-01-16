@@ -1,0 +1,971 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Building" eid="Id1" size="1">
+			<originaltripleset>
+				<otriple>103_Colmore_Row | architect | John_Madin</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>103_Colmore_Row | architect | John_Madin</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>103_Colmore_Row | architect | John_Madin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="103_Colmore_Row" number="1" tag="AGENT-1" type="name">103 Colmore Row</reference>
+					<reference entity="John_Madin" number="2" tag="PATIENT-1" type="description">the architect , John Madin</reference>
+				</references>
+				<text>103 Colmore Row was designed by the architect, John Madin.</text>
+				<template>AGENT-1 was designed by PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>103_Colmore_Row | architect | John_Madin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="103_Colmore_Row" number="1" tag="AGENT-1" type="name">103 Colmore Row</reference>
+					<reference entity="John_Madin" number="2" tag="PATIENT-1" type="description">the architect John Madin</reference>
+				</references>
+				<text>103 Colmore Row was designed by the architect John Madin.</text>
+				<template>AGENT-1 was designed by PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 103_Colmore_Row</entity>
+				<entity>PATIENT-1 | John_Madin</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id2" size="1">
+			<originaltripleset>
+				<otriple>103_Colmore_Row | location | Colmore_Row</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>103_Colmore_Row | location | Colmore_Row</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>103_Colmore_Row | location | Colmore_Row</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="103_Colmore_Row" number="1" tag="AGENT-1" type="name">103 Colmore Row</reference>
+					<reference entity="Colmore_Row" number="2" tag="PATIENT-1" type="name">Colmore Row</reference>
+				</references>
+				<text>103 Colmore Row is located at Colmore Row.</text>
+				<template>AGENT-1 is located at PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>103_Colmore_Row | location | Colmore_Row</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="103_Colmore_Row" number="1" tag="AGENT-1" type="name">103 Colmore Row</reference>
+					<reference entity="Colmore_Row" number="2" tag="PATIENT-1" type="name">Colmore Row</reference>
+				</references>
+				<text>103 Colmore Row is located in Colmore Row.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 103_Colmore_Row</entity>
+				<entity>PATIENT-1 | Colmore_Row</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id3" size="1">
+			<originaltripleset>
+				<otriple>11_Diagonal_Street | buildingEndDate | &quot;1983&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>11_Diagonal_Street | completionDate | 1983</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>11_Diagonal_Street | completionDate | 1983</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="11_Diagonal_Street" number="1" tag="AGENT-1" type="name">11 Diagonal Street</reference>
+					<reference entity="1983" number="2" tag="PATIENT-1" type="name">1983</reference>
+				</references>
+				<text>11 Diagonal Street was completed in 1983.</text>
+				<template>AGENT-1 was completed in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 11_Diagonal_Street</entity>
+				<entity>PATIENT-1 | 1983</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id4" size="1">
+			<originaltripleset>
+				<otriple>200_Public_Square | buildingEndDate | &quot;1985&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>200_Public_Square | completionDate | 1985</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>200_Public_Square | completionDate | 1985</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="200_Public_Square" number="1" tag="AGENT-1" type="description">The 200 Public Square</reference>
+					<reference entity="1985" number="2" tag="PATIENT-1" type="name">1985</reference>
+				</references>
+				<text>The 200 Public Square was completed in 1985.</text>
+				<template>AGENT-1 was completed in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>200_Public_Square | completionDate | 1985</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="200_Public_Square" number="1" tag="AGENT-1" type="name">200 Public Square</reference>
+					<reference entity="1985" number="2" tag="PATIENT-1" type="name">1985</reference>
+				</references>
+				<text>200 Public Square was completed in 1985.</text>
+				<template>AGENT-1 was completed in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 200_Public_Square</entity>
+				<entity>PATIENT-1 | 1985</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id5" size="1">
+			<originaltripleset>
+				<otriple>20_Fenchurch_Street | buildingStartDate | &quot;January 2009&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>20_Fenchurch_Street | buildingStartDate | &quot;January 2009&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>20_Fenchurch_Street | buildingStartDate | &quot;January 2009&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="20_Fenchurch_Street" number="1" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
+					<reference entity="&quot;January 2009&quot;" number="2" tag="PATIENT-1" type="name">January 2009</reference>
+				</references>
+				<text>The building at 20 Fenchurch Street was started in January 2009.</text>
+				<template>The building at AGENT-1 was started in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>20_Fenchurch_Street | buildingStartDate | &quot;January 2009&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="20_Fenchurch_Street" number="1" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
+					<reference entity="&quot;January 2009&quot;" number="2" tag="PATIENT-1" type="name">January 2009</reference>
+				</references>
+				<text>The construction of 20 Fenchurch Street began in January 2009.</text>
+				<template>The construction of AGENT-1 began in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 20_Fenchurch_Street</entity>
+				<entity>PATIENT-1 | &quot;January 2009&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id6" size="1">
+			<originaltripleset>
+				<otriple>20_Fenchurch_Street | location | United_Kingdom</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>20_Fenchurch_Street | location | United_Kingdom</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="20_Fenchurch_Street" number="1" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
+					<reference entity="United_Kingdom" number="2" tag="PATIENT-1" type="description">the United Kingdom</reference>
+				</references>
+				<text>20 Fenchurch Street is located in the United Kingdom.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="20_Fenchurch_Street" number="1" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
+					<reference entity="United_Kingdom" number="2" tag="PATIENT-1" type="description">the United Kingdom</reference>
+				</references>
+				<text>20 Fenchurch Street is located within the United Kingdom.</text>
+				<template>AGENT-1 is located within PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 20_Fenchurch_Street</entity>
+				<entity>PATIENT-1 | United_Kingdom</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id7" size="1">
+			<originaltripleset>
+				<otriple>300_North_LaSalle | floorCount | &quot;60&quot;^^xsd:positiveInteger</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>300_North_LaSalle | floorCount | 60</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>300_North_LaSalle | floorCount | 60</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="60" number="1" tag="PATIENT-1" type="name">60</reference>
+					<reference entity="300_North_LaSalle" number="2" tag="AGENT-1" type="name">300 North LaSalle</reference>
+				</references>
+				<text>There are 60 floors at 300 North LaSalle.</text>
+				<template>There are PATIENT-1 floors at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>300_North_LaSalle | floorCount | 60</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
+					<reference entity="60" number="2" tag="PATIENT-1" type="name">60</reference>
+				</references>
+				<text>300 North LaSalle has 60 floors.</text>
+				<template>AGENT-1 has PATIENT-1 floors .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 300_North_LaSalle</entity>
+				<entity>PATIENT-1 | 60</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id8" size="1">
+			<originaltripleset>
+				<otriple>3Arena | architect | &quot;HOK SVE&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | architect | &quot;HOK SVE&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;HOK SVE&quot;" number="1" tag="PATIENT-1" type="name">HOK SVE</reference>
+					<reference entity="3Arena" number="2" tag="AGENT-1" type="name">3Arena</reference>
+				</references>
+				<text>HOK SVE was the architect of 3Arena.</text>
+				<template>PATIENT-1 was the architect of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>3Arena | architect | &quot;HOK SVE&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="&quot;HOK SVE&quot;" number="1" tag="PATIENT-1" type="name">HOK SVE</reference>
+					<reference entity="3Arena" number="2" tag="AGENT-1" type="description">the 3Arena</reference>
+				</references>
+				<text>HOK SVE was the architect of the 3Arena.</text>
+				<template>PATIENT-1 was the architect of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | &quot;HOK SVE&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id9" size="1">
+			<originaltripleset>
+				<otriple>3Arena | location | &quot;East Link Bridge&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>3Arena | location | &quot;East Link Bridge&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="&quot;East Link Bridge&quot;" number="2" tag="PATIENT-1" type="name">East Link Bridge</reference>
+				</references>
+				<text>The 3Arena is located at East Link Bridge.</text>
+				<template>AGENT-1 is located at PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="description">The 3Arena</reference>
+					<reference entity="&quot;East Link Bridge&quot;" number="2" tag="PATIENT-1" type="description">the East Link Bridge</reference>
+				</references>
+				<text>The 3Arena is located on the East Link Bridge.</text>
+				<template>AGENT-1 is located on PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>3Arena | location | &quot;East Link Bridge&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="3Arena" number="1" tag="AGENT-1" type="name">3 Arena</reference>
+					<reference entity="&quot;East Link Bridge&quot;" number="2" tag="PATIENT-1" type="name">East Link Bridge</reference>
+				</references>
+				<text>3 Arena is located at East Link Bridge.</text>
+				<template>AGENT-1 is located at PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | &quot;East Link Bridge&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id10" size="1">
+			<originaltripleset>
+				<otriple>Adare_Manor | buildingStartDate | &quot;(original structure); 1832 (current structure)&quot;</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adare_Manor | buildingStartDate | &quot;1700&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Adare_Manor | buildingStartDate | &quot;1700&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="&quot;1700&quot;" number="2" tag="PATIENT-1" type="name">1700</reference>
+				</references>
+				<text>Adare Manor's building start was in 1700.</text>
+				<template>AGENT-1 's building start was in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Adare_Manor | buildingStartDate | &quot;1700&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="description">the Adare Manor</reference>
+					<reference entity="&quot;1700&quot;" number="2" tag="PATIENT-1" type="name">1700</reference>
+				</references>
+				<text>The building of the Adare Manor was started in 1700.</text>
+				<template>The building of AGENT-1 was started in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>PATIENT-1 | &quot;1700&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id11" size="1">
+			<originaltripleset>
+				<otriple>Adare_Manor | locationCountry | Republic_of_Ireland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Adare_Manor | country | Republic_of_Ireland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Adare_Manor | country | Republic_of_Ireland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="name">Adare Manor</reference>
+					<reference entity="Republic_of_Ireland" number="2" tag="PATIENT-1" type="description">the Republic of Ireland</reference>
+				</references>
+				<text>Adare Manor is located in the Republic of Ireland.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Adare_Manor | country | Republic_of_Ireland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Adare_Manor" number="1" tag="AGENT-1" type="description">The Adare Manor</reference>
+					<reference entity="Republic_of_Ireland" number="2" tag="PATIENT-1" type="description">the Republic of Ireland</reference>
+				</references>
+				<text>The Adare Manor is in the Republic of Ireland.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Adare_Manor</entity>
+				<entity>PATIENT-1 | Republic_of_Ireland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id12" size="1">
+			<originaltripleset>
+				<otriple>Akita_Museum_of_Art | openingDate | &quot;2013-09-28&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Akita_Museum_of_Art | inaugurationDate | &quot;2013-09-28&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Akita_Museum_of_Art | inaugurationDate | &quot;2013-09-28&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="description">The Akita Museum of Art</reference>
+					<reference entity="&quot;2013-09-28&quot;" number="2" tag="PATIENT-1" type="name">28th September 2013</reference>
+				</references>
+				<text>The Akita Museum of Art was inaugurated on 28th September 2013.</text>
+				<template>AGENT-1 was inaugurated on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Akita_Museum_of_Art</entity>
+				<entity>PATIENT-1 | &quot;2013-09-28&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id13" size="1">
+			<originaltripleset>
+				<otriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_B._Miller_Hall | currentTenants | Mason_School_of_Business</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Mason_School_of_Business" number="1" tag="PATIENT-1" type="description">The Mason School of Business</reference>
+					<reference entity="Alan_B._Miller_Hall" number="2" tag="AGENT-1" type="name">Alan B Miller Hall</reference>
+				</references>
+				<text>The Mason School of Business are the current tenants of Alan B Miller Hall.</text>
+				<template>PATIENT-1 are the current tenants of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_B._Miller_Hall</entity>
+				<entity>PATIENT-1 | Mason_School_of_Business</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id14" size="1">
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | architect | B._V._Doshi</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Amdavad_ni_Gufa | architect | B._V._Doshi</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Amdavad_ni_Gufa | architect | B._V._Doshi</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="B._V._Doshi" number="1" tag="PATIENT-1" type="description">The architecct B V Doshi</reference>
+					<reference entity="Amdavad_ni_Gufa" number="2" tag="AGENT-1" type="name">Amdavad Ni Gufa</reference>
+				</references>
+				<text>The architecct B V Doshi designed Amdavad Ni Gufa.</text>
+				<template>PATIENT-1 designed AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Amdavad_ni_Gufa | architect | B._V._Doshi</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="B._V._Doshi" number="1" tag="PATIENT-1" type="name">B V Doshi</reference>
+					<reference entity="Amdavad_ni_Gufa" number="2" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
+				</references>
+				<text>B V Doshi is the architect who designed Amdavad ni Gufa.</text>
+				<template>PATIENT-1 is the architect who designed AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
+				<entity>PATIENT-1 | B._V._Doshi</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id15" size="1">
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Sri_Lanka" number="2" tag="PATIENT-1" type="name">Sri Lanka</reference>
+				</references>
+				<text>Ampara Hospital is located in Sri Lanka.</text>
+				<template>AGENT-1 is located in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
+					<reference entity="Sri_Lanka" number="2" tag="PATIENT-1" type="name">Sri Lanka</reference>
+				</references>
+				<text>Ampara Hospital is in Sri Lanka.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
+				<entity>PATIENT-1 | Sri_Lanka</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id16" size="1">
+			<originaltripleset>
+				<otriple>Asher_and_Mary_Isabelle_Richardson_House | added | &quot;1988-11-22&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asher_and_Mary_Isabelle_Richardson_House" number="1" tag="AGENT-1" type="name">Asher and Mary Isabelle Richardson House</reference>
+				</references>
+				<text>Asher and Mary Isabelle Richardson House was added to the National Register of Historic Places on &quot;1988-11-22&quot;.</text>
+				<template>AGENT-1 was added to the National Register of Historic Places on `` PATIENT-1 '' .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Asher_and_Mary_Isabelle_Richardson_House | added to the National Register of Historic Places | &quot;1988-11-22&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asher_and_Mary_Isabelle_Richardson_House" number="1" tag="AGENT-1" type="description">The Asher and Mary Isabelle Richardson House</reference>
+					<reference entity="&quot;1988-11-22&quot;" number="2" tag="PATIENT-1" type="name">22nd November 1988</reference>
+				</references>
+				<text>The Asher and Mary Isabelle Richardson House was added to the National Register of Historic Places, on 22nd November 1988.</text>
+				<template>AGENT-1 was added to the National Register of Historic Places , on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asher_and_Mary_Isabelle_Richardson_House</entity>
+				<entity>PATIENT-1 | &quot;1988-11-22&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id17" size="1">
+			<originaltripleset>
+				<otriple>Asser_Levy_Public_Baths | built | 1904</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
+					<reference entity="1904" number="2" tag="PATIENT-1" type="name">1904</reference>
+				</references>
+				<text>The Asser Levy Public Baths was built in 1904.</text>
+				<template>AGENT-1 was built in PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
+					<reference entity="1904" number="2" tag="PATIENT-1" type="name">1904</reference>
+				</references>
+				<text>Asser Levy Public Baths were constructed in 1904.</text>
+				<template>AGENT-1 were constructed in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
+				<entity>PATIENT-1 | 1904</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id18" size="1">
+			<originaltripleset>
+				<otriple>Birmingham | postalCode | B_postcode_area</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Birmingham | postalCode | B_postcode_area</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Birmingham | postalCode | B_postcode_area</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Birmingham" number="1" tag="AGENT-1" type="name">Birmingham</reference>
+					<reference entity="B_postcode_area" number="2" tag="PATIENT-1" type="description">the postcode area  'B '</reference>
+				</references>
+				<text>Birmingham has the postcode area 'B'.</text>
+				<template>AGENT-1 has PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Birmingham | postalCode | B_postcode_area</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="B_postcode_area" number="1" tag="PATIENT-1" type="description">The B postcode area</reference>
+					<reference entity="Birmingham" number="2" tag="AGENT-1" type="description">the</reference>
+				</references>
+				<text>The B postcode area is the postal code of Birmingham.</text>
+				<template>PATIENT-1 is AGENT-1 postal code of Birmingham.</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Birmingham</entity>
+				<entity>PATIENT-1 | B_postcode_area</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id19" size="1">
+			<originaltripleset>
+				<otriple>Chicago | isPartOf | DuPage_County,_Illinois</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Chicago | isPartOf | DuPage_County,_Illinois</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chicago" number="1" tag="AGENT-1" type="name">Chicago</reference>
+					<reference entity="DuPage_County,_Illinois" number="2" tag="PATIENT-1" type="name">DuPage County in Illinois</reference>
+				</references>
+				<text>Chicago is part of DuPage County in Illinois.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Chicago" number="1" tag="AGENT-1" type="name">Chicago</reference>
+					<reference entity="DuPage_County,_Illinois" number="2" tag="PATIENT-1" type="name">DuPage County Illinois</reference>
+				</references>
+				<text>Chicago is part of DuPage County Illinois.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Chicago</entity>
+				<entity>PATIENT-1 | DuPage_County,_Illinois</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id20" size="1">
+			<originaltripleset>
+				<otriple>Dublin | country | Republic_of_Ireland</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dublin | country | Republic_of_Ireland</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Dublin | country | Republic_of_Ireland</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dublin" number="1" tag="AGENT-1" type="name">Dublin</reference>
+					<reference entity="Republic_of_Ireland" number="2" tag="PATIENT-1" type="description">the Republic of Ireland</reference>
+				</references>
+				<text>Dublin is in the Republic of Ireland.</text>
+				<template>AGENT-1 is in PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dublin</entity>
+				<entity>PATIENT-1 | Republic_of_Ireland</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id21" size="1">
+			<originaltripleset>
+				<otriple>Dublin | isPartOf | Leinster</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Dublin | isPartOf | Leinster</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Dublin | isPartOf | Leinster</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Dublin" number="1" tag="AGENT-1" type="name">Dublin</reference>
+					<reference entity="Leinster" number="2" tag="PATIENT-1" type="name">Leinster</reference>
+				</references>
+				<text>Dublin is part of Leinster.</text>
+				<template>AGENT-1 is part of PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Dublin</entity>
+				<entity>PATIENT-1 | Leinster</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id22" size="1">
+			<originaltripleset>
+				<otriple>India | leader | Sumitra_Mahajan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>India | leaderName | Sumitra_Mahajan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>India | leaderName | Sumitra_Mahajan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Sumitra_Mahajan" number="1" tag="PATIENT-1" type="name">Sumitra Mahajan</reference>
+					<reference entity="India" number="2" tag="AGENT-1" type="description">an Indian</reference>
+				</references>
+				<text>Sumitra Mahajan is an Indian leader.</text>
+				<template>PATIENT-1 is AGENT-1 leader .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>India | leaderName | Sumitra_Mahajan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="India" number="1" tag="AGENT-1" type="name">India</reference>
+					<reference entity="Sumitra_Mahajan" number="2" tag="PATIENT-1" type="name">Sumitra Mahajan</reference>
+				</references>
+				<text>The name of the leader in India is Sumitra Mahajan.</text>
+				<template>The name of the leader in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | India</entity>
+				<entity>PATIENT-1 | Sumitra_Mahajan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id23" size="1">
+			<originaltripleset>
+				<otriple>Japan | ethnicGroup | Brazilians_in_Japan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Japan | ethnicGroup | Brazilians_in_Japan</mtriple>
+			</modifiedtripleset>
+			<lex comment="toFix" lid="Id1">
+				<sortedtripleset>
+					<striple>Japan | ethnicGroup | Brazilians_in_Japan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Japan" number="1" tag="AGENT-1" type="name">Japan</reference>
+					<reference entity="Brazilians_in_Japan" number="2" tag="PATIENT-1" type="description">the Brazilians</reference>
+				</references>
+				<text>One of the ethnic groups in Japan in the Brazilians.</text>
+				<template>One of the ethnic groups in AGENT-1 in PATIENT-1 .</template>
+			</lex>
+			<lex comment="toFix" lid="Id2">
+				<sortedtripleset>
+					<striple>Japan | ethnicGroup | Brazilians_in_Japan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Brazilians_in_Japan" number="1" tag="PATIENT-1" type="description">The Brazilians in Japan</reference>
+					<reference entity="Japan" number="2" tag="AGENT-1" type="name">Japan</reference>
+				</references>
+				<text>The Brazilians in Japan are an ethnic group found in Japan.</text>
+				<template>PATIENT-1 are an ethnic group found in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Japan</entity>
+				<entity>PATIENT-1 | Brazilians_in_Japan</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id24" size="1">
+			<originaltripleset>
+				<otriple>Japan | leader | Tarō_Asō</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Japan | leaderName | Tarō_Asō</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Japan | leaderName | Tarō_Asō</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Japan" number="1" tag="AGENT-1" type="name">Japan</reference>
+					<reference entity="Tarō_Asō" number="2" tag="PATIENT-1" type="name">Tarō Asō</reference>
+				</references>
+				<text>The leader of Japan is Tarō Asō.</text>
+				<template>The leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Japan</entity>
+				<entity>PATIENT-1 | Tarō_Asō</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id25" size="1">
+			<originaltripleset>
+				<otriple>Marriott_International | keyPeople | Bill_Marriott</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Marriott_International | keyPerson | Bill_Marriott</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Marriott_International | keyPerson | Bill_Marriott</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Bill_Marriott" number="1" tag="PATIENT-1" type="name">Bill Marriott</reference>
+					<reference entity="Marriott_International" number="2" tag="AGENT-1" type="name">Marriott International</reference>
+				</references>
+				<text>Bill Marriott is the key person at Marriott International.</text>
+				<template>PATIENT-1 is the key person at AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Marriott_International | keyPerson | Bill_Marriott</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Marriott_International" number="1" tag="AGENT-1" type="name">Marriott International</reference>
+					<reference entity="Bill_Marriott" number="2" tag="PATIENT-1" type="name">Bill Marriott</reference>
+				</references>
+				<text>One of the key people in Marriott International is Bill Marriott.</text>
+				<template>One of the key people in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Marriott_International</entity>
+				<entity>PATIENT-1 | Bill_Marriott</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id26" size="1">
+			<originaltripleset>
+				<otriple>Republic_of_Ireland | languages | English_language</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Republic_of_Ireland | language | English_language</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Republic_of_Ireland | language | English_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Republic_of_Ireland" number="1" tag="AGENT-1" type="name">Ireland</reference>
+					<reference entity="English_language" number="2" tag="PATIENT-1" type="name">Irish English</reference>
+				</references>
+				<text>Ireland official language is Irish English.</text>
+				<template>AGENT-1 official language is PATIENT-1 .</template>
+			</lex>
+			<lex comment="toFix" lid="Id2">
+				<sortedtripleset>
+					<striple>Republic_of_Ireland | language | English_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="English_language" number="1" tag="PATIENT-1" type="name">English language</reference>
+					<reference entity="Republic_of_Ireland" number="2" tag="AGENT-1" type="description">the Republic of Ireland</reference>
+				</references>
+				<text>English language is the main language of the Republic of Ireland.</text>
+				<template>PATIENT-1 is the main language of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Republic_of_Ireland | language | English_language</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Republic_of_Ireland" number="1" tag="AGENT-1" type="description">the Republic of Ireland</reference>
+					<reference entity="English_language" number="2" tag="PATIENT-1" type="name">English</reference>
+				</references>
+				<text>One language used in the Republic of Ireland is English.</text>
+				<template>One language used in AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Republic_of_Ireland</entity>
+				<entity>PATIENT-1 | English_language</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id27" size="1">
+			<originaltripleset>
+				<otriple>South_Africa | capital | Cape_Town</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>South_Africa | capital | Cape_Town</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>South_Africa | capital | Cape_Town</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Cape_Town" number="1" tag="PATIENT-1" type="name">Cape Town</reference>
+					<reference entity="South_Africa" number="2" tag="AGENT-1" type="name">South Africa</reference>
+				</references>
+				<text>Cape Town is the capital of South Africa.</text>
+				<template>PATIENT-1 is the capital of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>South_Africa | capital | Cape_Town</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="South_Africa" number="1" tag="AGENT-1" type="name">South Africa</reference>
+					<reference entity="Cape_Town" number="2" tag="PATIENT-1" type="name">Cape Town</reference>
+				</references>
+				<text>The capital of South Africa is Cape Town.</text>
+				<template>The capital of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | South_Africa</entity>
+				<entity>PATIENT-1 | Cape_Town</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id28" size="1">
+			<originaltripleset>
+				<otriple>United_Kingdom | capital | London</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_Kingdom | capital | London</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>United_Kingdom | capital | London</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_Kingdom" number="1" tag="AGENT-1" type="description">the United Kingdom</reference>
+					<reference entity="London" number="2" tag="PATIENT-1" type="name">London</reference>
+				</references>
+				<text>The capital of the United Kingdom is London.</text>
+				<template>The capital of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>United_Kingdom | capital | London</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="London" number="1" tag="PATIENT-1" type="name">London</reference>
+					<reference entity="United_Kingdom" number="2" tag="AGENT-1" type="description">the United Kingdom</reference>
+				</references>
+				<text>London is the capital of the United Kingdom.</text>
+				<template>PATIENT-1 is the capital of AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_Kingdom</entity>
+				<entity>PATIENT-1 | London</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id29" size="1">
+			<originaltripleset>
+				<otriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | ethnicGroup | Native_Americans_in_the_United_States</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>United_States | ethnicGroup | Native_Americans_in_the_United_States</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Native_Americans_in_the_United_States" number="1" tag="PATIENT-1" type="name">Native Americans</reference>
+					<reference entity="United_States" number="2" tag="AGENT-1" type="description">the United States</reference>
+				</references>
+				<text>Native Americans are an ethnic group in the United States.</text>
+				<template>PATIENT-1 are an ethnic group in AGENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_States</entity>
+				<entity>PATIENT-1 | Native_Americans_in_the_United_States</entity>
+			</entitymap>
+		</entry>
+		<entry category="Building" eid="Id30" size="1">
+			<originaltripleset>
+				<otriple>United_States | leader | Paul_Ryan</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>United_States | leaderName | Paul_Ryan</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>United_States | leaderName | Paul_Ryan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Paul_Ryan" number="1" tag="PATIENT-1" type="name">Paul Ryan</reference>
+					<reference entity="United_States" number="2" tag="AGENT-1" type="description">the United States</reference>
+				</references>
+				<text>Paul Ryan is the leader of the United States.</text>
+				<template>PATIENT-1 is the leader of AGENT-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>United_States | leaderName | Paul_Ryan</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="United_States" number="1" tag="AGENT-1" type="description">the United States</reference>
+					<reference entity="Paul_Ryan" number="2" tag="PATIENT-1" type="name">Paul Ryan</reference>
+				</references>
+				<text>The leader of the United States is Paul Ryan.</text>
+				<template>the leader of AGENT-1 is PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | United_States</entity>
+				<entity>PATIENT-1 | Paul_Ryan</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>

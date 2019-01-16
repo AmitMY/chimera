@@ -1,0 +1,873 @@
+<?xml version="1.0" ?>
+<benchmark>
+	<entries>
+		<entry category="Astronaut" eid="Id1" size="5">
+			<originaltripleset>
+				<otriple>Alan_Bean | mission | Apollo_12</otriple>
+				<otriple>Alan_Bean | nationality | United_States</otriple>
+				<otriple>Apollo_12 | operator | NASA</otriple>
+				<otriple>Alan_Bean | occupation | Test_pilot</otriple>
+				<otriple>Alan_Bean | birthPlace | Wheeler,_Texas</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Bean | was a crew member of | Apollo_12</mtriple>
+				<mtriple>Alan_Bean | nationality | United_States</mtriple>
+				<mtriple>Apollo_12 | operator | NASA</mtriple>
+				<mtriple>Alan_Bean | occupation | Test_pilot</mtriple>
+				<mtriple>Alan_Bean | birthPlace | Wheeler,_Texas</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Bean | nationality | United_States</striple>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">an American</reference>
+					<reference entity="Wheeler,_Texas" number="3" tag="PATIENT-4" type="name">Wheeler , Texas</reference>
+					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Test_pilot" number="5" tag="PATIENT-3" type="description">a test pilot</reference>
+					<reference entity="Apollo_12" number="6" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="NASA" number="7" tag="PATIENT-2" type="name">NASA</reference>
+				</references>
+				<text>Alan Bean was an American born in Wheeler, Texas. He served as a test pilot and became a crew member of Apollo 12, which was operated by NASA.</text>
+				<template>AGENT-1 was PATIENT-1 born in PATIENT-4 . AGENT-1 served as PATIENT-3 and became a crew member of BRIDGE-1 , which was operated by PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Apollo_12 | operator | NASA</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Alan_Bean | nationality | United_States</striple>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Apollo_12" number="1" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="NASA" number="2" tag="PATIENT-2" type="name">NASA</reference>
+					<reference entity="Apollo_12" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
+					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">American</reference>
+					<reference entity="Alan_Bean" number="5" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="Alan_Bean" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Wheeler,_Texas" number="7" tag="PATIENT-4" type="name">Wheeler , Texas</reference>
+					<reference entity="Test_pilot" number="8" tag="PATIENT-3" type="description">a test pilot</reference>
+				</references>
+				<text>Apollo 12 was operated by NASA and its crew members included American national Alan Bean. He was born in Wheeler, Texas and served as a test pilot.</text>
+				<template>BRIDGE-1 was operated by PATIENT-2 and BRIDGE-1 crew members included PATIENT-1 national AGENT-1 . AGENT-1 was born in PATIENT-4 and served as PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alan_Bean | nationality | United_States</striple>
+					<striple>Alan_Bean | birthPlace | Wheeler,_Texas</striple>
+					<striple>Alan_Bean | occupation | Test_pilot</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">a US national</reference>
+					<reference entity="Wheeler,_Texas" number="3" tag="PATIENT-4" type="name">Wheeler , Texas</reference>
+					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Test_pilot" number="5" tag="PATIENT-3" type="description">a test pilot</reference>
+					<reference entity="NASA" number="6" tag="PATIENT-2" type="description">the NASA</reference>
+					<reference entity="Apollo_12" number="7" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="United_States" number="8" tag="PATIENT-1" type="description">a crew member</reference>
+				</references>
+				<text>Alan Bean, a US national, was born in Wheeler, Texas. He served as a test pilot before becoming part of the NASA operated Apollo 12 mission as a crew member.</text>
+				<template>AGENT-1 , PATIENT-1 , was born in PATIENT-4 . AGENT-1 served as PATIENT-3 before becoming part of PATIENT-2 operated BRIDGE-1 mission as PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>PATIENT-1 | United_States</entity>
+				<entity>PATIENT-2 | NASA</entity>
+				<entity>PATIENT-3 | Test_pilot</entity>
+				<entity>PATIENT-4 | Wheeler,_Texas</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id2" size="5">
+			<originaltripleset>
+				<otriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;@en</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;^^xsd:date</otriple>
+				<otriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</mtriple>
+				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="3" tag="PATIENT-5" type="name">November 18 , 1923</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="4" tag="PATIENT-1" type="name">NWC in 1957 with a M</reference>
+					<reference entity="California" number="6" tag="PATIENT-2" type="name">California</reference>
+					<reference entity="&quot;1998-07-21&quot;" number="7" tag="PATIENT-4" type="name">July 21 , 1998</reference>
+				</references>
+				<text>Alan Shepard, born in New Hampshire on November 18, 1923, graduated from NWC in 1957 with a M.A. He died in California on July 21, 1998.</text>
+				<template>AGENT-1 , born in PATIENT-3 on PATIENT-5 , graduated from PATIENT-1 . AGENT-1 died in PATIENT-2 on PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="3" tag="PATIENT-5" type="description">the 18th of November , 1923</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="5" tag="PATIENT-1" type="name">NWC in 1957 with a M .A</reference>
+					<reference entity="&quot;1998-07-21&quot;" number="6" tag="PATIENT-4" type="description">the 21st of July</reference>
+					<reference entity="Alan_Shepard" number="7" tag="AGENT-1" type="name">1998 , he</reference>
+					<reference entity="California" number="8" tag="PATIENT-2" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was born in New Hampshire on the 18th of November, 1923. He graduated from NWC in 1957 with a M.A. On the 21st of July, 1998, he passed away in California.</text>
+				<template>AGENT-1 was born in PATIENT-3 on PATIENT-5 . AGENT-1 graduated from PATIENT-1 . On PATIENT-4 , AGENT-1 passed away in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="2" tag="PATIENT-5" type="description">the 18th of November , 1923</reference>
+					<reference entity="New_Hampshire" number="3" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="&quot;1998-07-21&quot;" number="4" tag="PATIENT-4" type="description">the 21st of July , 1998</reference>
+					<reference entity="California" number="5" tag="PATIENT-2" type="name">California</reference>
+					<reference entity="Alan_Shepard" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="7" tag="PATIENT-1" type="name">with a M</reference>
+				</references>
+				<text>Alan Shepard was born on the 18th of November, 1923 in New Hampshire and passed away on the 21st of July, 1998 in California. He graduated with a M.A. from NWC in 1957.</text>
+				<template>AGENT-1 was born on PATIENT-5 in PATIENT-3 and passed away on PATIENT-4 in PATIENT-2 . AGENT-1 graduated PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | &quot;NWC, M.A. 1957&quot;</entity>
+				<entity>PATIENT-2 | California</entity>
+				<entity>PATIENT-3 | New_Hampshire</entity>
+				<entity>PATIENT-4 | &quot;1998-07-21&quot;</entity>
+				<entity>PATIENT-5 | &quot;1923-11-18&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id3" size="5">
+			<originaltripleset>
+				<otriple>Alan_Shepard | status | &quot;Deceased&quot;@en</otriple>
+				<otriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;@en</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | occupation | Test_pilot</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | status | &quot;Deceased&quot;</mtriple>
+				<mtriple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | occupation | Test_pilot</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
+					<striple>Alan_Shepard | occupation | Test_pilot</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="California" number="3" tag="PATIENT-3" type="name">California</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="4" tag="PATIENT-2" type="name">NWC</reference>
+					<reference entity="Alan_Shepard" number="5" tag="AGENT-1" type="name">, MA in 1957 he</reference>
+					<reference entity="Test_pilot" number="6" tag="PATIENT-4" type="description">a test pilot</reference>
+				</references>
+				<text>Alan Shepard, born in New Hampshire, has died in California. After graduating from NWC, MA in 1957 he served as a test pilot.</text>
+				<template>AGENT-1 , born in PATIENT-5 , has died in PATIENT-3 . After graduating from PATIENT-2 AGENT-1 served as PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | occupation | Test_pilot</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="California" number="2" tag="PATIENT-3" type="name">California</reference>
+					<reference entity="Alan_Shepard" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="New_Hampshire" number="4" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="5" tag="PATIENT-2" type="name">NWC</reference>
+					<reference entity="Alan_Shepard" number="6" tag="AGENT-1" type="name">graduating with an MA in 1957 , He</reference>
+					<reference entity="Test_pilot" number="7" tag="PATIENT-4" type="description">a test pilot</reference>
+				</references>
+				<text>Alan Shepard has died in California. He was born in New Hampshire and went to school at NWC, graduating with an MA in 1957, He served as a test pilot.</text>
+				<template>AGENT-1 has died in PATIENT-3 . AGENT-1 was born in PATIENT-5 and went to school at PATIENT-2, AGENT-1 served as PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | occupation | Test_pilot</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="California" number="2" tag="PATIENT-3" type="name">California</reference>
+					<reference entity="Alan_Shepard" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="New_Hampshire" number="4" tag="PATIENT-5" type="name">New Hampshire</reference>
+					<reference entity="&quot;NWC, M.A. 1957&quot;" number="5" tag="PATIENT-2" type="name">NWC MA in 1957</reference>
+					<reference entity="Alan_Shepard" number="6" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="Test_pilot" number="7" tag="PATIENT-4" type="description">a test pilot</reference>
+				</references>
+				<text>Alan Shepard has died in California. He was born in New Hampshire and graduated from NWC MA in 1957. He served as a test pilot.</text>
+				<template>AGENT-1 has died in PATIENT-3 . AGENT-1 was born in PATIENT-5 and graduated from PATIENT-2. AGENT-1 served as PATIENT-4 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
+				<entity>PATIENT-2 | &quot;NWC, M.A. 1957&quot;</entity>
+				<entity>PATIENT-3 | California</entity>
+				<entity>PATIENT-4 | Test_pilot</entity>
+				<entity>PATIENT-5 | New_Hampshire</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id4" size="5">
+			<originaltripleset>
+				<otriple>Alan_Shepard | mission | Apollo_14</otriple>
+				<otriple>Alan_Shepard | status | &quot;Deceased&quot;@en</otriple>
+				<otriple>Alan_Shepard | selection | 1959</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Apollo_14 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Alan_Shepard | was a crew member of | Apollo_14</mtriple>
+				<mtriple>Alan_Shepard | status | &quot;Deceased&quot;</mtriple>
+				<mtriple>Alan_Shepard | was selected by NASA | 1959</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Apollo_14 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+					<striple>Apollo_14 | operator | NASA</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="NASA" number="3" tag="PATIENT-4" type="name">NASA</reference>
+					<reference entity="1959" number="4" tag="PATIENT-2" type="name">1959</reference>
+					<reference entity="Apollo_14" number="5" tag="BRIDGE-1" type="name">Apollo 14</reference>
+				</references>
+				<text>The late Alan Shepard was born in New Hampshire, and chosen by NASA in 1959 a a crew member of Apollo 14.</text>
+				<template>The late AGENT-1 was born in PATIENT-3 , and chosen by PATIENT-4 in PATIENT-2 a a crew member of BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+					<striple>Apollo_14 | operator | NASA</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="Alan_Shepard" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="NASA" number="4" tag="PATIENT-4" type="name">NASA</reference>
+					<reference entity="1959" number="5" tag="PATIENT-2" type="name">1959</reference>
+					<reference entity="NASA" number="6" tag="PATIENT-4" type="name">NASA</reference>
+					<reference entity="Apollo_14" number="7" tag="BRIDGE-1" type="name">Apollo 14</reference>
+				</references>
+				<text>The late Alan Shepard was born in New Hampshire. He was selected by NASA in 1959 and served as a crew member of NASA operated Apollo 14.</text>
+				<template>The late AGENT-1 was born in PATIENT-3 . AGENT-1 was selected by PATIENT-4 in PATIENT-2 and served as a crew member of PATIENT-4 operated BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | was selected by NASA | 1959</striple>
+					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
+					<striple>Apollo_14 | operator | NASA</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="NASA" number="3" tag="PATIENT-4" type="name">NASA</reference>
+					<reference entity="1959" number="4" tag="PATIENT-2" type="name">1959</reference>
+					<reference entity="Alan_Shepard" number="5" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Apollo_14" number="6" tag="BRIDGE-1" type="description">the Apollo 14</reference>
+					<reference entity="Alan_Shepard" number="7" tag="AGENT-1" type="name">Mr Shepard</reference>
+				</references>
+				<text>Alan Shepard was originally from New Hampshire and joined NASA in 1959 where he became a member of the Apollo 14 crew. Mr Shepard passed away.</text>
+				<template>AGENT-1 was originally from PATIENT-3 and joined PATIENT-4 in PATIENT-2 where AGENT-1 became a member of BRIDGE-1 crew . AGENT-1 passed away .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Apollo_14</entity>
+				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
+				<entity>PATIENT-2 | 1959</entity>
+				<entity>PATIENT-3 | New_Hampshire</entity>
+				<entity>PATIENT-4 | NASA</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id5" size="5">
+			<originaltripleset>
+				<otriple>Apollo_12 | crew2Up | Alfred_Worden</otriple>
+				<otriple>Alan_Bean | mission | Apollo_12</otriple>
+				<otriple>Apollo_12 | operator | NASA</otriple>
+				<otriple>Alan_Bean | timeInSpace | &quot;100305.0&quot;^^&lt;http://dbpedia.org/datatype/minute&gt;</otriple>
+				<otriple>Apollo_12 | crew1Up | David_Scott</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Apollo_12 | backup pilot | Alfred_Worden</mtriple>
+				<mtriple>Alan_Bean | was a crew member of | Apollo_12</mtriple>
+				<mtriple>Apollo_12 | operator | NASA</mtriple>
+				<mtriple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</mtriple>
+				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+					<striple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</striple>
+					<striple>Apollo_12 | commander | David_Scott</striple>
+					<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Apollo_12" number="2" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="NASA" number="3" tag="PATIENT-2" type="name">NASA</reference>
+					<reference entity="&quot;100305.0&quot;(minutes)" number="4" tag="PATIENT-3" type="name">space 100305 minutes</reference>
+					<reference entity="Apollo_12" number="5" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="David_Scott" number="6" tag="PATIENT-4" type="name">David Scott</reference>
+					<reference entity="Alfred_Worden" number="7" tag="PATIENT-1" type="name">Alfred Worden</reference>
+				</references>
+				<text>Alan Bean (born in Wheeler, Texas) was a crew member of Apollo 12 operated by NASA and was in space 100305 minutes. Apollo 12 was commanded by David Scott and Alfred Worden was a backup pilot.</text>
+				<template>AGENT-1 ( born in Wheeler , Texas ) was a crew member of BRIDGE-1 operated by PATIENT-2 and was in PATIENT-3 . BRIDGE-1 was commanded by PATIENT-4 and PATIENT-1 was a backup pilot .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
+					<striple>Apollo_12 | operator | NASA</striple>
+					<striple>Apollo_12 | commander | David_Scott</striple>
+					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
+					<striple>Alan_Bean | timeInSpace | &quot;100305.0&quot;(minutes)</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alfred_Worden" number="1" tag="PATIENT-1" type="name">Alfred Worden</reference>
+					<reference entity="NASA" number="2" tag="PATIENT-2" type="description">the NASA</reference>
+					<reference entity="Apollo_12" number="3" tag="BRIDGE-1" type="name">Apollo 12</reference>
+					<reference entity="David_Scott" number="4" tag="PATIENT-4" type="name">David Scott</reference>
+					<reference entity="Alan_Bean" number="5" tag="AGENT-1" type="name">Alan Bean</reference>
+					<reference entity="&quot;100305.0&quot;(minutes)" number="6" tag="PATIENT-3" type="name">100305 minutes</reference>
+				</references>
+				<text>Alfred Worden was a backup pilot on the NASA operated Apollo 12 on which David Scott the commander and Alan Bean, who spent a total of 100305 minutes in space, was a crewman.</text>
+				<template>PATIENT-1 was a backup pilot on PATIENT-2 operated BRIDGE-1 on which PATIENT-4 the commander and AGENT-1 , who spent a total of PATIENT-3 in space , was a crewman .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Bean</entity>
+				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>PATIENT-1 | Alfred_Worden</entity>
+				<entity>PATIENT-2 | NASA</entity>
+				<entity>PATIENT-3 | &quot;100305.0&quot;(minutes)</entity>
+				<entity>PATIENT-4 | David_Scott</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id6" size="5">
+			<originaltripleset>
+				<otriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</otriple>
+				<otriple>Alan_Shepard | deathPlace | California</otriple>
+				<otriple>Alan_Shepard | birthPlace | New_Hampshire</otriple>
+				<otriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;^^xsd:date</otriple>
+				<otriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</mtriple>
+				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
+				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
+				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
+				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+					<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="4" tag="BRIDGE-1" type="description">the United States Navy Distinguished Service Medal</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="5" tag="PATIENT-1" type="description">the department of commerce gold medal</reference>
+					<reference entity="California" number="6" tag="PATIENT-2" type="name">California</reference>
+				</references>
+				<text>Alan Shepard (born November 18th, 1923, New Hampshire) was awarded the United States Navy Distinguished Service Medal which is higher than the department of commerce gold medal has died in California.</text>
+				<template>AGENT-1 ( born PATIENT-4 , PATIENT-3 ) was awarded BRIDGE-1 which is higher than PATIENT-1 has died in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+					<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="2" tag="PATIENT-4" type="name">18 November 1923</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="4" tag="BRIDGE-1" type="description">the Distinguished Service Medal</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="5" tag="PATIENT-1" type="description">the Department of Commerce Gold Medal</reference>
+					<reference entity="California" number="8" tag="PATIENT-2" type="name">California</reference>
+				</references>
+				<text>Alan Shepard was born on 18 November 1923 in New Hampshire. He was awarded the Distinguished Service Medal, which is higher than the Department of Commerce Gold Medal, by the US Navy. He died in California.</text>
+				<template>AGENT-1 was born on PATIENT-4 in PATIENT-3 .AGENT-1 was awarded BRIDGE-1 , which is higher than PATIENT-1 , by the US NAvy . AGENT-1 died in PATIENT-2 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
+					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
+					<striple>Alan_Shepard | deathPlace | California</striple>
+					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
+					<striple>Distinguished_Service_Medal_(United_States_Navy) | higher | Department_of_Commerce_Gold_Medal</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
+					<reference entity="New_Hampshire" number="2" tag="PATIENT-3" type="name">New Hampshire</reference>
+					<reference entity="&quot;1923-11-18&quot;" number="3" tag="PATIENT-4" type="name">18 November 1923</reference>
+					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">his</reference>
+					<reference entity="California" number="5" tag="PATIENT-2" type="name">California</reference>
+					<reference entity="Alan_Shepard" number="6" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="7" tag="BRIDGE-1" type="description">the Distinguished Service Medal by the US Navy</reference>
+					<reference entity="Department_of_Commerce_Gold_Medal" number="8" tag="PATIENT-1" type="description">the Department of Commerce Gold Medal</reference>
+				</references>
+				<text>Alan Shepard was born in New Hampshire on 18 November 1923. Before his death in California he had been awarded the Distinguished Service Medal by the US Navy an award higher than the Department of Commerce Gold Medal.</text>
+				<template>AGENT-1 was born in PATIENT-3 on PATIENT-4 . Before AGENT-1 death in PATIENT-2 AGENT-1 had been awarded BRIDGE-1 an award higher than PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Alan_Shepard</entity>
+				<entity>BRIDGE-1 | Distinguished_Service_Medal_(United_States_Navy)</entity>
+				<entity>PATIENT-1 | Department_of_Commerce_Gold_Medal</entity>
+				<entity>PATIENT-2 | California</entity>
+				<entity>PATIENT-3 | New_Hampshire</entity>
+				<entity>PATIENT-4 | &quot;1923-11-18&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id7" size="5">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>University_of_Texas_at_Austin | athletics | Big_12_Conference</otriple>
+				<otriple>University_of_Texas_at_Austin | affiliation | University_of_Texas_System</otriple>
+				<otriple>University_of_Texas_at_Austin | president | Gregory_L._Fenves</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>University_of_Texas_at_Austin | compete in | Big_12_Conference</mtriple>
+				<mtriple>University_of_Texas_at_Austin | affiliation | University_of_Texas_System</mtriple>
+				<mtriple>University_of_Texas_at_Austin | president | Gregory_L._Fenves</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliation | University_of_Texas_System</striple>
+					<striple>University_of_Texas_at_Austin | compete in | Big_12_Conference</striple>
+					<striple>University_of_Texas_at_Austin | president | Gregory_L._Fenves</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-1" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="3" tag="BRIDGE-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="BRIDGE-1" type="description">The University of Texas at Austin</reference>
+					<reference entity="University_of_Texas_System" number="5" tag="PATIENT-3" type="name">University of Texas System</reference>
+					<reference entity="Big_12_Conference" number="6" tag="PATIENT-2" type="description">the Big 12 Conference</reference>
+					<reference entity="Gregory_L._Fenves" number="7" tag="PATIENT-4" type="name">Gregory L . Fenves</reference>
+					<reference entity="University_of_Texas_at_Austin" number="8" tag="BRIDGE-1" type="description">the University</reference>
+				</references>
+				<text>Elliot See was born in Dallas and later attended the University of Texas at Austin. The University of Texas at Austin is affiliated with University of Texas System and is competing in the Big 12 Conference. Nowadays, Gregory L. Fenves is the President of the University.</text>
+				<template>AGENT-1 was born in PATIENT-1 and later attended BRIDGE-1 . BRIDGE-1 is affiliated with PATIENT-3 and is competing in PATIENT-2 . Nowadays , PATIENT-4 is the President of BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliation | University_of_Texas_System</striple>
+					<striple>University_of_Texas_at_Austin | compete in | Big_12_Conference</striple>
+					<striple>University_of_Texas_at_Austin | president | Gregory_L._Fenves</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-1" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="3" tag="BRIDGE-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="University_of_Texas_System" number="4" tag="PATIENT-3" type="description">the University of Texas System</reference>
+					<reference entity="Big_12_Conference" number="5" tag="PATIENT-2" type="description">the Big 12 Conference in Austin</reference>
+					<reference entity="Gregory_L._Fenves" number="6" tag="PATIENT-4" type="name">Gregory L . Fenves</reference>
+					<reference entity="University_of_Texas_at_Austin" number="7" tag="BRIDGE-1" type="description">the University of Texas at Austin</reference>
+				</references>
+				<text>Elliot See was born in Dallas and attended the University of Texas at Austin which is affiliated with the University of Texas System and competed in the Big 12 Conference in Austin. Gregory L. Fenves is the appointed president of the University of Texas at Austin.</text>
+				<template>AGENT-1 was born in PATIENT-1 and attended BRIDGE-1 which is affiliated with PATIENT-3 and competed in PATIENT-2 . PATIENT-4 is the appointed president of BRIDGE-1 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | president | Gregory_L._Fenves</striple>
+					<striple>University_of_Texas_at_Austin | affiliation | University_of_Texas_System</striple>
+					<striple>University_of_Texas_at_Austin | compete in | Big_12_Conference</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-1" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="3" tag="BRIDGE-1" type="name">University of Texas at Austin</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="BRIDGE-1" type="demonstrative">This University</reference>
+					<reference entity="Gregory_L._Fenves" number="5" tag="PATIENT-4" type="name">Gregory L . Fenves</reference>
+					<reference entity="University_of_Texas_System" number="6" tag="PATIENT-3" type="description">the University of Texas System</reference>
+					<reference entity="University_of_Texas_at_Austin" number="7" tag="BRIDGE-1" type="description">The University of Texas at Austin</reference>
+					<reference entity="Big_12_Conference" number="8" tag="PATIENT-2" type="description">the Big 12 Conference</reference>
+				</references>
+				<text>Elliot See was born in Dallas and was a student at University of Texas at Austin. This University, whose president is Gregory L. Fenves, is affiliated with the University of Texas System. The University of Texas at Austin competes in the Big 12 Conference.</text>
+				<template>AGENT-1 was born in PATIENT-1 and was a student at BRIDGE-1 . BRIDGE-1 , whose president is PATIENT-4 , is affiliated with PATIENT-3 . BRIDGE-1 competes in PATIENT-2 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>BRIDGE-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-1 | Dallas</entity>
+				<entity>PATIENT-2 | Big_12_Conference</entity>
+				<entity>PATIENT-3 | University_of_Texas_System</entity>
+				<entity>PATIENT-4 | Gregory_L._Fenves</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id8" size="5">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>Elliot_See | status | &quot;Deceased&quot;@en</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | deathDate | &quot;1966-02-28&quot;^^xsd:date</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>Elliot_See | status | &quot;Deceased&quot;</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="3" tag="PATIENT-5" type="name">28th February 1966</reference>
+					<reference entity="St._Louis" number="4" tag="PATIENT-3" type="name">St</reference>
+					<reference entity="Elliot_See" number="5" tag="AGENT-1" type="name">Louis . He</reference>
+					<reference entity="Dallas" number="6" tag="PATIENT-4" type="name">Dallas</reference>
+				</references>
+				<text>Elliot See, a graduate of the University of Texas at Austin, passed away on 28th February 1966 in St. Louis. He was born in Dallas.</text>
+				<template>AGENT-1 , a graduate of PATIENT-1 , passed away on PATIENT-5 in PATIENT-3 . AGENT-1 was born in PATIENT-4 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-4" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_at_Austin" number="3" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="Elliot_See" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="St._Louis" number="5" tag="PATIENT-3" type="name">St Louis</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="6" tag="PATIENT-5" type="name">28 February 1966</reference>
+				</references>
+				<text>Elliot See was born in Dallas and attended the University of Texas at Austin. He died in St Louis on 28 February 1966.</text>
+				<template>AGENT-1 was born in PATIENT-4 and attended PATIENT-1 . AGENT-1 died in PATIENT-3 on PATIENT-5 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="&quot;1966-02-28&quot;" number="2" tag="PATIENT-5" type="description">the 28th February 1966</reference>
+					<reference entity="Dallas" number="3" tag="PATIENT-4" type="name">Dallas</reference>
+					<reference entity="St._Louis" number="4" tag="PATIENT-3" type="name">St Louis</reference>
+					<reference entity="Elliot_See" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="University_of_Texas_at_Austin" number="6" tag="PATIENT-1" type="name">University of Texas at Austin</reference>
+				</references>
+				<text>Elliot See, who was born on the 28th February 1966 in Dallas, has died in St Louis. He will be remembered as a great student at University of Texas at Austin.</text>
+				<template>AGENT-1 , who was born on PATIENT-5 in PATIENT-4 , has died in PATIENT-3 . AGENT-1 will be remembered as a great student at PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-2 | &quot;Deceased&quot;</entity>
+				<entity>PATIENT-3 | St._Louis</entity>
+				<entity>PATIENT-4 | Dallas</entity>
+				<entity>PATIENT-5 | &quot;1966-02-28&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id9" size="5">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</otriple>
+				<otriple>Dallas | partsType | List_of_counties_in_Texas</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>University_of_Texas_at_Austin | athletics | Big_12_Conference</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</mtriple>
+				<mtriple>Dallas | partsType | List_of_counties_in_Texas</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>University_of_Texas_at_Austin | compete in | Big_12_Conference</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					<striple>University_of_Texas_at_Austin | compete in | Big_12_Conference</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="BRIDGE-2" type="name">Dallas</reference>
+					<reference entity="Elliot_See" number="3" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="University_of_Texas_at_Austin" number="4" tag="BRIDGE-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="University_of_Texas_System" number="5" tag="PATIENT-1" type="description">the University of Texas system</reference>
+					<reference entity="University_of_Texas_at_Austin" number="6" tag="BRIDGE-1" type="description">The University of Texas at Austin</reference>
+					<reference entity="Big_12_Conference" number="7" tag="PATIENT-3" type="description">the Big 12 Conference</reference>
+				</references>
+				<text>Elliot See was born in Dallas, which is a county in Texas. He attended the University of Texas at Austin, which is affiliated to the University of Texas system. The University of Texas at Austin will be part of the Big 12 Conference competition.</text>
+				<template>AGENT-1 was born in BRIDGE-2 , which is a county in Texas . AGENT-1 attended BRIDGE-1 , which is affiliated to PATIENT-1 . BRIDGE-1 will be part of PATIENT-3 competition .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					<striple>University_of_Texas_at_Austin | compete in | Big_12_Conference</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="BRIDGE-2" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_System" number="4" tag="PATIENT-1" type="description">the University of Texas system</reference>
+					<reference entity="Big_12_Conference" number="5" tag="PATIENT-3" type="description">the Big 12 conference</reference>
+				</references>
+				<text>Elliot See was born in Dallas, Texas and attended the University of Texas (affiliated to the University of Texas system) which competed in the Big 12 conference.</text>
+				<template>AGENT-1 was born in BRIDGE-2, Texas and attended BRIDGE-1 ( affiliated to PATIENT-1 ) which competed in PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					<striple>University_of_Texas_at_Austin | compete in | Big_12_Conference</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="BRIDGE-2" type="name">Dallas , Texas</reference>
+					<reference entity="University_of_Texas_System" number="4" tag="PATIENT-1" type="description">the University of Texas system</reference>
+					<reference entity="Big_12_Conference" number="5" tag="PATIENT-3" type="description">the big 12 conference</reference>
+				</references>
+				<text>Elliot See, who was born in Dallas, Texas, attended the University of Texas at Austin (affiliated to the University of Texas system) which will compete in the big 12 conference.</text>
+				<template>AGENT-1 , who was born in BRIDGE-2 , attended BRIDGE-1 ( affiliated to PATIENT-1 ) which will compete in PATIENT-3 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>BRIDGE-1 | University_of_Texas_at_Austin</entity>
+				<entity>BRIDGE-2 | Dallas</entity>
+				<entity>PATIENT-1 | University_of_Texas_System</entity>
+				<entity>PATIENT-2 | List_of_counties_in_Texas</entity>
+				<entity>PATIENT-3 | Big_12_Conference</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id10" size="5">
+			<originaltripleset>
+				<otriple>Elliot_See | almaMater | University_of_Texas_at_Austin</otriple>
+				<otriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</otriple>
+				<otriple>Elliot_See | birthPlace | Dallas</otriple>
+				<otriple>Elliot_See | deathPlace | St._Louis</otriple>
+				<otriple>Elliot_See | status | &quot;Deceased&quot;@en</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>Elliot_See | almaMater | University_of_Texas_at_Austin</mtriple>
+				<mtriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</mtriple>
+				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
+				<mtriple>Elliot_See | deathPlace | St._Louis</mtriple>
+				<mtriple>Elliot_See | status | &quot;Deceased&quot;</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-2" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_System" number="4" tag="PATIENT-1" type="description">the university of Texas system</reference>
+					<reference entity="Elliot_See" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="St._Louis" number="6" tag="PATIENT-3" type="name">St</reference>
+				</references>
+				<text>Elliot See was born in Dallas and studied at the University of Texas in Austin (which is affiliated to the university of Texas system). He died in St. Louis.</text>
+				<template>AGENT-1 was born in PATIENT-2 and studied at BRIDGE-1 ( which is affiliated to PATIENT-1 ) . AGENT-1 died in PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-2" type="name">Dallas</reference>
+					<reference entity="University_of_Texas_System" number="4" tag="PATIENT-1" type="description">the university of Texas system</reference>
+					<reference entity="Elliot_See" number="5" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="St._Louis" number="6" tag="PATIENT-3" type="name">St</reference>
+				</references>
+				<text>Elliot See was born in Dallas and studied at Austin University (part of the university of Texas system). He died in St. Louis.</text>
+				<template>AGENT-1 was born in PATIENT-2 and studied at BRIDGE-1 ( part of PATIENT-1 ) . AGENT-1 died in PATIENT-3 .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>Elliot_See | birthPlace | Dallas</striple>
+					<striple>Elliot_See | deathPlace | St._Louis</striple>
+					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
+					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See </reference>
+					<reference entity="Dallas" number="2" tag="PATIENT-2" type="name">Dallas </reference>
+					<reference entity="St._Louis" number="3" tag="PATIENT-3" type="name">St Louis</reference>
+					<reference entity="Elliot_See" number="4" tag="AGENT-1" type="pronoun">He</reference>
+					<reference entity="University_of_Texas_at_Austin" number="5" tag="BRIDGE-1" type="description">the University of Texas at Austin</reference>
+					<reference entity="University_of_Texas_System" number="6" tag="PATIENT-1" type="description">the University of Texas system</reference>
+				</references>
+				<text>Elliot See , who was born in Dallas , has died in St Louis. He graduated from the University of Texas at Austin which is affiliated to the University of Texas system.</text>
+				<template>AGENT-1 , who was born in PATIENT-2 , has died in PATIENT-3 . AGENT-1 graduated from BRIDGE-1 which is affiliated to PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | Elliot_See</entity>
+				<entity>BRIDGE-1 | University_of_Texas_at_Austin</entity>
+				<entity>PATIENT-1 | University_of_Texas_System</entity>
+				<entity>PATIENT-2 | Dallas</entity>
+				<entity>PATIENT-3 | St._Louis</entity>
+				<entity>PATIENT-4 | &quot;Deceased&quot;</entity>
+			</entitymap>
+		</entry>
+		<entry category="Astronaut" eid="Id11" size="5">
+			<originaltripleset>
+				<otriple>William_Anders | dateOfRet | &quot;1969-09-01&quot;^^xsd:date</otriple>
+				<otriple>Apollo_8 | crew1Up | Frank_Borman</otriple>
+				<otriple>William_Anders | mission | Apollo_8</otriple>
+				<otriple>Apollo_8 | crew2Up | Buzz_Aldrin</otriple>
+				<otriple>Apollo_8 | operator | NASA</otriple>
+			</originaltripleset>
+			<modifiedtripleset>
+				<mtriple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</mtriple>
+				<mtriple>Apollo_8 | commander | Frank_Borman</mtriple>
+				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
+				<mtriple>Apollo_8 | backup pilot | Buzz_Aldrin</mtriple>
+				<mtriple>Apollo_8 | operator | NASA</mtriple>
+			</modifiedtripleset>
+			<lex comment="good" lid="Id1">
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>Apollo_8 | operator | NASA</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					<striple>Apollo_8 | commander | Frank_Borman</striple>
+					<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="NASA" number="3" tag="PATIENT-4" type="name">NASA</reference>
+					<reference entity="William_Anders" number="4" tag="AGENT-1" type="pronoun">he</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="5" tag="PATIENT-1" type="name">September 1st , 1969</reference>
+					<reference entity="Frank_Borman" number="6" tag="PATIENT-2" type="name">Frank Borman</reference>
+					<reference entity="Apollo_8" number="7" tag="BRIDGE-1" type="name">Apollo 8</reference>
+					<reference entity="Buzz_Aldrin" number="8" tag="PATIENT-3" type="name">Buzz Aldrin</reference>
+				</references>
+				<text>William Anders was a member of the Apollo 8 crew (operated by NASA) and he retired on September 1st, 1969. Frank Borman was the commander of Apollo 8 and Buzz Aldrin was a back up pilot.</text>
+				<template>AGENT-1 was a member of BRIDGE-1 crew ( operated by PATIENT-4 ) and AGENT-1 retired on PATIENT-1 . PATIENT-2 was the commander of BRIDGE-1 and PATIENT-3 was a back up pilot .</template>
+			</lex>
+			<lex comment="good" lid="Id2">
+				<sortedtripleset>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>Apollo_8 | commander | Frank_Borman</striple>
+					<striple>Apollo_8 | operator | NASA</striple>
+					<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="2" tag="PATIENT-1" type="name">September 1st , 1969</reference>
+					<reference entity="Apollo_8" number="3" tag="BRIDGE-1" type="name">Apollo 8</reference>
+					<reference entity="Frank_Borman" number="4" tag="PATIENT-2" type="name">commander Frank Borman</reference>
+					<reference entity="Apollo_8" number="5" tag="BRIDGE-1" type="name">Apollo 8</reference>
+					<reference entity="NASA" number="6" tag="PATIENT-4" type="name">NASA</reference>
+					<reference entity="Buzz_Aldrin" number="7" tag="PATIENT-3" type="name">Buzz Aldrin</reference>
+				</references>
+				<text>William Anders, who retired on September 1st, 1969, was a crew member on Apollo 8 and served under commander Frank Borman. Apollo 8 was operated by NASA with Buzz Aldrin as backup pilot.</text>
+				<template>AGENT-1 , who retired on PATIENT-1 , was a crew member on BRIDGE-1 and served under PATIENT-2 . BRIDGE-1 was operated by PATIENT-4 with PATIENT-3 as backup pilot .</template>
+			</lex>
+			<lex comment="good" lid="Id3">
+				<sortedtripleset>
+					<striple>William_Anders | was a crew member of | Apollo_8</striple>
+					<striple>Apollo_8 | operator | NASA</striple>
+					<striple>Apollo_8 | commander | Frank_Borman</striple>
+					<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
+					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
+				</sortedtripleset>
+				<references>
+					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="NASA" number="2" tag="PATIENT-4" type="name">NASA</reference>
+					<reference entity="Apollo_8" number="3" tag="BRIDGE-1" type="name">Apollo 8</reference>
+					<reference entity="Frank_Borman" number="4" tag="PATIENT-2" type="name">Frank Borman</reference>
+					<reference entity="Buzz_Aldrin" number="5" tag="PATIENT-3" type="name">Buzz Aldrin</reference>
+					<reference entity="William_Anders" number="6" tag="AGENT-1" type="name">William Anders</reference>
+					<reference entity="&quot;1969-09-01&quot;" number="7" tag="PATIENT-1" type="name">September 1st 1969</reference>
+				</references>
+				<text>William Anders joined NASA and was a member of Apollo 8 along with Frank Borman as Commander and Buzz Aldrin as back up pilot. William Anders retired on September 1st 1969.</text>
+				<template>AGENT-1 joined PATIENT-4 and was a member of BRIDGE-1 along with PATIENT-2 as Commander and PATIENT-3 as back up pilot . AGENT-1 retired on PATIENT-1 .</template>
+			</lex>
+			<entitymap>
+				<entity>AGENT-1 | William_Anders</entity>
+				<entity>BRIDGE-1 | Apollo_8</entity>
+				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
+				<entity>PATIENT-2 | Frank_Borman</entity>
+				<entity>PATIENT-3 | Buzz_Aldrin</entity>
+				<entity>PATIENT-4 | NASA</entity>
+			</entitymap>
+		</entry>
+	</entries>
+	
+
+</benchmark>
