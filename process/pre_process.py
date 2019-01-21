@@ -20,7 +20,7 @@ TrainingPreProcessPipeline.enqueue("train", "Training Set", CorpusPreProcessPipe
 TrainingPreProcessPipeline.enqueue("dev", "Dev Set", CorpusPreProcessPipeline.mutate({"set": DataSetType.DEV}))
 
 TestCorpusPreProcessPipeline.enqueue("plan", "Generate best plan",
-                                     lambda f, x: f["spelling"].copy().create_plans(x["learn-score"]))
+                                     lambda f, x: f["spelling"].copy().create_plans(x["train-planner"]))
 TestCorpusPreProcessPipeline.enqueue("tokenize", "Tokenize Plans", lambda f, _: f["plan"].copy().tokenize_plans())
 TestCorpusPreProcessPipeline.enqueue("out", "Make output for parent", lambda f, _: f["tokenize"].copy())
 

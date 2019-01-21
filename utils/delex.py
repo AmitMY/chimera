@@ -65,6 +65,8 @@ def concat_entity(e):
         .replace(';', '_SEMI_') \
         .replace('!', '_EXC_') \
         .replace('?', '_QUE_') \
+        .replace('>', '_RT_') \
+        .replace('<', '_LT_') \
         .replace('/', '_SLASH_')
 
     return "ENT_" + e.upper() + "_ENT"
@@ -85,6 +87,8 @@ def un_concat_entity(e):
         .replace('_SEMI_', ';') \
         .replace('_EXC_', '!') \
         .replace('_QUE_', '?') \
+        .replace('_RT_', '>') \
+        .replace('_LT_', '<') \
         .replace('_SLASH_', '/') \
         .replace('_', ' ')
 

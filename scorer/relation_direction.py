@@ -2,7 +2,8 @@ from typing import List
 
 import numpy as np
 
-from scorer.scorer import Expert, get_relations
+from scorer.product_of_experts import Expert
+from scorer.scorer import get_relations
 
 
 class RelationDirectionExpert(Expert):

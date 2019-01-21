@@ -1,4 +1,5 @@
 # Chimera
+![Chimera](git-assets/chimera.webp)
 
 ## Environment
 We recommend installing all dependencies in a separate Conda environment.
@@ -66,9 +67,9 @@ Output running for the second time: (runs for just a few seconds to load the cac
 ![Second Run Pipeline](git-assets/second-run.png)
 
 The expected result (will show on screen) reported by `multi-bleu.perl` is around:
-- BLEU [47.27, 79.6, 55.3, 39.4, 28.7]
-- BLEU [46.87, 79.2, 54.8, 39.1, 28.4]
-- BLEU [46.70, 79.3, 55.0, 38.9, 28.0]
+- BLEU [47.27, 79.6, 55.3, 39.4, 28.7] (40,000 steps)
+- BLEU [46.87, 79.2, 54.8, 39.1, 28.4] (40,000 steps)
+- BLEU [46.70, 79.3, 55.0, 38.9, 28.0] (40,000 steps)
 
 ### [Delexicalized WebNLG](https://github.com/ThiagoCF05/webnlg)
 This dataset does not use a heuristic for entity matches, instead it was constructed manually.
@@ -77,7 +78,23 @@ This means it is of higher quality and easier to find a correct plan-match in tr
 Setting the `config` parameter to be `Config(reader=DelexWebNLGDataReader, test_reader=WebNLGDataReader)`
 
 The expected result is around:
-- BLEU [45.26, 80.1, 54.8, 37.9, 26.6]
-- BLEU [44.77, 79.9, 54.0, 37.1, 25.9]
+- BLEU [45.26, 80.1, 54.8, 37.9, 26.6] (20,000 steps)
+- BLEU [44.77, 79.9, 54.0, 37.1, 25.9] (20,000 steps)
+- BLEU [45.71, 81.1, 55.0, 37.9, 26.3] (20,000 steps)
+- BLEU [45.66, 80.2, 54.9, 37.8, 26.5] (20,000 steps)
 
 We attribute the worse BLEU to the fact the delexicalizations also remove articles and other text around it, and without proper referring expressions generations while the texts should have better structure, they are worse in fluency.
+
+## Speed Compared to Score
+If we try our neural planner, we get:
+- Training time: 60 seconds (can easily be 30 seconds or less)
+- Test time (1 cpu): 3 seconds
+- WebNLG - BLEU [45.79, 79.0, 54.4, 38.5, 28.0] (20,000 steps)
+- Delexicalized WebNLG - BLEU [44.21, 81.7, 56.4, 39.5, 28.2] (40,000 steps)
+
+Compared to the following using our naive product of experts planner, with the same realizer snapshot: (limited to tree plans)
+- Training time: 0 seconds
+- Test time (1 cpu): 5305 seconds
+- Test time (40 cpus): 449 seconds
+- WebNLG - BLEU [45.19, 77.8, 53.2, 37.4, 27.0] (20,000 steps)
+- Delexicalized WebNLG - BLEU [44.77, 79.3, 53.7, 37.4, 26.4] (40,000 steps)

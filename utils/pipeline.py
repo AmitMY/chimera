@@ -6,6 +6,7 @@ from utils.silencer import Silencer
 from utils.time import Time
 
 cache_dir = path.join(path.dirname(path.abspath(__file__)), path.pardir, "cache")
+print("Cache Directory", cache_dir, "\n")
 
 
 class Pipeline:
@@ -51,7 +52,9 @@ class Pipeline:
             pnf = pn + ".sav"
 
             if key != "out" and path.isfile(pnf):
-                self.params[key] = pickle.load(open(pnf, "rb"))
+                f = open(pnf, "rb")
+                self.params[key] = pickle.load(f)
+                f.close()
             else:
                 if isinstance(method, Pipeline):
                     self.params[key] = method.execute(run_name=name, tabs=tabs + 1,
@@ -65,7 +68,9 @@ class Pipeline:
                     if self.mute:
                         Silencer.unmute()
 
-                    pickle.dump(self.params[key], open(pnf, "wb"))
+                    f = open(pnf, "wb")
+                    pickle.dump(self.params[key], f)
+                    f.close()
 
             if key != "out" and not isinstance(method, Pipeline):
                 local_passed, global_passed = self.timer_report()

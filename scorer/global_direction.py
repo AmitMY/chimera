@@ -1,7 +1,8 @@
 from collections import defaultdict, Counter
 from typing import List
 
-from scorer.scorer import Expert, get_relations
+from scorer.product_of_experts import Expert
+from scorer.scorer import get_relations
 
 
 class GlobalDirectionExpert(Expert):

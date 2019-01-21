@@ -88,9 +88,10 @@ class OpenNMTModelRunner(ModelRunner):
 
         data_zip = shutil.make_archive(base_name=temp_name(), format="gztar", root_dir=save_data)
 
-        print(data_zip)
-
-        return open(data_zip, "rb").read()
+        f = open(data_zip, "rb")
+        bin_data = f.read()
+        f.close()
+        return bin_data
 
     def train(self, save_data, opt):
         save_data_archive = save_temp_bin(save_data)
@@ -133,3 +134,6 @@ class OpenNMTModelRunner(ModelRunner):
         print("Scores", dev_scores)
 
         return max_dev["model"]
+
+
+

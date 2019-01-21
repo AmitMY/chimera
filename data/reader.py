@@ -6,11 +6,10 @@ from enum import Enum
 from multiprocessing.pool import Pool
 from typing import List, Tuple, Dict, Callable
 
-import numpy as np
+from tqdm import tqdm
 
 from eval.bleu.eval import BLEU, naive_tokenizer
 from model.model_runner import Model
-from scorer.scorer import ProductOfExperts
 from utils.aligner import entities_order, SENTENCE_BREAK, comp_order
 from utils.delex import Delexicalize, concat_entity
 from utils.graph import Graph
@@ -65,15 +64,8 @@ class Datum:
         return self
 
 
-def create_plan(params: Tuple[Graph, ProductOfExperts]):
-    g, scorer = params
-    print(g.as_rdf())
-    all_plans = g.exhaustive_plan().linearizations()
-    if len(all_plans) == 0:
-        return ""
-    all_scores = [scorer.eval(p) for p in all_plans]
-    max_i = np.argmax(all_scores)
-    return all_plans[max_i]
+def exhaustive_plan(g: Graph):
+    return g.exhaustive_plan().linearizations()
 
 
 def match_plan(d: Datum):
@@ -151,16 +143,29 @@ class DataReader:
         self.data = [d.set_plan(p) for d, plans in zip(self.data, plans) for p in plans]
         return self
 
-    def create_plans(self, scorer):
+    def exhaustive_plan(self):
         unique = {d.graph.unique_key(): d.graph for d in self.data}
-        unique_graphs = list(unique.values())
+        unique_graphs = list(reversed(list(unique.values())))
 
-        params = [(g, scorer) for g in reversed(unique_graphs)]
-        pool = Pool(multiprocessing.cpu_count() - 1)
-        plans = list(reversed(list(pool.imap(create_plan, params))))
-        # plans = list(reversed(list([create_plan(p) for p in tqdm(params)])))
+        # pool = Pool(multiprocessing.cpu_count() - 1)
+        # plans = list(pool.imap(exhaustive_plan, unique_graphs))
+        plans = [exhaustive_plan(p) for p in tqdm(unique_graphs)]
         graph_plans = {g.unique_key(): p for g, p in zip(unique_graphs, plans)}
-        self.data = [d.set_plan(graph_plans[d.graph.unique_key()]) for d in self.data]
+        self.data = [d.set_plans(graph_plans[d.graph.unique_key()]) for d in self.data]
+        return self
+
+    def create_plans(self, planner):
+        assert planner is not None
+        unique = {d.graph.unique_key(): d.graph for d in self.data}
+        unique_graphs = list(reversed(list(unique.values())))
+
+        if planner.is_parallel:
+            pool = Pool(multiprocessing.cpu_count() - 1)
+            plans = list(tqdm(pool.imap(planner.plan_best, unique_graphs), total=len(unique_graphs)))
+        else:
+            plans = list(map(planner.plan_best, tqdm(unique_graphs)))
+        graph_plan = {g.unique_key(): p for g, p in zip(unique_graphs, plans)}
+        self.data = [d.set_plan(graph_plan[d.graph.unique_key()]) for d in self.data]
         return self
 
     def tokenize_plans(self):

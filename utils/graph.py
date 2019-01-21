@@ -2,12 +2,16 @@ import json
 import re
 from collections import defaultdict
 from enum import Enum
+from functools import lru_cache
 from itertools import chain, product, permutations, combinations
+from typing import Set
 
 from utils.delex import concat_entity
+from utils.memoize import memoize
 from utils.time import Time
 
 
+@lru_cache(maxsize=None)
 def readable_edge(e):
     return " ".join(re.sub('(?!^)([A-Z][a-z]+)', r' \1', e.replace("_", " ")).split()).lower()
 
@@ -22,15 +26,16 @@ class NodeType(Enum):
     AND = "__AND__"
     OR = "__OR__"
     FILTER_OUT = "__FILTER_OUT__"
+    FINAL = "__FINAL__"
 
 
 class StructuredNode:
-    def __init__(self, value, children=[]):
+    def __init__(self, value, children=None):
         self.value = value
         self.children = children
         self.lins = None
 
-    def get_val(self, concat_entities=False):
+    def get_val(self):
         return concat_entity(self.value)
 
     def linearizations(self):
@@ -41,7 +46,7 @@ class StructuredNode:
         return self.lins
 
     def rec_linearizations(self):
-        if len(self.children) == 0:
+        if self.children is None:
             return [self.get_val()]
 
         edges = [[(e + " [" + l + "]") if e else l for l in s.linearizations()] for e, s in
@@ -61,11 +66,30 @@ class StructuredNode:
         return [self.get_val() + " " + " ".join(e) for e in edges]
 
 
+class LinearNode:
+    def __init__(self, value, next=None):
+        self.value = value
+        self.next = next
+
+    def linearizations(self):
+        none_empty = [s for s in self.rec_linearizations() if len(s) > 0]
+        return [" ".join(s[:-1]) for s in none_empty if s[-1] != NodeType.FILTER_OUT]
+
+    def rec_linearizations(self):
+        if self.next is None:
+            return [[self.value]]
+
+        if self.value == NodeType.OR:
+            return [l for n in self.next for l in n.rec_linearizations()]
+
+        return [[self.value] + l for n in self.next for l in n.rec_linearizations()]
+
+
 class Graph:
     def __init__(self, rdfs=[]):
         self.graph = defaultdict(list)
-        self.edges = {}
-        self.undirected_edges = {}
+        self.edges = defaultdict(list)
+        self.undirected_edges = defaultdict(list)
         self.nodes = set()
 
         for s, r, o in rdfs:
@@ -73,22 +97,22 @@ class Graph:
 
     def add_edge(self, s, o, l):
         self.graph[s].append(o)
-        self.edges[(s, o)] = l
-        self.undirected_edges[(s, o)] = "> " + l
+        self.edges[(s, o)].append(l)
+        self.undirected_edges[(s, o)].append("> " + l)
         self.graph[o].append(s)
-        self.undirected_edges[(o, s)] = "< " + l
+        self.undirected_edges[(o, s)].append("< " + l)
 
         self.nodes.add(s)
         self.nodes.add(o)
 
     def as_rdf(self):
-        return [(n1, e, n2) for ((n1, n2), e) in self.edges.items()]
+        return [(n1, e, n2) for ((n1, n2), es) in self.edges.items() for e in es]
 
     def unique_key(self):
         return tuple(self.as_rdf())
 
-    def exhaustive_plan(self):
-        return self.sub_graphs_plan()
+    def exhaustive_plan(self, force_tree=False):
+        return self.sub_graphs_plan(force_tree=force_tree)
 
     def constraint_graphs_plan(self, constraints):
         options = self.constraint_graphs_maker(constraints)
@@ -126,7 +150,7 @@ class Graph:
 
         return options
 
-    def sub_graphs_plan(self, max_size=4, plan_cache=None, graph_plan_cache=None):
+    def sub_graphs_plan(self, max_size=4, plan_cache=None, graph_plan_cache=None, force_tree=False):
         if not plan_cache:
             plan_cache = {}
         if not graph_plan_cache:
@@ -137,7 +161,7 @@ class Graph:
 
         g_s = json.dumps(rdfs)
         if g_s not in plan_cache:
-            plan_cache[g_s] = self.plan_all()
+            plan_cache[g_s] = self.plan_all(force_tree=force_tree)
         options = [plan_cache[g_s]]
 
         for g1 in sub_graphs:
@@ -147,7 +171,7 @@ class Graph:
             g2_s = json.dumps(g2)
 
             if g1_s not in plan_cache:
-                plan_cache[g1_s] = Graph(g1).plan_all()
+                plan_cache[g1_s] = Graph(g1).plan_all(force_tree=force_tree)
             if g2_s not in graph_plan_cache:
                 graph_plan_cache[g2_s] = Graph(g2).sub_graphs_plan(max_size, plan_cache, graph_plan_cache)
 
@@ -156,7 +180,11 @@ class Graph:
 
         return StructuredNode(NodeType.OR, [("", o) for o in options])
 
-    def plan_all(self):
+    def plan_all(self, force_tree=False):
+        # If not a tree, very simple heuristic
+        if not force_tree and any([len(es) > 1 for es in self.edges.values()]):
+            return self.traverse_all()
+        # More simple traversal only if tree
         return StructuredNode(NodeType.OR, [("", self.plan_from(node)) for node in self.nodes])
 
     def plan_from(self, node):
@@ -169,72 +197,122 @@ class Graph:
 
         return plan
 
-    def dfs(self, node, visited=None):
-        if not isinstance(visited, set):
-            visited = set()
-
+    def dfs(self, node: str, visited: Set[str]):
         if node in visited:
             return None
 
         visited.add(node)
 
         children = [(self.undirected_edges[(node, n)], self.dfs(n, visited)) for n in self.graph[node]]
-        children = [(readable_edge(e), n) for (e, n) in children if n]  # Filter out Nones.
+        children = [(readable_edge(e), n) for (es, n) in children for e in es if n]
 
         children = [("", StructuredNode(NodeType.AND, children))] if len(children) > 0 else []
 
         return StructuredNode(node, children)
 
+    def traverse_all(self, nodes_stack=None, rdfs=None):
+        if nodes_stack is None:
+            rdfs = self.as_rdf()
+            return LinearNode(NodeType.OR,
+                              [LinearNode(concat_entity(n), self.traverse_all([n], rdfs)) for n in self.nodes])
+
+        f_edges = [(i, n2, ">", e) for i, (n1, e, n2) in enumerate(rdfs) if n1 == nodes_stack[-1]]
+        b_edges = [(i, n1, "<", e) for i, (n1, e, n2) in enumerate(rdfs) if n2 == nodes_stack[-1]]
+        edges = f_edges + b_edges
+
+        options = []
+        for i, n, d, e in edges:
+            new_rdfs = list(rdfs)
+            new_rdfs.pop(i)
+            text = " ".join([d, readable_edge(e), "[", concat_entity(n)])
+            options.append(LinearNode(text, self.traverse_all(nodes_stack + [n], new_rdfs)))
+
+        if len(nodes_stack) > 1:
+            options.append(LinearNode("]", self.traverse_all(nodes_stack[:-1], rdfs)))
+
+        if len(options) > 0:
+            return options
+
+        if len(rdfs) == 0:
+            return [LinearNode(NodeType.FINAL)]
+        return [LinearNode(NodeType.FILTER_OUT)]
+
 
 if __name__ == "__main__":
     g = Graph()
-    g.add_edge('A', 'B', 'b')
+    g.add_edge('A', 'B', 'b1')
+    # g.add_edge('A', 'B', 'b2')
     g.add_edge('A', 'C', 'c')
-    g.add_edge('B', 'D', 'd')
+    g.add_edge('A', 'C', 'c2')
+    # g.add_edge('C', 'C', 'cd')
+    g.add_edge('A', 'D', 'd')
     g.add_edge('D', 'E', 'e')
+    # g.add_edge('A', 'E', 'e')
 
-    plans = g.exhaustive_plan().linearizations()
-    print("exhaustive", len(plans))
-
-    plans = g.constraint_graphs_plan([
-        {'must_include': set({"A", "B"}), 'must_exclude': set({})},
-        {'must_include': set({"A", "C"}), 'must_exclude': set({})},
-        {'must_include': set({"B", "D", "E"}), 'must_exclude': set({})}]).linearizations()
-
-    print("constraint", len(plans))
-
+    now = Time.now()
+    for i in range(10000):
+        plans = g.plan_all(force_tree=True).linearizations()
+    print("plan_all tree", len(plans))
     for p in plans:
         print(p)
-
-    print()
-
-    rdfs = [('William_Anders', 'dateOfRetirement', '"1969-09-01"'), ('William_Anders', 'was selected by NASA', '1963'),
-            ('William_Anders', 'timeInSpace', '"8820.0"(minutes)'), ('William_Anders', 'birthDate', '"1933-10-17"'),
-            ('William_Anders', 'occupation', 'Fighter_pilot'), ('William_Anders', 'birthPlace', 'British_Hong_Kong'),
-            ('William_Anders', 'was a crew member of', 'Apollo_8')]
-    s = Graph(rdfs)
-    # s.add_edge('A', 'B', 'b')
-    # s.add_edge('A', 'C', 'c')
-    # s.add_edge('A', 'D', 'd')
-    # s.add_edge('A', 'E', 'e')
-    # s.add_edge('A', 'F', 'f')
-    # s.add_edge('A', 'G', 'g')
-    # s.add_edge('A', 'H', 'h')
-    # s.add_edge('A', 'I', 'i')
-    # s.add_edge('A', 'J', 'j')
-    # s.add_edge('A', 'K', 'k')
-
-    print("exhaustive")
-    now = Time.now()
-    plans = s.exhaustive_plan().linearizations()
-    print(len(plans), "plans")
     print(Time.passed(now))
 
-    print("constraint")
-    now = Time.now()
-    plans = s.constraint_graphs_plan([
-        {'must_include': set({"B", "C", "D"}), 'must_exclude': set({})},
-        {'must_include': set({"E"}), 'must_exclude': set({})},
-        {'must_include': set({"F", "G"}), 'must_exclude': set({})}]).linearizations()
-    print(len(plans), "plans")
-    print(Time.passed(now))
+    # now = Time.now()
+    # for i in range(1000):
+    #     plans = g.plan_all().linearizations()
+    # print("plan_all", len(plans))
+    # for p in plans:
+    #     print(p)
+    # print(Time.passed(now))
+    #
+    # now = Time.now()
+    # for i in range(1000):
+    #     plans = g.traverse_all().linearizations()
+    # print("traversal", len(plans))
+    # for p in plans:
+    #     print(p)
+    # print(Time.passed(now))
+
+    #
+    # plans = g.constraint_graphs_plan([
+    #     {'must_include': set({"A", "B"}), 'must_exclude': set({})},
+    #     {'must_include': set({"A", "C"}), 'must_exclude': set({})},
+    #     {'must_include': set({"B", "D", "E"}), 'must_exclude': set({})}]).linearizations()
+    #
+    # print("constraint", len(plans))
+    #
+    # for p in plans:
+    #     print(p)
+    #
+    # print()
+    #
+    # rdfs = [('William_Anders', 'dateOfRetirement', '"1969-09-01"'), ('William_Anders', 'was selected by NASA', '1963'),
+    #         ('William_Anders', 'timeInSpace', '"8820.0"(minutes)'), ('William_Anders', 'birthDate', '"1933-10-17"'),
+    #         ('William_Anders', 'occupation', 'Fighter_pilot'), ('William_Anders', 'birthPlace', 'British_Hong_Kong'),
+    #         ('William_Anders', 'was a crew member of', 'Apollo_8')]
+    # s = Graph(rdfs)
+    # # s.add_edge('A', 'B', 'b')
+    # # s.add_edge('A', 'C', 'c')
+    # # s.add_edge('A', 'D', 'd')
+    # # s.add_edge('A', 'E', 'e')
+    # # s.add_edge('A', 'F', 'f')
+    # # s.add_edge('A', 'G', 'g')
+    # # s.add_edge('A', 'H', 'h')
+    # # s.add_edge('A', 'I', 'i')
+    # # s.add_edge('A', 'J', 'j')
+    # # s.add_edge('A', 'K', 'k')
+    #
+    # print("exhaustive")
+    # now = Time.now()
+    # plans = s.exhaustive_plan().linearizations()
+    # print(len(plans), "plans")
+    # print(Time.passed(now))
+    #
+    # print("constraint")
+    # now = Time.now()
+    # plans = s.constraint_graphs_plan([
+    #     {'must_include': set({"B", "C", "D"}), 'must_exclude': set({})},
+    #     {'must_include': set({"E"}), 'must_exclude': set({})},
+    #     {'must_include': set({"F", "G"}), 'must_exclude': set({})}]).linearizations()
+    # print(len(plans), "plans")
+    # print(Time.passed(now))
