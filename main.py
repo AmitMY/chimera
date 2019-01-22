@@ -44,15 +44,14 @@ if __name__ == "__main__":
     # e = DynetModelExecutor(m, [("a", "b")], [("a", "b")])
     # pickle.loads(pickle.dumps(e)).train(3, 3)
 
-    # planner = NaivePlanner(WeightedProductOfExperts([
-    #     RelationDirectionExpert,
-    #     GlobalDirectionExpert,
-    #     SplittingTendenciesExpert,
-    #     RelationTransitionsExpert
-    # ]))
-    planner = NeuralPlanner()
-    config = Config(reader=DelexWebNLGDataReader,
-                    test_reader=WebNLGDataReader,
+    planner = NaivePlanner(WeightedProductOfExperts([
+        RelationDirectionExpert,
+        GlobalDirectionExpert,
+        SplittingTendenciesExpert,
+        RelationTransitionsExpert
+    ]))
+    # planner = NeuralPlanner()
+    config = Config(reader=WebNLGDataReader,
                     planner=planner)
 
     res = MainPipeline.mutate({"config": config}).execute("Main")

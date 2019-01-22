@@ -13,7 +13,6 @@ Execute `setup.sh`. This will install pip dependencies, as well as OpenNMT.
 ## TODO
 - Pipeline class should load cache on the fly instead of preemptive.
 - Pipeline executer should have progressbar support.
-- Planning should be a separate interchangable class - Planner, which has `plan_best` and `plan_all` methods.
 
 ## Process
 For training, the main pipeline consists of these sub-pipelines:
@@ -58,7 +57,7 @@ If the cache is removed, the pipeline will continue from its last un-cached proc
 ## Example
 
 ### WebNLG
-Setting the `config` parameter to be `Config(reader=WebNLGDataReader)`
+Setting the `config` parameter to be `Config(reader=WebNLGDataReader)` using the naive planner.
 
 Output running for the first time:
 ![First Run Pipeline](git-assets/first-run.png)
@@ -75,7 +74,7 @@ The expected result (will show on screen) reported by `multi-bleu.perl` is aroun
 This dataset does not use a heuristic for entity matches, instead it was constructed manually.
 This means it is of higher quality and easier to find a correct plan-match in train time.
 
-Setting the `config` parameter to be `Config(reader=DelexWebNLGDataReader, test_reader=WebNLGDataReader)`
+Setting the `config` parameter to be `Config(reader=DelexWebNLGDataReader, test_reader=WebNLGDataReader)` using the naive planner.
 
 The expected result is around:
 - BLEU [45.26, 80.1, 54.8, 37.9, 26.6] (20,000 steps)
@@ -89,12 +88,14 @@ We attribute the worse BLEU to the fact the delexicalizations also remove articl
 If we try our neural planner, we get:
 - Training time: 60 seconds (can easily be 30 seconds or less)
 - Test time (1 cpu): 3 seconds
-- WebNLG - BLEU [45.79, 79.0, 54.4, 38.5, 28.0] (20,000 steps)
-- Delexicalized WebNLG - BLEU [44.21, 81.7, 56.4, 39.5, 28.2] (40,000 steps)
+- WebNLG - BLEU [45.79, 79.0, 54.4, 38.5, 28.0] (20,000 steps m1)
+- Delexicalized WebNLG - BLEU [44.21, 81.7, 56.4, 39.5, 28.2] (40,000 steps m2)
+- Delexicalized WebNLG - BLEU [44.46, 80.1, 55.1, 38.3, 27.1] (40,000 steps m3)
 
-Compared to the following using our naive product of experts planner, with the same realizer snapshot: (limited to tree plans)
+Compared to the following using our naive product of experts planner, with the same realizer snapshots:
 - Training time: 0 seconds
-- Test time (1 cpu): 5305 seconds
-- Test time (40 cpus): 449 seconds
-- WebNLG - BLEU [45.19, 77.8, 53.2, 37.4, 27.0] (20,000 steps)
-- Delexicalized WebNLG - BLEU [44.77, 79.3, 53.7, 37.4, 26.4] (40,000 steps)
+- Test time (1 cpu): 5300 seconds
+- Test time (40 cpus): 450 seconds
+- WebNLG - BLEU [45.19, 77.8, 53.2, 37.4, 27.0] (20,000 steps m1)
+- Delexicalized WebNLG - BLEU [44.77, 79.3, 53.7, 37.4, 26.4] (40,000 steps m2)
+- Delexicalized WebNLG - BLEU [46.01, 79.8, 55.0, 38.3, 27.2] (40,000 steps m3)

@@ -29,4 +29,4 @@ class NaivePlanner(Planner):
         return all_plans[max_i]
 
     def plan_all(self, g: Graph):
-        return g.exhaustive_plan(force_tree=True).linearizations()
+        return g.exhaustive_plan(force_tree=False).linearizations()
