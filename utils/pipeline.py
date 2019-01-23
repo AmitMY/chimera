@@ -10,7 +10,7 @@ print("Cache Directory", cache_dir, "\n")
 
 
 class Pipeline:
-    def __init__(self, params=None, mute=True):
+    def __init__(self, params=None, mute=False):
         self.queue = []
 
         self.params = params if params else {}

@@ -119,10 +119,13 @@ class Model(BaseDynetModel):
                 raise ValueError("type can only be: pop, node, edge. got " + item[0])
 
             for w in res:
-                if w not in {">", "<", "[", "]", "."}:
-                    dropout = (self.entity_dropout if item[0] == "node" else self.relation_dropout) if out else 0
-                    w = self.word_dropout(w, dropout)
-                decoder.add_input(self.vocab.lookup(w))
+                if w in node_reps:
+                    vec = node_reps[w]
+                elif w in edges:
+                    vec = edges[w]
+                else:
+                    vec = self.vocab.lookup(w)
+                decoder.add_input(vec)
 
             return res
 

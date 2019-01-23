@@ -69,6 +69,7 @@ The expected result (will show on screen) reported by `multi-bleu.perl` is aroun
 - BLEU [47.27, 79.6, 55.3, 39.4, 28.7] (40,000 steps)
 - BLEU [46.87, 79.2, 54.8, 39.1, 28.4] (40,000 steps)
 - BLEU [46.70, 79.3, 55.0, 38.9, 28.0] (40,000 steps)
+- BLEU [45.49, 77.9, 53.7, 37.8, 27.1] (40,000 steps)
 
 ### [Delexicalized WebNLG](https://github.com/ThiagoCF05/webnlg)
 This dataset does not use a heuristic for entity matches, instead it was constructed manually.
@@ -89,13 +90,15 @@ If we try our neural planner, we get:
 - Training time: 60 seconds (can easily be 30 seconds or less)
 - Test time (1 cpu): 3 seconds
 - WebNLG - BLEU [45.79, 79.0, 54.4, 38.5, 28.0] (20,000 steps m1)
-- Delexicalized WebNLG - BLEU [44.21, 81.7, 56.4, 39.5, 28.2] (40,000 steps m2)
-- Delexicalized WebNLG - BLEU [44.46, 80.1, 55.1, 38.3, 27.1] (40,000 steps m3)
+- WebNLG - BLEU [46.35, 78.1, 54.5, 38.7, 28.1] (40,000 steps m2)
+- Delexicalized WebNLG - BLEU [44.21, 81.7, 56.4, 39.5, 28.2] (40,000 steps m3)
+- Delexicalized WebNLG - BLEU [44.46, 80.1, 55.1, 38.3, 27.1] (40,000 steps m4)
 
 Compared to the following using our naive product of experts planner, with the same realizer snapshots:
 - Training time: 0 seconds
 - Test time (1 cpu): 5300 seconds
 - Test time (40 cpus): 450 seconds
 - WebNLG - BLEU [45.19, 77.8, 53.2, 37.4, 27.0] (20,000 steps m1)
-- Delexicalized WebNLG - BLEU [44.77, 79.3, 53.7, 37.4, 26.4] (40,000 steps m2)
-- Delexicalized WebNLG - BLEU [46.01, 79.8, 55.0, 38.3, 27.2] (40,000 steps m3)
+- WebNLG - BLEU [45.49, 77.9, 53.7, 37.8, 27.1] (40,000 steps m2)
+- Delexicalized WebNLG - BLEU [44.77, 79.3, 53.7, 37.4, 26.4] (40,000 steps m3)
+- Delexicalized WebNLG - BLEU [46.01, 79.8, 55.0, 38.3, 27.2] (40,000 steps m4)
