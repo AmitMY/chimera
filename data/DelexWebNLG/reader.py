@@ -60,6 +60,8 @@ class DelexRDFFileReader:
 
 
 class DelexWebNLGDataReader(DataReader):
+    DATASET = "DelexWebNLG"
+
     def __init__(self, set: DataSetType):
         files = self.recurse_files(path.join(path.dirname(path.realpath(__file__)), "raw", set.value))
         data = list(chain.from_iterable([DelexRDFFileReader(f).data for f in files]))

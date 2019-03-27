@@ -22,6 +22,10 @@ def rmdir(directory):
             os.rmdir(os.path.join(root, name))
 
 
+def rmfile(path):
+    os.remove(path)
+
+
 def listdir(directory, full=True):
     files = [f for f in os.listdir(directory) if isfile(join(directory, f))]
     if full:
@@ -35,6 +39,7 @@ def copyfile(src, dst):
 
 def temp_name():
     fd, path = tempfile.mkstemp()
+    os.close(fd)  # Close connection so no too-many-connections
     return path
 
 

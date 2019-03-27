@@ -42,7 +42,7 @@ class OpenNMTModel(Model):
         model_path = save_temp_bin(self.model_bin)
 
         o_lines = [[s.strip() for i, s in enumerate(s.split("."))] if s != "" else [] for s in plans]
-        n_lines = list(chain.from_iterable(o_lines))
+        n_lines = list(set(chain.from_iterable(o_lines)))
 
         if len(n_lines) == 0:
             return []

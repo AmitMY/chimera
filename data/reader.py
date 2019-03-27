@@ -26,6 +26,7 @@ class DataSetType(Enum):
 class Datum:
     def __init__(self, rdfs: List[Tuple[str, str, str]] = None,
                  graph: Graph = None,
+                 title: str = None,
                  text: str = None,
                  delex: str = None,
                  hyp: str = None,
@@ -33,6 +34,7 @@ class Datum:
                  plans: List[str] = None):
         self.rdfs = rdfs
         self.graph = graph
+        self.title = title
         self.text = text
         self.delex = delex
         self.hyp = hyp
@@ -106,8 +108,10 @@ def match_plan(d: Datum):
 
 
 class DataReader:
+    DATASET = "GeneralDataReader"
+
     def __init__(self, data: List[Datum],
-                 misspelling: Dict[str, str] = {},
+                 misspelling: Dict[str, str] = None,
                  rephrase: Tuple[Callable, Callable] = (None, None)):
         self.data = data
         self.misspelling = misspelling
@@ -121,6 +125,9 @@ class DataReader:
         return self
 
     def fix_spelling(self):
+        if not self.misspelling:
+            return self
+
         regex_splittable = "(\\" + "|\\".join(SPLITABLES) + ".)"
 
         for misspelling, fix in self.misspelling.items():
@@ -139,7 +146,8 @@ class DataReader:
 
     def match_plans(self):
         pool = Pool(multiprocessing.cpu_count() - 1)
-        plans = list(reversed(list(pool.map(match_plan, list(reversed(self.data))))))
+        plans = list(reversed(list(tqdm(pool.imap(match_plan, list(reversed(self.data))), total=len(self.data)))))
+
         self.data = [d.set_plan(p) for d, plans in zip(self.data, plans) for p in plans]
         return self
 

@@ -19,8 +19,12 @@ class NaivePlanner(Planner):
                 break
         return self
 
-    def plan_best(self, g: Graph):
-        all_plans = self.plan_all(g)
+    def plan_best(self, g: Graph, ranker_plans=None):
+        if ranker_plans:
+            all_plans = list(set(ranker_plans))
+        else:
+            all_plans = self.plan_all(g)
+
         if len(all_plans) == 0:
             return ""
         all_scores = [self.scorer.score(p) for p in all_plans]

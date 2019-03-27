@@ -67,6 +67,17 @@ class Vocab:
         return len(self.w2i)
 
 
+def arg_sample(probs: List[float]):
+    rand = random.random()
+    print(probs)
+    for i, p in enumerate(probs):
+        if rand <= p:
+            return i
+        rand -= p
+
+    raise ValueError("probs doesn't sum to 1?")
+
+
 class BaseDynetModel:
     def init_params(self):
         self.pc = dy.ParameterCollection()
@@ -167,10 +178,10 @@ class DynetModelExecutor:
 
             time.sleep(0.01)
 
-    def predict(self, inputs):
+    def predict(self, inputs, greedy=True):
         for _in in inputs:
             dy.renew_cg()
-            results = list(self.model.forward(_in))
+            results = list(self.model.forward(_in, greedy=greedy))
 
             yield results
 

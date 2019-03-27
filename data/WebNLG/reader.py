@@ -128,6 +128,8 @@ misspelling = {
 
 
 class WebNLGDataReader(DataReader):
+    DATASET = "WebNLG"
+
     def __init__(self, set: DataSetType):
         files = self.recurse_files(path.join(path.dirname(path.realpath(__file__)), "raw", set.value))
         data = list(chain.from_iterable([RDFFileReader(f).data for f in files]))

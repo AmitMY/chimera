@@ -15,7 +15,7 @@ from eval.bleu.eval import BLEU
 from planner.planner import Planner
 from scorer.scorer import get_relations
 from utils.delex import concat_entity
-from utils.dynet_model_executer import Vocab, DynetModelExecutor, BaseDynetModel
+from utils.dynet_model_executer import Vocab, DynetModelExecutor, BaseDynetModel, arg_sample
 from utils.graph import Graph, readable_edge
 from utils.tokens import tokenize
 
@@ -61,7 +61,7 @@ class Model(BaseDynetModel):
         print("truth", truth[-1])
         return BLEU(predictions, truth, single_ref=True)[0]
 
-    def forward(self, g: Graph, out: str = None):
+    def forward(self, g: Graph, out: str = None, greedy=True):
         out_tokens = self.fix_out(out)
 
         # Encoding
@@ -168,9 +168,13 @@ class Model(BaseDynetModel):
                     choose(vocab_list[best_i][0])
                     yield dy.pickneglogsoftmax(pred_vec, best_i)
                 else:
-                    best_i = int(np.argmax(pred_vec.npvalue()))
+                    if greedy:
+                        best_i = int(np.argmax(pred_vec.npvalue()))
+                    else:
+                        best_i = arg_sample(list(dy.softmax(pred_vec).npvalue()))
+
                     yield choose(vocab_list[best_i][0])
-            except Exception  as e:
+            except Exception as e:
                 print()
                 print("is_pop", is_pop)
                 print("out", out)
@@ -212,13 +216,22 @@ class NeuralPlanner(Planner):
         model = Model()
         self.executor = DynetModelExecutor(model, train_set, dev_set)
         for batch_exponent in range(0, 7):
-            self.executor.train(1, batch_exponent)
+            self.executor.train(5, batch_exponent)
 
         return self
 
-    def plan_best(self, g: Graph):
-        predict = list(self.executor.predict([self.convert_graph(g)]))[0]
+    def model_plan(self, g, greedy=True):
+        predict = list(self.executor.predict([self.convert_graph(g)], greedy=greedy))[0]
         plan = " ".join(chain.from_iterable(predict))
         for d, r in get_relations(plan):
             plan = plan.replace(d + " " + r, d + " " + r.replace("_", " "))
         return plan
+
+    def plan_random(self, g: Graph, amount: int):
+        return [self.model_plan(g, greedy=False) for _ in range(amount)]
+
+    def plan_best(self, g: Graph, ranker_plans=None):
+        if ranker_plans:
+            raise NotImplementedError("Planner.plan_best is not implemented when ranker_plans is defined")
+
+        return self.model_plan(g, greedy=True)
