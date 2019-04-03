@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -8,7 +9,7 @@ from typing import List
 
 import torch
 
-from model.model_runner import ModelRunner, Model
+from model.model_runner import ModelRunner, Model, add_features
 from utils.file_system import save_temp, temp_name, listdir, temp_dir, save_temp_bin
 
 is_cuda = torch.cuda.is_available()
@@ -25,6 +26,32 @@ def run_param(script, params):
     subprocess.run(all_args, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
+def chunks(l, n):
+    """Yield successive n-sized chunks from l."""
+    for i in range(0, len(l), n):
+        yield l[i:i + n]
+
+
+def get_entities(text: str):
+    return list(re.findall("ent_(.*?)_ent", text, flags=re.IGNORECASE))
+
+
+def find_best_out(plan, outs):
+    plan_entities = set(get_entities(plan))
+    possibilities = []
+    for out in outs:
+        out_entities = set(get_entities(out))
+        if len(plan_entities) == len(out_entities):
+            return out
+
+        possibilities.append([out, len(out_entities)])
+
+    return max(possibilities, key=lambda o: o[1])[0]
+
+
+BEAM_SIZE = 10
+
+
 class OpenNMTModel(Model):
     def __init__(self, model):
         self.model_bin = model
@@ -38,10 +65,16 @@ class OpenNMTModel(Model):
 
         run_param('translate.py', opt)
 
-    def translate(self, plans: List[str]):  # Translate entire reader file using a model
+    def translate(self, plans: List[str], opts=None):  # Translate entire reader file using a model
+        if not opts:
+            opts = {
+                "beam_size": BEAM_SIZE,
+                "find_best": True
+            }
+
         model_path = save_temp_bin(self.model_bin)
 
-        o_lines = [[s.strip() for i, s in enumerate(s.split("."))] if s != "" else [] for s in plans]
+        o_lines = [[add_features(s.strip()) for i, s in enumerate(s.split("."))] if s != "" else [] for s in plans]
         n_lines = list(set(chain.from_iterable(o_lines)))
 
         if len(n_lines) == 0:
@@ -50,17 +83,20 @@ class OpenNMTModel(Model):
         source_path = save_temp(n_lines)
         target_path = temp_name()
 
+        n_best = opts["beam_size"] if opts["find_best"] else 1
+
         self.run_traslate(model_path, source_path, target_path, {
             "replace_unk": None,
-            "beam_size": 5,
+            "beam_size": opts["beam_size"],
+            "n_best": n_best,
             "batch_size": 64
         })
 
         out_lines_f = open(target_path, "r", encoding="utf-8")
-        out_lines = out_lines_f.read().splitlines()
+        out_lines = chunks(out_lines_f.read().splitlines(), n_best)
         out_lines_f.close()
 
-        map_lines = {n: out for n, out in zip(n_lines, out_lines)}
+        map_lines = {n: find_best_out(n, out) for n, out in zip(n_lines, out_lines)}
 
         return [" ".join([map_lines[s] for s in lines]) for lines in o_lines]
 
@@ -72,9 +108,9 @@ class OpenNMTModelRunner(ModelRunner):
     def pre_process(self):
         save_data = temp_dir()
 
-        train_src = save_temp([d.plan for d in self.train_reader.data])
+        train_src = save_temp([add_features(d.plan) for d in self.train_reader.data])
         train_tgt = save_temp([d.delex for d in self.train_reader.data])
-        valid_src = save_temp([d.plan for d in self.dev_reader.data])
+        valid_src = save_temp([add_features(d.plan) for d in self.dev_reader.data])
         valid_tgt = save_temp([d.delex for d in self.dev_reader.data])
 
         run_param('preprocess.py', {
@@ -125,6 +161,7 @@ class OpenNMTModelRunner(ModelRunner):
             f.close()
 
             bleu = model.evaluate(self.dev_reader)[0]
+            print("BLEU", bleu)
 
             dev_scores.append(bleu)
             if bleu > max_dev["score"]:
@@ -134,6 +171,3 @@ class OpenNMTModelRunner(ModelRunner):
         print("Scores", dev_scores)
 
         return max_dev["model"]
-
-
-

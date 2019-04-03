@@ -8,8 +8,8 @@ from utils.time import Time
 
 cache_dir = path.join(path.dirname(path.abspath(__file__)), path.pardir, "cache")
 
-
 print(cache_dir)
+
 
 # TODO create CachedValue so in a function like "out" we can call CachedValue(f, "model")
 class CachedDict:
@@ -139,7 +139,7 @@ class Pipeline:
                     if self.mute:
                         Silencer.unmute()
 
-                    f = open(pnf, "wb")
+                    f = open(pnf, "wb" if qi.ext != "txt" else "w")
                     if qi.ext == "sav":
                         pickle.dump(self.params[qi.key], f)
                     else:

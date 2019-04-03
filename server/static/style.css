@@ -44,6 +44,7 @@ g.edgeLabel {
     display: flex;
     height: 100%;
     overflow-y: auto;
+    margin-top: 10px;
 }
 
 #linearizations, #output, #scores {
@@ -55,7 +56,50 @@ g.edgeLabel {
 #scores {
     line-height: 30px;
     flex-shrink: 0;
-    min-width: 20px;
+    padding: 0 10px;
+    overflow-x: scroll;
+}
+
+#sentences span.block {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 1px 3px;
+    margin: 2px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: initial;
+}
+
+#sentences span.block {
+    background: #eee;
+}
+
+#sentences span.block span.block {
+    background: #ddd;
+}
+
+#sentences span.block span.block span.block {
+    background: #ccc;
+}
+
+#sentences span.block span.block span.block span.block {
+    background: #bbb;
+}
+
+#sentences span.block span.block span.block span.block span.block {
+    background: #aaa;
+}
+
+#sentences span.block span.block span.block span.block span.block span.block {
+    background: #999;
+}
+
+#sentences span.block span.block span.block span.block span.block span.block span.block {
+    background: #888;
+}
+
+#sentences span.block span.block span.block span.block span.block span.block span.block span.block {
+    background: #777;
 }
 
 #sentences span.entity {
@@ -65,9 +109,21 @@ g.edgeLabel {
     margin: 2px 0;
     border-radius: 5px;
     font-size: 14px;
+    line-height: initial;
+}
+
+#output span.entity {
+    border: 0;
+    border-bottom: 2px solid;
+    /* font-weight: bold; */
 }
 
 #sentences span.strike {
     opacity: 0.3;
     text-decoration: line-through;
+}
+
+div.line > span.separator {
+    background: black;
+    margin: 0 5px;
 }

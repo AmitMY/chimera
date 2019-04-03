@@ -19,6 +19,9 @@ class NaivePlanner(Planner):
                 break
         return self
 
+    def score(self, plan: str):
+        return self.scorer.score(plan)
+
     def plan_best(self, g: Graph, ranker_plans=None):
         if ranker_plans:
             all_plans = list(set(ranker_plans))

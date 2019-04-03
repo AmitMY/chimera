@@ -24,14 +24,32 @@
 
 <div id="settings">
     <div>
-        <input type="checkbox" id="linearize_type" />
+        <input type="checkbox" id="linearize_type"/>
         <label for="linearize_type">Exhaustive linearization?</label>
         <span id="precision"></span>
+
+        <br/>
+
+        <input type="checkbox" id="random_plans"/>
+        <label for="random_plans">Uniform subset</label>
+        <input type="range" id="random_plans_percent" min="1" max="100" value="25" onchange="document.getElementById('random_plans_percent_output').innerText=this.value"/>
+        <span id="random_plans_percent_output">25</span>
+    </div>
+    <div>
+        <button id="plan">Plan</button>
     </div>
     <div id="graphs-selector">
         <select id="graph-select" placeholder="Select Graph"></select>
     </div>
     <div>
+        <label>Beam Size</label>
+        <input type="range" id="beam_size" min="1" max="50" value="5" onchange="document.getElementById('beam_size_output').innerText=this.value"/>
+        <span id="beam_size_output">5</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" checked="checked" id="find_best"/>
+        <label for="find_best">Find Best</label>
+
+        <br />
         <button id="translate" disabled>Translate</button>
     </div>
 </div>

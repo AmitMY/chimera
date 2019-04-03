@@ -1,9 +1,11 @@
 const COLORS = ["lightcoral", "lightgreen", "lightblue", "wheat", "plum", "pink", "silver", "lightsalmon"];
 
-const DEFAULT_GRAPH = 500;
+const searchQuery = window.location.search.substr(1);
+const DEFAULT_GRAPH = searchQuery.substr(0, 5) === "graph" ? Number(searchQuery.substr(6)) : 500;
 
 String.prototype.replaceAll = function (search, replacement) {
     return this.replace(new RegExp(search, 'ig'), replacement);
+
 };
 
 function averagePrecision(vector) {
@@ -22,6 +24,11 @@ function averagePrecision(vector) {
     }
 
     return good === 0 ? 0 : sum / good;
+}
+
+function toScientific(number) {
+    const exp = number.toExponential().split('e').map(String);
+    return exp[0].slice(0, 5) + 'e' + exp[1];
 }
 
 function successors(g, node) {
@@ -48,6 +55,12 @@ class Visualizer {
         this.translateButtonEl = document.querySelector("#translate");
         this.graphSelectEl = document.querySelector("#graph-select");
         this.linearizeTypeEl = document.querySelector("#linearize_type");
+        this.randomPlansEl = document.querySelector("#random_plans");
+        this.randomPlansPercentEl = document.querySelector("#random_plans_percent");
+        this.planButtonEl = document.querySelector("#plan");
+
+        this.findBestEl = document.querySelector("#find_best");
+        this.beamSizeEl = document.querySelector("#beam_size");
 
         this.initZoom();
         this.initSync();
@@ -63,7 +76,7 @@ class Visualizer {
 
         if (Array.isArray(linearizations)) {
             this._linearizations = linearizations.map(l => l.l);
-            this.scores = linearizations.map(l => l.s);
+            this.scores = linearizations.map(l => toScientific(l.s) + " - " + l.r);
             this.translateButtonEl.removeAttribute("disabled");
         } else {
             this._linearizations = linearizations;
@@ -97,12 +110,18 @@ class Visualizer {
 
     initSettings() {
         this.translateButtonEl.addEventListener("click", this.translate.bind(this));
-        this.linearizeTypeEl.addEventListener("change", this.linearize.bind(this));
+        this.planButtonEl.addEventListener("click", this.linearize.bind(this));
+        window.addEventListener('resize', this.updateHeights.bind(this));
+
+
         graphsFetch.then(graphs => {
             this.graphs = graphs;
 
             const graphChange = e => {
                 console.log(e);
+
+                window.history.pushState(e.target.value, "Graph2Seq - " + e.target.value, "?graph=" + e.target.value);
+
                 this.graph = graphs[Number(e.target.value)];
 
                 this.colorMap = {};
@@ -221,7 +240,12 @@ class Visualizer {
         svg.attr("height", g.graph().height + 40);
     }
 
-    colorize(list) {
+    wrapLines(list) {
+        const line = "<div class='line'>";
+        return line + list.join("</div>" + line) + "</div>";
+    }
+
+    colorize(list, background = true) {
         console.debug("Colorize", list);
         list = list.map(s => s.toLowerCase());
         const nodes = Object.keys(this.colorMap);
@@ -230,12 +254,29 @@ class Visualizer {
                 list[i] = "<span class='strike'>" + t + "</span>";
             }
         });
-        let text = list.join("<br />");
+
+        let text = this.wrapLines(list)
+
         nodes.forEach(n => {
             const concat = this.concatMap[n];
-            const rep = "<span class='entity' style='background-color: " + this.colorMap[n] + "'>" + n + "</span>";
+            const style = (background ? 'background' : 'border') + '-color: ' + this.colorMap[n]
+            const rep = "<span class='entity' style='" + style + "'>" + n + "</span>";
             text = text.replaceAll(concat, rep)
         });
+
+        if (background) {
+            text = text.split(" ").map(w => {
+                switch (w) {
+                    case "[":
+                        return "<span class='block'>";
+                    case "]":
+                        return "</span>";
+                    default:
+                        return w
+                }
+            }).join(" ").replaceAll("\\.", "<span class='separator'>.</span>");
+        }
+
         return text.replaceAll("_", " ");
     }
 
@@ -248,9 +289,44 @@ class Visualizer {
             .then(res => res.json())
             .then(res => {
                 this.concatMap = res.concat;
+
+                console.log("Plans", res.linearizations.length);
+
+                res.linearizations.forEach((l, i) => l["r"] = i + 1);
+
+                // Filter plans randomly
+                if (this.randomPlansEl.checked) {
+                    const amount = Number(this.randomPlansPercentEl.value) - 1;
+                    // res.linearizations = res.linearizations.slice(0, Math.max(amount, Math.floor(res.linearizations.length / 10)));
+
+
+                    const step = Math.ceil(res.linearizations.length / amount);
+                    console.log("amount", amount, "step", step);
+
+                    const ids = [];
+                    for (let i = 0; i < amount; i++) {
+                        ids.push(step * i);
+                    }
+
+                    // const best_lin = res.linearizations[0];
+                    // const ids = res.linearizations.map((_, i) => i).sort((a, b) => 0.5 - Math.random()).slice(0, this.randomPlansPercentEl.value - 1).sort((a, b) => a - b);
+                    // if (ids[0] !== 0) {
+                    //     ids.pop();
+                    //     ids.unshift(0);
+                    // }
+
+
+                    ids.push(res.linearizations.length - 1);
+                    console.log(ids);
+
+                    res.linearizations = ids.map(i => res.linearizations[i]);
+                }
+
                 this.linearizations = res.linearizations;
                 this.linearizationsEl.innerHTML = this.colorize(this.linearizations);
-                // this.scoresEl.innerHTML = this.scores.map(String).map(x => x.substr(0, 10)).join("<br />")
+
+                this.scoresEl.innerHTML = this.wrapLines(this.scores);
+                this.updateHeights();
             })
             .catch(e => {
                 this.linearizationsEl.innerHTML = "Error";
@@ -258,12 +334,35 @@ class Visualizer {
             });
     }
 
+    updateHeights() {
+        window.requestAnimationFrame(() => {
+            const lineHeights = Array.from(this.linearizationsEl.querySelectorAll("div.line")).map(l => l.clientHeight);
+
+            [
+                Array.from(this.scoresEl.querySelectorAll("div.line")),
+                Array.from(this.sentencesEl.querySelectorAll("div.line"))
+            ].forEach(lines => {
+                lines.forEach((line, i) => {
+                    line.style.lineHeight = lineHeights[i] + "px";
+                });
+            })
+        });
+    }
+
     translate() {
         this.sentencesEl.innerHTML = "Loading...";
-        fetch("translate", {method: "POST", body: JSON.stringify(this.linearizations)})
+        const body = {
+            plans: this.linearizations,
+            opts: {
+                beam_size: Number(this.beamSizeEl.value),
+                find_best: this.findBestEl.checked
+            }
+        };
+        fetch("translate", {method: "POST", body: JSON.stringify(body)})
             .then(res => res.json())
             .then(res => {
-                this.sentencesEl.innerHTML = this.colorize(res);
+                this.sentencesEl.innerHTML = this.colorize(res, false);
+                this.updateHeights();
 
                 const relVec = this.sentencesEl.innerHTML.split("<br>").map(x => x.indexOf('"strike"') === -1);
                 this.precisionEl.innerHTML = averagePrecision(relVec);

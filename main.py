@@ -2,9 +2,7 @@ import random
 
 from data.WebNLG.reader import WebNLGDataReader
 from data.reader import DataReader, DataSetType
-from planner.combined import CombinedPlanner
 from planner.naive_planner import NaivePlanner
-from planner.neural_planner import NeuralPlanner
 from planner.planner import Planner
 from process.evaluation import EvaluationPipeline
 from process.pre_process import TrainingPreProcessPipeline, TestingPreProcessPipeline
@@ -44,8 +42,8 @@ if __name__ == "__main__":
         SplittingTendenciesExpert,
         RelationTransitionsExpert
     ]))
-    neural_planner = NeuralPlanner()
-    combined_planner = CombinedPlanner((neural_planner, naive_planner))
+    # neural_planner = NeuralPlanner()
+    # combined_planner = CombinedPlanner((neural_planner, naive_planner))
     config = Config(reader=WebNLGDataReader,
                     planner=naive_planner)
 

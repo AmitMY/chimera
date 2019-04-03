@@ -1,4 +1,5 @@
 import sys
+
 sys.path.append("../")
 
 import argparse
@@ -48,7 +49,8 @@ def server(pipeline_res, host, port, debug=True):
     @app.route('/graphs', methods=['GET'])
     @cross_origin()
     def graphs():
-        data = [d.graph.as_rdf() for d in pipeline_res["pre-process"]["train"].data]
+        # data = [d.graph.as_rdf() for d in pipeline_res["pre-process"]["train"].data]
+        data = [d.graph.as_rdf() for d in pipeline_res["test-corpus"].data]
         return jsonify(data)
 
     @app.route('/plans/<type>', methods=['POST'])
@@ -56,22 +58,24 @@ def server(pipeline_res, host, port, debug=True):
     def plans(type):
         triplets = request.get_json(force=True)
         graph = Graph(triplets)
+        planner = pipeline_res["train-planner"]
 
-        all_plans = graph.exhaustive_plan() if type == "full" else graph.plan_all()
+        all_plans = [l.replace("[", " [ ").replace("]", " ] ").replace("  ", " ")
+                     for l in (graph.exhaustive_plan() if type == "full" else graph.plan_all()).linearizations()]
 
         return jsonify({
             "concat": {n: concat_entity(n) for n in graph.nodes},
-            "linearizations": [{"l": l.replace("[", " [ ").replace("]", " ] ").replace("  ", " ")}
-                               for l in all_plans.linearizations()]
+            "linearizations": list(sorted([{"l": l, "s": planner.score(l)}
+                                           for l in all_plans], key=lambda p: p["s"], reverse=True))
         })
 
     @app.route('/translate', methods=['POST'])
     @cross_origin()
     def translate():
-        plans = request.get_json(force=True)
+        req = request.get_json(force=True)
         model = pipeline_res["train-model"]
 
-        return jsonify(model.translate(plans))
+        return jsonify(model.translate(req["plans"], req["opts"]))
 
     @app.route('/', defaults={"filename": "index.html"})
     @app.route('/main.js', defaults={"filename": "main.js"})
