@@ -1,6 +1,8 @@
 # Chimera
 ![Chimera](git-assets/chimera.webp)
 
+Code from the paper ["Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://arxiv.org/pdf/1904.03396.pdf), to appear in NAACL-2019.
+
 ## Environment
 We recommend installing all dependencies in a separate Conda environment.
 
