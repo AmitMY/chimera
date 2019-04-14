@@ -1,5 +1,4 @@
 from functools import lru_cache
-
 import regex as re
 from nltk import sent_tokenize, word_tokenize
 
