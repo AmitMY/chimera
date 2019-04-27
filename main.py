@@ -1,8 +1,10 @@
 import random
 
+from data.E2E.reader import E2EDataReader
 from data.WebNLG.reader import WebNLGDataReader
 from data.reader import DataReader, DataSetType
 from planner.naive_planner import NaivePlanner
+from planner.neural_planner import NeuralPlanner
 from planner.planner import Planner
 from process.evaluation import EvaluationPipeline
 from process.pre_process import TrainingPreProcessPipeline, TestingPreProcessPipeline
@@ -42,12 +44,12 @@ if __name__ == "__main__":
         SplittingTendenciesExpert,
         RelationTransitionsExpert
     ]))
-    # neural_planner = NeuralPlanner()
+    neural_planner = NeuralPlanner()
     # combined_planner = CombinedPlanner((neural_planner, naive_planner))
-    config = Config(reader=WebNLGDataReader,
-                    planner=naive_planner)
+    config = Config(reader=E2EDataReader,
+                    planner=neural_planner)
 
-    res = MainPipeline.mutate({"config": config}).execute("WebNLG", cache_name="WebNLG")
+    res = MainPipeline.mutate({"config": config}).execute("E2E", cache_name="E2E")
 
     print()
 

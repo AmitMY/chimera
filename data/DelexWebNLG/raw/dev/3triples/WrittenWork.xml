@@ -13,54 +13,22 @@
 				<mtriple>1634:_The_Bavarian_Crisis | mediaType | &quot;Print&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>1634:_The_Bavarian_Crisis | ISBN_number | &quot;978-1-4165-4253-7&quot;</striple>
-					<striple>1634:_The_Bavarian_Crisis | author | &quot;Virginia DeMarce and Eric Flint&quot;</striple>
-					<striple>1634:_The_Bavarian_Crisis | mediaType | &quot;Print&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1634:_The_Bavarian_Crisis" number="1" tag="AGENT-1" type="name">1634 : The Bavarian Crisis</reference>
-					<reference entity="1634:_The_Bavarian_Crisis" number="2" tag="AGENT-1" type="name">it 's</reference>
-					<reference entity="&quot;Virginia DeMarce and Eric Flint&quot;" number="5" tag="PATIENT-2" type="name">Virginia DeMarce and Eric Flint</reference>
-					<reference entity="&quot;Print&quot;" number="6" tag="PATIENT-3" type="name">print</reference>
-				</references>
 				<text>1634: The Bavarian Crisis can be located by it's ISBN number &quot;978-1-4165-4253-7&quot;. It is written by Virginia DeMarce and Eric Flint and was put in print.</text>
 				<template>AGENT-1 can be located by AGENT-1 ISBN number `` PATIENT-1 '' . AGENT-1 is written by PATIENT-2 and was put in PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>1634:_The_Bavarian_Crisis | author | &quot;Virginia DeMarce and Eric Flint&quot;</striple>
-					<striple>1634:_The_Bavarian_Crisis | ISBN_number | &quot;978-1-4165-4253-7&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1634:_The_Bavarian_Crisis" number="1" tag="AGENT-1" type="name">1634 : The Bavarian Crisis</reference>
-					<reference entity="&quot;Virginia DeMarce and Eric Flint&quot;" number="2" tag="PATIENT-2" type="name">Virginia DeMarce and Eric Flint</reference>
-					<reference entity="&quot;978-1-4165-4253-7&quot;" number="3" tag="PATIENT-1" type="name">978-1-4165-4253 -7</reference>
-				</references>
 				<text>1634: The Bavarian Crisis was authored by Virginia DeMarce and Eric Flint and has a ISBN number of 978-1-4165-4253-7.</text>
 				<template>AGENT-1 was authored by PATIENT-2 and has a ISBN number of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>1634:_The_Bavarian_Crisis | ISBN_number | &quot;978-1-4165-4253-7&quot;</striple>
-					<striple>1634:_The_Bavarian_Crisis | author | &quot;Virginia DeMarce and Eric Flint&quot;</striple>
-					<striple>1634:_The_Bavarian_Crisis | mediaType | &quot;Print&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1634:_The_Bavarian_Crisis" number="1" tag="AGENT-1" type="name">1634 : The Bavarian Crisis</reference>
-					<reference entity="&quot;978-1-4165-4253-7&quot;" number="2" tag="PATIENT-1" type="name">978-1-4165-4253 -7</reference>
-					<reference entity="1634:_The_Bavarian_Crisis" number="3" tag="AGENT-1" type="pronoun">it</reference>
-					<reference entity="&quot;Virginia DeMarce and Eric Flint&quot;" number="4" tag="PATIENT-2" type="name">Virginia DeMarce and Eric Flint</reference>
-					<reference entity="&quot;Print&quot;" number="5" tag="PATIENT-3" type="name">print form</reference>
-				</references>
 				<text>The ISBN number of 1634: The Bavarian Crisis is 978-1-4165-4253-7, it is written by Virginia DeMarce and Eric Flint and is available in print form.</text>
 				<template>The ISBN number of AGENT-1 is PATIENT-1 , AGENT-1 is written by PATIENT-2 and is available in PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 1634:_The_Bavarian_Crisis</entity>
 				<entity>PATIENT-1 | &quot;978-1-4165-4253-7&quot;</entity>
-				<entity>PATIENT-2 | &quot;Virginia DeMarce and Eric Flint&quot;</entity>
 				<entity>PATIENT-3 | &quot;Print&quot;</entity>
+				<entity>PATIENT-2 | &quot;Virginia DeMarce and Eric Flint&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id2" size="3">
@@ -75,39 +43,16 @@
 				<mtriple>Eric_Flint | birthPlace | Burbank,_California</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Eric_Flint | birthPlace | Burbank,_California</striple>
-					<striple>1634:_The_Bavarian_Crisis | author | Eric_Flint</striple>
-					<striple>1634:_The_Bavarian_Crisis | precededBy | 1634:_The_Baltic_War</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Burbank,_California" number="1" tag="PATIENT-2" type="name">Burbank</reference>
-					<reference entity="Eric_Flint" number="2" tag="BRIDGE-1" type="name">California , Eric Flint</reference>
-					<reference entity="1634:_The_Bavarian_Crisis" number="3" tag="AGENT-1" type="name">1634 : The Bavarian Crisis</reference>
-					<reference entity="1634:_The_Baltic_War" number="4" tag="PATIENT-1" type="name">1634 : The Baltic War</reference>
-				</references>
 				<text>Born in Burbank, California, Eric Flint wrote 1634: The Bavarian Crisis which was preceded by 1634: The Baltic War.</text>
 				<template>Born in PATIENT-2 , BRIDGE-1 wrote AGENT-1 which was preceded by PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>1634:_The_Bavarian_Crisis | precededBy | 1634:_The_Baltic_War</striple>
-					<striple>1634:_The_Bavarian_Crisis | author | Eric_Flint</striple>
-					<striple>Eric_Flint | birthPlace | Burbank,_California</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1634:_The_Bavarian_Crisis" number="1" tag="AGENT-1" type="name">1634 : The Bavarian Crisis</reference>
-					<reference entity="1634:_The_Bavarian_Crisis" number="2" tag="AGENT-1" type="name">it 's</reference>
-					<reference entity="1634:_The_Baltic_War" number="3" tag="PATIENT-1" type="name">1634 : The Baltic War</reference>
-					<reference entity="Eric_Flint" number="4" tag="BRIDGE-1" type="name">Eric Flint</reference>
-					<reference entity="Burbank,_California" number="5" tag="PATIENT-2" type="name">Burbank California</reference>
-				</references>
 				<text>1634: The Bavarian Crisis and it's predecessor, 1634: The Baltic War, was written by Eric Flint who was born in Burbank California.</text>
 				<template>AGENT-1 and AGENT-1 predecessor , PATIENT-1 , was written by BRIDGE-1 who was born in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | 1634:_The_Bavarian_Crisis</entity>
 				<entity>BRIDGE-1 | Eric_Flint</entity>
+				<entity>AGENT-1 | 1634:_The_Bavarian_Crisis</entity>
 				<entity>PATIENT-1 | 1634:_The_Baltic_War</entity>
 				<entity>PATIENT-2 | Burbank,_California</entity>
 			</entitymap>
@@ -124,40 +69,18 @@
 				<mtriple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>1634:_The_Ram_Rebellion | author | Eric_Flint</striple>
-					<striple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | mediaType | E-book</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Eric_Flint" number="1" tag="PATIENT-1" type="name">Eric Flint</reference>
-					<reference entity="1634:_The_Ram_Rebellion" number="2" tag="AGENT-1" type="name">1634 : The Ram Rebellion</reference>
-					<reference entity="&quot;512&quot;" number="3" tag="PATIENT-3" type="name">512</reference>
-					<reference entity="E-book" number="4" tag="PATIENT-2" type="description">an E-Book</reference>
-				</references>
 				<text>Eric Flint is the author of 1634: The Ram Rebellion which has 512 pages and is available as an E-Book.</text>
 				<template>PATIENT-1 is the author of AGENT-1 which has PATIENT-3 pages and is available as PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>1634:_The_Ram_Rebellion | author | Eric_Flint</striple>
-					<striple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | mediaType | E-book</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Eric_Flint" number="1" tag="PATIENT-1" type="name">Eric Flint</reference>
-					<reference entity="1634:_The_Ram_Rebellion" number="2" tag="AGENT-1" type="description">the RAM Rebellion</reference>
-					<reference entity="&quot;512&quot;" number="3" tag="PATIENT-3" type="name">512</reference>
-					<reference entity="E-book" number="4" tag="PATIENT-2" type="description">the media type E book</reference>
-				</references>
 				<text>During 1634, Eric Flint wrote the RAM Rebellion which is 512 pages long and is of the media type E book.</text>
 				<template>During 1634 , PATIENT-1 wrote AGENT-1 which is PATIENT-3 pages long and is of PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 1634:_The_Ram_Rebellion</entity>
 				<entity>PATIENT-1 | Eric_Flint</entity>
-				<entity>PATIENT-2 | E-book</entity>
 				<entity>PATIENT-3 | &quot;512&quot;</entity>
+				<entity>PATIENT-2 | E-book</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id4" size="3">
@@ -172,55 +95,22 @@
 				<mtriple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>1634:_The_Ram_Rebellion | mediaType | Hardcover</striple>
-					<striple>1634:_The_Ram_Rebellion | author | Eric_Flint</striple>
-					<striple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Hardcover" number="1" tag="PATIENT-2" type="description">The</reference>
-					<reference entity="1634:_The_Ram_Rebellion" number="2" tag="AGENT-1" type="name">hardcover book 1634 : The Ram Rebellion</reference>
-					<reference entity="Eric_Flint" number="3" tag="PATIENT-1" type="name">Eric Flint</reference>
-					<reference entity="&quot;1-4165-2060-0&quot;" number="4" tag="PATIENT-3" type="description">the ISBN number 1-4165 -2060-0</reference>
-				</references>
 				<text>The hardcover book 1634: The Ram Rebellion was written by Eric Flint and has the ISBN number 1-4165-2060-0.</text>
 				<template>PATIENT-2 AGENT-1 was written by PATIENT-1 and has PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | author | Eric_Flint</striple>
-					<striple>1634:_The_Ram_Rebellion | mediaType | Hardcover</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1634:_The_Ram_Rebellion" number="1" tag="AGENT-1" type="name">1634 : The Ram Rebellion</reference>
-					<reference entity="&quot;1-4165-2060-0&quot;" number="2" tag="PATIENT-3" type="name">1-4165 -2060-0</reference>
-					<reference entity="Eric_Flint" number="3" tag="PATIENT-1" type="name">Eric Flint</reference>
-					<reference entity="Hardcover" number="4" tag="PATIENT-2" type="name">hardcover</reference>
-				</references>
 				<text>1634: The Ram Rebellion, ISBN number 1-4165-2060-0, was written by Eric Flint and is available in hardcover.</text>
 				<template>AGENT-1 , ISBN number PATIENT-3 , was written by PATIENT-1 and is available in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>1634:_The_Ram_Rebellion | author | Eric_Flint</striple>
-					<striple>1634:_The_Ram_Rebellion | mediaType | Hardcover</striple>
-					<striple>1634:_The_Ram_Rebellion | ISBN_number | &quot;1-4165-2060-0&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Eric_Flint" number="1" tag="PATIENT-1" type="name">Eric Flint</reference>
-					<reference entity="1634:_The_Ram_Rebellion" number="2" tag="AGENT-1" type="name">1634 : The Ram Rebellion</reference>
-					<reference entity="Hardcover" number="3" tag="PATIENT-2" type="name">hardcover</reference>
-					<reference entity="&quot;1-4165-2060-0&quot;" number="4" tag="PATIENT-3" type="name">1-4165 -2060-0</reference>
-				</references>
 				<text>Eric Flint wrote 1634: The Ram Rebellion found in hardcover with an ISBN of 1-4165-2060-0.</text>
 				<template>PATIENT-1 wrote AGENT-1 found in PATIENT-2 with an ISBN of PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 1634:_The_Ram_Rebellion</entity>
 				<entity>PATIENT-1 | Eric_Flint</entity>
-				<entity>PATIENT-2 | Hardcover</entity>
 				<entity>PATIENT-3 | &quot;1-4165-2060-0&quot;</entity>
+				<entity>PATIENT-2 | Hardcover</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id5" size="3">
@@ -235,57 +125,22 @@
 				<mtriple>1634:_The_Ram_Rebellion | author | &quot;Eric Flint, Virginia DeMarce, et al.&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>1634:_The_Ram_Rebellion | author | &quot;Eric Flint, Virginia DeMarce, et al.&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | mediaType | E-book</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1634:_The_Ram_Rebellion" number="1" tag="AGENT-1" type="name">1634 : The Ram Rebellion</reference>
-					<reference entity="&quot;Eric Flint, Virginia DeMarce, et al.&quot;" number="2" tag="PATIENT-3" type="name">Eric Flint , Virginia DeMarce . et al .</reference>
-					<reference entity="&quot;512&quot;" number="3" tag="PATIENT-2" type="name">512</reference>
-					<reference entity="E-book" number="4" tag="PATIENT-1" type="description">an E book</reference>
-				</references>
 				<text>1634: The Ram Rebellion, written by Eric Flint, Virginia DeMarce. et al., is 512 pages long and can be found as an E book.</text>
 				<template>AGENT-1 , written by PATIENT-3 , is PATIENT-2 pages long and can be found as PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>1634:_The_Ram_Rebellion | author | &quot;Eric Flint, Virginia DeMarce, et al.&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | mediaType | E-book</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1634:_The_Ram_Rebellion" number="1" tag="AGENT-1" type="name">1634 : The Ram Rebellion</reference>
-					<reference entity="&quot;Eric Flint, Virginia DeMarce, et al.&quot;" number="2" tag="PATIENT-3" type="name">Eric Flint , Virginia DeMarce , et al</reference>
-					<reference entity="1634:_The_Ram_Rebellion" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;512&quot;" number="4" tag="PATIENT-2" type="name">512</reference>
-					<reference entity="E-book" number="5" tag="PATIENT-1" type="description">an E-Book</reference>
-				</references>
 				<text>1634: The Ram Rebellion was written by Eric Flint, Virginia DeMarce, et al. It has 512 pages and is available as an E-Book.</text>
 				<template>AGENT-1 was written by PATIENT-3 . AGENT-1 has PATIENT-2 pages and is available as PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>1634:_The_Ram_Rebellion | numberOfPages | &quot;512&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | author | &quot;Eric Flint, Virginia DeMarce, et al.&quot;</striple>
-					<striple>1634:_The_Ram_Rebellion | mediaType | E-book</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1634:_The_Ram_Rebellion" number="1" tag="AGENT-1" type="name">1634 : The Ram Rebellion</reference>
-					<reference entity="&quot;512&quot;" number="2" tag="PATIENT-2" type="name">512</reference>
-					<reference entity="&quot;Eric Flint, Virginia DeMarce, et al.&quot;" number="3" tag="PATIENT-3" type="name">Eric Flint , Virginia DeMarce , et al</reference>
-					<reference entity="1634:_The_Ram_Rebellion" number="4" tag="AGENT-1" type="name"> . It</reference>
-					<reference entity="E-book" number="5" tag="PATIENT-1" type="description">an E book</reference>
-				</references>
 				<text>1634: The Ram Rebellion has 512 pages and was written by Eric Flint, Virginia DeMarce, et al. . It can be found as an E book.</text>
 				<template>AGENT-1 has PATIENT-2 pages and was written by PATIENT-3 . AGENT-1 can be found as PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | 1634:_The_Ram_Rebellion</entity>
 				<entity>PATIENT-1 | E-book</entity>
-				<entity>PATIENT-2 | &quot;512&quot;</entity>
 				<entity>PATIENT-3 | &quot;Eric Flint, Virginia DeMarce, et al.&quot;</entity>
+				<entity>PATIENT-2 | &quot;512&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id6" size="3">
@@ -294,61 +149,33 @@
 				<otriple>ACM_Transactions_on_Information_Systems | discipline | Computer_science</otriple>
 				<otriple>ACM_Transactions_on_Information_Systems | issn | &quot;1046-8188&quot;</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>ACM_Transactions_on_Information_Systems | discipline | Computer_science</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | issn | &quot;1046-8188&quot;</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</mtriple>
 				<mtriple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</mtriple>
 				<mtriple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1046-8188&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</striple>
-					<striple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</striple>
-					<striple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1046-8188&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="ACM_Transactions_on_Information_Systems" number="1" tag="AGENT-1" type="name">ACM Transactions on Information Systems</reference>
-					<reference entity="&quot;ACM Trans. Inf. Syst.&quot;" number="2" tag="PATIENT-1" type="name">ACM Trans . Inf . Syst .</reference>
-					<reference entity="Computer_science" number="3" tag="PATIENT-2" type="name">Computer Science</reference>
-					<reference entity="&quot;1046-8188&quot;" number="4" tag="PATIENT-3" type="name">1046-8188</reference>
-				</references>
 				<text>ACM Transactions on Information Systems, or ACM Trans. Inf. Syst., is part of the academic Discipline of Computer Science and has an ISSN number of 1046-8188.</text>
 				<template>AGENT-1 , or PATIENT-1 , is part of the academic Discipline of PATIENT-2 and has an ISSN number of PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</striple>
-					<striple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1046-8188&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="ACM_Transactions_on_Information_Systems" number="1" tag="AGENT-1" type="name">ACM Transactions on Information Systems</reference>
-					<reference entity="Computer_science" number="2" tag="PATIENT-2" type="name">Computer Science</reference>
-					<reference entity="&quot;ACM Trans. Inf. Syst.&quot;" number="3" tag="PATIENT-1" type="name">ACM Trans</reference>
-					<reference entity="ACM_Transactions_on_Information_Systems" number="4" tag="AGENT-1" type="name">Inf . Syst . it</reference>
-					<reference entity="&quot;1046-8188&quot;" number="5" tag="PATIENT-3" type="name">1046-8188</reference>
-				</references>
 				<text>ACM Transactions on Information Systems is part of the academic Discipline of Computer Science and has the abbreviation of ACM Trans. Inf. Syst. it has the ISSN number 1046-8188.</text>
 				<template>AGENT-1 is part of the academic Discipline of PATIENT-2 and has the abbreviation of PATIENT-1. AGENT-1 has the ISSN number PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</striple>
-					<striple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</striple>
-					<striple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1046-8188&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;ACM Trans. Inf. Syst.&quot;" number="1" tag="PATIENT-1" type="description">The abbreviation &quot;ACM Trans . Inf . Syst .&quot;</reference>
-					<reference entity="ACM_Transactions_on_Information_Systems" number="2" tag="AGENT-1" type="name">ACM Transactions on Information Systems</reference>
-					<reference entity="Computer_science" number="3" tag="PATIENT-2" type="name">Computer Science</reference>
-					<reference entity="&quot;1046-8188&quot;" number="4" tag="PATIENT-3" type="name">1046-8188</reference>
-				</references>
 				<text>The abbreviation &quot;ACM Trans. Inf. Syst.&quot; is for ACM Transactions on Information Systems which is part of the academic Discipline of Computer Science and has an ISSN number of 1046-8188.</text>
 				<template>PATIENT-1 is for AGENT-1 which is part of the academic Discipline of PATIENT-2 and has an ISSN number of PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | ACM_Transactions_on_Information_Systems</entity>
 				<entity>PATIENT-1 | &quot;ACM Trans. Inf. Syst.&quot;</entity>
-				<entity>PATIENT-2 | Computer_science</entity>
 				<entity>PATIENT-3 | &quot;1046-8188&quot;</entity>
+				<entity>PATIENT-2 | Computer_science</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id7" size="3">
@@ -357,62 +184,33 @@
 				<otriple>ACM_Transactions_on_Information_Systems | discipline | Computer_science</otriple>
 				<otriple>ACM_Transactions_on_Information_Systems | issn | &quot;1558-2868&quot;</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>ACM_Transactions_on_Information_Systems | discipline | Computer_science</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</otriple>
+				<otriple>ACM_Transactions_on_Information_Systems | issn | &quot;1558-2868&quot;</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</mtriple>
 				<mtriple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</mtriple>
 				<mtriple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1558-2868&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1558-2868&quot;</striple>
-					<striple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</striple>
-					<striple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="ACM_Transactions_on_Information_Systems" number="1" tag="AGENT-1" type="description">The ACM Transactions on Information Systems</reference>
-					<reference entity="&quot;1558-2868&quot;" number="2" tag="PATIENT-3" type="name">1558-2868</reference>
-					<reference entity="ACM_Transactions_on_Information_Systems" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Computer_science" number="4" tag="PATIENT-1" type="name">Computer Science</reference>
-					<reference entity="&quot;ACM Trans. Inf. Syst.&quot;" number="5" tag="PATIENT-2" type="name">ACM Trans</reference>
-				</references>
 				<text>The ACM Transactions on Information Systems ISSN number is 1558-2868. It is part of the academic Discipline of Computer Science and abbreviated to ACM Trans. Inf. Syst.</text>
 				<template>AGENT-1 ISSN number is PATIENT-3 . AGENT-1 is part of the academic Discipline of PATIENT-1 and abbreviated to PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</striple>
-					<striple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</striple>
-					<striple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1558-2868&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="ACM_Transactions_on_Information_Systems" number="1" tag="AGENT-1" type="name">ACM Transactions on Information Systems</reference>
-					<reference entity="Computer_science" number="2" tag="PATIENT-1" type="name">Computer Science</reference>
-					<reference entity="&quot;ACM Trans. Inf. Syst.&quot;" number="3" tag="PATIENT-2" type="name">&quot;ACM Trans . Inf . Syst .&quot;</reference>
-					<reference entity="&quot;1558-2868&quot;" number="4" tag="PATIENT-3" type="name">1558-2868</reference>
-				</references>
 				<text>ACM Transactions on Information Systems is part of the academic Discipline of Computer Science and has the abbreviation &quot;ACM Trans. Inf. Syst.&quot; and the ISSN number 1558-2868.</text>
 				<template>AGENT-1 is part of the academic Discipline of PATIENT-1 and has the abbreviation PATIENT-2 and the ISSN number PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>ACM_Transactions_on_Information_Systems | abbreviation | &quot;ACM Trans. Inf. Syst.&quot;</striple>
-					<striple>ACM_Transactions_on_Information_Systems | academicDiscipline | Computer_science</striple>
-					<striple>ACM_Transactions_on_Information_Systems | ISSN_number | &quot;1558-2868&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="ACM_Transactions_on_Information_Systems" number="1" tag="AGENT-1" type="name">ACM Transactions on Information Systems</reference>
-					<reference entity="&quot;ACM Trans. Inf. Syst.&quot;" number="2" tag="PATIENT-2" type="name">ACM Trans . Inf . Syst .</reference>
-					<reference entity="Computer_science" number="3" tag="PATIENT-1" type="name">Computer Science</reference>
-					<reference entity="&quot;1558-2868&quot;" number="4" tag="PATIENT-3" type="name">1558-2868</reference>
-				</references>
 				<text>ACM Transactions on Information Systems, or ACM Trans. Inf. Syst., is part of the academic Discipline of Computer Science and has a ISSN number of 1558-2868.</text>
 				<template>AGENT-1 , or PATIENT-2 , is part of the academic Discipline of PATIENT-1 and has a ISSN number of PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | ACM_Transactions_on_Information_Systems</entity>
 				<entity>PATIENT-1 | Computer_science</entity>
-				<entity>PATIENT-2 | &quot;ACM Trans. Inf. Syst.&quot;</entity>
 				<entity>PATIENT-3 | &quot;1558-2868&quot;</entity>
+				<entity>PATIENT-2 | &quot;ACM Trans. Inf. Syst.&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id8" size="3">
@@ -421,58 +219,31 @@
 				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
 				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
+				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
+				<otriple>United_Kingdom | leader | Elizabeth_II</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>AIDS_(journal) | country | United_Kingdom</mtriple>
 				<mtriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</mtriple>
 				<mtriple>United_Kingdom | leaderName | Elizabeth_II</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
-					<striple>AIDS_(journal) | country | United_Kingdom</striple>
-					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AIDS_(journal)" number="1" tag="AGENT-1" type="description">The AIDS journal</reference>
-					<reference entity="Lippincott_Williams_&amp;_Wilkins" number="2" tag="PATIENT-1" type="name">Lippincott Williams &amp; Wilkins</reference>
-					<reference entity="United_Kingdom" number="3" tag="BRIDGE-1" type="description">the United Kingdom</reference>
-					<reference entity="Elizabeth_II" number="4" tag="PATIENT-2" type="name">Elizabeth II</reference>
-				</references>
 				<text>The AIDS journal was published by Lippincott Williams &amp; Wilkins in the United Kingdom where Elizabeth II is the leader.</text>
 				<template>AGENT-1 was published by PATIENT-1 in BRIDGE-1 where PATIENT-2 is the leader .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
-					<striple>AIDS_(journal) | country | United_Kingdom</striple>
-					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AIDS_(journal)" number="1" tag="AGENT-1" type="description">The AIDS journal</reference>
-					<reference entity="Lippincott_Williams_&amp;_Wilkins" number="2" tag="PATIENT-1" type="name">Lippincot Williams &amp; Wilkins</reference>
-					<reference entity="United_Kingdom" number="3" tag="BRIDGE-1" type="description">the United Kingdom</reference>
-					<reference entity="Elizabeth_II" number="4" tag="PATIENT-2" type="name">Elizabeth II</reference>
-				</references>
 				<text>The AIDS journal is published by Lippincot Williams &amp; Wilkins and comes from the United Kingdom where Elizabeth II is the leader.</text>
 				<template>AGENT-1 is published by PATIENT-1 and comes from BRIDGE-1 where PATIENT-2 is the leader .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>AIDS_(journal) | country | United_Kingdom</striple>
-					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AIDS_(journal)" number="1" tag="AGENT-1" type="description">The AIDS journal</reference>
-					<reference entity="United_Kingdom" number="2" tag="BRIDGE-1" type="description">the United Kingdom</reference>
-					<reference entity="Elizabeth_II" number="3" tag="PATIENT-2" type="name">Elizabeth II</reference>
-					<reference entity="Lippincott_Williams_&amp;_Wilkins" number="4" tag="PATIENT-1" type="name">Lippincott Williams and Wilkins</reference>
-				</references>
 				<text>The AIDS journal, which came from the United Kingdom in the reign of Elizabeth II, was published by Lippincott Williams and Wilkins.</text>
 				<template>AGENT-1 , which came from BRIDGE-1 in the reign of PATIENT-2 , was published by PATIENT-1.</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | AIDS_(journal)</entity>
 				<entity>BRIDGE-1 | United_Kingdom</entity>
+				<entity>AGENT-1 | AIDS_(journal)</entity>
 				<entity>PATIENT-1 | Lippincott_Williams_&amp;_Wilkins</entity>
 				<entity>PATIENT-2 | Elizabeth_II</entity>
 			</entitymap>
@@ -489,53 +260,20 @@
 				<mtriple>AIP_Advances | publisher | American_Institute_of_Physics</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.T._Charlie_Johnson | residence | United_States</striple>
-					<striple>AIP_Advances | editor | A.T._Charlie_Johnson</striple>
-					<striple>AIP_Advances | publisher | American_Institute_of_Physics</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.T._Charlie_Johnson" number="1" tag="BRIDGE-1" type="description">A .T . Charlie Johnson</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the US</reference>
-					<reference entity="AIP_Advances" number="3" tag="AGENT-1" type="name">AIP Advances</reference>
-					<reference entity="American_Institute_of_Physics" number="4" tag="PATIENT-2" type="description">the American Institute of Physics</reference>
-				</references>
 				<text>A.T. Charlie Johnson, who lives in the US, is the editor of AIP Advances which is published by the American Institute of Physics.</text>
 				<template>BRIDGE-1 , who lives in PATIENT-1 , is the editor of AGENT-1 which is published by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.T._Charlie_Johnson | residence | United_States</striple>
-					<striple>AIP_Advances | editor | A.T._Charlie_Johnson</striple>
-					<striple>AIP_Advances | publisher | American_Institute_of_Physics</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.T._Charlie_Johnson" number="1" tag="BRIDGE-1" type="description">A T Charlie Johnson</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the United States</reference>
-					<reference entity="AIP_Advances" number="3" tag="AGENT-1" type="name">AIP Advances</reference>
-					<reference entity="American_Institute_of_Physics" number="4" tag="PATIENT-2" type="description">the American Institute of Physics</reference>
-				</references>
 				<text>A T Charlie Johnson resides in the United States and is the editor of AIP Advances which is published by the American Institute of Physics.</text>
 				<template>BRIDGE-1 resides in PATIENT-1 and is the editor of AGENT-1 which is published by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A.T._Charlie_Johnson | residence | United_States</striple>
-					<striple>AIP_Advances | editor | A.T._Charlie_Johnson</striple>
-					<striple>AIP_Advances | publisher | American_Institute_of_Physics</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.T._Charlie_Johnson" number="1" tag="BRIDGE-1" type="description">A T Charlie Johnson</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the US</reference>
-					<reference entity="AIP_Advances" number="3" tag="AGENT-1" type="name">AIP Advances</reference>
-					<reference entity="American_Institute_of_Physics" number="4" tag="PATIENT-2" type="description">the American Institute of Physics</reference>
-				</references>
 				<text>A T Charlie Johnson lives in the US and is the editor of AIP Advances which was published by the American Institute of Physics.</text>
 				<template>BRIDGE-1 lives in PATIENT-1 and is the editor of AGENT-1 which was published by PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | AIP_Advances</entity>
 				<entity>BRIDGE-1 | A.T._Charlie_Johnson</entity>
+				<entity>AGENT-1 | AIP_Advances</entity>
 				<entity>PATIENT-1 | United_States</entity>
 				<entity>PATIENT-2 | American_Institute_of_Physics</entity>
 			</entitymap>
@@ -546,60 +284,43 @@
 				<otriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;@en</otriple>
 				<otriple>AIP_Advances | coden | &quot;AAIDBI&quot;</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>AIP_Advances | editor | A.T._Charlie_Johnson</otriple>
+				<otriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</otriple>
+				<otriple>AIP_Advances | coden | &quot;AAIDBI&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>AIP_Advances | editor | A.T._Charlie_Johnson</otriple>
+				<otriple>AIP_Advances | coden | &quot;AAIDBI&quot;@en</otriple>
+				<otriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>AIP_Advances | editor | A.T._Charlie_Johnson</otriple>
+				<otriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;@en</otriple>
+				<otriple>AIP_Advances | coden | &quot;AAIDBI&quot;@en</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>AIP_Advances | editor | A.T._Charlie_Johnson</mtriple>
 				<mtriple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</mtriple>
 				<mtriple>AIP_Advances | CODEN_code | &quot;AAIDBI&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</striple>
-					<striple>AIP_Advances | CODEN_code | &quot;AAIDBI&quot;</striple>
-					<striple>AIP_Advances | editor | A.T._Charlie_Johnson</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AIP_Advances" number="1" tag="AGENT-1" type="name">AIP Advances</reference>
-					<reference entity="&quot;AIP Adv.&quot;" number="2" tag="PATIENT-2" type="name">AIP Adv .</reference>
-					<reference entity="&quot;AAIDBI&quot;" number="3" tag="PATIENT-3" type="name">AAIDBI</reference>
-					<reference entity="A.T._Charlie_Johnson" number="4" tag="PATIENT-1" type="description">A</reference>
-				</references>
 				<text>AIP Advances, or AIP Adv., has a CODEN of AAIDBI and is edited by A. T. Charlie Johnson.</text>
 				<template>AGENT-1 , or PATIENT-2 , has a CODEN of PATIENT-3 and is edited by PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AIP_Advances | editor | A.T._Charlie_Johnson</striple>
-					<striple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</striple>
-					<striple>AIP_Advances | CODEN_code | &quot;AAIDBI&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.T._Charlie_Johnson" number="1" tag="PATIENT-1" type="description">A T Charlie Johnson</reference>
-					<reference entity="AIP_Advances" number="2" tag="AGENT-1" type="name">AIP Advances</reference>
-					<reference entity="&quot;AIP Adv.&quot;" number="3" tag="PATIENT-2" type="name">AIP Adv</reference>
-					<reference entity="&quot;AAIDBI&quot;" number="4" tag="PATIENT-3" type="name">AAIDBI</reference>
-				</references>
 				<text>A T Charlie Johnson is the editor of AIP Advances which is abbreviated to AIP Adv and has a CODEN code of AAIDBI.</text>
 				<template>PATIENT-1 is the editor of AGENT-1 which is abbreviated to PATIENT-2 and has a CODEN code of PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>AIP_Advances | abbreviation | &quot;AIP Adv.&quot;</striple>
-					<striple>AIP_Advances | editor | A.T._Charlie_Johnson</striple>
-					<striple>AIP_Advances | CODEN_code | &quot;AAIDBI&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AIP_Advances" number="2" tag="AGENT-1" type="name">AIP Advances</reference>
-					<reference entity="A.T._Charlie_Johnson" number="3" tag="PATIENT-1" type="description">A T Charlie Johnson</reference>
-					<reference entity="&quot;AAIDBI&quot;" number="4" tag="PATIENT-3" type="name">AAIDBI</reference>
-				</references>
 				<text>&quot;AIP Adv.&quot; is the abbreviation of AIP Advances which is edited by A T Charlie Johnson and has the CODEN code AAIDBI.</text>
 				<template>`` PATIENT-2 '' is the abbreviation of AGENT-1 which is edited by PATIENT-1 and has the CODEN code PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | AIP_Advances</entity>
 				<entity>PATIENT-1 | A.T._Charlie_Johnson</entity>
-				<entity>PATIENT-2 | &quot;AIP Adv.&quot;</entity>
 				<entity>PATIENT-3 | &quot;AAIDBI&quot;</entity>
+				<entity>PATIENT-2 | &quot;AIP Adv.&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id11" size="3">
@@ -608,61 +329,33 @@
 				<otriple>A_Glastonbury_Romance | oclc | 76798317</otriple>
 				<otriple>A_Glastonbury_Romance | isbn | &quot;0-7156-3648-0&quot;</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>A_Glastonbury_Romance | mediaType | Hardcover</otriple>
+				<otriple>A_Glastonbury_Romance | oclc | &quot;76798317&quot;</otriple>
+				<otriple>A_Glastonbury_Romance | isbn | &quot;0-7156-3648-0&quot;</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>A_Glastonbury_Romance | mediaType | Hardcover</mtriple>
 				<mtriple>A_Glastonbury_Romance | OCLC_number | 76798317</mtriple>
 				<mtriple>A_Glastonbury_Romance | ISBN_number | &quot;0-7156-3648-0&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Glastonbury_Romance | mediaType | Hardcover</striple>
-					<striple>A_Glastonbury_Romance | ISBN_number | &quot;0-7156-3648-0&quot;</striple>
-					<striple>A_Glastonbury_Romance | OCLC_number | 76798317</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Glastonbury_Romance" number="1" tag="AGENT-1" type="description">A Glastonbury Romance</reference>
-					<reference entity="Hardcover" number="2" tag="PATIENT-1" type="name">hardcover</reference>
-					<reference entity="&quot;0-7156-3648-0&quot;" number="3" tag="PATIENT-3" type="name">0-7156-3648 -0</reference>
-					<reference entity="76798317" number="4" tag="PATIENT-2" type="name">76798317</reference>
-				</references>
 				<text>A Glastonbury Romance, which can be found in hardcover, has the ISBN number 0-7156-3648-0 as well as the OCLC number 76798317.</text>
 				<template>AGENT-1 , which can be found in PATIENT-1 , has the ISBN number PATIENT-3 as well as the OCLC number PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A_Glastonbury_Romance | mediaType | Hardcover</striple>
-					<striple>A_Glastonbury_Romance | OCLC_number | 76798317</striple>
-					<striple>A_Glastonbury_Romance | ISBN_number | &quot;0-7156-3648-0&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Glastonbury_Romance" number="1" tag="AGENT-1" type="description">A Glastonbury Romance</reference>
-					<reference entity="Hardcover" number="2" tag="PATIENT-1" type="name">hardcover</reference>
-					<reference entity="76798317" number="3" tag="PATIENT-2" type="name">76798317</reference>
-					<reference entity="&quot;0-7156-3648-0&quot;" number="4" tag="PATIENT-3" type="name">0-7156-3648 -0</reference>
-				</references>
 				<text>A Glastonbury Romance is available in hardcover and has the OCLC number of 76798317. and the ISBN number of 0-7156-3648-0.</text>
 				<template>AGENT-1 is available in PATIENT-1 and has the OCLC number of PATIENT-2 . and the ISBN number of PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A_Glastonbury_Romance | mediaType | Hardcover</striple>
-					<striple>A_Glastonbury_Romance | OCLC_number | 76798317</striple>
-					<striple>A_Glastonbury_Romance | ISBN_number | &quot;0-7156-3648-0&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Glastonbury_Romance" number="1" tag="AGENT-1" type="description">A Glastonbury Romance</reference>
-					<reference entity="Hardcover" number="2" tag="PATIENT-1" type="name">hardcover</reference>
-					<reference entity="76798317" number="3" tag="PATIENT-2" type="name">76798317</reference>
-					<reference entity="&quot;0-7156-3648-0&quot;" number="4" tag="PATIENT-3" type="name">0-7156-3648 -0</reference>
-				</references>
 				<text>A Glastonbury Romance is available in hardcover and has the OCLC number 76798317 and the ISBN number 0-7156-3648-0.</text>
 				<template>AGENT-1 is available in PATIENT-1 and has the OCLC number PATIENT-2 and the ISBN number PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A_Glastonbury_Romance</entity>
 				<entity>PATIENT-1 | Hardcover</entity>
-				<entity>PATIENT-2 | 76798317</entity>
 				<entity>PATIENT-3 | &quot;0-7156-3648-0&quot;</entity>
+				<entity>PATIENT-2 | 76798317</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id12" size="3">
@@ -677,37 +370,16 @@
 				<mtriple>A_Long_Long_Way | followedBy | The_Secret_Scripture</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Long_Long_Way | followedBy | The_Secret_Scripture</striple>
-					<striple>A_Long_Long_Way | language | English_language</striple>
-					<striple>English_language | spokenIn | Great_Britain</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="The_Secret_Scripture" number="2" tag="PATIENT-2" type="description">the book The Secret Scripture</reference>
-					<reference entity="English_language" number="3" tag="BRIDGE-1" type="description">the English language</reference>
-					<reference entity="Great_Britain" number="4" tag="PATIENT-1" type="name">Great Britain</reference>
-				</references>
 				<text>A Long Long Way (followed by the book The Secret Scripture) is written in the English language, which is spoken in Great Britain.</text>
 				<template>AGENT-1 ( followed by PATIENT-2 ) is written in BRIDGE-1 , which is spoken in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A_Long_Long_Way | followedBy | The_Secret_Scripture</striple>
-					<striple>A_Long_Long_Way | language | English_language</striple>
-					<striple>English_language | spokenIn | Great_Britain</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="The_Secret_Scripture" number="1" tag="PATIENT-2" type="description">The Secret Scripture</reference>
-					<reference entity="A_Long_Long_Way" number="2" tag="AGENT-1" type="description">the book A Long Long Way</reference>
-					<reference entity="English_language" number="3" tag="BRIDGE-1" type="name">English</reference>
-					<reference entity="Great_Britain" number="4" tag="PATIENT-1" type="name">Great Britain</reference>
-				</references>
 				<text>Followed by The Secret Scripture, the book A Long Long Way is written in English, the language spoken in Great Britain.</text>
 				<template>Followed by PATIENT-2 , AGENT-1 is written in BRIDGE-1 , the language spoken in PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A_Long_Long_Way</entity>
 				<entity>BRIDGE-1 | English_language</entity>
+				<entity>AGENT-1 | A_Long_Long_Way</entity>
 				<entity>PATIENT-1 | Great_Britain</entity>
 				<entity>PATIENT-2 | The_Secret_Scripture</entity>
 			</entitymap>
@@ -724,55 +396,20 @@
 				<mtriple>United_States | ethnicGroup | African_Americans</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Loyal_Character_Dancer | publisher | Soho_Press</striple>
-					<striple>A_Loyal_Character_Dancer | country | United_States</striple>
-					<striple>United_States | ethnicGroup | African_Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Loyal_Character_Dancer" number="1" tag="AGENT-1" type="description">A Loyal Character Dancer</reference>
-					<reference entity="Soho_Press" number="2" tag="PATIENT-1" type="name">Soho Press</reference>
-					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States ,</reference>
-					<reference entity="African_Americans" number="4" tag="PATIENT-2" type="name">African Americans</reference>
-					<reference entity="United_States" number="5" tag="BRIDGE-1" type="pronoun">its</reference>
-				</references>
 				<text>A Loyal Character Dancer was published by Soho Press in the United States, which counts African Americans among its ethnic groups.</text>
 				<template>AGENT-1 was published by PATIENT-1 in BRIDGE-1 which counts PATIENT-2 among BRIDGE-1 ethnic groups .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A_Loyal_Character_Dancer | country | United_States</striple>
-					<striple>A_Loyal_Character_Dancer | publisher | Soho_Press</striple>
-					<striple>United_States | ethnicGroup | African_Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Loyal_Character_Dancer" number="1" tag="AGENT-1" type="description">A Loyal Character Dancer</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
-					<reference entity="Soho_Press" number="3" tag="PATIENT-1" type="name">Soho Press</reference>
-					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the US</reference>
-					<reference entity="African_Americans" number="5" tag="PATIENT-2" type="name">African Americans</reference>
-				</references>
 				<text>A Loyal Character Dancer was published in the United States by Soho Press. One of the ethnic groups in the US are African Americans.</text>
 				<template>AGENT-1 was published in BRIDGE-1 by PATIENT-1 . One of the ethnic groups in BRIDGE-1 are PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A_Loyal_Character_Dancer | publisher | Soho_Press</striple>
-					<striple>A_Loyal_Character_Dancer | country | United_States</striple>
-					<striple>United_States | ethnicGroup | African_Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Loyal_Character_Dancer" number="1" tag="AGENT-1" type="description">A Loyal Character Dancer</reference>
-					<reference entity="Soho_Press" number="2" tag="PATIENT-1" type="name">Soho Press</reference>
-					<reference entity="United_States" number="3" tag="BRIDGE-1" type="description">the United States</reference>
-					<reference entity="African_Americans" number="4" tag="PATIENT-2" type="description">the African Americans</reference>
-				</references>
 				<text>A Loyal Character Dancer is published by Soho Press in the United States where the African Americans are an ethnic group.</text>
 				<template>AGENT-1 is published by PATIENT-1 in BRIDGE-1 where PATIENT-2 are an ethnic group .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A_Loyal_Character_Dancer</entity>
 				<entity>BRIDGE-1 | United_States</entity>
+				<entity>AGENT-1 | A_Loyal_Character_Dancer</entity>
 				<entity>PATIENT-1 | Soho_Press</entity>
 				<entity>PATIENT-2 | African_Americans</entity>
 			</entitymap>
@@ -789,40 +426,18 @@
 				<mtriple>United_States | leaderName | Barack_Obama</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Loyal_Character_Dancer | publisher | Soho_Press</striple>
-					<striple>Soho_Press | country | United_States</striple>
-					<striple>United_States | leaderName | Barack_Obama</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Loyal_Character_Dancer" number="1" tag="AGENT-1" type="description">A Loyal Character Dancer</reference>
-					<reference entity="Soho_Press" number="2" tag="BRIDGE-1" type="name">Soho Press</reference>
-					<reference entity="United_States" number="3" tag="BRIDGE-2" type="description">the United States</reference>
-					<reference entity="Barack_Obama" number="4" tag="PATIENT-1" type="name">Barack Obama</reference>
-				</references>
 				<text>A Loyal Character Dancer was published by Soho Press in the United States where Barack Obama is the leader.</text>
 				<template>AGENT-1 was published by BRIDGE-1 in BRIDGE-2 where PATIENT-1 is the leader .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A_Loyal_Character_Dancer | publisher | Soho_Press</striple>
-					<striple>Soho_Press | country | United_States</striple>
-					<striple>United_States | leaderName | Barack_Obama</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Loyal_Character_Dancer" number="1" tag="AGENT-1" type="description">A Loyal Character Dancer</reference>
-					<reference entity="Soho_Press" number="2" tag="BRIDGE-1" type="name">Soho Press</reference>
-					<reference entity="United_States" number="3" tag="BRIDGE-2" type="description">the United States</reference>
-					<reference entity="Barack_Obama" number="4" tag="PATIENT-1" type="name">Barack Obama</reference>
-				</references>
 				<text>A Loyal Character Dancer is published by Soho Press in the United States where Barack Obama is the president.</text>
 				<template>AGENT-1 is published by BRIDGE-1 in BRIDGE-2 where PATIENT-1 is the president .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A_Loyal_Character_Dancer</entity>
 				<entity>BRIDGE-1 | Soho_Press</entity>
-				<entity>BRIDGE-2 | United_States</entity>
+				<entity>AGENT-1 | A_Loyal_Character_Dancer</entity>
 				<entity>PATIENT-1 | Barack_Obama</entity>
+				<entity>BRIDGE-2 | United_States</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id15" size="3">
@@ -837,40 +452,18 @@
 				<mtriple>A_Severed_Wasp | mediaType | &quot;Print&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Severed_Wasp | mediaType | &quot;Print&quot;</striple>
-					<striple>A_Severed_Wasp | OCLC_number | 8805735</striple>
-					<striple>A_Severed_Wasp | LibraryofCongressClassification | &quot;PS3523.E55 S4 1982&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Severed_Wasp" number="1" tag="AGENT-1" type="description">A Severed Wasp</reference>
-					<reference entity="&quot;Print&quot;" number="2" tag="PATIENT-3" type="name">print</reference>
-					<reference entity="8805735" number="3" tag="PATIENT-1" type="name">8805735</reference>
-					<reference entity="&quot;PS3523.E55 S4 1982&quot;" number="4" tag="PATIENT-2" type="name">PS3523</reference>
-				</references>
 				<text>A Severed Wasp can be found in print with the OCLC number 8805735 and the Library of Congress Classification of PS3523.E55 S4 1982.</text>
 				<template>AGENT-1 can be found in PATIENT-3 with the OCLC number PATIENT-1 and the Library of Congress Classification of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A_Severed_Wasp | mediaType | &quot;Print&quot;</striple>
-					<striple>A_Severed_Wasp | OCLC_number | 8805735</striple>
-					<striple>A_Severed_Wasp | LibraryofCongressClassification | &quot;PS3523.E55 S4 1982&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Severed_Wasp" number="1" tag="AGENT-1" type="description">A severed wasp</reference>
-					<reference entity="&quot;Print&quot;" number="2" tag="PATIENT-3" type="name">print</reference>
-					<reference entity="8805735" number="3" tag="PATIENT-1" type="name">8805735</reference>
-					<reference entity="&quot;PS3523.E55 S4 1982&quot;" number="4" tag="PATIENT-2" type="name">PS3523</reference>
-				</references>
 				<text>A severed wasp can be found in print and has the OCLC number 8805735 and the Library of Congress Classification is PS3523.E55 S4 1982.</text>
 				<template>AGENT-1 can be found in PATIENT-3 and has the OCLC number PATIENT-1 and the Library of Congress Classification is PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A_Severed_Wasp</entity>
 				<entity>PATIENT-1 | 8805735</entity>
-				<entity>PATIENT-2 | &quot;PS3523.E55 S4 1982&quot;</entity>
 				<entity>PATIENT-3 | &quot;Print&quot;</entity>
+				<entity>PATIENT-2 | &quot;PS3523.E55 S4 1982&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id16" size="3">
@@ -885,50 +478,22 @@
 				<mtriple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
-					<striple>A_Severed_Wasp | numberOfPages | &quot;388&quot;</striple>
-					<striple>A_Severed_Wasp | mediaType | &quot;Print&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Severed_Wasp" number="1" tag="AGENT-1" type="description">A Severed Wasp</reference>
-					<reference entity="&quot;Print&quot;" number="4" tag="PATIENT-2" type="name">print</reference>
-				</references>
 				<text>A Severed Wasp has an ISBN number of &quot;0-374-26131-8&quot; , 388 pages and can be found in print.</text>
 				<template>AGENT-1 has an ISBN number of `` PATIENT-3 '' , PATIENT-1 pages and can be found in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A_Severed_Wasp | mediaType | &quot;Print&quot;</striple>
-					<striple>A_Severed_Wasp | numberOfPages | &quot;388&quot;</striple>
-					<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Print&quot;" number="2" tag="PATIENT-2" type="name">print</reference>
-					<reference entity="&quot;388&quot;" number="3" tag="PATIENT-1" type="name">388</reference>
-				</references>
 				<text>&quot;A Severed Wasp&quot; is in print, has 388 pages and has an ISBN number of &quot;0-374-26131-8&quot;.</text>
 				<template>`` AGENT-1 '' is in PATIENT-2 , has PATIENT-1 pages and has an ISBN number of `` PATIENT-3 '' .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A_Severed_Wasp | ISBN_number | &quot;0-374-26131-8&quot;</striple>
-					<striple>A_Severed_Wasp | numberOfPages | &quot;388&quot;</striple>
-					<striple>A_Severed_Wasp | mediaType | &quot;Print&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;0-374-26131-8&quot;" number="2" tag="PATIENT-3" type="name">0-374-26131 -8</reference>
-					<reference entity="&quot;388&quot;" number="3" tag="PATIENT-1" type="name">388</reference>
-					<reference entity="&quot;Print&quot;" number="4" tag="PATIENT-2" type="name">print</reference>
-				</references>
 				<text>A Severed Wasp (ISBN number 0-374-26131-8) has 388 pages altogether and is available in print.</text>
 				<template>AGENT-1 ( ISBN number PATIENT-3 ) has PATIENT-1 pages altogether and is available in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A_Severed_Wasp</entity>
 				<entity>PATIENT-1 | &quot;388&quot;</entity>
-				<entity>PATIENT-2 | &quot;Print&quot;</entity>
 				<entity>PATIENT-3 | &quot;0-374-26131-8&quot;</entity>
+				<entity>PATIENT-2 | &quot;Print&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id17" size="3">
@@ -937,60 +502,33 @@
 				<otriple>A_Wizard_of_Mars | author | Diane_Duane</otriple>
 				<otriple>A_Wizard_of_Mars | oclc | 318875313</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>A_Wizard_of_Mars | mediaType | Hardcover</otriple>
+				<otriple>A_Wizard_of_Mars | oclc | &quot;318875313&quot;</otriple>
+				<otriple>A_Wizard_of_Mars | author | Diane_Duane</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>A_Wizard_of_Mars | mediaType | Hardcover</mtriple>
 				<mtriple>A_Wizard_of_Mars | OCLC_number | 318875313</mtriple>
 				<mtriple>A_Wizard_of_Mars | author | Diane_Duane</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
-					<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
-					<striple>A_Wizard_of_Mars | OCLC_number | 318875313</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Diane_Duane" number="1" tag="PATIENT-3" type="name">Diane Duane</reference>
-					<reference entity="A_Wizard_of_Mars" number="2" tag="AGENT-1" type="description">A Wizard of Mars</reference>
-					<reference entity="Hardcover" number="3" tag="PATIENT-1" type="name">hardback</reference>
-					<reference entity="318875313" number="4" tag="PATIENT-2" type="name">318875313</reference>
-				</references>
 				<text>Diane Duane wrote A Wizard of Mars which was published in hardback and has the OCLC number 318875313.</text>
 				<template>PATIENT-3 wrote AGENT-1 which was published in PATIENT-1 and has the OCLC number PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
-					<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
-					<striple>A_Wizard_of_Mars | OCLC_number | 318875313</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Wizard_of_Mars" number="1" tag="AGENT-1" type="description">A Wizard of Mars</reference>
-					<reference entity="Diane_Duane" number="2" tag="PATIENT-3" type="name">Diane Duane</reference>
-					<reference entity="Hardcover" number="3" tag="PATIENT-1" type="name">Hardcover</reference>
-					<reference entity="A_Wizard_of_Mars" number="4" tag="AGENT-1" type="description">A Wizard of Mars</reference>
-					<reference entity="318875313" number="5" tag="PATIENT-2" type="name">318875313</reference>
-				</references>
 				<text>A Wizard of Mars was written by Diane Duane and is published in Hardcover. The OCLC number of A Wizard of Mars is 318875313.</text>
 				<template>AGENT-1 was written by PATIENT-3 and is published in PATIENT-1 . The OCLC number of AGENT-1 is PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
-					<striple>A_Wizard_of_Mars | OCLC_number | 318875313</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Wizard_of_Mars" number="1" tag="AGENT-1" type="description">A Wizard of Mars</reference>
-					<reference entity="Diane_Duane" number="2" tag="PATIENT-3" type="name">Diane Duane</reference>
-					<reference entity="318875313" number="3" tag="PATIENT-2" type="name">318875313</reference>
-				</references>
 				<text>A Wizard of Mars, written by Diane Duane, has a OCLC number of 318875313.</text>
 				<template>AGENT-1 , written by PATIENT-3 , has a OCLC number of PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A_Wizard_of_Mars</entity>
 				<entity>PATIENT-1 | Hardcover</entity>
-				<entity>PATIENT-2 | 318875313</entity>
 				<entity>PATIENT-3 | Diane_Duane</entity>
+				<entity>PATIENT-2 | 318875313</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id18" size="3">
@@ -1005,55 +543,22 @@
 				<mtriple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
-					<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
-					<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Diane_Duane" number="1" tag="PATIENT-2" type="name">Diane Duane</reference>
-					<reference entity="A_Wizard_of_Mars" number="2" tag="AGENT-1" type="description">A Wizard of Mars</reference>
-					<reference entity="Hardcover" number="3" tag="PATIENT-1" type="name">hardcover</reference>
-					<reference entity="&quot;978-0-15-204770-2&quot;" number="4" tag="PATIENT-3" type="name">978-0-15 -204770-2</reference>
-				</references>
 				<text>Diane Duane wrote A Wizard of Mars which is published in hardcover and has the ISBN number 978-0-15-204770-2.</text>
 				<template>PATIENT-2 wrote AGENT-1 which is published in PATIENT-1 and has the ISBN number PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
-					<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
-					<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Hardcover" number="1" tag="PATIENT-1" type="description">The hardcover book</reference>
-					<reference entity="A_Wizard_of_Mars" number="2" tag="AGENT-1" type="description">A wizard of Mars</reference>
-					<reference entity="Diane_Duane" number="3" tag="PATIENT-2" type="name">Diane Duane</reference>
-					<reference entity="&quot;978-0-15-204770-2&quot;" number="4" tag="PATIENT-3" type="name">978-0-15 -204770-2</reference>
-				</references>
 				<text>The hardcover book. A wizard of Mars, was written by Diane Duane and has the ISBN number 978-0-15-204770-2.</text>
 				<template>PATIENT-1 . AGENT-1 , was written by PATIENT-2 and has the ISBN number PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A_Wizard_of_Mars | author | Diane_Duane</striple>
-					<striple>A_Wizard_of_Mars | mediaType | Hardcover</striple>
-					<striple>A_Wizard_of_Mars | ISBN_number | &quot;978-0-15-204770-2&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Wizard_of_Mars" number="1" tag="AGENT-1" type="description">A Wizard of Mars</reference>
-					<reference entity="Diane_Duane" number="2" tag="PATIENT-2" type="name">Diane Duane</reference>
-					<reference entity="Hardcover" number="3" tag="PATIENT-1" type="name">Hardcover</reference>
-					<reference entity="&quot;978-0-15-204770-2&quot;" number="4" tag="PATIENT-3" type="name">978-0-15 -204770-2</reference>
-				</references>
 				<text>A Wizard of Mars by Diane Duane is published in Hardcover ISBN 978-0-15-204770-2.</text>
 				<template>AGENT-1 by PATIENT-2 is published in PATIENT-1 ISBN PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A_Wizard_of_Mars</entity>
 				<entity>PATIENT-1 | Hardcover</entity>
-				<entity>PATIENT-2 | Diane_Duane</entity>
 				<entity>PATIENT-3 | &quot;978-0-15-204770-2&quot;</entity>
+				<entity>PATIENT-2 | Diane_Duane</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id19" size="3">
@@ -1062,59 +567,31 @@
 				<otriple>Above_the_Veil | precededBy | Aenir</otriple>
 				<otriple>Aenir | previousWork | Castle_(novel)</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Above_the_Veil | country | Australians</otriple>
+				<otriple>Above_the_Veil | previousWork | Aenir</otriple>
+				<otriple>Aenir | precededBy | Castle_(novel)</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Above_the_Veil | country | Australians</mtriple>
 				<mtriple>Above_the_Veil | precededBy | Aenir</mtriple>
 				<mtriple>Aenir | precededBy | Castle_(novel)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Above_the_Veil | country | Australians</striple>
-					<striple>Above_the_Veil | precededBy | Aenir</striple>
-					<striple>Aenir | precededBy | Castle_(novel)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Above_the_Veil" number="1" tag="AGENT-1" type="name">Above the Veil</reference>
-					<reference entity="Australians" number="2" tag="PATIENT-1" type="name">Australia</reference>
-					<reference entity="Aenir" number="3" tag="BRIDGE-1" type="name">Aenir</reference>
-					<reference entity="Castle_(novel)" number="4" tag="PATIENT-2" type="name">Castle</reference>
-				</references>
 				<text>Above the Veil, from Australia, is the third book in a series after Aenir and Castle.</text>
 				<template>AGENT-1 , from PATIENT-1 , is the third book in a series after BRIDGE-1 and PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Above_the_Veil | country | Australians</striple>
-					<striple>Above_the_Veil | precededBy | Aenir</striple>
-					<striple>Aenir | precededBy | Castle_(novel)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Above_the_Veil" number="1" tag="AGENT-1" type="name">Above the Veil</reference>
-					<reference entity="Australians" number="2" tag="PATIENT-1" type="name">Australia</reference>
-					<reference entity="Aenir" number="3" tag="BRIDGE-1" type="name">Aenir</reference>
-					<reference entity="Castle_(novel)" number="4" tag="PATIENT-2" type="description">the novel Castle</reference>
-				</references>
 				<text>Above the Veil, from Australia, is the sequel to Aenir, which followed the novel Castle.</text>
 				<template>AGENT-1 , from PATIENT-1 , is the sequel to BRIDGE-1 , which followed PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Above_the_Veil | country | Australians</striple>
-					<striple>Above_the_Veil | precededBy | Aenir</striple>
-					<striple>Aenir | precededBy | Castle_(novel)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Above_the_Veil" number="1" tag="AGENT-1" type="name">Above the Veil</reference>
-					<reference entity="Australians" number="2" tag="PATIENT-1" type="name">Australia</reference>
-					<reference entity="Aenir" number="3" tag="BRIDGE-1" type="name">Aenir</reference>
-					<reference entity="Castle_(novel)" number="4" tag="PATIENT-2" type="name">Castle</reference>
-				</references>
 				<text>Above the Veil is from Australia and was preceded by Aenir and Castle.</text>
 				<template>AGENT-1 is from PATIENT-1 and was preceded by BRIDGE-1 and PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Above_the_Veil</entity>
 				<entity>BRIDGE-1 | Aenir</entity>
+				<entity>AGENT-1 | Above_the_Veil</entity>
 				<entity>PATIENT-1 | Australians</entity>
 				<entity>PATIENT-2 | Castle_(novel)</entity>
 			</entitymap>
@@ -1125,60 +602,43 @@
 				<otriple>Acta_Mathematica_Hungarica | lccn | &quot;83646315&quot;</otriple>
 				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;1588-2632&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | lccn | 83646315</otriple>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;1588-2632&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;@en</otriple>
+				<otriple>Acta_Mathematica_Hungarica | lccn | 83646315</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | lccn | &quot;83646315&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</otriple>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;1588-2632&quot;</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Acta_Mathematica_Hungarica | LCCN_number | 83646315</mtriple>
 				<mtriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</mtriple>
 				<mtriple>Acta_Mathematica_Hungarica | ISSN_number | &quot;1588-2632&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
-					<striple>Acta_Mathematica_Hungarica | LCCN_number | 83646315</striple>
-					<striple>Acta_Mathematica_Hungarica | ISSN_number | &quot;1588-2632&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="name">Acta Mathematica Hungarica</reference>
-					<reference entity="&quot;Acta Math. Hungar.&quot;" number="2" tag="PATIENT-2" type="name">Acta Math . Hungar .</reference>
-					<reference entity="83646315" number="3" tag="PATIENT-1" type="name">83646315</reference>
-					<reference entity="&quot;1588-2632&quot;" number="4" tag="PATIENT-3" type="name">1588-2632</reference>
-				</references>
 				<text>Acta Mathematica Hungarica, or Acta Math. Hungar., has a LCCN number of 83646315 and a ISSN number of 1588-2632.</text>
 				<template>AGENT-1 , or PATIENT-2 , has a LCCN number of PATIENT-1 and a ISSN number of PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
-					<striple>Acta_Mathematica_Hungarica | LCCN_number | 83646315</striple>
-					<striple>Acta_Mathematica_Hungarica | ISSN_number | &quot;1588-2632&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Acta Math. Hungar.&quot;" number="2" tag="PATIENT-2" type="name">Acta Math . Hungar .</reference>
-					<reference entity="83646315" number="3" tag="PATIENT-1" type="name">83646315</reference>
-					<reference entity="&quot;1588-2632&quot;" number="4" tag="PATIENT-3" type="name">1588-2632</reference>
-				</references>
 				<text>Acta Mathematica Hungarica (abbreviated to Acta Math. Hungar.) has the LCCN number 83646315 and ISSN number 1588-2632.</text>
 				<template>AGENT-1 ( abbreviated to PATIENT-2 ) has the LCCN number PATIENT-1 and ISSN number PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
-					<striple>Acta_Mathematica_Hungarica | LCCN_number | 83646315</striple>
-					<striple>Acta_Mathematica_Hungarica | ISSN_number | &quot;1588-2632&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="name">Acta Mathematica Hungarica</reference>
-					<reference entity="&quot;Acta Math. Hungar.&quot;" number="2" tag="PATIENT-2" type="name">Acta Math .Hungar</reference>
-					<reference entity="83646315" number="3" tag="PATIENT-1" type="name">83646315</reference>
-					<reference entity="&quot;1588-2632&quot;" number="4" tag="PATIENT-3" type="name">1588-2632</reference>
-				</references>
 				<text>Acta Mathematica Hungarica, abbreviated to Acta Math.Hungar, has LCCN No. 83646315 and ISSN No. 1588-2632.</text>
 				<template>AGENT-1 , abbreviated to PATIENT-2 , has LCCN No . PATIENT-1 and ISSN No . PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acta_Mathematica_Hungarica</entity>
 				<entity>PATIENT-1 | 83646315</entity>
-				<entity>PATIENT-2 | &quot;Acta Math. Hungar.&quot;</entity>
 				<entity>PATIENT-3 | &quot;1588-2632&quot;</entity>
+				<entity>PATIENT-2 | &quot;Acta Math. Hungar.&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id21" size="3">
@@ -1187,62 +647,33 @@
 				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</otriple>
 				<otriple>Acta_Mathematica_Hungarica | issn | &quot;0236-5294&quot;</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;@en</otriple>
+				<otriple>Acta_Mathematica_Hungarica | discipline | Mathematics</otriple>
+				<otriple>Acta_Mathematica_Hungarica | issn | &quot;0236-5294&quot;</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</mtriple>
 				<mtriple>Acta_Mathematica_Hungarica | academicDiscipline | Mathematics</mtriple>
 				<mtriple>Acta_Mathematica_Hungarica | ISSN_number | &quot;0236-5294&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acta_Mathematica_Hungarica | ISSN_number | &quot;0236-5294&quot;</striple>
-					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
-					<striple>Acta_Mathematica_Hungarica | academicDiscipline | Mathematics</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="description">The Acta Mathematica Hungarica</reference>
-					<reference entity="&quot;Acta Math. Hungar.&quot;" number="3" tag="PATIENT-1" type="name">Acta Math</reference>
-					<reference entity="Acta_Mathematica_Hungarica" number="4" tag="AGENT-1" type="name">Hungar . It</reference>
-					<reference entity="Mathematics" number="5" tag="PATIENT-2" type="name">Math</reference>
-				</references>
 				<text>The Acta Mathematica Hungarica ISSN number is &quot;0236-5294&quot; and the abbreviation is Acta Math. Hungar. It comes under the academic discipline of Math.</text>
 				<template>AGENT-1 ISSN number is `` PATIENT-3 '' and the abbreviation is PATIENT-1 . AGENT-1 comes under the academic discipline of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acta_Mathematica_Hungarica | ISSN_number | &quot;0236-5294&quot;</striple>
-					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
-					<striple>Acta_Mathematica_Hungarica | academicDiscipline | Mathematics</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acta_Mathematica_Hungarica" number="1" tag="AGENT-1" type="description">The Acta Mathematica Hungarica</reference>
-					<reference entity="&quot;0236-5294&quot;" number="2" tag="PATIENT-3" type="name">0236-5294</reference>
-					<reference entity="Acta_Mathematica_Hungarica" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;Acta Math. Hungar.&quot;" number="4" tag="PATIENT-1" type="name">Acta Math . Hungar</reference>
-					<reference entity="Acta_Mathematica_Hungarica" number="5" tag="AGENT-1" type="pronoun">it</reference>
-					<reference entity="Mathematics" number="6" tag="PATIENT-2" type="description">the academic discipline of Mathematics</reference>
-				</references>
 				<text>The Acta Mathematica Hungarica has the ISSN number 0236-5294. It is also known as Acta Math. Hungar and it covers the academic discipline of Mathematics.</text>
 				<template>AGENT-1 has the ISSN number PATIENT-3 . AGENT-1 is also known as PATIENT-1 and AGENT-1 covers PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acta_Mathematica_Hungarica | abbreviation | &quot;Acta Math. Hungar.&quot;</striple>
-					<striple>Acta_Mathematica_Hungarica | academicDiscipline | Mathematics</striple>
-					<striple>Acta_Mathematica_Hungarica | ISSN_number | &quot;0236-5294&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Acta Math. Hungar.&quot;" number="2" tag="PATIENT-1" type="name">Acta Math . Hungar</reference>
-					<reference entity="Mathematics" number="3" tag="PATIENT-2" type="description">the academic discipline of Mathematics</reference>
-					<reference entity="&quot;0236-5294&quot;" number="4" tag="PATIENT-3" type="name">0236-5294</reference>
-				</references>
 				<text>Acta Mathematica Hungarica (also known as Acta Math. Hungar), covers the academic discipline of Mathematics and has the ISSN number 0236-5294.</text>
 				<template>AGENT-1 ( also known as PATIENT-1 ) , covers PATIENT-2 and has the ISSN number PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acta_Mathematica_Hungarica</entity>
 				<entity>PATIENT-1 | &quot;Acta Math. Hungar.&quot;</entity>
-				<entity>PATIENT-2 | Mathematics</entity>
 				<entity>PATIENT-3 | &quot;0236-5294&quot;</entity>
+				<entity>PATIENT-2 | Mathematics</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id22" size="3">
@@ -1257,39 +688,18 @@
 				<mtriple>Acta_Palaeontologica_Polonica | abbreviation | &quot;Acta Palaeontol. Pol.&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acta_Palaeontologica_Polonica | ISSN_number | &quot;1732-2421&quot;</striple>
-					<striple>Acta_Palaeontologica_Polonica | LCCN_number | 60040714</striple>
-					<striple>Acta_Palaeontologica_Polonica | abbreviation | &quot;Acta Palaeontol. Pol.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acta_Palaeontologica_Polonica" number="1" tag="AGENT-1" type="name">Acta Palaeontologica Polonica</reference>
-					<reference entity="&quot;1732-2421&quot;" number="2" tag="PATIENT-1" type="name">1732-2421</reference>
-					<reference entity="60040714" number="3" tag="PATIENT-2" type="name">60040714</reference>
-					<reference entity="&quot;Acta Palaeontol. Pol.&quot;" number="4" tag="PATIENT-3" type="name">Acta Palaeontol</reference>
-				</references>
 				<text>Acta Palaeontologica Polonica has the ISSN number 1732-2421 and an LCCN number of 60040714. The abbreviated name is Acta Palaeontol. Pol.</text>
 				<template>AGENT-1 has the ISSN number PATIENT-1 and an LCCN number of PATIENT-2 . The abbreviated name is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acta_Palaeontologica_Polonica | abbreviation | &quot;Acta Palaeontol. Pol.&quot;</striple>
-					<striple>Acta_Palaeontologica_Polonica | ISSN_number | &quot;1732-2421&quot;</striple>
-					<striple>Acta_Palaeontologica_Polonica | LCCN_number | 60040714</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Acta Palaeontol. Pol.&quot;" number="2" tag="PATIENT-3" type="name">Acta Palaeontol . Pol</reference>
-					<reference entity="&quot;1732-2421&quot;" number="3" tag="PATIENT-1" type="name">1732-2421</reference>
-					<reference entity="60040714" number="4" tag="PATIENT-2" type="name">60040714</reference>
-				</references>
 				<text>Acta Palaeontologica Polonica (abbreviated to Acta Palaeontol. Pol) has the ISSN number 1732-2421 and the LCCN number 60040714.</text>
 				<template>AGENT-1 ( abbreviated to PATIENT-3 ) has the ISSN number PATIENT-1 and the LCCN number PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acta_Palaeontologica_Polonica</entity>
 				<entity>PATIENT-1 | &quot;1732-2421&quot;</entity>
-				<entity>PATIENT-2 | 60040714</entity>
 				<entity>PATIENT-3 | &quot;Acta Palaeontol. Pol.&quot;</entity>
+				<entity>PATIENT-2 | 60040714</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id23" size="3">
@@ -1298,42 +708,29 @@
 				<otriple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</otriple>
 				<otriple>Addiction_(journal) | issn | &quot;0965-2140&quot;</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;@en</otriple>
+				<otriple>Addiction_(journal) | discipline | Addiction</otriple>
+				<otriple>Addiction_(journal) | issn | &quot;0965-2140&quot;</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Addiction_(journal) | academicDiscipline | Addiction</mtriple>
 				<mtriple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</mtriple>
 				<mtriple>Addiction_(journal) | ISSN_number | &quot;0965-2140&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</striple>
-					<striple>Addiction_(journal) | ISSN_number | &quot;0965-2140&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Addiction&quot;" number="1" tag="PATIENT-2" type="name">Addiction</reference>
-					<reference entity="&quot;0965-2140&quot;" number="3" tag="PATIENT-3" type="name">0965-2140</reference>
-				</references>
 				<text>Addiction is the abbreviated version of the &quot;Addiction Journal&quot; which has the ISSN number 0965-2140.</text>
 				<template>PATIENT-2 is the abbreviated version of `` AGENT-1 '' which has the ISSN number PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Addiction_(journal) | academicDiscipline | Addiction</striple>
-					<striple>Addiction_(journal) | abbreviation | &quot;Addiction&quot;</striple>
-					<striple>Addiction_(journal) | ISSN_number | &quot;0965-2140&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Addiction&quot;" number="2" tag="PATIENT-2" type="name">Addiction</reference>
-					<reference entity="Addiction_(journal)" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;0965-2140&quot;" number="4" tag="PATIENT-3" type="name">0965-2140</reference>
-				</references>
 				<text>Addiction journal (abbreviated to Addiction) is about addiction. It has the ISSN number 0965-2140.</text>
 				<template>PATIENT-1 ( abbreviated to PATIENT-2 ) is about addiction . AGENT-1 has the ISSN number PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Addiction_(journal)</entity>
 				<entity>PATIENT-1 | Addiction</entity>
-				<entity>PATIENT-2 | &quot;Addiction&quot;</entity>
 				<entity>PATIENT-3 | &quot;0965-2140&quot;</entity>
+				<entity>PATIENT-2 | &quot;Addiction&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id24" size="3">
@@ -1342,62 +739,33 @@
 				<otriple>Aenir | author | Garth_Nix</otriple>
 				<otriple>Aenir | mediaType | &quot;Print&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aenir | author | Garth_Nix</otriple>
+				<otriple>Aenir | mediaType | &quot;Print&quot;@en</otriple>
+				<otriple>Aenir | oclc | 45644811</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Aenir | OCLC_number | 45644811</mtriple>
 				<mtriple>Aenir | author | Garth_Nix</mtriple>
 				<mtriple>Aenir | mediaType | &quot;Print&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Aenir | author | Garth_Nix</striple>
-					<striple>Aenir | mediaType | &quot;Print&quot;</striple>
-					<striple>Aenir | OCLC_number | 45644811</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aenir" number="1" tag="AGENT-1" type="name">Aenir</reference>
-					<reference entity="Garth_Nix" number="2" tag="PATIENT-2" type="name">Garth Nix</reference>
-					<reference entity="&quot;Print&quot;" number="3" tag="PATIENT-3" type="name">print</reference>
-					<reference entity="45644811" number="4" tag="PATIENT-1" type="name">45644811</reference>
-				</references>
 				<text>Aenir, written by Garth Nix, was produced in print and has the OCLC number 45644811.</text>
 				<template>AGENT-1 , written by PATIENT-2 , was produced in PATIENT-3 and has the OCLC number PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Aenir | author | Garth_Nix</striple>
-					<striple>Aenir | mediaType | &quot;Print&quot;</striple>
-					<striple>Aenir | OCLC_number | 45644811</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aenir" number="1" tag="AGENT-1" type="name">Aenir</reference>
-					<reference entity="Garth_Nix" number="2" tag="PATIENT-2" type="name">Garth Nix</reference>
-					<reference entity="&quot;Print&quot;" number="3" tag="PATIENT-3" type="name">print</reference>
-					<reference entity="Aenir" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="45644811" number="5" tag="PATIENT-1" type="name">45644811</reference>
-				</references>
 				<text>Aenir was written by Garth Nix and produced in print. It has an OCLC number of 45644811.</text>
 				<template>AGENT-1 was written by PATIENT-2 and produced in PATIENT-3 . AGENT-1 has an OCLC number of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Aenir | OCLC_number | 45644811</striple>
-					<striple>Aenir | author | Garth_Nix</striple>
-					<striple>Aenir | mediaType | &quot;Print&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aenir" number="1" tag="AGENT-1" type="name">Aenir</reference>
-					<reference entity="45644811" number="2" tag="PATIENT-1" type="name">45644811</reference>
-					<reference entity="Garth_Nix" number="3" tag="PATIENT-2" type="name">author Garth Nix</reference>
-					<reference entity="&quot;Print&quot;" number="4" tag="PATIENT-3" type="name">print</reference>
-				</references>
 				<text>Aenir, OCLC number 45644811, by author Garth Nix is available in print.</text>
 				<template>AGENT-1 , OCLC number PATIENT-1 , by PATIENT-2 is available in PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Aenir</entity>
 				<entity>PATIENT-1 | 45644811</entity>
-				<entity>PATIENT-2 | Garth_Nix</entity>
 				<entity>PATIENT-3 | &quot;Print&quot;</entity>
+				<entity>PATIENT-2 | Garth_Nix</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id25" size="3">
@@ -1412,51 +780,22 @@
 				<mtriple>Aenir | ISBN_number | &quot;0-439-17684-0&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Aenir | ISBN_number | &quot;0-439-17684-0&quot;</striple>
-					<striple>Aenir | author | Garth_Nix</striple>
-					<striple>Aenir | mediaType | &quot;Print&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aenir" number="1" tag="AGENT-1" type="name">Aenir</reference>
-					<reference entity="Garth_Nix" number="4" tag="PATIENT-1" type="name">Garth Nix</reference>
-					<reference entity="&quot;Print&quot;" number="5" tag="PATIENT-2" type="name">print</reference>
-				</references>
 				<text>Aenir has the ISBN number of &quot;0-439-17684-0&quot;, it was written by Garth Nix and was produced in print.</text>
 				<template>AGENT-1 has the ISBN number of `` PATIENT-3 '' , AGENT-1 was written by PATIENT-1 and was produced in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Aenir | author | Garth_Nix</striple>
-					<striple>Aenir | ISBN_number | &quot;0-439-17684-0&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Garth_Nix" number="1" tag="PATIENT-1" type="name">Garth Nix</reference>
-					<reference entity="Aenir" number="2" tag="AGENT-1" type="name">Aenir</reference>
-					<reference entity="Aenir" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;0-439-17684-0&quot;" number="4" tag="PATIENT-3" type="name">0-439-17684 -0</reference>
-				</references>
 				<text>Garth Nix is the author of Aenir. It can be found by ISBN number 0-439-17684-0.</text>
 				<template>PATIENT-1 is the author of AGENT-1 . AGENT-1 can be found by ISBN number PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Aenir | author | Garth_Nix</striple>
-					<striple>Aenir | ISBN_number | &quot;0-439-17684-0&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aenir" number="1" tag="AGENT-1" type="name">Aenir</reference>
-					<reference entity="Garth_Nix" number="2" tag="PATIENT-1" type="name">Garth Nix</reference>
-					<reference entity="&quot;0-439-17684-0&quot;" number="3" tag="PATIENT-3" type="name">0-439-17684 -0</reference>
-				</references>
 				<text>Aenir was written by Garth Nix and has a ISBN number of 0-439-17684-0.</text>
 				<template>AGENT-1 was written by PATIENT-1 and has a ISBN number of PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Aenir</entity>
 				<entity>PATIENT-1 | Garth_Nix</entity>
-				<entity>PATIENT-2 | &quot;Print&quot;</entity>
 				<entity>PATIENT-3 | &quot;0-439-17684-0&quot;</entity>
+				<entity>PATIENT-2 | &quot;Print&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id26" size="3">
@@ -1465,60 +804,33 @@
 				<otriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</otriple>
 				<otriple>American_Journal_of_Mathematics | issn | &quot;1080-6377&quot;</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;@en</otriple>
+				<otriple>American_Journal_of_Mathematics | discipline | Mathematics</otriple>
+				<otriple>American_Journal_of_Mathematics | issn | &quot;1080-6377&quot;</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</mtriple>
 				<mtriple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</mtriple>
 				<mtriple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
-					<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
-					<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="American_Journal_of_Mathematics" number="1" tag="AGENT-1" type="description">The American Journal of Mathematics</reference>
-					<reference entity="&quot;Am. J. Math.&quot;" number="2" tag="PATIENT-1" type="name">Am .J .Math</reference>
-					<reference entity="Mathematics" number="3" tag="PATIENT-2" type="name">Mathematics</reference>
-					<reference entity="&quot;1080-6377&quot;" number="4" tag="PATIENT-3" type="name">1080-6377</reference>
-				</references>
 				<text>The American Journal of Mathematics, abbreviated to Am.J.Math, whose academic discipline is Mathematics has ISSN No. 1080-6377.</text>
 				<template>AGENT-1 , abbreviated to PATIENT-1 , whose academic discipline is PATIENT-2 has ISSN No . PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
-					<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
-					<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Am. J. Math.&quot;" number="1" tag="PATIENT-1" type="name">Am . J . Math</reference>
-					<reference entity="American_Journal_of_Mathematics" number="2" tag="AGENT-1" type="description">the American Journal of Mathematics</reference>
-					<reference entity="&quot;1080-6377&quot;" number="3" tag="PATIENT-3" type="name">1080-6377</reference>
-					<reference entity="Mathematics" number="4" tag="PATIENT-2" type="name">Math</reference>
-				</references>
 				<text>Am. J. Math is the abbreviation for the American Journal of Mathematics with the ISSN number of 1080-6377 in the discipline of Math.</text>
 				<template>PATIENT-1 is the abbreviation for AGENT-1 with the ISSN number of PATIENT-3 in the discipline of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>American_Journal_of_Mathematics | academicDiscipline | Mathematics</striple>
-					<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
-					<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="American_Journal_of_Mathematics" number="1" tag="AGENT-1" type="description">The American Journal of Mathematics </reference>
-					<reference entity="&quot;Am. J. Math.&quot;" number="3" tag="PATIENT-1" type="name">Am . J . Math</reference>
-					<reference entity="&quot;1080-6377&quot;" number="4" tag="PATIENT-3" type="name">1080-6377</reference>
-				</references>
 				<text>The American Journal of Mathematics (discipline Mathematics) is also known by the abbreviated title of Am. J. Math and has the ISSN number 1080-6377.</text>
 				<template>AGENT-1 ( PATIENT-2 ) is also known by the abbreviated title of PATIENT-1 and has the ISSN number PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | American_Journal_of_Mathematics</entity>
 				<entity>PATIENT-1 | &quot;Am. J. Math.&quot;</entity>
-				<entity>PATIENT-2 | Mathematics</entity>
 				<entity>PATIENT-3 | &quot;1080-6377&quot;</entity>
+				<entity>PATIENT-2 | Mathematics</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id27" size="3">
@@ -1533,55 +845,22 @@
 				<mtriple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>American_Journal_of_Mathematics | firstPublicationYear | 1878</striple>
-					<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="American_Journal_of_Mathematics" number="1" tag="AGENT-1" type="description">The American Journal of Mathematics</reference>
-					<reference entity="1878" number="2" tag="PATIENT-2" type="name">1878</reference>
-					<reference entity="&quot;Am. J. Math.&quot;" number="3" tag="PATIENT-1" type="name">Am</reference>
-					<reference entity="American_Journal_of_Mathematics" number="4" tag="AGENT-1" type="name">J . Math . It</reference>
-					<reference entity="&quot;1080-6377&quot;" number="5" tag="PATIENT-3" type="name">1080-6377</reference>
-				</references>
 				<text>The American Journal of Mathematics was first published in 1878 and is also known by the abbreviated title of Am. J. Math. It has an ISSN number of 1080-6377.</text>
 				<template>AGENT-1 was first published in PATIENT-2 and is also known by the abbreviated title of PATIENT-1. AGENT-1 has an ISSN number of PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>American_Journal_of_Mathematics | firstPublicationYear | 1878</striple>
-					<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
-					<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="American_Journal_of_Mathematics" number="1" tag="AGENT-1" type="description">The American Journal of Mathematics</reference>
-					<reference entity="1878" number="2" tag="PATIENT-2" type="name">1878</reference>
-					<reference entity="&quot;Am. J. Math.&quot;" number="3" tag="PATIENT-1" type="description">the abbreviation Am . J . Math .</reference>
-					<reference entity="&quot;1080-6377&quot;" number="4" tag="PATIENT-3" type="name">1080-6377</reference>
-				</references>
 				<text>The American Journal of Mathematics was first published in 1878 and has the abbreviation Am. J. Math.. The ISSN number for the journal is 1080-6377.</text>
 				<template>AGENT-1 was first published in PATIENT-2 and has PATIENT-1 . The ISSN number for the journal is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>American_Journal_of_Mathematics | abbreviation | &quot;Am. J. Math.&quot;</striple>
-					<striple>American_Journal_of_Mathematics | firstPublicationYear | 1878</striple>
-					<striple>American_Journal_of_Mathematics | ISSN_number | &quot;1080-6377&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Am. J. Math.&quot;" number="1" tag="PATIENT-1" type="name">Am . J . Math</reference>
-					<reference entity="American_Journal_of_Mathematics" number="2" tag="AGENT-1" type="description">the American Journal of Mathematics</reference>
-					<reference entity="1878" number="3" tag="PATIENT-2" type="name">1878</reference>
-					<reference entity="&quot;1080-6377&quot;" number="4" tag="PATIENT-3" type="name">1080-6377</reference>
-				</references>
 				<text>Also known by the abbreviated title of Am. J. Math, the American Journal of Mathematics was first published in 1878 and has the ISSN number 1080-6377.</text>
 				<template>Also known by the abbreviated title of PATIENT-1 , AGENT-1 was first published in PATIENT-2 and has the ISSN number PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | American_Journal_of_Mathematics</entity>
 				<entity>PATIENT-1 | &quot;Am. J. Math.&quot;</entity>
-				<entity>PATIENT-2 | 1878</entity>
 				<entity>PATIENT-3 | &quot;1080-6377&quot;</entity>
+				<entity>PATIENT-2 | 1878</entity>
 			</entitymap>
 		</entry>
 		<entry category="WrittenWork" eid="Id28" size="3">
@@ -1590,58 +869,31 @@
 				<otriple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;@en</otriple>
 				<otriple>Administrative_Science_Quarterly | publisher | SAGE_Publications</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>SAGE_Publications | founder | Sara_Miller_McCune</otriple>
+				<otriple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</otriple>
+				<otriple>Administrative_Science_Quarterly | publisher | SAGE_Publications</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>SAGE_Publications | founder | Sara_Miller_McCune</mtriple>
 				<mtriple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</mtriple>
 				<mtriple>Administrative_Science_Quarterly | publisher | SAGE_Publications</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</striple>
-					<striple>Administrative_Science_Quarterly | publisher | SAGE_Publications</striple>
-					<striple>SAGE_Publications | founder | Sara_Miller_McCune</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Administrative_Science_Quarterly" number="1" tag="AGENT-1" type="name">Administrative Science Quarterly </reference>
-					<reference entity="SAGE_Publications" number="3" tag="BRIDGE-1" type="name">SAGE Publications</reference>
-					<reference entity="Sara_Miller_McCune" number="4" tag="PATIENT-1" type="name">Sara Miller McCune</reference>
-				</references>
 				<text>Administrative Science Quarterly (Admin. Sci. Q) is published by SAGE Publications which was founded by Sara Miller McCune.</text>
 				<template>AGENT-1 ( PATIENT-2 ) is published by BRIDGE-1 which was founded by PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Administrative_Science_Quarterly | abbreviation | &quot;Admin. Sci. Q.&quot;</striple>
-					<striple>Administrative_Science_Quarterly | publisher | SAGE_Publications</striple>
-					<striple>SAGE_Publications | founder | Sara_Miller_McCune</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Administrative_Science_Quarterly" number="1" tag="AGENT-1" type="name">Administrative Science Quarterly </reference>
-					<reference entity="SAGE_Publications" number="3" tag="BRIDGE-1" type="name">SAGE</reference>
-					<reference entity="Administrative_Science_Quarterly" number="4" tag="AGENT-1" type="name">Publications who 's</reference>
-					<reference entity="Sara_Miller_McCune" number="5" tag="PATIENT-1" type="name">Sara Miller McCune</reference>
-				</references>
 				<text>Administrative Science Quarterly ( Admin. Sci. Q,) is published by SAGE Publications who's founder is Sara Miller McCune.</text>
 				<template>AGENT-1 ( PATIENT-2 , ) is published by BRIDGE-1 AGENT-1 founder is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>SAGE_Publications | founder | Sara_Miller_McCune</striple>
-					<striple>Administrative_Science_Quarterly | publisher | SAGE_Publications</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Sara_Miller_McCune" number="1" tag="PATIENT-1" type="name">Sara Miller McCune</reference>
-					<reference entity="SAGE_Publications" number="2" tag="BRIDGE-1" type="name">SAGE publications</reference>
-					<reference entity="Administrative_Science_Quarterly" number="3" tag="AGENT-1" type="description">the Administrative Science Quarterly</reference>
-					<reference entity="Administrative_Science_Quarterly" number="4" tag="AGENT-1" type="description">the Administrative Science Quarterly</reference>
-					<reference entity="&quot;Admin. Sci. Q.&quot;" number="5" tag="PATIENT-2" type="name">Admin</reference>
-				</references>
 				<text>Sara Miller McCune is the founder of SAGE publications which publishes the Administrative Science Quarterly. The abbreviation for the Administrative Science Quarterly is Admin. Sci. Q.</text>
 				<template>PATIENT-1 is the founder of BRIDGE-1 which publishes AGENT-1 . The abbreviation for AGENT-1 is PATIENT-2.</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Administrative_Science_Quarterly</entity>
 				<entity>BRIDGE-1 | SAGE_Publications</entity>
+				<entity>AGENT-1 | Administrative_Science_Quarterly</entity>
 				<entity>PATIENT-1 | Sara_Miller_McCune</entity>
 				<entity>PATIENT-2 | &quot;Admin. Sci. Q.&quot;</entity>
 			</entitymap>
@@ -1652,60 +904,31 @@
 				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
 				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>United_Kingdom | leaderName | David_Cameron</otriple>
+				<otriple>AIDS_(journal) | country | United_Kingdom</otriple>
+				<otriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>United_Kingdom | leaderName | David_Cameron</mtriple>
 				<mtriple>AIDS_(journal) | country | United_Kingdom</mtriple>
 				<mtriple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
-					<striple>AIDS_(journal) | country | United_Kingdom</striple>
-					<striple>United_Kingdom | leaderName | David_Cameron</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AIDS_(journal)" number="1" tag="AGENT-1" type="description">The AIDS  (journal )</reference>
-					<reference entity="Lippincott_Williams_&amp;_Wilkins" number="2" tag="PATIENT-2" type="name">Lippincott Williams &amp; Wilkins</reference>
-					<reference entity="United_Kingdom" number="3" tag="BRIDGE-1" type="description">the United Kingdom</reference>
-					<reference entity="David_Cameron" number="4" tag="PATIENT-1" type="name">David Cameron</reference>
-				</references>
 				<text>The AIDS (journal), is published by Lippincott Williams &amp; Wilkins who are based in the United Kingdom which is where David Cameron is the leader.</text>
 				<template>AGENT-1 , is published by PATIENT-2 who are based in BRIDGE-1 which is where PATIENT-1 is the leader .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
-					<striple>AIDS_(journal) | country | United_Kingdom</striple>
-					<striple>United_Kingdom | leaderName | David_Cameron</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AIDS_(journal)" number="1" tag="AGENT-1" type="description">The AIDS journal</reference>
-					<reference entity="Lippincott_Williams_&amp;_Wilkins" number="2" tag="PATIENT-2" type="name">Lippincott , Williams &amp; Wilkins</reference>
-					<reference entity="United_Kingdom" number="3" tag="BRIDGE-1" type="description">the UK</reference>
-					<reference entity="David_Cameron" number="4" tag="PATIENT-1" type="name">David Cameron</reference>
-				</references>
 				<text>The AIDS journal was published by Lippincott, Williams &amp; Wilkins in the UK. David Cameron is the leader.</text>
 				<template>AGENT-1 was published by PATIENT-2 in BRIDGE-1 . PATIENT-1 is the leader .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>AIDS_(journal) | publisher | Lippincott_Williams_&amp;_Wilkins</striple>
-					<striple>AIDS_(journal) | country | United_Kingdom</striple>
-					<striple>United_Kingdom | leaderName | David_Cameron</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AIDS_(journal)" number="1" tag="AGENT-1" type="description">The AIDS  (journal )</reference>
-					<reference entity="Lippincott_Williams_&amp;_Wilkins" number="2" tag="PATIENT-2" type="name">Lippincott Williams &amp; Wilkins</reference>
-					<reference entity="AIDS_(journal)" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="United_Kingdom" number="4" tag="BRIDGE-1" type="description">the United Kingdom</reference>
-					<reference entity="David_Cameron" number="5" tag="PATIENT-1" type="name">David Cameron</reference>
-				</references>
 				<text>The AIDS (journal) is published by Lippincott Williams &amp; Wilkins. It was published in the United Kingdom, which leader is David Cameron.</text>
 				<template>AGENT-1 is published by PATIENT-2 . AGENT-1 was published in BRIDGE-1 , which leader is PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | AIDS_(journal)</entity>
 				<entity>BRIDGE-1 | United_Kingdom</entity>
+				<entity>AGENT-1 | AIDS_(journal)</entity>
 				<entity>PATIENT-1 | David_Cameron</entity>
 				<entity>PATIENT-2 | Lippincott_Williams_&amp;_Wilkins</entity>
 			</entitymap>
@@ -1722,56 +945,20 @@
 				<mtriple>A_Fortress_of_Grey_Ice | country | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
-					<striple>United_States | leaderName | Barack_Obama</striple>
-					<striple>United_States | ethnicGroup | African_Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A_Fortress_of_Grey_Ice" number="1" tag="AGENT-1" type="description">A Fortress of Grey Ice</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
-					<reference entity="Barack_Obama" number="3" tag="PATIENT-2" type="name">Barack Obama</reference>
-					<reference entity="African_Americans" number="4" tag="PATIENT-1" type="description">the African Americans</reference>
-				</references>
 				<text>A Fortress of Grey Ice is from the United States where Barack Obama is the leader and the African Americans are one of the ethnic groups.</text>
 				<template>AGENT-1 is from BRIDGE-1 where PATIENT-2 is the leader and PATIENT-1 are one of the ethnic groups .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>United_States | leaderName | Barack_Obama</striple>
-					<striple>United_States | ethnicGroup | African_Americans</striple>
-					<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Barack_Obama" number="1" tag="PATIENT-2" type="name">Barack Obama</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the US</reference>
-					<reference entity="African_Americans" number="3" tag="PATIENT-1" type="name">African American</reference>
-					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the United States</reference>
-					<reference entity="A_Fortress_of_Grey_Ice" number="5" tag="AGENT-1" type="description">A Fortress of Grey Ice</reference>
-					<reference entity="United_States" number="6" tag="BRIDGE-1" type="description">the US</reference>
-				</references>
 				<text>Barack Obama is both president of the US and African American, which is an ethnic group of the United States. A Fortress of Grey Ice originates from the US.</text>
 				<template>PATIENT-2 is both president of BRIDGE-1 and PATIENT-1 , which is an ethnic group of BRIDGE-1 . AGENT-1 originates from BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>United_States | ethnicGroup | African_Americans</striple>
-					<striple>United_States | leaderName | Barack_Obama</striple>
-					<striple>A_Fortress_of_Grey_Ice | country | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States" number="1" tag="BRIDGE-1" type="description">the United States ,</reference>
-					<reference entity="African_Americans" number="2" tag="PATIENT-1" type="name">African American</reference>
-					<reference entity="Barack_Obama" number="3" tag="PATIENT-2" type="name">Barack Obama</reference>
-					<reference entity="United_States" number="4" tag="BRIDGE-1" type="pronoun">it</reference>
-					<reference entity="A_Fortress_of_Grey_Ice" number="5" tag="AGENT-1" type="description">A Fortress of Grey Ice</reference>
-				</references>
 				<text>In the United States, one of the ethnic groups is African American, Barack Obama is President and it is where A Fortress of Grey Ice originates.</text>
 				<template>In BRIDGE-1 one of the ethnic groups is PATIENT-1 , PATIENT-2 is President and BRIDGE-1 is where AGENT-1 originates .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A_Fortress_of_Grey_Ice</entity>
 				<entity>BRIDGE-1 | United_States</entity>
+				<entity>AGENT-1 | A_Fortress_of_Grey_Ice</entity>
 				<entity>PATIENT-1 | African_Americans</entity>
 				<entity>PATIENT-2 | Barack_Obama</entity>
 			</entitymap>
@@ -1788,59 +975,23 @@
 				<mtriple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>United_States | language | English_language</striple>
-					<striple>United_States | ethnicGroup | Asian_Americans</striple>
-					<striple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States" number="1" tag="BRIDGE-1" type="description">the</reference>
-					<reference entity="English_language" number="2" tag="PATIENT-2" type="name">United States , English</reference>
-					<reference entity="Asian_Americans" number="3" tag="PATIENT-1" type="name">Asian Americans</reference>
-					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="4" tag="AGENT-1" type="description">the book Alcatraz versus the Evil Librarians</reference>
-				</references>
 				<text>In the United States, English is the language, Asian Americans are an ethnic group and the book Alcatraz versus the Evil Librarians was written.</text>
 				<template>In BRIDGE-1 PATIENT-2 is the language , PATIENT-1 are an ethnic group and AGENT-1 was written .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</striple>
-					<striple>United_States | language | English_language</striple>
-					<striple>United_States | ethnicGroup | Asian_Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="1" tag="AGENT-1" type="name">Alcatraz Versus the Evil Librarians</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">The United States</reference>
-					<reference entity="English_language" number="3" tag="PATIENT-2" type="name">English</reference>
-					<reference entity="Asian_Americans" number="4" tag="PATIENT-1" type="description">the Asian Americans</reference>
-				</references>
 				<text>Alcatraz Versus the Evil Librarians is from The United States where English is spoken and the Asian Americans are an ethnic group.</text>
 				<template>AGENT-1 is from BRIDGE-1 where PATIENT-2 is spoken and PATIENT-1 are an ethnic group .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Alcatraz_Versus_the_Evil_Librarians | country | United_States</striple>
-					<striple>United_States | language | English_language</striple>
-					<striple>United_States | ethnicGroup | Asian_Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alcatraz_Versus_the_Evil_Librarians" number="1" tag="AGENT-1" type="description">The book Alcatraz Versus the Evil Librarians</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
-					<reference entity="English_language" number="3" tag="PATIENT-2" type="name">English</reference>
-					<reference entity="Asian_Americans" number="4" tag="PATIENT-1" type="name">Asian Americans</reference>
-					<reference entity="United_States" number="5" tag="BRIDGE-1" type="description">the United States</reference>
-				</references>
 				<text>The book Alcatraz Versus the Evil Librarians comes from the United States where English is the primary language. Additionally, Asian Americans is one of the ethnic groups in the United States.</text>
 				<template>AGENT-1 comes from BRIDGE-1 where PATIENT-2 is the primary language . Additionally , PATIENT-1 is one of the ethnic groups in BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Alcatraz_Versus_the_Evil_Librarians</entity>
 				<entity>BRIDGE-1 | United_States</entity>
+				<entity>AGENT-1 | Alcatraz_Versus_the_Evil_Librarians</entity>
 				<entity>PATIENT-1 | Asian_Americans</entity>
 				<entity>PATIENT-2 | English_language</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

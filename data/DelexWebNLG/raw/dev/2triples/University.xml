@@ -11,29 +11,10 @@
 				<mtriple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology 's</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="2" tag="PATIENT-2" type="name">Soldevanahalli , Acharya Dr . Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore – 560090</reference>
-					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="3" tag="PATIENT-1" type="name">Dr</reference>
-				</references>
 				<text>Acharya Institute of Technology's campus is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090 and the director is Dr. G. P. Prabhukumar.</text>
 				<template>AGENT-1 campus is located in PATIENT-2 and the director is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
-					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="2" tag="PATIENT-1" type="name">Dr G P Prabhukumar</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="description">The campus</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="4" tag="PATIENT-2" type="name">In Soldevanahalli , Acharya Dr</reference>
-				</references>
 				<text>The director of the Acharya Institute of Technology is Dr G P Prabhukumar. The campus is located at In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore - 560090.</text>
 				<template>The director of AGENT-1 is PATIENT-1 . AGENT-1 is located at PATIENT-2 .</template>
 			</lex>
@@ -53,42 +34,14 @@
 				<mtriple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
-					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="All_India_Council_for_Technical_Education" number="1" tag="PATIENT-2" type="description">The All India Council for Technical Education</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
-					<reference entity="&quot;Blue, White and Orange&quot;" number="3" tag="PATIENT-1" type="name">blue , white and orange</reference>
-				</references>
 				<text>The All India Council for Technical Education gave the Acharya Institute of Technology the status of &quot;Technical Campus&quot;. The official school colours are blue, white and orange.</text>
 				<template>PATIENT-2 gave AGENT-1 the status of `` Technical Campus '' . The official school colours are PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
-					<reference entity="&quot;Blue, White and Orange&quot;" number="2" tag="PATIENT-1" type="name">blue , white</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="name">orange and the school</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="All_India_Council_for_Technical_Education" number="5" tag="PATIENT-2" type="description">the All India Council</reference>
-				</references>
 				<text>The official school colours for Acharya Institute of Technology are blue, white and orange and the school got its Technical Campus status from the All India Council.</text>
 				<template>The official school colours for AGENT-1 are PATIENT-1 and AGENT-1 got AGENT-1 Technical Campus status from PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | officialSchoolColour | &quot;Blue, White and Orange&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | was given the 'Technical Campus' status by | All_India_Council_for_Technical_Education</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Blue, White and Orange&quot;" number="2" tag="PATIENT-1" type="name">blue , white and orange</reference>
-					<reference entity="All_India_Council_for_Technical_Education" number="3" tag="PATIENT-2" type="name">All India Council for Technical Education</reference>
-				</references>
 				<text>The Acharya Institute of Technology (official colour blue, white and orange) has been given the 'Technical Campus' status by All India Council for Technical Education.</text>
 				<template>AGENT-1 ( official colour PATIENT-1 ) has been given the ` Technical Campus ' status by PATIENT-2 .</template>
 			</lex>
@@ -108,35 +61,16 @@
 				<mtriple>Tennis | sportsGoverningBody | International_Tennis_Federation</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
-					<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="International_Tennis_Federation" number="1" tag="PATIENT-1" type="description">The International Tennis Federation</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
-					<reference entity="Tennis" number="3" tag="BRIDGE-1" type="name">tennis</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="description">the school</reference>
-				</references>
 				<text>The International Tennis Federation, which is the sport's governing body, has agreed to let Acharya Institute of Technology offer tennis at the school.</text>
 				<template>PATIENT-1 , which is the sport 's governing body , has agreed to let AGENT-1 offer BRIDGE-1 at AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Tennis | sportsGoverningBody | International_Tennis_Federation</striple>
-					<striple>Acharya_Institute_of_Technology | sportsOffered | Tennis</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Tennis" number="1" tag="BRIDGE-1" type="name">Tennis</reference>
-					<reference entity="International_Tennis_Federation" number="2" tag="PATIENT-1" type="description">the International Tennis Federation</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
-				</references>
 				<text>Tennis, as governed by the International Tennis Federation, is a sport offered at the Acharya Institute of Technology.</text>
 				<template>BRIDGE-1 , as governed by PATIENT-1 , is a sport offered at AGENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
 				<entity>BRIDGE-1 | Tennis</entity>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
 				<entity>PATIENT-1 | International_Tennis_Federation</entity>
 			</entitymap>
 		</entry>
@@ -145,53 +79,29 @@
 				<otriple>European_University_Association | headquarters | Brussels</otriple>
 				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliations | European_University_Association</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | affiliation | European_University_Association</otriple>
+				<otriple>European_University_Association | headquarters | Brussels</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>European_University_Association | headquarters | Brussels</mtriple>
 				<mtriple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
-					<striple>European_University_Association | headquarters | Brussels</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
-					<reference entity="European_University_Association" number="2" tag="BRIDGE-1" type="description">the European University Association</reference>
-					<reference entity="European_University_Association" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
-					<reference entity="Brussels" number="4" tag="PATIENT-1" type="name">Brussels</reference>
-				</references>
 				<text>The School of Business and Social Sciences at the Aarhus University is affiliated to the European University Association which has its headquarters in Brussels.</text>
 				<template>AGENT-1 is affiliated to BRIDGE-1 which has BRIDGE-1 headquarters in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
-					<striple>European_University_Association | headquarters | Brussels</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at Aarhus University</reference>
-					<reference entity="European_University_Association" number="2" tag="BRIDGE-1" type="description">the European University Association</reference>
-					<reference entity="Brussels" number="3" tag="PATIENT-1" type="name">Brussels</reference>
-				</references>
 				<text>The School of Business and Social Sciences at Aarhus University is affiliated with the European University Association in Brussels.</text>
 				<template>AGENT-1 is affiliated with BRIDGE-1 in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | affiliation | European_University_Association</striple>
-					<striple>European_University_Association | headquarters | Brussels</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="name">School of Business and Social Sciences at the Aarhus University</reference>
-					<reference entity="European_University_Association" number="2" tag="BRIDGE-1" type="description">the European University Association</reference>
-					<reference entity="Brussels" number="3" tag="PATIENT-1" type="name">Brussels</reference>
-				</references>
 				<text>School of Business and Social Sciences at the Aarhus University is affiliated with the European University Association and is located in Brussels.</text>
 				<template>AGENT-1 is affiliated with BRIDGE-1 and is located in PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
 				<entity>BRIDGE-1 | European_University_Association</entity>
+				<entity>AGENT-1 | School of Business and Social Sciences at the Aarhus University</entity>
 				<entity>PATIENT-1 | Brussels</entity>
 			</entitymap>
 		</entry>
@@ -205,53 +115,22 @@
 				<mtriple>Acharya_Institute_of_Technology | state | Karnataka</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
-					<striple>Karnataka | has to its west | Arabian_Sea</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institue of Technology</reference>
-					<reference entity="Karnataka" number="2" tag="BRIDGE-1" type="name">Karnataka</reference>
-					<reference entity="Arabian_Sea" number="3" tag="PATIENT-1" type="description">the Arabian Sea</reference>
-				</references>
 				<text>Acharya Institue of Technology is located in the state of Karnataka which has the Arabian Sea to the west.</text>
 				<template>AGENT-1 is located in the state of BRIDGE-1 which has PATIENT-1 to the west .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
-					<striple>Karnataka | has to its west | Arabian_Sea</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
-					<reference entity="Karnataka" number="2" tag="BRIDGE-1" type="name">Karnataka</reference>
-					<reference entity="Arabian_Sea" number="3" tag="PATIENT-1" type="description">the Arabian Sea</reference>
-					<reference entity="Karnataka" number="4" tag="BRIDGE-1" type="pronoun">its</reference>
-				</references>
 				<text>Acharya Institute of Technology is in the state of Karnataka which has the Arabian Sea to its west.</text>
 				<template>AGENT-1 is in the state of BRIDGE-1 which has PATIENT-1 to BRIDGE-1 west .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
-					<striple>Karnataka | has to its west | Arabian_Sea</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
-					<reference entity="Karnataka" number="2" tag="BRIDGE-1" type="name">Karnataka</reference>
-					<reference entity="Karnataka" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
-					<reference entity="Arabian_Sea" number="4" tag="PATIENT-1" type="description">the Arabian Sea</reference>
-				</references>
 				<text>Acharya Institute of Technology is located in the state of Karnataka, which has to its west the Arabian Sea.</text>
 				<template>AGENT-1 is located in the state of BRIDGE-1 , which has to BRIDGE-1 west PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
 				<entity>BRIDGE-1 | Karnataka</entity>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
 				<entity>PATIENT-1 | Arabian_Sea</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

@@ -7,61 +7,33 @@
 				<otriple>A.C._Cesena | league | Serie_B</otriple>
 				<otriple>A.C._Cesena | capacity | 23900</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>A.C._Cesena | ground | Cesena</otriple>
+				<otriple>A.C._Cesena | league | Serie_B</otriple>
+				<otriple>A.C._Cesena | capacity | &quot;23900&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>A.C._Cesena | ground | Cesena</mtriple>
 				<mtriple>A.C._Cesena | league | Serie_B</mtriple>
 				<mtriple>A.C._Cesena | numberOfMembers | 23900</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.C._Cesena | league | Serie_B</striple>
-					<striple>A.C._Cesena | numberOfMembers | 23900</striple>
-					<striple>A.C._Cesena | ground | Cesena</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.C._Cesena" number="1" tag="AGENT-1" type="description">A .C . Cesena</reference>
-					<reference entity="Serie_B" number="2" tag="PATIENT-2" type="description">the Serie B</reference>
-					<reference entity="23900" number="3" tag="PATIENT-3" type="name">23900</reference>
-					<reference entity="Cesena" number="4" tag="PATIENT-1" type="name">Cesena</reference>
-				</references>
 				<text>A.C. Cesena, in the Serie B League, has 23900 members and is located is Cesena.</text>
 				<template>AGENT-1 , in PATIENT-2 League , has PATIENT-3 members and is located is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.C._Cesena | ground | Cesena</striple>
-					<striple>A.C._Cesena | numberOfMembers | 23900</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.C._Cesena" number="1" tag="AGENT-1" type="name">AC Cesena 's</reference>
-					<reference entity="Cesena" number="2" tag="PATIENT-1" type="name">Cesena</reference>
-					<reference entity="23900" number="3" tag="PATIENT-3" type="name">23900</reference>
-					<reference entity="A.C._Cesena" number="4" tag="AGENT-1" type="description">The club</reference>
-					<reference entity="Serie_B" number="5" tag="PATIENT-2" type="name">Serie B</reference>
-				</references>
 				<text>AC Cesena's ground is in Cesena and they have 23900 members. The club plays in Serie B.</text>
 				<template>AGENT-1 ground is in PATIENT-1 and they have PATIENT-3 members . AGENT-1 plays in PATIENT-2.</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A.C._Cesena | numberOfMembers | 23900</striple>
-					<striple>A.C._Cesena | league | Serie_B</striple>
-					<striple>A.C._Cesena | ground | Cesena</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.C._Cesena" number="1" tag="AGENT-1" type="description">A .C . Cesena</reference>
-					<reference entity="23900" number="2" tag="PATIENT-3" type="name">23900</reference>
-					<reference entity="Serie_B" number="3" tag="PATIENT-2" type="description">the Serie B</reference>
-					<reference entity="Cesena" number="4" tag="PATIENT-1" type="name">Cesena</reference>
-				</references>
 				<text>A.C. Cesena, with 23900 members, is in the Serie B league and has a ground in Cesena.</text>
 				<template>AGENT-1 , with PATIENT-3 members , is in PATIENT-2 league and has a ground in PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A.C._Cesena</entity>
 				<entity>PATIENT-1 | Cesena</entity>
-				<entity>PATIENT-2 | Serie_B</entity>
 				<entity>PATIENT-3 | 23900</entity>
+				<entity>PATIENT-2 | Serie_B</entity>
 			</entitymap>
 		</entry>
 		<entry category="SportsTeam" eid="Id2" size="3">
@@ -76,56 +48,20 @@
 				<mtriple>Massimo_Drago | club | Calcio_Catania</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Massimo_Drago | club | S.S.D._Potenza_Calcio</striple>
-					<striple>Massimo_Drago | club | Calcio_Catania</striple>
-					<striple>A.C._Cesena | manager | Massimo_Drago</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Massimo_Drago" number="1" tag="BRIDGE-1" type="name">Massimo Drago</reference>
-					<reference entity="S.S.D._Potenza_Calcio" number="2" tag="PATIENT-1" type="description">the club SSD Potenza Calcio</reference>
-					<reference entity="Massimo_Drago" number="3" tag="BRIDGE-1" type="pronoun">his</reference>
-					<reference entity="Calcio_Catania" number="4" tag="PATIENT-2" type="name">Calcio Catania</reference>
-					<reference entity="Massimo_Drago" number="5" tag="BRIDGE-1" type="pronoun">He</reference>
-					<reference entity="A.C._Cesena" number="6" tag="AGENT-1" type="name">AC Cesena</reference>
-				</references>
 				<text>Massimo Drago played for the club SSD Potenza Calcio and his own club was Calcio Catania. He is currently managing AC Cesena.</text>
 				<template>BRIDGE-1 played for PATIENT-1 and BRIDGE-1 own club was PATIENT-2 . BRIDGE-1 is currently managing AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.C._Cesena | manager | Massimo_Drago</striple>
-					<striple>Massimo_Drago | club | S.S.D._Potenza_Calcio</striple>
-					<striple>Massimo_Drago | club | Calcio_Catania</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Massimo_Drago" number="1" tag="BRIDGE-1" type="name">Massimo Drago</reference>
-					<reference entity="A.C._Cesena" number="2" tag="AGENT-1" type="description">A .C . Cesena</reference>
-					<reference entity="S.S.D._Potenza_Calcio" number="3" tag="PATIENT-1" type="description">the club SSD Potenza Calcio</reference>
-					<reference entity="Massimo_Drago" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
-					<reference entity="Calcio_Catania" number="5" tag="PATIENT-2" type="name">club Calcio Catania</reference>
-				</references>
 				<text>Massimo Drago manages A.C. Cesena and played for the club SSD Potenza Calcio. He is also in club Calcio Catania.</text>
 				<template>BRIDGE-1 manages AGENT-1 and played for PATIENT-1 . BRIDGE-1 is also in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Massimo_Drago | club | S.S.D._Potenza_Calcio</striple>
-					<striple>Massimo_Drago | club | Calcio_Catania</striple>
-					<striple>A.C._Cesena | manager | Massimo_Drago</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Massimo_Drago" number="1" tag="BRIDGE-1" type="name">Massimo Drago</reference>
-					<reference entity="S.S.D._Potenza_Calcio" number="2" tag="PATIENT-1" type="name">S .S .D . Potenza Calcio</reference>
-					<reference entity="Calcio_Catania" number="3" tag="PATIENT-2" type="name">Calcio Catania</reference>
-					<reference entity="A.C._Cesena" number="4" tag="AGENT-1" type="description">A</reference>
-				</references>
 				<text>Massimo Drago played for S.S.D. Potenza Calcio and now plays for Calcio Catania while managing A.C. Cesena.</text>
 				<template>BRIDGE-1 played for PATIENT-1 and now plays for PATIENT-2 while managing AGENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A.C._Cesena</entity>
 				<entity>BRIDGE-1 | Massimo_Drago</entity>
+				<entity>AGENT-1 | A.C._Cesena</entity>
 				<entity>PATIENT-1 | S.S.D._Potenza_Calcio</entity>
 				<entity>PATIENT-2 | Calcio_Catania</entity>
 			</entitymap>
@@ -136,63 +72,33 @@
 				<otriple>A.C._Lumezzane | season | 2014</otriple>
 				<otriple>A.C._Lumezzane | capacity | 4150</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>A.C._Lumezzane | league | &quot;Lega Pro/A&quot;@en</otriple>
+				<otriple>A.C._Lumezzane | season | 2014</otriple>
+				<otriple>A.C._Lumezzane | capacity | &quot;4150&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>A.C._Lumezzane | league | &quot;Lega Pro/A&quot;</mtriple>
 				<mtriple>A.C._Lumezzane | season | 2014</mtriple>
 				<mtriple>A.C._Lumezzane | numberOfMembers | 4150</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.C._Lumezzane | numberOfMembers | 4150</striple>
-					<striple>A.C._Lumezzane | league | &quot;Lega Pro/A&quot;</striple>
-					<striple>A.C._Lumezzane | season | 2014</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.C._Lumezzane" number="1" tag="AGENT-1" type="name">AC Lumezzane</reference>
-					<reference entity="4150" number="2" tag="PATIENT-3" type="name">4150</reference>
-					<reference entity="&quot;Lega Pro/A&quot;" number="3" tag="PATIENT-1" type="description">the Lega Pro/A</reference>
-					<reference entity="A.C._Lumezzane" number="4" tag="AGENT-1" type="pronoun">they</reference>
-					<reference entity="2014" number="5" tag="PATIENT-2" type="description">the 2014</reference>
-				</references>
 				<text>AC Lumezzane has 4150 members and is in the Lega Pro/A league where they played in the 2014 season.</text>
 				<template>AGENT-1 has PATIENT-3 members and is in PATIENT-1 league where AGENT-1 played in PATIENT-2 season .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.C._Lumezzane | season | 2014</striple>
-					<striple>A.C._Lumezzane | league | &quot;Lega Pro/A&quot;</striple>
-					<striple>A.C._Lumezzane | numberOfMembers | 4150</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="2014" number="1" tag="PATIENT-2" type="description">the</reference>
-					<reference entity="A.C._Lumezzane" number="2" tag="AGENT-1" type="name">2014 A .C . Lumezzane</reference>
-					<reference entity="A.C._Lumezzane" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;Lega Pro/A&quot;" number="4" tag="PATIENT-1" type="name">Lega Pro/A .</reference>
-					<reference entity="4150" number="5" tag="PATIENT-3" type="name">4150</reference>
-				</references>
 				<text>I am interested in the 2014 A.C. Lumezzane season. It plays in Lega Pro/A. and has 4150 members.</text>
 				<template>I am interested in PATIENT-2 AGENT-1 season . AGENT-1 plays in PATIENT-1 and has PATIENT-3 members .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A.C._Lumezzane | numberOfMembers | 4150</striple>
-					<striple>A.C._Lumezzane | league | &quot;Lega Pro/A&quot;</striple>
-					<striple>A.C._Lumezzane | season | 2014</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.C._Lumezzane" number="1" tag="AGENT-1" type="description">A .C Lumezzane</reference>
-					<reference entity="4150" number="2" tag="PATIENT-3" type="name">4150</reference>
-					<reference entity="&quot;Lega Pro/A&quot;" number="3" tag="PATIENT-1" type="description">the Lega Pro/A</reference>
-					<reference entity="2014" number="4" tag="PATIENT-2" type="description">the 2014</reference>
-				</references>
 				<text>A.C Lumezzane, with 4150 members, play in the Lega Pro/A, participating in the 2014 season.</text>
 				<template>AGENT-1 , with PATIENT-3 members , play in PATIENT-1 , participating in PATIENT-2 season .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A.C._Lumezzane</entity>
 				<entity>PATIENT-1 | &quot;Lega Pro/A&quot;</entity>
-				<entity>PATIENT-2 | 2014</entity>
 				<entity>PATIENT-3 | 4150</entity>
+				<entity>PATIENT-2 | 2014</entity>
 			</entitymap>
 		</entry>
 		<entry category="SportsTeam" eid="Id4" size="3">
@@ -201,29 +107,19 @@
 				<otriple>A.D._Isidro_Metapán | fullname | &quot;Isidro Metapán&quot;@en</otriple>
 				<otriple>A.D._Isidro_Metapán | capacity | 10000</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>A.D._Isidro_Metapán | ground | Estadio_Jorge_Calero_Suárez</otriple>
+				<otriple>A.D._Isidro_Metapán | fullname | &quot;Isidro Metapán&quot;@en</otriple>
+				<otriple>A.D._Isidro_Metapán | capacity | &quot;10000&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>A.D._Isidro_Metapán | ground | Estadio_Jorge_Calero_Suárez</mtriple>
 				<mtriple>A.D._Isidro_Metapán | fullname | &quot;Isidro Metapán&quot;</mtriple>
 				<mtriple>A.D._Isidro_Metapán | numberOfMembers | 10000</mtriple>
 			</modifiedtripleset>
-			<lex comment="toFix" lid="Id1">
-				<sortedtripleset/>
-				<references/>
-				<text/>
-				<template/>
-			</lex>
-			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
-				<references/>
-				<text/>
-				<template/>
-			</lex>
-			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
-				<references/>
-				<text/>
-				<template/>
-			</lex>
+			<lex comment="toFix" lid="Id1">A.D. Isidro Metapán are at Estadio Jorge Calero Suárez whose full name is Isidro Metapan and has 10000 members.</lex>
+			<lex comment="good" lid="Id2">A.D. Isidro Metapan, (full name, Isidro Metapan), has 10000 members and play their home games at the Estadio Jorge Caler0 Suarez stadium.</lex>
+			<lex comment="good" lid="Id3">Isidro Metapan (A.D. Isidro Metapan) has 10000 members and are at Estadio Jorge Calero Suarez.</lex>
 			<entitymap/>
 		</entry>
 		<entry category="SportsTeam" eid="Id5" size="3">
@@ -232,60 +128,31 @@
 				<otriple>Greece | leaderName | Nikos_Voutsis</otriple>
 				<otriple>Greece | leader | Prokopis_Pavlopoulos</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>A.E_Dimitra_Efxeinoupolis | location | Greece</otriple>
+				<otriple>Greece | leader | Nikos_Voutsis</otriple>
+				<otriple>Greece | leaderName | Prokopis_Pavlopoulos</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>A.E_Dimitra_Efxeinoupolis | location | Greece</mtriple>
 				<mtriple>Greece | leader | Nikos_Voutsis</mtriple>
 				<mtriple>Greece | leader | Prokopis_Pavlopoulos</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.E_Dimitra_Efxeinoupolis | location | Greece</striple>
-					<striple>Greece | leader | Nikos_Voutsis</striple>
-					<striple>Greece | leader | Prokopis_Pavlopoulos</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.E_Dimitra_Efxeinoupolis" number="1" tag="AGENT-1" type="description">The A .E Dimitra Efxeinoupolis club</reference>
-					<reference entity="Greece" number="2" tag="BRIDGE-1" type="name">Greece</reference>
-					<reference entity="Nikos_Voutsis" number="3" tag="PATIENT-1" type="name">Nikos Voutsis</reference>
-					<reference entity="Prokopis_Pavlopoulos" number="4" tag="PATIENT-2" type="name">Prokopis Pavlopoulos</reference>
-				</references>
 				<text>The A.E Dimitra Efxeinoupolis club is located in Greece, where there are leaders called Nikos Voutsis and Prokopis Pavlopoulos.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , where there are leaders called PATIENT-1 and PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Greece | leader | Nikos_Voutsis</striple>
-					<striple>Greece | leader | Prokopis_Pavlopoulos</striple>
-					<striple>A.E_Dimitra_Efxeinoupolis | location | Greece</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Greece" number="1" tag="BRIDGE-1" type="name">Greece</reference>
-					<reference entity="Nikos_Voutsis" number="2" tag="PATIENT-1" type="name">Nikos Voutsis</reference>
-					<reference entity="Prokopis_Pavlopoulos" number="3" tag="PATIENT-2" type="name">Prokopis Pavlopoulos</reference>
-					<reference entity="A.E_Dimitra_Efxeinoupolis" number="4" tag="AGENT-1" type="description">the A .E . Dimitra Efxeinoupolis</reference>
-				</references>
 				<text>There are two prominent leaders in Greece: Nikos Voutsis and Prokopis Pavlopoulos as well the A.E. Dimitra Efxeinoupolis is located there.</text>
 				<template>There are two prominent leaders in BRIDGE-1 : PATIENT-1 and PATIENT-2 as well AGENT-1 is located there .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A.E_Dimitra_Efxeinoupolis | location | Greece</striple>
-					<striple>Greece | leader | Nikos_Voutsis</striple>
-					<striple>Greece | leader | Prokopis_Pavlopoulos</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.E_Dimitra_Efxeinoupolis" number="1" tag="AGENT-1" type="description">A .E Dimitra Efxeinoupolis</reference>
-					<reference entity="Greece" number="2" tag="BRIDGE-1" type="name">Greece</reference>
-					<reference entity="Greece" number="3" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="Nikos_Voutsis" number="4" tag="PATIENT-1" type="name">Nikos Voutsis</reference>
-					<reference entity="Prokopis_Pavlopoulos" number="5" tag="PATIENT-2" type="name">Prokopis Pavloopoulos</reference>
-				</references>
 				<text>A.E Dimitra Efxeinoupolis is located in Greece, the leader of the country is Nikos Voutsis and/or Prokopis Pavloopoulos.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , the leader of BRIDGE-1 is PATIENT-1 and/or PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A.E_Dimitra_Efxeinoupolis</entity>
 				<entity>BRIDGE-1 | Greece</entity>
+				<entity>AGENT-1 | A.E_Dimitra_Efxeinoupolis</entity>
 				<entity>PATIENT-1 | Nikos_Voutsis</entity>
 				<entity>PATIENT-2 | Prokopis_Pavlopoulos</entity>
 			</entitymap>
@@ -302,54 +169,20 @@
 				<mtriple>Stuart_Parker_(footballer) | club | Runcorn_F.C._Halton</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-					<striple>Stuart_Parker_(footballer) | club | Drogheda_United_F.C.</striple>
-					<striple>Stuart_Parker_(footballer) | club | Runcorn_F.C._Halton</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.F.C._Blackpool" number="1" tag="AGENT-1" type="description">A .F .C . Blackpool</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="2" tag="BRIDGE-1" type="name">Stuart Parker</reference>
-					<reference entity="Drogheda_United_F.C." number="3" tag="PATIENT-1" type="name">Drogheda United F .C</reference>
-					<reference entity="Runcorn_F.C._Halton" number="4" tag="PATIENT-2" type="name">Runcorn F</reference>
-				</references>
 				<text>The manager of A.F.C. Blackpool is Stuart Parker who is with Drogheda United F.C and plays for Runcorn F.C. Halton.</text>
 				<template>The manager of AGENT-1 is BRIDGE-1 who is with PATIENT-1 and plays for PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Stuart_Parker_(footballer) | club | Drogheda_United_F.C.</striple>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-					<striple>Stuart_Parker_(footballer) | club | Runcorn_F.C._Halton</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Stuart_Parker_(footballer)" number="1" tag="BRIDGE-1" type="name">Footballer Stuart Parker</reference>
-					<reference entity="Drogheda_United_F.C." number="2" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="name">AFC Blackpool</reference>
-					<reference entity="Drogheda_United_F.C." number="4" tag="PATIENT-1" type="name">Drogheda United FC</reference>
-					<reference entity="Runcorn_F.C._Halton" number="5" tag="PATIENT-2" type="name">Runcorn F</reference>
-				</references>
 				<text>Footballer Stuart Parker, the manager of AFC Blackpool, was at Drogheda United FC and plays for Runcorn F.C. Halton.</text>
 				<template>BRIDGE-1 , PATIENT-1 manager of AGENT-1 , was at PATIENT-1 and plays for PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Stuart_Parker_(footballer) | club | Drogheda_United_F.C.</striple>
-					<striple>Stuart_Parker_(footballer) | club | Runcorn_F.C._Halton</striple>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Stuart_Parker_(footballer)" number="1" tag="BRIDGE-1" type="name">Stuart Parker</reference>
-					<reference entity="Drogheda_United_F.C." number="2" tag="PATIENT-1" type="description">the Drogheda United F .C .</reference>
-					<reference entity="Runcorn_F.C._Halton" number="3" tag="PATIENT-2" type="name">Runcorn F .C . Halton</reference>
-					<reference entity="A.F.C._Blackpool" number="4" tag="AGENT-1" type="name">AFC Blackpool</reference>
-				</references>
 				<text>Stuart Parker is a footballer with the Drogheda United F.C., also plays for Runcorn F.C. Halton and has managed AFC Blackpool.</text>
 				<template>BRIDGE-1 is a footballer with PATIENT-1 , also plays for PATIENT-2 and has managed AGENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A.F.C._Blackpool</entity>
 				<entity>BRIDGE-1 | Stuart_Parker_(footballer)</entity>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
 				<entity>PATIENT-1 | Drogheda_United_F.C.</entity>
 				<entity>PATIENT-2 | Runcorn_F.C._Halton</entity>
 			</entitymap>
@@ -366,54 +199,20 @@
 				<mtriple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-					<striple>Stuart_Parker_(footballer) | club | Drogheda_United_F.C.</striple>
-					<striple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.F.C._Blackpool" number="1" tag="AGENT-1" type="description">A .F .C . Blackpool</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="2" tag="BRIDGE-1" type="name">Stuart Parker</reference>
-					<reference entity="Drogheda_United_F.C." number="3" tag="PATIENT-1" type="name">Drogheda United FC</reference>
-					<reference entity="Stockport_County_F.C." number="4" tag="PATIENT-2" type="name">Stockport County FC</reference>
-				</references>
 				<text>The manager of A.F.C. Blackpool is Stuart Parker who was at Drogheda United FC and once played for Stockport County FC.</text>
 				<template>The manager of AGENT-1 is BRIDGE-1 who was at PATIENT-1 and once played for PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-					<striple>Stuart_Parker_(footballer) | club | Drogheda_United_F.C.</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.F.C._Blackpool" number="1" tag="AGENT-1" type="name">AFC Blackpool</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="2" tag="BRIDGE-1" type="name">Stuart Parker</reference>
-					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="name">their</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
-					<reference entity="Drogheda_United_F.C." number="5" tag="PATIENT-1" type="name">Drogheda United F .C .</reference>
-					<reference entity="Stockport_County_F.C." number="6" tag="PATIENT-2" type="name">Stockport County F</reference>
-				</references>
 				<text>AFC Blackpool have had Stuart Parker as their manager. He plays for Drogheda United F.C. and Stockport County F.C.</text>
 				<template>AGENT-1 have had BRIDGE-1 as AGENT-1 manager . BRIDGE-1 plays for PATIENT-1 and PATIENT-2.</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Stuart_Parker_(footballer) | club | Drogheda_United_F.C.</striple>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-					<striple>Stuart_Parker_(footballer) | club | Stockport_County_F.C.</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Drogheda_United_F.C." number="2" tag="PATIENT-1" type="name">Drogheda United F .C .</reference>
-					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="name">AFC Blackpool</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
-					<reference entity="Stockport_County_F.C." number="5" tag="PATIENT-2" type="name">Stockport County F</reference>
-				</references>
 				<text>Stuart Parker (football player of Drogheda United F.C.) managed AFC Blackpool. He was a member of Stockport County F.C.</text>
 				<template>BRIDGE-1 ( football player of PATIENT-1 ) managed AGENT-1 . BRIDGE-1 was a member of PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A.F.C._Blackpool</entity>
 				<entity>BRIDGE-1 | Stuart_Parker_(footballer)</entity>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
 				<entity>PATIENT-1 | Drogheda_United_F.C.</entity>
 				<entity>PATIENT-2 | Stockport_County_F.C.</entity>
 			</entitymap>
@@ -430,57 +229,20 @@
 				<mtriple>Stuart_Parker_(footballer) | club | Irlam_Town_F.C.</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Stuart_Parker_(footballer) | club | Irlam_Town_F.C.</striple>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-					<striple>Stuart_Parker_(footballer) | club | KV_Mechelen</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Stuart_Parker_(footballer)" number="1" tag="BRIDGE-1" type="name">Stuart Parker</reference>
-					<reference entity="Irlam_Town_F.C." number="2" tag="PATIENT-2" type="description">the Iriam Town F .C .</reference>
-					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="description">A .F .C . Blackpool</reference>
-					<reference entity="KV_Mechelen" number="4" tag="PATIENT-1" type="description">the KV Mechelen club</reference>
-				</references>
 				<text>Stuart Parker is a member of the Iriam Town F.C. as well as the manager of A.F.C. Blackpool and has also represented the KV Mechelen club.</text>
 				<template>BRIDGE-1 is a member of PATIENT-2 as well as the manager of AGENT-1 and has also represented PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-					<striple>Stuart_Parker_(footballer) | club | KV_Mechelen</striple>
-					<striple>Stuart_Parker_(footballer) | club | Irlam_Town_F.C.</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.F.C._Blackpool" number="1" tag="AGENT-1" type="name">AFC Blackpool</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="2" tag="BRIDGE-1" type="name">Stuart Parker</reference>
-					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="name">their</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
-					<reference entity="KV_Mechelen" number="5" tag="PATIENT-1" type="description">the club KV Mechelen</reference>
-					<reference entity="Irlam_Town_F.C." number="6" tag="PATIENT-2" type="description">the Irlam Town F</reference>
-				</references>
 				<text>AFC Blackpool have had Stuart Parker as their manager. He has represented the club KV Mechelen and is a member of the Irlam Town F.C.</text>
 				<template>AGENT-1 have had BRIDGE-1 as AGENT-1 manager . BRIDGE-1 has represented PATIENT-1 and is a member of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A.F.C._Blackpool | manager | Stuart_Parker_(footballer)</striple>
-					<striple>Stuart_Parker_(footballer) | club | Irlam_Town_F.C.</striple>
-					<striple>Stuart_Parker_(footballer) | club | KV_Mechelen</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.F.C._Blackpool" number="1" tag="AGENT-1" type="name">AFC Blackpool</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="2" tag="BRIDGE-1" type="name">Stuart Parker</reference>
-					<reference entity="A.F.C._Blackpool" number="3" tag="AGENT-1" type="name">their</reference>
-					<reference entity="Stuart_Parker_(footballer)" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
-					<reference entity="Irlam_Town_F.C." number="5" tag="PATIENT-2" type="name">Irlam Town Football Club</reference>
-					<reference entity="KV_Mechelen" number="6" tag="PATIENT-1" type="description">the KV Mechelen club</reference>
-				</references>
 				<text>AFC Blackpool have had Stuart Parker as their manager. He is attached to Irlam Town Football Club and is part of the KV Mechelen club.</text>
 				<template>AGENT-1 have had BRIDGE-1 as AGENT-1 manager . BRIDGE-1 is attached to PATIENT-2 and is part of PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A.F.C._Blackpool</entity>
 				<entity>BRIDGE-1 | Stuart_Parker_(footballer)</entity>
+				<entity>AGENT-1 | A.F.C._Blackpool</entity>
 				<entity>PATIENT-1 | KV_Mechelen</entity>
 				<entity>PATIENT-2 | Irlam_Town_F.C.</entity>
 			</entitymap>
@@ -497,40 +259,18 @@
 				<mtriple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</striple>
-					<striple>A.F.C._Fylde | numberOfMembers | 3180</striple>
-					<striple>A.F.C._Fylde | ground | Warton,_Fylde</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.F.C._Fylde" number="1" tag="AGENT-1" type="name">AFC Fylde</reference>
-					<reference entity="A.F.C._Fylde" number="5" tag="AGENT-1" type="name">their</reference>
-					<reference entity="Warton,_Fylde" number="6" tag="PATIENT-1" type="name">Warton , Fylde</reference>
-				</references>
 				<text>AFC Fylde has the full name &quot;Association Football Club Fylde,&quot; they have 3180 members and their ground is located in Warton, Fylde.</text>
 				<template>AGENT-1 has the full name `` PATIENT-3 , '' AGENT-1 have PATIENT-2 members and AGENT-1 ground is located in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.F.C._Fylde | fullname | &quot;Association Football Club Fylde&quot;</striple>
-					<striple>A.F.C._Fylde | numberOfMembers | 3180</striple>
-					<striple>A.F.C._Fylde | ground | Warton,_Fylde</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Association Football Club Fylde&quot;" number="1" tag="PATIENT-3" type="name">Association Football Club Fylde</reference>
-					<reference entity="A.F.C._Fylde" number="2" tag="AGENT-1" type="description">A .F .C Fylde</reference>
-					<reference entity="3180" number="3" tag="PATIENT-2" type="name">3180</reference>
-					<reference entity="A.F.C._Fylde" number="4" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="Warton,_Fylde" number="5" tag="PATIENT-1" type="name">Warton Fylde</reference>
-				</references>
 				<text>Association Football Club Fylde, abbreviated to A.F.C Fylde, has 3180 members and its ground is Warton Fylde.</text>
 				<template>PATIENT-3 , abbreviated to AGENT-1 , has PATIENT-2 members and AGENT-1 ground is PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A.F.C._Fylde</entity>
 				<entity>PATIENT-1 | Warton,_Fylde</entity>
-				<entity>PATIENT-2 | 3180</entity>
 				<entity>PATIENT-3 | &quot;Association Football Club Fylde&quot;</entity>
+				<entity>PATIENT-2 | 3180</entity>
 			</entitymap>
 		</entry>
 		<entry category="SportsTeam" eid="Id10" size="3">
@@ -545,55 +285,20 @@
 				<mtriple>Christian_Panucci | club | Real_Madrid_C.F.</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Christian_Panucci | club | Genoa_C.F.C.</striple>
-					<striple>Christian_Panucci | club | Real_Madrid_C.F.</striple>
-					<striple>A.S._Livorno_Calcio | manager | Christian_Panucci</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Christian_Panucci" number="1" tag="BRIDGE-1" type="name">Christian Panucci</reference>
-					<reference entity="Genoa_C.F.C." number="2" tag="PATIENT-1" type="name">Genoa CFC</reference>
-					<reference entity="Real_Madrid_C.F." number="3" tag="PATIENT-2" type="name">Real Madrid CF</reference>
-					<reference entity="A.S._Livorno_Calcio" number="4" tag="AGENT-1" type="description">A</reference>
-				</references>
 				<text>Christian Panucci, who has been attached to the Genoa CFC and Real Madrid CF clubs, manages A.S. Livorno Calcio.</text>
 				<template>BRIDGE-1 , who has been attached to the PATIENT-1 and PATIENT-2 clubs , manages AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.S._Livorno_Calcio | manager | Christian_Panucci</striple>
-					<striple>Christian_Panucci | club | Real_Madrid_C.F.</striple>
-					<striple>Christian_Panucci | club | Genoa_C.F.C.</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.S._Livorno_Calcio" number="1" tag="AGENT-1" type="description">A .S . Livorno Calcio</reference>
-					<reference entity="Christian_Panucci" number="2" tag="BRIDGE-1" type="name">Christian Panucci</reference>
-					<reference entity="Real_Madrid_C.F." number="3" tag="PATIENT-2" type="description">the Real Madrid CF club</reference>
-					<reference entity="Christian_Panucci" number="4" tag="BRIDGE-1" type="pronoun">He</reference>
-					<reference entity="Genoa_C.F.C." number="5" tag="PATIENT-1" type="description">the club Genoa CFC</reference>
-				</references>
 				<text>A.S. Livorno Calcio is managed by Christian Panucci. is was attached to the Real Madrid CF club. He is currently attached to the club Genoa CFC.</text>
 				<template>AGENT-1 is managed by BRIDGE-1 . is was attached to PATIENT-2 . BRIDGE-1 is currently attached to PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Christian_Panucci | club | Real_Madrid_C.F.</striple>
-					<striple>A.S._Livorno_Calcio | manager | Christian_Panucci</striple>
-					<striple>Christian_Panucci | club | Genoa_C.F.C.</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Christian_Panucci" number="1" tag="BRIDGE-1" type="name">Christian Panucci</reference>
-					<reference entity="Real_Madrid_C.F." number="2" tag="PATIENT-2" type="description">the Real Madrid CF club</reference>
-					<reference entity="Christian_Panucci" number="3" tag="BRIDGE-1" type="pronoun">he</reference>
-					<reference entity="A.S._Livorno_Calcio" number="4" tag="AGENT-1" type="description">A .S . Livorno Calcio</reference>
-					<reference entity="Genoa_C.F.C." number="5" tag="PATIENT-1" type="name">Genoa C</reference>
-				</references>
 				<text>Christian Panucci was attached to the Real Madrid CF club, he managed A.S. Livorno Calcio and played football for Genoa C.F.C.</text>
 				<template>BRIDGE-1 was attached to PATIENT-2 , BRIDGE-1 managed AGENT-1 and played football for PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A.S._Livorno_Calcio</entity>
 				<entity>BRIDGE-1 | Christian_Panucci</entity>
+				<entity>AGENT-1 | A.S._Livorno_Calcio</entity>
 				<entity>PATIENT-1 | Genoa_C.F.C.</entity>
 				<entity>PATIENT-2 | Real_Madrid_C.F.</entity>
 			</entitymap>
@@ -604,64 +309,33 @@
 				<otriple>A.S._Roma | fullname | &quot;Associazione Sportiva Roma S.p.A.&quot;@en</otriple>
 				<otriple>A.S._Roma | ground | &quot;Rome, Italy&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>A.S._Roma | fullname | &quot;Associazione Sportiva Roma S.p.A.&quot;@en</otriple>
+				<otriple>A.S._Roma | ground | &quot;Rome, Italy&quot;@en</otriple>
+				<otriple>A.S._Roma | capacity | &quot;70634&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>A.S._Roma | fullname | &quot;Associazione Sportiva Roma S.p.A.&quot;</mtriple>
 				<mtriple>A.S._Roma | ground | &quot;Rome, Italy&quot;</mtriple>
 				<mtriple>A.S._Roma | numberOfMembers | 70634</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.S._Roma | fullname | &quot;Associazione Sportiva Roma S.p.A.&quot;</striple>
-					<striple>A.S._Roma | numberOfMembers | 70634</striple>
-					<striple>A.S._Roma | ground | &quot;Rome, Italy&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Associazione Sportiva Roma S.p.A.&quot;" number="1" tag="PATIENT-1" type="description">The &quot;Associazione Sportiva Roma S .p .A .&quot;</reference>
-					<reference entity="A.S._Roma" number="2" tag="AGENT-1" type="description">A .S . Roma</reference>
-					<reference entity="70634" number="3" tag="PATIENT-3" type="name">70634</reference>
-					<reference entity="&quot;Rome, Italy&quot;" number="4" tag="PATIENT-2" type="name">Rome , Italy</reference>
-				</references>
 				<text>The &quot;Associazione Sportiva Roma S.p.A.&quot; is the non-abbreviated name of A.S. Roma which has 70634 members and a home ground in Rome, Italy.</text>
 				<template>PATIENT-1 is the non-abbreviated name of AGENT-1 which has PATIENT-3 members and a home ground in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.S._Roma | numberOfMembers | 70634</striple>
-					<striple>A.S._Roma | ground | &quot;Rome, Italy&quot;</striple>
-					<striple>A.S._Roma | fullname | &quot;Associazione Sportiva Roma S.p.A.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.S._Roma" number="1" tag="AGENT-1" type="description">A .S .Roma</reference>
-					<reference entity="70634" number="2" tag="PATIENT-3" type="name">70634</reference>
-					<reference entity="A.S._Roma" number="3" tag="AGENT-1" type="name">their</reference>
-					<reference entity="&quot;Rome, Italy&quot;" number="4" tag="PATIENT-2" type="name">Rome</reference>
-					<reference entity="A.S._Roma" number="5" tag="AGENT-1" type="name">their</reference>
-					<reference entity="&quot;Associazione Sportiva Roma S.p.A.&quot;" number="6" tag="PATIENT-1" type="name">Associazione Roma S</reference>
-				</references>
 				<text>A.S.Roma have 70634 members, play their home games in Rome and their full title is Associazione Roma S.p.A.</text>
 				<template>AGENT-1 have PATIENT-3 members , play AGENT-1 home games in PATIENT-2 and AGENT-1 full title is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A.S._Roma | fullname | &quot;Associazione Sportiva Roma S.p.A.&quot;</striple>
-					<striple>A.S._Roma | numberOfMembers | 70634</striple>
-					<striple>A.S._Roma | ground | &quot;Rome, Italy&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.S._Roma" number="1" tag="AGENT-1" type="description">A .S . Roma</reference>
-					<reference entity="&quot;Associazione Sportiva Roma S.p.A.&quot;" number="2" tag="PATIENT-1" type="name">Associazione Sportiva Roma S .p .A .</reference>
-					<reference entity="70634" number="3" tag="PATIENT-3" type="name">70634</reference>
-					<reference entity="A.S._Roma" number="4" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;Rome, Italy&quot;" number="5" tag="PATIENT-2" type="name">Rome , Italy</reference>
-				</references>
 				<text>A.S. Roma, or Associazione Sportiva Roma S.p.A., has 70634 members and its ground is in Rome, Italy.</text>
 				<template>AGENT-1 , or PATIENT-1 , has PATIENT-3 members and AGENT-1 ground is in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | A.S._Roma</entity>
 				<entity>PATIENT-1 | &quot;Associazione Sportiva Roma S.p.A.&quot;</entity>
-				<entity>PATIENT-2 | &quot;Rome, Italy&quot;</entity>
 				<entity>PATIENT-3 | 70634</entity>
+				<entity>PATIENT-2 | &quot;Rome, Italy&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="SportsTeam" eid="Id12" size="3">
@@ -670,66 +344,33 @@
 				<otriple>AEK_Athens_F.C. | ground | Athens</otriple>
 				<otriple>AEK_Athens_F.C. | capacity | &quot;69618&quot;^^xsd:nonNegativeInteger</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>AEK_Athens_F.C. | capacity | 69618</otriple>
+				<otriple>AEK_Athens_F.C. | league | Superleague_Greece</otriple>
+				<otriple>AEK_Athens_F.C. | ground | Athens</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>AEK_Athens_F.C. | league | Superleague_Greece</mtriple>
 				<mtriple>AEK_Athens_F.C. | ground | Athens</mtriple>
 				<mtriple>AEK_Athens_F.C. | numberOfMembers | 69618</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AEK_Athens_F.C. | ground | Athens</striple>
-					<striple>AEK_Athens_F.C. | numberOfMembers | 69618</striple>
-					<striple>AEK_Athens_F.C. | league | Superleague_Greece</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AEK_Athens_F.C." number="1" tag="AGENT-1" type="name">AEK Athens F .C .</reference>
-					<reference entity="Athens" number="2" tag="PATIENT-2" type="name">Athens</reference>
-					<reference entity="AEK_Athens_F.C." number="3" tag="AGENT-1" type="pronoun">they</reference>
-					<reference entity="69618" number="4" tag="PATIENT-3" type="name">69618</reference>
-					<reference entity="AEK_Athens_F.C." number="5" tag="AGENT-1" type="pronoun">they</reference>
-					<reference entity="Superleague_Greece" number="6" tag="PATIENT-1" type="description">the Superleague Greece</reference>
-				</references>
 				<text>AEK Athens F.C. ground is in Athens, they have 69618 members and they compete in the Superleague Greece.</text>
 				<template>AGENT-1 ground is in PATIENT-2 , AGENT-1 have PATIENT-3 members and AGENT-1 compete in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AEK_Athens_F.C. | numberOfMembers | 69618</striple>
-					<striple>AEK_Athens_F.C. | league | Superleague_Greece</striple>
-					<striple>AEK_Athens_F.C. | ground | Athens</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AEK_Athens_F.C." number="1" tag="AGENT-1" type="name">AEK Athens F .C .</reference>
-					<reference entity="69618" number="2" tag="PATIENT-3" type="name">69618</reference>
-					<reference entity="Superleague_Greece" number="3" tag="PATIENT-1" type="description">the Superleague Greece</reference>
-					<reference entity="AEK_Athens_F.C." number="4" tag="AGENT-1" type="name">Their ground</reference>
-					<reference entity="Athens" number="5" tag="PATIENT-2" type="name">Athens</reference>
-				</references>
 				<text>AEK Athens F.C., with 69618 members, play in the Superleague Greece. Their ground is in Athens.</text>
 				<template>AGENT-1 , with PATIENT-3 members , play in PATIENT-1 . AGENT-1 is in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>AEK_Athens_F.C. | numberOfMembers | 69618</striple>
-					<striple>AEK_Athens_F.C. | ground | Athens</striple>
-					<striple>AEK_Athens_F.C. | league | Superleague_Greece</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AEK_Athens_F.C." number="1" tag="AGENT-1" type="name">AEK Athens F .C .</reference>
-					<reference entity="69618" number="2" tag="PATIENT-3" type="name">69618</reference>
-					<reference entity="AEK_Athens_F.C." number="3" tag="AGENT-1" type="name">their ground</reference>
-					<reference entity="Athens" number="4" tag="PATIENT-2" type="name">Athens</reference>
-					<reference entity="69618" number="5" tag="PATIENT-3" type="pronoun">they</reference>
-					<reference entity="Superleague_Greece" number="6" tag="PATIENT-1" type="description">the Superleague of Greece</reference>
-				</references>
 				<text>AEK Athens F.C. has 69618 members, their ground is in Athens and they play in the Superleague of Greece.</text>
 				<template>AGENT-1 has PATIENT-3 members , AGENT-1 is in PATIENT-2 and PATIENT-3 play in PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | AEK_Athens_F.C.</entity>
 				<entity>PATIENT-1 | Superleague_Greece</entity>
-				<entity>PATIENT-2 | Athens</entity>
 				<entity>PATIENT-3 | 69618</entity>
+				<entity>PATIENT-2 | Athens</entity>
 			</entitymap>
 		</entry>
 		<entry category="SportsTeam" eid="Id13" size="3">
@@ -738,60 +379,33 @@
 				<otriple>AFC_Ajax_(amateurs) | league | Hoofdklasse</otriple>
 				<otriple>AFC_Ajax_(amateurs) | season | 2014</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>AFC_Ajax_(amateurs) | league | Hoofdklasse</otriple>
+				<otriple>AFC_Ajax_(amateurs) | capacity | 5000</otriple>
+				<otriple>AFC_Ajax_(amateurs) | season | 2014</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</mtriple>
 				<mtriple>AFC_Ajax_(amateurs) | league | Hoofdklasse</mtriple>
 				<mtriple>AFC_Ajax_(amateurs) | season | 2014</mtriple>
 			</modifiedtripleset>
 			<lex comment="toFix" lid="Id1">
-				<sortedtripleset>
-					<striple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</striple>
-					<striple>AFC_Ajax_(amateurs) | league | Hoofdklasse</striple>
-					<striple>AFC_Ajax_(amateurs) | season | 2014</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="5000" number="2" tag="PATIENT-1" type="name">5000</reference>
-					<reference entity="Hoofdklasse" number="3" tag="PATIENT-2" type="description">the Hoofdklasse</reference>
-					<reference entity="2014" number="4" tag="PATIENT-3" type="description">the 2014</reference>
-				</references>
 				<text>AFC Ajax (amateurs) has 5000 members play in the Hoofdklasse league and competed in the 2014 season.</text>
 				<template>AGENT-1 ( amateurs ) has PATIENT-1 members play in PATIENT-2 league and competed in PATIENT-3 season .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AFC_Ajax_(amateurs) | season | 2014</striple>
-					<striple>AFC_Ajax_(amateurs) | league | Hoofdklasse</striple>
-					<striple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="2014" number="2" tag="PATIENT-3" type="description">the 2014</reference>
-					<reference entity="AFC_Ajax_(amateurs)" number="3" tag="AGENT-1" type="pronoun">they</reference>
-					<reference entity="Hoofdklasse" number="4" tag="PATIENT-2" type="description">the Hoofdklasse</reference>
-					<reference entity="5000" number="5" tag="PATIENT-1" type="name">5000</reference>
-				</references>
 				<text>AFC Ajax (Amateurs) competed in the 2014 season, they play in the Hoofdklasse league and the main team have 5000 members.</text>
 				<template>AGENT-1 ( Amateurs ) competed in PATIENT-3 season , AGENT-1 play in PATIENT-2 league and the main team have PATIENT-1 members .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>AFC_Ajax_(amateurs) | season | 2014</striple>
-					<striple>AFC_Ajax_(amateurs) | numberOfMembers | 5000</striple>
-					<striple>AFC_Ajax_(amateurs) | league | Hoofdklasse</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AFC_Ajax_(amateurs)" number="1" tag="AGENT-1" type="name">AFC Ajax</reference>
-					<reference entity="2014" number="2" tag="PATIENT-3" type="description">the 2014</reference>
-					<reference entity="5000" number="3" tag="PATIENT-1" type="name">5000</reference>
-					<reference entity="Hoofdklasse" number="4" tag="PATIENT-2" type="description">the Hoofdklasse</reference>
-				</references>
 				<text>AFC Ajax, who played in the 2014 season, have 5000 members and play in the Hoofdklasse league.</text>
 				<template>AGENT-1 , who played in PATIENT-3 season , have PATIENT-1 members and play in PATIENT-2 league .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | AFC_Ajax_(amateurs)</entity>
 				<entity>PATIENT-1 | 5000</entity>
-				<entity>PATIENT-2 | Hoofdklasse</entity>
 				<entity>PATIENT-3 | 2014</entity>
+				<entity>PATIENT-2 | Hoofdklasse</entity>
 			</entitymap>
 		</entry>
 		<entry category="SportsTeam" eid="Id14" size="3">
@@ -806,40 +420,16 @@
 				<mtriple>AZAL_PFK | ground | AZAL_Arena</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AZAL_PFK | ground | AZAL_Arena</striple>
-					<striple>AZAL_PFK | league | Azerbaijan_Premier_League</striple>
-					<striple>Azerbaijan_Premier_League | champions | Qarabağ_FK</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AZAL_PFK" number="1" tag="AGENT-1" type="name">AZAL PFK</reference>
-					<reference entity="AZAL_PFK" number="2" tag="AGENT-1" type="name">their</reference>
-					<reference entity="AZAL_Arena" number="3" tag="PATIENT-2" type="description">the AZAL Arena</reference>
-					<reference entity="Azerbaijan_Premier_League" number="4" tag="BRIDGE-1" type="description">the Azerbaijan Premier League</reference>
-					<reference entity="Azerbaijan_Premier_League" number="5" tag="BRIDGE-1" type="name">who 's</reference>
-					<reference entity="Qarabağ_FK" number="6" tag="PATIENT-1" type="description">the Qarabag FK</reference>
-				</references>
 				<text>AZAL PFK play their home matches at the AZAL Arena, and are in the Azerbaijan Premier League, who's championships name is the Qarabag FK.</text>
 				<template>AGENT-1 play AGENT-1 home matches at PATIENT-2 , and are in BRIDGE-1 , BRIDGE-1 championships name is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AZAL_PFK | ground | AZAL_Arena</striple>
-					<striple>AZAL_PFK | league | Azerbaijan_Premier_League</striple>
-					<striple>Azerbaijan_Premier_League | champions | Qarabağ_FK</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AZAL_Arena" number="1" tag="PATIENT-2" type="name">AZAL Arena</reference>
-					<reference entity="AZAL_PFK" number="2" tag="AGENT-1" type="name">AZAL PFK</reference>
-					<reference entity="Azerbaijan_Premier_League" number="3" tag="BRIDGE-1" type="description">The Azerbaijan Premier League</reference>
-					<reference entity="Qarabağ_FK" number="4" tag="PATIENT-1" type="name">Qarabag FK</reference>
-				</references>
 				<text>AZAL Arena is the ground of AZAL PFK and competes in The Azerbaijan Premier League, which champions are Qarabag FK.</text>
 				<template>PATIENT-2 is the ground of AGENT-1 and competes in BRIDGE-1 , which champions are PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | AZAL_PFK</entity>
 				<entity>BRIDGE-1 | Azerbaijan_Premier_League</entity>
+				<entity>AGENT-1 | AZAL_PFK</entity>
 				<entity>PATIENT-1 | Qarabağ_FK</entity>
 				<entity>PATIENT-2 | AZAL_Arena</entity>
 			</entitymap>
@@ -850,59 +440,33 @@
 				<otriple>AZ_Alkmaar | season | 2014</otriple>
 				<otriple>AZ_Alkmaar | capacity | 17023</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>AZ_Alkmaar | fullname | &quot;Alkmaar Zaanstreek&quot;@en</otriple>
+				<otriple>AZ_Alkmaar | season | 2014</otriple>
+				<otriple>AZ_Alkmaar | capacity | &quot;17023&quot;^^xsd:nonNegativeInteger</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>AZ_Alkmaar | fullname | &quot;Alkmaar Zaanstreek&quot;</mtriple>
 				<mtriple>AZ_Alkmaar | season | 2014</mtriple>
 				<mtriple>AZ_Alkmaar | numberOfMembers | 17023</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AZ_Alkmaar | fullname | &quot;Alkmaar Zaanstreek&quot;</striple>
-					<striple>AZ_Alkmaar | season | 2014</striple>
-					<striple>AZ_Alkmaar | numberOfMembers | 17023</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Alkmaar Zaanstreek&quot;" number="1" tag="PATIENT-1" type="name">Alkmaar Zaanstreek</reference>
-					<reference entity="AZ_Alkmaar" number="2" tag="AGENT-1" type="name">AZ Alkmaar</reference>
-					<reference entity="2014" number="3" tag="PATIENT-2" type="description">the 2014</reference>
-					<reference entity="17023" number="4" tag="PATIENT-3" type="name">17023</reference>
-				</references>
 				<text>Alkmaar Zaanstreek is the full name of AZ Alkmaar who played in the 2014 season and has 17023 members.</text>
 				<template>PATIENT-1 is the full name of AGENT-1 who played in PATIENT-2 season and has PATIENT-3 members .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AZ_Alkmaar | fullname | &quot;Alkmaar Zaanstreek&quot;</striple>
-					<striple>AZ_Alkmaar | season | 2014</striple>
-					<striple>AZ_Alkmaar | numberOfMembers | 17023</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AZ_Alkmaar" number="2" tag="AGENT-1" type="name">AZ Alkmaar</reference>
-					<reference entity="2014" number="3" tag="PATIENT-2" type="description">the 2014</reference>
-					<reference entity="17023" number="4" tag="PATIENT-3" type="name">17023</reference>
-				</references>
 				<text>&quot;Alkmaar Zaanstreek&quot; is the full name of AZ Alkmaar who played in the 2014 season and has 17023 members.</text>
 				<template>`` PATIENT-1 '' is the full name of AGENT-1 who played in PATIENT-2 season and has PATIENT-3 members .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>AZ_Alkmaar | fullname | &quot;Alkmaar Zaanstreek&quot;</striple>
-					<striple>AZ_Alkmaar | numberOfMembers | 17023</striple>
-					<striple>AZ_Alkmaar | season | 2014</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Alkmaar Zaanstreek&quot;" number="1" tag="PATIENT-1" type="name">Alkmaar Zaanstreek </reference>
-					<reference entity="17023" number="3" tag="PATIENT-3" type="name">170723 members</reference>
-					<reference entity="2014" number="4" tag="PATIENT-2" type="description">the 2014</reference>
-				</references>
 				<text>Alkmaar Zaanstreek (AZ Alkmaar) has 170723 members and played in the 2014 season.</text>
 				<template>PATIENT-1 ( AGENT-1 ) has PATIENT-3 and played in PATIENT-2 season .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | AZ_Alkmaar</entity>
 				<entity>PATIENT-1 | &quot;Alkmaar Zaanstreek&quot;</entity>
-				<entity>PATIENT-2 | 2014</entity>
 				<entity>PATIENT-3 | 17023</entity>
+				<entity>PATIENT-2 | 2014</entity>
 			</entitymap>
 		</entry>
 		<entry category="SportsTeam" eid="Id16" size="3">
@@ -917,54 +481,20 @@
 				<mtriple>John_van_den_Brom | club | De_Graafschap</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AZ_Alkmaar | manager | John_van_den_Brom</striple>
-					<striple>John_van_den_Brom | club | Vitesse_Arnhem</striple>
-					<striple>John_van_den_Brom | club | De_Graafschap</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="John_van_den_Brom" number="1" tag="BRIDGE-1" type="name">John van den Brom</reference>
-					<reference entity="AZ_Alkmaar" number="2" tag="AGENT-1" type="description">the AZ Alkmaair</reference>
-					<reference entity="Vitesse_Arnhem" number="3" tag="PATIENT-1" type="name">Vitesse Arnhem</reference>
-					<reference entity="De_Graafschap" number="4" tag="PATIENT-2" type="name">De Graafschap</reference>
-				</references>
 				<text>John van den Brom manages the AZ Alkmaair and plays for Vitesse Arnhem and De Graafschap.</text>
 				<template>BRIDGE-1 manages AGENT-1 and plays for PATIENT-1 and PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AZ_Alkmaar | manager | John_van_den_Brom</striple>
-					<striple>John_van_den_Brom | club | Vitesse_Arnhem</striple>
-					<striple>John_van_den_Brom | club | De_Graafschap</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="John_van_den_Brom" number="1" tag="BRIDGE-1" type="name">John van den Brom</reference>
-					<reference entity="AZ_Alkmaar" number="2" tag="AGENT-1" type="name">AZ Alkmaar</reference>
-					<reference entity="Vitesse_Arnhem" number="3" tag="PATIENT-1" type="name">Vitesse Arnhem</reference>
-					<reference entity="De_Graafschap" number="4" tag="PATIENT-2" type="name">De Graafschap</reference>
-				</references>
 				<text>John van den Brom, the manager of AZ Alkmaar, is in Vitesse Arnhem and plays for De Graafschap.</text>
 				<template>BRIDGE-1 , the manager of AGENT-1 , is in PATIENT-1 and plays for PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>AZ_Alkmaar | manager | John_van_den_Brom</striple>
-					<striple>John_van_den_Brom | club | Vitesse_Arnhem</striple>
-					<striple>John_van_den_Brom | club | De_Graafschap</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="John_van_den_Brom" number="1" tag="BRIDGE-1" type="name">John van den Brom</reference>
-					<reference entity="AZ_Alkmaar" number="2" tag="AGENT-1" type="name">AZ Alkmaar</reference>
-					<reference entity="John_van_den_Brom" number="3" tag="BRIDGE-1" type="pronoun">he</reference>
-					<reference entity="Vitesse_Arnhem" number="4" tag="PATIENT-1" type="name">Vitesse Arnhem</reference>
-					<reference entity="De_Graafschap" number="5" tag="PATIENT-2" type="name">De Graafschap</reference>
-				</references>
 				<text>John van den Brom has been manager of AZ Alkmaar, he is in Vitesse Arnhem and plays for De Graafschap.</text>
 				<template>BRIDGE-1 has been manager of AGENT-1 , BRIDGE-1 is in PATIENT-1 and plays for PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | AZ_Alkmaar</entity>
 				<entity>BRIDGE-1 | John_van_den_Brom</entity>
+				<entity>AGENT-1 | AZ_Alkmaar</entity>
 				<entity>PATIENT-1 | Vitesse_Arnhem</entity>
 				<entity>PATIENT-2 | De_Graafschap</entity>
 			</entitymap>
@@ -981,57 +511,20 @@
 				<mtriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
-					<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
-					<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
-					<reference entity="Agremiação_Sportiva_Arapiraquense" number="2" tag="AGENT-1" type="name">their</reference>
-					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="3" tag="PATIENT-1" type="name">Estadio Minicipal Coaracy da Mata Fonseca</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="4" tag="BRIDGE-1" type="description">the Campeonato Brasileiro Série C league</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="5" tag="BRIDGE-1" type="demonstrative">this league</reference>
-					<reference entity="Vila_Nova_Futebol_Clube" number="6" tag="PATIENT-2" type="name">Vila Nova Futebol Clube</reference>
-				</references>
 				<text>Agremiação Sportiva Arapiraquense play at their ground Estadio Minicipal Coaracy da Mata Fonseca in the Campeonato Brasileiro Série C league. The champions of this league are Vila Nova Futebol Clube.</text>
 				<template>AGENT-1 play at AGENT-1 ground PATIENT-1 in BRIDGE-1. The champions of BRIDGE-1 are PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
-					<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
-					<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiacao Sportiva Arapiraquense 's</reference>
-					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="2" tag="PATIENT-1" type="description">the Estadio Minicipal Coaracy da Mata Fonseca</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="3" tag="BRIDGE-1" type="description">the Campeonato Brasileiro Série C</reference>
-					<reference entity="Vila_Nova_Futebol_Clube" number="4" tag="PATIENT-2" type="name">Vila Nova Futebol Clube</reference>
-				</references>
 				<text>Agremiacao Sportiva Arapiraquense's ground is the Estadio Minicipal Coaracy da Mata Fonseca and they play in the Campeonato Brasileiro Série C league. The Serie C champions have been Vila Nova Futebol Clube.</text>
 				<template>AGENT-1 ground is PATIENT-1 and they play in BRIDGE-1 league . The Serie C champions have been PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Agremiação_Sportiva_Arapiraquense | ground | Estádio_Municipal_Coaracy_da_Mata_Fonseca</striple>
-					<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
-					<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
-					<reference entity="Estádio_Municipal_Coaracy_da_Mata_Fonseca" number="2" tag="PATIENT-1" type="name">Estádio Municipal Coaracy da Mata Fonseca</reference>
-					<reference entity="Agremiação_Sportiva_Arapiraquense" number="3" tag="AGENT-1" type="description">The club</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="4" tag="BRIDGE-1" type="description">the Campeonato Brasileiro Série C</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="5" tag="BRIDGE-1" type="description">the league</reference>
-					<reference entity="Vila_Nova_Futebol_Clube" number="6" tag="PATIENT-2" type="description">the Vila Nova Futebol Clube</reference>
-				</references>
 				<text>Agremiação Sportiva Arapiraquense plays at Estádio Municipal Coaracy da Mata Fonseca. The club play in the Campeonato Brasileiro Série C league and the champions of the league were the Vila Nova Futebol Clube.</text>
 				<template>AGENT-1 plays at PATIENT-1 . AGENT-1 play in BRIDGE-1 league and the champions of BRIDGE-1 were PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
 				<entity>BRIDGE-1 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
 				<entity>PATIENT-1 | Estádio_Municipal_Coaracy_da_Mata_Fonseca</entity>
 				<entity>PATIENT-2 | Vila_Nova_Futebol_Clube</entity>
 			</entitymap>
@@ -1048,55 +541,20 @@
 				<mtriple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
-					<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
-					<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="2" tag="BRIDGE-1" type="description">the Campeonato Brasileiro Série C</reference>
-					<reference entity="Brazil" number="3" tag="PATIENT-1" type="name">Brazil</reference>
-					<reference entity="Vila_Nova_Futebol_Clube" number="4" tag="PATIENT-2" type="name">Vila Nova Futebol Clube</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="5" tag="BRIDGE-1" type="demonstrative">this league</reference>
-				</references>
 				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league in Brazil. Vila Nova Futebol Clube are the champions of this league.</text>
 				<template>AGENT-1 play in BRIDGE-1 league in PATIENT-1 . PATIENT-2 are the champions of BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
-					<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
-					<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="2" tag="BRIDGE-1" type="description">the Campeonato Brasileiro Série C</reference>
-					<reference entity="Brazil" number="3" tag="PATIENT-1" type="name">brazil</reference>
-					<reference entity="Vila_Nova_Futebol_Clube" number="4" tag="PATIENT-2" type="description">The Vila Nova Futebol Clube</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="5" tag="BRIDGE-1" type="description">the Campeonato Brasileiro Série C</reference>
-				</references>
 				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league in brazil. The Vila Nova Futebol Clube were champions at the Campeonato Brasileiro Série C.</text>
 				<template>AGENT-1 play in BRIDGE-1 league in PATIENT-1 . PATIENT-2 were champions at BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Agremiação_Sportiva_Arapiraquense | league | Campeonato_Brasileiro_Série_C</striple>
-					<striple>Campeonato_Brasileiro_Série_C | country | Brazil</striple>
-					<striple>Campeonato_Brasileiro_Série_C | champions | Vila_Nova_Futebol_Clube</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agremiação_Sportiva_Arapiraquense" number="1" tag="AGENT-1" type="name">Agremiação Sportiva Arapiraquense</reference>
-					<reference entity="Campeonato_Brasileiro_Série_C" number="2" tag="BRIDGE-1" type="description">the Campeonato Brasileiro Série C</reference>
-					<reference entity="Brazil" number="3" tag="PATIENT-1" type="name">Brazil</reference>
-					<reference entity="Vila_Nova_Futebol_Clube" number="4" tag="PATIENT-2" type="name">Vila Nova Futebol Clube</reference>
-				</references>
 				<text>Agremiação Sportiva Arapiraquense play in the Campeonato Brasileiro Série C league, that is based in Brazil. The champions are Vila Nova Futebol Clube.</text>
 				<template>AGENT-1 play in BRIDGE-1 league , that is based in PATIENT-1 . The champions are PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
 				<entity>BRIDGE-1 | Campeonato_Brasileiro_Série_C</entity>
+				<entity>AGENT-1 | Agremiação_Sportiva_Arapiraquense</entity>
 				<entity>PATIENT-1 | Brazil</entity>
 				<entity>PATIENT-2 | Vila_Nova_Futebol_Clube</entity>
 			</entitymap>
@@ -1113,54 +571,20 @@
 				<mtriple>Premier_Development_League | champions | K-W_United_FC</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</striple>
-					<striple>Akron_Summit_Assault | league | Premier_Development_League</striple>
-					<striple>Premier_Development_League | champions | K-W_United_FC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="St._Vincent–St._Mary_High_School" number="1" tag="PATIENT-1" type="name">St Vincent-St Mary High School</reference>
-					<reference entity="Akron_Summit_Assault" number="2" tag="AGENT-1" type="name">Akron Summit Assault</reference>
-					<reference entity="Premier_Development_League" number="3" tag="BRIDGE-1" type="description">the Premier Development League</reference>
-					<reference entity="K-W_United_FC" number="4" tag="PATIENT-2" type="name">K-W United FC</reference>
-				</references>
 				<text>St Vincent-St Mary High School is the ground of Akron Summit Assault who play in the Premier Development League, of which K-W United FC have been champions.</text>
 				<template>PATIENT-1 is the ground of AGENT-1 who play in BRIDGE-1 , of which PATIENT-2 have been champions .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Akron_Summit_Assault | league | Premier_Development_League</striple>
-					<striple>Premier_Development_League | champions | K-W_United_FC</striple>
-					<striple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Akron_Summit_Assault" number="1" tag="AGENT-1" type="name">Akron Summit Assault</reference>
-					<reference entity="Premier_Development_League" number="2" tag="BRIDGE-1" type="description">the Premier Development League</reference>
-					<reference entity="K-W_United_FC" number="3" tag="PATIENT-2" type="name">K-W United FC</reference>
-					<reference entity="Akron_Summit_Assault" number="4" tag="AGENT-1" type="name">their</reference>
-					<reference entity="St._Vincent–St._Mary_High_School" number="5" tag="PATIENT-1" type="name">St</reference>
-				</references>
 				<text>Akron Summit Assault who play in the Premier Development League, won by K-W United FC, have their home ground at St. Vincent-St. Mary High School.</text>
 				<template>AGENT-1 who play in BRIDGE-1 , won by PATIENT-2 , have AGENT-1 home ground at PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Akron_Summit_Assault | ground | St._Vincent–St._Mary_High_School</striple>
-					<striple>Akron_Summit_Assault | league | Premier_Development_League</striple>
-					<striple>Premier_Development_League | champions | K-W_United_FC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="St._Vincent–St._Mary_High_School" number="1" tag="PATIENT-1" type="name">St Vincent-St Mary High School</reference>
-					<reference entity="Akron_Summit_Assault" number="2" tag="AGENT-1" type="name">Akron Summit Assault</reference>
-					<reference entity="Premier_Development_League" number="3" tag="BRIDGE-1" type="description">the Premier Development League</reference>
-					<reference entity="K-W_United_FC" number="4" tag="PATIENT-2" type="name">K-W United FC</reference>
-				</references>
 				<text>St Vincent-St Mary High School is the ground of Akron Summit Assault who play in the Premier Development League which K-W United FC have been champions of.</text>
 				<template>PATIENT-1 is the ground of AGENT-1 who play in BRIDGE-1 which PATIENT-2 have been champions of .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Akron_Summit_Assault</entity>
 				<entity>BRIDGE-1 | Premier_Development_League</entity>
+				<entity>AGENT-1 | Akron_Summit_Assault</entity>
 				<entity>PATIENT-1 | St._Vincent–St._Mary_High_School</entity>
 				<entity>PATIENT-2 | K-W_United_FC</entity>
 			</entitymap>
@@ -1177,52 +601,20 @@
 				<mtriple>Premier_Development_League | champions | K-W_United_FC</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Premier_Development_League | champions | K-W_United_FC</striple>
-					<striple>Akron_Summit_Assault | league | Premier_Development_League</striple>
-					<striple>Akron_Summit_Assault | numberOfMembers | 3000</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="K-W_United_FC" number="1" tag="PATIENT-2" type="name">K-W United FC</reference>
-					<reference entity="Premier_Development_League" number="2" tag="BRIDGE-1" type="description">the Premier Development League</reference>
-					<reference entity="3000" number="4" tag="PATIENT-1" type="name">3000</reference>
-				</references>
 				<text>K-W United FC were champions of the Premier Development League where Akron Summit Assault (which has 3000 members) also play.</text>
 				<template>PATIENT-2 were champions of BRIDGE-1 where AGENT-1 ( which has PATIENT-1 members ) also play .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Akron_Summit_Assault | numberOfMembers | 3000</striple>
-					<striple>Akron_Summit_Assault | league | Premier_Development_League</striple>
-					<striple>Premier_Development_League | champions | K-W_United_FC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="3000" number="1" tag="PATIENT-1" type="name">3000</reference>
-					<reference entity="Akron_Summit_Assault" number="2" tag="AGENT-1" type="name">Akron Summit Assault</reference>
-					<reference entity="Premier_Development_League" number="3" tag="BRIDGE-1" type="description">the Premier Development League</reference>
-					<reference entity="K-W_United_FC" number="4" tag="PATIENT-2" type="name">champions K-W United FC</reference>
-				</references>
 				<text>3000 member club Akron Summit Assault play in the Premier Development League alongside former champions K-W United FC.</text>
 				<template>PATIENT-1 member club AGENT-1 play in BRIDGE-1 alongside former PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Akron_Summit_Assault | numberOfMembers | 3000</striple>
-					<striple>Akron_Summit_Assault | league | Premier_Development_League</striple>
-					<striple>Premier_Development_League | champions | K-W_United_FC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Akron_Summit_Assault" number="1" tag="AGENT-1" type="name">Akron Summit Assault</reference>
-					<reference entity="3000" number="2" tag="PATIENT-1" type="name">3000</reference>
-					<reference entity="Premier_Development_League" number="3" tag="BRIDGE-1" type="description">the Premier Development League</reference>
-					<reference entity="K-W_United_FC" number="4" tag="PATIENT-2" type="name">K-W United FC</reference>
-				</references>
 				<text>Akron Summit Assault has 3000 members and plays in the Premier Development League of which K-W United FC were champions.</text>
 				<template>AGENT-1 has PATIENT-1 members and plays in BRIDGE-1 of which PATIENT-2 were champions .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Akron_Summit_Assault</entity>
 				<entity>BRIDGE-1 | Premier_Development_League</entity>
+				<entity>AGENT-1 | Akron_Summit_Assault</entity>
 				<entity>PATIENT-1 | 3000</entity>
 				<entity>PATIENT-2 | K-W_United_FC</entity>
 			</entitymap>
@@ -1239,53 +631,20 @@
 				<mtriple>A.S._Gubbio_1910 | ground | Italy</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>A.S._Gubbio_1910 | ground | Italy</striple>
-					<striple>Italy | leader | Sergio_Mattarella</striple>
-					<striple>Italy | demonym | Italians</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="description">A .S . Gubbio 1910</reference>
-					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
-					<reference entity="Sergio_Mattarella" number="3" tag="PATIENT-2" type="name">Sergio Mattarella</reference>
-					<reference entity="Italians" number="4" tag="PATIENT-1" type="description">the Italian people</reference>
-				</references>
 				<text>The ground of A.S. Gubbio 1910 is located in Italy where Sergio Mattarella is a leader of the Italian people.</text>
 				<template>The ground of AGENT-1 is located in BRIDGE-1 where PATIENT-2 is a leader of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>A.S._Gubbio_1910 | ground | Italy</striple>
-					<striple>Italy | leader | Sergio_Mattarella</striple>
-					<striple>Italy | demonym | Italians</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="description">A .S . Gubbio 1910</reference>
-					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
-					<reference entity="Sergio_Mattarella" number="3" tag="PATIENT-2" type="name">Sergio Mattarella</reference>
-					<reference entity="Italians" number="4" tag="PATIENT-1" type="name">Italians</reference>
-				</references>
 				<text>The ground of A.S. Gubbio 1910 is located in Italy which is lead by Sergio Mattarella and inhabited by Italians.</text>
 				<template>The ground of AGENT-1 is located in BRIDGE-1 which is lead by PATIENT-2 and inhabited by PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>A.S._Gubbio_1910 | ground | Italy</striple>
-					<striple>Italy | demonym | Italians</striple>
-					<striple>Italy | leader | Sergio_Mattarella</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="A.S._Gubbio_1910" number="1" tag="AGENT-1" type="description">A .S . Gubbio 1910</reference>
-					<reference entity="Italy" number="2" tag="BRIDGE-1" type="name">Italy</reference>
-					<reference entity="Italians" number="3" tag="PATIENT-1" type="name">Italians</reference>
-					<reference entity="Sergio_Mattarella" number="4" tag="PATIENT-2" type="name">Sergio Mattarella</reference>
-				</references>
 				<text>The ground of A.S. Gubbio 1910 is located in Italy, country of Italians where the leader is Sergio Mattarella.</text>
 				<template>The ground of AGENT-1 is located in BRIDGE-1 , country of PATIENT-1 where the leader is PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | A.S._Gubbio_1910</entity>
 				<entity>BRIDGE-1 | Italy</entity>
+				<entity>AGENT-1 | A.S._Gubbio_1910</entity>
 				<entity>PATIENT-1 | Italians</entity>
 				<entity>PATIENT-2 | Sergio_Mattarella</entity>
 			</entitymap>
@@ -1302,60 +661,23 @@
 				<mtriple>AEK_Athens_F.C. | ground | Olympic_Stadium_(Athens)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AEK_Athens_F.C. | ground | Olympic_Stadium_(Athens)</striple>
-					<striple>Olympic_Stadium_(Athens) | location | Athens</striple>
-					<striple>Athens | mayor | Giorgos_Kaminis</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AEK_Athens_F.C." number="1" tag="AGENT-1" type="name">AEK Athens FC</reference>
-					<reference entity="Olympic_Stadium_(Athens)" number="2" tag="BRIDGE-2" type="description">the Olympic Stadium </reference>
-					<reference entity="Athens" number="4" tag="BRIDGE-1" type="name">Athens</reference>
-					<reference entity="Giorgos_Kaminis" number="5" tag="PATIENT-1" type="name">Giorgos Kaminis</reference>
-				</references>
 				<text>The ground for AEK Athens FC is the Olympic Stadium (Athens) in Athens whose mayor is Giorgos Kaminis.</text>
 				<template>The ground for AGENT-1 is BRIDGE-2 ( BRIDGE-1 ) in BRIDGE-1 whose mayor is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>AEK_Athens_F.C. | ground | Olympic_Stadium_(Athens)</striple>
-					<striple>Olympic_Stadium_(Athens) | location | Athens</striple>
-					<striple>Athens | mayor | Giorgos_Kaminis</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AEK_Athens_F.C." number="1" tag="AGENT-1" type="name">AEK Athens FC</reference>
-					<reference entity="Olympic_Stadium_(Athens)" number="2" tag="BRIDGE-2" type="description">the Olympic Stadium</reference>
-					<reference entity="Athens" number="3" tag="BRIDGE-1" type="name">Athens</reference>
-					<reference entity="Athens" number="4" tag="BRIDGE-1" type="name">who 's</reference>
-					<reference entity="Giorgos_Kaminis" number="5" tag="PATIENT-1" type="name">Giorgos Kaminis</reference>
-				</references>
 				<text>Home ground of AEK Athens FC, the Olympic Stadium is located in Athens, who's mayor is Giorgos Kaminis.</text>
 				<template>Home ground of AGENT-1 , BRIDGE-2 is located in BRIDGE-1 , BRIDGE-1 mayor is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Olympic_Stadium_(Athens) | location | Athens</striple>
-					<striple>AEK_Athens_F.C. | ground | Olympic_Stadium_(Athens)</striple>
-					<striple>Athens | mayor | Giorgos_Kaminis</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Olympic_Stadium_(Athens)" number="1" tag="BRIDGE-2" type="description">The Olympic Stadium</reference>
-					<reference entity="Athens" number="2" tag="BRIDGE-1" type="name">Athens</reference>
-					<reference entity="AEK_Athens_F.C." number="3" tag="AGENT-1" type="name">AEK Athens FC</reference>
-					<reference entity="Athens" number="4" tag="BRIDGE-1" type="name">Athens</reference>
-					<reference entity="Giorgos_Kaminis" number="5" tag="PATIENT-1" type="name">Giorgos Kaminis</reference>
-				</references>
 				<text>The Olympic Stadium in Athens is the home ground of AEK Athens FC. The mayor of Athens is Giorgos Kaminis.</text>
 				<template>BRIDGE-2 in BRIDGE-1 is the home ground of AGENT-1 . The mayor of BRIDGE-1 is PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | AEK_Athens_F.C.</entity>
 				<entity>BRIDGE-1 | Athens</entity>
 				<entity>BRIDGE-2 | Olympic_Stadium_(Athens)</entity>
 				<entity>PATIENT-1 | Giorgos_Kaminis</entity>
+				<entity>AGENT-1 | AEK_Athens_F.C.</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

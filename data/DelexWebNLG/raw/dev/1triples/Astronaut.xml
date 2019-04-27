@@ -9,57 +9,22 @@
 				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="1" tag="PATIENT-1" type="description">the Distinguished Service Medal</reference>
-					<reference entity="Alan_Shepard" number="2" tag="AGENT-1" type="name">Alan Shepard</reference>
-				</references>
 				<text>The United States Navy awarded the Distinguished Service Medal to Alan Shepard.</text>
 				<template>The United States Navy awarded PATIENT-1 to AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="PATIENT-1" type="description">the Distinguished Service Medal by the United States Navy</reference>
-				</references>
 				<text>Alan Shepard was awarded the Distinguished Service Medal by the United States Navy.</text>
 				<template>AGENT-1 was awarded PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="PATIENT-1" type="description">the Distinguished Service Medal in the United States Navy</reference>
-				</references>
 				<text>Alan Shepard was awarded the Distinguished Service Medal in the United States Navy.</text>
 				<template>AGENT-1 was awarded PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="PATIENT-1" type="description">the Distinguished Service Medal by the US Navy</reference>
-				</references>
 				<text>Alan Shepard was awarded the Distinguished Service Medal by the US Navy.</text>
 				<template>AGENT-1 was awarded PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset>
-					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="PATIENT-1" type="description">the United States Navy Distinguished Service Medal</reference>
-				</references>
 				<text>Alan Shepard was awarded the United States Navy Distinguished Service Medal.</text>
 				<template>AGENT-1 was awarded PATIENT-1 .</template>
 			</lex>
@@ -76,13 +41,6 @@
 				<mtriple>Alan_Shepard | deathPlace | California</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="California" number="2" tag="PATIENT-1" type="name">California</reference>
-				</references>
 				<text>Alan Shepard died in California.</text>
 				<template>AGENT-1 died in PATIENT-1 .</template>
 			</lex>
@@ -99,35 +57,14 @@
 				<mtriple>Apollo_11 | backup pilot | William_Anders</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Apollo_11 | backup pilot | William_Anders</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="William_Anders" number="1" tag="PATIENT-1" type="name">William Anders</reference>
-					<reference entity="Apollo_11" number="2" tag="AGENT-1" type="name">Apollo 11</reference>
-				</references>
 				<text>William Anders was the backup pilot on Apollo 11.</text>
 				<template>PATIENT-1 was the backup pilot on AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Apollo_11 | backup pilot | William_Anders</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="William_Anders" number="1" tag="PATIENT-1" type="name">William Anders</reference>
-					<reference entity="Apollo_11" number="2" tag="AGENT-1" type="name">Apollo 11</reference>
-				</references>
 				<text>William Anders was a backup pilot on the Apollo 11 mission.</text>
 				<template>PATIENT-1 was a backup pilot on the AGENT-1 mission .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Apollo_11 | backup pilot | William_Anders</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_11" number="1" tag="AGENT-1" type="name">Apollo 11</reference>
-					<reference entity="William_Anders" number="2" tag="PATIENT-1" type="name">William Anders</reference>
-				</references>
 				<text>Apollo 11's backup pilot was William Anders.</text>
 				<template>AGENT-1 's backup pilot was PATIENT-1 .</template>
 			</lex>
@@ -144,35 +81,14 @@
 				<mtriple>Apollo_14 | operator | NASA</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Apollo_14 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_14" number="1" tag="AGENT-1" type="description">The Apollo 14</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="name">NASA</reference>
-				</references>
 				<text>The Apollo 14 was operated by NASA.</text>
 				<template>AGENT-1 was operated by PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Apollo_14 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="NASA" number="1" tag="PATIENT-1" type="name">NASA</reference>
-					<reference entity="Apollo_14" number="2" tag="AGENT-1" type="description">the Apollo 14</reference>
-				</references>
 				<text>NASA operated the Apollo 14.</text>
 				<template>PATIENT-1 operated AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Apollo_14 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_14" number="1" tag="AGENT-1" type="name">Apollo 14</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="name">NASA</reference>
-				</references>
 				<text>Apollo 14 was operated by NASA.</text>
 				<template>AGENT-1 was operated by PATIENT-1 .</template>
 			</lex>
@@ -189,35 +105,14 @@
 				<mtriple>Apollo_8 | operator | NASA</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Apollo_8 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_8" number="1" tag="AGENT-1" type="description">The Apollo 8</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="name">NASA</reference>
-				</references>
 				<text>The Apollo 8 operator is NASA.</text>
 				<template>AGENT-1 operator is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Apollo_8 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_8" number="1" tag="AGENT-1" type="name">Apollo 8</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="name">Nasa</reference>
-				</references>
 				<text>Apollo 8 is operated by Nasa.</text>
 				<template>AGENT-1 is operated by PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Apollo_8 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_8" number="1" tag="AGENT-1" type="name">Apollo 8</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="name">NASA</reference>
-				</references>
 				<text>Apollo 8 was operated by NASA.</text>
 				<template>AGENT-1 was operated by PATIENT-1 .</template>
 			</lex>
@@ -234,46 +129,18 @@
 				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="name">United States</reference>
-				</references>
 				<text>Buzz Aldrin's nationality is United States.</text>
 				<template>AGENT-1 's nationality is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">a United States</reference>
-				</references>
 				<text>Buzz Aldrin was a United States national.</text>
 				<template>AGENT-1 was PATIENT-1 national .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">an American</reference>
-				</references>
 				<text>Buzz Aldrin was an American.</text>
 				<template>AGENT-1 was PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">a US</reference>
-				</references>
 				<text>Buzz Aldrin is a US national.</text>
 				<template>AGENT-1 is PATIENT-1 national .</template>
 			</lex>
@@ -290,57 +157,22 @@
 				<mtriple>Elliot_See | occupation | Test_pilot</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Elliot_See | occupation | Test_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="Test_pilot" number="2" tag="PATIENT-1" type="description">a test pilot</reference>
-				</references>
 				<text>Elliot See was a test pilot.</text>
 				<template>AGENT-1 was PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Elliot_See | occupation | Test_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="Test_pilot" number="2" tag="PATIENT-1" type="description">a test pilot</reference>
-				</references>
 				<text>Elliot See served as a test pilot.</text>
 				<template>AGENT-1 served as PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Elliot_See | occupation | Test_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="Test_pilot" number="2" tag="PATIENT-1" type="description">a test pilot</reference>
-				</references>
 				<text>Elliot See flew as a test pilot.</text>
 				<template>AGENT-1 flew as PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Elliot_See | occupation | Test_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="Test_pilot" number="2" tag="PATIENT-1" type="description">a test pilot</reference>
-				</references>
 				<text>Elliot See's occupation was a test pilot.</text>
 				<template>AGENT-1 's occupation was PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset>
-					<striple>Elliot_See | occupation | Test_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="Test_pilot" number="2" tag="PATIENT-1" type="description">a test pilot</reference>
-				</references>
 				<text>Elliot See performed as a test pilot.</text>
 				<template>AGENT-1 performed as PATIENT-1 .</template>
 			</lex>
@@ -357,13 +189,6 @@
 				<mtriple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="University_of_Texas_at_Austin" number="1" tag="AGENT-1" type="description">The university of texas at Austin</reference>
-					<reference entity="University_of_Texas_System" number="2" tag="PATIENT-1" type="description">the university of texas system</reference>
-				</references>
 				<text>The university of texas at Austin is affiliated to the university of texas system.</text>
 				<template>AGENT-1 is affiliated to PATIENT-1 .</template>
 			</lex>
@@ -380,46 +205,18 @@
 				<mtriple>University_of_Texas_at_Austin | mascot | Hook_'em_(mascot)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>University_of_Texas_at_Austin | mascot | Hook_em_(mascot)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="University_of_Texas_at_Austin" number="1" tag="AGENT-1" type="description">The University of Texas at Austin</reference>
-					<reference entity="Hook_em_(mascot)" number="2" tag="PATIENT-1" type="name">Hook 'em</reference>
-				</references>
 				<text>The University of Texas at Austin's mascot is called Hook'em.</text>
 				<template>AGENT-1 's mascot is called PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>University_of_Texas_at_Austin | mascot | Hook_em_(mascot)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Hook_em_(mascot)" number="1" tag="PATIENT-1" type="name">Hook 'em</reference>
-					<reference entity="University_of_Texas_at_Austin" number="2" tag="AGENT-1" type="description">the University of Texas at Austin</reference>
-				</references>
 				<text>Hook'em is the mascot for the University of Texas at Austin.</text>
 				<template>PATIENT-1 is the mascot for AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>University_of_Texas_at_Austin | mascot | Hook_em_(mascot)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="University_of_Texas_at_Austin" number="1" tag="AGENT-1" type="description">the University of Texas</reference>
-					<reference entity="Hook_em_(mascot)" number="2" tag="PATIENT-1" type="name">Hook 'em</reference>
-				</references>
 				<text>The mascot of the University of Texas is Hook'em.</text>
 				<template>The mascot of AGENT-1 is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>University_of_Texas_at_Austin | mascot | Hook_em_(mascot)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Hook_em_(mascot)" number="1" tag="PATIENT-1" type="description">The Hook  'em</reference>
-					<reference entity="University_of_Texas_at_Austin" number="2" tag="AGENT-1" type="name">University of Texas at Austin</reference>
-				</references>
 				<text>The Hook 'em is the mascot of University of Texas at Austin.</text>
 				<template>PATIENT-1 is the mascot of AGENT-1 .</template>
 			</lex>
@@ -429,6 +226,4 @@
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

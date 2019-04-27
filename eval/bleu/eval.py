@@ -65,7 +65,7 @@ def BLEU(hyps, refs, single_ref=False, tokenizer=None, hyp_tokenizer=None, ref_t
         return [0, 0, 0, 0, 0]
 
     cmd = base + "/multi-bleu.perl " + " ".join(ref_path) + " < " + hyp_path
-    # print cmd
+    print(cmd)
     res = os.popen(cmd).read()
     # print res
     search = re.search(" (\d*[\.\d]*?), (\d*[\.\d]*?)\/(\d*[\.\d]*?)\/(\d*[\.\d]*?)\/(\d*[\.\d]*?) ", str(res))

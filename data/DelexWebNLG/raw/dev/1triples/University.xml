@@ -5,39 +5,21 @@
 			<originaltripleset>
 				<otriple>Accademia_di_Architettura_di_Mendrisio | facultySize | &quot;100&quot;^^xsd:nonNegativeInteger</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Accademia_di_Architettura_di_Mendrisio | faculty | 100</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="name">Accademia di Architettura di Mendrisio</reference>
-					<reference entity="100" number="2" tag="PATIENT-1" type="name">100</reference>
-				</references>
 				<text>The academic staff size of Accademia di Architettura di Mendrisio is 100.</text>
 				<template>The academic staff size of AGENT-1 is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="100" number="1" tag="PATIENT-1" type="name">100</reference>
-					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="2" tag="AGENT-1" type="description">the Accademia di Architettura di Mendrisio</reference>
-				</references>
 				<text>The academic staff number 100 at the Accademia di Architettura di Mendrisio.</text>
 				<template>The academic staff number PATIENT-1 at AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Accademia_di_Architettura_di_Mendrisio | academicStaffSize | 100</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Accademia_di_Architettura_di_Mendrisio" number="1" tag="AGENT-1" type="description">The Accademia di Architettura di Mendrisio</reference>
-					<reference entity="100" number="2" tag="PATIENT-1" type="name">100</reference>
-				</references>
 				<text>The Accademia di Architettura di Mendrisio has an academic staff of 100.</text>
 				<template>AGENT-1 has an academic staff of PATIENT-1 .</template>
 			</lex>
@@ -54,35 +36,14 @@
 				<mtriple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Acharya Institue of Technology</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="2" tag="PATIENT-1" type="name">Soldenvanahalli , Acharya Dr</reference>
-				</references>
 				<text>The campus address for the Acharya Institue of Technology is: Soldenvanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore - 560090.</text>
 				<template>The campus address for AGENT-1 is : PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="2" tag="PATIENT-1" type="name">Soldevanahalli , Acharya Dr</reference>
-				</references>
 				<text>The Acharya Institute of Technology campus is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.</text>
 				<template>AGENT-1 campus is located in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="2" tag="PATIENT-1" type="name">Soldevanahalli , Acharya Dr</reference>
-				</references>
 				<text>The campus of the Acharya Institute of Technology is located at Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.</text>
 				<template>The campus of AGENT-1 is located at PATIENT-1 .</template>
 			</lex>
@@ -99,35 +60,14 @@
 				<mtriple>Alba_Iulia | country | Romania</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alba_Iulia | country | Romania</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alba_Iulia" number="1" tag="AGENT-1" type="name">Alba Iulia</reference>
-					<reference entity="Romania" number="2" tag="PATIENT-1" type="name">Romania</reference>
-				</references>
 				<text>Alba Iulia is located in Romania.</text>
 				<template>AGENT-1 is located in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alba_Iulia | country | Romania</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alba_Iulia" number="1" tag="AGENT-1" type="name">Alba Iulia</reference>
-					<reference entity="Romania" number="2" tag="PATIENT-1" type="name">Romania</reference>
-				</references>
 				<text>Alba Iulia is in the country of Romania.</text>
 				<template>AGENT-1 is in the country of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Alba_Iulia | country | Romania</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alba_Iulia" number="1" tag="AGENT-1" type="name">Alba Iulia</reference>
-					<reference entity="Romania" number="2" tag="PATIENT-1" type="name">Romania</reference>
-				</references>
 				<text>Alba Iulia is in Romania.</text>
 				<template>AGENT-1 is in PATIENT-1 .</template>
 			</lex>
@@ -144,35 +84,14 @@
 				<mtriple>Alba_Iulia | isPartOf | Alba_County</mtriple>
 			</modifiedtripleset>
 			<lex comment="toFix" lid="Id1">
-				<sortedtripleset>
-					<striple>Alba_Iulia | isPartOf | Alba_County</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alba_Iulia" number="1" tag="AGENT-1" type="name">Alba Iulia</reference>
-					<reference entity="Alba_County" number="2" tag="PATIENT-1" type="description">the county of Alba</reference>
-				</references>
 				<text>Alba Iulia os part of the county of Alba.</text>
 				<template>AGENT-1 os part of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alba_Iulia | isPartOf | Alba_County</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alba_Iulia" number="1" tag="AGENT-1" type="name">Alba lulia</reference>
-					<reference entity="Alba_County" number="2" tag="PATIENT-1" type="name">Alba County</reference>
-				</references>
 				<text>Alba lulia is part of Alba County.</text>
 				<template>AGENT-1 is part of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Alba_Iulia | isPartOf | Alba_County</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alba_Iulia" number="1" tag="AGENT-1" type="name">Alba Iulia</reference>
-					<reference entity="Alba_County" number="2" tag="PATIENT-1" type="name">Alba County</reference>
-				</references>
 				<text>Alba Iulia is part of Alba County.</text>
 				<template>AGENT-1 is part of PATIENT-1 .</template>
 			</lex>
@@ -189,24 +108,10 @@
 				<mtriple>Romania | patronSaint | Andrew_the_Apostle</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Romania | patronSaint | Andrew_the_Apostle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Romania" number="1" tag="AGENT-1" type="name">Romania</reference>
-					<reference entity="Andrew_the_Apostle" number="2" tag="PATIENT-1" type="name">Andrew the Apostle</reference>
-				</references>
 				<text>The patron Saint of Romania is Andrew the Apostle.</text>
 				<template>The patron Saint of AGENT-1 is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Romania | patronSaint | Andrew_the_Apostle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Andrew_the_Apostle" number="1" tag="PATIENT-1" type="name">Andrew the Apostle</reference>
-					<reference entity="Romania" number="2" tag="AGENT-1" type="name">Romania</reference>
-				</references>
 				<text>Andrew the Apostle is the patron saint of Romania.</text>
 				<template>PATIENT-1 is the patron saint of AGENT-1 .</template>
 			</lex>
@@ -219,39 +124,21 @@
 			<originaltripleset>
 				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | facultySize | &quot;737&quot;^^xsd:nonNegativeInteger</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aarhus_University,_School_of_Business_and_Social_Sciences | faculty | 737</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">the School of Business and Social Sciences at the Aarhus University</reference>
-					<reference entity="737" number="2" tag="PATIENT-1" type="name">737</reference>
-				</references>
 				<text>The academic staff of the School of Business and Social Sciences at the Aarhus University number 737.</text>
 				<template>The academic staff of AGENT-1 number PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
-					<reference entity="737" number="2" tag="PATIENT-1" type="name">737</reference>
-				</references>
 				<text>The School of Business and Social Sciences at the Aarhus University has academic staff size of 737.</text>
 				<template>AGENT-1 has academic staff size of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | academicStaffSize | 737</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
-					<reference entity="737" number="2" tag="PATIENT-1" type="name">737</reference>
-				</references>
 				<text>The School of Business and Social Sciences at the Aarhus University has an academic staff of 737.</text>
 				<template>AGENT-1 has an academic staff of PATIENT-1 .</template>
 			</lex>
@@ -268,46 +155,18 @@
 				<mtriple>School of Business and Social Sciences at the Aarhus University | country | Denmark</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The Aarhus University School of Business and Social Sciences</reference>
-					<reference entity="Denmark" number="2" tag="PATIENT-1" type="description">the country of Denmark</reference>
-				</references>
 				<text>The Aarhus University School of Business and Social Sciences is in the country of Denmark.</text>
 				<template>AGENT-1 is in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
-					<reference entity="Denmark" number="2" tag="PATIENT-1" type="name">Denmark</reference>
-				</references>
 				<text>The School of Business and Social Sciences at the Aarhus University is situated in Denmark.</text>
 				<template>AGENT-1 is situated in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
-					<reference entity="Denmark" number="2" tag="PATIENT-1" type="name">Denmark</reference>
-				</references>
 				<text>The School of Business and Social Sciences at the Aarhus University is located in Denmark.</text>
 				<template>AGENT-1 is located in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>School of Business and Social Sciences at the Aarhus University | country | Denmark</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="School of Business and Social Sciences at the Aarhus University" number="1" tag="AGENT-1" type="description">The School of Business and Social Sciences at the Aarhus University</reference>
-					<reference entity="Denmark" number="2" tag="PATIENT-1" type="name">Denmark</reference>
-				</references>
 				<text>The School of Business and Social Sciences at the Aarhus University is in Denmark.</text>
 				<template>AGENT-1 is in PATIENT-1 .</template>
 			</lex>
@@ -317,6 +176,4 @@
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

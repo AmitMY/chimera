@@ -15,64 +15,23 @@
 				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Tim_Brooke-Taylor" number="1" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="&quot;STV&quot;" number="3" tag="PATIENT-4" type="name">STV</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="4" tag="PATIENT-3" type="name">10/03/1983</reference>
-					<reference entity="Steve_Bright" number="5" tag="PATIENT-2" type="name">Steve Bright</reference>
-				</references>
 				<text>Tim Brooke-Taylor was the star of Bananaman, an STV series first aired on 10/03/1983 and created by Steve Bright.</text>
 				<template>PATIENT-1 was the star of AGENT-1 , an PATIENT-4 series first aired on PATIENT-3 and created by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Steve_Bright" number="2" tag="PATIENT-2" type="name">Steve Bright</reference>
-					<reference entity="Tim_Brooke-Taylor" number="3" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="description">The show</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="5" tag="PATIENT-3" type="name">3rd October 1983</reference>
-					<reference entity="&quot;STV&quot;" number="6" tag="PATIENT-4" type="name">STV</reference>
-				</references>
 				<text>Bananaman was created by Steve Bright and starred Tim Brooke-Taylor. The show was first aired on 3rd October 1983 by STV.</text>
 				<template>AGENT-1 was created by PATIENT-2 and starred PATIENT-1 . AGENT-1 was first aired on PATIENT-3 by PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Tim_Brooke-Taylor" number="1" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Steve_Bright" number="3" tag="PATIENT-2" type="name">Steve Bright</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;STV&quot;" number="5" tag="PATIENT-4" type="name">STV</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="6" tag="PATIENT-3" type="name">3 October 1983</reference>
-				</references>
 				<text>Tim Brooke-Taylor starred in Bananaman that was created by Steve Bright. It was broadcast by STV and first aired on 3 October 1983.</text>
 				<template>PATIENT-1 starred in AGENT-1 that was created by PATIENT-2 . AGENT-1 was broadcast by PATIENT-4 and first aired on PATIENT-3 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;STV&quot;</entity>
 				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
-				<entity>PATIENT-2 | Steve_Bright</entity>
 				<entity>PATIENT-3 | &quot;1983-10-03&quot;</entity>
-				<entity>PATIENT-4 | &quot;STV&quot;</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id2" size="4">
@@ -82,6 +41,12 @@
 				<otriple>Bolt_(DC_Comics) | creator | Ernie_Colón</otriple>
 				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Ernie_Colón</otriple>
+				<otriple>Ernie_Colón | nationality | Puerto_Ricans</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+				<otriple>Bolt_(DC_Comics) | creator | Dan_Mishkin</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Bolt_(comicsCharacter) | creator | Ernie_Colón</mtriple>
 				<mtriple>Ernie_Colón | nationality | Puerto_Ricans</mtriple>
@@ -89,62 +54,23 @@
 				<mtriple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Dan_Mishkin" number="1" tag="PATIENT-3" type="name">Dan Mishkin</reference>
-					<reference entity="Puerto_Ricans" number="2" tag="PATIENT-1" type="name">Puerto Rican</reference>
-					<reference entity="Ernie_Colón" number="3" tag="BRIDGE-1" type="name">Ernie Colon</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="4" tag="AGENT-1" type="description">the comic character of Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="5" tag="PATIENT-2" type="name">Larry Bolatinsky</reference>
-				</references>
 				<text>Dan Mishkin and the Puerto Rican national, Ernie Colon created the comic character of Bolt who has the alternative name of Larry Bolatinsky.</text>
 				<template>PATIENT-3 and the PATIENT-1 national , BRIDGE-1 created AGENT-1 who has the alternative name of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Dan_Mishkin" number="1" tag="PATIENT-3" type="name">Dan Mishkin</reference>
-					<reference entity="Ernie_Colón" number="2" tag="BRIDGE-1" type="name">Ernie Colón </reference>
-					<reference entity="Bolt_(comicsCharacter)" number="4" tag="AGENT-1" type="description">the comic character Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="5" tag="PATIENT-2" type="name">Larry Bolatinsky</reference>
-				</references>
 				<text>Dan Mishkin and Ernie Colón (Puerto Rican) created the comic character Bolt, the alternative name of which is Larry Bolatinsky.</text>
 				<template>PATIENT-3 and BRIDGE-1 ( PATIENT-1 ) created AGENT-1 , the alternative name of which is PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character of Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-2" type="name">Larry Bolatinsky</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Dan_Mishkin" number="4" tag="PATIENT-3" type="name">Dan Mishkin</reference>
-					<reference entity="Puerto_Ricans" number="5" tag="PATIENT-1" type="name">Puerto Rican</reference>
-					<reference entity="Ernie_Colón" number="6" tag="BRIDGE-1" type="name">Ernie Colon</reference>
-				</references>
 				<text>The comic book character of Bolt has the alternative name of Larry Bolatinsky. It was created by Dan Mishkin and the Puerto Rican national, Ernie Colon.</text>
 				<template>AGENT-1 has the alternative name of PATIENT-2 . AGENT-1 was created by PATIENT-3 and the PATIENT-1 national , BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Ernie_Colón</entity>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Puerto_Ricans</entity>
-				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
 				<entity>PATIENT-3 | Dan_Mishkin</entity>
+				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id3" size="4">
@@ -161,63 +87,22 @@
 				<mtriple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="name">Big Hero 6</reference>
-					<reference entity="Damon_Wayans,_Jr." number="3" tag="PATIENT-2" type="name">Damon Wayans Jr</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="description">The character</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Baymax is a character in Big Hero 6 that stars Damon Wayans Jr. The character was created by the American, Duncan Rouleau.</text>
 				<template>AGENT-1 is a character in BRIDGE-2 that stars PATIENT-2 . AGENT-1 was created by PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Damon_Wayans,_Jr." number="1" tag="PATIENT-2" type="name">Damon Wayans Jr</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character of Baymax</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Damon Wayans Jr starred in the film Big Hero 6 which also included the character of Baymax who was created by the American, Duncan Rouleau.</text>
 				<template>PATIENT-2 starred in BRIDGE-2 which also included AGENT-1 who was created by PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Damon_Wayans,_Jr.</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
-					<reference entity="Damon_Wayans,_Jr." number="3" tag="PATIENT-2" type="name">Damon Wayans , Jr</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="description">The character</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Baymax is a character in the film Big Hero 6 which starred Damon Wayans, Jr. The character was created by the American national Duncan Rouleau.</text>
 				<template>AGENT-1 is a character in BRIDGE-2 which starred PATIENT-2 . AGENT-1 was created by the PATIENT-1 national BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baymax</entity>
 				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
-				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Americans</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
 				<entity>PATIENT-2 | Damon_Wayans,_Jr.</entity>
 			</entitymap>
 		</entry>
@@ -228,6 +113,12 @@
 				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
 				<otriple>Big_Hero_6_(film) | starring | Jamie_Chung</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Jamie_Chung</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
 				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
@@ -235,62 +126,22 @@
 				<mtriple>Big_Hero_6_(film) | starring | Jamie_Chung</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="name">Big Hero 6</reference>
-					<reference entity="Jamie_Chung" number="3" tag="PATIENT-2" type="name">Jamie Chung</reference>
-					<reference entity="Duncan_Rouleau" number="4" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">an American</reference>
-				</references>
 				<text>Baymax, a character in Big Hero 6, starring Jamie Chung, was created by Duncan Rouleau, an American.</text>
 				<template>AGENT-1 , a character in BRIDGE-2 , starring PATIENT-2 , was created by BRIDGE-1 , PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Jamie_Chung" number="1" tag="PATIENT-2" type="name">Jamie Chung</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character of Baymax</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">the American national</reference>
-					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Jamie Chung starred in the film Big Hero 6 in which the character of Baymax appeared. Baymax was created by the American national, Duncan Rouleau.</text>
 				<template>PATIENT-2 starred in BRIDGE-2 in which AGENT-1 appeared . AGENT-1 was created by PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Jamie_Chung</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Duncan_Rouleau" number="1" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-					<reference entity="Americans" number="2" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="4" tag="BRIDGE-2" type="description">the movie Big Hero 6</reference>
-					<reference entity="Jamie_Chung" number="5" tag="PATIENT-2" type="name">Jamie Chung</reference>
-				</references>
 				<text>Duncan Rouleau, who is American, created the character Baymax, which appeared in the movie Big Hero 6 starring Jamie Chung.</text>
 				<template>BRIDGE-1 , who is PATIENT-1 , created AGENT-1 , which appeared in BRIDGE-2 starring PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baymax</entity>
 				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
-				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Americans</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
 				<entity>PATIENT-2 | Jamie_Chung</entity>
 			</entitymap>
 		</entry>
@@ -308,67 +159,24 @@
 				<mtriple>Big_Hero_6_(film) | starring | Maya_Rudolph</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Big_Hero_6_(film)" number="1" tag="BRIDGE-2" type="name">Big Hero 6</reference>
-					<reference entity="Maya_Rudolph" number="2" tag="PATIENT-2" type="name">May Rudolph</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character of Baymax</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Big Hero 6 starred May Rudolph and the character of Baymax who was created by the American, Duncan Rouleau.</text>
 				<template>BRIDGE-2 starred PATIENT-2 and AGENT-1 who was created by PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
-					<reference entity="Maya_Rudolph" number="3" tag="PATIENT-2" type="name">Maya Rudolph</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="demonstrative">this character</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Baymax is a character in the film Big Hero 6 which starred Maya Rudolph. The creator of this character was American born Duncan Rouleau.</text>
 				<template>AGENT-1 is a character in BRIDGE-2 which starred PATIENT-2 . The creator of AGENT-1 was PATIENT-1 born BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Big_Hero_6_(film) | starring | Maya_Rudolph</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Maya_Rudolph" number="1" tag="PATIENT-2" type="name">Maya Rudolph</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="name">Big Hero 6</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character Baymax</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Maya Rudolph stars in Big Hero 6 in which the character Baymax also appears. Baymax was created by the American, Duncan Rouleau.</text>
 				<template>PATIENT-2 stars in BRIDGE-2 in which AGENT-1 also appears . AGENT-1 was created by PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baymax</entity>
 				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
-				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Americans</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
 				<entity>PATIENT-2 | Maya_Rudolph</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

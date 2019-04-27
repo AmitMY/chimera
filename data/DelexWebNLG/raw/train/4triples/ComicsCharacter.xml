@@ -8,6 +8,12 @@
 				<otriple>Arion_(comics) | alterEgo | &quot;Ahri'ahn&quot;@en</otriple>
 				<otriple>Arion_(comics) | creator | Paul_Kupperberg</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Arion_(comics) | creator | Jan_Duursema</otriple>
+				<otriple>Jan_Duursema | awards | Eisner_Award</otriple>
+				<otriple>Arion_(comics) | alterEgo | &quot;Ahri'ahn&quot;@en</otriple>
+				<otriple>Arion_(comics) | creators | Paul_Kupperberg</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Arion_(comicsCharacter) | creator | Jan_Duursema</mtriple>
 				<mtriple>Jan_Duursema | award | Eisner_Award</mtriple>
@@ -15,61 +21,23 @@
 				<mtriple>Arion_(comicsCharacter) | creator | Paul_Kupperberg</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Arion_(comicsCharacter) | creator | Paul_Kupperberg</striple>
-					<striple>Arion_(comicsCharacter) | creator | Jan_Duursema</striple>
-					<striple>Jan_Duursema | award | Eisner_Award</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Arion </reference>
-					<reference entity="&quot;Ahriahn&quot;" number="2" tag="PATIENT-2" type="name">Ahri 'ahn</reference>
-					<reference entity="Paul_Kupperberg" number="3" tag="PATIENT-3" type="name">Paul Kupperberg</reference>
-					<reference entity="Jan_Duursema" number="4" tag="BRIDGE-1" type="name">Jan Duursema</reference>
-					<reference entity="Eisner_Award" number="5" tag="PATIENT-1" type="description">the Eisner award</reference>
-				</references>
 				<text>Arion (also known as Ahri'ahn) is a comic character created by Paul Kupperberg and Jan Duursema, who won the Eisner award.</text>
 				<template>AGENT-1 (also known as PATIENT-2) is a comic character created by PATIENT-3 and BRIDGE-1 , who won PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Jan_Duursema | award | Eisner_Award</striple>
-					<striple>Arion_(comicsCharacter) | creator | Paul_Kupperberg</striple>
-					<striple>Arion_(comicsCharacter) | creator | Jan_Duursema</striple>
-					<striple>Arion_(comicsCharacter) | alternativeName | &quot;Ahriahn&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Paul_Kupperberg" number="1" tag="PATIENT-3" type="name">Paul Kupperberg</reference>
-					<reference entity="Eisner_Award" number="2" tag="PATIENT-1" type="name">Eisner Award</reference>
-					<reference entity="Jan_Duursema" number="3" tag="BRIDGE-1" type="name">Jan Duursema</reference>
-					<reference entity="Arion_(comicsCharacter)" number="4" tag="AGENT-1" type="description">the comic book character Arion</reference>
-					<reference entity="&quot;Ahriahn&quot;" number="5" tag="PATIENT-2" type="name">Ahri 'ahn</reference>
-				</references>
 				<text>Paul Kupperberg and Eisner Award winning Jan Duursema are the creators of the comic book character Arion, also know as Ahri'ahn.</text>
 				<template>PATIENT-3 and PATIENT-1 winning BRIDGE-1 are the creators of AGENT-1 , also know as PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Arion_(comicsCharacter) | creator | Paul_Kupperberg</striple>
-					<striple>Arion_(comicsCharacter) | creator | Jan_Duursema</striple>
-					<striple>Jan_Duursema | award | Eisner_Award</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Arion_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Arion </reference>
-					<reference entity="&quot;Ahriahn&quot;" number="2" tag="PATIENT-2" type="name">Ahri 'ahn</reference>
-					<reference entity="Paul_Kupperberg" number="3" tag="PATIENT-3" type="name">Paul Kupperberg</reference>
-					<reference entity="Jan_Duursema" number="4" tag="BRIDGE-1" type="name">Jan Duursema</reference>
-					<reference entity="Jan_Duursema" number="5" tag="BRIDGE-1" type="description">the latter</reference>
-					<reference entity="Eisner_Award" number="6" tag="PATIENT-1" type="description">the Eisner Award</reference>
-				</references>
 				<text>The comic book character Arion (also known as Ahri'ahn), was created by Paul Kupperberg and Jan Duursema, the latter having won the Eisner Award.</text>
 				<template>AGENT-1 (also known as PATIENT-2) , was created by PATIENT-3 and BRIDGE-1 , BRIDGE-1 having won PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Arion_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Jan_Duursema</entity>
+				<entity>AGENT-1 | Arion_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Eisner_Award</entity>
-				<entity>PATIENT-2 | &quot;Ahriahn&quot;</entity>
 				<entity>PATIENT-3 | Paul_Kupperberg</entity>
+				<entity>PATIENT-2 | &quot;Ahriahn&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id2" size="4">
@@ -79,6 +47,12 @@
 				<otriple>Aurakles | creators | Len_Wein</otriple>
 				<otriple>Aurakles | alterEgo | &quot;Aurakles&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Aurakles | creators | Dick_Dillin</otriple>
+				<otriple>Dick_Dillin | nationality | United_States</otriple>
+				<otriple>Aurakles | creator | Len_Wein</otriple>
+				<otriple>Aurakles | alterEgo | &quot;Aurakles&quot;@en</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Aurakles | creator | Dick_Dillin</mtriple>
 				<mtriple>Dick_Dillin | nationality | United_States</mtriple>
@@ -86,46 +60,23 @@
 				<mtriple>Aurakles | alternativeName | &quot;Aurakles&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset/>
-				<references/>
-				<text>The comic book character Aurakles was created by Len Wein and the American Dick Dillin.</text>
-				<template/>
+				<text>The comic book character Aurakles was created by Len Wein and the American @ Dick Dillin.</text>
+				<template>AGENT-1 was created by PATIENT-2 and PATIENT-1 @ BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Aurakles | alternativeName | &quot;Aurakles&quot;</striple>
-					<striple>Aurakles | creator | Dick_Dillin</striple>
-					<striple>Aurakles | creator | Len_Wein</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aurakles" number="1" tag="AGENT-1" type="description">The comic book character Aurakles</reference>
-					<reference entity="Dick_Dillin" number="3" tag="BRIDGE-1" type="name">Dick Dillin </reference>
-					<reference entity="Len_Wein" number="5" tag="PATIENT-2" type="name">Len Wein</reference>
-				</references>
 				<text>The comic book character Aurakles, with the alternative name Aurakles, was created by Dick Dillin (from the United States) and Len Wein.</text>
 				<template>AGENT-1 , with alternative PATIENT-3 , was created by BRIDGE-1 (from PATIENT-1) and PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Aurakles | alternativeName | &quot;Aurakles&quot;</striple>
-					<striple>Aurakles | creator | Len_Wein</striple>
-					<striple>Aurakles | creator | Dick_Dillin</striple>
-					<striple>Dick_Dillin | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aurakles" number="1" tag="AGENT-1" type="description">The fictional character Aurakles</reference>
-					<reference entity="Len_Wein" number="3" tag="PATIENT-2" type="name">Len Wein</reference>
-					<reference entity="Dick_Dillin" number="4" tag="BRIDGE-1" type="name">Dick Dillin </reference>
-				</references>
 				<text>The fictional character Aurakles, also known as ''Aurakles'' was created by Len Wein and Dick Dillin (American).</text>
 				<template>AGENT-1 , also known as '' PATIENT-3 '' was created by PATIENT-2 and BRIDGE-1 ( PATIENT-1 ) .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Aurakles</entity>
 				<entity>BRIDGE-1 | Dick_Dillin</entity>
+				<entity>AGENT-1 | Aurakles</entity>
 				<entity>PATIENT-1 | United_States</entity>
-				<entity>PATIENT-2 | Len_Wein</entity>
 				<entity>PATIENT-3 | &quot;Aurakles&quot;</entity>
+				<entity>PATIENT-2 | Len_Wein</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id3" size="4">
@@ -142,45 +93,19 @@
 				<mtriple>BBC | locationCity | London</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>BBC | locationCity | London</striple>
-					<striple>BBC | keyPerson | Rona_Fairhead</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | product | BBC_Radio</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="BBC" number="1" tag="BRIDGE-1" type="description">The BBC</reference>
-					<reference entity="London" number="2" tag="PATIENT-3" type="name">London</reference>
-					<reference entity="Rona_Fairhead" number="3" tag="PATIENT-1" type="name">Rona Fairhead</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="BBC_Radio" number="5" tag="PATIENT-2" type="name">BBC radio</reference>
-				</references>
 				<text>The BBC, which is located in London, and where Rona Fairhead is a key person, once broadcast Bananaman and has a product called BBC radio.</text>
 				<template>BRIDGE-1 , which is located in PATIENT-3 , and where PATIENT-1 is a key person , once broadcast AGENT-1 and has a product called PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>BBC | locationCity | London</striple>
-					<striple>BBC | keyPerson | Rona_Fairhead</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | product | BBC_Radio</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="BBC" number="1" tag="BRIDGE-1" type="description">The BBC</reference>
-					<reference entity="London" number="2" tag="PATIENT-3" type="name">London</reference>
-					<reference entity="Rona_Fairhead" number="3" tag="PATIENT-1" type="name">Rona Fairhead</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="description">the TV series Bananaman</reference>
-					<reference entity="BBC_Radio" number="5" tag="PATIENT-2" type="name">BBC radio</reference>
-				</references>
 				<text>The BBC, located in London, with Rona Fairhead as a key person, broadcast the TV series Bananaman and produces BBC radio.</text>
 				<template>BRIDGE-1 , located in PATIENT-3 , with PATIENT-1 as a key person , broadcast AGENT-1 and produces PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Rona_Fairhead</entity>
-				<entity>PATIENT-2 | BBC_Radio</entity>
 				<entity>PATIENT-3 | London</entity>
+				<entity>PATIENT-2 | BBC_Radio</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id4" size="4">
@@ -197,62 +122,23 @@
 				<mtriple>Balder_(comicsCharacter) | alternativeName | &quot;Balder Odinson&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Balder_(comicsCharacter) | creator | Stan_Lee</striple>
-					<striple>Balder_(comicsCharacter) | creator | Jack_Kirby</striple>
-					<striple>Jack_Kirby | nationality | Americans</striple>
-					<striple>Balder_(comicsCharacter) | alternativeName | &quot;Balder Odinson&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Balder_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Balder</reference>
-					<reference entity="Stan_Lee" number="2" tag="PATIENT-2" type="name">Stan Lee</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Jack_Kirby" number="4" tag="BRIDGE-1" type="name">Jack Kirby</reference>
-					<reference entity="Jack_Kirby" number="5" tag="BRIDGE-1" type="pronoun">His</reference>
-					<reference entity="&quot;Balder Odinson&quot;" number="6" tag="PATIENT-3" type="name">Balder Odinson</reference>
-				</references>
 				<text>Balder is a comic character created by Stan Lee and the American, Jack Kirby. His alternative name is Balder Odinson.</text>
 				<template>AGENT-1 is a comic character created by PATIENT-2 and PATIENT-1 , BRIDGE-1 . BRIDGE-1 alternative name is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Balder_(comicsCharacter) | alternativeName | &quot;Balder Odinson&quot;</striple>
-					<striple>Balder_(comicsCharacter) | creator | Stan_Lee</striple>
-					<striple>Balder_(comicsCharacter) | creator | Jack_Kirby</striple>
-					<striple>Jack_Kirby | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Balder_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character of Balder</reference>
-					<reference entity="Stan_Lee" number="4" tag="PATIENT-2" type="name">Stan Lee</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Jack_Kirby" number="6" tag="BRIDGE-1" type="name">Jack Kirby</reference>
-				</references>
 				<text>The comic character of Balder is also known as &quot;Balder Odinson&quot;. It was created by Stan Lee and the American, Jack Kirby.</text>
 				<template>AGENT-1 is also known as `` PATIENT-3 '' . AGENT-1 was created by PATIENT-2 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Balder_(comicsCharacter) | alternativeName | &quot;Balder Odinson&quot;</striple>
-					<striple>Balder_(comicsCharacter) | creator | Stan_Lee</striple>
-					<striple>Balder_(comicsCharacter) | creator | Jack_Kirby</striple>
-					<striple>Jack_Kirby | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Balder_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Balder</reference>
-					<reference entity="&quot;Balder Odinson&quot;" number="2" tag="PATIENT-3" type="name">Balder Odinson </reference>
-					<reference entity="Stan_Lee" number="4" tag="PATIENT-2" type="name">Stan Lee</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Jack_Kirby" number="6" tag="BRIDGE-1" type="name">Jack Kirby</reference>
-				</references>
 				<text>The comic character, Balder has the alternative name of Balder Odinson . It was created by Stan Lee and the American, Jack Kirby.</text>
 				<template>AGENT-1 has the alternative name of PATIENT-3 . AGENT-1 was created by PATIENT-2 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Balder_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Jack_Kirby</entity>
+				<entity>AGENT-1 | Balder_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Americans</entity>
-				<entity>PATIENT-2 | Stan_Lee</entity>
 				<entity>PATIENT-3 | &quot;Balder Odinson&quot;</entity>
+				<entity>PATIENT-2 | Stan_Lee</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id5" size="4">
@@ -269,67 +155,23 @@
 				<mtriple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | product | BBC_Radio</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="John_Reith,_1st_Baron_Reith" number="1" tag="PATIENT-3" type="name">John Reith , 1st Baron Reith</reference>
-					<reference entity="BBC" number="2" tag="BRIDGE-1" type="description">the BBC</reference>
-					<reference entity="BBC" number="3" tag="BRIDGE-1" type="name">their</reference>
-					<reference entity="Broadcasting_House" number="4" tag="PATIENT-2" type="name">Broadcasting House</reference>
-					<reference entity="Bananaman" number="5" tag="AGENT-1" type="description">The BBC broadcast Bananaman</reference>
-					<reference entity="BBC_Radio" number="6" tag="PATIENT-1" type="name">BBC radio</reference>
-				</references>
 				<text>John Reith, 1st Baron Reith founded the BBC who have their HQ at Broadcasting House. The BBC broadcast Bananaman and also produce BBC radio.</text>
 				<template>PATIENT-3 founded BRIDGE-1 who have BRIDGE-1 HQ at PATIENT-2 . AGENT-1 and also produce PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-					<striple>BBC | product | BBC_Radio</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="BBC" number="1" tag="BRIDGE-1" type="description">The BBC</reference>
-					<reference entity="John_Reith,_1st_Baron_Reith" number="2" tag="PATIENT-3" type="name">John Reith , 1st Baron Reith</reference>
-					<reference entity="BBC" number="3" tag="BRIDGE-1" type="pronoun">its</reference>
-					<reference entity="Broadcasting_House" number="4" tag="PATIENT-2" type="name">Broadcasting House</reference>
-					<reference entity="BBC" number="5" tag="BRIDGE-1" type="description">The BBC</reference>
-					<reference entity="BBC_Radio" number="6" tag="PATIENT-1" type="name">BBC radio</reference>
-					<reference entity="Bananaman" number="7" tag="AGENT-1" type="description">the TV series Bananaman</reference>
-				</references>
 				<text>The BBC, founded by John Reith, 1st Baron Reith, has its headquarters in Broadcasting House. The BBC produces BBC radio and broadcast the TV series Bananaman.</text>
 				<template>BRIDGE-1 , founded by PATIENT-3 , has BRIDGE-1 headquarters in PATIENT-2 . BRIDGE-1 produces PATIENT-1 and broadcast AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-					<striple>BBC | product | BBC_Radio</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="BBC" number="1" tag="BRIDGE-1" type="description">the BBC</reference>
-					<reference entity="John_Reith,_1st_Baron_Reith" number="2" tag="PATIENT-3" type="name">1st Baron John Reith</reference>
-					<reference entity="BBC" number="3" tag="BRIDGE-1" type="pronoun">it</reference>
-					<reference entity="Broadcasting_House" number="4" tag="PATIENT-2" type="name">Broadcasting House</reference>
-					<reference entity="BBC_Radio" number="5" tag="PATIENT-1" type="name">London</reference>
-					<reference entity="Bananaman" number="6" tag="AGENT-1" type="description">The BBC broadcast Bananaman</reference>
-					<reference entity="BBC_Radio" number="7" tag="PATIENT-1" type="name">BBC radio</reference>
-				</references>
 				<text>The founder of the BBC was 1st Baron John Reith and it is located at Broadcasting House in London. The BBC broadcast Bananaman and also produce BBC radio.</text>
 				<template>The founder of BRIDGE-1 was PATIENT-3 and BRIDGE-1 is located at PATIENT-2 in PATIENT-1 . AGENT-1 and also produce PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | BBC_Radio</entity>
-				<entity>PATIENT-2 | Broadcasting_House</entity>
 				<entity>PATIENT-3 | John_Reith,_1st_Baron_Reith</entity>
+				<entity>PATIENT-2 | Broadcasting_House</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id6" size="4">
@@ -346,47 +188,19 @@
 				<mtriple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</striple>
-					<striple>BBC | locationCity | London</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | product | BBC_Radio</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="John_Reith,_1st_Baron_Reith" number="1" tag="PATIENT-3" type="name">1st Baron , John Reith</reference>
-					<reference entity="BBC" number="2" tag="BRIDGE-1" type="description">the BBC</reference>
-					<reference entity="London" number="3" tag="PATIENT-2" type="name">London</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="description">the TV series , Bananaman</reference>
-					<reference entity="BBC" number="5" tag="BRIDGE-1" type="description">the BBC</reference>
-					<reference entity="BBC_Radio" number="6" tag="PATIENT-1" type="name">BBC radio</reference>
-				</references>
 				<text>1st Baron, John Reith was the founder of the BBC which is located in London and showed the TV series, Bananaman. Another product of the BBC is BBC radio.</text>
 				<template>PATIENT-3 was the founder of BRIDGE-1 which is located in PATIENT-2 and showed AGENT-1 . Another product of BRIDGE-1 is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | foundedBy | John_Reith,_1st_Baron_Reith</striple>
-					<striple>BBC | locationCity | London</striple>
-					<striple>BBC | product | BBC_Radio</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="BBC" number="2" tag="BRIDGE-1" type="description">the BBC</reference>
-					<reference entity="John_Reith,_1st_Baron_Reith" number="3" tag="PATIENT-3" type="name">John Reith , 1st Baron Reith</reference>
-					<reference entity="BBC" number="4" tag="BRIDGE-1" type="description">The BBC</reference>
-					<reference entity="London" number="5" tag="PATIENT-2" type="name">London</reference>
-					<reference entity="BBC_Radio" number="6" tag="PATIENT-1" type="name">BBC radio</reference>
-				</references>
 				<text>Bananaman is broadcast by the BBC, the organisation founded by John Reith, 1st Baron Reith. The BBC is based in London and also produces BBC radio.</text>
 				<template>AGENT-1 is broadcast by BRIDGE-1 , the organisation founded by PATIENT-3 . BRIDGE-1 is based in PATIENT-2 and also produces PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | BBC_Radio</entity>
-				<entity>PATIENT-2 | London</entity>
 				<entity>PATIENT-3 | John_Reith,_1st_Baron_Reith</entity>
+				<entity>PATIENT-2 | London</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id7" size="4">
@@ -403,46 +217,19 @@
 				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bill_Oddie" number="1" tag="PATIENT-3" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Steve_Bright" number="3" tag="PATIENT-2" type="name">Steve Bright</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="BBC" number="5" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="6" tag="PATIENT-4" type="name">3 October 1983</reference>
-				</references>
 				<text>Bill Oddie stars in Bananaman which was created by Steve Bright. It was first broadcast by the BBC on 3 October 1983.</text>
 				<template>PATIENT-3 stars in AGENT-1 which was created by PATIENT-2 . AGENT-1 was first broadcast by PATIENT-1 on PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Steve_Bright" number="2" tag="PATIENT-2" type="name">Steve Bright</reference>
-					<reference entity="Bill_Oddie" number="3" tag="PATIENT-3" type="name">Bill Oddie</reference>
-					<reference entity="BBC" number="4" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="5" tag="PATIENT-4" type="description">the 3rd October 1983</reference>
-				</references>
 				<text>Bananaman, created by Steve Bright and starring Bill Oddie, was first broadcast by the BBC on the 3rd October 1983.</text>
 				<template>AGENT-1 , created by PATIENT-2 and starring PATIENT-3 , was first broadcast by PATIENT-1 on PATIENT-4 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
 				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | BBC</entity>
-				<entity>PATIENT-2 | Steve_Bright</entity>
 				<entity>PATIENT-3 | Bill_Oddie</entity>
-				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id8" size="4">
@@ -459,63 +246,23 @@
 				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | starring | Graeme_Garden</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">3rd October 1983</reference>
-					<reference entity="Steve_Bright" number="4" tag="PATIENT-2" type="name">Steve Bright</reference>
-					<reference entity="Graeme_Garden" number="5" tag="PATIENT-3" type="name">Graeme Garden</reference>
-				</references>
 				<text>Bananaman, which was first broadcast by the BBC on 3rd October 1983, was created by Steve Bright and starred Graeme Garden.</text>
 				<template>AGENT-1 , which was first broadcast by PATIENT-1 on PATIENT-4 , was created by PATIENT-2 and starred PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | starring | Graeme_Garden</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Steve_Bright" number="1" tag="PATIENT-2" type="name">Steve Bright</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="BBC" number="3" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="4" tag="PATIENT-4" type="name">3 October 1983</reference>
-					<reference entity="Graeme_Garden" number="5" tag="PATIENT-3" type="name">Graeme Garden</reference>
-				</references>
 				<text>Steve Bright created Bananaman which was first aired by the BBC on 3 October 1983 and starred Graeme Garden.</text>
 				<template>PATIENT-2 created AGENT-1 which was first aired by PATIENT-1 on PATIENT-4 and starred PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | starring | Graeme_Garden</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="2" tag="PATIENT-4" type="name">3 October 1983</reference>
-					<reference entity="BBC" number="3" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Steve_Bright" number="5" tag="PATIENT-2" type="name">Steve Bright</reference>
-					<reference entity="Graeme_Garden" number="6" tag="PATIENT-3" type="name">Graeme Garden</reference>
-				</references>
 				<text>Bananaman was first aired on 3 October 1983 by the BBC. It was created by Steve Bright and starred Graeme Garden.</text>
 				<template>AGENT-1 was first aired on PATIENT-4 by PATIENT-1 . AGENT-1 was created by PATIENT-2 and starred PATIENT-3 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
 				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | BBC</entity>
-				<entity>PATIENT-2 | Steve_Bright</entity>
 				<entity>PATIENT-3 | Graeme_Garden</entity>
-				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-2 | Steve_Bright</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id9" size="4">
@@ -532,46 +279,19 @@
 				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | creator | John_Geering</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | starring | Jill_Shilling</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="John_Geering" number="1" tag="PATIENT-3" type="name">John Geering</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="description">the TV character Bananaman</reference>
-					<reference entity="BBC" number="3" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="4" tag="PATIENT-4" type="name">3 October 1983</reference>
-					<reference entity="Jill_Shilling" number="5" tag="PATIENT-2" type="name">Jill Shilling</reference>
-				</references>
 				<text>John Geering created the TV character Bananaman which was first broadcast by the BBC on 3 October 1983 and starred Jill Shilling.</text>
 				<template>PATIENT-3 created AGENT-1 which was first broadcast by PATIENT-1 on PATIENT-4 and starred PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | creator | John_Geering</striple>
-					<striple>Bananaman | starring | Jill_Shilling</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="John_Geering" number="1" tag="PATIENT-3" type="name">John Geering</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="description">the fictional comic superhero of Bananaman</reference>
-					<reference entity="Jill_Shilling" number="3" tag="PATIENT-2" type="name">Jill Shilling</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="BBC" number="5" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="6" tag="PATIENT-4" type="name">3 October 1983</reference>
-				</references>
 				<text>John Geering created the fictional comic superhero of Bananaman which starred Jill Shilling. It was first aired by the BBC on 3 October 1983.</text>
 				<template>PATIENT-3 created AGENT-1 which starred PATIENT-2 . AGENT-1 was first aired by PATIENT-1 on PATIENT-4 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
 				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | BBC</entity>
-				<entity>PATIENT-2 | Jill_Shilling</entity>
 				<entity>PATIENT-3 | John_Geering</entity>
-				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-2 | Jill_Shilling</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id10" size="4">
@@ -581,6 +301,12 @@
 				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
 				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | starring | Jill_Shilling</otriple>
+				<otriple>Bananaman | creator | Steve_Bright</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
 				<mtriple>Bananaman | starring | Jill_Shilling</mtriple>
@@ -588,46 +314,19 @@
 				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | starring | Jill_Shilling</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="BBC" number="2" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-4" type="name">3 October 1983</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Steve_Bright" number="5" tag="PATIENT-3" type="name">Steve Bright</reference>
-					<reference entity="Jill_Shilling" number="6" tag="PATIENT-2" type="name">Jill Shilling</reference>
-				</references>
 				<text>Bananaman was first broadcast by the BBC on 3 October 1983. It was created by Steve Bright and starred Jill Shilling.</text>
 				<template>AGENT-1 was first broadcast by PATIENT-1 on PATIENT-4 . AGENT-1 was created by PATIENT-3 and starred PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Jill_Shilling</striple>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Jill_Shilling" number="2" tag="PATIENT-2" type="name">Jill Shilling</reference>
-					<reference entity="Steve_Bright" number="3" tag="PATIENT-3" type="name">Steve Bright</reference>
-					<reference entity="BBC" number="4" tag="PATIENT-1" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="5" tag="PATIENT-4" type="name">3/10/1983</reference>
-				</references>
 				<text>Bananaman, starring Jill Shilling, created by Steve Bright. first aired on the BBC on 3/10/1983.</text>
 				<template>AGENT-1 , starring PATIENT-2 , created by PATIENT-3 . first aired on PATIENT-1 on PATIENT-4 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
 				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | BBC</entity>
-				<entity>PATIENT-2 | Jill_Shilling</entity>
 				<entity>PATIENT-3 | Steve_Bright</entity>
-				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-2 | Jill_Shilling</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id11" size="4">
@@ -644,27 +343,14 @@
 				<mtriple>BBC | locationCity | Broadcasting_House</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bill_Oddie | birthPlace | Lancashire</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Lancashire" number="1" tag="PATIENT-1" type="name">Lancashire</reference>
-					<reference entity="Bill_Oddie" number="2" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="BBC" number="4" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="Broadcasting_House" number="5" tag="PATIENT-2" type="description">the broadcasting house in London</reference>
-				</references>
 				<text>Lancashire born Bill Oddie was the star of Bananaman, broadcasted by the BBC out of the broadcasting house in London.</text>
 				<template>PATIENT-1 born BRIDGE-1 was the star of AGENT-1 , broadcasted by BRIDGE-2 out of PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | Bill_Oddie</entity>
-				<entity>BRIDGE-2 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Lancashire</entity>
+				<entity>BRIDGE-2 | BBC</entity>
 				<entity>PATIENT-2 | Broadcasting_House</entity>
 			</entitymap>
 		</entry>
@@ -682,63 +368,22 @@
 				<mtriple>BBC | locationCity | London</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bill_Oddie | birthPlace | Lancashire</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | London</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Lancashire" number="1" tag="PATIENT-1" type="name">Lancashire</reference>
-					<reference entity="Bill_Oddie" number="2" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="BBC" number="5" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="London" number="6" tag="PATIENT-2" type="name">London</reference>
-				</references>
 				<text>Lancashire born Bill Oddie starred in Bananaman. It was broadcast by the BBC located in London.</text>
 				<template>PATIENT-1 born BRIDGE-1 starred in AGENT-1 . AGENT-1 was broadcast by BRIDGE-2 located in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bill_Oddie | birthPlace | Lancashire</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | London</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Lancashire" number="2" tag="PATIENT-1" type="name">Lancashire</reference>
-					<reference entity="Bill_Oddie" number="3" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="BBC" number="4" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="London" number="5" tag="PATIENT-2" type="name">London</reference>
-				</references>
 				<text>Bananaman, that starred Lancashire born Bill Oddie, is broadcast by the BBC which is located in London.</text>
 				<template>AGENT-1 , that starred PATIENT-1 born BRIDGE-1 , is broadcast by BRIDGE-2 which is located in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bill_Oddie | birthPlace | Lancashire</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | London</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Lancashire" number="1" tag="PATIENT-1" type="name">Lancashire</reference>
-					<reference entity="Bill_Oddie" number="2" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="description">the TV series Bananaman</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="BBC" number="5" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="London" number="6" tag="PATIENT-2" type="name">London</reference>
-				</references>
 				<text>Lancashire born Bill Oddie starred in the TV series Bananaman. It was shown by the BBC who are located in London.</text>
 				<template>PATIENT-1 born BRIDGE-1 starred in AGENT-1 . AGENT-1 was shown by BRIDGE-2 who are located in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | Bill_Oddie</entity>
-				<entity>BRIDGE-2 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Lancashire</entity>
+				<entity>BRIDGE-2 | BBC</entity>
 				<entity>PATIENT-2 | London</entity>
 			</entitymap>
 		</entry>
@@ -756,64 +401,22 @@
 				<mtriple>BBC | locationCity | Broadcasting_House</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bill_Oddie | birthPlace | Rochdale</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Rochdale" number="1" tag="PATIENT-1" type="name">Rochdale</reference>
-					<reference entity="Bill_Oddie" number="2" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="description">the TV series Bananaman</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="demonstrative">This show</reference>
-					<reference entity="BBC" number="5" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="BBC" number="6" tag="BRIDGE-2" type="pronoun">its</reference>
-					<reference entity="Broadcasting_House" number="7" tag="PATIENT-2" type="name">Broadcasting House</reference>
-				</references>
 				<text>Rochdale born Bill Oddie starred in the TV series Bananaman. This show was broadcast by the BBC, which has its headquarters in Broadcasting House.</text>
 				<template>PATIENT-1 born BRIDGE-1 starred in AGENT-1 . AGENT-1 was broadcast by BRIDGE-2 , which has BRIDGE-2 headquarters in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bill_Oddie | birthPlace | Rochdale</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="BBC" number="1" tag="BRIDGE-2" type="name">BBC</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Rochdale" number="3" tag="PATIENT-1" type="name">Rochdale</reference>
-					<reference entity="Bill_Oddie" number="4" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="BBC" number="5" tag="BRIDGE-2" type="name">BBC</reference>
-					<reference entity="Broadcasting_House" number="6" tag="PATIENT-2" type="name">Broadcasting House</reference>
-				</references>
 				<text>The BBC broadcast Bananaman, which starred Rochdale born Bill Oddie. The BBC headquarters is called Broadcasting House.</text>
 				<template>The BRIDGE-2 broadcast AGENT-1 , which starred PATIENT-1 born BRIDGE-1 . The BRIDGE-2 headquarters is called PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bill_Oddie | birthPlace | Rochdale</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Rochdale" number="1" tag="PATIENT-1" type="name">Rochdale</reference>
-					<reference entity="Bill_Oddie" number="2" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="BBC" number="4" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="Broadcasting_House" number="5" tag="PATIENT-2" type="name">Broadcasting House in London</reference>
-				</references>
 				<text>Rochdale born Bill Oddie starred in Bananaman which was a TV series shown on the BBC, based at Broadcasting House in London.</text>
 				<template>PATIENT-1 born BRIDGE-1 starred in AGENT-1 which was a TV series shown on BRIDGE-2 , based at PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | Bill_Oddie</entity>
-				<entity>BRIDGE-2 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Rochdale</entity>
+				<entity>BRIDGE-2 | BBC</entity>
 				<entity>PATIENT-2 | Broadcasting_House</entity>
 			</entitymap>
 		</entry>
@@ -831,60 +434,22 @@
 				<mtriple>BBC | locationCity | London</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bill_Oddie | birthPlace | Rochdale</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman the TV series</reference>
-					<reference entity="Bill_Oddie" number="3" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="Rochdale" number="4" tag="PATIENT-1" type="name">Rochdale</reference>
-				</references>
 				<text>Bananaman the TV series was shown on the BBC (London) and starred Bill Oddie, who was born in Rochdale.</text>
 				<template>AGENT-1 was shown on BRIDGE-2 (PATIENT-2) and starred BRIDGE-1 , who was born in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>BBC | locationCity | London</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bill_Oddie | birthPlace | Rochdale</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="BBC" number="1" tag="BRIDGE-2" type="description">The BBC</reference>
-					<reference entity="London" number="2" tag="PATIENT-2" type="name">London</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="description">the TV series Bananaman</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Bill_Oddie" number="5" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="Rochdale" number="6" tag="PATIENT-1" type="name">Rochdale</reference>
-				</references>
 				<text>The BBC, which is located in London, showed the TV series Bananaman. It starred Bill Oddie who was born in Rochdale.</text>
 				<template>BRIDGE-2 , which is located in PATIENT-2 , showed AGENT-1 . AGENT-1 starred BRIDGE-1 who was born in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bill_Oddie | birthPlace | Rochdale</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | London</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Rochdale" number="2" tag="PATIENT-1" type="name">Rochdale</reference>
-					<reference entity="Bill_Oddie" number="3" tag="BRIDGE-1" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="description">The series</reference>
-					<reference entity="BBC" number="5" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="London" number="6" tag="PATIENT-2" type="description">the city of London</reference>
-				</references>
 				<text>Bananaman is a tv series which starred Rochdale born Bill Oddie. The series was shown on the BBC which is located in the city of London.</text>
 				<template>AGENT-1 is a tv series which starred PATIENT-1 born BRIDGE-1 . AGENT-1 was shown on BRIDGE-2 which is located in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | Bill_Oddie</entity>
-				<entity>BRIDGE-2 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Rochdale</entity>
+				<entity>BRIDGE-2 | BBC</entity>
 				<entity>PATIENT-2 | London</entity>
 			</entitymap>
 		</entry>
@@ -902,62 +467,22 @@
 				<mtriple>BBC | locationCity | Broadcasting_House</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Graeme_Garden | birthPlace | Aberdeen</striple>
-					<striple>Bananaman | starring | Graeme_Garden</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aberdeen" number="1" tag="PATIENT-1" type="name">Aberdeen</reference>
-					<reference entity="Graeme_Garden" number="2" tag="BRIDGE-1" type="name">Graeme Garden</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="BBC" number="4" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="Broadcasting_House" number="5" tag="PATIENT-2" type="name">Broadcasting House</reference>
-				</references>
 				<text>Aberdeen born Graeme Garden starred in Bananaman, which was broadcast by the BBC, whose headquarters are called Broadcasting House.</text>
 				<template>PATIENT-1 born BRIDGE-1 starred in AGENT-1 , which was broadcast by BRIDGE-2 , whose headquarters are called PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Graeme_Garden | birthPlace | Aberdeen</striple>
-					<striple>Bananaman | starring | Graeme_Garden</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Aberdeen" number="1" tag="PATIENT-1" type="name">Aberdeen</reference>
-					<reference entity="Graeme_Garden" number="2" tag="BRIDGE-1" type="name">Graeme Garden</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="description">the tv series &quot; Bananaman &quot; </reference>
-					<reference entity="BBC" number="5" tag="BRIDGE-2" type="description">the BBC</reference>
-					<reference entity="Broadcasting_House" number="6" tag="PATIENT-2" type="description">the broadcasting house in London</reference>
-				</references>
 				<text>Aberdeen born Graeme Garden starred in the tv series &quot; Bananaman &quot; . The series was shown on the BBC which is based in the broadcasting house in London.</text>
 				<template>PATIENT-1 born BRIDGE-1 starred in AGENT-1 . AGENT-1 was shown on BRIDGE-2 which is based in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>BBC | locationCity | Broadcasting_House</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | starring | Graeme_Garden</striple>
-					<striple>Graeme_Garden | birthPlace | Aberdeen</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="BBC" number="1" tag="BRIDGE-2" type="description">The BBC</reference>
-					<reference entity="Broadcasting_House" number="2" tag="PATIENT-2" type="name">Broadcasting House , London</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="description">the TV series Bananaman</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="demonstrative">This show</reference>
-					<reference entity="Aberdeen" number="5" tag="PATIENT-1" type="name">Aberdeen</reference>
-					<reference entity="Graeme_Garden" number="6" tag="BRIDGE-1" type="name">Graeme Garden</reference>
-				</references>
 				<text>The BBC, based in Broadcasting House, London, showed the TV series Bananaman. This show starred Aberdeen born Graeme Garden.</text>
 				<template>BRIDGE-2 , based in PATIENT-2 , showed AGENT-1 . AGENT-1 starred PATIENT-1 born BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | Graeme_Garden</entity>
-				<entity>BRIDGE-2 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Aberdeen</entity>
+				<entity>BRIDGE-2 | BBC</entity>
 				<entity>PATIENT-2 | Broadcasting_House</entity>
 			</entitymap>
 		</entry>
@@ -975,64 +500,23 @@
 				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-					<striple>Bananaman | creator | John_Geering</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Tim_Brooke-Taylor" number="1" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="John_Geering" number="3" tag="PATIENT-3" type="name">John Geering</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="BBC" number="5" tag="PATIENT-2" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="6" tag="PATIENT-4" type="name">3 October 1983</reference>
-				</references>
 				<text>Tim Brooke-Taylor starred in Bananaman which was created by John Geering. It was first broadcast by the BBC on 3 October 1983.</text>
 				<template>PATIENT-1 starred in AGENT-1 which was created by PATIENT-3 . AGENT-1 was first broadcast by PATIENT-2 on PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-					<striple>Bananaman | creator | John_Geering</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="2" tag="PATIENT-4" type="name">10/03/1983</reference>
-					<reference entity="BBC" number="3" tag="PATIENT-2" type="description">the BBC</reference>
-					<reference entity="Tim_Brooke-Taylor" number="4" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
-					<reference entity="John_Geering" number="5" tag="PATIENT-3" type="name">John Geering</reference>
-				</references>
 				<text>Bananaman was first aired on 10/03/1983 and was broadcast by the BBC. Tim Brooke-Taylor starred in the show, which was created by John Geering.</text>
 				<template>AGENT-1 was first aired on PATIENT-4 and was broadcast by PATIENT-2 . PATIENT-1 starred in the show , which was created by PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bananaman | creator | John_Geering</striple>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="description">The fictional comic superhero Bananaman</reference>
-					<reference entity="John_Geering" number="2" tag="PATIENT-3" type="name">John Geering</reference>
-					<reference entity="Tim_Brooke-Taylor" number="3" tag="PATIENT-1" type="name">Tim Brooke-taylor</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="5" tag="PATIENT-4" type="name">3 October 1983</reference>
-					<reference entity="BBC" number="6" tag="PATIENT-2" type="description">the BBC</reference>
-				</references>
 				<text>The fictional comic superhero Bananaman was created by John Geering and starred Tim Brooke-taylor. It was first broadcast on 3 October 1983 by the BBC.</text>
 				<template>AGENT-1 was created by PATIENT-3 and starred PATIENT-1 . AGENT-1 was first broadcast on PATIENT-4 by PATIENT-2 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
 				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
-				<entity>PATIENT-2 | BBC</entity>
 				<entity>PATIENT-3 | John_Geering</entity>
-				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-2 | BBC</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id17" size="4">
@@ -1042,6 +526,12 @@
 				<otriple>Bananaman | creator | Steve_Bright</otriple>
 				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Bananaman | starring | Tim_Brooke-Taylor</otriple>
+				<otriple>Bananaman | network | BBC</otriple>
+				<otriple>Bananaman | creator | &quot;Steve Bright&quot;@en</otriple>
+				<otriple>Bananaman | firstAired | &quot;1983-10-03&quot;^^xsd:date</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Bananaman | starring | Tim_Brooke-Taylor</mtriple>
 				<mtriple>Bananaman | broadcastedBy | BBC</mtriple>
@@ -1049,63 +539,23 @@
 				<mtriple>Bananaman | firstAired | &quot;1983-10-03&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Steve_Bright" number="2" tag="PATIENT-3" type="name">Steve Bright</reference>
-					<reference entity="Tim_Brooke-Taylor" number="3" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="5" tag="PATIENT-4" type="name">3 October 1983</reference>
-					<reference entity="BBC" number="6" tag="PATIENT-2" type="description">the BBC</reference>
-				</references>
 				<text>Bananaman was created by Steve Bright and starred Tim Brooke-Taylor. It was first aired on 3 October 1983, being broadcast by the BBC.</text>
 				<template>AGENT-1 was created by PATIENT-3 and starred PATIENT-1 . AGENT-1 was first aired on PATIENT-4 , being broadcast by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman </reference>
-					<reference entity="Steve_Bright" number="2" tag="PATIENT-3" type="name">Steve Bright </reference>
-					<reference entity="BBC" number="3" tag="PATIENT-2" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="4" tag="PATIENT-4" type="description">the 10/03/1983</reference>
-					<reference entity="Tim_Brooke-Taylor" number="5" tag="PATIENT-1" type="name">Tim Brooke-Taylor</reference>
-				</references>
 				<text>Bananaman (created by Steve Bright ) was first broadcasted by the BBC on the 10/03/1983, and starred Tim Brooke-Taylor.</text>
 				<template>AGENT-1 (created by PATIENT-3) was first broadcasted by PATIENT-2 on PATIENT-4 , and starred PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Tim_Brooke-Taylor</striple>
-					<striple>Bananaman | creator | Steve_Bright</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Tim_Brooke-Taylor" number="1" tag="PATIENT-1" type="name">Tim Brooke Taylor</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Steve_Bright" number="3" tag="PATIENT-3" type="name">Steve Bright</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="BBC" number="5" tag="PATIENT-2" type="description">the BBC</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="6" tag="PATIENT-4" type="name">3 October 1983</reference>
-				</references>
 				<text>Tim Brooke Taylor starred in Bananaman which was created by Steve Bright. It was broadcast by the BBC and first aired on 3 October 1983.</text>
 				<template>PATIENT-1 starred in AGENT-1 which was created by PATIENT-3 . AGENT-1 was broadcast by PATIENT-2 and first aired on PATIENT-4 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
 				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Tim_Brooke-Taylor</entity>
-				<entity>PATIENT-2 | BBC</entity>
 				<entity>PATIENT-3 | Steve_Bright</entity>
-				<entity>PATIENT-4 | &quot;1983-10-03&quot;</entity>
+				<entity>PATIENT-2 | BBC</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id18" size="4">
@@ -1115,6 +565,24 @@
 				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
 				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | voice | Scott_Adsit</otriple>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Baymax | voice | Scott_Adsit</otriple>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Baymax | voice | Scott_Adsit</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</mtriple>
 				<mtriple>Baymax | voice | Scott_Adsit</mtriple>
@@ -1122,63 +590,23 @@
 				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="description">The character Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
-					<reference entity="Scott_Adsit" number="3" tag="PATIENT-2" type="name">Scott Adsit</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="PATIENT-3" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="6" tag="PATIENT-4" type="name">Steve T Seagle</reference>
-				</references>
 				<text>The character Baymax first appeared in the film Big Hero 6 and is voiced by Scott Adsit. It was created by Duncan Rouleau and Steve T Seagle.</text>
 				<template>AGENT-1 first appeared in PATIENT-1 and is voiced by PATIENT-2 . AGENT-1 was created by PATIENT-3 and PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Duncan_Rouleau" number="1" tag="PATIENT-3" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-4" type="name">Steven T Seagle</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="4" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
-					<reference entity="Scott_Adsit" number="5" tag="PATIENT-2" type="name">Scott Adsit</reference>
-				</references>
 				<text>Duncan Rouleau and Steven T Seagle created the character of Baymax who first appeared in the film Big Hero 6 and is voiced by Scott Adsit.</text>
 				<template>PATIENT-3 and PATIENT-4 created the character of AGENT-1 who first appeared in PATIENT-1 and is voiced by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Scott_Adsit" number="2" tag="PATIENT-2" type="name">Scott Adsit</reference>
-					<reference entity="Duncan_Rouleau" number="3" tag="PATIENT-3" type="name">Duncan Roulean</reference>
-					<reference entity="Steven_T._Seagle" number="4" tag="PATIENT-4" type="name">Steven T . Seagle</reference>
-					<reference entity="Big_Hero_6_(film)" number="5" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
-				</references>
 				<text>Baymax, voiced by Scott Adsit and created by Duncan Roulean and Steven T. Seagle first appeared in the film Big Hero 6.</text>
 				<template>AGENT-1 , voiced by PATIENT-2 and created by PATIENT-3 and PATIENT-4 first appeared in PATIENT-1 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | Steven_T._Seagle</entity>
 				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Big_Hero_6_(film)</entity>
-				<entity>PATIENT-2 | Scott_Adsit</entity>
 				<entity>PATIENT-3 | Duncan_Rouleau</entity>
-				<entity>PATIENT-4 | Steven_T._Seagle</entity>
+				<entity>PATIENT-2 | Scott_Adsit</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id19" size="4">
@@ -1188,6 +616,24 @@
 				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
 				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</mtriple>
 				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
@@ -1195,62 +641,23 @@
 				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="description">The character Baymax</reference>
-					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-3" type="name">Steve T Seagle</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-2" type="description">the</reference>
-					<reference entity="Duncan_Rouleau" number="4" tag="BRIDGE-1" type="name">American Duncan Rouleau</reference>
-					<reference entity="Big_Hero_6_(film)" number="5" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
-				</references>
 				<text>The character Baymax, created by Steve T Seagle and the American Duncan Rouleau, first appeared in the film Big Hero 6.</text>
 				<template>AGENT-1 , created by PATIENT-3 and PATIENT-2 BRIDGE-1 , first appeared in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
-					<reference entity="Steven_T._Seagle" number="3" tag="PATIENT-3" type="name">Steven T Seagle</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-2" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Baymax first appeared in the film Big Hero 6 and was created by Steven T Seagle and the American, Duncan Rouleau.</text>
 				<template>AGENT-1 first appeared in PATIENT-1 and was created by PATIENT-3 and PATIENT-2 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Big_Hero_6_(film)" number="1" tag="PATIENT-1" type="name">Big hero 6</reference>
-					<reference entity="Baymax" number="2" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-2" type="name">American</reference>
-					<reference entity="Duncan_Rouleau" number="4" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="5" tag="PATIENT-3" type="name">Steven T</reference>
-				</references>
 				<text>Big hero 6 was the first appearance for Baymax, created by American Duncan Rouleau and Steven T. Seagle.</text>
 				<template>PATIENT-1 was the first appearance for AGENT-1 , created by PATIENT-2 BRIDGE-1 and PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baymax</entity>
 				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Big_Hero_6_(film)</entity>
-				<entity>PATIENT-2 | Americans</entity>
 				<entity>PATIENT-3 | Steven_T._Seagle</entity>
+				<entity>PATIENT-2 | Americans</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id20" size="4">
@@ -1260,6 +667,12 @@
 				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
 				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
 				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
@@ -1267,56 +680,22 @@
 				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Duncan_Rouleau" number="2" tag="PATIENT-2" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="3" tag="PATIENT-3" type="name">Steve T . Seagle</reference>
-				</references>
 				<text>Baymax is a character created by Duncan Rouleau and Steve T. Seagle which first appeared in the film &quot; Big Hero 6&quot;.</text>
-				<template>AGENT-1 is a character created by PATIENT-2 and PATIENT-3 which first appeared in '' PATIENT-1 '' .</template>
+				<template>AGENT-1 is a character created by PATIENT-2 and PATIENT-3 which first appeared in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Steven_T._Seagle" number="4" tag="PATIENT-3" type="name">Steven T Seagle</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="PATIENT-2" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Baymax is a character who first appeared in the film Big Hero 6. It was created by Steven T Seagle and Duncan Rouleau.</text>
 				<template>AGENT-1 is a character who first appeared in PATIENT-1 . AGENT-1 was created by PATIENT-3 and PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Steven_T._Seagle" number="1" tag="PATIENT-3" type="name">Steven T Seagle</reference>
-					<reference entity="Duncan_Rouleau" number="2" tag="PATIENT-2" type="name">Duncan Rouleau</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="4" tag="PATIENT-1" type="description">the movie Big Hero 6</reference>
-				</references>
 				<text>Steven T Seagle and Duncan Rouleau created the character Baymax, which first appeared in the movie Big Hero 6.</text>
 				<template>PATIENT-3 and PATIENT-2 created AGENT-1 , which first appeared in PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Big_Hero_6_(film)</entity>
-				<entity>PATIENT-2 | Duncan_Rouleau</entity>
 				<entity>PATIENT-3 | Steven_T._Seagle</entity>
+				<entity>PATIENT-2 | Duncan_Rouleau</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id21" size="4">
@@ -1326,6 +705,12 @@
 				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
 				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Baymax | voice | Scott_Adsit</otriple>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
 				<mtriple>Baymax | voice | Scott_Adsit</mtriple>
@@ -1333,65 +718,23 @@
 				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="description">the Big Hero 6 character</reference>
-					<reference entity="Steven_T._Seagle" number="3" tag="PATIENT-4" type="name">Steve T Seagle</reference>
-					<reference entity="Duncan_Rouleau" number="4" tag="PATIENT-3" type="name">Duncan Rouleau</reference>
-					<reference entity="Scott_Adsit" number="5" tag="PATIENT-2" type="name">Scott Adsit</reference>
-				</references>
 				<text>Baymax, the Big Hero 6 character created by Steve T Seagle and Duncan Rouleau, is voiced by Scott Adsit.</text>
 				<template>AGENT-1 , PATIENT-1 created by PATIENT-4 and PATIENT-3 , is voiced by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Duncan_Rouleau" number="1" tag="PATIENT-3" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-4" type="name">Steven T . Seagle</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="4" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
-					<reference entity="Baymax" number="5" tag="AGENT-1" type="demonstrative">this character</reference>
-					<reference entity="Big_Hero_6_(film)" number="6" tag="PATIENT-1" type="description">the film</reference>
-					<reference entity="Scott_Adsit" number="7" tag="PATIENT-2" type="name">Scott Adsit</reference>
-				</references>
 				<text>Duncan Rouleau and Steven T. Seagle are both creators of the character Baymax which featured in the film Big Hero 6. The voice of this character in the film was provided by Scott Adsit.</text>
 				<template>PATIENT-3 and PATIENT-4 are both creators of AGENT-1 which featured in PATIENT-1 . The voice of AGENT-1 in PATIENT-1 was provided by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Duncan_Rouleau" number="1" tag="PATIENT-3" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-4" type="name">Steven T . Seagle</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="4" tag="PATIENT-1" type="description">the film Big Hero 6</reference>
-					<reference entity="Baymax" number="5" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Scott_Adsit" number="6" tag="PATIENT-2" type="name">Scott Adsit</reference>
-				</references>
 				<text>Duncan Rouleau and Steven T. Seagle are both creators of Baymax which featured in the film Big Hero 6. The voice of Baymax was provided by Scott Adsit.</text>
 				<template>PATIENT-3 and PATIENT-4 are both creators of AGENT-1 which featured in PATIENT-1 . The voice of AGENT-1 was provided by PATIENT-2 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | Steven_T._Seagle</entity>
 				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Big_Hero_6_(film)</entity>
-				<entity>PATIENT-2 | Scott_Adsit</entity>
 				<entity>PATIENT-3 | Duncan_Rouleau</entity>
-				<entity>PATIENT-4 | Steven_T._Seagle</entity>
+				<entity>PATIENT-2 | Scott_Adsit</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id22" size="4">
@@ -1401,6 +744,12 @@
 				<otriple>Bolt_(DC_Comics) | creator | Ernie_Colón</otriple>
 				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creator | Paris_Cullins</otriple>
+				<otriple>Bolt_(DC_Comics) | creators | Ernie_Colón</otriple>
+				<otriple>Ernie_Colón | nationality | Puerto_Ricans</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Bolt_(comicsCharacter) | creator | Paris_Cullins</mtriple>
 				<mtriple>Ernie_Colón | nationality | Puerto_Ricans</mtriple>
@@ -1408,60 +757,23 @@
 				<mtriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Paris_Cullins" number="2" tag="PATIENT-1" type="name">Paris Cullins</reference>
-					<reference entity="Ernie_Colón" number="3" tag="BRIDGE-1" type="name">Ernie Colon</reference>
-					<reference entity="Puerto_Ricans" number="4" tag="PATIENT-2" type="name">Puerto Rico</reference>
-				</references>
 				<text>Bolt (Larry Bolatinsky) is a comic character that was created by both Paris Cullins and Ernie Colon who is a national of Puerto Rico.</text>
 				<template>AGENT-1 (PATIENT-3) is a comic character that was created by both PATIENT-1 and BRIDGE-1 who is a national of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="3" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="Paris_Cullins" number="4" tag="PATIENT-1" type="name">Paris Cullins</reference>
-					<reference entity="Ernie_Colón" number="5" tag="BRIDGE-1" type="name">Ernie Colon </reference>
-					<reference entity="Puerto_Ricans" number="6" tag="PATIENT-2" type="name">Puerto Rico </reference>
-				</references>
 				<text>Bolt is a comic character otherwise know as Larry Bolatinsky. He was created by Paris Cullins and Ernie Colon ( national of Puerto Rico ).</text>
 				<template>AGENT-1 is a comic character otherwise know as PATIENT-3 . AGENT-1 was created by PATIENT-1 and BRIDGE-1 ( national of PATIENT-2 ) .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Ernie_Colón | nationality | Puerto_Ricans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The character Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-					<reference entity="Paris_Cullins" number="3" tag="PATIENT-1" type="name">Paris Cullins</reference>
-					<reference entity="Ernie_Colón" number="4" tag="BRIDGE-1" type="name">Ernie Colon</reference>
-					<reference entity="Puerto_Ricans" number="5" tag="PATIENT-2" type="description">a puerto Rican National</reference>
-				</references>
 				<text>The character Bolt, also known as Larry Bolatinsky, was created by Paris Cullins and Ernie Colon, a puerto Rican National.</text>
 				<template>AGENT-1 , also known as PATIENT-3 , was created by PATIENT-1 and BRIDGE-1 , PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Ernie_Colón</entity>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Paris_Cullins</entity>
-				<entity>PATIENT-2 | Puerto_Ricans</entity>
 				<entity>PATIENT-3 | &quot;Larry Bolatinsky&quot;</entity>
+				<entity>PATIENT-2 | Puerto_Ricans</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id23" size="4">
@@ -1471,6 +783,12 @@
 				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
 				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
 				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
@@ -1478,62 +796,23 @@
 				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-3" type="name">Big Hero 6</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Duncan_Rouleau" number="4" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="5" tag="PATIENT-2" type="name">Steven T</reference>
-				</references>
 				<text>Baymax is a character from Big Hero 6, who was created by American born Duncan Rouleau and Steven T. Seagle.</text>
 				<template>AGENT-1 is a character from PATIENT-3 , who was created by PATIENT-1 born BRIDGE-1 and PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-3" type="name">Big Hero 6</reference>
-					<reference entity="Steven_T._Seagle" number="3" tag="PATIENT-2" type="name">Steven T Seagle</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Baymax, a character in Big Hero 6, was created by Steven T Seagle and the American, Duncan Rouleau.</text>
 				<template>AGENT-1 , a character in PATIENT-3 , was created by PATIENT-2 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-2" type="name">Steven T Seagle</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="Duncan_Rouleau" number="4" tag="BRIDGE-1" type="name">American Duncan Rouleau</reference>
-					<reference entity="Big_Hero_6_(film)" number="5" tag="PATIENT-3" type="name">Big Hero 6</reference>
-				</references>
 				<text>Baymax, created by Steven T Seagle and the American Duncan Rouleau, is a character in Big Hero 6.</text>
 				<template>AGENT-1 , created by PATIENT-2 and PATIENT-1 BRIDGE-1 , is a character in PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baymax</entity>
 				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Americans</entity>
-				<entity>PATIENT-2 | Steven_T._Seagle</entity>
 				<entity>PATIENT-3 | Big_Hero_6_(film)</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id24" size="4">
@@ -1543,6 +822,12 @@
 				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
 				<otriple>Baymax | voice | Scott_Adsit</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+				<otriple>Baymax | voice | Scott_Adsit</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
 				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
@@ -1550,68 +835,35 @@
 				<mtriple>Baymax | voice | Scott_Adsit</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="description">The character Baymax</reference>
-					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-2" type="name">Steve T Seagle</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="Duncan_Rouleau" number="4" tag="BRIDGE-1" type="name">American Duncan Rouleau</reference>
-					<reference entity="Scott_Adsit" number="5" tag="PATIENT-3" type="name">Scott Adsit</reference>
-				</references>
 				<text>The character Baymax, created by Steve T Seagle and the American Duncan Rouleau, is voiced by Scott Adsit.</text>
 				<template>AGENT-1 , created by PATIENT-2 and PATIENT-1 BRIDGE-1 , is voiced by PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Scott_Adsit" number="1" tag="PATIENT-3" type="name">Scott Adsit</reference>
-					<reference entity="Baymax" number="2" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Steven_T._Seagle" number="3" tag="PATIENT-2" type="name">Steven T Seagle</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Scott Adsit provides the voice for Baymax who was created by Steven T Seagle and the American, Duncan Rouleau.</text>
 				<template>PATIENT-3 provides the voice for AGENT-1 who was created by PATIENT-2 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baymax | voice | Scott_Adsit</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Scott_Adsit" number="1" tag="PATIENT-3" type="name">Scott Adsit</reference>
-					<reference entity="Baymax" number="2" tag="AGENT-1" type="description">the character Baymax</reference>
-					<reference entity="Steven_T._Seagle" number="3" tag="PATIENT-2" type="name">Steven T Seagle</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Scott Adsit provides the voice for the character Baymax who was created by Steven T Seagle and the American, Duncan Rouleau.</text>
 				<template>PATIENT-3 provides the voice for AGENT-1 who was created by PATIENT-2 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baymax</entity>
 				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
+				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Americans</entity>
-				<entity>PATIENT-2 | Steven_T._Seagle</entity>
 				<entity>PATIENT-3 | Scott_Adsit</entity>
+				<entity>PATIENT-2 | Steven_T._Seagle</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id25" size="4">
 			<originaltripleset>
 				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
 				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
 				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
 				<otriple>Big_Hero_6_(film) | starring | Scott_Adsit</otriple>
 			</originaltripleset>
@@ -1622,64 +874,22 @@
 				<mtriple>Big_Hero_6_(film) | starring | Scott_Adsit</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="name">Big Hero 6</reference>
-					<reference entity="Scott_Adsit" number="3" tag="PATIENT-2" type="name">Scott Adsit</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Baymax is a character in Big Hero 6 which starred Scott Adsit. The creator of Baymax is the American, Duncan Rouleau.</text>
 				<template>AGENT-1 is a character in BRIDGE-2 which starred PATIENT-2 . The creator of AGENT-1 is PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
-					<reference entity="Scott_Adsit" number="3" tag="PATIENT-2" type="name">Scott Adsit</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="demonstrative">this character</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="name">American national</reference>
-					<reference entity="Duncan_Rouleau" number="6" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-				</references>
 				<text>Baymax is a character in the film Big Hero 6 which star's Scott Adsit. The creator of this character is American national, Duncan Rouleau.</text>
 				<template>AGENT-1 is a character in BRIDGE-2 which star 's PATIENT-2 . The creator of AGENT-1 is PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Scott_Adsit</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Americans" number="1" tag="PATIENT-1" type="description">The American</reference>
-					<reference entity="Duncan_Rouleau" number="2" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character of Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="4" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
-					<reference entity="Big_Hero_6_(film)" number="5" tag="BRIDGE-2" type="description">the film</reference>
-					<reference entity="Scott_Adsit" number="6" tag="PATIENT-2" type="name">Scott Adsit</reference>
-				</references>
 				<text>The American, Duncan Rouleau created the character of Baymax which appeared in the film Big Hero 6 alongside the star of the film, Scott Adsit.</text>
 				<template>PATIENT-1 , BRIDGE-1 created AGENT-1 which appeared in BRIDGE-2 alongside the star of BRIDGE-2 , PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baymax</entity>
 				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
-				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
+				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Americans</entity>
+				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
 				<entity>PATIENT-2 | Scott_Adsit</entity>
 			</entitymap>
 		</entry>
@@ -1690,6 +900,12 @@
 				<otriple>Big_Hero_6_(film) | starring | Alan_Tudyk</otriple>
 				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Duncan_Rouleau | nationality | Americans</otriple>
+				<otriple>Big_Hero_6_(film) | starring | Alan_Tudyk</otriple>
+				<otriple>Baymax | series | Big_Hero_6_(film)</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Duncan_Rouleau | nationality | Americans</mtriple>
 				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
@@ -1697,58 +913,22 @@
 				<mtriple>Baymax | series | Big_Hero_6_(film)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Tudyk" number="1" tag="PATIENT-2" type="name">Alan Tukyk stars</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="BRIDGE-2" type="description">the film , Big Hero 6</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="Duncan_Rouleau" number="5" tag="BRIDGE-1" type="name">American Duncan Rouleau</reference>
-				</references>
 				<text>Alan Tukyk stars in the film, Big Hero 6 in which Baymax, created by the American Duncan Rouleau, is also a character.</text>
 				<template>PATIENT-2 in BRIDGE-2 in which AGENT-1 , created by PATIENT-1 BRIDGE-1 , is also a character .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-					<striple>Big_Hero_6_(film) | starring | Alan_Tudyk</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Americans" number="1" tag="PATIENT-1" type="description">The American</reference>
-					<reference entity="Duncan_Rouleau" number="2" tag="BRIDGE-1" type="name">Duncan Rouleau</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="4" tag="BRIDGE-2" type="description">the film Big Hero 6</reference>
-					<reference entity="Alan_Tudyk" number="5" tag="PATIENT-2" type="name">Alan Tudyk</reference>
-				</references>
 				<text>The American, Duncan Rouleau created the character of Baymax who appeared in the film Big Hero 6 which starred Alan Tudyk.</text>
 				<template>PATIENT-1 , BRIDGE-1 created the character of AGENT-1 who appeared in BRIDGE-2 which starred PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Duncan_Rouleau | nationality | Americans</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | series | Big_Hero_6_(film)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Americans" number="1" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Duncan_Rouleau" number="2" tag="BRIDGE-1" type="name">national Duncan Rouleau</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="description">the character Baymax</reference>
-				</references>
 				<text>American national Duncan Rouleau is the creator of the character Baymax, which featured in the film Big Hero 6 ( starring Alan Tudyk ).</text>
 				<template>PATIENT-1 BRIDGE-1 is the creator of AGENT-1 , which featured in BRIDGE-2 (starring PATIENT-2) .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baymax</entity>
 				<entity>BRIDGE-1 | Duncan_Rouleau</entity>
 				<entity>BRIDGE-2 | Big_Hero_6_(film)</entity>
 				<entity>PATIENT-1 | Americans</entity>
+				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-2 | Alan_Tudyk</entity>
 			</entitymap>
 		</entry>
@@ -1766,40 +946,23 @@
 				<mtriple>Bibbo_Bibbowski | creator | Marv_Wolfman</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</striple>
-					<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
-					<striple>Bibbo_Bibbowski | creator | Jerry_Ordway</striple>
-					<striple>Jerry_Ordway | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bibbo_Bibbowski" number="1" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
-					<reference entity="&quot;Bo Bibbowski&quot;" number="2" tag="PATIENT-2" type="name">Bo Bibbowski</reference>
-					<reference entity="Marv_Wolfman" number="3" tag="PATIENT-3" type="name">Marv Wolfman</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Jerry_Ordway" number="5" tag="BRIDGE-1" type="name">Jerry Ordway</reference>
-				</references>
 				<text>Bibbo Bibbowski is the full name of Bo Bibbowski created by Marv Wolfman and the American, Jerry Ordway.</text>
 				<template>AGENT-1 is the full name of PATIENT-2 created by PATIENT-3 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
-				<references/>
 				<text>Bo (full name Bibbo) Bibbowski was created by Marv Wolfman and the American, Jerry Ordway.</text>
-				<template/>
+				<template>AGENT-1 was created by PATIENT-3 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset/>
-				<references/>
 				<text>Marv Wolfman and the American, Jerry Ordway created Bo (full name Bibbo) Bibbowski.</text>
-				<template/>
+				<template>PATIENT-3 and PATIENT-1 , BRIDGE-1 created AGENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bibbo_Bibbowski</entity>
 				<entity>BRIDGE-1 | Jerry_Ordway</entity>
+				<entity>AGENT-1 | Bibbo_Bibbowski</entity>
 				<entity>PATIENT-1 | Americans</entity>
-				<entity>PATIENT-2 | &quot;Bo Bibbowski&quot;</entity>
 				<entity>PATIENT-3 | Marv_Wolfman</entity>
+				<entity>PATIENT-2 | &quot;Bo Bibbowski&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id28" size="4">
@@ -1816,56 +979,23 @@
 				<mtriple>Auron_(comicsCharacter) | creator | Marv_Wolfman</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Auron_(comicsCharacter) | creator | Marv_Wolfman</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Marv_Wolfman" number="2" tag="PATIENT-3" type="name">Marv Wolfman</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Karl_Kesel" number="4" tag="BRIDGE-1" type="name">Karl Kesel</reference>
-				</references>
 				<text>The comic character Auron ( Lambien ) was created by both Marv Wolfman and American national Karl Kesel.</text>
 				<template>AGENT-1 (PATIENT-2) was created by both PATIENT-3 and PATIENT-1 national BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Auron_(comicsCharacter) | creator | Marv_Wolfman</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Marv_Wolfman" number="2" tag="PATIENT-3" type="name">Marv Wolfman</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Karl_Kesel" number="4" tag="BRIDGE-1" type="name">Karl Kesel</reference>
-				</references>
 				<text>Auron ( Lambien ) is a comic character that was created by both Marv Wolfman and American national Karl Kesel.</text>
 				<template>AGENT-1 (PATIENT-2) is a comic character that was created by both PATIENT-3 and PATIENT-1 national BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-					<striple>Auron_(comicsCharacter) | creator | Marv_Wolfman</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Auron_(comicsCharacter) | fullName | &quot;Lambien&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Marv_Wolfman" number="1" tag="PATIENT-3" type="name">Marv Wolfman</reference>
-					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="Karl_Kesel" number="3" tag="BRIDGE-1" type="name">American Karl Kesel</reference>
-					<reference entity="Auron_(comicsCharacter)" number="4" tag="AGENT-1" type="description">the comic book character Auron</reference>
-					<reference entity="&quot;Lambien&quot;" number="5" tag="PATIENT-2" type="name">Lambien</reference>
-				</references>
 				<text>Marv Wolfman and the American Karl Kesel are the creators of the comic book character Auron, whose full name is Lambien.</text>
 				<template>PATIENT-3 and PATIENT-1 BRIDGE-1 are the creators of AGENT-1 , whose full name is PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Karl_Kesel</entity>
+				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Americans</entity>
-				<entity>PATIENT-2 | &quot;Lambien&quot;</entity>
 				<entity>PATIENT-3 | Marv_Wolfman</entity>
+				<entity>PATIENT-2 | &quot;Lambien&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id29" size="4">
@@ -1875,6 +1005,12 @@
 				<otriple>Auron_(comics) | creators | Karl_Kesel</otriple>
 				<otriple>Auron_(comics) | creator | Walt_Simonson</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Auron_(comics) | creator | Karl_Kesel</otriple>
+				<otriple>Karl_Kesel | nationality | Americans</otriple>
+				<otriple>Auron_(comics) | creators | Walt_Simonson</otriple>
+				<otriple>Auron_(comics) | fullName | &quot;Lambien&quot;@en</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Karl_Kesel | nationality | Americans</mtriple>
 				<mtriple>Auron_(comicsCharacter) | fullName | &quot;Lambien&quot;</mtriple>
@@ -1882,61 +1018,23 @@
 				<mtriple>Auron_(comicsCharacter) | creator | Walt_Simonson</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Auron_(comicsCharacter) | creator | Walt_Simonson</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character of Auron </reference>
-					<reference entity="&quot;Lambien&quot;" number="2" tag="PATIENT-2" type="name">Lambien</reference>
-					<reference entity="Walt_Simonson" number="3" tag="PATIENT-3" type="name">Walt Simonson</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Karl_Kesel" number="5" tag="BRIDGE-1" type="name">Karl Kesel</reference>
-				</references>
 				<text>The comic character of Auron (whose full name is Lambien) was created by Walt Simonson and the American, Karl Kesel.</text>
 				<template>AGENT-1 (whose full name is PATIENT-2) was created by PATIENT-3 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Auron_(comicsCharacter) | fullName | &quot;Lambien&quot;</striple>
-					<striple>Auron_(comicsCharacter) | creator | Walt_Simonson</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Lambien&quot;" number="2" tag="PATIENT-2" type="name">Lambien</reference>
-					<reference entity="Auron_(comicsCharacter)" number="3" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="Walt_Simonson" number="4" tag="PATIENT-3" type="name">Walt Simonson</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Karl_Kesel" number="6" tag="BRIDGE-1" type="name">Karl Kesel</reference>
-				</references>
 				<text>The comic character of Auron has the full name Lambien. He was created by Walt Simonson and the American, Karl Kesel.</text>
 				<template>AGENT-1 has full name PATIENT-2 . AGENT-1 was created by PATIENT-3 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Auron_(comicsCharacter) | fullName | &quot;Lambien&quot;</striple>
-					<striple>Auron_(comicsCharacter) | creator | Walt_Simonson</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Auron</reference>
-					<reference entity="&quot;Lambien&quot;" number="2" tag="PATIENT-2" type="name">Lambien</reference>
-					<reference entity="Walt_Simonson" number="3" tag="PATIENT-3" type="name">Walt Simonson</reference>
-					<reference entity="Karl_Kesel" number="4" tag="BRIDGE-1" type="name">Karl Kesel</reference>
-					<reference entity="Americans" number="5" tag="PATIENT-1" type="description">the United States</reference>
-				</references>
 				<text>The comic book character Auron, with the full name Lambien, was created by Walt Simonson and Karl Kesel, who is from the United States.</text>
 				<template>AGENT-1 , with full name PATIENT-2 , was created by PATIENT-3 and BRIDGE-1 , who is from PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Karl_Kesel</entity>
+				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Americans</entity>
-				<entity>PATIENT-2 | &quot;Lambien&quot;</entity>
 				<entity>PATIENT-3 | Walt_Simonson</entity>
+				<entity>PATIENT-2 | &quot;Lambien&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id30" size="4">
@@ -1946,6 +1044,12 @@
 				<otriple>Bolt_(DC_Comics) | creator | Paris_Cullins</otriple>
 				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Paris_Cullins</otriple>
+				<otriple>Paris_Cullins | nationality | United_States</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+				<otriple>Bolt_(DC_Comics) | creator | Dan_Mishkin</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Paris_Cullins | nationality | United_States</mtriple>
 				<mtriple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</mtriple>
@@ -1953,60 +1057,23 @@
 				<mtriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Paris_Cullins | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="3" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="Dan_Mishkin" number="4" tag="PATIENT-2" type="name">Dan Mishkin</reference>
-					<reference entity="United_States" number="5" tag="PATIENT-1" type="description">the US</reference>
-					<reference entity="Paris_Cullins" number="6" tag="BRIDGE-1" type="name">Paris Cullins</reference>
-				</references>
 				<text>Bolt is a comic character with the alternative name of Larry Bolatinsky. He was created by Dan Mishkin and the US national, Paris Cullins.</text>
 				<template>AGENT-1 is a comic character with the alternative name of PATIENT-3 . AGENT-1 was created by PATIENT-2 and PATIENT-1 national , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Paris_Cullins | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Dan_Mishkin" number="2" tag="PATIENT-2" type="name">Dan Mishkin</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-1" type="name">U</reference>
-					<reference entity="Paris_Cullins" number="4" tag="BRIDGE-1" type="name">.S</reference>
-				</references>
 				<text>Bolt ( Larry Bolatinsky ) is a comic character which was created by both Dan Mishkin and U.S. national Paris Cullins.</text>
 				<template>AGENT-1 (PATIENT-3) is a comic character which was created by both PATIENT-2 and PATIENT-1 BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Paris_Cullins | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-					<reference entity="Dan_Mishkin" number="3" tag="PATIENT-2" type="name">Dan Mishkin</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="Paris_Cullins" number="5" tag="BRIDGE-1" type="name">American Paris Cullins</reference>
-				</references>
 				<text>The comic book character Bolt also known as Larry Bolatinsky was created by Dan Mishkin and the American Paris Cullins.</text>
 				<template>AGENT-1 also known as PATIENT-3 was created by PATIENT-2 and PATIENT-1 BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Paris_Cullins</entity>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | United_States</entity>
-				<entity>PATIENT-2 | Dan_Mishkin</entity>
 				<entity>PATIENT-3 | &quot;Larry Bolatinsky&quot;</entity>
+				<entity>PATIENT-2 | Dan_Mishkin</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id31" size="4">
@@ -2016,6 +1083,12 @@
 				<otriple>Bolt_(DC_Comics) | creator | Paris_Cullins</otriple>
 				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Bolt_(DC_Comics) | creators | Paris_Cullins</otriple>
+				<otriple>Paris_Cullins | nationality | United_States</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+				<otriple>Bolt_(DC_Comics) | creator | Gary_Cohn_(comics)</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Paris_Cullins | nationality | United_States</mtriple>
 				<mtriple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</mtriple>
@@ -2023,63 +1096,23 @@
 				<mtriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Paris_Cullins | nationality | United_States</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States" number="1" tag="PATIENT-1" type="description">The US national</reference>
-					<reference entity="Paris_Cullins" number="2" tag="BRIDGE-1" type="name">Paris Cullins</reference>
-					<reference entity="Gary_Cohn_(comics)" number="3" tag="PATIENT-2" type="name">comic book writer , Gary Cohn</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="4" tag="AGENT-1" type="description">the comic character of Bolt</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="5" tag="AGENT-1" type="description">The character</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="6" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-				</references>
 				<text>The US national, Paris Cullins along with comic book writer, Gary Cohn created the comic character of Bolt. The character has the alternative name of Larry Bolatinsky,.</text>
 				<template>PATIENT-1 , BRIDGE-1 along with PATIENT-2 created AGENT-1 . AGENT-1 has the alternative name of PATIENT-3 , .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Paris_Cullins | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt </reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-					<reference entity="Gary_Cohn_(comics)" number="3" tag="PATIENT-2" type="name">Gary Cohn</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">U</reference>
-					<reference entity="Paris_Cullins" number="5" tag="BRIDGE-1" type="name">.S national Paris Cullins</reference>
-				</references>
 				<text>The comic character Bolt , or otherwise known as Larry Bolatinsky, was created by both Gary Cohn and U.S national Paris Cullins.</text>
 				<template>AGENT-1 , or otherwise known as PATIENT-3 , was created by both PATIENT-2 and PATIENT-1 BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Gary_Cohn_(comics)</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Paris_Cullins | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-					<reference entity="Gary_Cohn_(comics)" number="3" tag="PATIENT-2" type="name">Gary Cohn</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-1" type="description">the United States</reference>
-					<reference entity="Paris_Cullins" number="5" tag="BRIDGE-1" type="name">Paris Cullins</reference>
-				</references>
 				<text>Bolt, also known as Larry Bolatinsky, is a comic book character created by Gary Cohn and the United States national Paris Cullins.</text>
 				<template>AGENT-1 , also known as PATIENT-3 , is a comic book character created by PATIENT-2 and PATIENT-1 national BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Paris_Cullins</entity>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | United_States</entity>
-				<entity>PATIENT-2 | Gary_Cohn_(comics)</entity>
 				<entity>PATIENT-3 | &quot;Larry Bolatinsky&quot;</entity>
+				<entity>PATIENT-2 | Gary_Cohn_(comics)</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id32" size="4">
@@ -2089,6 +1122,12 @@
 				<otriple>Bolt_(DC_Comics) | creator | Ernie_Colón</otriple>
 				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Paris_Cullins | nationality | United_States</otriple>
+				<otriple>Bolt_(DC_Comics) | creator | Paris_Cullins</otriple>
+				<otriple>Bolt_(DC_Comics) | creators | Ernie_Colón</otriple>
+				<otriple>Bolt_(DC_Comics) | alterEgo | &quot;Larry Bolatinsky&quot;@en</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Paris_Cullins | nationality | United_States</mtriple>
 				<mtriple>Bolt_(comicsCharacter) | creator | Paris_Cullins</mtriple>
@@ -2096,51 +1135,23 @@
 				<mtriple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Paris_Cullins | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="1" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="2" tag="AGENT-1" type="description">the comic book character Bolt</reference>
-					<reference entity="Ernie_Colón" number="3" tag="PATIENT-2" type="name">Ernie Colon</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="Paris_Cullins" number="5" tag="BRIDGE-1" type="name">American Paris Cullins</reference>
-				</references>
 				<text>Larry Bolatinsky is the alternative name for the comic book character Bolt, which was created by Ernie Colon and the American Paris Cullins.</text>
 				<template>PATIENT-3 is the alternative name for AGENT-1 , which was created by PATIENT-2 and PATIENT-1 BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
-				<references/>
 				<text>Ernie Colon and the US national Paris Cullins created the comic character of Bolt, who has the alternative name of Larry Bolatinsky.</text>
-				<template/>
+				<template>PATIENT-2 and the PATIENT-1 national BRIDGE-1 created AGENT-1 , who has the alternative name of PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Paris_Cullins | nationality | United_States</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ernie_Colón" number="1" tag="PATIENT-2" type="name">Ernie Colón</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="Paris_Cullins" number="3" tag="BRIDGE-1" type="name">American Paris Cullins</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="4" tag="AGENT-1" type="description">the comic book character Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="5" tag="PATIENT-3" type="name">Larry Bolatinsky</reference>
-				</references>
 				<text>Ernie Colón and the American Paris Cullins were among the creators of the comic book character Bolt, also known as Larry Bolatinsky.</text>
 				<template>PATIENT-2 and PATIENT-1 BRIDGE-1 were among the creators of AGENT-1 , also known as PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Paris_Cullins</entity>
+				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | United_States</entity>
-				<entity>PATIENT-2 | Ernie_Colón</entity>
 				<entity>PATIENT-3 | &quot;Larry Bolatinsky&quot;</entity>
+				<entity>PATIENT-2 | Ernie_Colón</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id33" size="4">
@@ -2150,6 +1161,12 @@
 				<otriple>Asterix_(character) | alterEgo | &quot;Astérix&quot;@en</otriple>
 				<otriple>Asterix_(character) | creators | Albert_Uderzo</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Asterix_(character) | creators | René_Goscinny</otriple>
+				<otriple>René_Goscinny | nationality | French_people</otriple>
+				<otriple>Asterix_(character) | alterEgo | &quot;Astérix&quot;@en</otriple>
+				<otriple>Asterix_(character) | creator | Albert_Uderzo</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>René_Goscinny | nationality | French_people</mtriple>
 				<mtriple>Asterix_(comicsCharacter) | creator | René_Goscinny</mtriple>
@@ -2157,42 +1174,19 @@
 				<mtriple>Asterix_(comicsCharacter) | creator | Albert_Uderzo</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Asterix_(comicsCharacter) | alternativeName | &quot;Astérix&quot;</striple>
-					<striple>Asterix_(comicsCharacter) | creator | Albert_Uderzo</striple>
-					<striple>Asterix_(comicsCharacter) | creator | René_Goscinny</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asterix_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Asterix</reference>
-					<reference entity="Albert_Uderzo" number="3" tag="PATIENT-3" type="name">Albert Uderzo</reference>
-					<reference entity="René_Goscinny" number="4" tag="BRIDGE-1" type="description">the French national , Rene Goscinny</reference>
-				</references>
 				<text>The comic character Asterix is sometimes called &quot;Astérix&quot; and was created by Albert Uderzo and the French national, Rene Goscinny.</text>
-				<template>AGENT-1 is sometimes called `` PATIENT-2 '' and was created by PATIENT-3 and BRIDGE-1 .</template>
+				<template>AGENT-1 is sometimes called PATIENT-2 and was created by PATIENT-3 and the PATIENT-1 national , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>René_Goscinny | nationality | French_people</striple>
-					<striple>Asterix_(comicsCharacter) | creator | Albert_Uderzo</striple>
-					<striple>Asterix_(comicsCharacter) | creator | René_Goscinny</striple>
-					<striple>Asterix_(comicsCharacter) | alternativeName | &quot;Astérix&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Albert_Uderzo" number="1" tag="PATIENT-3" type="name">Albert Uderzo</reference>
-					<reference entity="French_people" number="2" tag="PATIENT-1" type="name">French</reference>
-					<reference entity="René_Goscinny" number="3" tag="BRIDGE-1" type="name">born René Goscinny</reference>
-					<reference entity="Asterix_(comicsCharacter)" number="4" tag="AGENT-1" type="description">the comic character Asterix</reference>
-					<reference entity="&quot;Astérix&quot;" number="5" tag="PATIENT-2" type="name">Astérix</reference>
-				</references>
 				<text>Albert Uderzo and French born René Goscinny, are the creators of the comic character Asterix, also know as Astérix.</text>
 				<template>PATIENT-3 and PATIENT-1 BRIDGE-1 , are the creators of AGENT-1 , also know as PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Asterix_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | René_Goscinny</entity>
+				<entity>AGENT-1 | Asterix_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | French_people</entity>
-				<entity>PATIENT-2 | &quot;Astérix&quot;</entity>
 				<entity>PATIENT-3 | Albert_Uderzo</entity>
+				<entity>PATIENT-2 | &quot;Astérix&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id34" size="4">
@@ -2202,6 +1196,12 @@
 				<otriple>Ben_Urich | creator | Gene_Colan</otriple>
 				<otriple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Ben_Urich | creator | Roger_McKenzie_(comics)</otriple>
+				<otriple>Roger_McKenzie_(comics) | nationality | United_States</otriple>
+				<otriple>Ben_Urich | creators | Gene_Colan</otriple>
+				<otriple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;@en</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Roger_McKenzie_(comic_book_writer) | nationality | United_States</mtriple>
 				<mtriple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</mtriple>
@@ -2209,62 +1209,35 @@
 				<mtriple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
-					<striple>Ben_Urich | creator | Gene_Colan</striple>
-					<striple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Roger_McKenzie_(comic_book_writer)" number="1" tag="BRIDGE-1" type="description">The American comic book writer Roger McKenzie</reference>
-					<reference entity="Gene_Colan" number="2" tag="PATIENT-2" type="name">Gene Colan</reference>
-					<reference entity="Ben_Urich" number="3" tag="AGENT-1" type="description">the character Ben Urich</reference>
-					<reference entity="&quot;Benjamin Urich&quot;" number="4" tag="PATIENT-3" type="name">Benjamin Urich</reference>
-				</references>
 				<text>The American comic book writer Roger McKenzie and Gene Colan created the character Ben Urich, who has the full name Benjamin Urich.</text>
-				<template>BRIDGE-1 and PATIENT-2 created AGENT-1 , who has full name PATIENT-3 .</template>
+				<template>The PATIENT-1 comic book writer BRIDGE-1 and PATIENT-2 created AGENT-1 , who has full name PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Roger_McKenzie_(comic_book_writer) | nationality | United_States</striple>
-					<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
-					<striple>Ben_Urich | creator | Gene_Colan</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Roger_McKenzie_(comic_book_writer)" number="1" tag="BRIDGE-1" type="description">The comic book writer , Roger McKenzie</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-1" type="description">an American</reference>
-				</references>
 				<text>The comic book writer, Roger McKenzie is an American and along with Gene Colan created Ben (Benjamin) Urich.</text>
 				<template>BRIDGE-1 is PATIENT-1 and along with PATIENT-2 created (PATIENT-3) AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Ben_Urich | fullName | &quot;Benjamin Urich&quot;</striple>
-					<striple>Ben_Urich | creator | Gene_Colan</striple>
-					<striple>Ben_Urich | creator | Roger_McKenzie_(comic_book_writer)</striple>
-					<striple>Roger_McKenzie_(comic_book_writer) | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ben_Urich" number="1" tag="AGENT-1" type="description">The character of Ben Urich</reference>
-					<reference entity="&quot;Benjamin Urich&quot;" number="2" tag="PATIENT-3" type="name">Benjamin Urich</reference>
-					<reference entity="Gene_Colan" number="3" tag="PATIENT-2" type="name">Gene Colan</reference>
-					<reference entity="Roger_McKenzie_(comic_book_writer)" number="4" tag="BRIDGE-1" type="description">the comic book writer Roger Mckenzie</reference>
-					<reference entity="United_States" number="5" tag="PATIENT-1" type="name">American</reference>
-				</references>
 				<text>The character of Ben Urich, whose full name is Benjamin Urich, was created by Gene Colan and the comic book writer Roger Mckenzie who is American.</text>
 				<template>AGENT-1 , whose full name is PATIENT-3 , was created by PATIENT-2 and BRIDGE-1 who is PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Ben_Urich</entity>
 				<entity>BRIDGE-1 | Roger_McKenzie_(comic_book_writer)</entity>
+				<entity>AGENT-1 | Ben_Urich</entity>
 				<entity>PATIENT-1 | United_States</entity>
-				<entity>PATIENT-2 | Gene_Colan</entity>
 				<entity>PATIENT-3 | &quot;Benjamin Urich&quot;</entity>
+				<entity>PATIENT-2 | Gene_Colan</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id35" size="4">
 			<originaltripleset>
 				<otriple>Black_Pirate | creator | Sheldon_Moldoff</otriple>
 				<otriple>Sheldon_Moldoff | nationality | Americans</otriple>
+				<otriple>Sheldon_Moldoff | awards | Inkpot_Award</otriple>
+				<otriple>Black_Pirate | alterEgo | &quot;Jon Valor&quot;@en</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Sheldon_Moldoff | nationality | Americans</otriple>
+				<otriple>Black_Pirate | creators | Sheldon_Moldoff</otriple>
 				<otriple>Sheldon_Moldoff | awards | Inkpot_Award</otriple>
 				<otriple>Black_Pirate | alterEgo | &quot;Jon Valor&quot;@en</otriple>
 			</originaltripleset>
@@ -2275,65 +1248,24 @@
 				<mtriple>Black_Pirate | alternativeName | &quot;Jon Valor&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Black_Pirate | alternativeName | &quot;Jon Valor&quot;</striple>
-					<striple>Black_Pirate | creator | Sheldon_Moldoff</striple>
-					<striple>Sheldon_Moldoff | award | Inkpot_Award</striple>
-					<striple>Sheldon_Moldoff | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Black_Pirate" number="1" tag="AGENT-1" type="description">The Black Pirate</reference>
-					<reference entity="&quot;Jon Valor&quot;" number="2" tag="PATIENT-3" type="name">Jon Valor</reference>
-					<reference entity="Inkpot_Award" number="3" tag="PATIENT-2" type="description">the Inkpot Award</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Sheldon_Moldoff" number="5" tag="BRIDGE-1" type="name">Sheldon Moldoff</reference>
-				</references>
 				<text>The Black Pirate, also know as Jon Valor, was created by the Inkpot Award winning American, Sheldon Moldoff.</text>
 				<template>AGENT-1 , also know as PATIENT-3 , was created by PATIENT-2 winning PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Sheldon_Moldoff | nationality | Americans</striple>
-					<striple>Sheldon_Moldoff | award | Inkpot_Award</striple>
-					<striple>Black_Pirate | creator | Sheldon_Moldoff</striple>
-					<striple>Black_Pirate | alternativeName | &quot;Jon Valor&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Americans" number="1" tag="PATIENT-1" type="name">American</reference>
-					<reference entity="Sheldon_Moldoff" number="2" tag="BRIDGE-1" type="name">Sheldon Moldoff</reference>
-					<reference entity="Inkpot_Award" number="3" tag="PATIENT-2" type="description">the Inkpot Award</reference>
-					<reference entity="Black_Pirate" number="4" tag="AGENT-1" type="description">The Black Pirate</reference>
-					<reference entity="&quot;Jon Valor&quot;" number="5" tag="PATIENT-3" type="name">Jon Valor</reference>
-				</references>
 				<text>American Sheldon Moldoff, who has won the Inkpot Award, created The Black Pirate, whose alternative name is Jon Valor.</text>
 				<template>PATIENT-1 BRIDGE-1 , who has won PATIENT-2 , created AGENT-1 , whose alternative name is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Black_Pirate | alternativeName | &quot;Jon Valor&quot;</striple>
-					<striple>Black_Pirate | creator | Sheldon_Moldoff</striple>
-					<striple>Sheldon_Moldoff | nationality | Americans</striple>
-					<striple>Sheldon_Moldoff | award | Inkpot_Award</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Black_Pirate" number="1" tag="AGENT-1" type="description">The black pirate</reference>
-					<reference entity="&quot;Jon Valor&quot;" number="2" tag="PATIENT-3" type="name">Jon Valor</reference>
-					<reference entity="Sheldon_Moldoff" number="3" tag="BRIDGE-1" type="name">Sheldon Moldoff</reference>
-					<reference entity="Americans" number="4" tag="PATIENT-1" type="description">an American</reference>
-					<reference entity="Inkpot_Award" number="5" tag="PATIENT-2" type="description">the Inkpot award</reference>
-				</references>
 				<text>The black pirate, also known as Jon Valor, was created by Sheldon Moldoff, an American who has won the Inkpot award.</text>
 				<template>AGENT-1 , also known as PATIENT-3 , was created by BRIDGE-1 , PATIENT-1 who has won PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Black_Pirate</entity>
 				<entity>BRIDGE-1 | Sheldon_Moldoff</entity>
+				<entity>AGENT-1 | Black_Pirate</entity>
 				<entity>PATIENT-1 | Americans</entity>
-				<entity>PATIENT-2 | Inkpot_Award</entity>
 				<entity>PATIENT-3 | &quot;Jon Valor&quot;</entity>
+				<entity>PATIENT-2 | Inkpot_Award</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

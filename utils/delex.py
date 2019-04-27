@@ -123,8 +123,9 @@ class Delexicalize:
     def run(self, s, entities, concat_entities=True, allow_failed=False):
         # Look for entities by reverse length
         entities = list(entities)
-
         entities.sort(key=len, reverse=True)
+
+        text_copy = str(s)
 
         s = ALPHA + s.lower() + OMEGA
 
@@ -163,9 +164,9 @@ class Delexicalize:
 
                 if score < self.bound:
                     print("\nDelex Failed!")
+                    print(text_copy)
                     print(clean_extra(s))
                     print(entity)
-                    print("subs", subs)
                     print("rephrase", self.rephrase(lower))
                     print("rephrase", self.rephrase_if_must(lower))
 

@@ -17,72 +17,24 @@
 				<mtriple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</striple>
-					<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
-					<striple>Adams_County,_Pennsylvania | has to its west | Franklin_County,_Pennsylvania</striple>
-					<striple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="11th_Mississippi_Infantry_Monument" number="1" tag="AGENT-1" type="description">The 11th Mississippi Infantry monument</reference>
-					<reference entity="Gettysburg,_Pennsylvania" number="2" tag="PATIENT-4" type="name">Gettysburg</reference>
-					<reference entity="Adams_County,_Pennsylvania" number="3" tag="BRIDGE-1" type="name">Adams County , Pennsylvania</reference>
-					<reference entity="Adams_County,_Pennsylvania" number="4" tag="BRIDGE-1" type="name">Adams County</reference>
-					<reference entity="Franklin_County,_Pennsylvania" number="5" tag="PATIENT-1" type="name">Franklin County</reference>
-					<reference entity="Cumberland_County,_Pennsylvania" number="6" tag="PATIENT-3" type="name">Cumberland County</reference>
-				</references>
 				<text>The 11th Mississippi Infantry monument is located in the municipality of Gettysburg, Adams County, Pennsylvania. Adams County is east of Franklin County and south of Cumberland County. Maryland's Carrol county is located to the southeast.</text>
 				<template>AGENT-1 is located in the municipality of PATIENT-4 , BRIDGE-1 . BRIDGE-1 is east of PATIENT-1 and south of PATIENT-3 . Maryland 's Carrol county is located to the southeast .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</striple>
-					<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
-					<striple>Adams_County,_Pennsylvania | has to its west | Franklin_County,_Pennsylvania</striple>
-					<striple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</striple>
-					<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="11th_Mississippi_Infantry_Monument" number="1" tag="AGENT-1" type="description">The 11th Mississippi Infantry Monument</reference>
-					<reference entity="Gettysburg,_Pennsylvania" number="2" tag="PATIENT-4" type="name">Gettysburg</reference>
-					<reference entity="Adams_County,_Pennsylvania" number="3" tag="BRIDGE-1" type="name">Adams County , Pennsylvania</reference>
-					<reference entity="Adams_County,_Pennsylvania" number="4" tag="BRIDGE-1" type="name">Adams County</reference>
-					<reference entity="Franklin_County,_Pennsylvania" number="5" tag="PATIENT-1" type="name">Franklin County</reference>
-					<reference entity="Cumberland_County,_Pennsylvania" number="6" tag="PATIENT-3" type="name">Cumberland County</reference>
-					<reference entity="Adams_County,_Pennsylvania" number="7" tag="BRIDGE-1" type="name">Pennsylvania</reference>
-					<reference entity="Carroll_County,_Maryland" number="8" tag="PATIENT-2" type="name">Carrol County Maryland</reference>
-					<reference entity="Adams_County,_Pennsylvania" number="9" tag="BRIDGE-1" type="name">Adams County</reference>
-				</references>
 				<text>The 11th Mississippi Infantry Monument is placed in the municipality of Gettysburg, Adams County, Pennsylvania. To the west of Adams County lies Franklin County and to the north, Cumberland County, both of these are in Pennsylvania. Carrol County Maryland is southeast of Adams County.</text>
 				<template>AGENT-1 is placed in the municipality of PATIENT-4 , BRIDGE-1 . To the west of BRIDGE-1 lies PATIENT-1 and to the north , PATIENT-3 , both of these are in BRIDGE-1 . PATIENT-2 is southeast of BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>11th_Mississippi_Infantry_Monument | municipality | Gettysburg,_Pennsylvania</striple>
-					<striple>11th_Mississippi_Infantry_Monument | location | Adams_County,_Pennsylvania</striple>
-					<striple>Adams_County,_Pennsylvania | has to its west | Franklin_County,_Pennsylvania</striple>
-					<striple>Adams_County,_Pennsylvania | has to its north | Cumberland_County,_Pennsylvania</striple>
-					<striple>Adams_County,_Pennsylvania | has to its southeast | Carroll_County,_Maryland</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="11th_Mississippi_Infantry_Monument" number="1" tag="AGENT-1" type="description">The 11th Mississippi Infantry monument</reference>
-					<reference entity="Gettysburg,_Pennsylvania" number="2" tag="PATIENT-4" type="name">Gettysburg</reference>
-					<reference entity="Adams_County,_Pennsylvania" number="3" tag="BRIDGE-1" type="name">Adams County , Pennsylvania</reference>
-					<reference entity="Adams_County,_Pennsylvania" number="4" tag="BRIDGE-1" type="name">Adams County</reference>
-					<reference entity="Franklin_County,_Pennsylvania" number="5" tag="PATIENT-1" type="name">Franklin County</reference>
-					<reference entity="Cumberland_County,_Pennsylvania" number="6" tag="PATIENT-3" type="name">Cumberland County</reference>
-					<reference entity="Carroll_County,_Maryland" number="7" tag="PATIENT-2" type="name">Carrol County</reference>
-				</references>
 				<text>The 11th Mississippi Infantry monument is located in Gettysburg, Adams County, Pennsylvania. Adams County is located east of Franklin County and south of Cumberland County. Maryland's Carrol County is located to the southeast.</text>
 				<template>AGENT-1 is located in PATIENT-4 , BRIDGE-1 . BRIDGE-1 is located east of PATIENT-1 and south of PATIENT-3 . Maryland 's PATIENT-2 is located to the southeast .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
 				<entity>BRIDGE-1 | Adams_County,_Pennsylvania</entity>
-				<entity>PATIENT-1 | Franklin_County,_Pennsylvania</entity>
-				<entity>PATIENT-2 | Carroll_County,_Maryland</entity>
-				<entity>PATIENT-3 | Cumberland_County,_Pennsylvania</entity>
 				<entity>PATIENT-4 | Gettysburg,_Pennsylvania</entity>
+				<entity>AGENT-1 | 11th_Mississippi_Infantry_Monument</entity>
+				<entity>PATIENT-1 | Franklin_County,_Pennsylvania</entity>
+				<entity>PATIENT-3 | Cumberland_County,_Pennsylvania</entity>
+				<entity>PATIENT-2 | Carroll_County,_Maryland</entity>
 			</entitymap>
 		</entry>
 		<entry category="Monument" eid="Id2" size="5">
@@ -101,51 +53,20 @@
 				<mtriple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Azerbaijan | capital | Baku</striple>
-					<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
-					<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Azerbaijan" number="1" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-					<reference entity="Baku" number="2" tag="PATIENT-1" type="name">Baku</reference>
-					<reference entity="Prime_Minister_of_Azerbaijan" number="3" tag="PATIENT-2" type="name">Prime Minister of Azerbaijan</reference>
-					<reference entity="Artur_Rasizade" number="4" tag="PATIENT-3" type="name">Artur Rasizade</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="5" tag="AGENT-1" type="description">The Baku Turkish Martyr 's Memorial</reference>
-					<reference entity="Azerbaijan" number="6" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="7" tag="AGENT-1" type="description">the legislature</reference>
-					<reference entity="National_Assembly_(Azerbaijan)" number="8" tag="PATIENT-4" type="description">the National Assembly</reference>
-				</references>
 				<text>The capital of Azerbaijan is Baku and the leader and Prime Minister of Azerbaijan is called Artur Rasizade. The Baku Turkish Martyr's Memorial is located in Azerbaijan and the legislature is known as the National Assembly.</text>
 				<template>The capital of BRIDGE-1 is PATIENT-1 and the leader and PATIENT-2 is called PATIENT-3 . AGENT-1 is located in BRIDGE-1 and AGENT-1 is known as PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
-					<striple>Azerbaijan | capital | Baku</striple>
-					<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Azerbaijan | legislature | National_Assembly_(Azerbaijan)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Artur_Rasizade" number="3" tag="PATIENT-3" type="name">Artur Rasizade</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="4" tag="AGENT-1" type="name">Baku Turkish Martyrs ' Memorial</reference>
-					<reference entity="Azerbaijan" number="5" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="6" tag="AGENT-1" type="description">the legislature</reference>
-					<reference entity="National_Assembly_(Azerbaijan)" number="7" tag="PATIENT-4" type="description">the National Assembly</reference>
-				</references>
 				<text>Prime Minister of Azerbaijan (capital Baku) is the official title of the leader whose name is Artur Rasizade. Baku Turkish Martyrs' Memorial is located in Azerbaijan and the legislature of the country is the National Assembly.</text>
 				<template>PATIENT-2 ( capital PATIENT-1 ) is the official title of the leader whose name is PATIENT-3 . AGENT-1 is located in BRIDGE-1 and AGENT-1 of the country is PATIENT-4 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
 				<entity>BRIDGE-1 | Azerbaijan</entity>
-				<entity>PATIENT-1 | Baku</entity>
-				<entity>PATIENT-2 | Prime_Minister_of_Azerbaijan</entity>
-				<entity>PATIENT-3 | Artur_Rasizade</entity>
 				<entity>PATIENT-4 | National_Assembly_(Azerbaijan)</entity>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>PATIENT-1 | Baku</entity>
+				<entity>PATIENT-3 | Artur_Rasizade</entity>
+				<entity>PATIENT-2 | Prime_Minister_of_Azerbaijan</entity>
 			</entitymap>
 		</entry>
 		<entry category="Monument" eid="Id3" size="5">
@@ -164,67 +85,24 @@
 				<mtriple>Baku_Turkish_Martyrs'_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
-					<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial</reference>
-					<reference entity="Azerbaijan" number="2" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="3" tag="PATIENT-1" type="description">the Ottoman Army Soldiers killed in the Battle of Baku</reference>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="4" tag="PATIENT-4" type="name">Huseyin Butuner and Hilmi Guner</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="5" tag="AGENT-1" type="description">The monument</reference>
-					<reference entity="Artur_Rasizade" number="8" tag="PATIENT-3" type="name">Artur Rasizade</reference>
-				</references>
 				<text>The Baku Turkish Martyrs' Memorial in Azerbaijan is dedicated to the Ottoman Army Soldiers killed in the Battle of Baku and was designed by Huseyin Butuner and Hilmi Guner. The monument is also known by the native name Türk Şehitleri Anıtı. Azerbaijan's leader is Artur Rasizade.</text>
 				<template>AGENT-1 in BRIDGE-1 is dedicated to PATIENT-1 and was designed by PATIENT-4 . AGENT-1 is also known by native PATIENT-2 . BRIDGE-1 leader is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-					<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial </reference>
-					<reference entity="Azerbaijan" number="3" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="4" tag="PATIENT-1" type="name">Ottoman Army soldiers killed in the Battle of Baku</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="5" tag="AGENT-1" type="pronoun">it</reference>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="6" tag="PATIENT-4" type="name">Hüseyin Bütüner and Hilmi Güner</reference>
-					<reference entity="Azerbaijan" number="8" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-				</references>
 				<text>The Baku Turkish Martyrs' Memorial ( native name : &quot;Türk Sehitleri Aniti&quot;) in Azerbaijan has been dedicated to Ottoman Army soldiers killed in the Battle of Baku and it was designed by Hüseyin Bütüner and Hilmi Güner.Artur Rasizade is the leader of Azerbaijan.</text>
 				<template>AGENT-1 ( native name : `` PATIENT-2 '' ) in BRIDGE-1 has been dedicated to PATIENT-1 and AGENT-1 was designed by PATIENT-4. PATIENT-3 is the leader of BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
-					<striple>Azerbaijan | leaderName | Artur_Rasizade</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyr 's Memorial</reference>
-					<reference entity="Azerbaijan" number="2" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="3" tag="PATIENT-1" type="description">the Ottoman Army soldiers killed in the Battle of Baku</reference>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="6" tag="PATIENT-4" type="name">Hüseyin Bütüner and Hilmi Güner</reference>
-					<reference entity="Artur_Rasizade" number="7" tag="PATIENT-3" type="name">Artur Rasizade</reference>
-				</references>
 				<text>The Baku Turkish Martyr's Memorial in Azerbaijan is dedicated to the Ottoman Army soldiers killed in the Battle of Baku. The native name of the memorial is &quot;Türk Sehitleri Aniti&quot; and was designed by Hüseyin Bütüner and Hilmi Güner. The leader of Turkey is Artur Rasizade.</text>
 				<template>AGENT-1 in BRIDGE-1 is dedicated to PATIENT-1 . The native name of AGENT-1 is `` PATIENT-2 '' and was designed by PATIENT-4 . The leader of Turkey is PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
 				<entity>BRIDGE-1 | Azerbaijan</entity>
-				<entity>PATIENT-1 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
-				<entity>PATIENT-2 | &quot;Türk Şehitleri Anıtı&quot;</entity>
-				<entity>PATIENT-3 | Artur_Rasizade</entity>
 				<entity>PATIENT-4 | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</entity>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>PATIENT-1 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-3 | Artur_Rasizade</entity>
+				<entity>PATIENT-2 | &quot;Türk Şehitleri Anıtı&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="Monument" eid="Id4" size="5">
@@ -235,6 +113,13 @@
 				<otriple>Baku_Turkish_Martyrs'_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;@en</otriple>
 				<otriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | location | Azerbaijan</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;@en</otriple>
+				<otriple>Baku_Turkish_Martyrs'_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;@en</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Baku_Turkish_Martyrs'_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</mtriple>
 				<mtriple>Baku_Turkish_Martyrs'_Memorial | location | Azerbaijan</mtriple>
@@ -243,72 +128,24 @@
 				<mtriple>Baku_Turkish_Martyrs'_Memorial | material | &quot;Red granite and white marble&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="1" tag="PATIENT-4" type="name">Huseyin Butuner and Hilmi Guner</reference>
-					<reference entity="&quot;Red granite and white marble&quot;" number="2" tag="PATIENT-5" type="description">the</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="3" tag="AGENT-1" type="name">red granite and white marble Baku Turkish Martyrs memorial</reference>
-					<reference entity="Azerbaijan" number="4" tag="PATIENT-2" type="name">Azerbaijan</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="5" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;Türk Şehitleri Anıtı&quot;" number="6" tag="PATIENT-3" type="name">Turk Sehitleri Aniti</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="7" tag="PATIENT-1" type="description">the soldiers of the Ottoman army killed in the Battle of Baku</reference>
-				</references>
 				<text>Huseyin Butuner and Hilmi Guner designed the red granite and white marble Baku Turkish Martyrs memorial in Azerbaijan. It is also known as Turk Sehitleri Aniti and is dedicated to the soldiers of the Ottoman army killed in the Battle of Baku.</text>
 				<template>PATIENT-4 designed PATIENT-5 AGENT-1 in PATIENT-2 . AGENT-1 is also known as PATIENT-3 and is dedicated to PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial</reference>
-					<reference entity="Azerbaijan" number="2" tag="PATIENT-2" type="name">Azerbaijan</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="3" tag="AGENT-1" type="pronoun">it</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="6" tag="PATIENT-1" type="name">Ottoman Army soldiers who were killed in the Battle of Baku</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="7" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="8" tag="PATIENT-4" type="name">Hüseyin Bütüner and Hilmi Güner</reference>
-					<reference entity="&quot;Red granite and white marble&quot;" number="9" tag="PATIENT-5" type="name">red granite and white marble</reference>
-				</references>
 				<text>The Baku Turkish Martyrs' Memorial is located in Azerbaijan, where it is known as &quot;Türk Sehitleri Aniti&quot;. The memorial is dedicated to Ottoman Army soldiers who were killed in the Battle of Baku. It was designed by Hüseyin Bütüner and Hilmi Güner, and constructed out of red granite and white marble.</text>
 				<template>AGENT-1 is located in PATIENT-2 , where AGENT-1 is known as `` PATIENT-3 '' . AGENT-1 is dedicated to PATIENT-1 . AGENT-1 was designed by PATIENT-4 , and constructed out of PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | nativeName | &quot;Türk Şehitleri Anıtı&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="name">Baku Turkish Martyrs ' Memorial</reference>
-					<reference entity="&quot;Red granite and white marble&quot;" number="2" tag="PATIENT-5" type="name">red granite and white marble</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="3" tag="PATIENT-1" type="description">the Ottoman Army soldiers killed in the Battle of Baku</reference>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="4" tag="PATIENT-4" type="name">Huseyin Butuner and Hilmi Guner</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="5" tag="AGENT-1" type="description">The memorial</reference>
-					<reference entity="&quot;Türk Şehitleri Anıtı&quot;" number="6" tag="PATIENT-3" type="name">Turk Sehitleri Aniti</reference>
-					<reference entity="Azerbaijan" number="7" tag="PATIENT-2" type="name">Azerbaijan</reference>
-				</references>
 				<text>Baku Turkish Martyrs' Memorial, made of red granite and white marble, is dedicated to the Ottoman Army soldiers killed in the Battle of Baku and was designed by Huseyin Butuner and Hilmi Guner. The memorial is known in Turkish as Turk Sehitleri Aniti and can be found in Azerbaijan.</text>
 				<template>AGENT-1 , made of PATIENT-5 , is dedicated to PATIENT-1 and was designed by PATIENT-4 . AGENT-1 is known in Turkish as PATIENT-3 and can be found in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;Red granite and white marble&quot;</entity>
+				<entity>PATIENT-4 | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</entity>
 				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
 				<entity>PATIENT-1 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
-				<entity>PATIENT-2 | Azerbaijan</entity>
 				<entity>PATIENT-3 | &quot;Türk Şehitleri Anıtı&quot;</entity>
-				<entity>PATIENT-4 | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</entity>
-				<entity>PATIENT-5 | &quot;Red granite and white marble&quot;</entity>
+				<entity>PATIENT-2 | Azerbaijan</entity>
 			</entitymap>
 		</entry>
 		<entry category="Monument" eid="Id5" size="5">
@@ -327,77 +164,25 @@
 				<mtriple>Baku_Turkish_Martyrs'_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial</reference>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="2" tag="PATIENT-4" type="name">Huseyin Butuner and Hilmi Guner</reference>
-					<reference entity="&quot;Red granite and white marble&quot;" number="3" tag="PATIENT-1" type="name">granite and white marble</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="4" tag="PATIENT-3" type="description">the Ottoman Army Soldiers killed in the Battle of Baku</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="5" tag="AGENT-1" type="description">The memorial</reference>
-					<reference entity="Azerbaijan" number="6" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-					<reference entity="Prime_Minister_of_Azerbaijan" number="7" tag="PATIENT-2" type="description">the Prime Minister</reference>
-				</references>
 				<text>The Baku Turkish Martyrs' Memorial, designed by Huseyin Butuner and Hilmi Guner and made of granite and white marble, is dedicated to the Ottoman Army Soldiers killed in the Battle of Baku. The memorial is found in Azerbaijan whose leader is the Prime Minister.</text>
 				<template>AGENT-1 , designed by PATIENT-4 and made of PATIENT-1 , is dedicated to PATIENT-3 . AGENT-1 is found in BRIDGE-1 whose leader is PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
-					<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyrs ' Memorial</reference>
-					<reference entity="Azerbaijan" number="2" tag="BRIDGE-1" type="name">Azerbaijan</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="3" tag="PATIENT-3" type="description">the Ottoman Army soldiers killed in the Battle of Baku</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="5" tag="PATIENT-4" type="name">Hüseyin Bütüner and Hilmi Güner</reference>
-					<reference entity="&quot;Red granite and white marble&quot;" number="6" tag="PATIENT-1" type="name">Red granite and white marble</reference>
-					<reference entity="Azerbaijan" number="7" tag="BRIDGE-1" type="name">Azerbaijan 's</reference>
-					<reference entity="Prime_Minister_of_Azerbaijan" number="8" tag="PATIENT-2" type="description">the Prime Minister of Azerbaijan</reference>
-				</references>
 				<text>The Baku Turkish Martyrs' Memorial in Azerbaijan is dedicated to the Ottoman Army soldiers killed in the Battle of Baku. It was designed by Hüseyin Bütüner and Hilmi Güner and is built using Red granite and white marble. Azerbaijan's leader is the Prime Minister of Azerbaijan.</text>
 				<template>AGENT-1 in BRIDGE-1 is dedicated to PATIENT-3 . AGENT-1 was designed by PATIENT-4 and is built using PATIENT-1 . BRIDGE-1 leader is PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baku_Turkish_Martyrs_Memorial | designer | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | material | &quot;Red granite and white marble&quot;</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | location | Azerbaijan</striple>
-					<striple>Azerbaijan | leaderTitle | Prime_Minister_of_Azerbaijan</striple>
-					<striple>Baku_Turkish_Martyrs_Memorial | dedicatedTo | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="1" tag="AGENT-1" type="description">The Baku Turkish Martyr 's Memorial</reference>
-					<reference entity="&quot;Hüseyin Bütüner and Hilmi Güner&quot;" number="2" tag="PATIENT-4" type="name">Hüseyin Bütüner and Hilmi Güner</reference>
-					<reference entity="&quot;Red granite and white marble&quot;" number="3" tag="PATIENT-1" type="name">red granite and white marble</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Azerbaijan" number="5" tag="BRIDGE-1" type="name">Baku , Azerbaijan</reference>
-					<reference entity="Prime_Minister_of_Azerbaijan" number="6" tag="PATIENT-2" type="description">a Prime Minister</reference>
-					<reference entity="Baku_Turkish_Martyrs_Memorial" number="7" tag="AGENT-1" type="demonstrative">This Memorial</reference>
-					<reference entity="&quot;Ottoman Army soldiers killed in the Battle of Baku&quot;" number="8" tag="PATIENT-3" type="description">the Ottoman Army soldiers killed in the Battle of Baku</reference>
-				</references>
 				<text>The Baku Turkish Martyr's Memorial, designed by Hüseyin Bütüner and Hilmi Güner, was constructed using red granite and white marble. It is located in Baku, Azerbaijan, which is led by a Prime Minister. This Memorial is dedicated to the Ottoman Army soldiers killed in the Battle of Baku.</text>
 				<template>AGENT-1 , designed by PATIENT-4 , was constructed using PATIENT-1 . AGENT-1 is located in BRIDGE-1 , which is led by PATIENT-2 . AGENT-1 is dedicated to PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
 				<entity>BRIDGE-1 | Azerbaijan</entity>
-				<entity>PATIENT-1 | &quot;Red granite and white marble&quot;</entity>
-				<entity>PATIENT-2 | Prime_Minister_of_Azerbaijan</entity>
-				<entity>PATIENT-3 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
 				<entity>PATIENT-4 | &quot;Hüseyin Bütüner and Hilmi Güner&quot;</entity>
+				<entity>AGENT-1 | Baku_Turkish_Martyrs_Memorial</entity>
+				<entity>PATIENT-1 | &quot;Red granite and white marble&quot;</entity>
+				<entity>PATIENT-3 | &quot;Ottoman Army soldiers killed in the Battle of Baku&quot;</entity>
+				<entity>PATIENT-2 | Prime_Minister_of_Azerbaijan</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

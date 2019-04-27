@@ -11,28 +11,10 @@
 				<mtriple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
-					<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_14" number="1" tag="PATIENT-1" type="name">Apollo 14</reference>
-					<reference entity="Alan_Shepard" number="2" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="&quot;1974-08-01&quot;" number="3" tag="PATIENT-2" type="description">the first of August , 1974</reference>
-				</references>
 				<text>Apollo 14 crew member Alan Shepard retired on the first of August, 1974.</text>
 				<template>PATIENT-1 crew member AGENT-1 retired on PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
-					<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="Apollo_14" number="2" tag="PATIENT-1" type="name">Apollo 14</reference>
-					<reference entity="&quot;1974-08-01&quot;" number="3" tag="PATIENT-2" type="name">1974-08-01</reference>
-				</references>
 				<text>Alan Shepard, who served as a crew member of Apollo 14, retired 1974-08-01.</text>
 				<template>AGENT-1 , who served as a crew member of PATIENT-1 , retired PATIENT-2 .</template>
 			</lex>
@@ -52,53 +34,18 @@
 				<mtriple>Buzz_Aldrin | nationality | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | nationality | United_States</striple>
-					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">a US national</reference>
-					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="pronoun">he</reference>
-					<reference entity="Glen_Ridge,_New_Jersey" number="4" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
-				</references>
 				<text>Buzz Aldrin is a US national because he was born in Glen Ridge, New Jersey.</text>
 				<template>AGENT-1 is PATIENT-2 because AGENT-1 was born in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">American Buzz Aldrin</reference>
-					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
-				</references>
 				<text>American Buzz Aldrin hails from Glen Ridge, New Jersey.</text>
 				<template>AGENT-1 hails from PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
-					<striple>Buzz_Aldrin | nationality | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Glen_Ridge,_New_Jersey" number="2" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-2" type="description">the United States</reference>
-				</references>
 				<text>Buzz Aldrin was born in Glen Ridge, New Jersey in the United States.</text>
 				<template>AGENT-1 was born in PATIENT-1 in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | nationality | United_States</striple>
-					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-2" type="description">a US citizen</reference>
-					<reference entity="Glen_Ridge,_New_Jersey" number="3" tag="PATIENT-1" type="name">Glen Ridge , New Jersey</reference>
-				</references>
 				<text>Buzz Aldrin was a US citizen born in Glen Ridge, New Jersey.</text>
 				<template>AGENT-1 was PATIENT-2 born in PATIENT-1 .</template>
 			</lex>
@@ -118,56 +65,18 @@
 				<mtriple>Buzz_Aldrin | status | &quot;Retired&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Retired&quot;" number="1" tag="PATIENT-2" type="name">Retiree</reference>
-					<reference entity="Buzz_Aldrin" number="2" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Fighter_pilot" number="3" tag="PATIENT-1" type="description">a former fighter pilot</reference>
-				</references>
 				<text>Retiree @ Buzz Aldrin is a former fighter pilot.</text>
 				<template>PATIENT-2 @ AGENT-1 is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="&quot;Retired&quot;" number="2" tag="PATIENT-2" type="name">retired</reference>
-					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="pronoun">he</reference>
-					<reference entity="Fighter_pilot" number="4" tag="PATIENT-1" type="description">a fighter pilot</reference>
-				</references>
 				<text>Buzz Aldrin is now retired but he was once a fighter pilot.</text>
 				<template>AGENT-1 is now PATIENT-2 but AGENT-1 was once PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="&quot;Retired&quot;" number="2" tag="PATIENT-2" type="name">retired</reference>
-					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="pronoun">he</reference>
-					<reference entity="Fighter_pilot" number="4" tag="PATIENT-1" type="description">a fighter pilot</reference>
-				</references>
 				<text>Buzz Aldrin has since retired but he once served as a fighter pilot.</text>
 				<template>AGENT-1 has since PATIENT-2 but AGENT-1 once served as PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-					<striple>Buzz_Aldrin | status | &quot;Retired&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Fighter_pilot" number="2" tag="PATIENT-1" type="description">a fighter pilot</reference>
-					<reference entity="&quot;Retired&quot;" number="3" tag="PATIENT-2" type="name">retired</reference>
-				</references>
 				<text>Buzz Aldrin served as a fighter pilot and is now retired.</text>
 				<template>AGENT-1 served as PATIENT-1 and is now PATIENT-2 .</template>
 			</lex>
@@ -187,100 +96,36 @@
 				<mtriple>Apollo_11 | operator | NASA</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Apollo_11 | operator | NASA</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_11" number="1" tag="BRIDGE-1" type="description">The Apollo 11 program</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="name">NASA</reference>
-					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Apollo_11" number="4" tag="BRIDGE-1" type="pronoun">its</reference>
-				</references>
 				<text>The Apollo 11 program was organized by NASA and included Buzz Aldrin as one of its crew members.</text>
 				<template>BRIDGE-1 was organized by PATIENT-1 and included AGENT-1 as one of BRIDGE-1 crew members .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Apollo_11 | operator | NASA</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="NASA" number="1" tag="PATIENT-1" type="name">NASA</reference>
-					<reference entity="Apollo_11" number="2" tag="BRIDGE-1" type="description">the Apollo 11 program</reference>
-					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-				</references>
 				<text>NASA operated the Apollo 11 program of which Buzz Aldrin was a member.</text>
 				<template>PATIENT-1 operated BRIDGE-1 of which AGENT-1 was a member .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-					<striple>Apollo_11 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Apollo_11" number="2" tag="BRIDGE-1" type="name">Apollo 11</reference>
-					<reference entity="NASA" number="3" tag="PATIENT-1" type="name">NASA</reference>
-				</references>
 				<text>Buzz Aldrin was on Apollo 11 which NASA operated.</text>
 				<template>AGENT-1 was on BRIDGE-1 which PATIENT-1 operated .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-					<striple>Apollo_11 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Apollo_11" number="2" tag="BRIDGE-1" type="name">Apollo 11</reference>
-					<reference entity="NASA" number="3" tag="PATIENT-1" type="name">NASA</reference>
-				</references>
 				<text>Buzz Aldrin served as a crew member of Apollo 11 which is operated by NASA.</text>
 				<template>AGENT-1 served as a crew member of BRIDGE-1 which is operated by PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-					<striple>Apollo_11 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Apollo_11" number="2" tag="BRIDGE-1" type="name">Apollo 11</reference>
-					<reference entity="NASA" number="3" tag="PATIENT-1" type="name">NASA</reference>
-				</references>
 				<text>Buzz Aldrin was a crew member of Apollo 11 - whose operator was NASA.</text>
 				<template>AGENT-1 was a crew member of BRIDGE-1 - whose operator was PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id6">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-					<striple>Apollo_11 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">buzz aldrin</reference>
-					<reference entity="Apollo_11" number="2" tag="BRIDGE-1" type="name">apollo 11</reference>
-					<reference entity="NASA" number="3" tag="PATIENT-1" type="name">NASA</reference>
-				</references>
 				<text>buzz aldrin was a crew member of apollo 11, which was operated by NASA.</text>
 				<template>AGENT-1 was a crew member of BRIDGE-1 , which was operated by PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id7">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-					<striple>Apollo_11 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="name">NASA 's</reference>
-					<reference entity="Apollo_11" number="3" tag="BRIDGE-1" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin was a crew member of NASA's @ Apollo 11.</text>
 				<template>AGENT-1 was a crew member of PATIENT-1 @ BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Buzz_Aldrin</entity>
 				<entity>BRIDGE-1 | Apollo_11</entity>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
 				<entity>PATIENT-1 | NASA</entity>
 			</entitymap>
 		</entry>
@@ -294,67 +139,22 @@
 				<mtriple>Buzz_Aldrin | occupation | Fighter_pilot</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Fighter_pilot" number="2" tag="PATIENT-2" type="description">a fighter pilot</reference>
-					<reference entity="Apollo_11" number="3" tag="PATIENT-1" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin performed as a fighter pilot and was a crew member on Apollo 11.</text>
 				<template>AGENT-1 performed as PATIENT-2 and was a crew member on PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Fighter_pilot" number="2" tag="PATIENT-2" type="description">a fighter pilot</reference>
-					<reference entity="Apollo_11" number="3" tag="PATIENT-1" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin, who was a fighter pilot, was a crew member on Apollo 11.</text>
 				<template>AGENT-1 , who was PATIENT-2 , was a crew member on PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Fighter_pilot" number="2" tag="PATIENT-2" type="description">a fighter pilot</reference>
-					<reference entity="Apollo_11" number="3" tag="PATIENT-1" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin was a fighter pilot who was also part of the Apollo 11 crew.</text>
 				<template>AGENT-1 was PATIENT-2 who was also part of the PATIENT-1 crew .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Fighter_pilot" number="2" tag="PATIENT-2" type="description">a fighter pilot</reference>
-					<reference entity="Apollo_11" number="3" tag="PATIENT-1" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin was both a fighter pilot and member of the Apollo 11 flight crew.</text>
 				<template>AGENT-1 was both PATIENT-2 and member of the PATIENT-1 flight crew .</template>
 			</lex>
 			<lex comment="good" lid="Id5">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | occupation | Fighter_pilot</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Fighter_pilot" number="2" tag="PATIENT-2" type="description">a fighter pilot</reference>
-					<reference entity="Apollo_11" number="3" tag="PATIENT-1" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin was a fighter pilot and crew member of Apollo 11.</text>
 				<template>AGENT-1 was PATIENT-2 and crew member of PATIENT-1 .</template>
 			</lex>
@@ -365,6 +165,4 @@
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

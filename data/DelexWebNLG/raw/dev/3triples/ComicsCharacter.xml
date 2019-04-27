@@ -7,59 +7,31 @@
 				<otriple>Auron_(comics) | creators | Karl_Kesel</otriple>
 				<otriple>Auron_(comics) | creator | Walt_Simonson</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Auron_(comics) | creator | Karl_Kesel</otriple>
+				<otriple>Karl_Kesel | nationality | Americans</otriple>
+				<otriple>Auron_(comics) | creators | Walt_Simonson</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Auron_(comicsCharacter) | creator | Karl_Kesel</mtriple>
 				<mtriple>Karl_Kesel | nationality | Americans</mtriple>
 				<mtriple>Auron_(comicsCharacter) | creator | Walt_Simonson</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Auron_(comicsCharacter) | creator | Walt_Simonson</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Auron</reference>
-					<reference entity="Walt_Simonson" number="2" tag="PATIENT-2" type="name">Walt Simonson</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-1" type="description">the American</reference>
-					<reference entity="Karl_Kesel" number="4" tag="BRIDGE-1" type="name">Karl Kesel</reference>
-				</references>
 				<text>The comic character Auron was created by Walt Simonson and the American, Karl Kesel.</text>
 				<template>AGENT-1 was created by PATIENT-2 and PATIENT-1 , BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Auron_(comicsCharacter) | creator | Walt_Simonson</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Karl_Kesel" number="1" tag="BRIDGE-1" type="name">Karl Kesel</reference>
-					<reference entity="Americans" number="2" tag="PATIENT-1" type="description">an American</reference>
-					<reference entity="Walt_Simonson" number="3" tag="PATIENT-2" type="name">Walt Simonson</reference>
-					<reference entity="Auron_(comicsCharacter)" number="4" tag="AGENT-1" type="description">the comic book character Auron</reference>
-				</references>
 				<text>Karl Kesel, an American along with Walt Simonson created the comic book character Auron.</text>
 				<template>BRIDGE-1 , PATIENT-1 along with PATIENT-2 created AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Auron_(comicsCharacter) | creator | Walt_Simonson</striple>
-					<striple>Auron_(comicsCharacter) | creator | Karl_Kesel</striple>
-					<striple>Karl_Kesel | nationality | Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Auron_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character , Auron ,</reference>
-					<reference entity="Walt_Simonson" number="2" tag="PATIENT-2" type="name">Walt Simonson</reference>
-					<reference entity="Americans" number="3" tag="PATIENT-1" type="description">the</reference>
-					<reference entity="Karl_Kesel" number="4" tag="BRIDGE-1" type="name">American Karl Kesel</reference>
-				</references>
 				<text>The comic character, Auron, was created by Walt Simonson and the American Karl Kesel.</text>
 				<template>AGENT-1 was created by PATIENT-2 and PATIENT-1 BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
 				<entity>BRIDGE-1 | Karl_Kesel</entity>
+				<entity>AGENT-1 | Auron_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Americans</entity>
 				<entity>PATIENT-2 | Walt_Simonson</entity>
 			</entitymap>
@@ -76,38 +48,16 @@
 				<mtriple>BBC | locationCity | London</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>BBC | keyPerson | Tony_Hall,_Baron_Hall_of_Birkenhead</striple>
-					<striple>BBC | locationCity | London</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Tony_Hall,_Baron_Hall_of_Birkenhead" number="1" tag="PATIENT-1" type="name">Tony Hall , Baron Hall of Birkenhead</reference>
-					<reference entity="BBC" number="2" tag="BRIDGE-1" type="description">the BBC</reference>
-					<reference entity="London" number="3" tag="PATIENT-2" type="name">London</reference>
-					<reference entity="Bananaman" number="4" tag="AGENT-1" type="name">Bananaman</reference>
-				</references>
 				<text>Tony Hall, Baron Hall of Birkenhead, is a key person at the BBC which is located in London and broadcast Bananaman.</text>
 				<template>PATIENT-1 , is a key person at BRIDGE-1 which is located in PATIENT-2 and broadcast AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>BBC | locationCity | London</striple>
-					<striple>Bananaman | broadcastedBy | BBC</striple>
-					<striple>BBC | keyPerson | Tony_Hall,_Baron_Hall_of_Birkenhead</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="BBC" number="1" tag="BRIDGE-1" type="description">the BBC</reference>
-					<reference entity="London" number="2" tag="PATIENT-2" type="name">London</reference>
-					<reference entity="Bananaman" number="3" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="Tony_Hall,_Baron_Hall_of_Birkenhead" number="4" tag="PATIENT-1" type="name">Baron Hall of Birkenhead , Tony Hall</reference>
-				</references>
 				<text>A key person at the BBC, which is located in London and broadcast Bananaman, is Baron Hall of Birkenhead, Tony Hall.</text>
 				<template>A key person at BRIDGE-1 , which is located in PATIENT-2 and broadcast AGENT-1 , is PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Bananaman</entity>
 				<entity>BRIDGE-1 | BBC</entity>
+				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Tony_Hall,_Baron_Hall_of_Birkenhead</entity>
 				<entity>PATIENT-2 | London</entity>
 			</entitymap>
@@ -124,55 +74,22 @@
 				<mtriple>Bananaman | broadcastedBy | &quot;STV&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bill_Oddie" number="1" tag="PATIENT-1" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-2" type="name">3 October 1983</reference>
-					<reference entity="&quot;STV&quot;" number="4" tag="PATIENT-3" type="name">STV</reference>
-				</references>
 				<text>Bill Oddie starred in Bananaman which first aired on 3 October 1983 and was broadcast by STV.</text>
 				<template>PATIENT-1 starred in AGENT-1 which first aired on PATIENT-2 and was broadcast by PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bill_Oddie" number="1" tag="PATIENT-1" type="name">Bill Oddie</reference>
-					<reference entity="Bananaman" number="2" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="3" tag="PATIENT-2" type="name">3 October 1983</reference>
-					<reference entity="&quot;STV&quot;" number="4" tag="PATIENT-3" type="name">STV</reference>
-				</references>
 				<text>Bill Oddie starred in Bananaman which was first aired on 3 October 1983 and broadcast by STV.</text>
 				<template>PATIENT-1 starred in AGENT-1 which was first aired on PATIENT-2 and broadcast by PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bananaman | firstAired | &quot;1983-10-03&quot;</striple>
-					<striple>Bananaman | starring | Bill_Oddie</striple>
-					<striple>Bananaman | broadcastedBy | &quot;STV&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bananaman" number="1" tag="AGENT-1" type="name">Bananaman</reference>
-					<reference entity="&quot;1983-10-03&quot;" number="2" tag="PATIENT-2" type="name">October 3rd , 1983</reference>
-					<reference entity="Bill_Oddie" number="3" tag="PATIENT-1" type="name">Billie Oddie</reference>
-					<reference entity="&quot;STV&quot;" number="4" tag="PATIENT-3" type="name">STV</reference>
-				</references>
 				<text>Bananaman which first aired on October 3rd, 1983 stars Billie Oddie and is broadcasted by STV.</text>
 				<template>AGENT-1 which first aired on PATIENT-2 stars PATIENT-1 and is broadcasted by PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Bananaman</entity>
 				<entity>PATIENT-1 | Bill_Oddie</entity>
-				<entity>PATIENT-2 | &quot;1983-10-03&quot;</entity>
 				<entity>PATIENT-3 | &quot;STV&quot;</entity>
+				<entity>PATIENT-2 | &quot;1983-10-03&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id4" size="3">
@@ -181,63 +98,43 @@
 				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
 				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Baymax | firstAppearance | &quot;Big Hero 6(2014)&quot;</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Baymax | creator | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creators | Steven_T._Seagle</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Baymax | first | Big_Hero_6_(film)</otriple>
+				<otriple>Baymax | creators | Duncan_Rouleau</otriple>
+				<otriple>Baymax | creator | Steven_T._Seagle</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</mtriple>
 				<mtriple>Baymax | creator | Duncan_Rouleau</mtriple>
 				<mtriple>Baymax | creator | Steven_T._Seagle</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="name">Big Hero 6</reference>
-					<reference entity="Duncan_Rouleau" number="3" tag="PATIENT-2" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="4" tag="PATIENT-3" type="name">Steven T</reference>
-				</references>
 				<text>Baymax first appeared in Big Hero 6 and was created by Duncan Rouleau and Steven T. Seagle.</text>
 				<template>AGENT-1 first appeared in PATIENT-1 and was created by PATIENT-2 and PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Baymax" number="1" tag="AGENT-1" type="name">Baymax 's</reference>
-					<reference entity="Big_Hero_6_(film)" number="2" tag="PATIENT-1" type="name">Big Hero 6</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="Duncan_Rouleau" number="4" tag="PATIENT-2" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="5" tag="PATIENT-3" type="name">Steven T Seagle</reference>
-				</references>
 				<text>Baymax's first film appearance was in Big Hero 6. He was created by Duncan Rouleau and Steven T Seagle.</text>
 				<template>AGENT-1 first film appearance was in PATIENT-1 . AGENT-1 was created by PATIENT-2 and PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Baymax | creator | Duncan_Rouleau</striple>
-					<striple>Baymax | creator | Steven_T._Seagle</striple>
-					<striple>Baymax | firstAppearanceInFilm | Big_Hero_6_(film)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Duncan_Rouleau" number="1" tag="PATIENT-2" type="name">Duncan Rouleau</reference>
-					<reference entity="Steven_T._Seagle" number="2" tag="PATIENT-3" type="name">Steven T . Seagle</reference>
-					<reference entity="Baymax" number="3" tag="AGENT-1" type="name">Baymax</reference>
-					<reference entity="Baymax" number="4" tag="AGENT-1" type="pronoun">his</reference>
-					<reference entity="Big_Hero_6_(film)" number="5" tag="PATIENT-1" type="name">Big Hero 6</reference>
-				</references>
 				<text>Duncan Rouleau and Steven T. Seagle created Baymax who had his first movie appearance in Big Hero 6.</text>
 				<template>PATIENT-2 and PATIENT-3 created AGENT-1 who had AGENT-1 first movie appearance in PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Baymax</entity>
 				<entity>PATIENT-1 | Big_Hero_6_(film)</entity>
-				<entity>PATIENT-2 | Duncan_Rouleau</entity>
 				<entity>PATIENT-3 | Steven_T._Seagle</entity>
+				<entity>PATIENT-2 | Duncan_Rouleau</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id5" size="3">
@@ -246,31 +143,25 @@
 				<otriple>Bibbo_Bibbowski | creators | Marv_Wolfman</otriple>
 				<otriple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;@en</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Bibbo_Bibbowski | creators | Jerry_Ordway</otriple>
+				<otriple>Bibbo_Bibbowski | creator | Marv_Wolfman</otriple>
+				<otriple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;@en</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Bibbo_Bibbowski | creator | Jerry_Ordway</mtriple>
 				<mtriple>Bibbo_Bibbowski | creator | Marv_Wolfman</mtriple>
 				<mtriple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bibbo_Bibbowski | fullName | &quot;Bo Bibbowski&quot;</striple>
-					<striple>Bibbo_Bibbowski | creator | Jerry_Ordway</striple>
-					<striple>Bibbo_Bibbowski | creator | Marv_Wolfman</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bibbo_Bibbowski" number="1" tag="AGENT-1" type="name">Bibbo Bibbowski</reference>
-					<reference entity="&quot;Bo Bibbowski&quot;" number="2" tag="PATIENT-3" type="name">Bibbo</reference>
-					<reference entity="Jerry_Ordway" number="3" tag="PATIENT-1" type="name">Jerry Ordway</reference>
-					<reference entity="Marv_Wolfman" number="4" tag="PATIENT-2" type="name">Marv Wolfman</reference>
-				</references>
 				<text>The creator of Bibbo Bibbowski, who is often called Bibbo, are Jerry Ordway and Marv Wolfman.</text>
 				<template>The creator of AGENT-1 , who is often called PATIENT-3 , are PATIENT-1 and PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Bibbo_Bibbowski</entity>
 				<entity>PATIENT-1 | Jerry_Ordway</entity>
-				<entity>PATIENT-2 | Marv_Wolfman</entity>
 				<entity>PATIENT-3 | &quot;Bo Bibbowski&quot;</entity>
+				<entity>PATIENT-2 | Marv_Wolfman</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id6" size="3">
@@ -285,41 +176,18 @@
 				<mtriple>Blockbuster_(comicsCharacter) | creator | Tom_Lyle</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Roland Desmond&quot;</striple>
-					<striple>Blockbuster_(comicsCharacter) | creator | Roger_Stern</striple>
-					<striple>Blockbuster_(comicsCharacter) | creator | Tom_Lyle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Blockbuster</reference>
-					<reference entity="&quot;Roland Desmond&quot;" number="2" tag="PATIENT-2" type="name">Roland Desmond</reference>
-					<reference entity="Roger_Stern" number="3" tag="PATIENT-1" type="name">Roger Stern</reference>
-					<reference entity="Tom_Lyle" number="4" tag="PATIENT-3" type="name">Tom Lyle</reference>
-				</references>
 				<text>The comic character Blockbuster, also known as Roland Desmond, was created by Roger Stern and Tom Lyle.</text>
 				<template>AGENT-1 , also known as PATIENT-2 , was created by PATIENT-1 and PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Blockbuster_(comicsCharacter) | alternativeName | &quot;Roland Desmond&quot;</striple>
-					<striple>Blockbuster_(comicsCharacter) | creator | Roger_Stern</striple>
-					<striple>Blockbuster_(comicsCharacter) | creator | Tom_Lyle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Blockbuster_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic book character Blockbuster 's</reference>
-					<reference entity="&quot;Roland Desmond&quot;" number="2" tag="PATIENT-2" type="name">Roland Desmond</reference>
-					<reference entity="Blockbuster_(comicsCharacter)" number="3" tag="AGENT-1" type="pronoun">he</reference>
-					<reference entity="Roger_Stern" number="4" tag="PATIENT-1" type="name">Roger Stern</reference>
-					<reference entity="Tom_Lyle" number="5" tag="PATIENT-3" type="name">Tom Lyle</reference>
-				</references>
 				<text>The comic book character Blockbuster's alter ego is Roland Desmond and he was created by Roger Stern and Tom Lyle.</text>
 				<template>AGENT-1 alter ego is PATIENT-2 and AGENT-1 was created by PATIENT-1 and PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Blockbuster_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Roger_Stern</entity>
-				<entity>PATIENT-2 | &quot;Roland Desmond&quot;</entity>
 				<entity>PATIENT-3 | Tom_Lyle</entity>
+				<entity>PATIENT-2 | &quot;Roland Desmond&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id7" size="3">
@@ -334,51 +202,22 @@
 				<mtriple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-2" type="name">Larry Bolatinsky</reference>
-					<reference entity="Ernie_Colón" number="3" tag="PATIENT-1" type="name">Ernie Colon</reference>
-					<reference entity="Dan_Mishkin" number="4" tag="PATIENT-3" type="name">Dan Mishkin</reference>
-				</references>
 				<text>The comic character Bolt has the alternative name of Larry Bolatinsky and was created by Ernie Colon and Dan Mishkin.</text>
 				<template>AGENT-1 has the alternative name of PATIENT-2 and was created by PATIENT-1 and PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="name">Bolt , a comic character AKA Larry Bolatinsky</reference>
-					<reference entity="Dan_Mishkin" number="2" tag="PATIENT-3" type="name">Dan Mishkin</reference>
-				</references>
 				<text>Bolt, a comic character AKA Larry Bolatinsky was created by Dan Mishkin.</text>
 				<template>AGENT-1 was created by PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Ernie_Colón</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-2" type="name">Larry Bolatinsky</reference>
-					<reference entity="Ernie_Colón" number="3" tag="PATIENT-1" type="name">Ernie Colon</reference>
-					<reference entity="Dan_Mishkin" number="4" tag="PATIENT-3" type="name">Dan Mishkin</reference>
-				</references>
 				<text>The comic character Bolt whose alternative name is Larry Bolatinsky was created by Ernie Colon and Dan Mishkin.</text>
 				<template>AGENT-1 whose alternative name is PATIENT-2 was created by PATIENT-1 and PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Ernie_Colón</entity>
-				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
 				<entity>PATIENT-3 | Dan_Mishkin</entity>
+				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="ComicsCharacter" eid="Id8" size="3">
@@ -393,44 +232,19 @@
 				<mtriple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">the comic character Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-2" type="name">Larry Bolatinsky</reference>
-					<reference entity="Bolt_(comicsCharacter)" number="3" tag="AGENT-1" type="pronoun">he</reference>
-					<reference entity="Paris_Cullins" number="4" tag="PATIENT-1" type="name">Paris Cullins</reference>
-					<reference entity="Dan_Mishkin" number="5" tag="PATIENT-3" type="name">Dan Mishkin</reference>
-				</references>
 				<text>An alternative name for the comic character Bolt is Larry Bolatinsky and he was created by Paris Cullins and Dan Mishkin.</text>
 				<template>An alternative name for AGENT-1 is PATIENT-2 and AGENT-1 was created by PATIENT-1 and PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Bolt_(comicsCharacter) | alternativeName | &quot;Larry Bolatinsky&quot;</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Paris_Cullins</striple>
-					<striple>Bolt_(comicsCharacter) | creator | Dan_Mishkin</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Bolt_(comicsCharacter)" number="1" tag="AGENT-1" type="description">The comic character Bolt</reference>
-					<reference entity="&quot;Larry Bolatinsky&quot;" number="2" tag="PATIENT-2" type="name">Larry Bolatinsky</reference>
-					<reference entity="Paris_Cullins" number="3" tag="PATIENT-1" type="name">Paris Cullins</reference>
-					<reference entity="Dan_Mishkin" number="4" tag="PATIENT-3" type="name">Dan Mishkin</reference>
-				</references>
 				<text>The comic character Bolt, aka Larry Bolatinsky, was created by Paris Cullins and Dan Mishkin.</text>
 				<template>AGENT-1 , aka PATIENT-2 , was created by PATIENT-1 and PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Bolt_(comicsCharacter)</entity>
 				<entity>PATIENT-1 | Paris_Cullins</entity>
-				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
 				<entity>PATIENT-3 | Dan_Mishkin</entity>
+				<entity>PATIENT-2 | &quot;Larry Bolatinsky&quot;</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

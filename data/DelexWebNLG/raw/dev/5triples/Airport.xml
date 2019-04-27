@@ -17,47 +17,40 @@
 				<mtriple>Abilene,_Texas | isPartOf | Jones_County,_Texas</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Abilene_Regional_Airport | runwayLength | 2194.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="2194.0" number="1" tag="PATIENT-2" type="name">2194 .0</reference>
-					<reference entity="Abilene_Regional_Airport" number="2" tag="AGENT-1" type="name">Abilene regional airport</reference>
-					<reference entity="Jones_County,_Texas" number="3" tag="PATIENT-4" type="name">Jones County</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-3" type="name">Texas , in the United States</reference>
-				</references>
 				<text>With a runway length of 2194.0, Abilene regional airport serves Abiliene, part of Jones County, Texas, in the United States.</text>
 				<template>With a runway length of PATIENT-2 , AGENT-1 serves Abiliene , part of PATIENT-4 , PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Abilene_Regional_Airport | runwayLength | 2194.0</striple>
-					<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
-					<striple>Abilene,_Texas | isPartOf | Jones_County,_Texas</striple>
-					<striple>Abilene,_Texas | country | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Abilene_Regional_Airport" number="1" tag="AGENT-1" type="name">Abilene Regional Airport</reference>
-					<reference entity="Abilene,_Texas" number="3" tag="BRIDGE-1" type="name">Abilene</reference>
-					<reference entity="Jones_County,_Texas" number="4" tag="PATIENT-4" type="name">Jones County , Texas</reference>
-					<reference entity="United_States" number="5" tag="PATIENT-3" type="description">the United States</reference>
-				</references>
 				<text>Abilene Regional Airport has a runway length of 2194.0 and serves Abilene, Jones County, Texas in the United States.</text>
 				<template>AGENT-1 has a runway lengtth of PATIENT-2 and serves BRIDGE-1 , PATIENT-4 in PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Abilene_Regional_Airport</entity>
 				<entity>BRIDGE-1 | Abilene,_Texas</entity>
-				<entity>PATIENT-1 | Texas</entity>
-				<entity>PATIENT-2 | 2194.0</entity>
-				<entity>PATIENT-3 | United_States</entity>
 				<entity>PATIENT-4 | Jones_County,_Texas</entity>
+				<entity>AGENT-1 | Abilene_Regional_Airport</entity>
+				<entity>PATIENT-1 | Texas</entity>
+				<entity>PATIENT-3 | United_States</entity>
+				<entity>PATIENT-2 | 2194.0</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id2" size="5">
 			<originaltripleset>
 				<otriple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</otriple>
 				<otriple>Abilene_Regional_Airport | runwayLength | &quot;2193.95&quot;^^xsd:double</otriple>
+				<otriple>Abilene_Regional_Airport | elevation | &quot;545.897&quot;^^xsd:double</otriple>
+				<otriple>Abilene_Regional_Airport | icaoLocationIdentifier | &quot;KABI&quot;</otriple>
+				<otriple>Abilene_Regional_Airport | runwayDesignation | &quot;17L/35R&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</otriple>
+				<otriple>Abilene_Regional_Airport | runwayLength | &quot;2193.95&quot;^^xsd:double</otriple>
+				<otriple>Abilene_Regional_Airport | elevation | &quot;546.0&quot;^^xsd:double</otriple>
+				<otriple>Abilene_Regional_Airport | icaoLocationIdentifier | &quot;KABI&quot;</otriple>
+				<otriple>Abilene_Regional_Airport | runwayDesignation | &quot;17L/35R&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</otriple>
+				<otriple>Abilene_Regional_Airport | runwayLength | &quot;2194.0&quot;^^xsd:double</otriple>
 				<otriple>Abilene_Regional_Airport | elevation | &quot;545.897&quot;^^xsd:double</otriple>
 				<otriple>Abilene_Regional_Airport | icaoLocationIdentifier | &quot;KABI&quot;</otriple>
 				<otriple>Abilene_Regional_Airport | runwayDesignation | &quot;17L/35R&quot;</otriple>
@@ -70,72 +63,24 @@
 				<mtriple>Abilene_Regional_Airport | runwayName | &quot;17L/35R&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
-					<striple>Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546</striple>
-					<striple>Abilene_Regional_Airport | ICAO_Location_Identifier | &quot;KABI&quot;</striple>
-					<striple>Abilene_Regional_Airport | runwayName | &quot;17L/35R&quot;</striple>
-					<striple>Abilene_Regional_Airport | runwayLength | 2194.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Abilene,_Texas" number="1" tag="PATIENT-1" type="name">Abilene , Texas</reference>
-					<reference entity="Abilene_Regional_Airport" number="2" tag="AGENT-1" type="name">Abilene regional airport</reference>
-					<reference entity="546" number="3" tag="PATIENT-3" type="name">546</reference>
-					<reference entity="&quot;KABI&quot;" number="4" tag="PATIENT-4" type="name">KABI</reference>
-					<reference entity="Abilene_Regional_Airport" number="5" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;17L/35R&quot;" number="6" tag="PATIENT-5" type="name">17L/35R</reference>
-					<reference entity="2194.0" number="7" tag="PATIENT-2" type="name">2194</reference>
-				</references>
 				<text>Abilene, Texas is served by Abilene regional airport which is 546 metres above sea level and has the ICAO location identifier of KABI. It has the runway name of 17L/35R with a length of 2194.0.</text>
 				<template>PATIENT-1 is served by AGENT-1 which is PATIENT-3 metres above sea level and has the ICAO location identifier of PATIENT-4 . AGENT-1 has the runway name of PATIENT-5 with a length of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546</striple>
-					<striple>Abilene_Regional_Airport | ICAO_Location_Identifier | &quot;KABI&quot;</striple>
-					<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
-					<striple>Abilene_Regional_Airport | runwayName | &quot;17L/35R&quot;</striple>
-					<striple>Abilene_Regional_Airport | runwayLength | 2194.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Abilene_Regional_Airport" number="1" tag="AGENT-1" type="name">Abilene Regional airport</reference>
-					<reference entity="546" number="2" tag="PATIENT-3" type="name">546</reference>
-					<reference entity="&quot;KABI&quot;" number="3" tag="PATIENT-4" type="name">KABI</reference>
-					<reference entity="Abilene,_Texas" number="4" tag="PATIENT-1" type="name">Abilene , Texas</reference>
-					<reference entity="Abilene_Regional_Airport" number="5" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;17L/35R&quot;" number="6" tag="PATIENT-5" type="name">17L/35R</reference>
-					<reference entity="2194.0" number="7" tag="PATIENT-2" type="name">2194 .0</reference>
-				</references>
 				<text>Abilene Regional airport, whichis 546 metres above sea level, has the ICAO location identifier of KABI and serves the city of Abilene, Texas. It has the runway named 17L/35R which is 2194.0 in length.</text>
 				<template>AGENT-1 , whichis PATIENT-3 metres above sea level , has the ICAO location identifier of PATIENT-4 and serves the city of PATIENT-1 . AGENT-1 has the runway named PATIENT-5 which is PATIENT-2 in length .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Abilene_Regional_Airport | runwayName | &quot;17L/35R&quot;</striple>
-					<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
-					<striple>Abilene_Regional_Airport | runwayLength | 2194.0</striple>
-					<striple>Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546</striple>
-					<striple>Abilene_Regional_Airport | ICAO_Location_Identifier | &quot;KABI&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;17L/35R&quot;" number="1" tag="PATIENT-5" type="name">Runway 17L/35R</reference>
-					<reference entity="Abilene_Regional_Airport" number="2" tag="AGENT-1" type="name">Abilene Regional Airport</reference>
-					<reference entity="Abilene,_Texas" number="3" tag="PATIENT-1" type="name">Texas</reference>
-					<reference entity="2194.0" number="4" tag="PATIENT-2" type="name">2194</reference>
-					<reference entity="546" number="5" tag="PATIENT-3" type="name">546m</reference>
-					<reference entity="Abilene_Regional_Airport" number="6" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;KABI&quot;" number="7" tag="PATIENT-4" type="name">KABI</reference>
-				</references>
 				<text>Runway 17L/35R at Abilene Regional Airport in Texas has a length of 2194 and is 546m above sea level. It has the identifier of KABI.</text>
 				<template>PATIENT-5 at AGENT-1 in PATIENT-1 has a length of PATIENT-2 and is PATIENT-3 above sea level . AGENT-1 has the identifier of PATIENT-4 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;17L/35R&quot;</entity>
+				<entity>PATIENT-4 | &quot;KABI&quot;</entity>
 				<entity>AGENT-1 | Abilene_Regional_Airport</entity>
 				<entity>PATIENT-1 | Abilene,_Texas</entity>
-				<entity>PATIENT-2 | 2194.0</entity>
 				<entity>PATIENT-3 | 546</entity>
-				<entity>PATIENT-4 | &quot;KABI&quot;</entity>
-				<entity>PATIENT-5 | &quot;17L/35R&quot;</entity>
+				<entity>PATIENT-2 | 2194.0</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id3" size="5">
@@ -154,74 +99,24 @@
 				<mtriple>Abilene_Regional_Airport | runwayName | &quot;17R/35L&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
-					<striple>Abilene_Regional_Airport | ICAO_Location_Identifier | &quot;KABI&quot;</striple>
-					<striple>Abilene_Regional_Airport | runwayName | &quot;17R/35L&quot;</striple>
-					<striple>Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546</striple>
-					<striple>Abilene_Regional_Airport | runwayLength | 2194.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Abilene,_Texas" number="1" tag="PATIENT-1" type="name">Abilene in Texas</reference>
-					<reference entity="Abilene_Regional_Airport" number="2" tag="AGENT-1" type="name">Abilene Regional Airport</reference>
-					<reference entity="Abilene_Regional_Airport" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;KABI&quot;" number="4" tag="PATIENT-4" type="name">KABI</reference>
-					<reference entity="&quot;17R/35L&quot;" number="5" tag="PATIENT-5" type="name">17R/35L</reference>
-					<reference entity="Abilene_Regional_Airport" number="6" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="546" number="7" tag="PATIENT-3" type="name">546</reference>
-					<reference entity="2194.0" number="8" tag="PATIENT-2" type="name">2194</reference>
-				</references>
 				<text>Serving the city of Abilene in Texas, is Abilene Regional Airport. It has the ICAO location identifier KABI and the runway name 17R/35L. The airport is 546 metres above sea level and has a runway length of 2194.0.</text>
 				<template>Serving the city of PATIENT-1 , is AGENT-1 . AGENT-1 has the ICAO location identifier PATIENT-4 and the runway name PATIENT-5 . AGENT-1 is PATIENT-3 metres above sea level and has a runway length of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
-					<striple>Abilene_Regional_Airport | ICAO_Location_Identifier | &quot;KABI&quot;</striple>
-					<striple>Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546</striple>
-					<striple>Abilene_Regional_Airport | runwayLength | 2194.0</striple>
-					<striple>Abilene_Regional_Airport | runwayName | &quot;17R/35L&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Abilene,_Texas" number="1" tag="PATIENT-1" type="name">Abilene , Texas</reference>
-					<reference entity="Abilene_Regional_Airport" number="2" tag="AGENT-1" type="name">Abilene Regional Airport</reference>
-					<reference entity="&quot;KABI&quot;" number="3" tag="PATIENT-4" type="name">KABI</reference>
-					<reference entity="Abilene_Regional_Airport" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="546" number="5" tag="PATIENT-3" type="name">546</reference>
-					<reference entity="2194.0" number="6" tag="PATIENT-2" type="name">2194</reference>
-					<reference entity="&quot;17R/35L&quot;" number="7" tag="PATIENT-5" type="name">17R/35L</reference>
-				</references>
 				<text>Abilene, Texas is served by Abilene Regional Airport which has the ICAO location identifier of KABI. It is located 546 metres above sea level and has a runway 2194 metres long with the name of 17R/35L.</text>
 				<template>PATIENT-1 is served by AGENT-1 which has the ICAO location identifier of PATIENT-4 . AGENT-1 is located PATIENT-3 metres above sea level and has a runway PATIENT-2 metres long with the name of PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Abilene_Regional_Airport | cityServed | Abilene,_Texas</striple>
-					<striple>Abilene_Regional_Airport | ICAO_Location_Identifier | &quot;KABI&quot;</striple>
-					<striple>Abilene_Regional_Airport | runwayLength | 2194.0</striple>
-					<striple>Abilene_Regional_Airport | elevationAboveTheSeaLevel_(in_metres) | 546</striple>
-					<striple>Abilene_Regional_Airport | runwayName | &quot;17R/35L&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Abilene_Regional_Airport" number="1" tag="AGENT-1" type="name">Abilene Regional Airport</reference>
-					<reference entity="Abilene,_Texas" number="2" tag="PATIENT-1" type="name">Abilene in Texas</reference>
-					<reference entity="Abilene_Regional_Airport" number="3" tag="AGENT-1" type="name">it 's</reference>
-					<reference entity="&quot;KABI&quot;" number="4" tag="PATIENT-4" type="name">KABI</reference>
-					<reference entity="Abilene_Regional_Airport" number="5" tag="AGENT-1" type="name">it 's</reference>
-					<reference entity="2194.0" number="6" tag="PATIENT-2" type="name">2194 .0</reference>
-					<reference entity="546" number="7" tag="PATIENT-3" type="name">546</reference>
-					<reference entity="&quot;17R/35L&quot;" number="8" tag="PATIENT-5" type="name">17R/35L</reference>
-				</references>
 				<text>Abilene Regional Airport serves the city of Abilene in Texas, it's ICAO identifier is KABI, it's runway length is 2194.0 and is 546 metres above sea level, the name of the runway is 17R/35L.</text>
 				<template>AGENT-1 serves the city of PATIENT-1 , AGENT-1 ICAO identifier is PATIENT-4 , AGENT-1 runway length is PATIENT-2 and is PATIENT-3 metres above sea level , the name of the runway is PATIENT-5 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;17R/35L&quot;</entity>
+				<entity>PATIENT-4 | &quot;KABI&quot;</entity>
 				<entity>AGENT-1 | Abilene_Regional_Airport</entity>
 				<entity>PATIENT-1 | Abilene,_Texas</entity>
-				<entity>PATIENT-2 | 2194.0</entity>
 				<entity>PATIENT-3 | 546</entity>
-				<entity>PATIENT-4 | &quot;KABI&quot;</entity>
-				<entity>PATIENT-5 | &quot;17R/35L&quot;</entity>
+				<entity>PATIENT-2 | 2194.0</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id4" size="5">
@@ -240,54 +135,32 @@
 				<mtriple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | &quot;14L/32R&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | operatingOrganisation | ENAIRE</striple>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | elevationAboveTheSeaLevel_(in_metres) | 610.0</striple>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 4349.0</striple>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | &quot;14L/32R&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="description">The Adolfo Suárez Madrid–Barajas Airport</reference>
-					<reference entity="ENAIRE" number="2" tag="PATIENT-4" type="name">ENAIRE</reference>
-					<reference entity="610.0" number="4" tag="PATIENT-3" type="name">610 .0</reference>
-					<reference entity="4349.0" number="5" tag="PATIENT-1" type="name">4 ,349</reference>
-					<reference entity="&quot;14L/32R&quot;" number="6" tag="PATIENT-5" type="name">14L/32R</reference>
-				</references>
 				<text>The Adolfo Suárez Madrid–Barajas Airport is operated by ENAIRE and can be found in Madrid.The airport is situated 610.0 meters above sea level and has a 4,349 kilometers long runway whose name is 14L/32R.</text>
 				<template>AGENT-1 is operated by PATIENT-4 and can be found in PATIENT-2.AGENT-1 is situated PATIENT-3 meters above sea level and has a PATIENT-1 kilometers long runway whose name is PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | elevationAboveTheSeaLevel_(in_metres) | 610.0</striple>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | location | Madrid</striple>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | operatingOrganisation | ENAIRE</striple>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayName | &quot;14L/32R&quot;</striple>
-					<striple>Adolfo_Suárez_Madrid–Barajas_Airport | runwayLength | 4349.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="1" tag="AGENT-1" type="name">Adofo Suárez Madrid-Barajas Airport</reference>
-					<reference entity="610.0" number="2" tag="PATIENT-3" type="name">610 metres</reference>
-					<reference entity="Madrid" number="3" tag="PATIENT-2" type="name">Madrid</reference>
-					<reference entity="ENAIRE" number="4" tag="PATIENT-4" type="name">ENAIRE</reference>
-					<reference entity="Adolfo_Suárez_Madrid–Barajas_Airport" number="5" tag="AGENT-1" type="description">The airport 's</reference>
-					<reference entity="&quot;14L/32R&quot;" number="6" tag="PATIENT-5" type="name">14L/32R</reference>
-					<reference entity="4349.0" number="7" tag="PATIENT-1" type="name">4349</reference>
-				</references>
 				<text>Adofo Suárez Madrid-Barajas Airport, which lies 610 metres above sea level, is located in Madrid and operated by ENAIRE. The airport's runway, named 14L/32R, has a length of 4349.0.</text>
 				<template>AGENT-1 , which lies PATIENT-3 above sea level , is located in PATIENT-2 and operated by PATIENT-4 . AGENT-1 runway , named PATIENT-5 , has a length of PATIENT-1 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;14L/32R&quot;</entity>
+				<entity>PATIENT-4 | ENAIRE</entity>
 				<entity>AGENT-1 | Adolfo_Suárez_Madrid–Barajas_Airport</entity>
 				<entity>PATIENT-1 | 4349.0</entity>
-				<entity>PATIENT-2 | Madrid</entity>
 				<entity>PATIENT-3 | 610.0</entity>
-				<entity>PATIENT-4 | ENAIRE</entity>
-				<entity>PATIENT-5 | &quot;14L/32R&quot;</entity>
+				<entity>PATIENT-2 | Madrid</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id5" size="5">
 			<originaltripleset>
 				<otriple>Agra_Airport | icaoLocationIdentifier | &quot;(Location of airport in India)&quot;</otriple>
+				<otriple>Agra_Airport | location | Uttar_Pradesh</otriple>
+				<otriple>Uttar_Pradesh | subdivisionName | Awadh</otriple>
+				<otriple>Uttar_Pradesh | leaderName | Ram_Naik</otriple>
+				<otriple>Uttar_Pradesh | isPartOf | Bundelkhand</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Agra_Airport | icaoLocationIdentifier | &quot;VIAG&quot;</otriple>
 				<otriple>Agra_Airport | location | Uttar_Pradesh</otriple>
 				<otriple>Uttar_Pradesh | subdivisionName | Awadh</otriple>
 				<otriple>Uttar_Pradesh | leaderName | Ram_Naik</otriple>
@@ -301,52 +174,20 @@
 				<mtriple>Uttar_Pradesh | isPartOf | Bundelkhand</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Agra_Airport | location | Uttar_Pradesh</striple>
-					<striple>Uttar_Pradesh | isPartOf | Bundelkhand</striple>
-					<striple>Agra_Airport | ICAO_Location_Identifier | &quot;VIAG&quot;</striple>
-					<striple>Uttar_Pradesh | leaderName | Ram_Naik</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agra_Airport" number="1" tag="AGENT-1" type="name">Agra Airport</reference>
-					<reference entity="Uttar_Pradesh" number="2" tag="BRIDGE-1" type="name">Uttar</reference>
-					<reference entity="Bundelkhand" number="3" tag="PATIENT-4" type="name">Pradesh Bundelkhand</reference>
-					<reference entity="Agra_Airport" number="4" tag="AGENT-1" type="name">it 's</reference>
-					<reference entity="&quot;VIAG&quot;" number="5" tag="PATIENT-1" type="name">VIAG</reference>
-					<reference entity="Uttar_Pradesh" number="6" tag="BRIDGE-1" type="name">Utterar Pradesh</reference>
-					<reference entity="Ram_Naik" number="7" tag="PATIENT-3" type="name">Ram Naik</reference>
-				</references>
 				<text>Agra Airport is in Uttar Pradesh Bundelkhand, it's ICAO location identifier is VIAG. the leader of Utterar Pradesh is Ram Naik.</text>
 				<template>AGENT-1 is in BRIDGE-1 PATIENT-4 , AGENT-1 ICAO location identifier is PATIENT-1 . the leader of BRIDGE-1 is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Agra_Airport | location | Uttar_Pradesh</striple>
-					<striple>Uttar_Pradesh | isPartOf | Awadh</striple>
-					<striple>Uttar_Pradesh | isPartOf | Bundelkhand</striple>
-					<striple>Agra_Airport | ICAO_Location_Identifier | &quot;VIAG&quot;</striple>
-					<striple>Uttar_Pradesh | leaderName | Ram_Naik</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agra_Airport" number="1" tag="AGENT-1" type="name">Agra Airport</reference>
-					<reference entity="Uttar_Pradesh" number="2" tag="BRIDGE-1" type="name">Uttar Pradesh</reference>
-					<reference entity="Uttar_Pradesh" number="3" tag="BRIDGE-1" type="name">Uttar Pradesh</reference>
-					<reference entity="Awadh" number="4" tag="PATIENT-2" type="name">Awadh</reference>
-					<reference entity="Bundelkhand" number="5" tag="PATIENT-4" type="name">ad Bundelkhand</reference>
-					<reference entity="Agra_Airport" number="6" tag="AGENT-1" type="description">The Airport 's</reference>
-					<reference entity="Uttar_Pradesh" number="8" tag="BRIDGE-1" type="name">Uttar Pradesh</reference>
-					<reference entity="Ram_Naik" number="9" tag="PATIENT-3" type="name">Ram Naik</reference>
-				</references>
 				<text>Agra Airport is located in Uttar Pradesh. Uttar Pradesh is part of both Awadh ad Bundelkhand. The Airport's ICAO location identifier is &quot;VIAG&quot;. The leader of Uttar Pradesh is called Ram Naik.</text>
 				<template>AGENT-1 is located in BRIDGE-1 . BRIDGE-1 is part of both PATIENT-2 PATIENT-4 . AGENT-1 ICAO location identifier is `` PATIENT-1 '' . The leader of BRIDGE-1 is called PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Agra_Airport</entity>
 				<entity>BRIDGE-1 | Uttar_Pradesh</entity>
-				<entity>PATIENT-1 | &quot;VIAG&quot;</entity>
-				<entity>PATIENT-2 | Awadh</entity>
-				<entity>PATIENT-3 | Ram_Naik</entity>
 				<entity>PATIENT-4 | Bundelkhand</entity>
+				<entity>AGENT-1 | Agra_Airport</entity>
+				<entity>PATIENT-1 | &quot;VIAG&quot;</entity>
+				<entity>PATIENT-3 | Ram_Naik</entity>
+				<entity>PATIENT-2 | Awadh</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id6" size="5">
@@ -365,71 +206,24 @@
 				<mtriple>Uttar_Pradesh | isPartOf | Bundelkhand</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Uttar_Pradesh | leaderName | Ram_Naik</striple>
-					<striple>Uttar_Pradesh | isPartOf | Awadh</striple>
-					<striple>Uttar_Pradesh | isPartOf | Bundelkhand</striple>
-					<striple>Agra_Airport | location | Uttar_Pradesh</striple>
-					<striple>Agra_Airport | nativeName | &quot;Kheria Air Force Station&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ram_Naik" number="1" tag="PATIENT-3" type="name">Ram Naik</reference>
-					<reference entity="Uttar_Pradesh" number="2" tag="BRIDGE-1" type="name">Uttar Pradesh</reference>
-					<reference entity="Awadh" number="3" tag="PATIENT-2" type="name">Awadh</reference>
-					<reference entity="Bundelkhand" number="4" tag="PATIENT-4" type="name">Bundelkhand</reference>
-					<reference entity="Agra_Airport" number="5" tag="AGENT-1" type="name">Agra airport</reference>
-					<reference entity="&quot;Kheria Air Force Station&quot;" number="6" tag="PATIENT-1" type="name">Kheria Air Force Station</reference>
-				</references>
 				<text>Ram Naik is the leader of Uttar Pradesh which is part of Awadh and Bundelkhand. It is the location of Agra airport which has the native name of Kheria Air Force Station.</text>
 				<template>PATIENT-3 is the leader of BRIDGE-1 which is part of PATIENT-2 and PATIENT-4 . It is the location of AGENT-1 which has the native name of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Agra_Airport | nativeName | &quot;Kheria Air Force Station&quot;</striple>
-					<striple>Agra_Airport | location | Uttar_Pradesh</striple>
-					<striple>Uttar_Pradesh | isPartOf | Awadh</striple>
-					<striple>Uttar_Pradesh | isPartOf | Bundelkhand</striple>
-					<striple>Uttar_Pradesh | leaderName | Ram_Naik</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agra_Airport" number="1" tag="AGENT-1" type="name">Agra Airport</reference>
-					<reference entity="&quot;Kheria Air Force Station&quot;" number="2" tag="PATIENT-1" type="name">Kheria Air Force Station</reference>
-					<reference entity="Uttar_Pradesh" number="3" tag="BRIDGE-1" type="name">Uttar Pradesh</reference>
-					<reference entity="Awadh" number="4" tag="PATIENT-2" type="name">Awadh</reference>
-					<reference entity="Bundelkhand" number="5" tag="PATIENT-4" type="name">Bundelkhand</reference>
-					<reference entity="Ram_Naik" number="6" tag="PATIENT-3" type="name">Ram Naik</reference>
-				</references>
 				<text>Agra Airport, which has the native name of Kheria Air Force Station, is in Uttar Pradesh, part of Awadh and Bundelkhand, where Ram Naik is the leader.</text>
 				<template>AGENT-1 , which has the native name of PATIENT-1 , is in BRIDGE-1 , part of PATIENT-2 and PATIENT-4 , where PATIENT-3 is the leader .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Agra_Airport | location | Uttar_Pradesh</striple>
-					<striple>Uttar_Pradesh | isPartOf | Awadh</striple>
-					<striple>Uttar_Pradesh | isPartOf | Bundelkhand</striple>
-					<striple>Agra_Airport | nativeName | &quot;Kheria Air Force Station&quot;</striple>
-					<striple>Uttar_Pradesh | leaderName | Ram_Naik</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Agra_Airport" number="1" tag="AGENT-1" type="name">Agra Airport</reference>
-					<reference entity="Uttar_Pradesh" number="2" tag="BRIDGE-1" type="name">Uttar Pradesh</reference>
-					<reference entity="Awadh" number="3" tag="PATIENT-2" type="name">Awadh</reference>
-					<reference entity="Bundelkhand" number="4" tag="PATIENT-4" type="name">Bundelkhand</reference>
-					<reference entity="&quot;Kheria Air Force Station&quot;" number="5" tag="PATIENT-1" type="name">Kheria Air Force Station</reference>
-					<reference entity="Agra_Airport" number="6" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="Ram_Naik" number="7" tag="PATIENT-3" type="name">Ram Naik</reference>
-					<reference entity="Uttar_Pradesh" number="8" tag="BRIDGE-1" type="name">Uttar Pradesh</reference>
-				</references>
 				<text>Agra Airport is located in Uttar Pradesh which is part of Awadh and Bundelkhand. Kheria Air Force Station is its native name. Ram Naik is the leader in Uttar Pradesh.</text>
 				<template>AGENT-1 is located in BRIDGE-1 which is part of PATIENT-2 and PATIENT-4 . PATIENT-1 is AGENT-1 native name . PATIENT-3 is the leader in BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Agra_Airport</entity>
 				<entity>BRIDGE-1 | Uttar_Pradesh</entity>
-				<entity>PATIENT-1 | &quot;Kheria Air Force Station&quot;</entity>
-				<entity>PATIENT-2 | Awadh</entity>
-				<entity>PATIENT-3 | Ram_Naik</entity>
 				<entity>PATIENT-4 | Bundelkhand</entity>
+				<entity>AGENT-1 | Agra_Airport</entity>
+				<entity>PATIENT-1 | &quot;Kheria Air Force Station&quot;</entity>
+				<entity>PATIENT-3 | Ram_Naik</entity>
+				<entity>PATIENT-2 | Awadh</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id7" size="5">
@@ -448,73 +242,24 @@
 				<mtriple>United_States_Air_Force | battles | United_States_invasion_of_Panama</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
-					<striple>United_States_Air_Force | aircraftFighter | General_Dynamics_F-16_Fighting_Falcon</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-					<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Al_Asad_Airbase" number="1" tag="AGENT-1" type="name">Al Asad airbase</reference>
-					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">the United States Air Force</reference>
-					<reference entity="Al_Asad_Airbase" number="3" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="Lockheed_AC-130" number="6" tag="PATIENT-1" type="description">the Lockheed AC-130</reference>
-					<reference entity="United_States_Air_Force" number="7" tag="BRIDGE-1" type="name">USAF aircraft carriers</reference>
-					<reference entity="United_States_Air_Force" number="8" tag="BRIDGE-1" type="description">The USAF</reference>
-					<reference entity="United_States_invasion_of_Panama" number="9" tag="PATIENT-4" type="description">the Invasion of Panama</reference>
-				</references>
 				<text>Al Asad airbase is operated by the United States Air Force. Some of its aircraft include the Boeing C-17 Globemaster III (transport aircraft), General Dynamics F-16 Fighting Falcon (aircraft fighter), and the Lockheed AC-130 which can be found on USAF aircraft carriers. The USAF was involved in the Invasion of Panama.</text>
 				<template>AGENT-1 is operated by BRIDGE-1 . Some of AGENT-1 aircraft include PATIENT-2 ( transport aircraft ) , PATIENT-3 ( aircraft fighter ) , and PATIENT-1 which can be found on BRIDGE-1 . BRIDGE-1 was involved in PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-					<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
-					<striple>United_States_Air_Force | aircraftFighter | General_Dynamics_F-16_Fighting_Falcon</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Al_Asad_Airbase" number="1" tag="AGENT-1" type="name">Al Asad airbase</reference>
-					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">the United States Air Force</reference>
-					<reference entity="United_States_invasion_of_Panama" number="3" tag="PATIENT-4" type="name">battles at the invasion of Panama</reference>
-					<reference entity="United_States_Air_Force" number="4" tag="BRIDGE-1" type="pronoun">They</reference>
-					<reference entity="Lockheed_AC-130" number="5" tag="PATIENT-1" type="description">the Lockheed AC-130</reference>
-					<reference entity="United_States_Air_Force" number="6" tag="BRIDGE-1" type="name">their</reference>
-					<reference entity="Boeing_C-17_Globemaster_III" number="7" tag="PATIENT-2" type="description">the Boeing C-17 Globemaster III</reference>
-					<reference entity="General_Dynamics_F-16_Fighting_Falcon" number="8" tag="PATIENT-3" type="description">the General Dynamics F-16 Fighting Falcon</reference>
-				</references>
 				<text>Al Asad airbase is operated by the United States Air Force which was involved in battles at the invasion of Panama. They deploy the Lockheed AC-130 on their aircraft carriers, the Boeing C-17 Globemaster III as transport aircraft and the General Dynamics F-16 Fighting Falcon as fighter aircraft.</text>
 				<template>AGENT-1 is operated by BRIDGE-1 which was involved in PATIENT-4 . BRIDGE-1 deploy PATIENT-1 on BRIDGE-1 aircraft carriers , PATIENT-2 as transport aircraft and PATIENT-3 as fighter aircraft .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-					<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
-					<striple>United_States_Air_Force | aircraftFighter | General_Dynamics_F-16_Fighting_Falcon</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States_Air_Force" number="1" tag="BRIDGE-1" type="description">The United States Air Force</reference>
-					<reference entity="United_States_invasion_of_Panama" number="2" tag="PATIENT-4" type="description">the Invasion of Panama</reference>
-					<reference entity="Al_Asad_Airbase" number="3" tag="AGENT-1" type="name">Al Asad airbase</reference>
-					<reference entity="United_States_Air_Force" number="4" tag="BRIDGE-1" type="description">The USAF</reference>
-					<reference entity="Lockheed_AC-130" number="5" tag="PATIENT-1" type="description">the Lockheed AC-130 attack aircraft</reference>
-					<reference entity="Boeing_C-17_Globemaster_III" number="6" tag="PATIENT-2" type="description">the Boeing C-17 Globemaster III</reference>
-					<reference entity="General_Dynamics_F-16_Fighting_Falcon" number="7" tag="PATIENT-3" type="description">the General Dynamics F-16 Fighting Falcon</reference>
-				</references>
 				<text>The United States Air Force, which was involved in the Invasion of Panama, are the operators of Al Asad airbase. The USAF have aircraft including: the Lockheed AC-130 attack aircraft, the Boeing C-17 Globemaster III transporter and the General Dynamics F-16 Fighting Falcon fighter plane.</text>
 				<template>BRIDGE-1 , which was involved in PATIENT-4 , are the operators of AGENT-1 . BRIDGE-1 have aircraft including : PATIENT-1 , PATIENT-2 transporter and PATIENT-3 fighter plane .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Al_Asad_Airbase</entity>
 				<entity>BRIDGE-1 | United_States_Air_Force</entity>
-				<entity>PATIENT-1 | Lockheed_AC-130</entity>
-				<entity>PATIENT-2 | Boeing_C-17_Globemaster_III</entity>
-				<entity>PATIENT-3 | General_Dynamics_F-16_Fighting_Falcon</entity>
 				<entity>PATIENT-4 | United_States_invasion_of_Panama</entity>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>PATIENT-1 | Lockheed_AC-130</entity>
+				<entity>PATIENT-3 | General_Dynamics_F-16_Fighting_Falcon</entity>
+				<entity>PATIENT-2 | Boeing_C-17_Globemaster_III</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id8" size="5">
@@ -533,54 +278,20 @@
 				<mtriple>United_States_Air_Force | battles | Korean_War</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>United_States_Air_Force | battles | Korean_War</striple>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-					<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States_Air_Force" number="1" tag="BRIDGE-1" type="description">The United States Air Force</reference>
-					<reference entity="Korean_War" number="2" tag="PATIENT-4" type="description">the Korean War</reference>
-					<reference entity="United_States_Air_Force" number="3" tag="BRIDGE-1" type="pronoun">It</reference>
-					<reference entity="Al_Asad_Airbase" number="4" tag="AGENT-1" type="name">Al Asad airbase</reference>
-					<reference entity="United_States_Air_Force" number="5" tag="BRIDGE-1" type="pronoun">It</reference>
-					<reference entity="Boeing_C-17_Globemaster_III" number="6" tag="PATIENT-2" type="name">Boeing C-17 Globemaster III</reference>
-					<reference entity="Lockheed_AC-130" number="7" tag="PATIENT-1" type="description">the Lockheed AC-130</reference>
-					<reference entity="United_States_Air_Force" number="8" tag="BRIDGE-1" type="name">USAF aircraft carriers</reference>
-					<reference entity="McDonnell_Douglas_F-15_Eagle" number="9" tag="PATIENT-3" type="name">McDonnell Douglas F- Eagle</reference>
-					<reference entity="United_States_Air_Force" number="10" tag="BRIDGE-1" type="description">the United States Air Force</reference>
-				</references>
 				<text>The United States Air Force has fought in the Korean War. It is the operating organisation for Al Asad airbase. It has a Boeing C-17 Globemaster III transport aircraft and additionally, the Lockheed AC-130 can be found on USAF aircraft carriers. McDonnell Douglas F- Eagle was a Fighter Aircraft of the United States Air Force.</text>
 				<template>BRIDGE-1 has fought in PATIENT-4 . BRIDGE-1 is the operating organisation for AGENT-1 . BRIDGE-1 has a PATIENT-2 transport aircraft and additionally , PATIENT-1 can be found on BRIDGE-1 . PATIENT-3 was a Fighter Aircraft of BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>United_States_Air_Force | battles | Korean_War</striple>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
-					<striple>United_States_Air_Force | aircraftFighter | McDonnell_Douglas_F-15_Eagle</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States_Air_Force" number="1" tag="BRIDGE-1" type="description">The United States Air Force</reference>
-					<reference entity="Korean_War" number="2" tag="PATIENT-4" type="description">the Korean war</reference>
-					<reference entity="Al_Asad_Airbase" number="3" tag="AGENT-1" type="name">Al Asad airbase</reference>
-					<reference entity="United_States_Air_Force" number="4" tag="BRIDGE-1" type="description">The US Airforce</reference>
-					<reference entity="Boeing_C-17_Globemaster_III" number="5" tag="PATIENT-2" type="name">Boeing C-17 Globemaster III</reference>
-					<reference entity="Lockheed_AC-130" number="7" tag="PATIENT-1" type="description">The Lockheed AC-130</reference>
-				</references>
 				<text>The United States Air Force, which fought battles in the Korean war, is the operating organisation for Al Asad airbase. The US Airforce has a Boeing C-17 Globemaster III transport aircraft, an aircraft fighter called the McDonnell Douglas F-15 Eagle and an attack aircraft named The Lockheed AC-130.</text>
 				<template>BRIDGE-1 , which fought battles in PATIENT-4 , is the operating organisation for AGENT-1 . BRIDGE-1 has a PATIENT-2 transport aircraft , called PATIENT-3 and an attack aircraft named PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Al_Asad_Airbase</entity>
 				<entity>BRIDGE-1 | United_States_Air_Force</entity>
-				<entity>PATIENT-1 | Lockheed_AC-130</entity>
-				<entity>PATIENT-2 | Boeing_C-17_Globemaster_III</entity>
-				<entity>PATIENT-3 | McDonnell_Douglas_F-15_Eagle</entity>
 				<entity>PATIENT-4 | Korean_War</entity>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>PATIENT-1 | Lockheed_AC-130</entity>
+				<entity>PATIENT-3 | McDonnell_Douglas_F-15_Eagle</entity>
+				<entity>PATIENT-2 | Boeing_C-17_Globemaster_III</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id9" size="5">
@@ -591,6 +302,13 @@
 				<otriple>United_States_Air_Force | battle | Korean_War</otriple>
 				<otriple>United_States_Air_Force | aircraftTransport | Lockheed_C-130_Hercules</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Al_Asad_Airbase | operator | United_States_Air_Force</otriple>
+				<otriple>United_States_Air_Force | battle | Invasion_of_Grenada</otriple>
+				<otriple>United_States_Air_Force | aircraftAttack | Lockheed_AC-130</otriple>
+				<otriple>United_States_Air_Force | battles | Korean_War</otriple>
+				<otriple>United_States_Air_Force | aircraftTransport | Lockheed_C-130_Hercules</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</mtriple>
 				<mtriple>United_States_Air_Force | battles | Invasion_of_Grenada</mtriple>
@@ -599,73 +317,24 @@
 				<mtriple>United_States_Air_Force | transportAircraft | Lockheed_C-130_Hercules</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>United_States_Air_Force | transportAircraft | Lockheed_C-130_Hercules</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-					<striple>United_States_Air_Force | battles | Korean_War</striple>
-					<striple>United_States_Air_Force | battles | Invasion_of_Grenada</striple>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States_Air_Force" number="1" tag="BRIDGE-1" type="description">the United States Air Force</reference>
-					<reference entity="Lockheed_C-130_Hercules" number="2" tag="PATIENT-4" type="description">the Lockheed C-130 Hercules</reference>
-					<reference entity="Lockheed_AC-130" number="3" tag="PATIENT-2" type="name">Lockheed AC-130</reference>
-					<reference entity="United_States_Air_Force" number="4" tag="BRIDGE-1" type="name">USAF aircraft carriers</reference>
-					<reference entity="Korean_War" number="5" tag="PATIENT-3" type="name">Both the Korean War</reference>
-					<reference entity="Invasion_of_Grenada" number="6" tag="PATIENT-1" type="description">the Invasion of Grenda</reference>
-					<reference entity="United_States_Air_Force" number="7" tag="BRIDGE-1" type="description">the United States Air Force</reference>
-					<reference entity="Al_Asad_Airbase" number="8" tag="AGENT-1" type="description">the Al Asad Airbase</reference>
-				</references>
 				<text>The transport aircraft for the United States Air Force is the Lockheed C-130 Hercules. And Lockheed AC-130 can be found on USAF aircraft carriers. Both the Korean War and the Invasion of Grenda involved the United States Air Force which currently operates the Al Asad Airbase.</text>
 				<template>The transport aircraft for BRIDGE-1 is PATIENT-4 . And PATIENT-2 can be found on BRIDGE-1 . PATIENT-3 and PATIENT-1 involved BRIDGE-1 which currently operates AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>United_States_Air_Force | battles | Korean_War</striple>
-					<striple>United_States_Air_Force | battles | Invasion_of_Grenada</striple>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | transportAircraft | Lockheed_C-130_Hercules</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States_Air_Force" number="1" tag="BRIDGE-1" type="description">The USAF</reference>
-					<reference entity="Korean_War" number="2" tag="PATIENT-3" type="description">the Korean War</reference>
-					<reference entity="Invasion_of_Grenada" number="3" tag="PATIENT-1" type="name">Grenada</reference>
-					<reference entity="Al_Asad_Airbase" number="4" tag="AGENT-1" type="description">the Al Asad airbase</reference>
-					<reference entity="Lockheed_C-130_Hercules" number="5" tag="PATIENT-4" type="description">the aircraft</reference>
-					<reference entity="United_States_Air_Force" number="6" tag="BRIDGE-1" type="name">USAF</reference>
-					<reference entity="Lockheed_AC-130" number="7" tag="PATIENT-2" type="description">the Lockheed AC-130 Hercules</reference>
-				</references>
 				<text>The USAF which fought in the Korean War and invaded Grenada, operates the Al Asad airbase. Among the aircraft found on USAF carriers is the Lockheed AC-130 Hercules which is a transport plane.</text>
 				<template>BRIDGE-1 which fought in PATIENT-3 and invaded PATIENT-1 , operates AGENT-1 . Among PATIENT-4 found on BRIDGE-1 carriers is PATIENT-2 which is a transport plane .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-					<striple>United_States_Air_Force | transportAircraft | Lockheed_C-130_Hercules</striple>
-					<striple>United_States_Air_Force | battles | Korean_War</striple>
-					<striple>United_States_Air_Force | battles | Invasion_of_Grenada</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Al_Asad_Airbase" number="1" tag="AGENT-1" type="name">Al Asad Airbase</reference>
-					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">the United States Air Force</reference>
-					<reference entity="Lockheed_AC-130" number="3" tag="PATIENT-2" type="name">Lockheed AC-130</reference>
-					<reference entity="Lockheed_C-130_Hercules" number="4" tag="PATIENT-4" type="name">Lockheed C-130 Hercules</reference>
-					<reference entity="United_States_Air_Force" number="5" tag="BRIDGE-1" type="description">The USAF</reference>
-					<reference entity="Korean_War" number="6" tag="PATIENT-3" type="description">the Korean War</reference>
-					<reference entity="Invasion_of_Grenada" number="7" tag="PATIENT-1" type="description">the Invasion of Grenada</reference>
-				</references>
 				<text>Al Asad Airbase is operated by the United States Air Force and uses Lockheed AC-130 attack air crafts and Lockheed C-130 Hercules transport aircrafts. The USAF participated in the Korean War and the Invasion of Grenada.</text>
 				<template>AGENT-1 is operated by BRIDGE-1 and uses PATIENT-2 attack air crafts and PATIENT-4 transport aircrafts . BRIDGE-1 participated in PATIENT-3 and PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Al_Asad_Airbase</entity>
 				<entity>BRIDGE-1 | United_States_Air_Force</entity>
-				<entity>PATIENT-1 | Invasion_of_Grenada</entity>
-				<entity>PATIENT-2 | Lockheed_AC-130</entity>
-				<entity>PATIENT-3 | Korean_War</entity>
 				<entity>PATIENT-4 | Lockheed_C-130_Hercules</entity>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>PATIENT-1 | Invasion_of_Grenada</entity>
+				<entity>PATIENT-3 | Korean_War</entity>
+				<entity>PATIENT-2 | Lockheed_AC-130</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id10" size="5">
@@ -684,52 +353,20 @@
 				<mtriple>United_States_Air_Force | battles | United_States_invasion_of_Panama</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States_invasion_of_Panama" number="1" tag="PATIENT-4" type="name">Grenada and Panama</reference>
-					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">the United States Air Force</reference>
-					<reference entity="Al_Asad_Airbase" number="3" tag="AGENT-1" type="description">the Al Asad airbase</reference>
-					<reference entity="Al_Asad_Airbase" number="4" tag="AGENT-1" type="description">The Air Force</reference>
-					<reference entity="Boeing_C-17_Globemaster_III" number="5" tag="PATIENT-3" type="description">the Boeing C-17 Globemaster III</reference>
-					<reference entity="Lockheed_AC-130" number="6" tag="PATIENT-2" type="description">the Lockheed AC-130</reference>
-					<reference entity="United_States_Air_Force" number="7" tag="BRIDGE-1" type="name">USAF aircraft carriers</reference>
-				</references>
 				<text>The Invasions of Grenada and Panama in involved the United States Air Force which now operates the Al Asad airbase. The Air Force has several types of aircraft such as the Boeing C-17 Globemaster III transport aircraft and the Lockheed AC-130 which can be found on USAF aircraft carriers.</text>
 				<template>The Invasions of PATIENT-4 in involved BRIDGE-1 which now operates AGENT-1 . AGENT-1 has several types of aircraft such as PATIENT-3 transport aircraft and PATIENT-2 which can be found on BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Al_Asad_Airbase | operatingOrganisation | United_States_Air_Force</striple>
-					<striple>United_States_Air_Force | attackAircraft | Lockheed_AC-130</striple>
-					<striple>United_States_Air_Force | transportAircraft | Boeing_C-17_Globemaster_III</striple>
-					<striple>United_States_Air_Force | battles | Invasion_of_Grenada</striple>
-					<striple>United_States_Air_Force | battles | United_States_invasion_of_Panama</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Al_Asad_Airbase" number="1" tag="AGENT-1" type="name">Al Asad airbase</reference>
-					<reference entity="United_States_Air_Force" number="2" tag="BRIDGE-1" type="description">The United States Air Force</reference>
-					<reference entity="United_States_Air_Force" number="3" tag="BRIDGE-1" type="description">The USAF</reference>
-					<reference entity="Lockheed_AC-130" number="4" tag="PATIENT-2" type="name">Lockheed AC-130</reference>
-					<reference entity="Boeing_C-17_Globemaster_III" number="5" tag="PATIENT-3" type="name">Boeing C-17 Globemaster III</reference>
-					<reference entity="United_States_Air_Force" number="6" tag="BRIDGE-1" type="description">The USAF</reference>
-					<reference entity="Invasion_of_Grenada" number="7" tag="PATIENT-1" type="description">the Invasion of Grenada</reference>
-					<reference entity="United_States_invasion_of_Panama" number="8" tag="PATIENT-4" type="name">invasion of Panama</reference>
-				</references>
 				<text>Al Asad airbase is operated by The United States Air Force. The USAF is equipped with the attack aircraft, Lockheed AC-130 and Boeing C-17 Globemaster III transport aircraft. The USAF has been involved in the Invasion of Grenada and invasion of Panama.</text>
 				<template>AGENT-1 is operated by BRIDGE-1 . BRIDGE-1 is equipped with the attack aircraft , PATIENT-2 and PATIENT-3 transport aircraft . BRIDGE-1 has been involved in PATIENT-1 and PATIENT-4 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Al_Asad_Airbase</entity>
 				<entity>BRIDGE-1 | United_States_Air_Force</entity>
-				<entity>PATIENT-1 | Invasion_of_Grenada</entity>
-				<entity>PATIENT-2 | Lockheed_AC-130</entity>
-				<entity>PATIENT-3 | Boeing_C-17_Globemaster_III</entity>
 				<entity>PATIENT-4 | United_States_invasion_of_Panama</entity>
+				<entity>AGENT-1 | Al_Asad_Airbase</entity>
+				<entity>PATIENT-1 | Invasion_of_Grenada</entity>
+				<entity>PATIENT-3 | Boeing_C-17_Globemaster_III</entity>
+				<entity>PATIENT-2 | Lockheed_AC-130</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id11" size="5">
@@ -740,6 +377,20 @@
 				<otriple>Allama_Iqbal_International_Airport | cityServed | Lahore</otriple>
 				<otriple>Pakistan | leaderName | Anwar_Zaheer_Jamali</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Allama_Iqbal_International_Airport | operator | Pakistan_Civil_Aviation_Authority</otriple>
+				<otriple>Allama_Iqbal_International_Airport | city | Lahore</otriple>
+				<otriple>Lahore | country | Pakistan</otriple>
+				<otriple>Pakistan | leaderName | Anwar_Zaheer_Jamali</otriple>
+				<otriple>Allama_Iqbal_International_Airport | location | &quot;Punjab, Pakistan&quot;@en</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Allama_Iqbal_International_Airport | operator | Pakistan_Civil_Aviation_Authority</otriple>
+				<otriple>Allama_Iqbal_International_Airport | city | Lahore</otriple>
+				<otriple>Lahore | country | Pakistan</otriple>
+				<otriple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</otriple>
+				<otriple>Pakistan | leaderName | Anwar_Zaheer_Jamali</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</mtriple>
 				<mtriple>Lahore | country | Pakistan</mtriple>
@@ -748,70 +399,24 @@
 				<mtriple>Pakistan | leaderName | Anwar_Zaheer_Jamali</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</striple>
-					<striple>Allama_Iqbal_International_Airport | cityServed | Lahore</striple>
-					<striple>Lahore | country | Pakistan</striple>
-					<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
-					<striple>Pakistan | leaderName | Anwar_Zaheer_Jamali</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International airport</reference>
-					<reference entity="Punjab,_Pakistan" number="2" tag="PATIENT-2" type="name">Punjab Pakistan</reference>
-					<reference entity="Lahore" number="3" tag="BRIDGE-1" type="name">Lahore</reference>
-					<reference entity="Pakistan" number="4" tag="BRIDGE-2" type="name">Pakistan</reference>
-					<reference entity="Pakistan_Civil_Aviation_Authority" number="5" tag="PATIENT-1" type="description">The Pakistan Civil Aviation Authority</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="6" tag="AGENT-1" type="description">the Allama Iqbal International Airport</reference>
-					<reference entity="Pakistan" number="7" tag="BRIDGE-2" type="description">The country</reference>
-					<reference entity="Anwar_Zaheer_Jamali" number="8" tag="PATIENT-3" type="name">Anwar Zaheer Jamali</reference>
-				</references>
 				<text>Allama Iqbal International airport is located in Punjab Pakistan and serves Lahore, Pakistan. The Pakistan Civil Aviation Authority governs the Allama Iqbal International Airport. The country is lead by Anwar Zaheer Jamali.</text>
 				<template>AGENT-1 is located in PATIENT-2 and serves BRIDGE-1 , BRIDGE-2 . PATIENT-1 governs AGENT-1 . BRIDGE-2 is lead by PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Allama_Iqbal_International_Airport | cityServed | Lahore</striple>
-					<striple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</striple>
-					<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
-					<striple>Lahore | country | Pakistan</striple>
-					<striple>Pakistan | leaderName | Anwar_Zaheer_Jamali</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Allama_Iqbal_International_Airport" number="1" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
-					<reference entity="Lahore" number="2" tag="BRIDGE-1" type="name">Lahore</reference>
-					<reference entity="Punjab,_Pakistan" number="3" tag="PATIENT-2" type="name">Punjab , Pakistan</reference>
-					<reference entity="Pakistan_Civil_Aviation_Authority" number="4" tag="PATIENT-1" type="description">the Pakistan Civil Aviation Authority</reference>
-					<reference entity="Pakistan" number="5" tag="BRIDGE-2" type="name">Pakistan</reference>
-					<reference entity="Anwar_Zaheer_Jamali" number="6" tag="PATIENT-3" type="name">Anwar Zaheer Jamali</reference>
-				</references>
 				<text>Allama Iqbal International Airport, which serves the city of Lahore, is located in Punjab, Pakistan and is operated by the Pakistan Civil Aviation Authority. Pakistan is led by Anwar Zaheer Jamali.</text>
 				<template>AGENT-1 , which serves the city of BRIDGE-1 , is located in PATIENT-2 and is operated by PATIENT-1 . BRIDGE-2 is led by PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Allama_Iqbal_International_Airport | cityServed | Lahore</striple>
-					<striple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</striple>
-					<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Lahore" number="1" tag="BRIDGE-1" type="name">Lahore</reference>
-					<reference entity="Punjab,_Pakistan" number="2" tag="PATIENT-2" type="name">Punjab , Pakistan</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="3" tag="AGENT-1" type="name">Allama Iqbal International Airport</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Pakistan_Civil_Aviation_Authority" number="5" tag="PATIENT-1" type="description">the Pakistan Civil Aviation Authority</reference>
-					<reference entity="Punjab,_Pakistan" number="6" tag="PATIENT-2" type="name">Punjab Pakistan</reference>
-					<reference entity="Anwar_Zaheer_Jamali" number="7" tag="PATIENT-3" type="name">Anwar Zaheer Jamali</reference>
-				</references>
 				<text>In the city of Lahore, Punjab, Pakistan, there is an airport called Allama Iqbal International Airport. It is operated by the Pakistan Civil Aviation Authority, in Punjab Pakistan, which is led by Anwar Zaheer Jamali.</text>
 				<template>In the city of BRIDGE-1 , PATIENT-2 , there is an airport called AGENT-1 . AGENT-1 is operated by PATIENT-1 , in PATIENT-2 , which is led by PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Allama_Iqbal_International_Airport</entity>
-				<entity>BRIDGE-1 | Lahore</entity>
 				<entity>BRIDGE-2 | Pakistan</entity>
+				<entity>BRIDGE-1 | Lahore</entity>
+				<entity>AGENT-1 | Allama_Iqbal_International_Airport</entity>
 				<entity>PATIENT-1 | Pakistan_Civil_Aviation_Authority</entity>
-				<entity>PATIENT-2 | Punjab,_Pakistan</entity>
 				<entity>PATIENT-3 | Anwar_Zaheer_Jamali</entity>
+				<entity>PATIENT-2 | Punjab,_Pakistan</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id12" size="5">
@@ -822,6 +427,13 @@
 				<otriple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</otriple>
 				<otriple>Allama_Iqbal_International_Airport | cityServed | Lahore</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Allama_Iqbal_International_Airport | operator | Pakistan_Civil_Aviation_Authority</otriple>
+				<otriple>Punjab,_Pakistan | leaderName | Shehbaz_Sharif</otriple>
+				<otriple>Allama_Iqbal_International_Airport | city | Lahore</otriple>
+				<otriple>Lahore | country | Pakistan</otriple>
+				<otriple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</mtriple>
 				<mtriple>Punjab,_Pakistan | leaderName | Shehbaz_Sharif</mtriple>
@@ -830,44 +442,10 @@
 				<mtriple>Allama_Iqbal_International_Airport | cityServed | Lahore</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
-					<striple>Allama_Iqbal_International_Airport | cityServed | Lahore</striple>
-					<striple>Lahore | country | Pakistan</striple>
-					<striple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</striple>
-					<striple>Punjab,_Pakistan | leaderName | Shehbaz_Sharif</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Pakistan_Civil_Aviation_Authority" number="1" tag="PATIENT-1" type="description">The Pakistan Civil Aviation Authority</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="2" tag="AGENT-1" type="description">the Allama Iqbal International Airport</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="3" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="Lahore" number="4" tag="BRIDGE-2" type="name">Lahore</reference>
-					<reference entity="Pakistan" number="5" tag="PATIENT-3" type="name">Pakistan</reference>
-					<reference entity="Shehbaz_Sharif" number="6" tag="PATIENT-2" type="name">Shehbaz Sharif</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="7" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="8" tag="AGENT-1" type="description">the Allama Iqbal International Airport</reference>
-					<reference entity="Punjab,_Pakistan" number="9" tag="BRIDGE-1" type="name">Punjab , Pakistan</reference>
-				</references>
 				<text>The Pakistan Civil Aviation Authority is the operating organisation of the Allama Iqbal International Airport. The airport serves the city of Lahore, in Pakistan where Shehbaz Sharif is the leader, It is also where the Allama Iqbal International Airport is found, in Punjab, Pakistan.</text>
 				<template>PATIENT-1 is the operating organisation of AGENT-1 . AGENT-1 serves the city of BRIDGE-2 , in PATIENT-3 where PATIENT-2 is the leader , AGENT-1 is also where AGENT-1 is found , in BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Allama_Iqbal_International_Airport | operatingOrganisation | Pakistan_Civil_Aviation_Authority</striple>
-					<striple>Allama_Iqbal_International_Airport | location | Punjab,_Pakistan</striple>
-					<striple>Punjab,_Pakistan | leaderName | Shehbaz_Sharif</striple>
-					<striple>Allama_Iqbal_International_Airport | cityServed | Lahore</striple>
-					<striple>Lahore | country | Pakistan</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Pakistan_Civil_Aviation_Authority" number="1" tag="PATIENT-1" type="description">The Pakistan Civil Aviation Authority</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="2" tag="AGENT-1" type="description">the Allama Iqbal International Airport</reference>
-					<reference entity="Punjab,_Pakistan" number="3" tag="BRIDGE-1" type="name">Punjab , Pakistan</reference>
-					<reference entity="Shehbaz_Sharif" number="4" tag="PATIENT-2" type="name">Shehbaz Sharif</reference>
-					<reference entity="Allama_Iqbal_International_Airport" number="5" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="Lahore" number="6" tag="BRIDGE-2" type="name">Lahore</reference>
-					<reference entity="Pakistan" number="7" tag="PATIENT-3" type="name">Pakistan</reference>
-				</references>
 				<text>The Pakistan Civil Aviation Authority is the operating organisation of the Allama Iqbal International Airport located in Punjab, Pakistan, which is lead by Shehbaz Sharif. The airport serves Lahore in Pakistan.</text>
 				<template>PATIENT-1 is the operating organisation of AGENT-1 located in BRIDGE-1 , which is lead by PATIENT-2 . AGENT-1 serves BRIDGE-2 in PATIENT-3 .</template>
 			</lex>
@@ -876,8 +454,8 @@
 				<entity>BRIDGE-1 | Punjab,_Pakistan</entity>
 				<entity>BRIDGE-2 | Lahore</entity>
 				<entity>PATIENT-1 | Pakistan_Civil_Aviation_Authority</entity>
-				<entity>PATIENT-2 | Shehbaz_Sharif</entity>
 				<entity>PATIENT-3 | Pakistan</entity>
+				<entity>PATIENT-2 | Shehbaz_Sharif</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id13" size="5">
@@ -896,72 +474,24 @@
 				<mtriple>Andrews_County_Airport | runwayName | &quot;11/29&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Andrews_County_Airport | location | Texas</striple>
-					<striple>Andrews_County_Airport | cityServed | Andrews,_Texas</striple>
-					<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
-					<striple>Andrews_County_Airport | runwayLength | 896.0</striple>
-					<striple>Andrews_County_Airport | runwayName | &quot;11/29&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Texas" number="1" tag="PATIENT-1" type="name">Texas</reference>
-					<reference entity="Andrews,_Texas" number="2" tag="PATIENT-3" type="name">Andrews</reference>
-					<reference entity="Andrews_County_Airport" number="3" tag="AGENT-1" type="name">Andrews County Airport</reference>
-					<reference entity="Andrews_County_Airport" number="4" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="973.0" number="5" tag="PATIENT-4" type="name">973 .0</reference>
-					<reference entity="896.0" number="6" tag="PATIENT-2" type="name">896</reference>
-					<reference entity="&quot;11/29&quot;" number="7" tag="PATIENT-5" type="description">the name 11/29</reference>
-				</references>
 				<text>Located in Texas, and serving Andrews, is Andrews County Airport. The airport is 973.0 below sea level, has a runway length of 896, and a runway with the name 11/29.</text>
 				<template>Located in PATIENT-1 , and serving PATIENT-3 , is AGENT-1 . AGENT-1 is PATIENT-4 below sea level, has a runway length of PATIENT-2 , and a runway with PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Andrews_County_Airport | location | Texas</striple>
-					<striple>Andrews_County_Airport | runwayLength | 896.0</striple>
-					<striple>Andrews_County_Airport | cityServed | Andrews,_Texas</striple>
-					<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
-					<striple>Andrews_County_Airport | runwayName | &quot;11/29&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
-					<reference entity="Texas" number="2" tag="PATIENT-1" type="name">Texas</reference>
-					<reference entity="896.0" number="3" tag="PATIENT-2" type="name">896</reference>
-					<reference entity="Andrews,_Texas" number="4" tag="PATIENT-3" type="name">Andrews</reference>
-					<reference entity="Andrews_County_Airport" number="5" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;11/29&quot;" number="7" tag="PATIENT-5" type="name">11/29</reference>
-				</references>
 				<text>Andrews County Airport in Texas has a runway length of 896 and serves the city of Andrews. It is located 973 metres below sea level and has the runway name 11/29.</text>
 				<template>AGENT-1 in PATIENT-1 has a runway length of PATIENT-2 and serves the city of PATIENT-3 . AGENT-1 is located PATIENT-4 meters below sea level and has the runway name PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Andrews_County_Airport | location | Texas</striple>
-					<striple>Andrews_County_Airport | cityServed | Andrews,_Texas</striple>
-					<striple>Andrews_County_Airport | elevationAboveTheSeaLevel_(in_metres) | 973.0</striple>
-					<striple>Andrews_County_Airport | runwayName | &quot;11/29&quot;</striple>
-					<striple>Andrews_County_Airport | runwayLength | 896.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
-					<reference entity="Texas" number="2" tag="PATIENT-1" type="name">Texas</reference>
-					<reference entity="Andrews_County_Airport" number="3" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Andrews,_Texas" number="4" tag="PATIENT-3" type="name">Andrews</reference>
-					<reference entity="973.0" number="5" tag="PATIENT-4" type="name">973 metres</reference>
-					<reference entity="Andrews_County_Airport" number="6" tag="AGENT-1" type="pronoun">Its</reference>
-					<reference entity="&quot;11/29&quot;" number="7" tag="PATIENT-5" type="name">11/29</reference>
-					<reference entity="896.0" number="8" tag="PATIENT-2" type="name">896</reference>
-				</references>
 				<text>Andrews County Airport is located in Texas. It serves the city of Andrews and is 973 metres above sea level. Its runway length is named 11/29 and is 896 long.</text>
 				<template>AGENT-1 is located in PATIENT-1 . AGENT-1 serves the city of PATIENT-3 and is PATIENT-4 above sea level . AGENT-1 runway length is named PATIENT-5 and is PATIENT-2 long .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;11/29&quot;</entity>
+				<entity>PATIENT-4 | 973.0</entity>
 				<entity>AGENT-1 | Andrews_County_Airport</entity>
 				<entity>PATIENT-1 | Texas</entity>
-				<entity>PATIENT-2 | 896.0</entity>
 				<entity>PATIENT-3 | Andrews,_Texas</entity>
-				<entity>PATIENT-4 | 973.0</entity>
-				<entity>PATIENT-5 | &quot;11/29&quot;</entity>
+				<entity>PATIENT-2 | 896.0</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id14" size="5">
@@ -969,6 +499,13 @@
 				<otriple>Andrews_County_Airport | location | Texas</otriple>
 				<otriple>Texas | language | Spanish_language</otriple>
 				<otriple>Texas | largestCity | Houston</otriple>
+				<otriple>Texas | capital | Austin,_Texas</otriple>
+				<otriple>Texas | country | United_States</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | location | Texas</otriple>
+				<otriple>Texas | largestcity | Houston</otriple>
+				<otriple>Texas | language | Spanish_language</otriple>
 				<otriple>Texas | capital | Austin,_Texas</otriple>
 				<otriple>Texas | country | United_States</otriple>
 			</originaltripleset>
@@ -980,52 +517,20 @@
 				<mtriple>Texas | country | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Andrews_County_Airport | location | Texas</striple>
-					<striple>Texas | country | United_States</striple>
-					<striple>Texas | language | Spanish_language</striple>
-					<striple>Texas | largestCity | Houston</striple>
-					<striple>Texas | capital | Austin,_Texas</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
-					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-4" type="description">the U .S .A .</reference>
-					<reference entity="Spanish_language" number="4" tag="PATIENT-1" type="name">Spanish</reference>
-					<reference entity="Houston" number="5" tag="PATIENT-2" type="name">Houston</reference>
-					<reference entity="Texas" number="6" tag="BRIDGE-1" type="pronoun">its</reference>
-					<reference entity="Austin,_Texas" number="7" tag="PATIENT-3" type="name">Austin</reference>
-				</references>
 				<text>Andrews County Airport is in Texas in the U.S.A. where Spanish is one of the languages spoken. Houston is the largest city in the state and its capital is Austin.</text>
 				<template>AGENT-1 is in BRIDGE-1 in PATIENT-4 where PATIENT-1 is one of the languages spoken . PATIENT-2 is the largest city in the state and BRIDGE-1 capital is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Andrews_County_Airport | location | Texas</striple>
-					<striple>Texas | country | United_States</striple>
-					<striple>Texas | largestCity | Houston</striple>
-					<striple>Texas | capital | Austin,_Texas</striple>
-					<striple>Texas | language | Spanish_language</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
-					<reference entity="United_States" number="2" tag="PATIENT-4" type="name">Texas , United States</reference>
-					<reference entity="Texas" number="3" tag="BRIDGE-1" type="name">Texas</reference>
-					<reference entity="Houston" number="4" tag="PATIENT-2" type="name">Houston</reference>
-					<reference entity="Austin,_Texas" number="5" tag="PATIENT-3" type="name">Austin</reference>
-					<reference entity="Spanish_language" number="6" tag="PATIENT-1" type="name">Spanish</reference>
-					<reference entity="Texas" number="7" tag="BRIDGE-1" type="name">there</reference>
-				</references>
 				<text>Andrews County Airport is located in Texas, United States. The largest city in Texas is Houston, the state capital is Austin and Spanish is one of the languages spoken there.</text>
 				<template>AGENT-1 is located in PATIENT-4 . The largest city in BRIDGE-1 is PATIENT-2 , the state capital is PATIENT-3 and PATIENT-1 is one of the languages spoken BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Andrews_County_Airport</entity>
 				<entity>BRIDGE-1 | Texas</entity>
-				<entity>PATIENT-1 | Spanish_language</entity>
-				<entity>PATIENT-2 | Houston</entity>
-				<entity>PATIENT-3 | Austin,_Texas</entity>
 				<entity>PATIENT-4 | United_States</entity>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>PATIENT-1 | Spanish_language</entity>
+				<entity>PATIENT-3 | Austin,_Texas</entity>
+				<entity>PATIENT-2 | Houston</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id15" size="5">
@@ -1033,6 +538,13 @@
 				<otriple>Andrews_County_Airport | location | Texas</otriple>
 				<otriple>Texas | language | Spanish_language</otriple>
 				<otriple>Texas | largestCity | Houston</otriple>
+				<otriple>Texas | capital | Austin,_Texas</otriple>
+				<otriple>Texas | demonym | Texan</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Andrews_County_Airport | location | Texas</otriple>
+				<otriple>Texas | largestcity | Houston</otriple>
+				<otriple>Texas | language | Spanish_language</otriple>
 				<otriple>Texas | capital | Austin,_Texas</otriple>
 				<otriple>Texas | demonym | Texan</otriple>
 			</originaltripleset>
@@ -1044,71 +556,24 @@
 				<mtriple>Texas | demonym | Texan</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Texas | largestCity | Houston</striple>
-					<striple>Texas | capital | Austin,_Texas</striple>
-					<striple>Andrews_County_Airport | location | Texas</striple>
-					<striple>Texas | demonym | Texan</striple>
-					<striple>Texas | language | Spanish_language</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Houston" number="1" tag="PATIENT-2" type="name">Houston</reference>
-					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
-					<reference entity="Austin,_Texas" number="3" tag="PATIENT-3" type="name">Austin</reference>
-					<reference entity="Andrews_County_Airport" number="4" tag="AGENT-1" type="name">Andrews County Airport</reference>
-					<reference entity="Texas" number="5" tag="BRIDGE-1" type="name">Texas</reference>
-					<reference entity="Texan" number="6" tag="PATIENT-4" type="name">Some texans</reference>
-					<reference entity="Spanish_language" number="7" tag="PATIENT-1" type="name">Spanish</reference>
-				</references>
 				<text>Houston is the largest city in Texas, where Austin is the Capital city. Andrews County Airport is located in Texas and Some texans can speak Spanish.</text>
 				<template>PATIENT-2 is the largest city in BRIDGE-1 , where PATIENT-3 is the Capital city . AGENT-1 is located in BRIDGE-1 and PATIENT-4 can speak PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Andrews_County_Airport | location | Texas</striple>
-					<striple>Texas | language | Spanish_language</striple>
-					<striple>Texas | demonym | Texan</striple>
-					<striple>Texas | largestCity | Houston</striple>
-					<striple>Texas | capital | Austin,_Texas</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
-					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
-					<reference entity="Spanish_language" number="3" tag="PATIENT-1" type="name">Spanish</reference>
-					<reference entity="Texan" number="4" tag="PATIENT-4" type="name">Texans</reference>
-					<reference entity="Houston" number="5" tag="PATIENT-2" type="name">Houston</reference>
-					<reference entity="Texas" number="6" tag="BRIDGE-1" type="name">Texas</reference>
-					<reference entity="Austin,_Texas" number="7" tag="PATIENT-3" type="name">Austin</reference>
-				</references>
 				<text>Andrews County Airport is located in Texas, a state where Spanish is spoken and the people are called Texans. Houston is the largest city in Texas and Austin is the state's capital.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , a state where PATIENT-1 is spoken and the people are called PATIENT-4 . PATIENT-2 is the largest city in BRIDGE-1 and PATIENT-3 is the state's capital .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Andrews_County_Airport | location | Texas</striple>
-					<striple>Texas | language | Spanish_language</striple>
-					<striple>Texas | demonym | Texan</striple>
-					<striple>Texas | capital | Austin,_Texas</striple>
-					<striple>Texas | largestCity | Houston</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Andrews_County_Airport" number="1" tag="AGENT-1" type="name">Andrews County Airport</reference>
-					<reference entity="Texas" number="2" tag="BRIDGE-1" type="name">Texas</reference>
-					<reference entity="Spanish_language" number="3" tag="PATIENT-1" type="description">the Spanish language</reference>
-					<reference entity="Texan" number="4" tag="PATIENT-4" type="name">Texans</reference>
-					<reference entity="Austin,_Texas" number="5" tag="PATIENT-3" type="name">Austin</reference>
-					<reference entity="Houston" number="6" tag="PATIENT-2" type="name">Houston</reference>
-				</references>
 				<text>Andrews County Airport is located in Texas where the Spanish language is spoken and the people are known as Texans. The capital city is Austin but the largest city is Houston.</text>
 				<template>AGENT-1 is located in BRIDGE-1 where PATIENT-1 is spoken and the people are known as PATIENT-4 . The capital city is PATIENT-3 but the largest city is PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Andrews_County_Airport</entity>
 				<entity>BRIDGE-1 | Texas</entity>
-				<entity>PATIENT-1 | Spanish_language</entity>
-				<entity>PATIENT-2 | Houston</entity>
-				<entity>PATIENT-3 | Austin,_Texas</entity>
 				<entity>PATIENT-4 | Texan</entity>
+				<entity>AGENT-1 | Andrews_County_Airport</entity>
+				<entity>PATIENT-1 | Spanish_language</entity>
+				<entity>PATIENT-3 | Austin,_Texas</entity>
+				<entity>PATIENT-2 | Houston</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id16" size="5">
@@ -1127,64 +592,24 @@
 				<mtriple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Angola_International_Airport | location | Ícolo_e_Bengo</striple>
-					<striple>Ícolo_e_Bengo | isPartOf | Luanda_Province</striple>
-					<striple>Angola_International_Airport | cityServed | Luanda</striple>
-					<striple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Angola_International_Airport" number="1" tag="AGENT-1" type="description">The Angola International Airport</reference>
-					<reference entity="Luanda" number="4" tag="PATIENT-2" type="name">Luanda</reference>
-					<reference entity="159" number="5" tag="PATIENT-4" type="name">159</reference>
-				</references>
 				<text>The Angola International Airport is in Ícolo e Bengo, (Luanda Province), The airport serves Luanda, and is 159 metres above sea level.</text>
 				<template>AGENT-1 is in BRIDGE-1 , ( PATIENT-3 ) , The airport serves PATIENT-2 , and is PATIENT-4 metres above sea level.</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Angola_International_Airport | location | Ícolo_e_Bengo</striple>
-					<striple>Ícolo_e_Bengo | isPartOf | Luanda_Province</striple>
-					<striple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</striple>
-					<striple>Angola_International_Airport | cityServed | Luanda</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Angola_International_Airport" number="1" tag="AGENT-1" type="name">Angola International Airport</reference>
-					<reference entity="Ícolo_e_Bengo" number="2" tag="BRIDGE-1" type="name">Ícolo e Bengo</reference>
-					<reference entity="Luanda_Province" number="3" tag="PATIENT-3" type="name">Luanda province</reference>
-					<reference entity="159" number="5" tag="PATIENT-4" type="name">159</reference>
-					<reference entity="Luanda" number="6" tag="PATIENT-2" type="name">Luanda</reference>
-				</references>
 				<text>Angola International Airport is located at Ícolo e Bengo in Luanda province,Angola.The Airport is situated 159 meters above sea level and serves the city of Luanda.</text>
 				<template>AGENT-1 is located at BRIDGE-1 in PATIENT-3 , PATIENT-1.AGENT-1 is situated PATIENT-4 meters above sea level and serves the city of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Angola_International_Airport | location | Ícolo_e_Bengo</striple>
-					<striple>Ícolo_e_Bengo | isPartOf | Luanda_Province</striple>
-					<striple>Ícolo_e_Bengo | country | Angola</striple>
-					<striple>Angola_International_Airport | cityServed | Luanda</striple>
-					<striple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Angola_International_Airport" number="1" tag="AGENT-1" type="name">Angola International Airport</reference>
-					<reference entity="Ícolo_e_Bengo" number="2" tag="BRIDGE-1" type="name">Ícolo e Bengo</reference>
-					<reference entity="Luanda_Province" number="3" tag="PATIENT-3" type="description">the Luanda Province</reference>
-					<reference entity="Angola" number="4" tag="PATIENT-1" type="name">Angola</reference>
-					<reference entity="Luanda" number="5" tag="PATIENT-2" type="name">Luanda</reference>
-					<reference entity="Angola_International_Airport" number="6" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="159" number="7" tag="PATIENT-4" type="name">159</reference>
-				</references>
 				<text>Angola International Airport, which is located in Ícolo e Bengo in the Luanda Province in Angola, serves Luanda. The airport lies 159 metres above sea level.</text>
 				<template>AGENT-1 , which is located in BRIDGE-1 in PATIENT-3 in PATIENT-1 , serves PATIENT-2 .  AGENT-1 lies PATIENT-4 metres above sea level .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Angola_International_Airport</entity>
 				<entity>BRIDGE-1 | Ícolo_e_Bengo</entity>
-				<entity>PATIENT-1 | Angola</entity>
-				<entity>PATIENT-2 | Luanda</entity>
-				<entity>PATIENT-3 | Luanda_Province</entity>
 				<entity>PATIENT-4 | 159</entity>
+				<entity>AGENT-1 | Angola_International_Airport</entity>
+				<entity>PATIENT-1 | Angola</entity>
+				<entity>PATIENT-3 | Luanda_Province</entity>
+				<entity>PATIENT-2 | Luanda</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id17" size="5">
@@ -1195,6 +620,27 @@
 				<otriple>Ícolo_e_Bengo | isPartOf | Luanda_Province</otriple>
 				<otriple>Angola_International_Airport | elevation | &quot;159.0&quot;^^xsd:double</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Angola_International_Airport | location | Ícolo_e_Bengo</otriple>
+				<otriple>Ícolo_e_Bengo | country | Angola</otriple>
+				<otriple>Angola_International_Airport | runwayLength | &quot;3999.89&quot;^^xsd:double</otriple>
+				<otriple>Ícolo_e_Bengo | isPartOf | Luanda_Province</otriple>
+				<otriple>Angola_International_Airport | elevation | &quot;159.106&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Angola_International_Airport | location | Ícolo_e_Bengo</otriple>
+				<otriple>Ícolo_e_Bengo | country | Angola</otriple>
+				<otriple>Angola_International_Airport | runwayLength | &quot;4000.0&quot;^^xsd:double</otriple>
+				<otriple>Ícolo_e_Bengo | isPartOf | Luanda_Province</otriple>
+				<otriple>Angola_International_Airport | elevation | &quot;159.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Angola_International_Airport | location | Ícolo_e_Bengo</otriple>
+				<otriple>Ícolo_e_Bengo | country | Angola</otriple>
+				<otriple>Angola_International_Airport | runwayLength | &quot;4000.0&quot;^^xsd:double</otriple>
+				<otriple>Ícolo_e_Bengo | isPartOf | Luanda_Province</otriple>
+				<otriple>Angola_International_Airport | elevation | &quot;159.106&quot;^^xsd:double</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Angola_International_Airport | location | Ícolo_e_Bengo</mtriple>
 				<mtriple>Ícolo_e_Bengo | country | Angola</mtriple>
@@ -1203,73 +649,24 @@
 				<mtriple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Angola_International_Airport | location | Ícolo_e_Bengo</striple>
-					<striple>Ícolo_e_Bengo | isPartOf | Luanda_Province</striple>
-					<striple>Ícolo_e_Bengo | country | Angola</striple>
-					<striple>Angola_International_Airport | runwayLength | 4000.0</striple>
-					<striple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Angola_International_Airport" number="1" tag="AGENT-1" type="name">Angola International Airport</reference>
-					<reference entity="Ícolo_e_Bengo" number="2" tag="BRIDGE-1" type="name">Ícolo e Bengo</reference>
-					<reference entity="Luanda_Province" number="3" tag="PATIENT-3" type="name">Luanda</reference>
-					<reference entity="Angola" number="4" tag="PATIENT-1" type="name">Angola</reference>
-					<reference entity="4000.0" number="5" tag="PATIENT-2" type="name">4000ft</reference>
-					<reference entity="159" number="6" tag="PATIENT-4" type="name">159m</reference>
-				</references>
 				<text>Angola International Airport is located in Ícolo e Bengo, Luanda, Angola. The runway is 4000ft long and is 159m a.s.l.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , PATIENT-3 , PATIENT-1 . The runway is PATIENT-2 long and is PATIENT-4 a.s.l.</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Angola_International_Airport | location | Ícolo_e_Bengo</striple>
-					<striple>Ícolo_e_Bengo | isPartOf | Luanda_Province</striple>
-					<striple>Ícolo_e_Bengo | country | Angola</striple>
-					<striple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</striple>
-					<striple>Angola_International_Airport | runwayLength | 4000.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Angola_International_Airport" number="1" tag="AGENT-1" type="name">Angola International airport</reference>
-					<reference entity="Ícolo_e_Bengo" number="2" tag="BRIDGE-1" type="name">Icolo e Bengo</reference>
-					<reference entity="Luanda_Province" number="3" tag="PATIENT-3" type="name">Luanda Province</reference>
-					<reference entity="Angola" number="4" tag="PATIENT-1" type="name">Angola</reference>
-					<reference entity="Angola_International_Airport" number="5" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="159" number="6" tag="PATIENT-4" type="name">159</reference>
-					<reference entity="Angola_International_Airport" number="7" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="4000.0" number="8" tag="PATIENT-2" type="name">4000</reference>
-				</references>
 				<text>Angola International airport is located in Icolo e Bengo, which is a part of Luanda Province, located in Angola. The airport is 159 meters above sea level and its runway has a lenght of 4000.0.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , which is a part of PATIENT-3 , located in PATIENT-1 . AGENT-1 is PATIENT-4 meters above sea level and AGENT-1 runway has a lenght of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Angola_International_Airport | location | Ícolo_e_Bengo</striple>
-					<striple>Ícolo_e_Bengo | isPartOf | Luanda_Province</striple>
-					<striple>Ícolo_e_Bengo | country | Angola</striple>
-					<striple>Angola_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 159</striple>
-					<striple>Angola_International_Airport | runwayLength | 4000.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Angola_International_Airport" number="1" tag="AGENT-1" type="name">Angola International Airport</reference>
-					<reference entity="Ícolo_e_Bengo" number="2" tag="BRIDGE-1" type="name">Icolo e Bengo</reference>
-					<reference entity="Luanda_Province" number="3" tag="PATIENT-3" type="description">the Luanda Province</reference>
-					<reference entity="Angola" number="4" tag="PATIENT-1" type="name">Angola</reference>
-					<reference entity="Angola_International_Airport" number="5" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="159" number="6" tag="PATIENT-4" type="name">159</reference>
-					<reference entity="Angola_International_Airport" number="7" tag="AGENT-1" type="pronoun">it</reference>
-					<reference entity="4000.0" number="8" tag="PATIENT-2" type="name">4000</reference>
-				</references>
 				<text>Angola International Airport is located in Icolo e Bengo, which is located in the Luanda Province, Angola. The airport is situated 159 meters above sea level and it has a runway that measures a length of 4000.0.</text>
 				<template>AGENT-1 is located in BRIDGE-1 , which is located in PATIENT-3 , PATIENT-1 . AGENT-1 is situated PATIENT-4 meters above sea level and AGENT-1 has a runway that measures a length of PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Angola_International_Airport</entity>
 				<entity>BRIDGE-1 | Ícolo_e_Bengo</entity>
-				<entity>PATIENT-1 | Angola</entity>
-				<entity>PATIENT-2 | 4000.0</entity>
-				<entity>PATIENT-3 | Luanda_Province</entity>
 				<entity>PATIENT-4 | 159</entity>
+				<entity>AGENT-1 | Angola_International_Airport</entity>
+				<entity>PATIENT-1 | Angola</entity>
+				<entity>PATIENT-3 | Luanda_Province</entity>
+				<entity>PATIENT-2 | 4000.0</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id18" size="5">
@@ -1280,6 +677,13 @@
 				<otriple>Antwerp_International_Airport | elevation | &quot;11.8872&quot;^^xsd:double</otriple>
 				<otriple>Antwerp_International_Airport | runwayLength | &quot;600.0&quot;^^xsd:double</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Antwerp_International_Airport | owner | Flemish_Region</otriple>
+				<otriple>Antwerp_International_Airport | operator | &quot;Flemish department of Mobility and Public Works&quot;@en</otriple>
+				<otriple>Antwerp_International_Airport | city | Antwerp</otriple>
+				<otriple>Antwerp_International_Airport | elevation | &quot;12.0&quot;^^xsd:double</otriple>
+				<otriple>Antwerp_International_Airport | runwayLength | &quot;600.0&quot;^^xsd:double</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Antwerp_International_Airport | owner | Flemish_Region</mtriple>
 				<mtriple>Antwerp_International_Airport | operatingOrganisation | &quot;Flemish department of Mobility and Public Works&quot;</mtriple>
@@ -1288,78 +692,37 @@
 				<mtriple>Antwerp_International_Airport | runwayLength | 600.0</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Antwerp_International_Airport | operatingOrganisation | &quot;Flemish department of Mobility and Public Works&quot;</striple>
-					<striple>Antwerp_International_Airport | owner | Flemish_Region</striple>
-					<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
-					<striple>Antwerp_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 12.0</striple>
-					<striple>Antwerp_International_Airport | runwayLength | 600.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Flemish department of Mobility and Public Works&quot;" number="1" tag="PATIENT-2" type="description">The Flemish department of Mobility and Public Works</reference>
-					<reference entity="Antwerp_International_Airport" number="2" tag="AGENT-1" type="name">Antwerp International Airport</reference>
-					<reference entity="Flemish_Region" number="3" tag="PATIENT-1" type="description">the Flemish Region</reference>
-					<reference entity="Antwerp_International_Airport" number="4" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="Antwerp" number="5" tag="PATIENT-3" type="name">Antwerp</reference>
-					<reference entity="12.0" number="6" tag="PATIENT-4" type="name">12 .0</reference>
-					<reference entity="600.0" number="7" tag="PATIENT-5" type="name">600</reference>
-				</references>
 				<text>The Flemish department of Mobility and Public Works is the operating organisation of Antwerp International Airport which is owned by the Flemish Region. The airport serves the city of Antwerp, is 12.0 metres above sea level, and has a runway length of 600.0.</text>
 				<template>PATIENT-2 is the operating organisation of AGENT-1 which is owned by PATIENT-1 . AGENT-1 serves the city of PATIENT-3 , is PATIENT-4 metres above sea level , and has a runway length of PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Antwerp_International_Airport | owner | Flemish_Region</striple>
-					<striple>Antwerp_International_Airport | operatingOrganisation | &quot;Flemish department of Mobility and Public Works&quot;</striple>
-					<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
-					<striple>Antwerp_International_Airport | runwayLength | 600.0</striple>
-					<striple>Antwerp_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 12.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Flemish_Region" number="1" tag="PATIENT-1" type="description">The Flemish Region</reference>
-					<reference entity="Antwerp_International_Airport" number="2" tag="AGENT-1" type="name">Antwerp International Airport</reference>
-					<reference entity="&quot;Flemish department of Mobility and Public Works&quot;" number="3" tag="PATIENT-2" type="description">the Flemish Department of Mobility and Public Works</reference>
-					<reference entity="Antwerp" number="4" tag="PATIENT-3" type="name">Antwerp</reference>
-					<reference entity="600.0" number="5" tag="PATIENT-5" type="name">600 .0</reference>
-					<reference entity="Antwerp_International_Airport" number="6" tag="AGENT-1" type="description">the airport</reference>
-					<reference entity="12.0" number="7" tag="PATIENT-4" type="name">12 metres</reference>
-				</references>
 				<text>The Flemish Region owns Antwerp International Airport which is operated by the Flemish Department of Mobility and Public Works and serves the city of Antwerp. The runway length is 600.0 and the airport is 12 metres above sea level.</text>
 				<template>PATIENT-1 owns AGENT-1 which is operated by PATIENT-2 and serves the city of PATIENT-3 . The runway length is PATIENT-5 and AGENT-1 is PATIENT-4 above sea level .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Antwerp_International_Airport | owner | Flemish_Region</striple>
-					<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
-					<striple>Antwerp_International_Airport | runwayLength | 600.0</striple>
-					<striple>Antwerp_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 12.0</striple>
-					<striple>Antwerp_International_Airport | operatingOrganisation | &quot;Flemish department of Mobility and Public Works&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International Airport</reference>
-					<reference entity="Flemish_Region" number="2" tag="PATIENT-1" type="description">the Flemish Region</reference>
-					<reference entity="Antwerp" number="3" tag="PATIENT-3" type="name">Antwerp</reference>
-					<reference entity="Antwerp_International_Airport" number="4" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="600.0" number="5" tag="PATIENT-5" type="name">600 .0 </reference>
-					<reference entity="12.0" number="6" tag="PATIENT-4" type="name">12 .0</reference>
-					<reference entity="&quot;Flemish department of Mobility and Public Works&quot;" number="7" tag="PATIENT-2" type="description">the Flemish department of Mobility and Public Works</reference>
-				</references>
 				<text>Antwerp International Airport is owned by the Flemish Region and located in the city of Antwerp. The airport has a runway length of 600.0 , elevation of 12.0 metres above sea level and the Flemish department of Mobility and Public Works is the operating organisation.</text>
 				<template>AGENT-1 is owned by PATIENT-1 and located in the city of PATIENT-3 . AGENT-1 has a runway length of PATIENT-5 , elevation of PATIENT-4 metres above sea level and PATIENT-2 is the operating organisation .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | 600.0</entity>
+				<entity>PATIENT-4 | 12.0</entity>
 				<entity>AGENT-1 | Antwerp_International_Airport</entity>
 				<entity>PATIENT-1 | Flemish_Region</entity>
-				<entity>PATIENT-2 | &quot;Flemish department of Mobility and Public Works&quot;</entity>
 				<entity>PATIENT-3 | Antwerp</entity>
-				<entity>PATIENT-4 | 12.0</entity>
-				<entity>PATIENT-5 | 600.0</entity>
+				<entity>PATIENT-2 | &quot;Flemish department of Mobility and Public Works&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id19" size="5">
 			<originaltripleset>
 				<otriple>Appleton_International_Airport | location | Greenville,_Wisconsin</otriple>
 				<otriple>Appleton_International_Airport | runwayLength | &quot;2439.0&quot;^^xsd:double</otriple>
+				<otriple>Appleton_International_Airport | city | Appleton,_Wisconsin</otriple>
+				<otriple>Appleton_International_Airport | elevation | &quot;279.806&quot;^^xsd:double</otriple>
+				<otriple>Appleton_International_Airport | runwayDesignation | &quot;3/21&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Appleton_International_Airport | location | Greenville,_Wisconsin</otriple>
+				<otriple>Appleton_International_Airport | runwayLength | &quot;2439.01&quot;^^xsd:double</otriple>
 				<otriple>Appleton_International_Airport | city | Appleton,_Wisconsin</otriple>
 				<otriple>Appleton_International_Airport | elevation | &quot;279.806&quot;^^xsd:double</otriple>
 				<otriple>Appleton_International_Airport | runwayDesignation | &quot;3/21&quot;</otriple>
@@ -1372,72 +735,24 @@
 				<mtriple>Appleton_International_Airport | runwayName | &quot;3/21&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</striple>
-					<striple>Appleton_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 280</striple>
-					<striple>Appleton_International_Airport | location | Greenville,_Wisconsin</striple>
-					<striple>Appleton_International_Airport | runwayName | &quot;3/21&quot;</striple>
-					<striple>Appleton_International_Airport | runwayLength | 2439.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Appleton,_Wisconsin" number="1" tag="PATIENT-3" type="name">Appleton</reference>
-					<reference entity="Appleton_International_Airport" number="2" tag="AGENT-1" type="name">Appleton International Airport</reference>
-					<reference entity="280" number="3" tag="PATIENT-4" type="name">280</reference>
-					<reference entity="Greenville,_Wisconsin" number="4" tag="PATIENT-1" type="name">Greenville , Wisconsin</reference>
-					<reference entity="Appleton_International_Airport" number="5" tag="AGENT-1" type="description">the airport</reference>
-					<reference entity="&quot;3/21&quot;" number="6" tag="PATIENT-5" type="name">3/21</reference>
-					<reference entity="2439.0" number="7" tag="PATIENT-2" type="name">2439</reference>
-				</references>
 				<text>The city of Appleton is served by Appleton International Airport located 280 metres above sea level in Greenville, Wisconsin. The runway at the airport is 3/21 and is 2439 in length.</text>
 				<template>The city of PATIENT-3 is served by AGENT-1 located PATIENT-4 metres above sea level in PATIENT-1 . The runway at AGENT-1 is PATIENT-5 and is PATIENT-2 in length .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Appleton_International_Airport | location | Greenville,_Wisconsin</striple>
-					<striple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</striple>
-					<striple>Appleton_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 280</striple>
-					<striple>Appleton_International_Airport | runwayLength | 2439.0</striple>
-					<striple>Appleton_International_Airport | runwayName | &quot;3/21&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Appleton_International_Airport" number="1" tag="AGENT-1" type="name">Appleton International Airport</reference>
-					<reference entity="Greenville,_Wisconsin" number="2" tag="PATIENT-1" type="name">Greenville , Wisconsin</reference>
-					<reference entity="Appleton,_Wisconsin" number="3" tag="PATIENT-3" type="name">Appleton .It</reference>
-					<reference entity="280" number="4" tag="PATIENT-4" type="name">280</reference>
-					<reference entity="2439.0" number="5" tag="PATIENT-2" type="description">a 2 ,439</reference>
-					<reference entity="&quot;3/21&quot;" number="6" tag="PATIENT-5" type="name">3/21</reference>
-				</references>
 				<text>Appleton International Airport can be found in Greenville, Wisconsin and serves the city of Appleton.It is situated 280 meters above sea level and has a 2,439 kilometers long runway called 3/21.</text>
 				<template>AGENT-1 can be found in PATIENT-1 and serves the city of PATIENT-3 is situated PATIENT-4 meters above sea level and has PATIENT-2 kilometers long runway called PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</striple>
-					<striple>Appleton_International_Airport | location | Greenville,_Wisconsin</striple>
-					<striple>Appleton_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 280</striple>
-					<striple>Appleton_International_Airport | runwayName | &quot;3/21&quot;</striple>
-					<striple>Appleton_International_Airport | runwayLength | 2439.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Appleton_International_Airport" number="1" tag="AGENT-1" type="name">Appleton International Airport</reference>
-					<reference entity="Appleton,_Wisconsin" number="2" tag="PATIENT-3" type="name">Appleton</reference>
-					<reference entity="Greenville,_Wisconsin" number="3" tag="PATIENT-1" type="name">Greenville , Wisconsin</reference>
-					<reference entity="Appleton_International_Airport" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="280" number="5" tag="PATIENT-4" type="name">2801</reference>
-					<reference entity="Appleton_International_Airport" number="6" tag="AGENT-1" type="description">The airport 's</reference>
-					<reference entity="&quot;3/21&quot;" number="7" tag="PATIENT-5" type="name">3/21</reference>
-					<reference entity="2439.0" number="8" tag="PATIENT-2" type="name">2439</reference>
-				</references>
 				<text>Appleton International Airport, which serves the city of Appleton is located in Greenville, Wisconsin. It is elevated 2801 meters above sea level. The airport's runway, which is named 3/21 measures a lenght of 2439 units.</text>
 				<template>AGENT-1 , which serves the city of PATIENT-3 is located in PATIENT-1 . AGENT-1 is elevated PATIENT-4 meters above sea level . AGENT-1 runway , which is named PATIENT-5 measures a lenght of PATIENT-2 units .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;3/21&quot;</entity>
+				<entity>PATIENT-4 | 280</entity>
 				<entity>AGENT-1 | Appleton_International_Airport</entity>
 				<entity>PATIENT-1 | Greenville,_Wisconsin</entity>
-				<entity>PATIENT-2 | 2439.0</entity>
 				<entity>PATIENT-3 | Appleton,_Wisconsin</entity>
-				<entity>PATIENT-4 | 280</entity>
-				<entity>PATIENT-5 | &quot;3/21&quot;</entity>
+				<entity>PATIENT-2 | 2439.0</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id20" size="5">
@@ -1456,53 +771,32 @@
 				<mtriple>Greenville,_Wisconsin | isPartOf | Clayton,_Winnebago_County,_Wisconsin</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</striple>
-					<striple>Appleton_International_Airport | location | Greenville,_Wisconsin</striple>
-					<striple>Greenville,_Wisconsin | isPartOf | Menasha_(town),_Wisconsin</striple>
-					<striple>Greenville,_Wisconsin | isPartOf | Clayton,_Winnebago_County,_Wisconsin</striple>
-					<striple>Greenville,_Wisconsin | country | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Appleton,_Wisconsin" number="1" tag="PATIENT-3" type="name">Appleton</reference>
-					<reference entity="Appleton_International_Airport" number="2" tag="AGENT-1" type="name">Appleton International Airport</reference>
-					<reference entity="Menasha_(town),_Wisconsin" number="4" tag="PATIENT-1" type="name">Menasha</reference>
-					<reference entity="Clayton,_Winnebago_County,_Wisconsin" number="5" tag="PATIENT-4" type="name">Clayton Winnebago County</reference>
-					<reference entity="United_States" number="6" tag="PATIENT-2" type="name">Wisconsin , United States</reference>
-				</references>
 				<text>The city of Appleton is served by Appleton International Airport in Greenville (part of Menasha), Clayton Winnebago County, Wisconsin, United States.</text>
 				<template>The city of PATIENT-3 is served by AGENT-1 in BRIDGE-1 ( part of PATIENT-1 ) , PATIENT-4 , PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Appleton_International_Airport | cityServed | Appleton,_Wisconsin</striple>
-					<striple>Appleton_International_Airport | location | Greenville,_Wisconsin</striple>
-					<striple>Greenville,_Wisconsin | isPartOf | Menasha_(town),_Wisconsin</striple>
-					<striple>Greenville,_Wisconsin | isPartOf | Clayton,_Winnebago_County,_Wisconsin</striple>
-					<striple>Greenville,_Wisconsin | country | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Appleton,_Wisconsin" number="1" tag="PATIENT-3" type="name">Appleton , Wisconsin</reference>
-					<reference entity="Appleton_International_Airport" number="2" tag="AGENT-1" type="name">Appleton International Airport</reference>
-					<reference entity="Menasha_(town),_Wisconsin" number="4" tag="PATIENT-1" type="name">Menasha town</reference>
-					<reference entity="Clayton,_Winnebago_County,_Wisconsin" number="5" tag="PATIENT-4" type="name">Clayton Winnebago County</reference>
-					<reference entity="United_States" number="6" tag="PATIENT-2" type="name">Wisconsin , USA</reference>
-				</references>
 				<text>Appleton, Wisconsin is served by Appleton International Airport which is located in Greenville (part of Menasha town), Clayton Winnebago County, Wisconsin, USA.</text>
 				<template>PATIENT-3 is served by AGENT-1 which is located in BRIDGE-1 ( part of PATIENT-1 ) , PATIENT-4 , PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Appleton_International_Airport</entity>
 				<entity>BRIDGE-1 | Greenville,_Wisconsin</entity>
-				<entity>PATIENT-1 | Menasha_(town),_Wisconsin</entity>
-				<entity>PATIENT-2 | United_States</entity>
-				<entity>PATIENT-3 | Appleton,_Wisconsin</entity>
 				<entity>PATIENT-4 | Clayton,_Winnebago_County,_Wisconsin</entity>
+				<entity>AGENT-1 | Appleton_International_Airport</entity>
+				<entity>PATIENT-1 | Menasha_(town),_Wisconsin</entity>
+				<entity>PATIENT-3 | Appleton,_Wisconsin</entity>
+				<entity>PATIENT-2 | United_States</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id21" size="5">
 			<originaltripleset>
 				<otriple>Ardmore_Airport_(New_Zealand) | runwayLength | &quot;1411.22&quot;^^xsd:double</otriple>
+				<otriple>Ardmore_Airport_(New_Zealand) | r3Surface | Poaceae</otriple>
+				<otriple>Ardmore_Airport_(New_Zealand) | operator | Civil_Aviation_Authority_of_New_Zealand</otriple>
+				<otriple>Ardmore_Airport_(New_Zealand) | elevation | &quot;33.8328&quot;^^xsd:double</otriple>
+				<otriple>Ardmore_Airport_(New_Zealand) | runwayDesignation | &quot;03R/21L&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Ardmore_Airport_(New_Zealand) | runwayLength | &quot;1411.0&quot;^^xsd:double</otriple>
 				<otriple>Ardmore_Airport_(New_Zealand) | r3Surface | Poaceae</otriple>
 				<otriple>Ardmore_Airport_(New_Zealand) | operator | Civil_Aviation_Authority_of_New_Zealand</otriple>
 				<otriple>Ardmore_Airport_(New_Zealand) | elevation | &quot;33.8328&quot;^^xsd:double</otriple>
@@ -1516,74 +810,24 @@
 				<mtriple>Ardmore_Airport_(New_Zealand) | runwayName | &quot;03R/21L&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Ardmore_Airport_(New_Zealand) | operatingOrganisation | Civil_Aviation_Authority_of_New_Zealand</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | elevationAboveTheSeaLevel_(in_metres) | 34.0</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | runwayName | &quot;03R/21L&quot;</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | runwayLength | 1411.0</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ardmore_Airport_(New_Zealand)" number="1" tag="AGENT-1" type="name">Ardmore Airport in New Zealand</reference>
-					<reference entity="Civil_Aviation_Authority_of_New_Zealand" number="2" tag="PATIENT-3" type="description">the Civil Aviation Authority</reference>
-					<reference entity="34.0" number="3" tag="PATIENT-4" type="name">34</reference>
-					<reference entity="Ardmore_Airport_(New_Zealand)" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;03R/21L&quot;" number="5" tag="PATIENT-5" type="name">03R/21L</reference>
-					<reference entity="1411.0" number="6" tag="PATIENT-1" type="name">1 ,411</reference>
-					<reference entity="Ardmore_Airport_(New_Zealand)" number="7" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="Poaceae" number="8" tag="PATIENT-2" type="description">a poaceae surface</reference>
-				</references>
 				<text>Ardmore Airport in New Zealand is operated by the Civil Aviation Authority and is 34 metres above sea level. It has a runway named 03R/21L which is 1,411 long and its third runway has a poaceae surface.</text>
 				<template>AGENT-1 is operated by PATIENT-3 and is PATIENT-4 metres above sea level . AGENT-1 has a runway named PATIENT-5 which is PATIENT-1 long and AGENT-1 third runway has PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Ardmore_Airport_(New_Zealand) | operatingOrganisation | Civil_Aviation_Authority_of_New_Zealand</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | runwayName | &quot;03R/21L&quot;</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | runwayLength | 1411.0</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | elevationAboveTheSeaLevel_(in_metres) | 34.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ardmore_Airport_(New_Zealand)" number="1" tag="AGENT-1" type="name">Ardmore Airport  (New Zealand )</reference>
-					<reference entity="Civil_Aviation_Authority_of_New_Zealand" number="2" tag="PATIENT-3" type="description">the Civil Aviation Authority of New Zealand</reference>
-					<reference entity="Ardmore_Airport_(New_Zealand)" number="3" tag="AGENT-1" type="pronoun">Its</reference>
-					<reference entity="Poaceae" number="4" tag="PATIENT-2" type="name">Poaceae</reference>
-					<reference entity="Ardmore_Airport_(New_Zealand)" number="5" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;03R/21L&quot;" number="6" tag="PATIENT-5" type="name">03R/21L</reference>
-					<reference entity="&quot;03R/21L&quot;" number="7" tag="PATIENT-5" type="pronoun">It</reference>
-					<reference entity="1411.0" number="8" tag="PATIENT-1" type="name">1411</reference>
-					<reference entity="Ardmore_Airport_(New_Zealand)" number="9" tag="AGENT-1" type="description">the airport</reference>
-					<reference entity="34.0" number="10" tag="PATIENT-4" type="name">34 m</reference>
-				</references>
 				<text>Ardmore Airport (New Zealand) is operated by the Civil Aviation Authority of New Zealand. Its 3rd runway is made of Poaceae and its name is 03R/21L. It is 1411 m long and the airport is 34 m above sea level.</text>
 				<template>AGENT-1 is operated by PATIENT-3 . AGENT-1 3rd runway is made of PATIENT-2 and AGENT-1 name is PATIENT-5 . PATIENT-5 is PATIENT-1 m long and AGENT-1 is PATIENT-4 above sea level .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Ardmore_Airport_(New_Zealand) | operatingOrganisation | Civil_Aviation_Authority_of_New_Zealand</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | elevationAboveTheSeaLevel_(in_metres) | 34.0</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | 3rd_runway_SurfaceType | Poaceae</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | runwayLength | 1411.0</striple>
-					<striple>Ardmore_Airport_(New_Zealand) | runwayName | &quot;03R/21L&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Civil_Aviation_Authority_of_New_Zealand" number="1" tag="PATIENT-3" type="description">The Civil Aviation Authority of New Zealand</reference>
-					<reference entity="Ardmore_Airport_(New_Zealand)" number="2" tag="AGENT-1" type="name">Ardmore Airport , New Zealand</reference>
-					<reference entity="34.0" number="3" tag="PATIENT-4" type="name">34 meters</reference>
-					<reference entity="Poaceae" number="4" tag="PATIENT-2" type="name">Poaceae</reference>
-					<reference entity="1411.0" number="5" tag="PATIENT-1" type="description">a 1 ,411</reference>
-				</references>
 				<text>The Civil Aviation Authority of New Zealand is the operating organisation for Ardmore Airport, New Zealand and is situated 34 meters above sea level.The airport's 3rd runway is surfaced with Poaceae and has a 1,411 meter long runway called &quot;03R/21L&quot;.</text>
 				<template>PATIENT-3 is the operating organisation for AGENT-1 and is situated PATIENT-4 above sea level.AGENT-1 3rd runway is surfaced with PATIENT-2 and has PATIENT-1 meter long runway called `` PATIENT-5 '' .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;03R/21L&quot;</entity>
+				<entity>PATIENT-4 | 34.0</entity>
 				<entity>AGENT-1 | Ardmore_Airport_(New_Zealand)</entity>
 				<entity>PATIENT-1 | 1411.0</entity>
-				<entity>PATIENT-2 | Poaceae</entity>
 				<entity>PATIENT-3 | Civil_Aviation_Authority_of_New_Zealand</entity>
-				<entity>PATIENT-4 | 34.0</entity>
-				<entity>PATIENT-5 | &quot;03R/21L&quot;</entity>
+				<entity>PATIENT-2 | Poaceae</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id22" size="5">
@@ -1594,6 +838,13 @@
 				<otriple>Ashgabat_International_Airport | elevation | &quot;210.922&quot;^^xsd:double</otriple>
 				<otriple>Ashgabat_International_Airport | runwayDesignation | &quot;12R/30L&quot;</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Ashgabat_International_Airport | operator | Turkmenistan_Airlines</otriple>
+				<otriple>Ashgabat_International_Airport | location | Ashgabat</otriple>
+				<otriple>Ashgabat_International_Airport | runwayLength | &quot;2989.0&quot;^^xsd:double</otriple>
+				<otriple>Ashgabat_International_Airport | elevation | &quot;211.0&quot;^^xsd:double</otriple>
+				<otriple>Ashgabat_International_Airport | runwayDesignation | &quot;12R/30L&quot;</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Ashgabat_International_Airport | operatingOrganisation | Turkmenistan_Airlines</mtriple>
 				<mtriple>Ashgabat_International_Airport | location | Ashgabat</mtriple>
@@ -1602,68 +853,65 @@
 				<mtriple>Ashgabat_International_Airport | runwayName | &quot;12R/30L&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Ashgabat_International_Airport | operatingOrganisation | Turkmenistan_Airlines</striple>
-					<striple>Ashgabat_International_Airport | location | Ashgabat</striple>
-					<striple>Ashgabat_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 211</striple>
-					<striple>Ashgabat_International_Airport | runwayLength | 2989.0</striple>
-					<striple>Ashgabat_International_Airport | runwayName | &quot;12R/30L&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Turkmenistan_Airlines" number="1" tag="PATIENT-1" type="name">Turkmenistan Airlines</reference>
-					<reference entity="Ashgabat_International_Airport" number="2" tag="AGENT-1" type="name">Ashgabat International Airport</reference>
-					<reference entity="Ashgabat" number="3" tag="PATIENT-2" type="name">Ashgabat</reference>
-					<reference entity="Ashgabat_International_Airport" number="4" tag="AGENT-1" type="description">The airport</reference>
-					<reference entity="211" number="5" tag="PATIENT-4" type="name">211</reference>
-					<reference entity="2989.0" number="6" tag="PATIENT-3" type="name">2989 .0</reference>
-					<reference entity="&quot;12R/30L&quot;" number="7" tag="PATIENT-5" type="name">12R/30L</reference>
-				</references>
 				<text>Turkmenistan Airlines operates Ashgabat International Airport in Ashgabat. The airport is 211 metres above sea level, has the runway length of 2989.0 and 12R/30L is the runway name.</text>
 				<template>PATIENT-1 operates AGENT-1 in PATIENT-2 . AGENT-1 is PATIENT-4 metres above sea level , has the runway length of PATIENT-3 and PATIENT-5 is the runway name .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Ashgabat_International_Airport | operatingOrganisation | Turkmenistan_Airlines</striple>
-					<striple>Ashgabat_International_Airport | runwayLength | 2989.0</striple>
-					<striple>Ashgabat_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 211</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ashgabat_International_Airport" number="1" tag="AGENT-1" type="name">Ashgabat International Airport</reference>
-					<reference entity="Turkmenistan_Airlines" number="2" tag="PATIENT-1" type="name">Turkmenistan Airlines</reference>
-					<reference entity="211" number="4" tag="PATIENT-4" type="name">211m</reference>
-				</references>
 				<text>Ashgabat International Airport is operated by Turkmenistan Airlines. The runway 12R/30L is 2989m long and is 211m a.s.l.</text>
 				<template>AGENT-1 is operated by PATIENT-1 . The runway is PATIENT-3 long and is PATIENT-4 a.s.l.</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Ashgabat_International_Airport | location | Ashgabat</striple>
-					<striple>Ashgabat_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 211</striple>
-					<striple>Ashgabat_International_Airport | runwayLength | 2989.0</striple>
-					<striple>Ashgabat_International_Airport | runwayName | &quot;12R/30L&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ashgabat_International_Airport" number="1" tag="AGENT-1" type="name">Ashgabat International Airport</reference>
-					<reference entity="Ashgabat" number="2" tag="PATIENT-2" type="name">Ashgabat</reference>
-					<reference entity="2989.0" number="5" tag="PATIENT-3" type="name">2989</reference>
-					<reference entity="&quot;12R/30L&quot;" number="7" tag="PATIENT-5" type="name">12R/30L</reference>
-				</references>
 				<text>Ashgabat International Airport is located in Ashgabat and is operated byTurkmenistan Airlines. It is 211 metres above sea level and has a runway length of 2989.0. It has a runway named 12R/30L.</text>
 				<template>AGENT-1 is located in PATIENT-2 and is operated byPATIENT-1 . AGENT-1 is PATIENT-4 metres above sea level and has a runway length of PATIENT-3 . AGENT-1 has a runway named PATIENT-5 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;12R/30L&quot;</entity>
+				<entity>PATIENT-4 | 211</entity>
 				<entity>AGENT-1 | Ashgabat_International_Airport</entity>
 				<entity>PATIENT-1 | Turkmenistan_Airlines</entity>
-				<entity>PATIENT-2 | Ashgabat</entity>
 				<entity>PATIENT-3 | 2989.0</entity>
-				<entity>PATIENT-4 | 211</entity>
-				<entity>PATIENT-5 | &quot;12R/30L&quot;</entity>
+				<entity>PATIENT-2 | Ashgabat</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id23" size="5">
 			<originaltripleset>
 				<otriple>Atlantic_City_International_Airport | runwayLength | &quot;1872.69&quot;^^xsd:double</otriple>
 				<otriple>Atlantic_City_International_Airport | elevation | &quot;23.0&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | operator | Port_Authority_of_New_York_and_New_Jersey</otriple>
+				<otriple>Atlantic_City_International_Airport | icaoLocationIdentifier | &quot;KACY&quot;</otriple>
+				<otriple>Atlantic_City_International_Airport | runwayDesignation | &quot;4/22&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | runwayLength | &quot;1872.69&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | operator | &quot;Port Authority of New York and New Jersey &amp; SJTA&quot;@en</otriple>
+				<otriple>Atlantic_City_International_Airport | elevation | &quot;23.0&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | icaoLocationIdentifier | &quot;KACY&quot;</otriple>
+				<otriple>Atlantic_City_International_Airport | runwayDesignation | &quot;4/22&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | runwayLength | &quot;1872.69&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | operator | &quot;Port Authority of New York and New Jersey &amp; SJTA&quot;@en</otriple>
+				<otriple>Atlantic_City_International_Airport | elevation | &quot;22.86&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | icaoLocationIdentifier | &quot;KACY&quot;</otriple>
+				<otriple>Atlantic_City_International_Airport | runwayDesignation | &quot;4/22&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | runwayLength | &quot;1873.0&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | elevation | &quot;22.86&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | operator | Port_Authority_of_New_York_and_New_Jersey</otriple>
+				<otriple>Atlantic_City_International_Airport | icaoLocationIdentifier | &quot;KACY&quot;</otriple>
+				<otriple>Atlantic_City_International_Airport | runwayDesignation | &quot;4/22&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | runwayLength | &quot;1873.0&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | operator | &quot;Port Authority of New York and New Jersey &amp; SJTA&quot;@en</otriple>
+				<otriple>Atlantic_City_International_Airport | elevation | &quot;22.86&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | icaoLocationIdentifier | &quot;KACY&quot;</otriple>
+				<otriple>Atlantic_City_International_Airport | runwayDesignation | &quot;4/22&quot;</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Atlantic_City_International_Airport | runwayLength | &quot;1872.69&quot;^^xsd:double</otriple>
+				<otriple>Atlantic_City_International_Airport | elevation | &quot;22.86&quot;^^xsd:double</otriple>
 				<otriple>Atlantic_City_International_Airport | operator | Port_Authority_of_New_York_and_New_Jersey</otriple>
 				<otriple>Atlantic_City_International_Airport | icaoLocationIdentifier | &quot;KACY&quot;</otriple>
 				<otriple>Atlantic_City_International_Airport | runwayDesignation | &quot;4/22&quot;</otriple>
@@ -1676,74 +924,24 @@
 				<mtriple>Atlantic_City_International_Airport | runwayName | &quot;4/22&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Atlantic_City_International_Airport | runwayLength | 1873.0</striple>
-					<striple>Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey</striple>
-					<striple>Atlantic_City_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 23.0</striple>
-					<striple>Atlantic_City_International_Airport | runwayName | &quot;4/22&quot;</striple>
-					<striple>Atlantic_City_International_Airport | ICAO_Location_Identifier | &quot;KACY&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Atlantic_City_International_Airport" number="1" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
-					<reference entity="1873.0" number="2" tag="PATIENT-1" type="name">1 ,873</reference>
-					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="3" tag="PATIENT-2" type="description">the Port Authority of New York and New Jersey</reference>
-					<reference entity="Atlantic_City_International_Airport" number="4" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="23.0" number="5" tag="PATIENT-3" type="name">23 metres</reference>
-					<reference entity="&quot;4/22&quot;" number="6" tag="PATIENT-5" type="name">4/22</reference>
-					<reference entity="&quot;KACY&quot;" number="7" tag="PATIENT-4" type="description">the ICAO location identifier KACY</reference>
-				</references>
 				<text>Atlantic City International Airport has a runway length of 1,873 and is operated by the Port Authority of New York and New Jersey. It is situated 23 metres above sea level, has the runway name of 4/22 and is known by the ICAO location identifier KACY.</text>
 				<template>AGENT-1 has a runway length of PATIENT-1 and is operated by PATIENT-2 . AGENT-1 is situated PATIENT-3 above sea level , has the runway name of PATIENT-5 and is known by PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Atlantic_City_International_Airport | runwayName | &quot;4/22&quot;</striple>
-					<striple>Atlantic_City_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 23.0</striple>
-					<striple>Atlantic_City_International_Airport | runwayLength | 1873.0</striple>
-					<striple>Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey</striple>
-					<striple>Atlantic_City_International_Airport | ICAO_Location_Identifier | &quot;KACY&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;4/22&quot;" number="1" tag="PATIENT-5" type="name">4/22</reference>
-					<reference entity="Atlantic_City_International_Airport" number="2" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
-					<reference entity="Atlantic_City_International_Airport" number="4" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="1873.0" number="5" tag="PATIENT-1" type="name">1873</reference>
-					<reference entity="Atlantic_City_International_Airport" number="6" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="7" tag="PATIENT-2" type="name">Port Authority of New York and New Jersey</reference>
-					<reference entity="&quot;KACY&quot;" number="8" tag="PATIENT-4" type="name">KACY</reference>
-				</references>
 				<text>Runway 4/22 at Atlantic City International Airport has an elevation of 23m above sea level and its length is 1873. It is operated by Port Authority of New York and New Jersey under the location Identifier of KACY.</text>
 				<template>Runway PATIENT-5 at AGENT-1 has an elevation of PATIENT-3 m above sea level and AGENT-1 length is PATIENT-1 . AGENT-1 is operated by PATIENT-2 under the location Identifier of PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Atlantic_City_International_Airport | operatingOrganisation | Port_Authority_of_New_York_and_New_Jersey</striple>
-					<striple>Atlantic_City_International_Airport | elevationAboveTheSeaLevel_(in_metres) | 23.0</striple>
-					<striple>Atlantic_City_International_Airport | ICAO_Location_Identifier | &quot;KACY&quot;</striple>
-					<striple>Atlantic_City_International_Airport | runwayName | &quot;4/22&quot;</striple>
-					<striple>Atlantic_City_International_Airport | runwayLength | 1873.0</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Port_Authority_of_New_York_and_New_Jersey" number="1" tag="PATIENT-2" type="description">The Port Authority of New York and New Jersey</reference>
-					<reference entity="Atlantic_City_International_Airport" number="2" tag="AGENT-1" type="name">Atlantic City International airport</reference>
-					<reference entity="23.0" number="3" tag="PATIENT-3" type="name">23 .0</reference>
-					<reference entity="Atlantic_City_International_Airport" number="4" tag="AGENT-1" type="description">The airport 's</reference>
-					<reference entity="&quot;KACY&quot;" number="5" tag="PATIENT-4" type="name">KACY</reference>
-					<reference entity="&quot;4/22&quot;" number="6" tag="PATIENT-5" type="description">The 4/22</reference>
-					<reference entity="Atlantic_City_International_Airport" number="7" tag="AGENT-1" type="name">Atlantic City International Airport</reference>
-					<reference entity="&quot;4/22&quot;" number="8" tag="PATIENT-5" type="pronoun">it</reference>
-					<reference entity="1873.0" number="9" tag="PATIENT-1" type="name">1873</reference>
-				</references>
 				<text>The Port Authority of New York and New Jersey is the operating organisation of Atlantic City International airport, which lies 23.0 meters above sea level. The airport's ICAO Location Identifier is KACY. The 4/22 is the name of the runway in Atlantic City International Airport and it measures 1873.</text>
 				<template>PATIENT-2 is the operating organisation of AGENT-1 , which lies PATIENT-3 meters above sea level . AGENT-1 ICAO Location Identifier is PATIENT-4 . PATIENT-5 is the name of the runway in AGENT-1 and PATIENT-5 measures PATIENT-1 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;4/22&quot;</entity>
+				<entity>PATIENT-4 | &quot;KACY&quot;</entity>
 				<entity>AGENT-1 | Atlantic_City_International_Airport</entity>
 				<entity>PATIENT-1 | 1873.0</entity>
-				<entity>PATIENT-2 | Port_Authority_of_New_York_and_New_Jersey</entity>
 				<entity>PATIENT-3 | 23.0</entity>
-				<entity>PATIENT-4 | &quot;KACY&quot;</entity>
-				<entity>PATIENT-5 | &quot;4/22&quot;</entity>
+				<entity>PATIENT-2 | Port_Authority_of_New_York_and_New_Jersey</entity>
 			</entitymap>
 		</entry>
 		<entry category="Airport" eid="Id24" size="5">
@@ -1762,67 +960,14 @@
 				<mtriple>Flemish_Government | jurisdiction | Flemish_Region</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Flemish_Region | leaderName | Flemish_Government</striple>
-					<striple>Flemish_Region | country | Belgium</striple>
-					<striple>Belgium | leaderName | Charles_Michel</striple>
-					<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Flemish_Government" number="1" tag="BRIDGE-2" type="description">The Flemish Government</reference>
-					<reference entity="Flemish_Region" number="2" tag="BRIDGE-3" type="description">the Flemish Region</reference>
-					<reference entity="Belgium" number="3" tag="BRIDGE-1" type="name">Belgium</reference>
-					<reference entity="Belgium" number="4" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="Charles_Michel" number="5" tag="PATIENT-1" type="name">Charles Michel</reference>
-					<reference entity="Antwerp" number="6" tag="PATIENT-2" type="name">Antwerp</reference>
-					<reference entity="Antwerp_International_Airport" number="7" tag="AGENT-1" type="name">Antwerp International Airport</reference>
-				</references>
 				<text>The Flemish Government have jurisdiction over the Flemish Region of Belgium. The leader of the country is Charles Michel and the city of Antwerp is served by Antwerp International Airport.</text>
 				<template>BRIDGE-2 have jurisdiction over BRIDGE-3 of BRIDGE-1 . The leader of BRIDGE-1 is PATIENT-1 and the city of PATIENT-2 is served by AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
-					<striple>Belgium | leaderName | Charles_Michel</striple>
-					<striple>Flemish_Region | country | Belgium</striple>
-					<striple>Flemish_Region | leaderName | Flemish_Government</striple>
-					<striple>Flemish_Government | jurisdiction | Flemish_Region</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International Airport</reference>
-					<reference entity="Antwerp" number="2" tag="PATIENT-2" type="name">Antwerp</reference>
-					<reference entity="Belgium" number="3" tag="BRIDGE-1" type="name">Belgium</reference>
-					<reference entity="Belgium" number="4" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="Charles_Michel" number="5" tag="PATIENT-1" type="name">Charles Michel</reference>
-					<reference entity="Flemish_Region" number="6" tag="BRIDGE-3" type="description">The Flemish Region</reference>
-					<reference entity="Belgium" number="7" tag="BRIDGE-1" type="name">Belgium</reference>
-					<reference entity="Flemish_Region" number="8" tag="BRIDGE-3" type="pronoun">it</reference>
-					<reference entity="Flemish_Government" number="9" tag="BRIDGE-2" type="description">the Flemish Government</reference>
-					<reference entity="Flemish_Region" number="10" tag="BRIDGE-3" type="pronoun">it</reference>
-				</references>
 				<text>Antwerp International Airport serves the city of Antwerp in Belgium, the country where the leader is Charles Michel. The Flemish Region can be found in Belgium and it is led by the Flemish Government who has jurisdiction over it.</text>
 				<template>AGENT-1 serves the city of PATIENT-2 in BRIDGE-1 , BRIDGE-1 where the leader is PATIENT-1 . BRIDGE-3 can be found in BRIDGE-1 and BRIDGE-3 is led by BRIDGE-2 who has jurisdiction over BRIDGE-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Antwerp_International_Airport | cityServed | Antwerp</striple>
-					<striple>Flemish_Region | country | Belgium</striple>
-					<striple>Flemish_Region | leaderName | Flemish_Government</striple>
-					<striple>Flemish_Government | jurisdiction | Flemish_Region</striple>
-					<striple>Belgium | leaderName | Charles_Michel</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Antwerp_International_Airport" number="1" tag="AGENT-1" type="name">Antwerp International Airport</reference>
-					<reference entity="Antwerp" number="2" tag="PATIENT-2" type="name">Antwerp</reference>
-					<reference entity="Flemish_Region" number="3" tag="BRIDGE-3" type="description">The Flemish region</reference>
-					<reference entity="Belgium" number="4" tag="BRIDGE-1" type="name">Belgium</reference>
-					<reference entity="Flemish_Region" number="5" tag="BRIDGE-3" type="pronoun">it</reference>
-					<reference entity="Flemish_Government" number="6" tag="BRIDGE-2" type="description">the Flemish Government</reference>
-					<reference entity="Flemish_Government" number="7" tag="BRIDGE-2" type="description">the Flemish Government</reference>
-					<reference entity="Flemish_Region" number="8" tag="BRIDGE-3" type="description">the Flemish Region</reference>
-					<reference entity="Belgium" number="9" tag="BRIDGE-1" type="name">Belgium</reference>
-					<reference entity="Charles_Michel" number="10" tag="PATIENT-1" type="name">Charles Michel</reference>
-				</references>
 				<text>Antwerp International Airport serves Antwerp. The Flemish region is in the country of Belgium and it is led by the Flemish Government. The jurisdiction of the Flemish Government is in the Flemish Region and the leader of Belgium is Charles Michel.</text>
 				<template>AGENT-1 serves PATIENT-2 . BRIDGE-3 is in the country of BRIDGE-1 and BRIDGE-3 is led by BRIDGE-2 . The jurisdiction of BRIDGE-2 is in BRIDGE-3 and the leader of BRIDGE-1 is PATIENT-1 .</template>
 			</lex>
@@ -1843,6 +988,13 @@
 				<otriple>Saranac_Lake,_New_York | country | United_States</otriple>
 				<otriple>Adirondack_Regional_Airport | city | Saranac_Lake,_New_York</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Saranac_Lake,_New_York | subdivisionName | Harrietstown,_New_York</otriple>
+				<otriple>Saranac_Lake,_New_York | isPartOf | Essex_County,_New_York</otriple>
+				<otriple>Adirondack_Regional_Airport | city | Lake_Placid,_New_York</otriple>
+				<otriple>Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York</otriple>
+				<otriple>Saranac_Lake,_New_York | country | United_States</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Saranac_Lake,_New_York | isPartOf | Harrietstown,_New_York</mtriple>
 				<mtriple>Saranac_Lake,_New_York | isPartOf | Essex_County,_New_York</mtriple>
@@ -1851,68 +1003,25 @@
 				<mtriple>Saranac_Lake,_New_York | country | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York</striple>
-					<striple>Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York</striple>
-					<striple>Saranac_Lake,_New_York | isPartOf | Harrietstown,_New_York</striple>
-					<striple>Saranac_Lake,_New_York | isPartOf | Essex_County,_New_York</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adirondack_Regional_Airport" number="1" tag="AGENT-1" type="name">Adirondack Regional Airport</reference>
-					<reference entity="Lake_Placid,_New_York" number="2" tag="PATIENT-3" type="name">Lake Placid</reference>
-					<reference entity="Saranac_Lake,_New_York" number="3" tag="BRIDGE-1" type="name">Saranac Lake in New York</reference>
-					<reference entity="Saranac_Lake,_New_York" number="4" tag="BRIDGE-1" type="name">Saranac Lake</reference>
-					<reference entity="Harrietstown,_New_York" number="5" tag="PATIENT-1" type="name">Harrietstown</reference>
-					<reference entity="Essex_County,_New_York" number="6" tag="PATIENT-2" type="name">Essex County</reference>
-					<reference entity="United_States" number="7" tag="PATIENT-4" type="name">New York in the U</reference>
-				</references>
 				<text>Adirondack Regional Airport serves the city of Lake Placid and Saranac Lake in New York. Saranac Lake is part of Harrietstown and Essex County in New York in the U.S.</text>
 				<template>AGENT-1 serves the city of PATIENT-3 and BRIDGE-1. BRIDGE-1 is part of PATIENT-1 and PATIENT-2 in PATIENT-4.</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York</striple>
-					<striple>Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York</striple>
-					<striple>Saranac_Lake,_New_York | isPartOf | Harrietstown,_New_York</striple>
-					<striple>Saranac_Lake,_New_York | isPartOf | Essex_County,_New_York</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adirondack_Regional_Airport" number="1" tag="AGENT-1" type="name">Adirondack Regional Airport</reference>
-					<reference entity="Lake_Placid,_New_York" number="2" tag="PATIENT-3" type="name">Lake Placid</reference>
-					<reference entity="Saranac_Lake,_New_York" number="3" tag="BRIDGE-1" type="name">Saranac Lake</reference>
-					<reference entity="Harrietstown,_New_York" number="5" tag="PATIENT-1" type="name">Harrietstown</reference>
-				</references>
 				<text>Adirondack Regional Airport serves the cities of Lake Placid and Saranac Lake, New York,United States.Saranac Lake, New York is part of Harrietstown,Essex County,New York.</text>
 				<template>AGENT-1 serves the cities of PATIENT-3 and BRIDGE-1 , PATIENT-4.BRIDGE-1 is part of PATIENT-1 , PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Adirondack_Regional_Airport | cityServed | Lake_Placid,_New_York</striple>
-					<striple>Adirondack_Regional_Airport | cityServed | Saranac_Lake,_New_York</striple>
-					<striple>Saranac_Lake,_New_York | country | United_States</striple>
-					<striple>Saranac_Lake,_New_York | isPartOf | Harrietstown,_New_York</striple>
-					<striple>Saranac_Lake,_New_York | isPartOf | Essex_County,_New_York</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adirondack_Regional_Airport" number="1" tag="AGENT-1" type="name">Adirondack Regional Airport</reference>
-					<reference entity="Lake_Placid,_New_York" number="2" tag="PATIENT-3" type="name">Lake Placid</reference>
-					<reference entity="Saranac_Lake,_New_York" number="3" tag="BRIDGE-1" type="name">Saranac Lake in New York state</reference>
-					<reference entity="Harrietstown,_New_York" number="6" tag="PATIENT-1" type="name">Harrietstown</reference>
-					<reference entity="Essex_County,_New_York" number="7" tag="PATIENT-2" type="name">Essex County ,New York</reference>
-				</references>
 				<text>Adirondack Regional Airport serves the cities of Lake Placid and Saranac Lake in New York state,United States. Saranac Lake, New York is part of Harrietstown in Essex County,New York.</text>
 				<template>AGENT-1 serves the cities of PATIENT-3 and BRIDGE-1, PATIENT-4 . BRIDGE-1 is part of PATIENT-1 in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Adirondack_Regional_Airport</entity>
 				<entity>BRIDGE-1 | Saranac_Lake,_New_York</entity>
-				<entity>PATIENT-1 | Harrietstown,_New_York</entity>
-				<entity>PATIENT-2 | Essex_County,_New_York</entity>
-				<entity>PATIENT-3 | Lake_Placid,_New_York</entity>
 				<entity>PATIENT-4 | United_States</entity>
+				<entity>AGENT-1 | Adirondack_Regional_Airport</entity>
+				<entity>PATIENT-1 | Harrietstown,_New_York</entity>
+				<entity>PATIENT-3 | Lake_Placid,_New_York</entity>
+				<entity>PATIENT-2 | Essex_County,_New_York</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

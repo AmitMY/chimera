@@ -9,8 +9,9 @@ from typing import List
 
 import torch
 
-from model.model_runner import ModelRunner, Model, add_features
+from model.model_runner import ModelRunner, Model, add_features, spread_translation_dict
 from utils.file_system import save_temp, temp_name, listdir, temp_dir, save_temp_bin
+from utils.levenshtein import levenshtein_distance
 
 is_cuda = torch.cuda.is_available()
 
@@ -37,16 +38,31 @@ def get_entities(text: str):
 
 
 def find_best_out(plan, outs):
-    plan_entities = set(get_entities(plan))
+    ordered_plan_entities = get_entities(plan)
     possibilities = []
     for out in outs:
-        out_entities = set(get_entities(out))
-        if len(plan_entities) == len(out_entities):
+        ordered_out_entities = get_entities(out)
+
+        dist = levenshtein_distance(ordered_plan_entities, ordered_out_entities)
+        if dist == 0:  # Perfect
             return out
 
-        possibilities.append([out, len(out_entities)])
+        possibilities.append([out, dist])
 
-    return max(possibilities, key=lambda o: o[1])[0]
+    return min(possibilities, key=lambda o: o[1])[0]
+
+
+# def find_best_out_by_length(plan, outs):
+#     plan_entities = set(get_entities(plan))
+#     possibilities = []
+#     for out in outs:
+#         out_entities = set(get_entities(out))
+#         if len(plan_entities) == len(out_entities):
+#             return out
+#
+#         possibilities.append([out, len(out_entities)])
+#
+#     return max(possibilities, key=lambda o: o[1])[0]
 
 
 BEAM_SIZE = 10
@@ -108,16 +124,19 @@ class OpenNMTModelRunner(ModelRunner):
     def pre_process(self):
         save_data = temp_dir()
 
-        train_src = save_temp([add_features(d.plan) for d in self.train_reader.data])
-        train_tgt = save_temp([d.delex for d in self.train_reader.data])
-        valid_src = save_temp([add_features(d.plan) for d in self.dev_reader.data])
-        valid_tgt = save_temp([d.delex for d in self.dev_reader.data])
+        train_src, train_tgt = self.train_data
+        train_src_f = save_temp(list(map(add_features, train_src)))
+        train_tgt_f = save_temp(train_tgt)
+
+        dev_src, dev_tgt = self.dev_data
+        dev_src_f = save_temp(list(map(add_features, dev_src)))
+        dev_tgt_f = save_temp(dev_tgt)
 
         run_param('preprocess.py', {
-            "train_src": train_src,
-            "train_tgt": train_tgt,
-            "valid_src": valid_src,
-            "valid_tgt": valid_tgt,
+            "train_src": train_src_f,
+            "train_tgt": train_tgt_f,
+            "valid_src": dev_src_f,
+            "valid_tgt": dev_tgt_f,
             "save_data": save_data + "data",
             "dynamic_dict": None  # This will add a dynamic-dict parameter
         })
@@ -160,7 +179,7 @@ class OpenNMTModelRunner(ModelRunner):
             model = OpenNMTModel(f.read())
             f.close()
 
-            bleu = model.evaluate(self.dev_reader)[0]
+            bleu = model.evaluate(self.dev_ft)[0]
             print("BLEU", bleu)
 
             dev_scores.append(bleu)

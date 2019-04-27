@@ -13,53 +13,20 @@
 				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
-					<striple>Apollo_12 | commander | David_Scott</striple>
-					<striple>Apollo_12 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
-					<reference entity="David_Scott" number="2" tag="PATIENT-2" type="name">commander David Scott</reference>
-					<reference entity="NASA" number="3" tag="PATIENT-1" type="name">Nasa</reference>
-					<reference entity="Apollo_12" number="4" tag="BRIDGE-1" type="name">'s Apollo 12</reference>
-				</references>
 				<text>Alan Bean was under commander David Scott on Nasa's Apollo 12 mission.</text>
 				<template>AGENT-1 was under PATIENT-2 on PATIENT-1 BRIDGE-1 mission .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
-					<striple>Apollo_12 | operator | NASA</striple>
-					<striple>Apollo_12 | commander | David_Scott</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="description">the NASA</reference>
-					<reference entity="Apollo_12" number="3" tag="BRIDGE-1" type="name">Apollo 12</reference>
-					<reference entity="David_Scott" number="4" tag="PATIENT-2" type="name">David Scott</reference>
-				</references>
 				<text>Alan Bean was a member of the NASA operated Apollo 12 crew commanded by David Scott.</text>
 				<template>AGENT-1 was a member of PATIENT-1 operated BRIDGE-1 crew commanded by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Apollo_12 | commander | David_Scott</striple>
-					<striple>Apollo_12 | operator | NASA</striple>
-					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="David_Scott" number="1" tag="PATIENT-2" type="name">David Scott</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-1" type="description">the NASA</reference>
-					<reference entity="Apollo_12" number="3" tag="BRIDGE-1" type="name">Apollo 12 flight mission</reference>
-					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="name">Alan Bean</reference>
-				</references>
 				<text>David Scott was the commander of the NASA operated Apollo 12 flight mission on which the crew included Alan Bean.</text>
 				<template>PATIENT-2 was the commander of PATIENT-1 operated BRIDGE-1 on which the crew included AGENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Alan_Bean</entity>
 				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>AGENT-1 | Alan_Bean</entity>
 				<entity>PATIENT-1 | NASA</entity>
 				<entity>PATIENT-2 | David_Scott</entity>
 			</entitymap>
@@ -76,37 +43,16 @@
 				<mtriple>California | senators | Dianne_Feinstein</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>California | senators | Dianne_Feinstein</striple>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Dianne_Feinstein" number="1" tag="PATIENT-2" type="name">Dianne Feinstein</reference>
-					<reference entity="California" number="2" tag="BRIDGE-1" type="name">California</reference>
-					<reference entity="Alan_Shepard" number="3" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="&quot;1998-07-21&quot;" number="4" tag="PATIENT-1" type="name">July 21 1998</reference>
-				</references>
 				<text>Dianne Feinstein is a senator in California where Alan Shepard died on July 21 1998.</text>
 				<template>PATIENT-2 is a senator in BRIDGE-1 where AGENT-1 died on PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Shepard | deathDate | &quot;1998-07-21&quot;</striple>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-					<striple>California | senators | Dianne_Feinstein</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shephard</reference>
-					<reference entity="&quot;1998-07-21&quot;" number="2" tag="PATIENT-1" type="description">the 21st of July , 1998</reference>
-					<reference entity="Dianne_Feinstein" number="4" tag="PATIENT-2" type="name">Dianne Feinstein</reference>
-				</references>
 				<text>Alan Shephard died on the 21st of July, 1998 in California (whose Senator was Dianne Feinstein).</text>
 				<template>AGENT-1 died on PATIENT-1 in BRIDGE-1 ( whose Senator was PATIENT-2 ) .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Alan_Shepard</entity>
 				<entity>BRIDGE-1 | California</entity>
+				<entity>AGENT-1 | Alan_Shepard</entity>
 				<entity>PATIENT-1 | &quot;1998-07-21&quot;</entity>
 				<entity>PATIENT-2 | Dianne_Feinstein</entity>
 			</entitymap>
@@ -123,68 +69,26 @@
 				<mtriple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
-					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="2" tag="PATIENT-1" type="name">Edwin E . Aldrin Jr .</reference>
-					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="3" tag="PATIENT-3" type="name">1963 from MIT with a Sc .D .</reference>
-					<reference entity="Apollo_11" number="4" tag="PATIENT-2" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin, also called Edwin E. Aldrin Jr., graduated in 1963 from MIT with a Sc.D. and was a crew member on Apollo 11.</text>
 				<template>AGENT-1 , also called PATIENT-1 , graduated in PATIENT-3 and was a crew member on PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
-					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="2" tag="PATIENT-1" type="name">Edwin E . Aldrin , Jr .</reference>
-					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="3" tag="PATIENT-3" type="name">Massachusetts Institute of Technology in 1963 with a doctorate in Science</reference>
-					<reference entity="Apollo_11" number="4" tag="PATIENT-2" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin, whose real name was Edwin E. Aldrin, Jr., graduated from Massachusetts Institute of Technology in 1963 with a doctorate in Science and later became a crew member of Apollo 11.</text>
 				<template>AGENT-1 , whose real name was PATIENT-1 , graduated from PATIENT-3 and later became a crew member of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
-					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="3" tag="PATIENT-3" type="name">1963 from MIT with a Sc .D .</reference>
-					<reference entity="Apollo_11" number="4" tag="PATIENT-2" type="name">Apollo 11</reference>
-				</references>
 				<text>Buzz Aldrin (AKA Edwin E Aldrin Jr) graduated in 1963 from MIT with a Sc.D. was a crew member of Apollo 11.</text>
 				<template>AGENT-1 ( AKA PATIENT-1 ) graduated in PATIENT-3 was a crew member of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | alternativeNames | &quot;Edwin E. Aldrin, Jr.&quot;</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-					<striple>Buzz_Aldrin | almaMater | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="&quot;Edwin E. Aldrin, Jr.&quot;" number="2" tag="PATIENT-1" type="name">Edwin E . Aldrin Jr .</reference>
-					<reference entity="Apollo_11" number="3" tag="PATIENT-2" type="name">Apollo 11</reference>
-					<reference entity="&quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;" number="4" tag="PATIENT-3" type="description">a Sc</reference>
-				</references>
 				<text>Buzz Aldrin, whose real name is Edwin E. Aldrin Jr., was a member of Apollo 11 who in 1963 graduated with a Sc. D. from MIT.</text>
 				<template>AGENT-1 , whose real name is PATIENT-1 , was a member of PATIENT-2 who in 1963 graduated with PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Buzz_Aldrin</entity>
 				<entity>PATIENT-1 | &quot;Edwin E. Aldrin, Jr.&quot;</entity>
-				<entity>PATIENT-2 | Apollo_11</entity>
 				<entity>PATIENT-3 | &quot;Massachusetts Institute of Technology, Sc.D. 1963&quot;</entity>
+				<entity>PATIENT-2 | Apollo_11</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id4" size="3">
@@ -199,55 +103,22 @@
 				<mtriple>Buzz_Aldrin | was a crew member of | Apollo_11</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-					<striple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</striple>
-					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="Apollo_11" number="2" tag="PATIENT-3" type="description">the Apollo 11</reference>
-					<reference entity="&quot;52.0&quot;(minutes)" number="3" tag="PATIENT-2" type="name">52 minutes</reference>
-					<reference entity="Glen_Ridge,_New_Jersey" number="4" tag="PATIENT-1" type="name">Glen Ridge New Jersey</reference>
-				</references>
 				<text>Buzz Aldrin, who was a member of the Apollo 11 crew and spent 52 minutes in space, was born in Glen Ridge New Jersey.</text>
 				<template>AGENT-1 , who was a member of PATIENT-3 crew and spent PATIENT-2 in space , was born in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-					<striple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Glen_Ridge,_New_Jersey" number="1" tag="PATIENT-1" type="name">Glen Ridge New Jersey</reference>
-					<reference entity="Apollo_11" number="2" tag="PATIENT-3" type="name">Apollo</reference>
-					<reference entity="Buzz_Aldrin" number="3" tag="AGENT-1" type="name">11 crewman Buzz Aldrin</reference>
-					<reference entity="&quot;52.0&quot;(minutes)" number="4" tag="PATIENT-2" type="name">52 minutes</reference>
-				</references>
 				<text>Born in Glen Ridge New Jersey, Apollo 11 crewman Buzz Aldrin spent 52 minutes in space.</text>
 				<template>Born in PATIENT-1 , PATIENT-3 AGENT-1 spent PATIENT-2 in space .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
-					<striple>Buzz_Aldrin | timeInSpace | &quot;52.0&quot;(minutes)</striple>
-					<striple>Buzz_Aldrin | was a crew member of | Apollo_11</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Glen_Ridge,_New_Jersey" number="1" tag="PATIENT-1" type="name">Glen Ridge</reference>
-					<reference entity="Buzz_Aldrin" number="2" tag="AGENT-1" type="name">NJ , Buzz Aldrin</reference>
-					<reference entity="&quot;52.0&quot;(minutes)" number="3" tag="PATIENT-2" type="name">52 minutes</reference>
-					<reference entity="Apollo_11" number="4" tag="PATIENT-3" type="name">Apollo 11 's</reference>
-				</references>
 				<text>Born in Glen Ridge, NJ, Buzz Aldrin spent 52 minutes in space as part of Apollo 11's crew.</text>
 				<template>Born in PATIENT-1 , AGENT-1 spent PATIENT-2 in space as part of PATIENT-3 crew .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Buzz_Aldrin</entity>
 				<entity>PATIENT-1 | Glen_Ridge,_New_Jersey</entity>
-				<entity>PATIENT-2 | &quot;52.0&quot;(minutes)</entity>
 				<entity>PATIENT-3 | Apollo_11</entity>
+				<entity>PATIENT-2 | &quot;52.0&quot;(minutes)</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id5" size="3">
@@ -262,54 +133,20 @@
 				<mtriple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-					<striple>California | fossil | Smilodon</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="PATIENT-2" type="description">the US Navy Distinguished Service Medal</reference>
-					<reference entity="California" number="3" tag="BRIDGE-1" type="name">California</reference>
-					<reference entity="Smilodon" number="4" tag="PATIENT-1" type="description">a Smilodon</reference>
-					<reference entity="California" number="5" tag="BRIDGE-1" type="name">California</reference>
-				</references>
 				<text>Alan Shepard, who was awarded the US Navy Distinguished Service Medal died in California, incidentally a Smilodon is a fossil from California.</text>
 				<template>AGENT-1 , who was awarded PATIENT-2 died in BRIDGE-1 , incidentally PATIENT-1 is a fossil from BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-					<striple>California | fossil | Smilodon</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shephard</reference>
-					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="PATIENT-2" type="description">the Distinguished Service Medal</reference>
-					<reference entity="California" number="3" tag="BRIDGE-1" type="name">Navy</reference>
-					<reference entity="Smilodon" number="5" tag="PATIENT-1" type="name">Smilodon</reference>
-				</references>
 				<text>Alan Shephard was awarded the Distinguished Service Medal by United States Navy and died in California (where a Smilodon fossil was found).</text>
 				<template>AGENT-1 was awarded PATIENT-2 by United States BRIDGE-1 and died in BRIDGE-1 ( where a PATIENT-1 fossil was found ) .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Alan_Shepard | awards | Distinguished_Service_Medal_(United_States_Navy)</striple>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-					<striple>California | fossil | Smilodon</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="Distinguished_Service_Medal_(United_States_Navy)" number="2" tag="PATIENT-2" type="description">the Distinguished Service Medal by the US Navy</reference>
-					<reference entity="California" number="3" tag="BRIDGE-1" type="name">California</reference>
-					<reference entity="Smilodon" number="4" tag="PATIENT-1" type="description">the Smilodon</reference>
-				</references>
 				<text>Alan Shepard, who was awarded the Distinguished Service Medal by the US Navy, died in California where the Smilodon fossil was found.</text>
 				<template>AGENT-1 , who was awarded PATIENT-2 , died in BRIDGE-1 where PATIENT-1 fossil was found .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Alan_Shepard</entity>
 				<entity>BRIDGE-1 | California</entity>
+				<entity>AGENT-1 | Alan_Shepard</entity>
 				<entity>PATIENT-1 | Smilodon</entity>
 				<entity>PATIENT-2 | Distinguished_Service_Medal_(United_States_Navy)</entity>
 			</entitymap>
@@ -326,56 +163,22 @@
 				<mtriple>Elliot_See | was selected by NASA | 1962</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Elliot_See | was selected by NASA | 1962</striple>
-					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="1962" number="2" tag="PATIENT-3" type="name">1962</reference>
-					<reference entity="&quot;1966-02-28&quot;" number="3" tag="PATIENT-2" type="name">28 February 1966</reference>
-					<reference entity="St._Louis" number="4" tag="PATIENT-1" type="name">St Louis</reference>
-				</references>
 				<text>Elliot See who was selected by NASA in 1962 died on 28 February 1966 in St Louis.</text>
 				<template>AGENT-1 who was selected by NASA in PATIENT-3 died on PATIENT-2 in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Elliot_See | was selected by NASA | 1962</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="1962" number="2" tag="PATIENT-3" type="name">1962</reference>
-					<reference entity="St._Louis" number="3" tag="PATIENT-1" type="name">St Louis</reference>
-					<reference entity="&quot;1966-02-28&quot;" number="4" tag="PATIENT-2" type="description">the 28th of February 1966</reference>
-				</references>
 				<text>Elliot See, ex NASA worker since 1962, died in St Louis on the 28th of February 1966.</text>
 				<template>AGENT-1 , ex NASA worker since PATIENT-3 , died in PATIENT-1 on PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Elliot_See | was selected by NASA | 1962</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="1962" number="2" tag="PATIENT-3" type="name">1962</reference>
-					<reference entity="Elliot_See" number="3" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="St._Louis" number="4" tag="PATIENT-1" type="name">St . Louis</reference>
-					<reference entity="&quot;1966-02-28&quot;" number="5" tag="PATIENT-2" type="name">1966-02-28</reference>
-				</references>
 				<text>Elliot See was selected by NASA in 1962. He died in St. Louis on 1966-02-28.</text>
 				<template>AGENT-1 was selected by NASA in PATIENT-3 . AGENT-1 died in PATIENT-1 on PATIENT-2 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>
 				<entity>PATIENT-1 | St._Louis</entity>
-				<entity>PATIENT-2 | &quot;1966-02-28&quot;</entity>
 				<entity>PATIENT-3 | 1962</entity>
+				<entity>PATIENT-2 | &quot;1966-02-28&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id7" size="3">
@@ -390,68 +193,26 @@
 				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
-					<striple>Elliot_See | birthPlace | Dallas</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="&quot;1927-07-23&quot;" number="2" tag="PATIENT-2" type="name">July 23 1927</reference>
-					<reference entity="Dallas" number="3" tag="PATIENT-3" type="name">Dallas</reference>
-				</references>
 				<text>Elliot See, born July 23 1927 in Dallas, has died.</text>
 				<template>AGENT-1 , born PATIENT-2 in PATIENT-3 , has died .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
-					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
-					<striple>Elliot_See | birthPlace | Dallas</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="&quot;Deceased&quot;" number="2" tag="PATIENT-1" type="name">deceased</reference>
-					<reference entity="&quot;1927-07-23&quot;" number="3" tag="PATIENT-2" type="name">23rd July 1927</reference>
-					<reference entity="Dallas" number="4" tag="PATIENT-3" type="name">Dallas</reference>
-				</references>
 				<text>Elliot See is deceased, was born on 23rd July 1927 in Dallas.</text>
 				<template>AGENT-1 is PATIENT-1 , was born on PATIENT-2 in PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
-					<striple>Elliot_See | birthPlace | Dallas</striple>
-					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See </reference>
-					<reference entity="Dallas" number="3" tag="PATIENT-3" type="name">Dallas</reference>
-					<reference entity="&quot;1927-07-23&quot;" number="4" tag="PATIENT-2" type="name">1927-07-23</reference>
-				</references>
 				<text>Elliot See (deceased) was born in Dallas 1927-07-23.</text>
 				<template>AGENT-1 ( PATIENT-1 ) was born in PATIENT-3 PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id4">
-				<sortedtripleset>
-					<striple>Elliot_See | birthPlace | Dallas</striple>
-					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
-					<striple>Elliot_See | status | &quot;Deceased&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="Dallas" number="2" tag="PATIENT-3" type="name">Dallas</reference>
-					<reference entity="&quot;1927-07-23&quot;" number="3" tag="PATIENT-2" type="name">July 23 , 1927</reference>
-					<reference entity="Elliot_See" number="4" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="&quot;Deceased&quot;" number="5" tag="PATIENT-1" type="name">deceased</reference>
-				</references>
 				<text>Elliot See was born in Dallas on July 23, 1927. He is now deceased.</text>
 				<template>AGENT-1 was born in PATIENT-3 on PATIENT-2 . AGENT-1 is now PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Elliot_See</entity>
 				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
-				<entity>PATIENT-2 | &quot;1927-07-23&quot;</entity>
 				<entity>PATIENT-3 | Dallas</entity>
+				<entity>PATIENT-2 | &quot;1927-07-23&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id8" size="3">
@@ -466,58 +227,23 @@
 				<mtriple>William_Anders | was a crew member of | Apollo_8</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
-					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
-					<striple>William_Anders | was a crew member of | Apollo_8</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;1933-10-17&quot;" number="1" tag="PATIENT-1" type="name">October 17th , 1933</reference>
-					<reference entity="British_Hong_Kong" number="2" tag="PATIENT-2" type="name">British Hong Kong</reference>
-					<reference entity="William_Anders" number="3" tag="AGENT-1" type="name">William Anders</reference>
-					<reference entity="Apollo_8" number="4" tag="PATIENT-3" type="name">Apollo 8</reference>
-				</references>
 				<text>Born on October 17th, 1933 in British Hong Kong, William Anders would serve as a crew member on Apollo 8.</text>
 				<template>Born on PATIENT-1 in PATIENT-2 , AGENT-1 would serve as a crew member on PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
-					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
-					<striple>William_Anders | was a crew member of | Apollo_8</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
-					<reference entity="&quot;1933-10-17&quot;" number="2" tag="PATIENT-1" type="name">17 October 1933</reference>
-					<reference entity="British_Hong_Kong" number="3" tag="PATIENT-2" type="name">British Hong Kong</reference>
-					<reference entity="Apollo_8" number="4" tag="PATIENT-3" type="name">Apollo 8</reference>
-				</references>
 				<text>William Anders who was born on 17 October 1933 in British Hong Kong later served as a crew member of Apollo 8.</text>
 				<template>AGENT-1 who was born on PATIENT-1 in PATIENT-2 later served as a crew member of PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>William_Anders | birthPlace | British_Hong_Kong</striple>
-					<striple>William_Anders | birthDate | &quot;1933-10-17&quot;</striple>
-					<striple>William_Anders | was a crew member of | Apollo_8</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
-					<reference entity="British_Hong_Kong" number="2" tag="PATIENT-2" type="name">British Hong Kong</reference>
-					<reference entity="&quot;1933-10-17&quot;" number="3" tag="PATIENT-1" type="description">the 17th of October 1933</reference>
-					<reference entity="Apollo_8" number="4" tag="PATIENT-3" type="name">Apollo 8</reference>
-				</references>
 				<text>William Anders, who was born in British Hong Kong on the 17th of October 1933, crewed Apollo 8.</text>
 				<template>AGENT-1 , who was born in PATIENT-2 on PATIENT-1 , crewed PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | William_Anders</entity>
 				<entity>PATIENT-1 | &quot;1933-10-17&quot;</entity>
-				<entity>PATIENT-2 | British_Hong_Kong</entity>
 				<entity>PATIENT-3 | Apollo_8</entity>
+				<entity>PATIENT-2 | British_Hong_Kong</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

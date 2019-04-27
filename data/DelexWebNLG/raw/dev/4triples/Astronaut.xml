@@ -15,43 +15,19 @@
 				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Bean | nationality | United_States</striple>
-					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
-					<striple>Apollo_12 | operator | NASA</striple>
-					<striple>Apollo_12 | commander | David_Scott</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="NASA" number="3" tag="PATIENT-2" type="name">NASA 's</reference>
-					<reference entity="Apollo_12" number="4" tag="BRIDGE-1" type="name">Apollo 12</reference>
-					<reference entity="David_Scott" number="5" tag="PATIENT-3" type="name">David Scott</reference>
-				</references>
 				<text>Alan Bean (of the United States) was a crew member of NASA's @ Apollo 12 under the commander David Scott.</text>
 				<template>AGENT-1 ( of PATIENT-1 ) was a crew member of PATIENT-2 @ BRIDGE-1 under the commander PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Bean | nationality | United_States</striple>
-					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
-					<striple>Apollo_12 | operator | NASA</striple>
-					<striple>Apollo_12 | commander | David_Scott</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_States" number="1" tag="PATIENT-1" type="name">United States</reference>
-					<reference entity="Alan_Bean" number="2" tag="AGENT-1" type="name">Alan Bean</reference>
-					<reference entity="NASA" number="3" tag="PATIENT-2" type="name">NASA 's</reference>
-					<reference entity="Apollo_12" number="4" tag="BRIDGE-1" type="name">Apollo 12</reference>
-					<reference entity="David_Scott" number="5" tag="PATIENT-3" type="name">David S cott</reference>
-				</references>
 				<text>United States national Alan Bean was a crew member of NASA's @ Apollo 12 mission under commander David S cott.</text>
 				<template>PATIENT-1 national AGENT-1 was a crew member of PATIENT-2 @ BRIDGE-1 mission under commander PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Alan_Bean</entity>
 				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>AGENT-1 | Alan_Bean</entity>
 				<entity>PATIENT-1 | United_States</entity>
-				<entity>PATIENT-2 | NASA</entity>
 				<entity>PATIENT-3 | David_Scott</entity>
+				<entity>PATIENT-2 | NASA</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id2" size="4">
@@ -68,47 +44,19 @@
 				<mtriple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
-					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
-					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
-					<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="New_Hampshire" number="2" tag="PATIENT-2" type="name">New Hampshire</reference>
-					<reference entity="&quot;1923-11-18&quot;" number="3" tag="PATIENT-4" type="name">November 18th , 1923</reference>
-					<reference entity="&quot;NWC, M.A. 1957&quot;" number="4" tag="PATIENT-1" type="description">a M .A . from NWC in 1957</reference>
-					<reference entity="&quot;1974-08-01&quot;" number="5" tag="PATIENT-3" type="name">August 1st , 1974</reference>
-				</references>
 				<text>Alan Shepard, who was born in New Hampshire on November 18th, 1923, graduated with a M.A. from NWC in 1957 and retired on August 1st, 1974.</text>
 				<template>AGENT-1 , who was born in PATIENT-2 on PATIENT-4 , graduated with PATIENT-1 and retired on PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Shepard | birthDate | &quot;1923-11-18&quot;</striple>
-					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
-					<striple>Alan_Shepard | almaMater | &quot;NWC, M.A. 1957&quot;</striple>
-					<striple>Alan_Shepard | dateOfRetirement | &quot;1974-08-01&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="&quot;1923-11-18&quot;" number="2" tag="PATIENT-4" type="name">1923-11 -18</reference>
-					<reference entity="New_Hampshire" number="3" tag="PATIENT-2" type="name">New Hampshire</reference>
-					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="&quot;NWC, M.A. 1957&quot;" number="5" tag="PATIENT-1" type="description">a MA in 1957 from &quot;NWC&quot;</reference>
-					<reference entity="Alan_Shepard" number="6" tag="AGENT-1" type="pronoun">he</reference>
-					<reference entity="&quot;1974-08-01&quot;" number="7" tag="PATIENT-3" type="name">1974-08-01</reference>
-				</references>
 				<text>Alan Shepard was born 1923-11-18 in New Hampshire. He obtained a MA in 1957 from &quot;NWC&quot; @ he retired 1974-08-01.</text>
 				<template>AGENT-1 was born PATIENT-4 in PATIENT-2 . AGENT-1 obtained PATIENT-1 @ AGENT-1 retired PATIENT-3 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;1923-11-18&quot;</entity>
 				<entity>AGENT-1 | Alan_Shepard</entity>
 				<entity>PATIENT-1 | &quot;NWC, M.A. 1957&quot;</entity>
-				<entity>PATIENT-2 | New_Hampshire</entity>
 				<entity>PATIENT-3 | &quot;1974-08-01&quot;</entity>
-				<entity>PATIENT-4 | &quot;1923-11-18&quot;</entity>
+				<entity>PATIENT-2 | New_Hampshire</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id3" size="4">
@@ -125,58 +73,23 @@
 				<mtriple>Alan_Shepard | birthPlace | New_Hampshire</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Shepard | occupation | Test_pilot</striple>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Test_pilot" number="1" tag="PATIENT-3" type="name">test</reference>
-					<reference entity="Alan_Shepard" number="2" tag="AGENT-1" type="name">pilot Alan Shepard</reference>
-					<reference entity="California" number="3" tag="PATIENT-2" type="name">California</reference>
-					<reference entity="New_Hampshire" number="4" tag="PATIENT-4" type="name">New Hampshire</reference>
-				</references>
 				<text>American test pilot Alan Shepard died in California and was born in New Hampshire.</text>
 				<template>American PATIENT-3 AGENT-1 died in PATIENT-2 and was born in PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
-					<striple>Alan_Shepard | occupation | Test_pilot</striple>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="New_Hampshire" number="2" tag="PATIENT-4" type="name">New Hampshire</reference>
-					<reference entity="Test_pilot" number="3" tag="PATIENT-3" type="description">a test pilot</reference>
-					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="California" number="5" tag="PATIENT-2" type="name">California</reference>
-				</references>
 				<text>Alan Shepard was born in New Hampshire and became a test pilot. He died in California.</text>
 				<template>AGENT-1 was born in PATIENT-4 and became PATIENT-3 . AGENT-1 died in PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
-					<striple>Alan_Shepard | deathPlace | California</striple>
-					<striple>Alan_Shepard | occupation | Test_pilot</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="New_Hampshire" number="2" tag="PATIENT-4" type="name">New Hampshire</reference>
-					<reference entity="California" number="3" tag="PATIENT-2" type="name">California</reference>
-					<reference entity="Alan_Shepard" number="4" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="Test_pilot" number="5" tag="PATIENT-3" type="description">a test pilot</reference>
-				</references>
 				<text>Alan Shepard was born in New Hampshire and died in California. He served as a test pilot.</text>
 				<template>AGENT-1 was born in PATIENT-4 and died in PATIENT-2 . AGENT-1 served as PATIENT-3 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | New_Hampshire</entity>
 				<entity>AGENT-1 | Alan_Shepard</entity>
 				<entity>PATIENT-1 | &quot;Deceased&quot;</entity>
-				<entity>PATIENT-2 | California</entity>
 				<entity>PATIENT-3 | Test_pilot</entity>
-				<entity>PATIENT-4 | New_Hampshire</entity>
+				<entity>PATIENT-2 | California</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id4" size="4">
@@ -193,62 +106,23 @@
 				<mtriple>Apollo_14 | operator | NASA</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Alan_Shepard | occupation | Test_pilot</striple>
-					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
-					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
-					<striple>Apollo_14 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="Test_pilot" number="2" tag="PATIENT-1" type="description">a test pilot</reference>
-					<reference entity="New_Hampshire" number="3" tag="PATIENT-2" type="name">New Hampshire</reference>
-					<reference entity="NASA" number="4" tag="PATIENT-3" type="name">NASA</reference>
-					<reference entity="Apollo_14" number="5" tag="BRIDGE-1" type="name">Apollo 14</reference>
-				</references>
 				<text>Alan Shepard was a test pilot born in New Hampshire who NASA picked as a member of Apollo 14.</text>
 				<template>AGENT-1 was PATIENT-1 born in PATIENT-2 who PATIENT-3 picked as a member of BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
-					<striple>Alan_Shepard | occupation | Test_pilot</striple>
-					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
-					<striple>Apollo_14 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard </reference>
-					<reference entity="New_Hampshire" number="2" tag="PATIENT-2" type="name">New Hampshire</reference>
-					<reference entity="NASA" number="3" tag="PATIENT-3" type="name">NASA</reference>
-					<reference entity="Test_pilot" number="4" tag="PATIENT-1" type="description">a test pilot</reference>
-					<reference entity="Apollo_14" number="5" tag="BRIDGE-1" type="name">Apollo 14</reference>
-				</references>
 				<text>Alan Shepard , originally from New Hampshire joined NASA as a test pilot and also became a member of Apollo 14.</text>
 				<template>AGENT-1 , originally from PATIENT-2 joined PATIENT-3 as PATIENT-1 and also became a member of BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Alan_Shepard | birthPlace | New_Hampshire</striple>
-					<striple>Alan_Shepard | occupation | Test_pilot</striple>
-					<striple>Alan_Shepard | was a crew member of | Apollo_14</striple>
-					<striple>Apollo_14 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Shepard" number="1" tag="AGENT-1" type="name">Alan Shepard</reference>
-					<reference entity="New_Hampshire" number="2" tag="PATIENT-2" type="name">New Hampshire</reference>
-					<reference entity="Test_pilot" number="3" tag="PATIENT-1" type="description">a test pilot</reference>
-					<reference entity="NASA" number="4" tag="PATIENT-3" type="description">the NASA</reference>
-					<reference entity="Apollo_14" number="5" tag="BRIDGE-1" type="name">Apollo 14 mission</reference>
-				</references>
 				<text>Alan Shepard, who was born in New Hampshire and served as a test pilot, was a crew member of the NASA operated Apollo 14 mission.</text>
 				<template>AGENT-1 , who was born in PATIENT-2 and served as PATIENT-1 , was a crew member of PATIENT-3 operated BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Alan_Shepard</entity>
 				<entity>BRIDGE-1 | Apollo_14</entity>
+				<entity>AGENT-1 | Alan_Shepard</entity>
 				<entity>PATIENT-1 | Test_pilot</entity>
-				<entity>PATIENT-2 | New_Hampshire</entity>
 				<entity>PATIENT-3 | NASA</entity>
+				<entity>PATIENT-2 | New_Hampshire</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id5" size="4">
@@ -265,46 +139,19 @@
 				<mtriple>Apollo_12 | commander | David_Scott</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
-					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
-					<striple>Apollo_12 | commander | David_Scott</striple>
-					<striple>Apollo_12 | operator | NASA</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_12" number="1" tag="BRIDGE-1" type="name">Apollo 12</reference>
-					<reference entity="Alfred_Worden" number="2" tag="PATIENT-1" type="name">Alfred Worden</reference>
-					<reference entity="Apollo_12" number="3" tag="BRIDGE-1" type="name">Apollo 12</reference>
-					<reference entity="Alan_Bean" number="4" tag="AGENT-1" type="name">Alan Bean</reference>
-					<reference entity="David_Scott" number="5" tag="PATIENT-3" type="name">David Scott</reference>
-					<reference entity="NASA" number="6" tag="PATIENT-2" type="name">NASA</reference>
-				</references>
 				<text>The backup pilot to Apollo 12 was Alfred Worden and also part of Apollo 12 were Alan Bean and commander David Scott who were all chosen by NASA.</text>
 				<template>The backup pilot to BRIDGE-1 was PATIENT-1 and also part of BRIDGE-1 were AGENT-1 and commander PATIENT-3 who were all chosen by PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Alan_Bean | was a crew member of | Apollo_12</striple>
-					<striple>Apollo_12 | operator | NASA</striple>
-					<striple>Apollo_12 | backup pilot | Alfred_Worden</striple>
-					<striple>Apollo_12 | commander | David_Scott</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Alan_Bean" number="1" tag="AGENT-1" type="name">Alan Bean</reference>
-					<reference entity="NASA" number="2" tag="PATIENT-2" type="description">the NASA</reference>
-					<reference entity="Apollo_12" number="3" tag="BRIDGE-1" type="name">Apollo 12</reference>
-					<reference entity="Alfred_Worden" number="4" tag="PATIENT-1" type="name">Alfred Worden</reference>
-					<reference entity="David_Scott" number="5" tag="PATIENT-3" type="name">David Scott</reference>
-				</references>
 				<text>Alan Bean was a crew member on the NASA @ Apollo 12 mission along with backup pilot Alfred Worden and commander David Scott.</text>
 				<template>AGENT-1 was a crew member on PATIENT-2 @ BRIDGE-1 mission along with backup pilot PATIENT-1 and commander PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Alan_Bean</entity>
 				<entity>BRIDGE-1 | Apollo_12</entity>
+				<entity>AGENT-1 | Alan_Bean</entity>
 				<entity>PATIENT-1 | Alfred_Worden</entity>
-				<entity>PATIENT-2 | NASA</entity>
 				<entity>PATIENT-3 | David_Scott</entity>
+				<entity>PATIENT-2 | NASA</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id6" size="4">
@@ -321,28 +168,14 @@
 				<mtriple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Buzz_Aldrin | nationality | United_States</striple>
-					<striple>United_States | leaderName | Joe_Biden</striple>
-					<striple>Buzz_Aldrin | birthPlace | Glen_Ridge,_New_Jersey</striple>
-					<striple>Glen_Ridge,_New_Jersey | isPartOf | Essex_County,_New_Jersey</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Buzz_Aldrin" number="1" tag="AGENT-1" type="name">Buzz Aldrin</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
-					<reference entity="Joe_Biden" number="3" tag="PATIENT-1" type="name">Joe Biden</reference>
-					<reference entity="Buzz_Aldrin" number="4" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="Glen_Ridge,_New_Jersey" number="5" tag="BRIDGE-2" type="name">Glen Ridge</reference>
-					<reference entity="Essex_County,_New_Jersey" number="6" tag="PATIENT-2" type="name">Essex County , New Jersey</reference>
-				</references>
 				<text>Buzz Aldrin is a national of the United States whose leader is Joe Biden. He was born in Glen Ridge, Essex County, New Jersey.</text>
 				<template>AGENT-1 is a national of BRIDGE-1 whose leader is PATIENT-1 . AGENT-1 was born in BRIDGE-2 , PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Buzz_Aldrin</entity>
 				<entity>BRIDGE-1 | United_States</entity>
-				<entity>BRIDGE-2 | Glen_Ridge,_New_Jersey</entity>
+				<entity>AGENT-1 | Buzz_Aldrin</entity>
 				<entity>PATIENT-1 | Joe_Biden</entity>
+				<entity>BRIDGE-2 | Glen_Ridge,_New_Jersey</entity>
 				<entity>PATIENT-2 | Essex_County,_New_Jersey</entity>
 			</entitymap>
 		</entry>
@@ -360,28 +193,15 @@
 				<mtriple>Elliot_See | birthPlace | Dallas</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
-					<striple>Elliot_See | birthPlace | Dallas</striple>
-					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="name">University of Texas at Austin</reference>
-					<reference entity="Dallas" number="3" tag="PATIENT-4" type="name">Dallas</reference>
-					<reference entity="&quot;1927-07-23&quot;" number="4" tag="PATIENT-3" type="name">July 23 , 1927</reference>
-					<reference entity="St._Louis" number="5" tag="PATIENT-2" type="name">St</reference>
-				</references>
 				<text>Elliot See, a graduate of University of Texas at Austin, was born in Dallas on July 23, 1927, and died in St. Louis.</text>
 				<template>AGENT-1 , a graduate of PATIENT-1 , was born in PATIENT-4 on PATIENT-3 , and died in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | Dallas</entity>
 				<entity>AGENT-1 | Elliot_See</entity>
 				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
-				<entity>PATIENT-2 | St._Louis</entity>
 				<entity>PATIENT-3 | &quot;1927-07-23&quot;</entity>
-				<entity>PATIENT-4 | Dallas</entity>
+				<entity>PATIENT-2 | St._Louis</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id8" size="4">
@@ -398,48 +218,19 @@
 				<mtriple>Elliot_See | occupation | Test_pilot</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
-					<striple>Elliot_See | occupation | Test_pilot</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="description">the University of Texas in Austin</reference>
-					<reference entity="Elliot_See" number="3" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="Test_pilot" number="4" tag="PATIENT-4" type="description">a test pilot</reference>
-					<reference entity="Elliot_See" number="5" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="St._Louis" number="6" tag="PATIENT-2" type="name">St . Louis</reference>
-					<reference entity="&quot;1966-02-28&quot;" number="7" tag="PATIENT-3" type="name">1966-02-28</reference>
-				</references>
 				<text>Elliot See attended the University of Texas in Austin. He became a test pilot. He died in St. Louis on 1966-02-28.</text>
 				<template>AGENT-1 attended PATIENT-1 . AGENT-1 became PATIENT-4 . AGENT-1 died in PATIENT-2 on PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
-					<striple>Elliot_See | occupation | Test_pilot</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Ellior See</reference>
-					<reference entity="University_of_Texas_at_Austin" number="2" tag="PATIENT-1" type="description">the University of Texas at Austin</reference>
-					<reference entity="Elliot_See" number="3" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="Test_pilot" number="4" tag="PATIENT-4" type="description">a pilot</reference>
-					<reference entity="St._Louis" number="5" tag="PATIENT-2" type="name">St . Louis</reference>
-					<reference entity="&quot;1966-02-28&quot;" number="6" tag="PATIENT-3" type="name">28th February 1966</reference>
-				</references>
 				<text>Ellior See attended the University of Texas at Austin. He was a pilot and died in St. Louis, 28th February 1966.</text>
 				<template>AGENT-1 attended PATIENT-1 . AGENT-1 was PATIENT-4 and died in PATIENT-2 , PATIENT-3 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | Test_pilot</entity>
 				<entity>AGENT-1 | Elliot_See</entity>
 				<entity>PATIENT-1 | University_of_Texas_at_Austin</entity>
-				<entity>PATIENT-2 | St._Louis</entity>
 				<entity>PATIENT-3 | &quot;1966-02-28&quot;</entity>
-				<entity>PATIENT-4 | Test_pilot</entity>
+				<entity>PATIENT-2 | St._Louis</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id9" size="4">
@@ -456,46 +247,18 @@
 				<mtriple>St._Louis | isPartOf | Kingdom_of_France</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
-					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-					<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="University_of_Texas_at_Austin" number="2" tag="BRIDGE-1" type="description">the University of Texas in Austin</reference>
-					<reference entity="University_of_Texas_System" number="3" tag="PATIENT-1" type="description">the University of Texas system</reference>
-					<reference entity="Elliot_See" number="4" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="St._Louis" number="5" tag="BRIDGE-2" type="name">St Louis</reference>
-					<reference entity="Kingdom_of_France" number="6" tag="PATIENT-2" type="description">the Kingdom of France</reference>
-				</references>
 				<text>Elliot See attended the University of Texas in Austin which is affiliated to the University of Texas system. He died in St Louis which is part of the Kingdom of France.</text>
 				<template>AGENT-1 attended BRIDGE-1 which is affiliated to PATIENT-1 . AGENT-1 died in BRIDGE-2 which is part of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-					<striple>St._Louis | isPartOf | Kingdom_of_France</striple>
-					<striple>Elliot_See | almaMater | University_of_Texas_at_Austin</striple>
-					<striple>University_of_Texas_at_Austin | affiliations | University_of_Texas_System</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="St._Louis" number="2" tag="BRIDGE-2" type="name">St Louis</reference>
-					<reference entity="Kingdom_of_France" number="3" tag="PATIENT-2" type="description">the kingdom of France</reference>
-					<reference entity="Elliot_See" number="4" tag="AGENT-1" type="pronoun">his</reference>
-					<reference entity="University_of_Texas_at_Austin" number="5" tag="BRIDGE-1" type="description">the University of Texas at Austin</reference>
-					<reference entity="University_of_Texas_System" number="6" tag="PATIENT-1" type="description">the University of Texas system</reference>
-				</references>
 				<text>Elliot See died in St Louis which is part of the kingdom of France, his alma mater was the University of Texas at Austin which is affiliated with the University of Texas system.</text>
 				<template>AGENT-1 died in BRIDGE-2 which is part of PATIENT-2 , AGENT-1 alma mater was BRIDGE-1 which is affiliated with PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Elliot_See</entity>
 				<entity>BRIDGE-1 | University_of_Texas_at_Austin</entity>
-				<entity>BRIDGE-2 | St._Louis</entity>
+				<entity>AGENT-1 | Elliot_See</entity>
 				<entity>PATIENT-1 | University_of_Texas_System</entity>
+				<entity>BRIDGE-2 | St._Louis</entity>
 				<entity>PATIENT-2 | Kingdom_of_France</entity>
 			</entitymap>
 		</entry>
@@ -513,45 +276,19 @@
 				<mtriple>Elliot_See | deathDate | &quot;1966-02-28&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
-					<striple>Elliot_See | birthPlace | Dallas</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Elliot See</reference>
-					<reference entity="&quot;1927-07-23&quot;" number="2" tag="PATIENT-2" type="name">July 23rd , 1927</reference>
-					<reference entity="Dallas" number="3" tag="PATIENT-3" type="name">Dallas</reference>
-					<reference entity="St._Louis" number="4" tag="PATIENT-1" type="name">St . Louis</reference>
-					<reference entity="&quot;1966-02-28&quot;" number="5" tag="PATIENT-4" type="name">February 28th , 1966</reference>
-				</references>
 				<text>Elliot See was born on July 23rd, 1927 in Dallas, and died in St. Louis on February 28th, 1966.</text>
 				<template>AGENT-1 was born on PATIENT-2 in PATIENT-3 , and died in PATIENT-1 on PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Elliot_See | birthDate | &quot;1927-07-23&quot;</striple>
-					<striple>Elliot_See | birthPlace | Dallas</striple>
-					<striple>Elliot_See | deathPlace | St._Louis</striple>
-					<striple>Elliot_See | deathDate | &quot;1966-02-28&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Elliot_See" number="1" tag="AGENT-1" type="name">Ellior See</reference>
-					<reference entity="&quot;1927-07-23&quot;" number="2" tag="PATIENT-2" type="name">23rd July 1927</reference>
-					<reference entity="Dallas" number="3" tag="PATIENT-3" type="name">Dallas</reference>
-					<reference entity="St._Louis" number="4" tag="PATIENT-1" type="name">St . Louis</reference>
-					<reference entity="&quot;1966-02-28&quot;" number="5" tag="PATIENT-4" type="name">28th February 1966</reference>
-				</references>
 				<text>Ellior See was born 23rd July 1927 in Dallas and died in St. Louis on 28th February 1966.</text>
 				<template>AGENT-1 was born PATIENT-2 in PATIENT-3 and died in PATIENT-1 on PATIENT-4 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-4 | &quot;1966-02-28&quot;</entity>
 				<entity>AGENT-1 | Elliot_See</entity>
 				<entity>PATIENT-1 | St._Louis</entity>
-				<entity>PATIENT-2 | &quot;1927-07-23&quot;</entity>
 				<entity>PATIENT-3 | Dallas</entity>
-				<entity>PATIENT-4 | &quot;1966-02-28&quot;</entity>
+				<entity>PATIENT-2 | &quot;1927-07-23&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="Astronaut" eid="Id11" size="4">
@@ -568,49 +305,20 @@
 				<mtriple>Apollo_8 | backup pilot | Buzz_Aldrin</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
-					<striple>Apollo_8 | commander | Frank_Borman</striple>
-					<striple>William_Anders | was a crew member of | Apollo_8</striple>
-					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Apollo_8" number="1" tag="BRIDGE-1" type="name">Apollo 8</reference>
-					<reference entity="Buzz_Aldrin" number="2" tag="PATIENT-3" type="name">Buzz Aldrin</reference>
-					<reference entity="Frank_Borman" number="3" tag="PATIENT-2" type="name">Frank Borman</reference>
-					<reference entity="William_Anders" number="4" tag="AGENT-1" type="name">William Anders</reference>
-					<reference entity="&quot;1969-09-01&quot;" number="5" tag="PATIENT-1" type="name">September 1st , 1969</reference>
-				</references>
 				<text>The members of Apollo 8 were Buzz Aldrin who was backup pilot, commander Frank Borman and William Anders who retired on September 1st, 1969.</text>
 				<template>The members of BRIDGE-1 were PATIENT-3 who was backup pilot , commander PATIENT-2 and AGENT-1 who retired on PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>William_Anders | was a crew member of | Apollo_8</striple>
-					<striple>Apollo_8 | commander | Frank_Borman</striple>
-					<striple>Apollo_8 | backup pilot | Buzz_Aldrin</striple>
-					<striple>William_Anders | dateOfRetirement | &quot;1969-09-01&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="William_Anders" number="1" tag="AGENT-1" type="name">William Anders</reference>
-					<reference entity="Apollo_8" number="2" tag="BRIDGE-1" type="name">Apollo 8</reference>
-					<reference entity="Frank_Borman" number="3" tag="PATIENT-2" type="name">Frank Borrman</reference>
-					<reference entity="Buzz_Aldrin" number="4" tag="PATIENT-3" type="name">Buzz Aldrin</reference>
-					<reference entity="William_Anders" number="5" tag="AGENT-1" type="pronoun">He</reference>
-					<reference entity="&quot;1969-09-01&quot;" number="6" tag="PATIENT-1" type="name">1969</reference>
-				</references>
 				<text>William Anders served as a crew member of Apollo 8 under Commander Frank Borrman and backup pilot Buzz Aldrin. He retired 1969.09.01.</text>
 				<template>AGENT-1 served as a crew member of BRIDGE-1 under Commander PATIENT-2 and backup pilot PATIENT-3 . AGENT-1 retired PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | William_Anders</entity>
 				<entity>BRIDGE-1 | Apollo_8</entity>
+				<entity>AGENT-1 | William_Anders</entity>
 				<entity>PATIENT-1 | &quot;1969-09-01&quot;</entity>
-				<entity>PATIENT-2 | Frank_Borman</entity>
 				<entity>PATIENT-3 | Buzz_Aldrin</entity>
+				<entity>PATIENT-2 | Frank_Borman</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

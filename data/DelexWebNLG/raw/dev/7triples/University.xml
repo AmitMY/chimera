@@ -21,69 +21,26 @@
 				<mtriple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology 's</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="2" tag="PATIENT-7" type="name">Soldevanahalli , Acharya Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="name">Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore , Karnataka , India – 560090 . The Institute </reference>
-					<reference entity="2000" number="5" tag="PATIENT-4" type="name">2000</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="6" tag="PATIENT-1" type="name">Visvesvaraya Technological University</reference>
-				</references>
 				<text>Acharya Institute of Technology's campus is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore, Karnataka, India – 560090. The Institute (president B M Reddy) was established in 2000 and is affiliated with Visvesvaraya Technological University.</text>
 				<template>AGENT-1 campus is located in PATIENT-7 . AGENT-1 ( PATIENT-2 ) was established in PATIENT-4 and is affiliated with PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;B.M. Reddy&quot;" number="1" tag="PATIENT-2" type="name">President B M Reddy</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
-					<reference entity="Karnataka" number="5" tag="PATIENT-6" type="name">Karnataka</reference>
-					<reference entity="2000" number="6" tag="PATIENT-4" type="name">2000</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="7" tag="PATIENT-1" type="description">the Visvesvaraya Technological University</reference>
-				</references>
 				<text>President B M Reddy is head of the Acharya Institute of Technology located at &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot; The Institute was established in the state of Karnataka in 2000 and is affiliated with the Visvesvaraya Technological University.</text>
 				<template>PATIENT-2 is head of AGENT-1 located at `` In PATIENT-7 ''. AGENT-1 was established in the state of PATIENT-6 in PATIENT-4 and is affiliated with PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology 's</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="2" tag="PATIENT-7" type="name">Soldevanahalli , Acharya Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="name">Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore , Karnataka , India , 560090 . It</reference>
-					<reference entity="2000" number="4" tag="PATIENT-4" type="name">2000</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="5" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;B.M. Reddy&quot;" number="6" tag="PATIENT-2" type="name">B .M . Reddy</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="7" tag="AGENT-1" type="pronoun">it</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="8" tag="PATIENT-1" type="description">the Visvesvaraya Technological University</reference>
-				</references>
 				<text>The Acharya Institute of Technology's campus is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore, Karnataka, India, 560090. It was established in 2000; its president is B.M. Reddy and it is affiliated with the Visvesvaraya Technological University.</text>
 				<template>AGENT-1 campus is located in PATIENT-7 . AGENT-1 was established in PATIENT-4 ; AGENT-1 president is PATIENT-2 and AGENT-1 is affiliated with PATIENT-1 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
-				<entity>PATIENT-1 | Visvesvaraya_Technological_University</entity>
-				<entity>PATIENT-2 | &quot;B.M. Reddy&quot;</entity>
-				<entity>PATIENT-3 | Bangalore</entity>
-				<entity>PATIENT-4 | 2000</entity>
 				<entity>PATIENT-5 | &quot;India&quot;</entity>
-				<entity>PATIENT-6 | Karnataka</entity>
+				<entity>PATIENT-4 | 2000</entity>
 				<entity>PATIENT-7 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-6 | Karnataka</entity>
+				<entity>PATIENT-1 | Visvesvaraya_Technological_University</entity>
+				<entity>PATIENT-3 | Bangalore</entity>
+				<entity>PATIENT-2 | &quot;B.M. Reddy&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="University" eid="Id2" size="7">
@@ -106,80 +63,26 @@
 				<mtriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="1" tag="PATIENT-6" type="name">Soldevanahalli , Acharya Dr . Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore – 560090</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
-					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-4" type="name">India</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="4" tag="PATIENT-7" type="description">the Visvesvaraya Technological University</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="5" tag="AGENT-1" type="description">the Institute</reference>
-					<reference entity="700" number="8" tag="PATIENT-5" type="name">700</reference>
-				</references>
 				<text>In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090 is the location of the Acharya Institute of Technology in India which is affiliated with the Visvesvaraya Technological University. The motto of the Institute which was established in the year 2000 is &quot;Nurturing Excellence&quot; and there are 700 postgraduate students.</text>
 				<template>In PATIENT-6 is the location of AGENT-1 in PATIENT-4 which is affiliated with PATIENT-7 . The motto of AGENT-1 which was established in PATIENT-2 is `` PATIENT-3 '' and there are PATIENT-5 postgraduate students .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology 's</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="2" tag="PATIENT-6" type="name">Soldevanahalli , Acharya Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="name">Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore , India , 560090 . It</reference>
-					<reference entity="2000" number="4" tag="PATIENT-2" type="name">2000</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="5" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="9" tag="AGENT-1" type="pronoun">it</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="10" tag="PATIENT-7" type="description">the Visvesvaraya Technological University</reference>
-				</references>
 				<text>The Acharya Institute of Technology's campus is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore, India, 560090. It was established in 2000 and its motto is &quot;Nurturing Excellence&quot;. It has 700 postgraduate students and it is affiliated to the Visvesvaraya Technological University.</text>
 				<template>AGENT-1 campus is located in PATIENT-6 . AGENT-1 was established in PATIENT-2 and AGENT-1 motto is `` PATIENT-3 '' . AGENT-1  has PATIENT-5 postgraduate students and AGENT-1  is affiliated to PATIENT-7 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
-					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
-					<striple>Acharya_Institute_of_Technology | motto | &quot;Nurturing Excellence&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
-					<reference entity="Bangalore" number="2" tag="PATIENT-1" type="name">Bangalore</reference>
-					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-4" type="name">India</reference>
-					<reference entity="2000" number="4" tag="PATIENT-2" type="name">2000</reference>
-					<reference entity="700" number="5" tag="PATIENT-5" type="name">700</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="6" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;Nurturing Excellence&quot;" number="7" tag="PATIENT-3" type="name">motto Nurturing Excellence</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="8" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="9" tag="PATIENT-7" type="name">Visvesvaraya Technological University</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="10" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="11" tag="PATIENT-6" type="name">In Soldevanahalli , Acharya Dr</reference>
-				</references>
 				<text>The Acharya Institute of Technology in Bangalore, India was created in 2000, has 700 post graduate students and uses as its motto Nurturing Excellence. It is affiliated with Visvesvaraya Technological University and its full address is In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.</text>
 				<template>AGENT-1 in PATIENT-1 , PATIENT-4 was created in PATIENT-2 , has PATIENT-5 post graduate students and uses as AGENT-1 PATIENT-3 . AGENT-1 is affiliated with PATIENT-7 and AGENT-1 full address is PATIENT-6 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
-				<entity>PATIENT-1 | Bangalore</entity>
-				<entity>PATIENT-2 | 2000</entity>
-				<entity>PATIENT-3 | &quot;Nurturing Excellence&quot;</entity>
-				<entity>PATIENT-4 | &quot;India&quot;</entity>
 				<entity>PATIENT-5 | 700</entity>
-				<entity>PATIENT-6 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-4 | &quot;India&quot;</entity>
 				<entity>PATIENT-7 | Visvesvaraya_Technological_University</entity>
+				<entity>PATIENT-6 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-1 | Bangalore</entity>
+				<entity>PATIENT-3 | &quot;Nurturing Excellence&quot;</entity>
+				<entity>PATIENT-2 | 2000</entity>
 			</entitymap>
 		</entry>
 		<entry category="University" eid="Id3" size="7">
@@ -202,85 +105,26 @@
 				<mtriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
-					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
-					<reference entity="Bangalore" number="2" tag="PATIENT-2" type="name">Bangalore</reference>
-					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-5" type="name">India</reference>
-					<reference entity="2000" number="4" tag="PATIENT-4" type="name">2000</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="5" tag="PATIENT-7" type="name">Visvesvaraya Technological University</reference>
-					<reference entity="&quot;B.M. Reddy&quot;" number="6" tag="PATIENT-1" type="name">B . M . Reddy</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="7" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="8" tag="PATIENT-3" type="name">Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="9" tag="AGENT-1" type="name">G . P . Prabhukumar . The school 's</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="10" tag="PATIENT-6" type="name">In Soldevanahalli , Acharya Dr</reference>
-				</references>
 				<text>Acharya Institute of Technology in Bangalore, India was established in 2000 and is affiliated with Visvesvaraya Technological University. The school president is B. M. Reddy and its director is Dr. G. P. Prabhukumar. The school's full address is In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.</text>
 				<template>AGENT-1 in PATIENT-2 , PATIENT-5 was established in PATIENT-4 and is affiliated with PATIENT-7 . The school president is PATIENT-1 and AGENT-1 director is PATIENT-3 . AGENT-1 full address is PATIENT-6 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | city | Bangalore</striple>
-					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
-					<reference entity="Bangalore" number="2" tag="PATIENT-2" type="name">Bangalore</reference>
-					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-5" type="name">India</reference>
-					<reference entity="2000" number="4" tag="PATIENT-4" type="name">2000</reference>
-					<reference entity="&quot;B.M. Reddy&quot;" number="5" tag="PATIENT-1" type="name">B .M . Reddy</reference>
-					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="6" tag="PATIENT-3" type="name">Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="7" tag="AGENT-1" type="name">G . P . Prabhukumar . The institute</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="8" tag="PATIENT-7" type="description">the Visvesvaraya Technological University</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="9" tag="AGENT-1" type="description">the campus</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="10" tag="PATIENT-6" type="name">Soldevanahalli , Acharya Dr</reference>
-				</references>
 				<text>The Acharya Institute of Technology is in Bangalore, India was established in 2000. The president is B.M. Reddy and the director is Dr. G. P. Prabhukumar. The institute is affiliated with the Visvesvaraya Technological University and the campus is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;.</text>
 				<template>AGENT-1 is in PATIENT-2 , PATIENT-5 was established in PATIENT-4 . The president is PATIENT-1 and the director is PATIENT-3 . AGENT-1 is affiliated with PATIENT-7 and AGENT-1 is located in PATIENT-6.</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="2" tag="PATIENT-7" type="description">the Visvesvaraya Technological University</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="3" tag="PATIENT-6" type="name">Soldevanahalli , on Acharya Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="name">Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore , India  (560090 ) . It</reference>
-					<reference entity="2000" number="5" tag="PATIENT-4" type="description">the year 2000</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="6" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;B.M. Reddy&quot;" number="7" tag="PATIENT-1" type="name">B .M . Reddy</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="8" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="9" tag="PATIENT-3" type="name">Dr</reference>
-				</references>
 				<text>The Acharya Institute of Technology, affiliated with the Visvesvaraya Technological University, is located in Soldevanahalli, on Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore, India (560090). It was established in the year 2000, and its current president is B.M. Reddy, while its director is Dr. G.P. Prabhukumar.</text>
 				<template>AGENT-1 , affiliated with PATIENT-7 , is located in PATIENT-6 . AGENT-1 was established in PATIENT-4 , and AGENT-1 current president is PATIENT-1 , while AGENT-1 director is PATIENT-3 .</template>
 			</lex>
 			<entitymap>
 				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
-				<entity>PATIENT-1 | &quot;B.M. Reddy&quot;</entity>
-				<entity>PATIENT-2 | Bangalore</entity>
-				<entity>PATIENT-3 | &quot;Dr. G. P. Prabhukumar&quot;</entity>
-				<entity>PATIENT-4 | 2000</entity>
 				<entity>PATIENT-5 | &quot;India&quot;</entity>
-				<entity>PATIENT-6 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-4 | 2000</entity>
 				<entity>PATIENT-7 | Visvesvaraya_Technological_University</entity>
+				<entity>PATIENT-6 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-1 | &quot;B.M. Reddy&quot;</entity>
+				<entity>PATIENT-3 | &quot;Dr. G. P. Prabhukumar&quot;</entity>
+				<entity>PATIENT-2 | Bangalore</entity>
 			</entitymap>
 		</entry>
 		<entry category="University" eid="Id4" size="7">
@@ -290,6 +134,15 @@
 				<otriple>Acharya_Institute_of_Technology | established | 2000</otriple>
 				<otriple>Acharya_Institute_of_Technology | country | &quot;India&quot;@en</otriple>
 				<otriple>Acharya_Institute_of_Technology | postgrad | &quot;~700&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | campus | &quot;Urban, ,\nIn Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | affiliations | Visvesvaraya_Technological_University</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;@en</otriple>
+				<otriple>Visvesvaraya_Technological_University | city | Belgaum</otriple>
+				<otriple>Acharya_Institute_of_Technology | established | 2000</otriple>
+				<otriple>Acharya_Institute_of_Technology | country | &quot;India&quot;@en</otriple>
+				<otriple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | &quot;700&quot;^^xsd:nonNegativeInteger</otriple>
 				<otriple>Acharya_Institute_of_Technology | campus | &quot;Urban, ,\nIn Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;@en</otriple>
 				<otriple>Acharya_Institute_of_Technology | affiliations | Visvesvaraya_Technological_University</otriple>
 			</originaltripleset>
@@ -303,83 +156,26 @@
 				<mtriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology </reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="3" tag="PATIENT-6" type="name">Soldevanahalli , Acharya Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="name">Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore , India – 560090 . The Institute</reference>
-					<reference entity="2000" number="5" tag="PATIENT-3" type="name">2000</reference>
-					<reference entity="700" number="6" tag="PATIENT-5" type="name">700</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="7" tag="BRIDGE-1" type="name">Visvesvaraya Technological University</reference>
-					<reference entity="Belgaum" number="8" tag="PATIENT-2" type="name">Belgaum</reference>
-				</references>
 				<text>Acharya Institute of Technology (president B M Reddy) is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore, India – 560090. The Institute was established in 2000, has 700 postgraduate students and is affiliated with Visvesvaraya Technological University of Belgaum.</text>
 				<template>AGENT-1 ( PATIENT-1 ) is located in PATIENT-6. AGENT-1 was established in PATIENT-3 , has PATIENT-5 postgraduate students and is affiliated with BRIDGE-1 of PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="1" tag="PATIENT-6" type="name">In Soldevanahalli , Acharya Dr . Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore – 560090</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
-					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-4" type="name">India</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="description">the Institute</reference>
-					<reference entity="2000" number="5" tag="PATIENT-3" type="description">the year 2000</reference>
-					<reference entity="&quot;B.M. Reddy&quot;" number="6" tag="PATIENT-1" type="name">B M Reddy</reference>
-					<reference entity="700" number="7" tag="PATIENT-5" type="name">700</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="8" tag="AGENT-1" type="description">The Institute</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="9" tag="BRIDGE-1" type="description">the Visvesvaraya Technological University</reference>
-				</references>
 				<text>In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090 is the location of the Acharya Institute of Technology in India. The President of the Institute which was established in the year 2000 is B M Reddy and there are 700 postgraduate students. The Institute is affiliated with the Visvesvaraya Technological University.</text>
 				<template>PATIENT-6 is the location of AGENT-1 in PATIENT-4 . The President of AGENT-1 which was established in PATIENT-3 is PATIENT-1 and there are PATIENT-5 postgraduate students . AGENT-1 is affiliated with BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | president | &quot;B.M. Reddy&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | numberOfPostgraduateStudents | 700</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology</reference>
-					<reference entity="2000" number="2" tag="PATIENT-3" type="description">the year 2000</reference>
-					<reference entity="&quot;India&quot;" number="3" tag="PATIENT-4" type="name">India</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="pronoun">Its</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="5" tag="PATIENT-6" type="name">Soldevanahalli , Acharya Dr . Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore – 560090</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="6" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;B.M. Reddy&quot;" number="7" tag="PATIENT-1" type="name">B</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="8" tag="AGENT-1" type="name">M . Reddy . It</reference>
-					<reference entity="700" number="9" tag="PATIENT-5" type="name">700</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="10" tag="BRIDGE-1" type="description">the Visvesvaraya Technological University</reference>
-					<reference entity="Belgaum" number="11" tag="PATIENT-2" type="name">Belgaum</reference>
-				</references>
 				<text>The Acharya Institute of Technology was established in the year 2000 in India. Its campus is in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090 and its president is B. M. Reddy. It has 700 postgraduate students and is affiliated with the Visvesvaraya Technological University in Belgaum.</text>
 				<template>AGENT-1 was established in PATIENT-3 in PATIENT-4 . AGENT-1 campus is in PATIENT-6 and AGENT-1 president is PATIENT-1 . AGENT-1 has PATIENT-5 postgraduate students and is affiliated with BRIDGE-1 in PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
 				<entity>BRIDGE-1 | Visvesvaraya_Technological_University</entity>
-				<entity>PATIENT-1 | &quot;B.M. Reddy&quot;</entity>
-				<entity>PATIENT-2 | Belgaum</entity>
-				<entity>PATIENT-3 | 2000</entity>
-				<entity>PATIENT-4 | &quot;India&quot;</entity>
 				<entity>PATIENT-5 | 700</entity>
+				<entity>PATIENT-4 | &quot;India&quot;</entity>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
 				<entity>PATIENT-6 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-1 | &quot;B.M. Reddy&quot;</entity>
+				<entity>PATIENT-3 | 2000</entity>
+				<entity>PATIENT-2 | Belgaum</entity>
 			</entitymap>
 		</entry>
 		<entry category="University" eid="Id5" size="7">
@@ -402,94 +198,26 @@
 				<mtriple>India | river | Ganges</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
-					<striple>AWH_Engineering_College | country | India</striple>
-					<striple>AWH_Engineering_College | state | Kerala</striple>
-					<striple>Kerala | has to its northwest | Mahé,_India</striple>
-					<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
-					<striple>India | river | Ganges</striple>
-					<striple>India | largestCity | Mumbai</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="name">AWH Engineering College</reference>
-					<reference entity="&quot;Kuttikkattoor&quot;" number="2" tag="PATIENT-4" type="name">Kuttikkattoor</reference>
-					<reference entity="India" number="3" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Kerala" number="4" tag="BRIDGE-2" type="name">Kerala</reference>
-					<reference entity="Mahé,_India" number="5" tag="PATIENT-3" type="name">Mahe</reference>
-					<reference entity="Kerala" number="6" tag="BRIDGE-2" type="pronoun">its</reference>
-					<reference entity="AWH_Engineering_College" number="7" tag="AGENT-1" type="description">The school</reference>
-					<reference entity="250" number="8" tag="PATIENT-2" type="name">250</reference>
-					<reference entity="India" number="9" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Ganges" number="10" tag="PATIENT-5" type="description">the Ganges River</reference>
-					<reference entity="India" number="11" tag="BRIDGE-1" type="pronoun">its</reference>
-					<reference entity="Mumbai" number="12" tag="PATIENT-1" type="name">Mumbai</reference>
-				</references>
 				<text>AWH Engineering College in Kuttikkattoor, India is in the state of Kerala which has Mahe to its northwest. The school has 250 employees. India is home to the Ganges River and its largest city is Mumbai.</text>
 				<template>AGENT-1 in PATIENT-4 , BRIDGE-1 is in the state of BRIDGE-2 which has PATIENT-3 to BRIDGE-2 northwest . AGENT-1 has PATIENT-2 employees . BRIDGE-1 is home to PATIENT-5 and BRIDGE-1 largest city is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>India | river | Ganges</striple>
-					<striple>India | largestCity | Mumbai</striple>
-					<striple>Kerala | has to its northwest | Mahé,_India</striple>
-					<striple>AWH_Engineering_College | country | India</striple>
-					<striple>AWH_Engineering_College | state | Kerala</striple>
-					<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
-					<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="India" number="1" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Ganges" number="2" tag="PATIENT-5" type="name">Ganges</reference>
-					<reference entity="Mumbai" number="3" tag="PATIENT-1" type="name">Mumbai</reference>
-					<reference entity="Kerala" number="4" tag="BRIDGE-2" type="name">Kerala</reference>
-					<reference entity="Mahé,_India" number="5" tag="PATIENT-3" type="name">Mahe</reference>
-					<reference entity="Kerala" number="6" tag="BRIDGE-2" type="pronoun">it</reference>
-					<reference entity="Kerala" number="7" tag="BRIDGE-2" type="name">Kerala</reference>
-					<reference entity="AWH_Engineering_College" number="8" tag="AGENT-1" type="name">AWH Engineering College</reference>
-					<reference entity="&quot;Kuttikkattoor&quot;" number="9" tag="PATIENT-4" type="name">Kuttikkattoor</reference>
-					<reference entity="AWH_Engineering_College" number="10" tag="AGENT-1" type="description">The college</reference>
-					<reference entity="250" number="11" tag="PATIENT-2" type="name">250</reference>
-				</references>
 				<text>India is known for the river Ganges and the largest city being Mumbai is also home to the state of Kerala which is positioned with Mahe to it's northwest. Kerala is also where AWH Engineering College is located within the city of Kuttikkattoor. The college currently has 250 members of staff.</text>
 				<template>BRIDGE-1 is known for the river PATIENT-5 and the largest city being PATIENT-1 is also home to the state of BRIDGE-2 which is positioned with PATIENT-3 to BRIDGE-2 's northwest . BRIDGE-2 is also where AGENT-1 is located within the city of PATIENT-4 . AGENT-1 currently has PATIENT-2 members of staff .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>AWH_Engineering_College | city | &quot;Kuttikkattoor&quot;</striple>
-					<striple>AWH_Engineering_College | state | Kerala</striple>
-					<striple>AWH_Engineering_College | country | India</striple>
-					<striple>AWH_Engineering_College | academicStaffSize | 250</striple>
-					<striple>Kerala | has to its northwest | Mahé,_India</striple>
-					<striple>India | largestCity | Mumbai</striple>
-					<striple>India | river | Ganges</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="AWH_Engineering_College" number="1" tag="AGENT-1" type="description">The AWH Engineering College</reference>
-					<reference entity="&quot;Kuttikkattoor&quot;" number="2" tag="PATIENT-4" type="name">Kuttikkattoor</reference>
-					<reference entity="Kerala" number="3" tag="BRIDGE-2" type="name">Kerala</reference>
-					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="250" number="5" tag="PATIENT-2" type="name">250</reference>
-					<reference entity="Kerala" number="6" tag="BRIDGE-2" type="name">Kerala</reference>
-					<reference entity="Mahé,_India" number="7" tag="PATIENT-3" type="name">Mahé</reference>
-					<reference entity="Kerala" number="8" tag="BRIDGE-2" type="pronoun">its</reference>
-					<reference entity="Mumbai" number="9" tag="PATIENT-1" type="name">Mumbai</reference>
-					<reference entity="India" number="10" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Ganges" number="11" tag="PATIENT-5" type="description">The river Ganges</reference>
-					<reference entity="India" number="12" tag="BRIDGE-1" type="name">India</reference>
-				</references>
 				<text>The AWH Engineering College in Kuttikkattoor, Kerala, India has an academic staff of 250. Kerala has Mahé, Indiato its northwest. Mumbai is the largest city in India. The river Ganges runs through India.</text>
 				<template>AGENT-1 in PATIENT-4 , BRIDGE-2 , BRIDGE-1 has an academic staff of PATIENT-2 . BRIDGE-2 has PATIENT-3 , Indiato BRIDGE-2 northwest . PATIENT-1 is the largest city in BRIDGE-1 . PATIENT-5 runs through BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | AWH_Engineering_College</entity>
 				<entity>BRIDGE-1 | India</entity>
 				<entity>BRIDGE-2 | Kerala</entity>
-				<entity>PATIENT-1 | Mumbai</entity>
-				<entity>PATIENT-2 | 250</entity>
-				<entity>PATIENT-3 | Mahé,_India</entity>
-				<entity>PATIENT-4 | &quot;Kuttikkattoor&quot;</entity>
 				<entity>PATIENT-5 | Ganges</entity>
+				<entity>PATIENT-4 | &quot;Kuttikkattoor&quot;</entity>
+				<entity>AGENT-1 | AWH_Engineering_College</entity>
+				<entity>PATIENT-1 | Mumbai</entity>
+				<entity>PATIENT-3 | Mahé,_India</entity>
+				<entity>PATIENT-2 | 250</entity>
 			</entitymap>
 		</entry>
 		<entry category="University" eid="Id6" size="7">
@@ -512,73 +240,26 @@
 				<mtriple>Romania | anthem | Deșteaptă-te,_române!</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>1_Decembrie_1918_University | city | Alba_Iulia</striple>
-					<striple>1_Decembrie_1918_University | country | Romania</striple>
-					<striple>Romania | capital | Bucharest</striple>
-					<striple>Romania | leaderName | Klaus_Iohannis</striple>
-					<striple>Romania | ethnicGroup | Germans_of_Romania</striple>
-					<striple>Romania | anthem | Deșteaptă-te,_române!</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="name">1 Decembrie 1918 University</reference>
-					<reference entity="Alba_Iulia" number="2" tag="PATIENT-5" type="name">Alba Iulia</reference>
-					<reference entity="Romania" number="3" tag="BRIDGE-1" type="name">Romania</reference>
-					<reference entity="Romania" number="4" tag="BRIDGE-1" type="description">The country 's</reference>
-					<reference entity="Bucharest" number="5" tag="PATIENT-4" type="name">Bucharest</reference>
-					<reference entity="Klaus_Iohannis" number="7" tag="PATIENT-3" type="name">Klaus Iohannis</reference>
-					<reference entity="Romania" number="8" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="Germans_of_Romania" number="9" tag="PATIENT-1" type="description">The Germans of Romania</reference>
-					<reference entity="Romania" number="10" tag="BRIDGE-1" type="description">the country 's</reference>
-					<reference entity="Deșteaptă-te,_române!" number="11" tag="PATIENT-6" type="name">Deșteaptă-te</reference>
-				</references>
 				<text>1 Decembrie 1918 University is located in the city of Alba Iulia, Romania. The country's capital is Bucharest and the leader (title Prime Minister of Romania) is Klaus Iohannis. An ethnic group of the country is The Germans of Romania and the country's national anthem is Deșteaptă-te, române!</text>
 				<template>AGENT-1 is located in the city of PATIENT-5 , BRIDGE-1 . BRIDGE-1 capital is PATIENT-4 and the leader ( title of PATIENT-2) is PATIENT-3 . An ethnic group of BRIDGE-1 is PATIENT-1 and BRIDGE-1 national anthem is PATIENT-6</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset/>
-				<references/>
 				<text>The national anthem of Romania is &quot;Desteapta-te, romane!&quot; and the capital city is Bucharest. The country is lead by Prime Minister Klaus Iohannis and is the location of the 1 Decembrie 1918 University in the city of Alba Iulia. One of the ethnic groups of the country is the Germans of Romania.</text>
 				<template>g</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>1_Decembrie_1918_University | city | Alba_Iulia</striple>
-					<striple>1_Decembrie_1918_University | country | Romania</striple>
-					<striple>Romania | capital | Bucharest</striple>
-					<striple>Romania | leaderTitle | Prime_Minister_of_Romania</striple>
-					<striple>Romania | leaderName | Klaus_Iohannis</striple>
-					<striple>Romania | ethnicGroup | Germans_of_Romania</striple>
-					<striple>Romania | anthem | Deșteaptă-te,_române!</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="1_Decembrie_1918_University" number="1" tag="AGENT-1" type="description">The 1 Decembrie 1918 University</reference>
-					<reference entity="Alba_Iulia" number="2" tag="PATIENT-5" type="name">Alba Iulia</reference>
-					<reference entity="Romania" number="3" tag="BRIDGE-1" type="name">Romania</reference>
-					<reference entity="Romania" number="4" tag="BRIDGE-1" type="name">Romania 's</reference>
-					<reference entity="Bucharest" number="5" tag="PATIENT-4" type="name">Bucharest</reference>
-					<reference entity="Romania" number="6" tag="BRIDGE-1" type="pronoun">its</reference>
-					<reference entity="Prime_Minister_of_Romania" number="7" tag="PATIENT-2" type="name">Prime</reference>
-					<reference entity="Klaus_Iohannis" number="8" tag="PATIENT-3" type="name">Minister Klaus Iohannis</reference>
-					<reference entity="Romania" number="9" tag="BRIDGE-1" type="pronoun">its</reference>
-					<reference entity="Germans_of_Romania" number="10" tag="PATIENT-1" type="description">the Germans of Romania</reference>
-					<reference entity="Romania" number="11" tag="BRIDGE-1" type="name">Romania 's</reference>
-					<reference entity="Bucharest" number="12" tag="PATIENT-4" type="name">Bucharest ; its leader is Prime Minister Klaus Iohannis</reference>
-					<reference entity="Romania" number="13" tag="BRIDGE-1" type="name">its ethnic group is the Germans of Romania . Romania 's capital is Bucharest and its</reference>
-					<reference entity="Deșteaptă-te,_române!" number="14" tag="PATIENT-6" type="name">Desteapta-te , Romane</reference>
-				</references>
 				<text>The 1 Decembrie 1918 University is located in Alba Iulia, Romania. Romania's capital is Bucharest; its leader is Prime Minister Klaus Iohannis and its ethnic group is the Germans of Romania. Romania's capital is Bucharest and its anthem is Desteapta-te, Romane!</text>
 				<template>AGENT-1 is located in PATIENT-5 , BRIDGE-1 . BRIDGE-1 capital is PATIENT-4 ; BRIDGE-1 leader is PATIENT-2 PATIENT-3 and BRIDGE-1 ethnic group is PATIENT-1 . BRIDGE-1 capital is PATIENT-4 and BRIDGE-1 anthem is PATIENT-6 !</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
-				<entity>BRIDGE-1 | Romania</entity>
-				<entity>PATIENT-1 | Germans_of_Romania</entity>
-				<entity>PATIENT-2 | Prime_Minister_of_Romania</entity>
-				<entity>PATIENT-3 | Klaus_Iohannis</entity>
 				<entity>PATIENT-4 | Bucharest</entity>
 				<entity>PATIENT-5 | Alba_Iulia</entity>
+				<entity>BRIDGE-1 | Romania</entity>
+				<entity>AGENT-1 | 1_Decembrie_1918_University</entity>
 				<entity>PATIENT-6 | Deșteaptă-te,_române!</entity>
+				<entity>PATIENT-1 | Germans_of_Romania</entity>
+				<entity>PATIENT-3 | Klaus_Iohannis</entity>
+				<entity>PATIENT-2 | Prime_Minister_of_Romania</entity>
 			</entitymap>
 		</entry>
 		<entry category="University" eid="Id7" size="7">
@@ -601,89 +282,27 @@
 				<mtriple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
-					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="2000" number="1" tag="PATIENT-3" type="name">2000</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="2" tag="AGENT-1" type="description">the Acharya Institute of Technology</reference>
-					<reference entity="Karnataka" number="3" tag="PATIENT-4" type="name">Karnataka</reference>
-					<reference entity="&quot;India&quot;" number="4" tag="PATIENT-5" type="name">India</reference>
-					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="6" tag="PATIENT-2" type="name">Dr G P Prabhukumar</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="7" tag="AGENT-1" type="pronoun">it</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="8" tag="BRIDGE-1" type="description">the Visvesvaraya Technological University</reference>
-					<reference entity="Belgaum" number="9" tag="PATIENT-1" type="name">Belgaum</reference>
-				</references>
 				<text>In the year 2000 the Acharya Institute of Technology was established in the state of Karnataka, India. The current location is &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot; The Director is Dr G P Prabhukumar and it is affiliated with the Visvesvaraya Technological University in the city of Belgaum.</text>
 				<template>In the year PATIENT-3 AGENT-1 was established in the state of PATIENT-4 , PATIENT-5 . The current location is PATIENT-6 . The Director is PATIENT-2 and AGENT-1 is affiliated with BRIDGE-1 in the city of PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="description">The Acharya Institute of Technology 's</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="2" tag="PATIENT-6" type="name">Soldevanahalli , Acharya Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="3" tag="AGENT-1" type="name">Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore , Karnatka , 560090 . It</reference>
-					<reference entity="2000" number="4" tag="PATIENT-3" type="name">2000</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="5" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="6" tag="PATIENT-2" type="name">Dr G P Prabhukumar</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="7" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="8" tag="BRIDGE-1" type="description">the Visvesvaraya Technological University</reference>
-					<reference entity="Belgaum" number="9" tag="PATIENT-1" type="name">Belgaum</reference>
-				</references>
 				<text>The Acharya Institute of Technology's campus is located in Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore, Karnatka, 560090. It was established in 2000 and its director is Dr G P Prabhukumar. It is affiliated to the Visvesvaraya Technological University in Belgaum.</text>
 				<template>AGENT-1 campus is located in PATIENT-6 . AGENT-1 was established in PATIENT-3 and AGENT-1 director is PATIENT-2 . AGENT-1 is affiliated to BRIDGE-1 in PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Acharya_Institute_of_Technology | affiliation | Visvesvaraya_Technological_University</striple>
-					<striple>Visvesvaraya_Technological_University | city | Belgaum</striple>
-					<striple>Acharya_Institute_of_Technology | country | &quot;India&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | state | Karnataka</striple>
-					<striple>Acharya_Institute_of_Technology | campus | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</striple>
-					<striple>Acharya_Institute_of_Technology | established | 2000</striple>
-					<striple>Acharya_Institute_of_Technology | director | &quot;Dr. G. P. Prabhukumar&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Acharya_Institute_of_Technology" number="1" tag="AGENT-1" type="name">Acharya Institute of Technology</reference>
-					<reference entity="Visvesvaraya_Technological_University" number="2" tag="BRIDGE-1" type="name">Visvesvaraya Technological University</reference>
-					<reference entity="Belgaum" number="3" tag="PATIENT-1" type="name">Belgium</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="4" tag="AGENT-1" type="description">The institute itself</reference>
-					<reference entity="&quot;India&quot;" number="5" tag="PATIENT-5" type="name">India</reference>
-					<reference entity="Karnataka" number="6" tag="PATIENT-4" type="name">'s Karnataka</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="7" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;" number="8" tag="PATIENT-6" type="name">In Soldevanahalli , Acharya Dr</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="9" tag="AGENT-1" type="name">Sarvapalli Radhakrishnan Road , Hessarghatta Main Road , Bangalore – 560090 . It</reference>
-					<reference entity="2000" number="10" tag="PATIENT-3" type="name">2000</reference>
-					<reference entity="Acharya_Institute_of_Technology" number="11" tag="AGENT-1" type="pronoun">its</reference>
-					<reference entity="&quot;Dr. G. P. Prabhukumar&quot;" number="12" tag="PATIENT-2" type="name">Dr</reference>
-				</references>
 				<text>Acharya Institute of Technology is affiliated with Visvesvaraya Technological University which is in Belgium. The institute itself is in India's Karnataka state and its full address is In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090. It was created in 2000 and its director is Dr. G. P. Prabhukumar.</text>
 				<template>AGENT-1 is affiliated with BRIDGE-1 which is in PATIENT-1 . AGENT-1 is in PATIENT-5 PATIENT-4 state and AGENT-1 full address is PATIENT-6 . AGENT-1 was created in PATIENT-3 and AGENT-1 director is PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
 				<entity>BRIDGE-1 | Visvesvaraya_Technological_University</entity>
-				<entity>PATIENT-1 | Belgaum</entity>
-				<entity>PATIENT-2 | &quot;Dr. G. P. Prabhukumar&quot;</entity>
-				<entity>PATIENT-3 | 2000</entity>
-				<entity>PATIENT-4 | Karnataka</entity>
 				<entity>PATIENT-5 | &quot;India&quot;</entity>
+				<entity>PATIENT-4 | Karnataka</entity>
+				<entity>AGENT-1 | Acharya_Institute_of_Technology</entity>
 				<entity>PATIENT-6 | &quot;In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.&quot;</entity>
+				<entity>PATIENT-1 | Belgaum</entity>
+				<entity>PATIENT-3 | 2000</entity>
+				<entity>PATIENT-2 | &quot;Dr. G. P. Prabhukumar&quot;</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

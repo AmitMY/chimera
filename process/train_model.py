@@ -2,7 +2,7 @@ from model.open_nmt import OpenNMTModelRunner
 from utils.pipeline import Pipeline
 
 train_opts = {
-    "train_steps": 30000,
+    "train_steps": 10000,
     "save_checkpoint_steps": 2000,
     "batch_size": 16,
     "word_vec_size": 1000,

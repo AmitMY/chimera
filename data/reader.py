@@ -117,6 +117,8 @@ class DataReader:
         self.misspelling = misspelling
         self.rephrase = rephrase
 
+        self.delex = Delexicalize(rephrase_f=self.rephrase[0], rephrase_if_must_f=self.rephrase[1])
+
     def copy(self):
         return pickle.loads(pickle.dumps(self))
 
@@ -138,9 +140,11 @@ class DataReader:
 
         return self
 
+    def delex_single(self, text: str, ents: List[str], d: Datum):
+        return self.delex.run(text, ents)
+
     def match_entities(self):
-        delex = Delexicalize(rephrase_f=self.rephrase[0], rephrase_if_must_f=self.rephrase[1])
-        self.data = [d if d.delex else d.set_delex(delex.run(d.text, d.graph.nodes)) for d in self.data]
+        self.data = [d if d.delex else d.set_delex(self.delex_single(d.text, d.graph.nodes, d)) for d in self.data]
         self.data = [d for d in self.data if d.delex]  # Filter out failed delex
         return self
 
@@ -194,8 +198,11 @@ class DataReader:
 
         return plan_sentences
 
+    def get_plans(self):
+        return list(set([d.plan for d in self.data]))
+
     def translate_plans(self, model: Model):
-        plans = list(set([d.plan for d in self.data]))
+        plans = self.get_plans()
         translations = model.translate(plans)
         mapper = {p: t for p, t in zip(plans, translations)}
         self.data = [d.set_hyp(mapper[d.plan]) for d in self.data]

@@ -17,43 +17,10 @@
 				<mtriple>United_Kingdom | currency | Pound_sterling</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
-					<striple>United_Kingdom | capital | London</striple>
-					<striple>United_Kingdom | currency | Pound_sterling</striple>
-					<striple>London | leaderName | Boris_Johnson</striple>
-					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="20_Fenchurch_Street" number="1" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
-					<reference entity="United_Kingdom" number="2" tag="BRIDGE-1" type="description">the United Kingdom</reference>
-					<reference entity="London" number="3" tag="BRIDGE-2" type="name">London</reference>
-					<reference entity="Pound_sterling" number="4" tag="PATIENT-3" type="name">pounds sterling</reference>
-					<reference entity="Boris_Johnson" number="5" tag="PATIENT-1" type="name">Boris Johnson</reference>
-					<reference entity="London" number="6" tag="BRIDGE-2" type="name">London</reference>
-					<reference entity="United_Kingdom" number="7" tag="BRIDGE-1" type="description">the United Kingdom</reference>
-					<reference entity="Elizabeth_II" number="8" tag="PATIENT-2" type="name">Elizabeth II</reference>
-				</references>
 				<text>20 Fenchurch Street is located within the United Kingdom, where London is the capital, and the currency is pounds sterling. Boris Johnson is the leader in London, and one of the leaders of the United Kingdom is Elizabeth II.</text>
 				<template>AGENT-1 is located within BRIDGE-1 , where BRIDGE-2 is the capital , and the currency is PATIENT-3 . PATIENT-1 is the leader in BRIDGE-2 , and one of the leaders of BRIDGE-1 is PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>United_Kingdom | currency | Pound_sterling</striple>
-					<striple>United_Kingdom | leaderName | Elizabeth_II</striple>
-					<striple>United_Kingdom | capital | London</striple>
-					<striple>London | leaderName | Boris_Johnson</striple>
-					<striple>20_Fenchurch_Street | location | United_Kingdom</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="United_Kingdom" number="1" tag="BRIDGE-1" type="description">The United Kingdom</reference>
-					<reference entity="Pound_sterling" number="2" tag="PATIENT-3" type="description">the pound sterling</reference>
-					<reference entity="Elizabeth_II" number="3" tag="PATIENT-2" type="name">Elizabeth II</reference>
-					<reference entity="Boris_Johnson" number="4" tag="PATIENT-1" type="name">Boris Johnson</reference>
-					<reference entity="London" number="5" tag="BRIDGE-2" type="name">London</reference>
-					<reference entity="United_Kingdom" number="6" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="20_Fenchurch_Street" number="7" tag="AGENT-1" type="name">20 Fenchurch Street</reference>
-				</references>
 				<text>The United Kingdom uses the currency of the pound sterling and is lead by Elizabeth II along with Boris Johnson. The capital city is London and the country is also the location of 20 Fenchurch Street.</text>
 				<template>BRIDGE-1 uses the currency of PATIENT-3 and is lead by PATIENT-2 along with PATIENT-1 . The capital city is BRIDGE-2 and BRIDGE-1 is also the location of AGENT-1 .</template>
 			</lex>
@@ -62,8 +29,8 @@
 				<entity>BRIDGE-1 | United_Kingdom</entity>
 				<entity>BRIDGE-2 | London</entity>
 				<entity>PATIENT-1 | Boris_Johnson</entity>
-				<entity>PATIENT-2 | Elizabeth_II</entity>
 				<entity>PATIENT-3 | Pound_sterling</entity>
+				<entity>PATIENT-2 | Elizabeth_II</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id2" size="5">
@@ -74,6 +41,13 @@
 				<otriple>250_Delaware_Avenue | floorArea | &quot;30843.8&quot;^^xsd:double</otriple>
 				<otriple>250_Delaware_Avenue | floorCount | &quot;12&quot;^^xsd:positiveInteger</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>250_Delaware_Avenue | location | Buffalo,_New_York</otriple>
+				<otriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</otriple>
+				<otriple>250_Delaware_Avenue | cost | &quot;1.1E8&quot;^^&lt;http://dbpedia.org/datatype/usDollar&gt;</otriple>
+				<otriple>250_Delaware_Avenue | floorArea | &quot;30843.8&quot;^^xsd:double</otriple>
+				<otriple>250_Delaware_Avenue | floorCount | 12</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>250_Delaware_Avenue | location | Buffalo,_New_York</mtriple>
 				<mtriple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</mtriple>
@@ -82,51 +56,20 @@
 				<mtriple>250_Delaware_Avenue | floorCount | 12</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>250_Delaware_Avenue | location | Buffalo,_New_York</striple>
-					<striple>250_Delaware_Avenue | cost | &quot;110 million (dollars)&quot;</striple>
-					<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
-					<striple>250_Delaware_Avenue | floorCount | 12</striple>
-					<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
-					<reference entity="Buffalo,_New_York" number="2" tag="PATIENT-1" type="name">Buffalo New York</reference>
-					<reference entity="&quot;110 million (dollars)&quot;" number="3" tag="PATIENT-3" type="name">110 million dollars</reference>
-					<reference entity="&quot;January, 2014&quot;" number="4" tag="PATIENT-2" type="name">January 2014</reference>
-					<reference entity="250_Delaware_Avenue" number="5" tag="AGENT-1" type="description">the building</reference>
-					<reference entity="12" number="6" tag="PATIENT-5" type="name">12</reference>
-					<reference entity="30843.8 (square metres)" number="7" tag="PATIENT-4" type="name">30843</reference>
-				</references>
 				<text>250 Delaware Avenue was built in Buffalo New York at a cost of 110 million dollars. Construction began in January 2014 and the building has 12 floors with an area of 30843.8 square metres.</text>
 				<template>AGENT-1 was built in PATIENT-1 at a cost of PATIENT-3 . Construction began in PATIENT-2 and AGENT-1 has PATIENT-5 floors with an area of PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>250_Delaware_Avenue | floorCount | 12</striple>
-					<striple>250_Delaware_Avenue | location | Buffalo,_New_York</striple>
-					<striple>250_Delaware_Avenue | buildingStartDate | &quot;January, 2014&quot;</striple>
-					<striple>250_Delaware_Avenue | cost | &quot;110 million (dollars)&quot;</striple>
-					<striple>250_Delaware_Avenue | floorArea | 30843.8 (square metres)</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="12" number="1" tag="PATIENT-5" type="name">12</reference>
-					<reference entity="250_Delaware_Avenue" number="2" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
-					<reference entity="Buffalo,_New_York" number="3" tag="PATIENT-1" type="name">Buffalo , New York</reference>
-					<reference entity="&quot;January, 2014&quot;" number="4" tag="PATIENT-2" type="name">January 2014</reference>
-					<reference entity="&quot;110 million (dollars)&quot;" number="5" tag="PATIENT-3" type="name">110 million dollars</reference>
-					<reference entity="30843.8 (square metres)" number="6" tag="PATIENT-4" type="name">30843</reference>
-				</references>
 				<text>There are 12 floors at 250 Delaware Avenue in Buffalo, New York. Construction, which began in January 2014 cost 110 million dollars for a floor area of 30843.8 square metres.</text>
 				<template>There are PATIENT-5 floors at AGENT-1 in PATIENT-1 . Construction , which began in PATIENT-2 cost PATIENT-3 for a floor area of PATIENT-4 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | 12</entity>
+				<entity>PATIENT-4 | 30843.8 (square metres)</entity>
 				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
 				<entity>PATIENT-1 | Buffalo,_New_York</entity>
-				<entity>PATIENT-2 | &quot;January, 2014&quot;</entity>
 				<entity>PATIENT-3 | &quot;110 million (dollars)&quot;</entity>
-				<entity>PATIENT-4 | 30843.8 (square metres)</entity>
-				<entity>PATIENT-5 | 12</entity>
+				<entity>PATIENT-2 | &quot;January, 2014&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id3" size="5">
@@ -145,72 +88,24 @@
 				<mtriple>Chicago | country | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Chicago | leaderName | Rahm_Emanuel</striple>
-					<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
-					<striple>Chicago | country | United_States</striple>
-					<striple>300_North_LaSalle | location | Chicago</striple>
-					<striple>300_North_LaSalle | floorCount | 60</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Rahm_Emanuel" number="1" tag="PATIENT-1" type="name">Rahm Emanuel</reference>
-					<reference entity="Chicago" number="2" tag="BRIDGE-1" type="name">Chicago</reference>
-					<reference entity="DuPage_County,_Illinois" number="3" tag="PATIENT-2" type="name">DuPage County</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-4" type="name">Illinois , United States</reference>
-					<reference entity="300_North_LaSalle" number="5" tag="AGENT-1" type="description">the building</reference>
-					<reference entity="300_North_LaSalle" number="6" tag="AGENT-1" type="name">300 North LaSalle</reference>
-					<reference entity="60" number="7" tag="PATIENT-3" type="name">60</reference>
-				</references>
 				<text>Rahm Emanuel is the leader of Chicago, DuPage County, Illinois, United States which is the location of the building at 300 North LaSalle which has 60 floors.</text>
 				<template>PATIENT-1 is the leader of BRIDGE-1 , PATIENT-2 , PATIENT-4 which is the location of AGENT-1 at AGENT-1 which has PATIENT-3 floors .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>300_North_LaSalle | floorCount | 60</striple>
-					<striple>300_North_LaSalle | location | Chicago</striple>
-					<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
-					<striple>Chicago | country | United_States</striple>
-					<striple>Chicago | leaderName | Rahm_Emanuel</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
-					<reference entity="60" number="2" tag="PATIENT-3" type="name">60</reference>
-					<reference entity="Chicago" number="3" tag="BRIDGE-1" type="name">Chicago</reference>
-					<reference entity="DuPage_County,_Illinois" number="4" tag="PATIENT-2" type="name">DuPage County</reference>
-					<reference entity="United_States" number="5" tag="PATIENT-4" type="name">Illinois , United States</reference>
-					<reference entity="Chicago" number="6" tag="BRIDGE-1" type="name">Chicago</reference>
-					<reference entity="Rahm_Emanuel" number="7" tag="PATIENT-1" type="name">Rahm Emanuel</reference>
-				</references>
 				<text>300 North LaSalle has 60 floors and is located in Chicago, DuPage County, Illinois, United States. The leader of Chicago is Rahm Emanuel.</text>
 				<template>AGENT-1 has PATIENT-3 floors and is located in BRIDGE-1 , PATIENT-2 , PATIENT-4 . The leader of BRIDGE-1 is PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>300_North_LaSalle | floorCount | 60</striple>
-					<striple>300_North_LaSalle | location | Chicago</striple>
-					<striple>Chicago | isPartOf | DuPage_County,_Illinois</striple>
-					<striple>Chicago | country | United_States</striple>
-					<striple>Chicago | leaderName | Rahm_Emanuel</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="300_North_LaSalle" number="1" tag="AGENT-1" type="name">300 North LaSalle</reference>
-					<reference entity="60" number="2" tag="PATIENT-3" type="name">60</reference>
-					<reference entity="Chicago" number="3" tag="BRIDGE-1" type="name">Chicago</reference>
-					<reference entity="DuPage_County,_Illinois" number="4" tag="PATIENT-2" type="name">DuPage County</reference>
-					<reference entity="United_States" number="5" tag="PATIENT-4" type="name">Illinois , United States</reference>
-					<reference entity="Chicago" number="6" tag="BRIDGE-1" type="name">Chicago</reference>
-					<reference entity="Rahm_Emanuel" number="7" tag="PATIENT-1" type="name">Rahm Emanuel</reference>
-				</references>
 				<text>300 North LaSalle, which has 60 floors, is located in Chicago which is part of DuPage County in Illinois, United States. The leader of Chicago is Rahm Emanuel.</text>
 				<template>AGENT-1 , which has PATIENT-3 floors , is located in BRIDGE-1 which is part of PATIENT-2 in PATIENT-4 . The leader of BRIDGE-1 is PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | 300_North_LaSalle</entity>
 				<entity>BRIDGE-1 | Chicago</entity>
-				<entity>PATIENT-1 | Rahm_Emanuel</entity>
-				<entity>PATIENT-2 | DuPage_County,_Illinois</entity>
-				<entity>PATIENT-3 | 60</entity>
 				<entity>PATIENT-4 | United_States</entity>
+				<entity>AGENT-1 | 300_North_LaSalle</entity>
+				<entity>PATIENT-1 | Rahm_Emanuel</entity>
+				<entity>PATIENT-3 | 60</entity>
+				<entity>PATIENT-2 | DuPage_County,_Illinois</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id4" size="5">
@@ -221,6 +116,13 @@
 				<otriple>3Arena | location | Dublin</otriple>
 				<otriple>Dublin | isPartOf | Leinster</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>3Arena | owner | Live_Nation_Entertainment</otriple>
+				<otriple>Dublin | leaderTitle | Dáil_Éireann</otriple>
+				<otriple>Dublin | country | Republic_of_Ireland</otriple>
+				<otriple>3Arena | location | Dublin</otriple>
+				<otriple>Dublin | subdivisionName | Leinster</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>3Arena | owner | Live_Nation_Entertainment</mtriple>
 				<mtriple>Dublin | leaderTitle | Dáil_Éireann</mtriple>
@@ -229,71 +131,24 @@
 				<mtriple>Dublin | isPartOf | Leinster</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>3Arena | owner | Live_Nation_Entertainment</striple>
-					<striple>3Arena | location | Dublin</striple>
-					<striple>Dublin | country | Republic_of_Ireland</striple>
-					<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
-					<striple>Dublin | isPartOf | Leinster</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Live_Nation_Entertainment" number="2" tag="PATIENT-1" type="name">Live Nation Entertainment</reference>
-					<reference entity="Dublin" number="3" tag="BRIDGE-1" type="name">Dublin</reference>
-					<reference entity="Republic_of_Ireland" number="4" tag="PATIENT-3" type="name">Republic of Ireland</reference>
-					<reference entity="Dáil_Éireann" number="5" tag="PATIENT-2" type="name">Dáil Éireann</reference>
-					<reference entity="Dublin" number="6" tag="BRIDGE-1" type="name">Dublin</reference>
-					<reference entity="Leinster" number="7" tag="PATIENT-4" type="name">Leinster</reference>
-				</references>
 				<text>3Arena (owned by Live Nation Entertainment) is located in Dublin, Republic of Ireland. Dáil Éireann is a leader in Dublin, which is part of Leinster.</text>
 				<template>AGENT-1 ( owned by PATIENT-1 ) is located in BRIDGE-1 , PATIENT-3 . PATIENT-2 is a leader in BRIDGE-1 , which is part of PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>3Arena | owner | Live_Nation_Entertainment</striple>
-					<striple>3Arena | location | Dublin</striple>
-					<striple>Dublin | isPartOf | Leinster</striple>
-					<striple>Dublin | country | Republic_of_Ireland</striple>
-					<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="3Arena" number="1" tag="AGENT-1" type="name">3Arena</reference>
-					<reference entity="Live_Nation_Entertainment" number="2" tag="PATIENT-1" type="name">Live Nation Entertainment</reference>
-					<reference entity="Dublin" number="3" tag="BRIDGE-1" type="name">Dublin</reference>
-					<reference entity="Leinster" number="4" tag="PATIENT-4" type="name">Leinster</reference>
-					<reference entity="Republic_of_Ireland" number="5" tag="PATIENT-3" type="description">the Republic of Ireland</reference>
-					<reference entity="Dáil_Éireann" number="6" tag="PATIENT-2" type="name">Dáil Éireann</reference>
-					<reference entity="Dublin" number="7" tag="BRIDGE-1" type="name">Dublin</reference>
-				</references>
 				<text>3Arena, owned by Live Nation Entertainment, is located in Dublin, which is part of Leinster in the Republic of Ireland. Dáil Éireann is a leader in Dublin.</text>
 				<template>AGENT-1 , owned by PATIENT-1 , is located in BRIDGE-1 , which is part of PATIENT-4 in PATIENT-3 . PATIENT-2 is a leader in BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Dublin | isPartOf | Leinster</striple>
-					<striple>3Arena | location | Dublin</striple>
-					<striple>3Arena | owner | Live_Nation_Entertainment</striple>
-					<striple>Dublin | country | Republic_of_Ireland</striple>
-					<striple>Dublin | leaderTitle | Dáil_Éireann</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Dublin" number="1" tag="BRIDGE-1" type="name">Dublin</reference>
-					<reference entity="Leinster" number="2" tag="PATIENT-4" type="name">Leinster</reference>
-					<reference entity="3Arena" number="3" tag="AGENT-1" type="name">3Arena</reference>
-					<reference entity="Live_Nation_Entertainment" number="4" tag="PATIENT-1" type="name">Live Nation Entertainment</reference>
-					<reference entity="Dublin" number="5" tag="BRIDGE-1" type="name">Dublin</reference>
-					<reference entity="Republic_of_Ireland" number="6" tag="PATIENT-3" type="description">the Republic of Ireland</reference>
-					<reference entity="Dáil_Éireann" number="7" tag="PATIENT-2" type="name">Dáil Éireann</reference>
-				</references>
 				<text>Located in Dublin, Leinster, 3Arena is owned by Live Nation Entertainment. Dublin is also part of the Republic of Ireland and is lead by Dáil Éireann.</text>
 				<template>Located in BRIDGE-1 , PATIENT-4 , AGENT-1 is owned by PATIENT-1 . BRIDGE-1 is also part of PATIENT-3 and is lead by PATIENT-2 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | 3Arena</entity>
 				<entity>BRIDGE-1 | Dublin</entity>
-				<entity>PATIENT-1 | Live_Nation_Entertainment</entity>
-				<entity>PATIENT-2 | Dáil_Éireann</entity>
-				<entity>PATIENT-3 | Republic_of_Ireland</entity>
 				<entity>PATIENT-4 | Leinster</entity>
+				<entity>AGENT-1 | 3Arena</entity>
+				<entity>PATIENT-1 | Live_Nation_Entertainment</entity>
+				<entity>PATIENT-3 | Republic_of_Ireland</entity>
+				<entity>PATIENT-2 | Dáil_Éireann</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id5" size="5">
@@ -312,49 +167,20 @@
 				<mtriple>Adisham_Hall | address | &quot;St. Benedict's Monastery, Adisham, Haputhale, Sri Lanka&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Adisham_Hall | location | Sri_Lanka</striple>
-					<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
-					<striple>Adisham_Hall | completionDate | 1931</striple>
-					<striple>Adisham_Hall | address | &quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;</striple>
-					<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
-					<reference entity="Sri_Lanka" number="2" tag="PATIENT-2" type="name">Sri Lanka</reference>
-					<reference entity="&quot;1927&quot;" number="3" tag="PATIENT-4" type="name">1927</reference>
-					<reference entity="1931" number="4" tag="PATIENT-3" type="name">1931</reference>
-					<reference entity="&quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;" number="5" tag="PATIENT-5" type="name">St Benedicts Monastery , Adisham , Haputhale , Sri Lanka</reference>
-					<reference entity="&quot;Tudor and Jacabian&quot;" number="6" tag="PATIENT-1" type="description">the Tudor and Jacobean</reference>
-				</references>
 				<text>Adisham Hall in Sri Lanka was constructed between 1927 and 1931 at St Benedicts Monastery, Adisham, Haputhale, Sri Lanka in the Tudor and Jacobean style of architecture.</text>
 				<template>AGENT-1 in PATIENT-2 was constructed between PATIENT-4 and PATIENT-3 at PATIENT-5 in PATIENT-1 style of architecture .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Adisham_Hall | buildingStartDate | &quot;1927&quot;</striple>
-					<striple>Adisham_Hall | completionDate | 1931</striple>
-					<striple>Adisham_Hall | architecturalStyle | &quot;Tudor and Jacabian&quot;</striple>
-					<striple>Adisham_Hall | address | &quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
-					<reference entity="&quot;1927&quot;" number="2" tag="PATIENT-4" type="name">1927</reference>
-					<reference entity="1931" number="3" tag="PATIENT-3" type="name">1931</reference>
-					<reference entity="&quot;Tudor and Jacabian&quot;" number="4" tag="PATIENT-1" type="name">Tudor and Jacobean</reference>
-					<reference entity="Adisham_Hall" number="5" tag="AGENT-1" type="pronoun">It</reference>
-					<reference entity="&quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;" number="6" tag="PATIENT-5" type="name">St Benedict 's Monastery , Adisham , Haputhale , Sri Lanka</reference>
-				</references>
 				<text>Construction of Adisham Hall took place between 1927 and 1931 in the architectural style of Tudor and Jacobean. It is located at St Benedict's Monastery, Adisham, Haputhale, Sri Lanka.</text>
 				<template>Construction of AGENT-1 took place between PATIENT-4 and PATIENT-3 in the architectural style of PATIENT-1 . AGENT-1 is located at PATIENT-5 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;</entity>
+				<entity>PATIENT-4 | &quot;1927&quot;</entity>
 				<entity>AGENT-1 | Adisham_Hall</entity>
 				<entity>PATIENT-1 | &quot;Tudor and Jacabian&quot;</entity>
-				<entity>PATIENT-2 | Sri_Lanka</entity>
 				<entity>PATIENT-3 | 1931</entity>
-				<entity>PATIENT-4 | &quot;1927&quot;</entity>
-				<entity>PATIENT-5 | &quot;St. Benedicts Monastery, Adisham, Haputhale, Sri Lanka&quot;</entity>
+				<entity>PATIENT-2 | Sri_Lanka</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id6" size="5">
@@ -373,70 +199,24 @@
 				<mtriple>Sri_Lanka | currency | Sri_Lankan_rupee</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
-					<striple>Adisham_Hall | country | Sri_Lanka</striple>
-					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
-					<striple>Sri_Lanka | language | Tamil_language</striple>
-					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
-					<reference entity="&quot;Haputale, Sri Lanka&quot;" number="2" tag="PATIENT-1" type="name">Haputale , Sri Lanka</reference>
-					<reference entity="Sri_Lanka" number="3" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Sri_Jayawardenepura_Kotte" number="4" tag="PATIENT-2" type="name">Sri Jayawardenepura Kotte</reference>
-					<reference entity="Sri_Lanka" number="5" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="Tamil_language" number="6" tag="PATIENT-3" type="name">Tamil</reference>
-					<reference entity="Sri_Lankan_rupee" number="7" tag="PATIENT-4" type="description">the Sri Lankan Rupee</reference>
-				</references>
 				<text>Adisham Hall is located in Haputale, Sri Lanka. The capital of Sri Lanka is Sri Jayawardenepura Kotte, the language used in the country is Tamil and the currency is the Sri Lankan Rupee.</text>
 				<template>AGENT-1 is located in PATIENT-1 . The capital of BRIDGE-1 is PATIENT-2 , the language used in BRIDGE-1 is PATIENT-3 and the currency is PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
-					<striple>Adisham_Hall | country | Sri_Lanka</striple>
-					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
-					<striple>Sri_Lanka | language | Tamil_language</striple>
-					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
-					<reference entity="&quot;Haputale, Sri Lanka&quot;" number="2" tag="PATIENT-1" type="name">Haputale , Sri Lanka</reference>
-					<reference entity="Sri_Lanka" number="3" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Sri_Jayawardenepura_Kotte" number="4" tag="PATIENT-2" type="name">Sri Jayawardenepura Kotte</reference>
-					<reference entity="Tamil_language" number="5" tag="PATIENT-3" type="name">Tamil</reference>
-					<reference entity="Sri_Lankan_rupee" number="6" tag="PATIENT-4" type="description">the Sri Lankan Rupee</reference>
-				</references>
 				<text>Adisham Hall is in Haputale, Sri Lanka. The capital of Sri Lanka is Sri Jayawardenepura Kotte, the language spoken there is Tamil and the currency is the Sri Lankan Rupee.</text>
 				<template>AGENT-1 is in PATIENT-1 . The capital of BRIDGE-1 is PATIENT-2 , the language spoken there is PATIENT-3 and the currency is PATIENT-4 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Adisham_Hall | location | &quot;Haputale, Sri Lanka&quot;</striple>
-					<striple>Adisham_Hall | country | Sri_Lanka</striple>
-					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
-					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
-					<striple>Sri_Lanka | language | Tamil_language</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Admisham Hall</reference>
-					<reference entity="&quot;Haputale, Sri Lanka&quot;" number="2" tag="PATIENT-1" type="name">Haputale , Sri Lanka</reference>
-					<reference entity="Sri_Jayawardenepura_Kotte" number="3" tag="PATIENT-2" type="name">Sri Jayawardenepura Kotte</reference>
-					<reference entity="Sri_Lanka" number="4" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Sri_Lankan_rupee" number="5" tag="PATIENT-4" type="description">the Sri Lankan Rupee</reference>
-					<reference entity="Tamil_language" number="6" tag="PATIENT-3" type="name">Tamil</reference>
-				</references>
 				<text>Admisham Hall is located at Haputale, Sri Lanka. Sri Jayawardenepura Kotte is the capital of Sri Lanka, where the currency is the Sri Lankan Rupee and the language used is Tamil.</text>
 				<template>AGENT-1 is located at PATIENT-1 . PATIENT-2 is the capital of BRIDGE-1 , where the currency is PATIENT-4 and the language used is PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Adisham_Hall</entity>
 				<entity>BRIDGE-1 | Sri_Lanka</entity>
-				<entity>PATIENT-1 | &quot;Haputale, Sri Lanka&quot;</entity>
-				<entity>PATIENT-2 | Sri_Jayawardenepura_Kotte</entity>
-				<entity>PATIENT-3 | Tamil_language</entity>
 				<entity>PATIENT-4 | Sri_Lankan_rupee</entity>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>PATIENT-1 | &quot;Haputale, Sri Lanka&quot;</entity>
+				<entity>PATIENT-3 | Tamil_language</entity>
+				<entity>PATIENT-2 | Sri_Jayawardenepura_Kotte</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id7" size="5">
@@ -444,6 +224,13 @@
 				<otriple>Adisham_Hall | locationCountry | Sri_Lanka</otriple>
 				<otriple>Sri_Lanka | leader | Ranil_Wickremesinghe</otriple>
 				<otriple>Adisham_Hall | location | Haputale</otriple>
+				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
+				<otriple>Sri_Lanka | currency | Sri_Lankan_rupee</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Adisham_Hall | locationCountry | Sri_Lanka</otriple>
+				<otriple>Adisham_Hall | location | Haputale</otriple>
+				<otriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</otriple>
 				<otriple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</otriple>
 				<otriple>Sri_Lanka | currency | Sri_Lankan_rupee</otriple>
 			</originaltripleset>
@@ -455,74 +242,24 @@
 				<mtriple>Sri_Lanka | currency | Sri_Lankan_rupee</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
-					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
-					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
-					<striple>Adisham_Hall | country | Sri_Lanka</striple>
-					<striple>Adisham_Hall | location | Haputale</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ranil_Wickremesinghe" number="1" tag="PATIENT-2" type="name">Ranil Wickremesinghe</reference>
-					<reference entity="Sri_Lanka" number="2" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Sri_Jayawardenepura_Kotte" number="3" tag="PATIENT-3" type="name">Sri Jayawardenepura Kotte</reference>
-					<reference entity="Sri_Lankan_rupee" number="4" tag="PATIENT-4" type="description">the Sri Lankan rupee</reference>
-					<reference entity="Adisham_Hall" number="5" tag="AGENT-1" type="name">Adisham Hall</reference>
-					<reference entity="Sri_Lanka" number="6" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="Haputale" number="7" tag="PATIENT-1" type="name">Haputale</reference>
-				</references>
 				<text>Ranil Wickremesinghe is the leader of Sri Lanka where the capital city is Sri Jayawardenepura Kotte and the currency is the Sri Lankan rupee. Adisham Hall is located in the country at Haputale.</text>
 				<template>PATIENT-2 is the leader of BRIDGE-1 where the capital city is PATIENT-3 and the currency is PATIENT-4 . AGENT-1 is located in BRIDGE-1 at PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Adisham_Hall | location | Haputale</striple>
-					<striple>Adisham_Hall | country | Sri_Lanka</striple>
-					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
-					<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
-					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
-					<reference entity="Haputale" number="2" tag="PATIENT-1" type="name">Haputale</reference>
-					<reference entity="Sri_Lanka" number="3" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Sri_Lanka" number="4" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Sri_Jayawardenepura_Kotte" number="5" tag="PATIENT-3" type="name">Sri Jayawardenepura Kotte</reference>
-					<reference entity="Ranil_Wickremesinghe" number="6" tag="PATIENT-2" type="name">Ranil Wickremesinghe</reference>
-					<reference entity="Sri_Lanka" number="7" tag="BRIDGE-1" type="pronoun">its</reference>
-					<reference entity="Sri_Lankan_rupee" number="8" tag="PATIENT-4" type="description">the Rupee</reference>
-					<reference entity="Sri_Lanka" number="9" tag="BRIDGE-1" type="pronoun">its</reference>
-				</references>
 				<text>Adisham Hall is located in Haputale, Sri Lanka. The capital of Sri Lanka is Sri Jayawardenepura Kotte with Ranil Wickremesinghe as its leader and the Rupee as its currency.</text>
 				<template>AGENT-1 is located in PATIENT-1 , BRIDGE-1 . The capital of BRIDGE-1 is PATIENT-3 with PATIENT-2 as BRIDGE-1 leader and PATIENT-4 as BRIDGE-1 currency .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Adisham_Hall | location | Haputale</striple>
-					<striple>Adisham_Hall | country | Sri_Lanka</striple>
-					<striple>Sri_Lanka | capital | Sri_Jayawardenepura_Kotte</striple>
-					<striple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</striple>
-					<striple>Sri_Lanka | currency | Sri_Lankan_rupee</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Adisham_Hall" number="1" tag="AGENT-1" type="name">Adisham Hall</reference>
-					<reference entity="Haputale" number="2" tag="PATIENT-1" type="name">Haputale</reference>
-					<reference entity="Sri_Lanka" number="3" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Sri_Jayawardenepura_Kotte" number="4" tag="PATIENT-3" type="name">Sri Jayawardenepura Kotte</reference>
-					<reference entity="Ranil_Wickremesinghe" number="5" tag="PATIENT-2" type="name">Ranil Wickremesinghe</reference>
-					<reference entity="Sri_Lanka" number="6" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Sri_Lankan_rupee" number="7" tag="PATIENT-4" type="description">the Sri Lankan rupee</reference>
-				</references>
 				<text>Adisham Hall is located in Haputale, Sri Lanka, where the capital is called Sri Jayawardenepura Kotte. Ranil Wickremesinghe is a leader of Sri Lanka, and the currency is the Sri Lankan rupee.</text>
 				<template>AGENT-1 is located in PATIENT-1 , BRIDGE-1 , where the capital is called PATIENT-3 . PATIENT-2 is a leader of BRIDGE-1 , and the currency is PATIENT-4 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Adisham_Hall</entity>
 				<entity>BRIDGE-1 | Sri_Lanka</entity>
-				<entity>PATIENT-1 | Haputale</entity>
-				<entity>PATIENT-2 | Ranil_Wickremesinghe</entity>
-				<entity>PATIENT-3 | Sri_Jayawardenepura_Kotte</entity>
 				<entity>PATIENT-4 | Sri_Lankan_rupee</entity>
+				<entity>AGENT-1 | Adisham_Hall</entity>
+				<entity>PATIENT-1 | Haputale</entity>
+				<entity>PATIENT-3 | Sri_Jayawardenepura_Kotte</entity>
+				<entity>PATIENT-2 | Ranil_Wickremesinghe</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id8" size="5">
@@ -541,63 +278,14 @@
 				<mtriple>Akita_Museum_of_Art | location | Akita,_Akita</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Japan | ethnicGroup | Japanese_people</striple>
-					<striple>Japan | leaderName | Tarō_Asō</striple>
-					<striple>Akita_Museum_of_Art | country | Japan</striple>
-					<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
-					<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Japan" number="1" tag="BRIDGE-1" type="name">Japan</reference>
-					<reference entity="Japanese_people" number="2" tag="PATIENT-3" type="description">the Japanese</reference>
-					<reference entity="Tarō_Asō" number="3" tag="PATIENT-2" type="name">Tarō Asō</reference>
-					<reference entity="Akita_Museum_of_Art" number="4" tag="AGENT-1" type="name">Akita Museum of Art</reference>
-					<reference entity="Akita,_Akita" number="5" tag="BRIDGE-2" type="name">Akita , Akita</reference>
-					<reference entity="Japan" number="6" tag="BRIDGE-1" type="name">Japan</reference>
-					<reference entity="Akita_Prefecture" number="7" tag="PATIENT-1" type="description">the Akita Prefecture</reference>
-				</references>
 				<text>The main ethnic group in Japan are the Japanese and the leader is Tarō Asō. Akita Museum of Art is in Akita, Akita which is part of Japan and the Akita Prefecture.</text>
 				<template>The main ethnic group in BRIDGE-1 are PATIENT-3 and the leader is PATIENT-2 . AGENT-1 is in BRIDGE-2 which is part of BRIDGE-1 and PATIENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
-					<striple>Akita_Museum_of_Art | country | Japan</striple>
-					<striple>Japan | leaderName | Tarō_Asō</striple>
-					<striple>Japan | ethnicGroup | Japanese_people</striple>
-					<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Akita,_Akita" number="2" tag="BRIDGE-2" type="name">Akita , Akita</reference>
-					<reference entity="Japan" number="3" tag="BRIDGE-1" type="name">Japan</reference>
-					<reference entity="Japan" number="4" tag="BRIDGE-1" type="name">Japan</reference>
-					<reference entity="Tarō_Asō" number="5" tag="PATIENT-2" type="name">Taro Aso</reference>
-					<reference entity="Japan" number="6" tag="BRIDGE-1" type="name">Japan</reference>
-					<reference entity="Japanese_people" number="7" tag="PATIENT-3" type="description">the Japanese</reference>
-					<reference entity="Akita,_Akita" number="8" tag="BRIDGE-2" type="name">Akita , Akita</reference>
-				</references>
 				<text>&quot;The Akita Museum of Art is located in Akita, Akita which is located in Japan. The leader of Japan is Taro Aso and the main ethnic group in Japan is the Japanese. Akita, Akita is part of Akita Prefecture.&quot;.</text>
 				<template>`` AGENT-1 is located in BRIDGE-2 which is located in BRIDGE-1 . The leader of BRIDGE-1 is PATIENT-2 and the main ethnic group in BRIDGE-1 is PATIENT-3 . BRIDGE-2 is part of PATIENT-1 '' .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Akita_Museum_of_Art | location | Akita,_Akita</striple>
-					<striple>Akita_Museum_of_Art | country | Japan</striple>
-					<striple>Japan | ethnicGroup | Japanese_people</striple>
-					<striple>Japan | leaderName | Tarō_Asō</striple>
-					<striple>Akita,_Akita | isPartOf | Akita_Prefecture</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Akita_Museum_of_Art" number="1" tag="AGENT-1" type="name">Akita Museum of Art</reference>
-					<reference entity="Akita,_Akita" number="2" tag="BRIDGE-2" type="description">the city of Akita</reference>
-					<reference entity="Japan" number="3" tag="BRIDGE-1" type="name">Japan</reference>
-					<reference entity="Japan" number="4" tag="BRIDGE-1" type="name">Japan</reference>
-					<reference entity="Japanese_people" number="5" tag="PATIENT-3" type="description">the Japanese</reference>
-					<reference entity="Tarō_Asō" number="6" tag="PATIENT-2" type="name">Taro Aso</reference>
-					<reference entity="Akita,_Akita" number="7" tag="BRIDGE-2" type="name">Akita , Akita</reference>
-					<reference entity="Akita_Prefecture" number="8" tag="PATIENT-1" type="name">Akita Prefecture</reference>
-				</references>
 				<text>Akita Museum of Art is in the city of Akita, Japan. The main ethnic group in Japan are the Japanese, the leader is Taro Aso and Akita, Akita is part of Akita Prefecture.</text>
 				<template>AGENT-1 is in BRIDGE-2 , BRIDGE-1 . The main ethnic group in BRIDGE-1 are PATIENT-3 , the leader is PATIENT-2 and BRIDGE-2 is part of PATIENT-1 .</template>
 			</lex>
@@ -606,14 +294,21 @@
 				<entity>BRIDGE-1 | Japan</entity>
 				<entity>BRIDGE-2 | Akita,_Akita</entity>
 				<entity>PATIENT-1 | Akita_Prefecture</entity>
-				<entity>PATIENT-2 | Tarō_Asō</entity>
 				<entity>PATIENT-3 | Japanese_people</entity>
+				<entity>PATIENT-2 | Tarō_Asō</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id9" size="5">
 			<originaltripleset>
 				<otriple>Amdavad_ni_Gufa | location | Gujarat</otriple>
 				<otriple>Amdavad_ni_Gufa | locationTown | Ahmedabad</otriple>
+				<otriple>Amdavad_ni_Gufa | locationCountry | India</otriple>
+				<otriple>India | leaderName | Narendra_Modi</otriple>
+				<otriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Amdavad_ni_Gufa | location | Ahmedabad</otriple>
+				<otriple>Amdavad_ni_Gufa | locationTown | Gujarat</otriple>
 				<otriple>Amdavad_ni_Gufa | locationCountry | India</otriple>
 				<otriple>India | leaderName | Narendra_Modi</otriple>
 				<otriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</otriple>
@@ -626,75 +321,24 @@
 				<mtriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
-					<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
-					<striple>Amdavad_ni_Gufa | country | India</striple>
-					<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
-					<striple>India | leaderName | Narendra_Modi</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
-					<reference entity="Gujarat" number="2" tag="BRIDGE-2" type="name">Gujarat</reference>
-					<reference entity="Ahmedabad" number="3" tag="PATIENT-1" type="name">Ahmedabad</reference>
-					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Gujarat" number="5" tag="BRIDGE-2" type="name">Gujarat 's</reference>
-					<reference entity="Gujarat_Legislative_Assembly" number="6" tag="PATIENT-3" type="description">the Gujarat Legislative Assembly</reference>
-					<reference entity="India" number="7" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Narendra_Modi" number="8" tag="PATIENT-2" type="name">Narendra Modi</reference>
-				</references>
 				<text>Amdavad ni Gufa is located in Gujarat, Ahmedabad, India. Gujarat's leader is known as the Gujarat Legislative Assembly, and the leader of India is Narendra Modi.</text>
 				<template>AGENT-1 is located in BRIDGE-2 , PATIENT-1 , BRIDGE-1 . BRIDGE-2 leader is known as PATIENT-3 , and the leader of BRIDGE-1 is PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
-					<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
-					<striple>Amdavad_ni_Gufa | country | India</striple>
-					<striple>India | leaderName | Narendra_Modi</striple>
-					<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
-					<reference entity="Gujarat" number="2" tag="BRIDGE-2" type="name">Gujarat</reference>
-					<reference entity="Ahmedabad" number="3" tag="PATIENT-1" type="name">Ahmedabad</reference>
-					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="India" number="5" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Narendra_Modi" number="6" tag="PATIENT-2" type="name">Narendra Modi</reference>
-					<reference entity="Gujarat" number="7" tag="BRIDGE-2" type="name">Gujarat</reference>
-					<reference entity="Gujarat_Legislative_Assembly" number="8" tag="PATIENT-3" type="description">the Gujarat Legislative Assembly</reference>
-				</references>
 				<text>Amdavad ni Gufa is located in Gujarat, Ahmedabad which is in India. The leader of India is Narendra Modi but the leader of Gujarat is the Gujarat Legislative Assembly.</text>
 				<template>AGENT-1 is located in BRIDGE-2 , PATIENT-1 which is in BRIDGE-1 . The leader of BRIDGE-1 is PATIENT-2 but the leader of BRIDGE-2 is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
-					<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
-					<striple>Amdavad_ni_Gufa | country | India</striple>
-					<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
-					<striple>India | leaderName | Narendra_Modi</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
-					<reference entity="Gujarat" number="2" tag="BRIDGE-2" type="name">Gujarat</reference>
-					<reference entity="Ahmedabad" number="3" tag="PATIENT-1" type="name">Ahmedabad</reference>
-					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Gujarat" number="5" tag="BRIDGE-2" type="name">Gujarat 's</reference>
-					<reference entity="Gujarat_Legislative_Assembly" number="6" tag="PATIENT-3" type="description">the Gujarat Legislative Assembly</reference>
-					<reference entity="Narendra_Modi" number="7" tag="PATIENT-2" type="name">Narendra Modi</reference>
-					<reference entity="India" number="8" tag="BRIDGE-1" type="name">India</reference>
-				</references>
 				<text>Amdavad ni Gufa is in Gujarat, Ahmedabad which is in India. Gujarat's leader is the Gujarat Legislative Assembly and Narendra Modi is the prime minister of India.</text>
 				<template>AGENT-1 is in BRIDGE-2 , PATIENT-1 which is in BRIDGE-1 . BRIDGE-2 leader is PATIENT-3 and PATIENT-2 is the prime minister of BRIDGE-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
-				<entity>BRIDGE-1 | India</entity>
 				<entity>BRIDGE-2 | Gujarat</entity>
+				<entity>BRIDGE-1 | India</entity>
+				<entity>AGENT-1 | Amdavad_ni_Gufa</entity>
 				<entity>PATIENT-1 | Ahmedabad</entity>
-				<entity>PATIENT-2 | Narendra_Modi</entity>
 				<entity>PATIENT-3 | Gujarat_Legislative_Assembly</entity>
+				<entity>PATIENT-2 | Narendra_Modi</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id10" size="5">
@@ -713,21 +357,6 @@
 				<mtriple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Amdavad_ni_Gufa | location | Ahmedabad</striple>
-					<striple>Amdavad_ni_Gufa | location | Gujarat</striple>
-					<striple>Ahmedabad | country | India</striple>
-					<striple>Gujarat | leaderTitle | Gujarat_Legislative_Assembly</striple>
-					<striple>India | leaderName | T._S._Thakur</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Amdavad_ni_Gufa" number="1" tag="AGENT-1" type="name">Amdavad ni Gufa</reference>
-					<reference entity="Ahmedabad" number="2" tag="BRIDGE-2" type="name">Ahmedabad</reference>
-					<reference entity="Gujarat" number="3" tag="BRIDGE-3" type="name">Gujarat</reference>
-					<reference entity="India" number="4" tag="BRIDGE-1" type="name">India</reference>
-					<reference entity="Gujarat_Legislative_Assembly" number="5" tag="PATIENT-2" type="description">the Gujarat Legislative Assembly</reference>
-					<reference entity="T._S._Thakur" number="6" tag="PATIENT-1" type="name">leader T S Thakur</reference>
-				</references>
 				<text>Amdavad ni Gufa is located in Ahmedabad, Gujarat, India; led by the Gujarat Legislative Assembly, including leader T S Thakur.</text>
 				<template>AGENT-1 is located in BRIDGE-2 , BRIDGE-3 , BRIDGE-1 ; led by PATIENT-2 , including PATIENT-1 .</template>
 			</lex>
@@ -748,6 +377,13 @@
 				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
 				<otriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</otriple>
 			</originaltripleset>
+			<originaltripleset>
+				<otriple>Ampara_Hospital | country | Sri_Lanka</otriple>
+				<otriple>Sri_Lanka | leader | Ranil_Wickremesinghe</otriple>
+				<otriple>Ampara_Hospital | bedCount | &quot;476&quot;^^xsd:nonNegativeInteger</otriple>
+				<otriple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</otriple>
+				<otriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</otriple>
+			</originaltripleset>
 			<modifiedtripleset>
 				<mtriple>Ampara_Hospital | country | Sri_Lanka</mtriple>
 				<mtriple>Sri_Lanka | leaderName | Ranil_Wickremesinghe</mtriple>
@@ -756,66 +392,24 @@
 				<mtriple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Ampara_Hospital | bedCount | 476</striple>
-					<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
-					<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
-					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="476" number="1" tag="PATIENT-2" type="description">The 476</reference>
-					<reference entity="Ampara_Hospital" number="2" tag="AGENT-1" type="name">Ampara Hospital</reference>
-					<reference entity="Eastern_Province,_Sri_Lanka" number="3" tag="BRIDGE-2" type="description">the Eastern Province state of Sri Lanka</reference>
-					<reference entity="Austin_Fernando" number="4" tag="PATIENT-3" type="name">Austin Fernando</reference>
-					<reference entity="Sri_Lanka" number="5" tag="BRIDGE-1" type="description">The country 's</reference>
-					<reference entity="Austin_Fernando" number="6" tag="PATIENT-3" type="name">Ranil Wickremesinghe</reference>
-				</references>
 				<text>The 476 bed Ampara Hospital is situated in the Eastern Province state of Sri Lanka where Austin Fernando is the leader. The country's leader is Ranil Wickremesinghe.</text>
 				<template>PATIENT-2 bed AGENT-1 is situated in BRIDGE-2 where PATIENT-3 is the leader . BRIDGE-1 leader is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Ampara_Hospital | bedCount | 476</striple>
-					<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
-					<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
-					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Ampara_Hospital" number="1" tag="AGENT-1" type="name">Ampara Hospital</reference>
-					<reference entity="476" number="2" tag="PATIENT-2" type="name">476</reference>
-					<reference entity="Eastern_Province,_Sri_Lanka" number="3" tag="BRIDGE-2" type="description">the Eastern Province of Sri Lanka</reference>
-					<reference entity="Austin_Fernando" number="4" tag="PATIENT-3" type="name">Austin Fernando</reference>
-					<reference entity="Sri_Lanka" number="5" tag="BRIDGE-1" type="name">Sri Lanka</reference>
-					<reference entity="Austin_Fernando" number="6" tag="PATIENT-3" type="name">Ranil Wickremesinghe</reference>
-				</references>
 				<text>Ampara Hospital, which has 476 beds, is located in the Eastern Province of Sri Lanka lead by Austin Fernando. The leader of Sri Lanka is Ranil Wickremesinghe.</text>
 				<template>AGENT-1 , which has PATIENT-2 beds , is located in BRIDGE-2 lead by PATIENT-3 . The leader of BRIDGE-1 is PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Ampara_Hospital | bedCount | 476</striple>
-					<striple>Ampara_Hospital | state | Eastern_Province,_Sri_Lanka</striple>
-					<striple>Eastern_Province,_Sri_Lanka | leaderName | Austin_Fernando</striple>
-					<striple>Ampara_Hospital | country | Sri_Lanka</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="476" number="1" tag="PATIENT-2" type="name">476</reference>
-					<reference entity="Ampara_Hospital" number="2" tag="AGENT-1" type="name">Ampara Hospital</reference>
-					<reference entity="Eastern_Province,_Sri_Lanka" number="3" tag="BRIDGE-2" type="description">the Eastern Province of Sri Lanka</reference>
-					<reference entity="Austin_Fernando" number="4" tag="PATIENT-3" type="name">Austin Fernando</reference>
-					<reference entity="Sri_Lanka" number="5" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="Austin_Fernando" number="6" tag="PATIENT-3" type="name">Ranil Wickremesinghe</reference>
-				</references>
 				<text>There are 476 beds at Ampara Hospital in the Eastern Province of Sri Lanka where Austin Fernando is the leader. Another leader within the country is Ranil Wickremesinghe.</text>
 				<template>There are PATIENT-2 beds at AGENT-1 in BRIDGE-2 where PATIENT-3 is the leader . Another leader within BRIDGE-1 is PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Ampara_Hospital</entity>
-				<entity>BRIDGE-1 | Sri_Lanka</entity>
 				<entity>BRIDGE-2 | Eastern_Province,_Sri_Lanka</entity>
+				<entity>BRIDGE-1 | Sri_Lanka</entity>
+				<entity>AGENT-1 | Ampara_Hospital</entity>
 				<entity>PATIENT-1 | Ranil_Wickremesinghe</entity>
-				<entity>PATIENT-2 | 476</entity>
 				<entity>PATIENT-3 | Austin_Fernando</entity>
+				<entity>PATIENT-2 | 476</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id12" size="5">
@@ -834,51 +428,20 @@
 				<mtriple>Julia_Morgan | birthPlace | California</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Julia_Morgan | birthPlace | California</striple>
-					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
-					<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
-					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
-					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Julia_Morgan" number="1" tag="BRIDGE-1" type="name">Julia Morgan</reference>
-					<reference entity="California" number="2" tag="PATIENT-4" type="name">California</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="3" tag="AGENT-1" type="description">the Asilomar Conference Grounds</reference>
-					<reference entity="Los_Angeles_Herald-Examiner" number="4" tag="PATIENT-1" type="description">the Los Angeles Herald examiner building</reference>
-					<reference entity="Riverside_Art_Museum" number="5" tag="PATIENT-2" type="description">The Riverside Art Musuem</reference>
-					<reference entity="Hearst_Castle" number="6" tag="PATIENT-3" type="name">Hearst Castle</reference>
-				</references>
 				<text>Julia Morgan, who was born in California, designed the Asilomar Conference Grounds, the Los Angeles Herald examiner building, The Riverside Art Musuem and Hearst Castle.</text>
 				<template>BRIDGE-1 , who was born in PATIENT-4 , designed AGENT-1 , PATIENT-1 , PATIENT-2 and PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Julia_Morgan | birthPlace | California</striple>
-					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
-					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
-					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
-					<striple>Julia_Morgan | significantBuilding | Los_Angeles_Herald-Examiner</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Julia_Morgan" number="1" tag="BRIDGE-1" type="name">Julia Morgan</reference>
-					<reference entity="California" number="2" tag="PATIENT-4" type="name">California</reference>
-					<reference entity="Julia_Morgan" number="3" tag="BRIDGE-1" type="pronoun">She</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="4" tag="AGENT-1" type="name">Asilomar Conference Grounds</reference>
-					<reference entity="Riverside_Art_Museum" number="5" tag="PATIENT-2" type="description">The Riverside Art Museum</reference>
-					<reference entity="Hearst_Castle" number="6" tag="PATIENT-3" type="name">Hearst Castle</reference>
-					<reference entity="Los_Angeles_Herald-Examiner" number="7" tag="PATIENT-1" type="description">the Los Angeles Herald Examiner building</reference>
-				</references>
 				<text>Julia Morgan was an architect born in California. She designed Asilomar Conference Grounds, The Riverside Art Museum, Hearst Castle and the Los Angeles Herald Examiner building.</text>
 				<template>BRIDGE-1 was an architect born in PATIENT-4 . BRIDGE-1 designed AGENT-1 , PATIENT-2 , PATIENT-3 and PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
 				<entity>BRIDGE-1 | Julia_Morgan</entity>
-				<entity>PATIENT-1 | Los_Angeles_Herald-Examiner</entity>
-				<entity>PATIENT-2 | Riverside_Art_Museum</entity>
-				<entity>PATIENT-3 | Hearst_Castle</entity>
 				<entity>PATIENT-4 | California</entity>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>PATIENT-1 | Los_Angeles_Herald-Examiner</entity>
+				<entity>PATIENT-3 | Hearst_Castle</entity>
+				<entity>PATIENT-2 | Riverside_Art_Museum</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id13" size="5">
@@ -897,70 +460,24 @@
 				<mtriple>Julia_Morgan | birthPlace | California</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
-					<striple>Julia_Morgan | birthPlace | California</striple>
-					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
-					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
-					<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1" type="name">Asilomar Conference Grounds</reference>
-					<reference entity="California" number="3" tag="PATIENT-4" type="name">California</reference>
-					<reference entity="Hearst_Castle" number="4" tag="PATIENT-2" type="name">Hearst Castle</reference>
-					<reference entity="Riverside_Art_Museum" number="5" tag="PATIENT-1" type="description">The Riverside Art Museum</reference>
-					<reference entity="Julia_Morgan" number="6" tag="BRIDGE-1" type="pronoun">her</reference>
-					<reference entity="Chinatown,_San_Francisco" number="7" tag="PATIENT-3" type="name">San Francisco 's Chinatown</reference>
-				</references>
 				<text>Asilomar Conference Grounds were designed by Julia Morgan (born in California), who is known for a number of buildings, including Hearst Castle and The Riverside Art Museum, and her work in San Francisco's Chinatown.</text>
 				<template>AGENT-1 were designed by BRIDGE-1 ( born in PATIENT-4 ) , who is known for a number of buildings , including PATIENT-2 and PATIENT-1 , and BRIDGE-1 work in PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Julia_Morgan | birthPlace | California</striple>
-					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
-					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
-					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
-					<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Julia_Morgan" number="1" tag="BRIDGE-1" type="name">Julia Morgan</reference>
-					<reference entity="California" number="2" tag="PATIENT-4" type="name">California</reference>
-					<reference entity="Julia_Morgan" number="3" tag="BRIDGE-1" type="pronoun">her</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="4" tag="AGENT-1" type="description">the Asilomar Conference Grounds</reference>
-					<reference entity="Riverside_Art_Museum" number="5" tag="PATIENT-1" type="description">The Riverside Art Museum</reference>
-					<reference entity="Hearst_Castle" number="6" tag="PATIENT-2" type="name">Hearst Castle</reference>
-					<reference entity="Chinatown,_San_Francisco" number="7" tag="PATIENT-3" type="name">Chinatown , San Francisco</reference>
-				</references>
 				<text>Julia Morgan, the architect, was born in California and some of her significant projects include: the Asilomar Conference Grounds, The Riverside Art Museum, Hearst Castle and some buildings in Chinatown, San Francisco.</text>
 				<template>BRIDGE-1 , the architect , was born in PATIENT-4 and some of BRIDGE-1 significant projects include : AGENT-1 , PATIENT-1 , PATIENT-2 and some buildings in PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Julia_Morgan | birthPlace | California</striple>
-					<striple>Asilomar_Conference_Grounds | architect | Julia_Morgan</striple>
-					<striple>Julia_Morgan | significantBuilding | Riverside_Art_Museum</striple>
-					<striple>Julia_Morgan | significantProject | Hearst_Castle</striple>
-					<striple>Julia_Morgan | significantBuilding | Chinatown,_San_Francisco</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Julia_Morgan" number="1" tag="BRIDGE-1" type="name">Julia Morgan</reference>
-					<reference entity="California" number="2" tag="PATIENT-4" type="name">California</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="3" tag="AGENT-1" type="name">Asilomar Conference</reference>
-					<reference entity="Riverside_Art_Museum" number="4" tag="PATIENT-1" type="description">the Riverside Art Museum</reference>
-					<reference entity="Hearst_Castle" number="5" tag="PATIENT-2" type="name">Hearst Castle</reference>
-					<reference entity="Chinatown,_San_Francisco" number="6" tag="PATIENT-3" type="name">Chinatown in San Francisco</reference>
-				</references>
 				<text>Julia Morgan, born in California, was the architect behind the grounds of Asilomar Conference, the Riverside Art Museum, Hearst Castle and Chinatown in San Francisco.</text>
 				<template>BRIDGE-1 , born in PATIENT-4 , was the architect behind the grounds of AGENT-1 , PATIENT-1 , PATIENT-2 and PATIENT-3 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
 				<entity>BRIDGE-1 | Julia_Morgan</entity>
-				<entity>PATIENT-1 | Riverside_Art_Museum</entity>
-				<entity>PATIENT-2 | Hearst_Castle</entity>
-				<entity>PATIENT-3 | Chinatown,_San_Francisco</entity>
 				<entity>PATIENT-4 | California</entity>
+				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
+				<entity>PATIENT-1 | Riverside_Art_Museum</entity>
+				<entity>PATIENT-3 | Chinatown,_San_Francisco</entity>
+				<entity>PATIENT-2 | Hearst_Castle</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id14" size="5">
@@ -979,71 +496,24 @@
 				<mtriple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
-					<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
-					<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
-					<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
-					<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1" type="description">The Asilomar Conference Grounds</reference>
-					<reference entity="1913" number="2" tag="PATIENT-5" type="name">1913</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="3" tag="AGENT-1" type="pronoun">They</reference>
-					<reference entity="Pacific_Grove,_California" number="4" tag="PATIENT-1" type="name">Pacific Grove , California</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="5" tag="AGENT-1" type="pronoun">they</reference>
-					<reference entity="Arts_and_Crafts_movement" number="8" tag="PATIENT-3" type="description">the Arts and Crafts Movement</reference>
-				</references>
 				<text>The Asilomar Conference Grounds were constructed in 1913. They are located in Pacific Grove, California and they were added to the National Register of Historic Places on February 27th 1987 (with reference number 87000823). The grounds are in the architectural style of the Arts and Crafts Movement.</text>
 				<template>AGENT-1 were constructed in PATIENT-5 . AGENT-1 are located in PATIENT-1 and AGENT-1 were added to the National Register of Historic Places on 27th PATIENT-2 ( with PATIENT-4 ) . The grounds are in the architectural style of PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
-					<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
-					<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
-					<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
-					<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1" type="name">Asilomar Conference Grounds</reference>
-					<reference entity="Pacific_Grove,_California" number="2" tag="PATIENT-1" type="name">Pacific Grove , California</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="3" tag="AGENT-1" type="pronoun">They</reference>
-					<reference entity="1913" number="4" tag="PATIENT-5" type="name">1913</reference>
-					<reference entity="Arts_and_Crafts_movement" number="5" tag="PATIENT-3" type="description">the Arts and Crafts Movement</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="6" tag="AGENT-1" type="pronoun">They</reference>
-					<reference entity="&quot;1987-02-27&quot;" number="7" tag="PATIENT-2" type="name">27 February 1987</reference>
-				</references>
 				<text>Asilomar Conference Grounds are located in Pacific Grove, California. They were constructed in 1913 with the architectural style of the Arts and Crafts Movement. They were added to the National Register of Historic Places on 27 February 1987 with reference number &quot;87000823&quot;.</text>
 				<template>AGENT-1 are located in PATIENT-1 . AGENT-1 were constructed in PATIENT-5 with the architectural style of PATIENT-3 . AGENT-1 were added to the National Register of Historic Places on PATIENT-2 with reference number `` PATIENT-4 '' .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Asilomar_Conference_Grounds | yearOfConstruction | 1913</striple>
-					<striple>Asilomar_Conference_Grounds | location | Pacific_Grove,_California</striple>
-					<striple>Asilomar_Conference_Grounds | architecturalStyle | Arts_and_Crafts_movement</striple>
-					<striple>Asilomar_Conference_Grounds | added to the National Register of Historic Places | &quot;1987-02-27&quot;</striple>
-					<striple>Asilomar_Conference_Grounds | ReferenceNumber in the National Register of Historic Places | &quot;87000823&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asilomar_Conference_Grounds" number="1" tag="AGENT-1" type="description">The Asilomar Conference Grounds</reference>
-					<reference entity="1913" number="2" tag="PATIENT-5" type="name">1913</reference>
-					<reference entity="Pacific_Grove,_California" number="3" tag="PATIENT-1" type="name">Pacific Grove , California</reference>
-					<reference entity="Asilomar_Conference_Grounds" number="4" tag="AGENT-1" type="pronoun">They</reference>
-					<reference entity="Arts_and_Crafts_movement" number="5" tag="PATIENT-3" type="name">Arts and Crafts movement</reference>
-					<reference entity="&quot;1987-02-27&quot;" number="6" tag="PATIENT-2" type="name">27 February 1987</reference>
-					<reference entity="&quot;87000823&quot;" number="7" tag="PATIENT-4" type="description">the reference number 87000823</reference>
-				</references>
 				<text>The Asilomar Conference Grounds were constructed in 1913 and are in Pacific Grove, California. They have an Arts and Crafts movement style architecture and were added to the National Register of Historic Places on 27 February 1987 with the reference number 87000823.</text>
 				<template>AGENT-1 were constructed in PATIENT-5 and are in PATIENT-1 . AGENT-1 have an PATIENT-3 style architecture and were added to the National Register of Historic Places on PATIENT-2 with PATIENT-4 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | 1913</entity>
+				<entity>PATIENT-4 | &quot;87000823&quot;</entity>
 				<entity>AGENT-1 | Asilomar_Conference_Grounds</entity>
 				<entity>PATIENT-1 | Pacific_Grove,_California</entity>
-				<entity>PATIENT-2 | &quot;1987-02-27&quot;</entity>
 				<entity>PATIENT-3 | Arts_and_Crafts_movement</entity>
-				<entity>PATIENT-4 | &quot;87000823&quot;</entity>
-				<entity>PATIENT-5 | 1913</entity>
+				<entity>PATIENT-2 | &quot;1987-02-27&quot;</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id15" size="5">
@@ -1062,71 +532,24 @@
 				<mtriple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
-					<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
-					<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
-					<striple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</striple>
-					<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
-					<reference entity="1904" number="2" tag="PATIENT-4" type="name">1904</reference>
-					<reference entity="Romanesque_Revival_architecture" number="3" tag="PATIENT-2" type="name">Romanesque Revival</reference>
-					<reference entity="23rd_Street_(Manhattan)" number="4" tag="PATIENT-1" type="name">23rd Street  (Manhattan )</reference>
-					<reference entity="Asser_Levy_Public_Baths" number="5" tag="AGENT-1" type="description">The site</reference>
-					<reference entity="&quot;1980-04-23&quot;" number="6" tag="PATIENT-5" type="name">1980-04-23</reference>
-					<reference entity="&quot;80002709&quot;" number="7" tag="PATIENT-3" type="name">Reference Number 80002709</reference>
-				</references>
 				<text>Asser Levy Public Baths, built in 1904 in a Romanesque Revival style, is located at 23rd Street (Manhattan). The site was added to the National Register of Historic Places on 1980-04-23, with Reference Number 80002709.</text>
 				<template>AGENT-1 , built in PATIENT-4 in a PATIENT-2 style , is located at PATIENT-1 . AGENT-1 was added to the National Register of Historic Places on PATIENT-5 , with PATIENT-3 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
-					<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
-					<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
-					<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
-					<striple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy baths</reference>
-					<reference entity="23rd_Street_(Manhattan)" number="2" tag="PATIENT-1" type="name">23rd Street in Manhattan</reference>
-					<reference entity="Romanesque_Revival_architecture" number="3" tag="PATIENT-2" type="description">the Romanesque Revival</reference>
-					<reference entity="Asser_Levy_Public_Baths" number="4" tag="AGENT-1" type="pronoun">They</reference>
-					<reference entity="1904" number="5" tag="PATIENT-4" type="name">1904</reference>
-					<reference entity="&quot;80002709&quot;" number="6" tag="PATIENT-3" type="description">the reference number 80002709</reference>
-					<reference entity="&quot;1980-04-23&quot;" number="7" tag="PATIENT-5" type="name">23 April 1980</reference>
-				</references>
 				<text>The Asser Levy baths are located on 23rd Street in Manhattan and have the Romanesque Revival style of architecture. They were built in 1904 and added to the National Register of Historic Places with the reference number 80002709 on 23 April 1980.</text>
 				<template>AGENT-1 are located on PATIENT-1 and have PATIENT-2 style of architecture . AGENT-1 were built in PATIENT-4 and added to the National Register of Historic Places with PATIENT-3 on PATIENT-5 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Asser_Levy_Public_Baths | yearOfConstruction | 1904</striple>
-					<striple>Asser_Levy_Public_Baths | architecturalStyle | Romanesque_Revival_architecture</striple>
-					<striple>Asser_Levy_Public_Baths | location | 23rd_Street_(Manhattan)</striple>
-					<striple>Asser_Levy_Public_Baths | added to the National Register of Historic Places | &quot;1980-04-23&quot;</striple>
-					<striple>Asser_Levy_Public_Baths | ReferenceNumber in the National Register of Historic Places | &quot;80002709&quot;</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
-					<reference entity="1904" number="2" tag="PATIENT-4" type="name">1904</reference>
-					<reference entity="Romanesque_Revival_architecture" number="3" tag="PATIENT-2" type="name">Romanesque Revival</reference>
-					<reference entity="23rd_Street_(Manhattan)" number="4" tag="PATIENT-1" type="name">23rd Street , Manhattan</reference>
-					<reference entity="Asser_Levy_Public_Baths" number="5" tag="AGENT-1" type="description">The site</reference>
-					<reference entity="&quot;80002709&quot;" number="7" tag="PATIENT-3" type="name">reference number 80002709</reference>
-				</references>
 				<text>The Asser Levy Public Baths was built in 1904 in the architectural style of Romanesque Revival, and is located on 23rd Street, Manhattan. The site was added to the National Register of Historic Places on &quot;1980-04-23&quot;, with reference number 80002709.</text>
 				<template>AGENT-1 was built in PATIENT-4 in the architectural style of PATIENT-2 , and is located on PATIENT-1 . AGENT-1 was added to the National Register of Historic Places on `` PATIENT-5 '' , with PATIENT-3 .</template>
 			</lex>
 			<entitymap>
+				<entity>PATIENT-5 | &quot;1980-04-23&quot;</entity>
+				<entity>PATIENT-4 | 1904</entity>
 				<entity>AGENT-1 | Asser_Levy_Public_Baths</entity>
 				<entity>PATIENT-1 | 23rd_Street_(Manhattan)</entity>
-				<entity>PATIENT-2 | Romanesque_Revival_architecture</entity>
 				<entity>PATIENT-3 | &quot;80002709&quot;</entity>
-				<entity>PATIENT-4 | 1904</entity>
-				<entity>PATIENT-5 | &quot;1980-04-23&quot;</entity>
+				<entity>PATIENT-2 | Romanesque_Revival_architecture</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id16" size="5">
@@ -1145,58 +568,14 @@
 				<mtriple>New_York_City | isPartOf | Manhattan</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
-					<striple>New_York_City | country | United_States</striple>
-					<striple>New_York_City | isPartOf | Manhattan</striple>
-					<striple>Manhattan | leaderName | Gale_Brewer</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="description">The Asser Levy Public Baths</reference>
-					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-1" type="name">New York , United States</reference>
-					<reference entity="New_York_City" number="4" tag="BRIDGE-1" type="name">New York City</reference>
-					<reference entity="Manhattan" number="5" tag="BRIDGE-2" type="name">Manhattan</reference>
-					<reference entity="Gale_Brewer" number="6" tag="PATIENT-2" type="name">Gale Brewer</reference>
-				</references>
 				<text>The Asser Levy Public Baths are found in New York City, New York, United States. Another part of New York City is Manhattan where Gale Brewer is the leader.</text>
 				<template>AGENT-1 are found in BRIDGE-1 , PATIENT-1 . Another part of BRIDGE-1 is BRIDGE-2 where PATIENT-2 is the leader .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Manhattan | leaderName | Gale_Brewer</striple>
-					<striple>New_York_City | isPartOf | Manhattan</striple>
-					<striple>New_York_City | country | United_States</striple>
-					<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Gale_Brewer" number="1" tag="PATIENT-2" type="name">Gale Brewer</reference>
-					<reference entity="Manhattan" number="2" tag="BRIDGE-2" type="name">Manhattan</reference>
-					<reference entity="New_York_City" number="3" tag="BRIDGE-1" type="name">New York City</reference>
-					<reference entity="United_States" number="4" tag="PATIENT-1" type="name">New York , United States</reference>
-					<reference entity="New_York_City" number="5" tag="BRIDGE-1" type="name">New York City</reference>
-					<reference entity="Asser_Levy_Public_Baths" number="6" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
-				</references>
 				<text>Gale Brewer is the leader of Manhattan which is part of New York City, New York, United States. New York City is the location of Asser Levy Public Baths.</text>
 				<template>PATIENT-2 is the leader of BRIDGE-2 which is part of BRIDGE-1 , PATIENT-1 . BRIDGE-1 is the location of AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Asser_Levy_Public_Baths | location | New_York_City</striple>
-					<striple>New_York_City | isPartOf | Manhattan</striple>
-					<striple>New_York_City | isPartOf | New_York</striple>
-					<striple>Manhattan | leaderName | Gale_Brewer</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Asser_Levy_Public_Baths" number="1" tag="AGENT-1" type="name">Asser Levy Public Baths</reference>
-					<reference entity="New_York_City" number="2" tag="BRIDGE-1" type="name">New York City</reference>
-					<reference entity="United_States" number="3" tag="PATIENT-1" type="name">US</reference>
-					<reference entity="New_York_City" number="4" tag="BRIDGE-1" type="name">New York City</reference>
-					<reference entity="Manhattan" number="5" tag="BRIDGE-2" type="name">Manhattan</reference>
-					<reference entity="New_York" number="6" tag="PATIENT-3" type="name">New York</reference>
-					<reference entity="Manhattan" number="7" tag="BRIDGE-2" type="name">Manhattan</reference>
-					<reference entity="Gale_Brewer" number="8" tag="PATIENT-2" type="name">Gale Brewer</reference>
-				</references>
 				<text>The location of Asser Levy Public Baths are New York City, US. New York City and Manhattan are part of New York. The leader of Manhattan is Gale Brewer.</text>
 				<template>The location of AGENT-1 are BRIDGE-1 , PATIENT-1. BRIDGE-1 and BRIDGE-2 are part of PATIENT-3 . The leader of BRIDGE-2 is PATIENT-2 .</template>
 			</lex>
@@ -1205,8 +584,8 @@
 				<entity>BRIDGE-1 | New_York_City</entity>
 				<entity>BRIDGE-2 | Manhattan</entity>
 				<entity>PATIENT-1 | United_States</entity>
-				<entity>PATIENT-2 | Gale_Brewer</entity>
 				<entity>PATIENT-3 | New_York</entity>
+				<entity>PATIENT-2 | Gale_Brewer</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id17" size="5">
@@ -1225,61 +604,14 @@
 				<mtriple>Birmingham | leaderName | Andrew_Mitchell</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>103_Colmore_Row | architect | John_Madin</striple>
-					<striple>John_Madin | birthPlace | Birmingham</striple>
-					<striple>Birmingham | postalCode | B_postcode_area</striple>
-					<striple>Birmingham | leaderName | Andrew_Mitchell</striple>
-					<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="103_Colmore_Row" number="1" tag="AGENT-1" type="name">103 Colmore Row</reference>
-					<reference entity="John_Madin" number="2" tag="BRIDGE-1" type="description">the architect John Madin</reference>
-					<reference entity="Birmingham" number="3" tag="BRIDGE-2" type="name">Birmingham</reference>
-					<reference entity="Andrew_Mitchell" number="5" tag="PATIENT-3" type="name">Andrew Mitchell</reference>
-					<reference entity="Birmingham" number="6" tag="BRIDGE-2" type="description">the city</reference>
-					<reference entity="Birmingham_City_Council" number="7" tag="PATIENT-2" type="name">Birmingham City Council</reference>
-				</references>
 				<text>103 Colmore Row was designed by the architect John Madin, who was born in Birmingham, where the postal code is 'B'. Andrew Mitchell is the leader of the city and Birmingham City Council is the governing body.</text>
 				<template>AGENT-1 was designed by BRIDGE-1 , who was born in BRIDGE-2 , where the postal code is ` PATIENT-1 ' . PATIENT-3 is the leader of BRIDGE-2 and PATIENT-2 is the governing body .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
-					<striple>Birmingham | leaderName | Andrew_Mitchell</striple>
-					<striple>Birmingham | postalCode | B_postcode_area</striple>
-					<striple>John_Madin | birthPlace | Birmingham</striple>
-					<striple>103_Colmore_Row | architect | John_Madin</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Birmingham_City_Council" number="1" tag="PATIENT-2" type="description">The City Council</reference>
-					<reference entity="Birmingham" number="2" tag="BRIDGE-2" type="name">Birmingham</reference>
-					<reference entity="Andrew_Mitchell" number="3" tag="PATIENT-3" type="name">Andrew Mitchell</reference>
-					<reference entity="Birmingham" number="4" tag="BRIDGE-2" type="description">The city</reference>
-					<reference entity="B_postcode_area" number="5" tag="PATIENT-1" type="description">the B postcode</reference>
-					<reference entity="John_Madin" number="6" tag="BRIDGE-1" type="description">the Architect John Madin</reference>
-					<reference entity="103_Colmore_Row" number="7" tag="AGENT-1" type="name">103 Colmore Row</reference>
-				</references>
 				<text>The City Council is the governing body for Birmingham where Andrew Mitchell is a leader. The city has the B postcode and is the birthplace of the Architect John Madin who designed 103 Colmore Row.</text>
 				<template>PATIENT-2 is the governing body for BRIDGE-2 where PATIENT-3 is a leader . BRIDGE-2 has PATIENT-1 and is the birthplace of BRIDGE-1 who designed AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Birmingham | leaderName | Andrew_Mitchell</striple>
-					<striple>Birmingham | governingBody | Birmingham_City_Council</striple>
-					<striple>Birmingham | postalCode | B_postcode_area</striple>
-					<striple>John_Madin | birthPlace | Birmingham</striple>
-					<striple>103_Colmore_Row | architect | John_Madin</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Birmingham" number="1" tag="BRIDGE-2" type="name">Birmingham</reference>
-					<reference entity="Andrew_Mitchell" number="2" tag="PATIENT-3" type="name">Andrew Mitchell</reference>
-					<reference entity="Birmingham_City_Council" number="3" tag="PATIENT-2" type="description">the Birmingham City Council</reference>
-					<reference entity="Birmingham" number="4" tag="BRIDGE-2" type="description">The town</reference>
-					<reference entity="B_postcode_area" number="5" tag="PATIENT-1" type="description">the B postcode</reference>
-					<reference entity="John_Madin" number="6" tag="BRIDGE-1" type="name">architect John Madin</reference>
-					<reference entity="103_Colmore_Row" number="7" tag="AGENT-1" type="name">103 Colmore Row</reference>
-				</references>
 				<text>Birmingham is lead by Andrew Mitchell and the Birmingham City Council. The town, which has the B postcode, is the birthplace of architect John Madin who designed 103 Colmore Row.</text>
 				<template>BRIDGE-2 is lead by PATIENT-3 and PATIENT-2 . BRIDGE-2 , which has PATIENT-1 , is the birthplace of BRIDGE-1 who designed AGENT-1 .</template>
 			</lex>
@@ -1288,8 +620,8 @@
 				<entity>BRIDGE-1 | John_Madin</entity>
 				<entity>BRIDGE-2 | Birmingham</entity>
 				<entity>PATIENT-1 | B_postcode_area</entity>
-				<entity>PATIENT-2 | Birmingham_City_Council</entity>
 				<entity>PATIENT-3 | Andrew_Mitchell</entity>
+				<entity>PATIENT-2 | Birmingham_City_Council</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id18" size="5">
@@ -1297,6 +629,13 @@
 				<otriple>Ethiopia | leader | Mulatu_Teshome</otriple>
 				<otriple>Ethiopia | leaderName | Hailemariam_Desalegn</otriple>
 				<otriple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</otriple>
+				<otriple>Addis_Ababa_City_Hall | location | Addis_Ababa</otriple>
+				<otriple>Addis_Ababa | country | Ethiopia</otriple>
+			</originaltripleset>
+			<originaltripleset>
+				<otriple>Ethiopia | leader | Hailemariam_Desalegn</otriple>
+				<otriple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</otriple>
+				<otriple>Ethiopia | leaderName | Mulatu_Teshome</otriple>
 				<otriple>Addis_Ababa_City_Hall | location | Addis_Ababa</otriple>
 				<otriple>Addis_Ababa | country | Ethiopia</otriple>
 			</originaltripleset>
@@ -1308,62 +647,14 @@
 				<mtriple>Addis_Ababa | country | Ethiopia</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
-					<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
-					<striple>Addis_Ababa | country | Ethiopia</striple>
-					<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
-					<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Hailemariam_Desalegn" number="1" tag="PATIENT-2" type="name">Hailemariam Desalegn</reference>
-					<reference entity="Mulatu_Teshome" number="2" tag="PATIENT-1" type="name">Mulatu Teshome</reference>
-					<reference entity="Ethiopia" number="3" tag="BRIDGE-2" type="name">Ethiopia</reference>
-					<reference entity="Addis_Ababa_Stadium" number="4" tag="PATIENT-3" type="description">The Addis Ababa Stadium</reference>
-					<reference entity="Addis_Ababa_City_Hall" number="5" tag="AGENT-1" type="description">the Addis Ababa City Hall</reference>
-					<reference entity="Ethiopia" number="6" tag="BRIDGE-2" type="description">the country</reference>
-					<reference entity="Addis_Ababa" number="7" tag="BRIDGE-1" type="name">Addis Ababa</reference>
-				</references>
 				<text>Hailemariam Desalegn and Mulatu Teshome are leaders within Ethiopia. The Addis Ababa Stadium and the Addis Ababa City Hall are both located within the country in Addis Ababa.</text>
 				<template>PATIENT-2 and PATIENT-1 are leaders within BRIDGE-2 . PATIENT-3 and AGENT-1 are both located within BRIDGE-2 in BRIDGE-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
-					<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
-					<striple>Addis_Ababa | country | Ethiopia</striple>
-					<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
-					<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Addis_Ababa_Stadium" number="1" tag="PATIENT-3" type="name">Addis Ababa Stadium</reference>
-					<reference entity="Addis_Ababa_City_Hall" number="2" tag="AGENT-1" type="name">Addis Ababa City Hall</reference>
-					<reference entity="Addis_Ababa" number="3" tag="BRIDGE-1" type="name">Addis Ababa</reference>
-					<reference entity="Ethiopia" number="4" tag="BRIDGE-2" type="name">Ethiopia</reference>
-					<reference entity="Ethiopia" number="5" tag="BRIDGE-2" type="description">The country</reference>
-					<reference entity="Mulatu_Teshome" number="6" tag="PATIENT-1" type="name">Malatu Teshome</reference>
-					<reference entity="Hailemariam_Desalegn" number="7" tag="PATIENT-2" type="name">Hailemariam Desalegn ,</reference>
-				</references>
 				<text>Addis Ababa Stadium and Addis Ababa City Hall are located in Addis Ababa, Ethiopia. The country is lead by Malatu Teshome and Hailemariam Desalegn,.</text>
 				<template>PATIENT-3 and AGENT-1 are located in BRIDGE-1 , BRIDGE-2 . BRIDGE-2 is lead by PATIENT-1 and PATIENT-2 .</template>
 			</lex>
 			<lex comment="good" lid="Id3">
-				<sortedtripleset>
-					<striple>Addis_Ababa | isPartOf | Addis_Ababa_Stadium</striple>
-					<striple>Addis_Ababa_City_Hall | location | Addis_Ababa</striple>
-					<striple>Addis_Ababa | country | Ethiopia</striple>
-					<striple>Ethiopia | leaderName | Mulatu_Teshome</striple>
-					<striple>Ethiopia | leaderName | Hailemariam_Desalegn</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Addis_Ababa_Stadium" number="1" tag="PATIENT-3" type="name">Addis Ababa Stadium</reference>
-					<reference entity="Addis_Ababa_City_Hall" number="2" tag="AGENT-1" type="name">Addis Ababa City Hall</reference>
-					<reference entity="Addis_Ababa" number="3" tag="BRIDGE-1" type="name">Addis Ababa</reference>
-					<reference entity="Ethiopia" number="4" tag="BRIDGE-2" type="name">Ethiopia</reference>
-					<reference entity="Mulatu_Teshome" number="5" tag="PATIENT-1" type="name">Malatu Teshome</reference>
-					<reference entity="Hailemariam_Desalegn" number="6" tag="PATIENT-2" type="name">Hailemariam Desalegn</reference>
-					<reference entity="Ethiopia" number="7" tag="BRIDGE-2" type="description">the country</reference>
-				</references>
 				<text>Addis Ababa Stadium and Addis Ababa City Hall are both located in Addis Ababa, Ethiopia. Malatu Teshome and Hailemariam Desalegn are leaders in the country.</text>
 				<template>PATIENT-3 and AGENT-1 are both located in BRIDGE-1 , BRIDGE-2 . PATIENT-1 and PATIENT-2 are leaders in BRIDGE-2 .</template>
 			</lex>
@@ -1372,8 +663,8 @@
 				<entity>BRIDGE-1 | Addis_Ababa</entity>
 				<entity>BRIDGE-2 | Ethiopia</entity>
 				<entity>PATIENT-1 | Mulatu_Teshome</entity>
-				<entity>PATIENT-2 | Hailemariam_Desalegn</entity>
 				<entity>PATIENT-3 | Addis_Ababa_Stadium</entity>
+				<entity>PATIENT-2 | Hailemariam_Desalegn</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id19" size="5">
@@ -1392,49 +683,20 @@
 				<mtriple>250_Delaware_Avenue | location | United_States</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>United_States | leaderTitle | President_of_the_United_States</striple>
-					<striple>United_States | language | English_language</striple>
-					<striple>United_States | leaderName | John_Roberts</striple>
-					<striple>United_States | ethnicGroup | African_Americans</striple>
-					<striple>250_Delaware_Avenue | location | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="President_of_the_United_States" number="1" tag="PATIENT-3" type="description">The President</reference>
-					<reference entity="John_Roberts" number="4" tag="PATIENT-4" type="name">John Roberts</reference>
-					<reference entity="African_Americans" number="5" tag="PATIENT-1" type="name">African American</reference>
-					<reference entity="250_Delaware_Avenue" number="6" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
-				</references>
 				<text>The President is the primary leader of English language speaking United States, (includes leader John Roberts), has the ethnic African American group and is home to 250 Delaware Avenue.</text>
 				<template>PATIENT-3 is the primary leader of of PATIENT-2 speaking BRIDGE-1 , ( includes leader PATIENT-4 ) , has the ethnic PATIENT-1 group and is home to AGENT-1 .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>250_Delaware_Avenue | location | United_States</striple>
-					<striple>United_States | leaderTitle | President_of_the_United_States</striple>
-					<striple>United_States | leaderName | John_Roberts</striple>
-					<striple>United_States | language | English_language</striple>
-					<striple>United_States | ethnicGroup | African_Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States ,</reference>
-					<reference entity="President_of_the_United_States" number="3" tag="PATIENT-3" type="description">the President of the United States</reference>
-					<reference entity="United_States" number="4" tag="BRIDGE-1" type="description">the United States of America`s</reference>
-					<reference entity="John_Roberts" number="5" tag="PATIENT-4" type="name">John Roberts</reference>
-					<reference entity="English_language" number="6" tag="PATIENT-2" type="name">English</reference>
-					<reference entity="African_Americans" number="7" tag="PATIENT-1" type="description">the African Americans</reference>
-				</references>
 				<text>250 Delaware Avenue is located in the United States, where the leader is known as the President of the United States, supported by the United States of America`s Chief Justice, John Roberts. The main language is English, and one of the ethnic groups is the African Americans.</text>
 				<template>AGENT-1 is located in BRIDGE-1 where the leader is known as PATIENT-3 , supported by BRIDGE-1 Chief Justice , PATIENT-4 . The main language is PATIENT-2 , and one of the ethnic groups is PATIENT-1 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
-				<entity>BRIDGE-1 | United_States</entity>
-				<entity>PATIENT-1 | African_Americans</entity>
-				<entity>PATIENT-2 | English_language</entity>
-				<entity>PATIENT-3 | President_of_the_United_States</entity>
 				<entity>PATIENT-4 | John_Roberts</entity>
+				<entity>BRIDGE-1 | United_States</entity>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>PATIENT-1 | African_Americans</entity>
+				<entity>PATIENT-3 | President_of_the_United_States</entity>
+				<entity>PATIENT-2 | English_language</entity>
 			</entitymap>
 		</entry>
 		<entry category="Building" eid="Id20" size="5">
@@ -1453,55 +715,21 @@
 				<mtriple>United_States | ethnicGroup | White_Americans</mtriple>
 			</modifiedtripleset>
 			<lex comment="good" lid="Id1">
-				<sortedtripleset>
-					<striple>United_States | leaderName | Joe_Biden</striple>
-					<striple>United_States | leaderTitle | President_of_the_United_States</striple>
-					<striple>United_States | ethnicGroup | White_Americans</striple>
-					<striple>United_States | language | English_language</striple>
-					<striple>250_Delaware_Avenue | location | United_States</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="Joe_Biden" number="1" tag="PATIENT-3" type="name">Joe Biden</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States</reference>
-					<reference entity="President_of_the_United_States" number="3" tag="PATIENT-2" type="description">a President</reference>
-					<reference entity="White_Americans" number="4" tag="PATIENT-4" type="description">The White Americans</reference>
-					<reference entity="United_States" number="5" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="English_language" number="6" tag="PATIENT-1" type="description">the English language</reference>
-					<reference entity="250_Delaware_Avenue" number="7" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
-				</references>
 				<text>Joe Biden is a leader of the United States which is lead by a President. The White Americans are one of the ethnic groups of the country which uses the English language and is where 250 Delaware Avenue is located.</text>
 				<template>PATIENT-3 is a leader of BRIDGE-1 which is lead by PATIENT-2 . PATIENT-4 are one of the ethnic groups of BRIDGE-1 which uses PATIENT-1 and is where AGENT-1 is located .</template>
 			</lex>
 			<lex comment="good" lid="Id2">
-				<sortedtripleset>
-					<striple>250_Delaware_Avenue | location | United_States</striple>
-					<striple>United_States | language | English_language</striple>
-					<striple>United_States | leaderTitle | President_of_the_United_States</striple>
-					<striple>United_States | leaderName | Joe_Biden</striple>
-					<striple>United_States | ethnicGroup | White_Americans</striple>
-				</sortedtripleset>
-				<references>
-					<reference entity="250_Delaware_Avenue" number="1" tag="AGENT-1" type="name">250 Delaware Avenue</reference>
-					<reference entity="United_States" number="2" tag="BRIDGE-1" type="description">the United States ,</reference>
-					<reference entity="English_language" number="3" tag="PATIENT-1" type="name">English</reference>
-					<reference entity="President_of_the_United_States" number="4" tag="PATIENT-2" type="description">The President of the United States</reference>
-					<reference entity="Joe_Biden" number="5" tag="PATIENT-3" type="name">Joe Biden</reference>
-					<reference entity="United_States" number="6" tag="BRIDGE-1" type="description">the country</reference>
-					<reference entity="White_Americans" number="7" tag="PATIENT-4" type="name">White Americans</reference>
-				</references>
 				<text>250 Delaware Avenue is located in the United States, where English is spoken. The President of the United States is the main leader, alongside Joe Biden, and an ethnic group in the country is White Americans.</text>
 				<template>AGENT-1 is located in BRIDGE-1 where PATIENT-1 is spoken . PATIENT-2 is the main leader , alongside PATIENT-3 , and an ethnic group in BRIDGE-1 is PATIENT-4 .</template>
 			</lex>
 			<entitymap>
-				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
 				<entity>BRIDGE-1 | United_States</entity>
-				<entity>PATIENT-1 | English_language</entity>
-				<entity>PATIENT-2 | President_of_the_United_States</entity>
-				<entity>PATIENT-3 | Joe_Biden</entity>
 				<entity>PATIENT-4 | White_Americans</entity>
+				<entity>AGENT-1 | 250_Delaware_Avenue</entity>
+				<entity>PATIENT-1 | English_language</entity>
+				<entity>PATIENT-3 | Joe_Biden</entity>
+				<entity>PATIENT-2 | President_of_the_United_States</entity>
 			</entitymap>
 		</entry>
 	</entries>
-	
-
 </benchmark>

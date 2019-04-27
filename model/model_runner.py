@@ -1,5 +1,5 @@
 from functools import lru_cache
-from typing import List
+from typing import List, Dict
 
 from eval.bleu.eval import BLEU, naive_tokenizer
 
@@ -14,26 +14,41 @@ def add_features(plan: str):
     # return " ".join([w + "|" + f for w, f in zip(words, features)])
 
 
+def spread_translation_dict(for_translation):
+    src_l = []
+    tgt_l = []
+    for src, tgts in for_translation.items():
+        for tgt in tgts:
+            src_l.append(src)
+            tgt_l.append(tgt)
+
+    return src_l, tgt_l
+
+
 class Model:
     def translate(self, plans: List[str]) -> List[str]:  # Translate entire reader file using a model
         raise NotImplementedError("Must implement translate")
 
-    def evaluate(self, reader):
-        ft = reader.for_translation()
+    def evaluate(self, ft: Dict[str, List[str]]):
         plans = list(ft.keys())
         references = list(ft.values())
         hypothesis = self.translate(plans)
 
         return BLEU(hypothesis, references, tokenizer=naive_tokenizer)
 
+    def evaluate_reader(self, reader):
+        return self.evaluate(reader.for_translation())
+
 
 class ModelRunner:
     def __init__(self, train_reader, dev_reader):
-        self.train_reader = train_reader
-        self.dev_reader = dev_reader
+        self.train_ft = train_reader.for_translation()
+        self.train_data = spread_translation_dict(self.train_ft)
+        self.dev_ft = dev_reader.for_translation()
+        self.dev_data = spread_translation_dict(self.dev_ft)
 
     def expose_train(self):
-        return "\n\n".join([d.plan + "\n" + d.delex for d in self.train_reader.data])
+        return "\n\n".join([p + "\n" + d for p, d in zip(*self.train_data)])
 
     def pre_process(self):  # Do any manipulations to the train and dev sets
         raise NotImplementedError("Must implement pre_process")
