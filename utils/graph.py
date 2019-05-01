@@ -73,16 +73,16 @@ class LinearNode:
 
     def linearizations(self):
         none_empty = [s for s in self.rec_linearizations() if len(s) > 0]
-        return [" ".join(s[:-1]) for s in none_empty if s[-1] != NodeType.FILTER_OUT]
+        return (" ".join(s[:-1]) for s in none_empty if s[-1] != NodeType.FILTER_OUT)
 
     def rec_linearizations(self):
         if self.next is None:
             return [[self.value]]
 
         if self.value == NodeType.OR:
-            return [l for n in self.next for l in n.rec_linearizations()]
+            return (l for n in self.next for l in n.rec_linearizations())
 
-        return [[self.value] + l for n in self.next for l in n.rec_linearizations()]
+        return ([self.value] + l for n in self.next for l in n.rec_linearizations())
 
 
 class Graph:

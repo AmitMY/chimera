@@ -67,7 +67,7 @@ class Datum:
 
 
 def exhaustive_plan(g: Graph):
-    return g.exhaustive_plan().linearizations()
+    return list(g.exhaustive_plan().linearizations())
 
 
 def match_plan(d: Datum):

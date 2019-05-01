@@ -30,10 +30,15 @@ class NaivePlanner(Planner):
 
         if len(all_plans) == 0:
             return ""
-        all_scores = [self.scorer.score(p) for p in all_plans]
-        max_i = np.argmax(all_scores)
 
-        return all_plans[max_i]
+        best_plan = best_plan_score = 0
+        for plan in all_plans:
+            score = self.scorer.score(plan)
+            if score > best_plan_score:
+                best_plan_score = score
+                best_plan = plan
+
+        return best_plan
 
     def plan_all(self, g: Graph):
         return g.exhaustive_plan(force_tree=False).linearizations()
