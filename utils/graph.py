@@ -55,7 +55,7 @@ class StructuredNode:
         if self.value == NodeType.OR:
             return (l for e in edges for l in e)
 
-        edges = list(product(*edges))
+        edges = product(*edges)
 
         if self.value == NodeType.SENTENCES:
             return (". ".join(p) for p in edges)
