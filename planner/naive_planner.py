@@ -28,10 +28,9 @@ class NaivePlanner(Planner):
         else:
             all_plans = self.plan_all(g)
 
-        if len(all_plans) == 0:
-            return ""
+        best_plan = ""
+        best_plan_score = 0
 
-        best_plan = best_plan_score = 0
         for plan in all_plans:
             score = self.scorer.score(plan)
             if score > best_plan_score:
