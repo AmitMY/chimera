@@ -49,21 +49,21 @@ class StructuredNode:
         if self.children is None:
             return [self.get_val()]
 
-        edges = [[(e + " [" + l + "]") if e else l for l in s.linearizations()] for e, s in
-                 self.children]
+        edges = ([(e + " [" + l + "]") if e else l for l in s.linearizations()] for e, s in
+                 self.children)
 
         if self.value == NodeType.OR:
-            return [l for e in edges for l in e]
+            return (l for e in edges for l in e)
 
         edges = list(product(*edges))
 
         if self.value == NodeType.SENTENCES:
-            return [". ".join(p) for p in edges]
+            return (". ".join(p) for p in edges)
 
         if self.value == NodeType.AND:
-            return [" ".join(p) for e in edges for p in permutations(e)]
+            return (" ".join(p) for e in edges for p in permutations(e))
 
-        return [self.get_val() + " " + " ".join(e) for e in edges]
+        return (self.get_val() + " " + " ".join(e) for e in edges)
 
 
 class LinearNode:
