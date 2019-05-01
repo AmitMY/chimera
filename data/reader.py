@@ -10,10 +10,10 @@ from tqdm import tqdm
 
 from eval.bleu.eval import BLEU, naive_tokenizer
 from model.model_runner import Model
+from reg.reg import REG
 from utils.aligner import entities_order, SENTENCE_BREAK, comp_order
 from utils.delex import Delexicalize, concat_entity
 from utils.graph import Graph
-from utils.relex import relex
 from utils.tokens import SPLITABLES, tokenize, tokenize_sentences
 
 
@@ -117,6 +117,7 @@ class DataReader:
         self.misspelling = misspelling
         self.rephrase = rephrase
 
+        self.entities = {}
         self.delex = Delexicalize(rephrase_f=self.rephrase[0], rephrase_if_must_f=self.rephrase[1])
 
     def copy(self):
@@ -208,9 +209,11 @@ class DataReader:
         self.data = [d.set_hyp(mapper[d.plan]) for d in self.data]
         return self
 
-    def post_process(self):
+    def post_process(self, reg: REG):
+        entities = self.entities if hasattr(self, 'entities') else {}
+
         def process(text: str):
-            return relex(text)
+            return reg.generate(text, entities)
 
         self.data = [d.set_hyp(process(d.hyp)) for d in self.data]
         return self
@@ -226,3 +229,6 @@ class DataReader:
         references = list(plan_ref.values())
 
         return BLEU(hypothesis, references, tokenizer=naive_tokenizer)
+
+    def describe_entities(self):
+        return self

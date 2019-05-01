@@ -1,3 +1,4 @@
+import re
 from itertools import chain
 from os import listdir, path
 from os.path import isdir
@@ -6,6 +7,8 @@ import xmltodict
 
 from data.WebNLG.rephrasing import rephrase, rephrase_if_must
 from data.reader import DataReader, DataSetType, Datum
+from utils.dbpedia import get_dbpedia_entity, pronouns
+from utils.relex import RepresentsInt
 
 
 class RDFFileReader:
@@ -16,7 +19,8 @@ class RDFFileReader:
 
         structure = xmltodict.parse(content)
         for entry in structure["benchmark"]["entries"]["entry"]:
-            triplets = [tuple(map(str.strip, r.split("|"))) for r in self.triplets_from_object(entry["modifiedtripleset"], "mtriple")]
+            triplets = [tuple(map(str.strip, r.split("|"))) for r in
+                        self.triplets_from_object(entry["modifiedtripleset"], "mtriple")]
             sentences = list(self.extract_sentences(entry["lex"]))
 
             for s in sentences:
@@ -141,6 +145,33 @@ class WebNLGDataReader(DataReader):
             return chain.from_iterable([self.recurse_files(folder + '/' + f) for f in listdir(folder)])
         return [folder]
 
+    def describe_entities(self):
+        ents = set(chain.from_iterable([d.graph.nodes for d in self.data]))
+        regnumber = re.compile(r'^\d+(\.\d*)?$')
+
+        for ent in ents:
+            if ent[0] == '"':
+                # print("Skipping", ent, "literal")
+                pass
+            elif ent[0] == '<':
+                # print("Skipping", ent, "link")
+                pass
+            elif regnumber.match(ent):
+                # print("Skipping", ent, "number")
+                pass
+            elif " " in ent:
+                # print("Skipping", ent, "contains space")
+                pass
+            else:
+                ps = pronouns(ent)
+                if len(ps) > 0:
+                    self.entities[ent] = ps
+
+        return self
+
 
 if __name__ == "__main__":
-    print(WebNLGDataReader(DataSetType.TRAIN).data[-1])
+    reader = WebNLGDataReader(DataSetType.TEST)
+    print(reader.data[-1])
+    reader.generate_graphs()
+    reader.describe_entities()

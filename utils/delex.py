@@ -74,6 +74,9 @@ def concat_entity(e):
 
 @lru_cache(maxsize=None)
 def un_concat_entity(e):
+    if e[:4].lower() == "ent_":
+        e = e[4:-4]
+
     return e.upper() \
         .replace('_LP_', '(') \
         .replace('_RP_', ')') \

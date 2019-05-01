@@ -8,9 +8,12 @@ from planner.neural_planner import NeuralPlanner
 from planner.planner import Planner
 from process.evaluation import EvaluationPipeline
 from process.pre_process import TrainingPreProcessPipeline, TestingPreProcessPipeline
+from process.reg import REGPipeline
 from process.train_model import TrainModelPipeline
 from process.train_planner import TrainPlannerPipeline
 from process.translate import TranslatePipeline
+from reg.naive import NaiveREG
+from reg.reg import REG
 from scorer.global_direction import GlobalDirectionExpert
 from scorer.product_of_experts import WeightedProductOfExperts
 from scorer.relation_direction import RelationDirectionExpert
@@ -20,13 +23,14 @@ from utils.pipeline import Pipeline
 
 
 class Config:
-    def __init__(self, reader: DataReader, planner: Planner, test_reader: DataReader = None):
+    def __init__(self, reader: DataReader, planner: Planner, reg: REG, test_reader: DataReader = None):
         self.reader = {
             DataSetType.TRAIN: reader,
             DataSetType.DEV: reader,
             DataSetType.TEST: test_reader if test_reader else reader,
         }
         self.planner = planner
+        self.reg = reg
 
 
 MainPipeline = Pipeline()
@@ -34,6 +38,7 @@ MainPipeline.enqueue("pre-process", "Pre-process training data", TrainingPreProc
 MainPipeline.enqueue("train-planner", "Train Planner", TrainPlannerPipeline)
 MainPipeline.enqueue("train-model", "Train Model", TrainModelPipeline)
 MainPipeline.enqueue("test-corpus", "Pre-process test data", TestingPreProcessPipeline)
+MainPipeline.enqueue("train-reg", "Train Referring Expressions Generator", REGPipeline)
 MainPipeline.enqueue("translate", "Translate Test", TranslatePipeline)
 MainPipeline.enqueue("evaluate", "Evaluate Translations", EvaluationPipeline)
 
@@ -44,12 +49,13 @@ if __name__ == "__main__":
         SplittingTendenciesExpert,
         RelationTransitionsExpert
     ]))
-    neural_planner = NeuralPlanner()
+    # neural_planner = NeuralPlanner()
     # combined_planner = CombinedPlanner((neural_planner, naive_planner))
-    config = Config(reader=E2EDataReader,
-                    planner=neural_planner)
+    config = Config(reader=WebNLGDataReader,
+                    planner=naive_planner,
+                    reg=NaiveREG)
 
-    res = MainPipeline.mutate({"config": config}).execute("E2E", cache_name="E2E")
+    res = MainPipeline.mutate({"config": config}).execute("WebNLG", cache_name="WebNLG")
 
     print()
 

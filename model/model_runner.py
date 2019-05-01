@@ -6,12 +6,12 @@ from eval.bleu.eval import BLEU, naive_tokenizer
 
 @lru_cache(maxsize=None)
 def add_features(plan: str):
-    return plan
-    # paren = {"[", "]"}
-    # dir = {"<", ">"}
-    # words = plan.split(" ")
-    # features = ["S" if w in paren else ("D" if w in dir else ("E" if w[:4] == "ENT_" else "R")) for w in words]
-    # return " ".join([w + "|" + f for w, f in zip(words, features)])
+    # return plan
+    paren = {"[", "]"}
+    dir = {"<", ">"}
+    words = plan.split(" ")
+    features = ["S" if w in paren else ("D" if w in dir else ("E" if w[:4] == "ENT_" else "R")) for w in words]
+    return " ".join([w + "\uFFE8" + f for w, f in zip(words, features)])  # Special Character!
 
 
 def spread_translation_dict(for_translation):

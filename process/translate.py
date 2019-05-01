@@ -20,7 +20,7 @@ TranslatePipeline = Pipeline()
 TranslatePipeline.enqueue("translate", "Translate all plans",
                           lambda f, x: x["test-corpus"].copy().translate_plans(x["train-model"]))
 TranslatePipeline.enqueue("post-process", "Post-process translated sentences",
-                          lambda f, _: f["translate"].copy().post_process())
+                          lambda f, x: f["translate"].copy().post_process(x["train-reg"]))
 TranslatePipeline.enqueue("plans-out", "Create a dictionary of outputs",
                           lambda f, x: unique_plans_outputs(f["post-process"]))
 TranslatePipeline.enqueue("review", "Create hypothesis-references review file",

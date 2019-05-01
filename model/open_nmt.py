@@ -9,7 +9,7 @@ from typing import List
 
 import torch
 
-from model.model_runner import ModelRunner, Model, add_features, spread_translation_dict
+from model.model_runner import ModelRunner, Model, add_features
 from utils.file_system import save_temp, temp_name, listdir, temp_dir, save_temp_bin
 from utils.levenshtein import levenshtein_distance
 
