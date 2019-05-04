@@ -3,6 +3,7 @@ import random
 from os import path
 
 from utils.file_system import makedir
+from utils.file_bytes import get_file_bytes
 from utils.silencer import Silencer
 from utils.time import Time
 
@@ -139,10 +140,12 @@ class Pipeline:
                     if self.mute:
                         Silencer.unmute()
 
-                    f = open(pnf, "wb" if qi.ext != "txt" else "w")
+                    f = open(pnf, "wb" if qi.ext not in ["txt", "json"] else "w")
                     if qi.ext == "sav":
                         pickle.dump(self.params[qi.key], f)
                     else:
+                        if qi.ext in ["png", "jpg", "wav", "mp4"]:
+                            self.params[qi.key] = get_file_bytes(self.params[qi.key], format=qi.ext)
                         f.write(self.params[qi.key])
                     f.close()
 

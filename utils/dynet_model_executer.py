@@ -12,6 +12,9 @@ from utils.file_system import temp_name, save_temp_bin
 
 
 # Vocabulary for model
+from utils.graph import Graph
+
+
 class Vocab:
     def __init__(self, words, vectors=None, is_unique=False, update=True):
         # This option is to preserve order in case order is needed
@@ -137,6 +140,10 @@ class DynetModelExecutor:
         length = len(iterable)
         for ndx in range(0, length, n):
             yield iterable[ndx:min(ndx + n, length)]
+
+    def calc_error(self, _in, _out):
+        dy.renew_cg()
+        return float(dy.average(list(self.model.forward(_in, _out))).value())
 
     def train_epoch(self, batch_size):
         batches = list(self.batch(self.train_data, batch_size))

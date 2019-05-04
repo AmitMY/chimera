@@ -1,5 +1,7 @@
 import sys
 
+from planner.neural_planner import NeuralPlanner
+
 sys.path.append("../")
 
 import argparse
@@ -22,12 +24,7 @@ from data.WebNLG.reader import WebNLGDataReader
 server_config = {
     "port": 5001,
     "reader": WebNLGDataReader,
-    "planner": NaivePlanner(WeightedProductOfExperts([
-        RelationDirectionExpert,
-        GlobalDirectionExpert,
-        SplittingTendenciesExpert,
-        RelationTransitionsExpert
-    ]))
+    "planner": NeuralPlanner()
 }
 
 dataset_name = server_config["reader"].DATASET

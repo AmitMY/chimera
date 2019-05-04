@@ -1,16 +1,19 @@
 import multiprocessing
 import pickle
 import re
+import zlib
 from collections import defaultdict
 from enum import Enum
+from itertools import chain
 from multiprocessing.pool import Pool
 from typing import List, Tuple, Dict, Callable
 
 from tqdm import tqdm
+import time
 
 from eval.bleu.eval import BLEU, naive_tokenizer
 from model.model_runner import Model
-from reg.reg import REG
+from reg.base import REG
 from utils.aligner import entities_order, SENTENCE_BREAK, comp_order
 from utils.delex import Delexicalize, concat_entity
 from utils.graph import Graph
@@ -26,6 +29,7 @@ class DataSetType(Enum):
 class Datum:
     def __init__(self, rdfs: List[Tuple[str, str, str]] = None,
                  graph: Graph = None,
+                 info=None,
                  title: str = None,
                  text: str = None,
                  delex: str = None,
@@ -34,6 +38,7 @@ class Datum:
                  plans: List[str] = None):
         self.rdfs = rdfs
         self.graph = graph
+        self.info = info
         self.title = title
         self.text = text
         self.delex = delex
@@ -61,13 +66,24 @@ class Datum:
         self.plan = plan
         return self
 
-    def set_plans(self, plans: str):
+    def set_plans(self, plans: List[str]):
         self.plans = plans
         return self
 
 
-def exhaustive_plan(g: Graph):
-    return list(g.exhaustive_plan().linearizations())
+def exhaustive_plan(g: Graph, planner):
+    plans = list(planner.plan_all(g))
+    scores = {p: planner.score(g, p) for p in tqdm(plans)}
+    return sorted(plans, key=lambda p: scores[p], reverse=True)
+
+
+def compress_plans(plans: List[str]) -> str:
+    return zlib.compress("\n".join(plans).encode("utf-8"))
+
+
+def exhaustive_plan_compress(input):
+    g, planner = input
+    return compress_plans(exhaustive_plan(g, planner))
 
 
 def match_plan(d: Datum):
@@ -104,7 +120,9 @@ def match_plan(d: Datum):
         if comp_order([e for e, i in s_order], [e for e, i in p_order]):
             final_plans.append(p)
 
-    return final_plans
+    if len(final_plans) == 0:
+        return []
+    return [max(final_plans, key=lambda p: len(list(filter(lambda w: w == ">", p.split()))))]
 
 
 class DataReader:
@@ -119,6 +137,8 @@ class DataReader:
 
         self.entities = {}
         self.delex = Delexicalize(rephrase_f=self.rephrase[0], rephrase_if_must_f=self.rephrase[1])
+
+        self.timing = {}
 
     def copy(self):
         return pickle.loads(pickle.dumps(self))
@@ -156,13 +176,17 @@ class DataReader:
         self.data = [d.set_plan(p) for d, plans in zip(self.data, plans) for p in plans]
         return self
 
-    def exhaustive_plan(self):
+    def exhaustive_plan(self, planner):
         unique = {d.graph.unique_key(): d.graph for d in self.data}
         unique_graphs = list(reversed(list(unique.values())))
 
+        plan_iter = ((g, planner) for g in unique_graphs)
+
         # pool = Pool(multiprocessing.cpu_count() - 1)
-        # plans = list(pool.imap(exhaustive_plan, unique_graphs))
-        plans = [exhaustive_plan(p) for p in tqdm(unique_graphs)]
+        # plans = list(tqdm(pool.imap(exhaustive_plan_compress, plan_iter),
+        #                   total=len(unique_graphs)))
+        plans = [exhaustive_plan_compress(g_p) for g_p in tqdm(list(plan_iter))]
+
         graph_plans = {g.unique_key(): p for g, p in zip(unique_graphs, plans)}
         self.data = [d.set_plans(graph_plans[d.graph.unique_key()]) for d in self.data]
         return self
@@ -172,11 +196,19 @@ class DataReader:
         unique = {d.graph.unique_key(): d.graph for d in self.data}
         unique_graphs = list(reversed(list(unique.values())))
 
-        if planner.is_parallel:
-            pool = Pool(multiprocessing.cpu_count() - 1)
-            plans = list(tqdm(pool.imap(planner.plan_best, unique_graphs), total=len(unique_graphs)))
-        else:
-            plans = list(map(planner.plan_best, tqdm(unique_graphs)))
+        # if planner.is_parallel:
+        #     pool = Pool(multiprocessing.cpu_count() - 1)
+        #     plans = list(tqdm(pool.imap(planner.plan_best, unique_graphs), total=len(unique_graphs)))
+        # else:
+        plans = []
+        for g in tqdm(unique_graphs):
+            start = time.time()
+            plans.append(planner.plan_best(g))
+            g_size = len(g.edges)
+            if g_size not in self.timing:
+                self.timing[g_size] = []
+            self.timing[g_size].append(time.time() - start)
+
         graph_plan = {g.unique_key(): p for g, p in zip(unique_graphs, plans)}
         self.data = [d.set_plan(graph_plan[d.graph.unique_key()]) for d in self.data]
         return self

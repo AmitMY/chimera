@@ -1,4 +1,5 @@
 import numpy as np
+from tqdm import tqdm
 
 from data.reader import DataReader
 from planner.planner import Planner
@@ -19,25 +20,22 @@ class NaivePlanner(Planner):
                 break
         return self
 
-    def score(self, plan: str):
+    def score(self, g: Graph, plan: str):
         return self.scorer.score(plan)
 
     def plan_best(self, g: Graph, ranker_plans=None):
         if ranker_plans:
             all_plans = list(set(ranker_plans))
         else:
-            all_plans = self.plan_all(g)
+            all_plans = list(self.plan_all(g))
 
         best_plan = ""
         best_plan_score = 0
 
-        for plan in all_plans:
+        for plan in tqdm(all_plans):
             score = self.scorer.score(plan)
             if score > best_plan_score:
                 best_plan_score = score
                 best_plan = plan
 
         return best_plan
-
-    def plan_all(self, g: Graph):
-        return g.exhaustive_plan(force_tree=False).linearizations()

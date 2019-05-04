@@ -37,8 +37,8 @@ def copyfile(src, dst):
     return shutil.copyfile(src, dst)
 
 
-def temp_name():
-    fd, path = tempfile.mkstemp()
+def temp_name(suffix=None):
+    fd, path = tempfile.mkstemp(suffix)
     os.close(fd)  # Close connection so no too-many-connections
     return path
 

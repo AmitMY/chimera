@@ -21,7 +21,6 @@ class WeightedProductOfExperts(Scorer):
             plans = [d.plan for d in train_reader.data]
             self.experts = [e(plans) for e in self.expert_constructors]
             self.weights = [1 for _ in self.experts]
-            return
 
     def score(self, plan: str):
         scores = [e.eval(plan) for e in self.experts]

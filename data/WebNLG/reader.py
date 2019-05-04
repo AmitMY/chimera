@@ -4,6 +4,7 @@ from os import listdir, path
 from os.path import isdir
 
 import xmltodict
+from tqdm import tqdm
 
 from data.WebNLG.rephrasing import rephrase, rephrase_if_must
 from data.reader import DataReader, DataSetType, Datum
@@ -17,14 +18,16 @@ class RDFFileReader:
 
         content = open(file_name, encoding="utf-8").read()
 
+        is_test_file = file_name.split("/")[-1] == "testdata_with_lex.xml"
+
         structure = xmltodict.parse(content)
-        for entry in structure["benchmark"]["entries"]["entry"]:
+        for i, entry in enumerate(structure["benchmark"]["entries"]["entry"]):
             triplets = [tuple(map(str.strip, r.split("|"))) for r in
                         self.triplets_from_object(entry["modifiedtripleset"], "mtriple")]
             sentences = list(self.extract_sentences(entry["lex"]))
 
             for s in sentences:
-                self.data.append(Datum(rdfs=triplets, text=s))
+                self.data.append(Datum(rdfs=triplets, text=s, info={"seen": not is_test_file or i <= 970}))
 
     def extract_sentences(self, lex):
         sentences = lex
@@ -149,7 +152,7 @@ class WebNLGDataReader(DataReader):
         ents = set(chain.from_iterable([d.graph.nodes for d in self.data]))
         regnumber = re.compile(r'^\d+(\.\d*)?$')
 
-        for ent in ents:
+        for ent in tqdm(ents):
             if ent[0] == '"':
                 # print("Skipping", ent, "literal")
                 pass
@@ -165,7 +168,7 @@ class WebNLGDataReader(DataReader):
             else:
                 ps = pronouns(ent)
                 if len(ps) > 0:
-                    self.entities[ent] = ps
+                    self.entities[ent.upper()] = ps
 
         return self
 

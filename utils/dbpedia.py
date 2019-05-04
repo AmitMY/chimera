@@ -50,9 +50,9 @@ def english_value(entries):
 
 
 gender_pronouns = {
-    "male": ["he", "him", "his"],
-    "female": ["she", "her", "hers"],
-    "inanimate": ["it", "its"],
+    "male": ["he", "him", "his", "himself"],
+    "female": ["she", "her", "hers", "herself"],
+    "inanimate": ["it", "its", "itself"],
     "plural": ["they", "them", "theirs"]
 }
 
@@ -65,8 +65,9 @@ def pronouns(entity: str):
     abstract_uri = "http://dbpedia.org/ontology/abstract"
 
     if ent_uri not in dbpedia:
-        print(dbpedia)
-        raise ValueError("No URI - " + entity)
+        # print(dbpedia)
+        # raise ValueError("No URI - " + entity)
+        return []
 
     if gender_uri in dbpedia[ent_uri]:
         gender = english_value(dbpedia[ent_uri][gender_uri])
@@ -79,10 +80,11 @@ def pronouns(entity: str):
             words = Counter(abstract.lower().split())
             gender_by_words = {g: sum([words[w] for w in g_words]) for g, g_words in gender_pronouns.items()}
             gender = max(gender_by_words, key=gender_by_words.get)
+            if gender_by_words[gender] == 0:
+                gender = "inanimate" # Default
             return gender_pronouns[gender]
 
     return []
-
 
 
 if __name__ == "__main__":

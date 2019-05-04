@@ -1,3 +1,5 @@
+import re
+
 import dynet_config
 
 from utils.file_system import temp_name, save_temp_bin
@@ -21,16 +23,19 @@ from utils.tokens import tokenize
 
 
 class Model(BaseDynetModel):
-    def __init__(self, embedding_size=20, entity_dropout=0.5, relation_dropout=0.5):
+    def __init__(self, embedding_size=20, entity_dropout=0.3, relation_dropout=0.3, max_edges=10):
         super().__init__()
 
         self.vocab = None
         self.embedding_size = embedding_size
+        self.counter_size = 5
 
         self.entity_dropout = entity_dropout
         self.relation_dropout = relation_dropout
 
         self.decoder = None
+
+        self.counters = Vocab(list(range(max_edges + 1)))
 
     def set_vocab(self, in_vocab: Vocab, out_vocab: Vocab):
         self.vocab = out_vocab  # Use same vocab for both the input and the output
@@ -43,7 +48,8 @@ class Model(BaseDynetModel):
         self.no_ent = self.pc.add_parameters(self.embedding_size)
 
         self.vocab.create_lookup(self.pc, self.embedding_size)
-        self.decoder = dy.LSTMBuilder(3, self.embedding_size, self.embedding_size, self.pc)
+        self.counters.create_lookup(self.pc, self.counter_size)
+        self.decoder = dy.LSTMBuilder(3, self.embedding_size + self.counter_size * 4, self.embedding_size, self.pc)
 
     def fix_out(self, plan: str):
         if not plan:
@@ -78,7 +84,7 @@ class Model(BaseDynetModel):
                 node_connections[n2][0].append(edge_rep)
                 node_connections[n1][1].append(edge_rep)
 
-        ne_rep = lambda e: dy.esum(e) if len(e) > 0 else self.no_ent
+        ne_rep = lambda e: dy.average(e) if len(e) > 0 else self.no_ent
         node_reps = {n: self.entity_encoder *
                         dy.concatenate([ne_rep(node_connections[n][0]), nodes[n], ne_rep(node_connections[n][1])])
                      for n in g.nodes}
@@ -90,9 +96,14 @@ class Model(BaseDynetModel):
         rdfs = {((n1, n2), e): edge_reps[i] for i, ((n1, n2), es) in enumerate(g.edges.items()) for e in es}
 
         # Decoding
-        decoder = self.decoder.initial_state().add_input(dy.average(edge_reps))  # Initialize with something
-
         nodes_stack = []
+        edges_coverage = {"yes": 0, "no": len(g.edges), "current": 0}
+        counter_vec = lambda: dy.concatenate([self.counters.lookup(c) for c in
+                                              [len(nodes_stack)] + list(edges_coverage.values())])
+
+        c_vec = counter_vec()
+        initial_input = dy.concatenate([dy.average(edge_reps), c_vec])
+        decoder = self.decoder.initial_state().add_input(initial_input)
 
         def choose(item):
             if out_tokens:
@@ -101,10 +112,16 @@ class Model(BaseDynetModel):
             if item[0] == "pop":
                 nodes_stack.pop()
                 res = [item[1]]
+                if len(nodes_stack) == 0:
+                    edges_coverage["current"] = 0
             elif item[0] == "node":
                 nodes_stack.append(item[1])
                 res = [item[1]]
             elif item[0] == "edge":
+                edges_coverage["yes"] += 1
+                edges_coverage["current"] += 1
+                edges_coverage["no"] -= 1
+
                 _, d, e, n = item
                 prev_node = nodes_stack[-1]
                 nodes_stack.append(n)
@@ -118,6 +135,7 @@ class Model(BaseDynetModel):
             else:
                 raise ValueError("type can only be: pop, node, edge. got " + item[0])
 
+            c_vec = counter_vec()
             for w in res:
                 if w in node_reps:
                     vec = node_reps[w]
@@ -125,7 +143,7 @@ class Model(BaseDynetModel):
                     vec = edges[w]
                 else:
                     vec = self.vocab.lookup(w)
-                decoder.add_input(vec)
+                decoder.add_input(dy.concatenate([vec, c_vec]))
 
             return res
 
@@ -143,9 +161,11 @@ class Model(BaseDynetModel):
                 vocab = {**f_edges, **b_edges}
 
                 if is_pop:
+                    # What node are we popping to. To help neighboring facts
+                    pop_node = self.no_ent if len(nodes_stack) == 1 else node_reps[nodes_stack[-2]]
                     pop_char = "." if len(nodes_stack) == 1 else "]"
-                    vocab[("pop", pop_char)] = self.vocab.lookup(pop_char)
-                is_pop = True
+                    vocab[("pop", pop_char)] = dy.esum([self.vocab.lookup(pop_char), pop_node])
+                is_pop = True  # next iteration is popable
 
             vocab_list = list(vocab.items())
             vocab_index = ["_".join(i[1:]) for i, _ in vocab_list]
@@ -204,7 +224,13 @@ class NeuralPlanner(Planner):
         relations = get_relations(p)
         for d, r in relations:
             p = p.replace(r, self.convert_relation(r))
-        return p
+
+        while "]]" in p:
+            p = p.replace("]]", "] ]")
+
+        p = p.replace("].", "] .")
+
+        return re.sub("\[(\w)", r"[ \1", p)
 
     def convert_set(self, reader: DataReader):
         return [(self.convert_graph(d.graph), self.convert_plan(d.plan)) for d in reader.copy().data]
@@ -215,12 +241,16 @@ class NeuralPlanner(Planner):
 
         model = Model()
         self.executor = DynetModelExecutor(model, train_set, dev_set)
-        for batch_exponent in range(0, 7):
-            self.executor.train(5, batch_exponent)
+        for batch_exponent in range(0, 3):
+            self.executor.train(3, batch_exponent)
 
         return self
 
-    def model_plan(self, g, greedy=True):
+    def score(self, g: Graph, plan: str):
+        error = self.executor.calc_error(self.convert_graph(g), self.convert_plan(plan))
+        return 1 / error  # To make less error score better
+
+    def model_plan(self, g: Graph, greedy=True):
         predict = list(self.executor.predict([self.convert_graph(g)], greedy=greedy))[0]
         plan = " ".join(chain.from_iterable(predict))
         for d, r in get_relations(plan):

@@ -1,14 +1,20 @@
 import json
+import pickle
 import re
+import sys
+import zlib
 from collections import defaultdict
 from enum import Enum
 from functools import lru_cache
 from itertools import chain, product, permutations, combinations
-from typing import Set
+from typing import Set, List
+
+from tqdm import tqdm
 
 from utils.delex import concat_entity
 from utils.memoize import memoize
 from utils.time import Time
+import psutil
 
 
 @lru_cache(maxsize=None)
@@ -49,21 +55,21 @@ class StructuredNode:
         if self.children is None:
             return [self.get_val()]
 
-        edges = ([(e + " [" + l + "]") if e else l for l in s.linearizations()] for e, s in
-                 self.children)
+        edges = [[(e + " [" + l + "]") if e else l for l in s.linearizations()] for e, s in
+                 self.children]
 
         if self.value == NodeType.OR:
-            return (l for e in edges for l in e)
+            return [l for e in edges for l in e]
 
-        edges = product(*edges)
+        edges = list(product(*edges))
 
         if self.value == NodeType.SENTENCES:
-            return (". ".join(p) for p in edges)
+            return [". ".join(p) for p in edges]
 
         if self.value == NodeType.AND:
-            return (" ".join(p) for e in edges for p in permutations(e))
+            return [" ".join(p) for e in edges for p in permutations(e)]
 
-        return (self.get_val() + " " + " ".join(e) for e in edges)
+        return [self.get_val() + " " + " ".join(e) for e in edges]
 
 
 class LinearNode:
@@ -73,16 +79,16 @@ class LinearNode:
 
     def linearizations(self):
         none_empty = [s for s in self.rec_linearizations() if len(s) > 0]
-        return (" ".join(s[:-1]) for s in none_empty if s[-1] != NodeType.FILTER_OUT)
+        return [" ".join(s[:-1]) for s in none_empty if s[-1] != NodeType.FILTER_OUT]
 
     def rec_linearizations(self):
         if self.next is None:
             return [[self.value]]
 
         if self.value == NodeType.OR:
-            return (l for n in self.next for l in n.rec_linearizations())
+            return [l for n in self.next for l in n.rec_linearizations()]
 
-        return ([self.value] + l for n in self.next for l in n.rec_linearizations())
+        return [[self.value] + l for n in self.next for l in n.rec_linearizations()]
 
 
 class Graph:
@@ -238,6 +244,19 @@ class Graph:
         return [LinearNode(NodeType.FILTER_OUT)]
 
 
+class Compressor:
+    def __init__(self):
+        self.voc = {}
+
+    def compress(self, plan: str):
+        tokens = []
+        for t in plan.split():
+            if t not in self.voc:
+                self.voc[t] = len(self.voc)
+            tokens.append(chr(self.voc[t]))
+        return "".join(tokens)
+
+
 if __name__ == "__main__":
     g = Graph()
     g.add_edge('A', 'B', 'b1')
@@ -247,15 +266,28 @@ if __name__ == "__main__":
     # g.add_edge('C', 'C', 'cd')
     g.add_edge('A', 'D', 'd')
     g.add_edge('D', 'E', 'e')
-    # g.add_edge('A', 'E', 'e')
+    g.add_edge('A', 'E', 'e')
 
     now = Time.now()
-    for i in range(10000):
-        plans = g.plan_all(force_tree=True).linearizations()
-    print("plan_all tree", len(plans))
-    for p in plans:
-        print(p)
+    plans = list(g.exhaustive_plan(force_tree=False).linearizations())
+
+    print("exhaustive_plan", len(plans))
+    print(plans[0])
+    print(plans[-1])
     print(Time.passed(now))
+
+    print("memory size", sys.getsizeof(pickle.dumps(plans)) / 1024)
+    plans_str = "\n".join(plans).encode("utf-8")
+    compressed = zlib.compress(plans_str, 1)
+    print("zlib size", sys.getsizeof(pickle.dumps(compressed)) / 1024)
+
+    compressor = Compressor()
+    plans = [compressor.compress(p) for p in plans]
+    print("compressor size", sys.getsizeof(pickle.dumps({"p": plans, "c": compressor})) / 1024)
+
+    plans_str = "\n".join(plans).encode("utf-8")
+    print("compressor zlib size", sys.getsizeof(pickle.dumps({"p": zlib.compress(plans_str, 1), "c": compressor})) / 1024)
+
 
     # now = Time.now()
     # for i in range(1000):

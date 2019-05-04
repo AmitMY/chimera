@@ -166,12 +166,12 @@ class Delexicalize:
                 [n_subs, score] = self.closest_substring(self.rephrase_if_must(lower), subs)
 
                 if score < self.bound:
-                    print("\nDelex Failed!")
-                    print(text_copy)
-                    print(clean_extra(s))
-                    print(entity)
-                    print("rephrase", self.rephrase(lower))
-                    print("rephrase", self.rephrase_if_must(lower))
+                    # print("\nDelex Failed!")
+                    # print(text_copy)
+                    # print(clean_extra(s))
+                    # print(entity)
+                    # print("rephrase", self.rephrase(lower))
+                    # print("rephrase", self.rephrase_if_must(lower))
 
                     success = False
                     continue

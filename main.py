@@ -12,8 +12,9 @@ from process.reg import REGPipeline
 from process.train_model import TrainModelPipeline
 from process.train_planner import TrainPlannerPipeline
 from process.translate import TranslatePipeline
+from reg.bert import BertREG
 from reg.naive import NaiveREG
-from reg.reg import REG
+from reg.base import REG
 from scorer.global_direction import GlobalDirectionExpert
 from scorer.product_of_experts import WeightedProductOfExperts
 from scorer.relation_direction import RelationDirectionExpert
@@ -23,7 +24,7 @@ from utils.pipeline import Pipeline
 
 
 class Config:
-    def __init__(self, reader: DataReader, planner: Planner, reg: REG, test_reader: DataReader = None):
+    def __init__(self, reader: DataReader = None, planner: Planner = None, reg: REG = None, test_reader: DataReader = None):
         self.reader = {
             DataSetType.TRAIN: reader,
             DataSetType.DEV: reader,
@@ -49,11 +50,11 @@ if __name__ == "__main__":
         SplittingTendenciesExpert,
         RelationTransitionsExpert
     ]))
-    # neural_planner = NeuralPlanner()
+    neural_planner = NeuralPlanner()
     # combined_planner = CombinedPlanner((neural_planner, naive_planner))
     config = Config(reader=WebNLGDataReader,
                     planner=naive_planner,
-                    reg=NaiveREG)
+                    reg=BertREG)
 
     res = MainPipeline.mutate({"config": config}).execute("WebNLG", cache_name="WebNLG")
 
@@ -68,4 +69,4 @@ if __name__ == "__main__":
 
     print()
 
-    print("BLEU", res["evaluate"])
+    print("BLEU", res["evaluate"]["bleu"])

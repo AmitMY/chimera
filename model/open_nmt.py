@@ -65,7 +65,7 @@ def find_best_out(plan, outs):
 #     return max(possibilities, key=lambda o: o[1])[0]
 
 
-BEAM_SIZE = 10
+BEAM_SIZE = 50
 
 
 class OpenNMTModel(Model):
@@ -121,22 +121,21 @@ class OpenNMTModelRunner(ModelRunner):
     def __init__(self, train_reader, dev_reader):
         super().__init__(train_reader=train_reader, dev_reader=dev_reader)
 
-    def pre_process(self):
+    def pre_process(self, features=True):
         save_data = temp_dir()
 
         train_src, train_tgt = self.train_data
-        train_src_f = save_temp(list(map(add_features, train_src)))
-        train_tgt_f = save_temp(train_tgt)
-
         dev_src, dev_tgt = self.dev_data
-        dev_src_f = save_temp(list(map(add_features, dev_src)))
-        dev_tgt_f = save_temp(dev_tgt)
+
+        if features:
+            train_src = list(map(add_features, train_src))
+            dev_src = list(map(add_features, dev_src))
 
         run_param('preprocess.py', {
-            "train_src": train_src_f,
-            "train_tgt": train_tgt_f,
-            "valid_src": dev_src_f,
-            "valid_tgt": dev_tgt_f,
+            "train_src": save_temp(train_src),
+            "train_tgt": save_temp(train_tgt),
+            "valid_src": save_temp(dev_src),
+            "valid_tgt": save_temp(dev_tgt),
             "save_data": save_data + "data",
             "dynamic_dict": None  # This will add a dynamic-dict parameter
         })

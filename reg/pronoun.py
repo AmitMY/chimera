@@ -4,7 +4,7 @@ from itertools import chain
 from typing import Dict, List
 
 from reg.naive import NaiveREG
-from reg.reg import REG
+from reg.base import REG
 from utils.delex import un_concat_entity
 from utils.relex import get_entities_set, RepresentsInt, Stringify
 
@@ -19,8 +19,8 @@ class PronounREG(NaiveREG):
                 ent_c[ent] += 1
 
                 ent_underscore = ent.replace(" ", "_")
-                if ent_c[ent] > 1 and ent_underscore in self.data.entities:
-                    w = self.data.entities[ent_underscore][0]
+                if ent_c[ent] > 1 and ent_underscore in entities:
+                    w = entities[ent_underscore][0]
                 else:
                     w = self.process_word(ent, new_text[-1] if len(new_text) > 0 else None)
 
