@@ -21,10 +21,14 @@ class CachedDict:
         self.cache_dict = {}
 
     def add_cache(self, key: str, cache_location: str):
+        if key in self.val_dict:  # Force to load new
+            del self.val_dict[key]
         self.cache_dict[key] = cache_location
 
     def load_cache(self, key: str):
         cache_location = self.cache_dict[key]
+        # print("Loading", key, ":", cache_location, "from cache")
+
         if cache_location not in CachedDict.loaded_cache:
             f = open(cache_location, "rb")
             ext = cache_location.split(".")[-1]
@@ -44,6 +48,9 @@ class CachedDict:
         new = CachedDict()
         new.val_dict = {**self.val_dict, **other_cached_dict.val_dict}
         new.cache_dict = {**self.cache_dict, **other_cached_dict.cache_dict}
+        for k in new.cache_dict:
+            if k in new.val_dict:
+                del new.val_dict[k]
         return new
 
     def keys(self):
@@ -93,11 +100,16 @@ class Pipeline:
         self.queue.append(QueueItem(key, name, method, ext, load_cache, load_self))
 
     def execute(self, run_name=None, tabs=0, x_params=None, previous_name=None, cache_name: str = None):
+        # Every execution should refresh initial params
+        self.params = CachedDict().union(self.params)
+
         self.local_timer = Time.now()
         self.global_timer = Time.now()
 
         if not x_params:
             x_params = CachedDict()
+
+        x_params = x_params.union(self.params)  # Add F to X
 
         if not previous_name:
             previous_name = cache_dir
@@ -123,7 +135,7 @@ class Pipeline:
             pn = path.join(previous_name, qi.key)
             pnf = pn + "." + qi.ext
 
-            if qi.load_cache and qi.key != "out" and path.isfile(pnf):
+            if qi.load_cache and path.isfile(pnf):
                 self.params.add_cache(qi.key, pnf)
                 if qi.load_self:
                     self.params.load_cache(qi.key)
@@ -131,7 +143,7 @@ class Pipeline:
                 if isinstance(qi.method, Pipeline):
                     self.params[qi.key] = qi.method.execute(run_name=qi.name, tabs=tabs + 1,
                                                             x_params=x_params.union(self.params), previous_name=pn)
-                    if "out" in self.params[qi.key]:
+                    if isinstance(self.params[qi.key], CachedDict) and "out" in self.params[qi.key]:
                         self.params.copy_key(qi.key, self.params[qi.key], "out")
                 else:
                     if self.mute:

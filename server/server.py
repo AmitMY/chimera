@@ -57,13 +57,14 @@ def server(pipeline_res, host, port, debug=True):
         graph = Graph(triplets)
         planner = pipeline_res["train-planner"]
 
-        all_plans = [l.replace("[", " [ ").replace("]", " ] ").replace("  ", " ")
+        plans = [l.replace("  ", " ")
                      for l in (graph.exhaustive_plan() if type == "full" else graph.plan_all()).linearizations()]
+        scores = planner.scores([(graph, p) for p in plans])
 
         return jsonify({
             "concat": {n: concat_entity(n) for n in graph.nodes},
-            "linearizations": list(sorted([{"l": l, "s": planner.score(l)}
-                                           for l in all_plans], key=lambda p: p["s"], reverse=True))
+            "linearizations": list(sorted([{"l": l, "s": s}
+                                           for l, s in zip(plans, scores)], key=lambda p: p["s"], reverse=True))
         })
 
     @app.route('/translate', methods=['POST'])

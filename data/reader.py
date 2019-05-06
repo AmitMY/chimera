@@ -17,6 +17,7 @@ from reg.base import REG
 from utils.aligner import entities_order, SENTENCE_BREAK, comp_order
 from utils.delex import Delexicalize, concat_entity
 from utils.graph import Graph
+from utils.relex import get_entities
 from utils.tokens import SPLITABLES, tokenize, tokenize_sentences
 
 
@@ -73,8 +74,9 @@ class Datum:
 
 def exhaustive_plan(g: Graph, planner):
     plans = list(planner.plan_all(g))
-    scores = {p: planner.score(g, p) for p in tqdm(plans)}
-    return sorted(plans, key=lambda p: scores[p], reverse=True)
+    scores = planner.scores([(g, p) for p in plans])
+    p_scores = {p: scores[i] for i, p in enumerate(plans)}
+    return sorted(plans, key=lambda p: p_scores[p], reverse=True)
 
 
 def compress_plans(plans: List[str]) -> str:
@@ -234,9 +236,9 @@ class DataReader:
     def get_plans(self):
         return list(set([d.plan for d in self.data]))
 
-    def translate_plans(self, model: Model):
+    def translate_plans(self, model: Model, opts=None):
         plans = self.get_plans()
-        translations = model.translate(plans)
+        translations = model.translate(plans, opts)
         mapper = {p: t for p, t in zip(plans, translations)}
         self.data = [d.set_hyp(mapper[d.plan]) for d in self.data]
         return self
@@ -261,6 +263,29 @@ class DataReader:
         references = list(plan_ref.values())
 
         return BLEU(hypothesis, references, tokenizer=naive_tokenizer)
+
+    def coverage(self):
+        pairs = {"seen": {}, "unseen": {}}
+        for d in self.data:
+            pairs["seen" if d.info["seen"] else "unseen"][d.plan] = d.hyp
+
+        coverage = {}
+        for t, v in pairs.items():
+            entities = 0
+            order = 0
+            for plan, hyp in v.items():
+                p_ents = get_entities(plan)
+                h_ents = get_entities(hyp)
+                if len(set(p_ents)) == len(set(h_ents)):
+                    entities += 1
+                    if all([p == h for p, h in zip(p_ents, h_ents)]):
+                        order += 1
+
+            coverage[t] = {"entities": entities / len(v), "order": order / entities}
+
+        print("coverage", coverage)
+
+        return coverage
 
     def describe_entities(self):
         return self

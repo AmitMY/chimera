@@ -26,13 +26,13 @@ def spread_translation_dict(for_translation):
 
 
 class Model:
-    def translate(self, plans: List[str]) -> List[str]:  # Translate entire reader file using a model
+    def translate(self, plans: List[str], opts=None) -> List[str]:  # Translate entire reader file using a model
         raise NotImplementedError("Must implement translate")
 
-    def evaluate(self, ft: Dict[str, List[str]]):
+    def evaluate(self, ft: Dict[str, List[str]], opts=None):
         plans = list(ft.keys())
         references = list(ft.values())
-        hypothesis = self.translate(plans)
+        hypothesis = self.translate(plans, opts)
 
         return BLEU(hypothesis, references, tokenizer=naive_tokenizer)
 
@@ -41,11 +41,13 @@ class Model:
 
 
 class ModelRunner:
-    def __init__(self, train_reader, dev_reader):
+    def __init__(self, train_reader, dev_reader, features):
         self.train_ft = train_reader.for_translation()
         self.train_data = spread_translation_dict(self.train_ft)
         self.dev_ft = dev_reader.for_translation()
         self.dev_data = spread_translation_dict(self.dev_ft)
+
+        self.features = features
 
     def expose_train(self):
         return "\n\n".join([p + "\n" + d for p, d in zip(*self.train_data)])

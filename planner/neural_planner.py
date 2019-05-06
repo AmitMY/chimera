@@ -1,12 +1,11 @@
 import re
+from typing import Tuple, List
 
 import dynet_config
 
-from utils.file_system import temp_name, save_temp_bin
+dynet_config.set(autobatch=1, mem="2048")
 
-dynet_config.set(autobatch=1)
 
-import random
 from itertools import chain
 
 import dynet as dy
@@ -89,7 +88,7 @@ class Model(BaseDynetModel):
                         dy.concatenate([ne_rep(node_connections[n][0]), nodes[n], ne_rep(node_connections[n][1])])
                      for n in g.nodes}
 
-        edge_reps = [self.entity_encoder * dy.concatenate([node_reps[n1], edges[e], node_reps[n2]])
+        edge_reps = [self.relation_encoder * dy.concatenate([node_reps[n1], edges[e], node_reps[n2]])
                      for ((n1, n2), es) in g.edges.items() for e in es]
 
         # In decoding time we will remove 1 RDF at a time until none is left.

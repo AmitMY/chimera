@@ -10,7 +10,6 @@ from tqdm import tqdm
 
 from utils.file_system import temp_name, save_temp_bin
 
-
 # Vocabulary for model
 from utils.graph import Graph
 
@@ -142,8 +141,15 @@ class DynetModelExecutor:
             yield iterable[ndx:min(ndx + n, length)]
 
     def calc_error(self, _in, _out):
+        return self.calc_errors([(_in, _out)])[0]
+
+    def calc_errors(self, batch: List[Tuple]):
         dy.renew_cg()
-        return float(dy.average(list(self.model.forward(_in, _out))).value())
+        errors_exp = dy.concatenate([dy.average(list(self.model.forward(_in, _out))) for _in, _out in batch])
+        errors = errors_exp.value()
+        if len(batch) == 1:
+            errors = [errors]
+        return np.array(errors)
 
     def train_epoch(self, batch_size):
         batches = list(self.batch(self.train_data, batch_size))

@@ -24,7 +24,8 @@ def run_param(script, params):
     all_args = [sys.executable, path.join(libDirectory, script)] + args
     print("EXEC", " ".join(all_args))
 
-    subprocess.run(all_args, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    # TODO if train loop, show TQDM
+    subprocess.run(all_args, check=True)#, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
 def chunks(l, n):
@@ -69,8 +70,9 @@ BEAM_SIZE = 50
 
 
 class OpenNMTModel(Model):
-    def __init__(self, model):
+    def __init__(self, model, features=True):
         self.model_bin = model
+        self.features = features
 
     def run_traslate(self, model_path, input_file, output_file, opt):
         opt["model"] = model_path
@@ -82,6 +84,9 @@ class OpenNMTModel(Model):
         run_param('translate.py', opt)
 
     def translate(self, plans: List[str], opts=None):  # Translate entire reader file using a model
+        if not hasattr(self, "features"):  # TODO remove after EMNLP
+            self.features = True
+
         if not opts:
             opts = {
                 "beam_size": BEAM_SIZE,
@@ -90,7 +95,9 @@ class OpenNMTModel(Model):
 
         model_path = save_temp_bin(self.model_bin)
 
-        o_lines = [[add_features(s.strip()) for i, s in enumerate(s.split("."))] if s != "" else [] for s in plans]
+        featureize = lambda p: add_features(p) if self.features else p
+
+        o_lines = [[featureize(s.strip()) for i, s in enumerate(s.split("."))] if s != "" else [] for s in plans]
         n_lines = list(set(chain.from_iterable(o_lines)))
 
         if len(n_lines) == 0:
@@ -118,16 +125,16 @@ class OpenNMTModel(Model):
 
 
 class OpenNMTModelRunner(ModelRunner):
-    def __init__(self, train_reader, dev_reader):
-        super().__init__(train_reader=train_reader, dev_reader=dev_reader)
+    def __init__(self, train_reader, dev_reader, features=True):
+        super().__init__(train_reader=train_reader, dev_reader=dev_reader, features=features)
 
-    def pre_process(self, features=True):
+    def pre_process(self):
         save_data = temp_dir()
 
         train_src, train_tgt = self.train_data
         dev_src, dev_tgt = self.dev_data
 
-        if features:
+        if self.features:
             train_src = list(map(add_features, train_src))
             dev_src = list(map(add_features, dev_src))
 
@@ -165,7 +172,7 @@ class OpenNMTModelRunner(ModelRunner):
 
         return save_model
 
-    def find_best(self, checkpoints_dir):
+    def find_best(self, checkpoints_dir, translate_config=None):
         def checkpoint_number(checkpoint):
             return int(checkpoint.split(".")[0].split("_")[-1])
 
@@ -175,10 +182,10 @@ class OpenNMTModelRunner(ModelRunner):
         dev_scores = []
         for model_path in checkpoints:
             f = open(model_path, "rb")
-            model = OpenNMTModel(f.read())
+            model = OpenNMTModel(f.read(), self.features)
             f.close()
 
-            bleu = model.evaluate(self.dev_ft)[0]
+            bleu = model.evaluate(self.dev_ft, translate_config)[0]
             print("BLEU", bleu)
 
             dev_scores.append(bleu)

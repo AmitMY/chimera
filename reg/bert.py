@@ -26,7 +26,6 @@ class BertREG(NaiveREG):
         self.bert.to('cuda')
         self.tokenizer = tokenization.BertTokenizer.from_pretrained(model_name)
         self.bert.eval()
-        print("BERT loaded")
 
     def pred(self, tokens):
         tokens = ['[CLS]'] + self.tokenizer.tokenize(" ".join(tokens)) + ['[SEP]']
