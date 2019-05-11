@@ -29,7 +29,7 @@ class BertREG(NaiveREG):
 
     def pred(self, tokens):
         tokens = ['[CLS]'] + self.tokenizer.tokenize(" ".join(tokens)) + ['[SEP]']
-        print(" ".join(tokens))
+        # print(" ".join(tokens))
 
         input_ids = self.tokenizer.convert_tokens_to_ids(tokens)
 
@@ -62,8 +62,8 @@ class BertREG(NaiveREG):
                     if ent_underscore in entities:
                         options = options.union(set(entities[ent_underscore]))
 
-                    print()
-                    print(text)
+                    # print()
+                    # print(text)
 
                     pred = self.pred(pre + middle + post)
 
@@ -78,7 +78,7 @@ class BertREG(NaiveREG):
                     # Check if "the" is most probable, of top 10
                     if "the" in p_pred and min([get_index(o) for o in options]) >= p_pred.index("the"):
                         new_text.append("the")
-                        print("BERT", "THE")
+                        # print("BERT", "THE")
 
                         pred = self.pred(pre + ["the"] + middle + post)
 
@@ -86,12 +86,12 @@ class BertREG(NaiveREG):
                         w = pred[0]
                     else:
                         ws = [p for p in pred if p in options]
-                        if len(ws) == 0 and len(ent.split()) > 1:
-                            print("BERT failed...", pred)
+                        # if len(ws) == 0 and len(ent.split()) > 1:
+                        #     print("BERT failed...", pred)
                         w = ws[0] if len(ws) > 0 else ent
 
                     w = w.upper()
-                    print("BERT", w)
+                    # print("BERT", w)
                 else:
                     w = self.process_word(ent, new_text[-1] if len(new_text) > 0 else None)
 

@@ -1,3 +1,4 @@
+import copy
 import pickle
 import random
 from os import path
@@ -17,7 +18,7 @@ class CachedDict:
     loaded_cache = {}
 
     def __init__(self, initial_dict={}):
-        self.val_dict = dict(initial_dict)
+        self.val_dict = copy.copy(initial_dict)
         self.cache_dict = {}
 
     def add_cache(self, key: str, cache_location: str):
@@ -84,15 +85,15 @@ class Pipeline:
     def __init__(self, params=None, mute=False, key=None):
         self.queue = []
 
-        self.params = CachedDict().union(params) \
-            if isinstance(params, CachedDict) else CachedDict(params if params else {})
+        self.initial_params = params
+
         self.mute = mute
         self.local_timer = None
         self.global_timer = None
         self.key = key
 
     def mutate(self, params=None):
-        new = Pipeline(params if params else self.params)
+        new = Pipeline(params if params else self.initial_params)
         new.queue = list(self.queue)
         return new
 
@@ -101,7 +102,9 @@ class Pipeline:
 
     def execute(self, run_name=None, tabs=0, x_params=None, previous_name=None, cache_name: str = None):
         # Every execution should refresh initial params
-        self.params = CachedDict().union(self.params)
+        params = CachedDict().union(self.initial_params) \
+            if isinstance(self.initial_params, CachedDict) \
+            else CachedDict(self.initial_params if self.initial_params else {})
 
         self.local_timer = Time.now()
         self.global_timer = Time.now()
@@ -109,7 +112,7 @@ class Pipeline:
         if not x_params:
             x_params = CachedDict()
 
-        x_params = x_params.union(self.params)  # Add F to X
+        x_params = x_params.union(params)  # Add F to X
 
         if not previous_name:
             previous_name = cache_dir
@@ -136,38 +139,38 @@ class Pipeline:
             pnf = pn + "." + qi.ext
 
             if qi.load_cache and path.isfile(pnf):
-                self.params.add_cache(qi.key, pnf)
+                params.add_cache(qi.key, pnf)
                 if qi.load_self:
-                    self.params.load_cache(qi.key)
+                    params.load_cache(qi.key)
             else:
                 if isinstance(qi.method, Pipeline):
-                    self.params[qi.key] = qi.method.execute(run_name=qi.name, tabs=tabs + 1,
-                                                            x_params=x_params.union(self.params), previous_name=pn)
-                    if isinstance(self.params[qi.key], CachedDict) and "out" in self.params[qi.key]:
-                        self.params.copy_key(qi.key, self.params[qi.key], "out")
+                    params[qi.key] = qi.method.execute(run_name=qi.name, tabs=tabs + 1,
+                                                            x_params=x_params.union(params), previous_name=pn)
+                    if isinstance(params[qi.key], CachedDict) and "out" in params[qi.key]:
+                        params.copy_key(qi.key, params[qi.key], "out")
                 else:
                     if self.mute:
                         Silencer.mute()
-                    self.params[qi.key] = qi.method(self.params, x_params)
+                    params[qi.key] = qi.method(params, x_params)
                     if self.mute:
                         Silencer.unmute()
 
                     f = open(pnf, "wb" if qi.ext not in ["txt", "json"] else "w")
                     if qi.ext == "sav":
-                        pickle.dump(self.params[qi.key], f)
+                        pickle.dump(params[qi.key], f)
                     else:
                         if qi.ext in ["png", "jpg", "wav", "mp4"]:
-                            self.params[qi.key] = get_file_bytes(self.params[qi.key], format=qi.ext)
-                        f.write(self.params[qi.key])
+                            params[qi.key] = get_file_bytes(params[qi.key], format=qi.ext)
+                        f.write(params[qi.key])
                     f.close()
 
             if qi.key != "out" and not isinstance(qi.method, Pipeline):
                 local_passed, global_passed = self.timer_report()
-                report = self.params[qi.key].report() \
-                    if qi.key in self.params.val_dict and hasattr(self.params[qi.key], "report") else ""
+                report = params[qi.key].report() \
+                    if qi.key in params.val_dict and hasattr(params[qi.key], "report") else ""
                 print(("%-15s\t\t" + report) % (local_passed))
 
-        return self.params
+        return params
 
     def timer_report(self):
         local_passed = Time.passed(self.local_timer)

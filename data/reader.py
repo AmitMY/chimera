@@ -195,6 +195,7 @@ class DataReader:
 
     def create_plans(self, planner):
         assert planner is not None
+
         unique = {d.graph.unique_key(): d.graph for d in self.data}
         unique_graphs = list(reversed(list(unique.values())))
 
