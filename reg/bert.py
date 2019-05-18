@@ -1,7 +1,8 @@
+import atexit
 import re
 from collections import Counter
 from itertools import chain
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 import torch
 
@@ -11,6 +12,7 @@ from eval.bleu.eval import naive_tokenizer
 from reg.naive import NaiveREG
 from tqdm import tqdm
 
+from utils.dbpedia import all_pronouns
 from utils.delex import un_concat_entity
 from pytorch_pretrained_bert import BertForMaskedLM, tokenization
 
@@ -41,7 +43,8 @@ class BertREG(NaiveREG):
         best_k = self.tokenizer.convert_ids_to_tokens(best_k)
         return list(best_k)
 
-    def generate(self, text: str, entities: Dict[str, List[str]]) -> str:
+    def generate(self, text: str, entities: Dict[str, List[str]]) -> Tuple[str, List]:
+        ents_map = []
 
         new_text = []
         ent_c = Counter()
@@ -56,7 +59,7 @@ class BertREG(NaiveREG):
 
                 if ent_c[ent] > 1:
                     pre = (" ".join(new_text).lower()).split(" ")
-                    post = super().generate(" ".join(tokens[i + 1:]), entities).lower().split()
+                    post = super().generate(" ".join(tokens[i + 1:]), entities)[0].lower().split()
                     middle = ["[MASK]", "("] + ent.lower().split() + [")"]
                     options = set(naive_tokenizer(ent)).difference(no_option)
                     if ent_underscore in entities:
@@ -68,6 +71,8 @@ class BertREG(NaiveREG):
                     pred = self.pred(pre + middle + post)
 
                     p_pred = pred[:10]
+
+                    mapped_to = []
 
                     def get_index(w):
                         try:
@@ -82,13 +87,20 @@ class BertREG(NaiveREG):
 
                         pred = self.pred(pre + ["the"] + middle + post)
 
-                    if new_text[-1].lower() == "the":
-                        w = pred[0]
-                    else:
-                        ws = [p for p in pred if p in options]
-                        # if len(ws) == 0 and len(ent.split()) > 1:
-                        #     print("BERT failed...", pred)
-                        w = ws[0] if len(ws) > 0 else ent
+                    if len(new_text) > 0 and new_text[-1].lower() == "the":
+                        mapped_to.append("the")
+
+                    ws = [p for p in pred if p in options]
+                    # if len(ws) == 0 and len(ent.split()) > 1:
+                    #     print("BERT failed...", pred)
+
+                    w = ws[0] if len(ws) > 0 else ent
+                    if w in all_pronouns and len(new_text) > 0 and new_text[-1].lower() == "the":
+                        new_text.pop()
+                        mapped_to.pop()
+
+                    mapped_to.append(w)
+                    ents_map.append((ent, " ".join(mapped_to)))
 
                     w = w.upper()
                     # print("BERT", w)
@@ -97,7 +109,7 @@ class BertREG(NaiveREG):
 
             new_text.append(w)
 
-        return " ".join(new_text)
+        return " ".join(new_text), ents_map
 
 
 if __name__ == "__main__":

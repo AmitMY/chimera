@@ -48,13 +48,18 @@ ExperimentsPipeline.enqueue("bert-reg", "Train BERT Referring Expressions Genera
 PostProcessPipeline = Pipeline()
 PostProcessPipeline.enqueue("post-process", "Post process translations",
                             lambda f, x: x["translate"].copy().post_process(x[x["reg-name"] + "-reg"]))
+PostProcessPipeline.enqueue("ents-reg-map", "Ents REG map",
+                            lambda f, x: f["post-process"].ents_reg_map
+                                                    if hasattr(f["post-process"], "ents_reg_map") else {})
 PostProcessPipeline.enqueue("bleu", "Get BLEU score",
                             lambda f, x: f["post-process"].evaluate())
 
 TranslatePipeline = Pipeline()
 TranslatePipeline.enqueue("translate", "Translate plans",
                           lambda f, x: x[x["planner-name"] + "-planner"]["test-corpus"].copy()
-                          .translate_plans(x["train-model"], x["test-config"]))
+                          .translate_plans(x["train-model"],
+                                           x[x["planner-name"] + "-planner"]["train-planner"],
+                                           x["test-config"]))
 TranslatePipeline.enqueue("coverage", "Coverage of translation",
                           lambda f, x: f["translate"].coverage())
 TranslatePipeline.enqueue("eval-naive-reg", "Evaluate naive REG", PostProcessPipeline.mutate({"reg-name": "naive"}))
@@ -96,7 +101,7 @@ if __name__ == "__main__":
     config = Config(reader=WebNLGDataReader)
 
     res = ExperimentsPipeline.mutate({"config": config}) \
-        .execute("WebNLG Experiments", cache_name="WebNLG_Exp2")
+        .execute("WebNLG Experiments", cache_name="WebNLG_Exp")
 
     # print(res["naive-planner"]["test-corpus"].data[100].plan)
     # print(res["model"]["translate-naive"]["translate-best"]["translate"].data[100].plan)
@@ -121,8 +126,8 @@ if __name__ == "__main__":
                 cov = translation["translate-" + decoding_method]["coverage"]
                 # print("\t\t", decoding_method, "\t", translation["translate-" + decoding_method]["coverage"])
                 tabbed = "\t".join([str(round(a * 100, 1)) for a in
-                                     [cov["seen"]["entities"], cov["seen"]["order"], cov["unseen"]["entities"],
-                                      cov["unseen"]["order"]]])
+                                    [cov["seen"]["entities"], cov["seen"]["order"], cov["unseen"]["entities"],
+                                     cov["unseen"]["order"]]])
                 table.append(tabbed)
                 print("\t\t", decoding_method, "\t", tabbed)
     print("\n".join(table))

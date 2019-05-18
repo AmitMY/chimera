@@ -71,7 +71,7 @@ class Vocab:
 
 def arg_sample(probs: List[float]):
     rand = random.random()
-    print(probs)
+    # print(probs)
     for i, p in enumerate(probs):
         if rand <= p:
             return i

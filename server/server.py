@@ -21,10 +21,17 @@ from utils.delex import concat_entity
 from utils.graph import Graph
 from data.WebNLG.reader import WebNLGDataReader
 
+naive_planner = NaivePlanner(WeightedProductOfExperts([
+        RelationDirectionExpert,
+        GlobalDirectionExpert,
+        SplittingTendenciesExpert,
+        RelationTransitionsExpert
+    ]))
+
 server_config = {
     "port": 5001,
     "reader": WebNLGDataReader,
-    "planner": NeuralPlanner()
+    "planner": naive_planner
 }
 
 dataset_name = server_config["reader"].DATASET

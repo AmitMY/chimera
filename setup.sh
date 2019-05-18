@@ -33,5 +33,5 @@ cd..
 # Clone NeuralREG
 git clone https://github.com/ThiagoCF05/NeuralREG.git
 cd NeuralREG
-
+#  python hierattention.py --dynet-autobatch 1 --dynet-mem 7192 --dynet-devices CPU,GPU:0
 cd..

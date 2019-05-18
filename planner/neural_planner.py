@@ -209,6 +209,8 @@ class Model(BaseDynetModel):
 
 
 class NeuralPlanner(Planner):
+    re_plan = True
+
     def __init(self):
         self.executor = None
 
@@ -241,7 +243,7 @@ class NeuralPlanner(Planner):
         model = Model()
         self.executor = DynetModelExecutor(model, train_set, dev_set)
         for batch_exponent in range(0, 3):
-            self.executor.train(3, batch_exponent)
+            self.executor.train(5, batch_exponent)
 
         return self
 

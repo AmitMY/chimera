@@ -1,6 +1,7 @@
 import json
 from collections import Counter
 from functools import lru_cache
+from itertools import chain
 from os.path import isfile
 import requests
 
@@ -55,6 +56,7 @@ gender_pronouns = {
     "inanimate": ["it", "its", "itself"],
     "plural": ["they", "them", "theirs"]
 }
+all_pronouns = set(chain.from_iterable(gender_pronouns.values()))
 
 
 def pronouns(entity: str):

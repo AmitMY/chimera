@@ -18,7 +18,7 @@ def plans_output_single_file(plan_hyp_refs):
 TranslatePipeline = Pipeline()
 
 TranslatePipeline.enqueue("translate", "Translate all plans",
-                          lambda f, x: x["test-corpus"].copy().translate_plans(x["train-model"]))
+                          lambda f, x: x["test-corpus"].copy().translate_plans(x["train-model"], x["train-planner"]))
 TranslatePipeline.enqueue("post-process", "Post-process translated sentences",
                           lambda f, x: f["translate"].copy().post_process(x["train-reg"]))
 TranslatePipeline.enqueue("plans-out", "Create a dictionary of outputs",

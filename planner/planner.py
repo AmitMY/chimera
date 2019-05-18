@@ -7,6 +7,7 @@ from utils.graph import Graph
 
 class Planner:
     is_parallel = False
+    re_plan = False
 
     def learn(self, train_reader: DataReader, dev_reader: DataReader):
         raise NotImplementedError("Planner.learn is not implemented")

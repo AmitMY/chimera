@@ -1,6 +1,6 @@
 import re
 from itertools import chain
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 from reg.base import REG
 from utils.delex import un_concat_entity
@@ -38,7 +38,7 @@ class NaiveREG(REG):
 
         return w
 
-    def generate(self, text: str, entities: Dict[str, List[str]]) -> str:
+    def generate(self, text: str, entities: Dict[str, List[str]]) -> Tuple[str, List]:
         new_text = []
         for w in text.split():
             if self.is_ent(w):
@@ -46,7 +46,7 @@ class NaiveREG(REG):
 
             new_text.append(w)
 
-        return " ".join(new_text)
+        return " ".join(new_text), []
 
 
 if __name__ == "__main__":

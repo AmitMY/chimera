@@ -73,9 +73,15 @@ class OpenNMTModel(Model):
     def __init__(self, model, features=True):
         self.model_bin = model
         self.features = features
+        self.sentences_cache = {}
 
-    def run_traslate(self, model_path, input_file, output_file, opt):
-        opt["model"] = model_path
+        self.model_bin_path = save_temp_bin(self.model_bin)
+
+    def run_traslate(self, input_file, output_file, opt):
+        if not hasattr(self, "model_bin_path") or self.model_bin_path is None:   # TODO remove after EMNLP
+            self.model_bin_path = save_temp_bin(self.model_bin)
+
+        opt["model"] = self.model_bin_path
         opt["src"] = input_file
         opt["output"] = output_file
         if is_cuda:
@@ -86,6 +92,8 @@ class OpenNMTModel(Model):
     def translate(self, plans: List[str], opts=None):  # Translate entire reader file using a model
         if not hasattr(self, "features"):  # TODO remove after EMNLP
             self.features = True
+        if not hasattr(self, "sentences_cache"):  # TODO remove after EMNLP
+            self.sentences_cache = {}
 
         if not opts:
             opts = {
@@ -93,22 +101,23 @@ class OpenNMTModel(Model):
                 "find_best": True
             }
 
-        model_path = save_temp_bin(self.model_bin)
 
         featureize = lambda p: add_features(p) if self.features else p
 
         o_lines = [[featureize(s.strip()) for i, s in enumerate(s.split("."))] if s != "" else [] for s in plans]
-        n_lines = list(set(chain.from_iterable(o_lines)))
+        n_lines = [l for l in list(set(chain.from_iterable(o_lines))) if l not in self.sentences_cache]
 
         if len(n_lines) == 0:
             return []
+
+        print("Translating", len(n_lines), "sentences")
 
         source_path = save_temp(n_lines)
         target_path = temp_name()
 
         n_best = opts["beam_size"] if opts["find_best"] else 1
 
-        self.run_traslate(model_path, source_path, target_path, {
+        self.run_traslate(source_path, target_path, {
             "replace_unk": None,
             "beam_size": opts["beam_size"],
             "n_best": n_best,
@@ -119,9 +128,10 @@ class OpenNMTModel(Model):
         out_lines = chunks(out_lines_f.read().splitlines(), n_best)
         out_lines_f.close()
 
-        map_lines = {n: find_best_out(n, out) for n, out in zip(n_lines, out_lines)}
+        for n, out in zip(n_lines, out_lines):
+            self.sentences_cache[n] = find_best_out(n, out)
 
-        return [" ".join([map_lines[s] for s in lines]) for lines in o_lines]
+        return [" ".join([self.sentences_cache[s] for s in lines]) for lines in o_lines]
 
 
 class OpenNMTModelRunner(ModelRunner):

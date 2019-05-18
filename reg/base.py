@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 
 class REG:
@@ -12,5 +12,5 @@ class REG:
     def train(self):  # Train your pre-processed files, save checkpoints, return model
         return None
 
-    def generate(self, text: str, entities: Dict[str, List[str]]) -> str:
+    def generate(self, text: str, entities: Dict[str, List[str]]) -> Tuple[str, List]:
         raise NotImplementedError("Must implement relex")

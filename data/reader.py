@@ -2,7 +2,7 @@ import multiprocessing
 import pickle
 import re
 import zlib
-from collections import defaultdict
+from collections import defaultdict, Counter
 from enum import Enum
 from itertools import chain
 from multiprocessing.pool import Pool
@@ -17,6 +17,7 @@ from reg.base import REG
 from utils.aligner import entities_order, SENTENCE_BREAK, comp_order
 from utils.delex import Delexicalize, concat_entity
 from utils.graph import Graph
+from utils.out_of import out_of
 from utils.relex import get_entities
 from utils.tokens import SPLITABLES, tokenize, tokenize_sentences
 
@@ -47,6 +48,8 @@ class Datum:
         self.plan = plan
         self.plans = plans
 
+        self.plan_changes = 0
+
     def set_graph(self, graph: Graph):
         self.graph = graph
         return self
@@ -65,6 +68,7 @@ class Datum:
 
     def set_plan(self, plan: str):
         self.plan = plan
+        self.plan_changes += 1
         return self
 
     def set_plans(self, plans: List[str]):
@@ -234,23 +238,56 @@ class DataReader:
 
         return plan_sentences
 
-    def get_plans(self):
-        return list(set([d.plan for d in self.data]))
+    def translate_plans(self, model: Model, planner, opts=None):
+        data = self.data
 
-    def translate_plans(self, model: Model, opts=None):
-        plans = self.get_plans()
-        translations = model.translate(plans, opts)
-        mapper = {p: t for p, t in zip(plans, translations)}
-        self.data = [d.set_hyp(mapper[d.plan]) for d in self.data]
+        fallback = {}
+
+        for _ in range(50):
+            plans = [d.plan for d in data]
+
+            translations = model.translate(plans, opts)
+
+            for d, p, t in zip(data, plans, translations):
+                is_covered_ent, is_covered_order = self.single_coverage(p, t)
+                if (not planner.re_plan) or is_covered_order:
+                    d.set_hyp(t)
+
+                graph_key = d.graph.unique_key()
+                if not (graph_key in fallback) or (is_covered_ent and not fallback[graph_key][2]):
+                    fallback[graph_key] = (p, t, is_covered_ent)
+
+            data = list(filter(lambda d: d.hyp is None, data))
+            if len(data) == 0:
+                break
+
+            unique_graphs = {d.graph.unique_key(): d.graph for d in data}
+            graph_plans = {k: planner.plan_random(g, 1)[0] for k, g in unique_graphs.items()}
+            for d in data:
+                d.set_plan(graph_plans[d.graph.unique_key()])
+
+            self.coverage()
+
+        for d in data:
+            plan, hyp, _ = fallback[d.graph.unique_key()]
+            d.set_plan(plan).set_hyp(hyp)
+
         return self
 
     def post_process(self, reg: REG):
         entities = self.entities if hasattr(self, 'entities') else {}
 
-        def process(text: str):
-            return reg.generate(text, entities)
+        ents_reg_map = Counter()
 
-        self.data = [d.set_hyp(process(d.hyp)) for d in self.data]
+        def process(text: str, seen=False):
+            new_text, ents_map = reg.generate(text, entities)
+            if seen:
+                for t in ents_map:
+                    ents_reg_map[t] += 1
+            return new_text
+
+        self.ents_reg_map = ents_reg_map
+        self.data = [d.set_hyp(process(d.hyp, d.info["seen"])) for d in self.data]
         return self
 
     def evaluate(self):
@@ -265,6 +302,28 @@ class DataReader:
 
         return BLEU(hypothesis, references, tokenizer=naive_tokenizer)
 
+    def single_coverage(self, plan, hyp):
+        ents = False
+        order = False
+
+        if hyp is not None:
+            p_ents = get_entities(plan)
+            h_ents = get_entities(hyp)
+
+            if len(set(p_ents)) == len(set(h_ents)):
+                ents = True
+                if all([p == h for p, h in zip(p_ents, h_ents)]):
+                    order = True
+
+            # if not ents:
+            #     print("\n\n")
+            #     print("Failed ents")
+            #     print(plan)
+            #     print(hyp)
+            #     print("\n\n")
+
+        return ents, order
+
     def coverage(self):
         pairs = {"seen": {}, "unseen": {}}
         for d in self.data:
@@ -275,14 +334,13 @@ class DataReader:
             entities = 0
             order = 0
             for plan, hyp in v.items():
-                p_ents = get_entities(plan)
-                h_ents = get_entities(hyp)
-                if len(set(p_ents)) == len(set(h_ents)):
+                e, o = self.single_coverage(plan, hyp)
+                if e:
                     entities += 1
-                    if all([p == h for p, h in zip(p_ents, h_ents)]):
-                        order += 1
+                if o:
+                    order += 1
 
-            coverage[t] = {"entities": entities / len(v), "order": order / entities}
+            coverage[t] = {"entities": out_of(entities, len(v)), "order": out_of(order, entities)}
 
         print("coverage", coverage)
 
