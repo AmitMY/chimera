@@ -9,6 +9,7 @@ from utils.graph import Graph
 
 class NaivePlanner(Planner):
     is_parallel = True
+    re_plan = "PREMADE"
 
     def __init__(self, scorer: Scorer):
         self.scorer = scorer
@@ -29,13 +30,9 @@ class NaivePlanner(Planner):
         else:
             all_plans = list(self.plan_all(g))
 
-        best_plan = ""
-        best_plan_score = 0
+        plan_scores = [(p, self.scorer.score(p)) for p in tqdm(all_plans)]
+        plan_scores = sorted(plan_scores, key=lambda a: a[1], reverse=True)
 
-        for plan in tqdm(all_plans):
-            score = self.scorer.score(plan)
-            if score > best_plan_score:
-                best_plan_score = score
-                best_plan = plan
+        best_50_plans = [p for p, s in plan_scores[:50]]
 
-        return best_plan
+        return best_50_plans

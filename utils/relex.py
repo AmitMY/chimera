@@ -15,11 +15,6 @@ def get_entities(sentence):
     return re.findall("ent_(.*?)_ent\\b", sentence, flags=re.IGNORECASE)
 
 
-@lru_cache(maxsize=None)
-def get_entities_set(sentence):
-    return OrderedSet(get_entities(sentence))
-
-
 class Stringify:
     def __init__(self):
         pass

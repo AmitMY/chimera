@@ -8,6 +8,7 @@ from itertools import chain
 from multiprocessing.pool import Pool
 from typing import List, Tuple, Dict, Callable
 
+import numpy as np
 from tqdm import tqdm
 import time
 
@@ -68,6 +69,10 @@ class Datum:
 
     def set_plan(self, plan: str):
         self.plan = plan
+
+        if not hasattr(self, "plan_changes"):  # TODO remove after EMNLP
+            self.plan_changes = 1
+
         self.plan_changes += 1
         return self
 
@@ -217,7 +222,13 @@ class DataReader:
             self.timing[g_size].append(time.time() - start)
 
         graph_plan = {g.unique_key(): p for g, p in zip(unique_graphs, plans)}
-        self.data = [d.set_plan(graph_plan[d.graph.unique_key()]) for d in self.data]
+        for d in self.data:
+            plans = graph_plan[d.graph.unique_key()]
+            if isinstance(plans, list):
+                d.set_plan(plans[0])
+                d.set_plans(plans[1:])
+            else:
+                d.set_plan(plans)
         return self
 
     def tokenize_plans(self):
@@ -250,7 +261,7 @@ class DataReader:
 
             for d, p, t in zip(data, plans, translations):
                 is_covered_ent, is_covered_order = self.single_coverage(p, t)
-                if (not planner.re_plan) or is_covered_order:
+                if is_covered_order:
                     d.set_hyp(t)
 
                 graph_key = d.graph.unique_key()
@@ -261,10 +272,17 @@ class DataReader:
             if len(data) == 0:
                 break
 
-            unique_graphs = {d.graph.unique_key(): d.graph for d in data}
-            graph_plans = {k: planner.plan_random(g, 1)[0] for k, g in unique_graphs.items()}
-            for d in data:
-                d.set_plan(graph_plans[d.graph.unique_key()])
+            if planner.re_plan == "PREMADE":
+                for d in data:
+                    plans = d.plans
+                    if len(plans) > 0:
+                        d.set_plans(plans[1:])
+                        d.set_plan(plans[0])
+            else:
+                unique_graphs = {d.graph.unique_key(): d.graph for d in data}
+                graph_plans = {k: planner.plan_random(g, 1)[0] for k, g in unique_graphs.items()}
+                for d in data:
+                    d.set_plan(graph_plans[d.graph.unique_key()])
 
             self.coverage()
 
@@ -345,6 +363,29 @@ class DataReader:
         print("coverage", coverage)
 
         return coverage
+
+    def retries(self):
+        pairs = {"seen": {}, "unseen": {}}
+        for d in self.data:
+            pairs["seen" if d.info["seen"] else "unseen"][d.plan] = d.plan_changes - 1 if hasattr(d,
+                                                                                                  "plan_changes") else 1
+
+        sums = {k: np.average(list(v.values())) for k, v in pairs.items()}
+        print("sums", sums)
+        return sums
+
+    def for_manual_evaluation(self):
+        graphs = {}
+        for d in self.data:
+            if "manual" in d.info and d.info["manual"]:
+                graphs[d.graph.unique_key()] = {
+                    "id": d.info["id"] if hasattr(d.info, "id") else None,
+                    "sen": d.hyp,
+                    "rdf": [(r, d, f, None) for r, d, f in d.graph.as_rdf()],
+                    "hal": 0
+                }
+
+        return list(graphs.values())
 
     def describe_entities(self):
         return self

@@ -6,7 +6,6 @@ from typing import Dict, List
 from reg.naive import NaiveREG
 from reg.base import REG
 from utils.delex import un_concat_entity
-from utils.relex import get_entities_set, RepresentsInt, Stringify
 
 
 class PronounREG(NaiveREG):

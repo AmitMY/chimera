@@ -50,7 +50,9 @@ PostProcessPipeline.enqueue("post-process", "Post process translations",
                             lambda f, x: x["translate"].copy().post_process(x[x["reg-name"] + "-reg"]))
 PostProcessPipeline.enqueue("ents-reg-map", "Ents REG map",
                             lambda f, x: f["post-process"].ents_reg_map
-                                                    if hasattr(f["post-process"], "ents_reg_map") else {})
+                            if hasattr(f["post-process"], "ents_reg_map") else {})
+PostProcessPipeline.enqueue("for-manual-eval", "Build manual eval file",
+                            lambda f, x: json.dumps(f["post-process"].for_manual_evaluation()), ext="json")
 PostProcessPipeline.enqueue("bleu", "Get BLEU score",
                             lambda f, x: f["post-process"].evaluate())
 
@@ -62,6 +64,8 @@ TranslatePipeline.enqueue("translate", "Translate plans",
                                            x["test-config"]))
 TranslatePipeline.enqueue("coverage", "Coverage of translation",
                           lambda f, x: f["translate"].coverage())
+TranslatePipeline.enqueue("retries", "Retries of translation",
+                          lambda f, x: f["translate"].retries())
 TranslatePipeline.enqueue("eval-naive-reg", "Evaluate naive REG", PostProcessPipeline.mutate({"reg-name": "naive"}))
 TranslatePipeline.enqueue("eval-bert-reg", "Evaluate BERT REG", PostProcessPipeline.mutate({"reg-name": "bert"}))
 
@@ -70,7 +74,7 @@ best_out_config = {"beam_size": 5, "find_best": False}
 PlannerTranslatePipeline.enqueue("translate-best", "Translate best out",
                                  TranslatePipeline.mutate({"test-config": best_out_config}))
 verify_out_config = {"beam_size": 5, "find_best": True}
-PlannerTranslatePipeline.enqueue("translate-verify", "Translate best out",
+PlannerTranslatePipeline.enqueue("translate-verify", "Translate verified out",
                                  TranslatePipeline.mutate({"test-config": verify_out_config}))
 
 
@@ -100,8 +104,27 @@ ExperimentsPipeline.enqueue("model-feats", "Train Model with features", model_pi
 if __name__ == "__main__":
     config = Config(reader=WebNLGDataReader)
 
-    res = ExperimentsPipeline.mutate({"config": config}) \
-        .execute("WebNLG Experiments", cache_name="WebNLG_Exp")
+    all_res = [
+        ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp"),
+        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp1"),
+        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp2"),
+        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp3"),
+        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp4")
+    ]
+
+    for model_name in ["model", "model-feats"]:
+        print(model_name)
+        for decoding_method in ["best", "verify"]:
+            # print("\t", decoding_method)
+            all_retries = {"seen": 0, "unseen": 0}
+            for res in all_res:
+                retries = res[model_name]["translate-neural"]["translate-" + decoding_method]["retries"]
+                all_retries["seen"] += retries["seen"]
+                all_retries["unseen"] += retries["unseen"]
+                # print("\t\t", retries)
+            all_retries["seen"] = all_retries["seen"] / len(all_res)
+            all_retries["unseen"] = all_retries["unseen"] / len(all_res)
+            print("\t", decoding_method, all_retries)
 
     # print(res["naive-planner"]["test-corpus"].data[100].plan)
     # print(res["model"]["translate-naive"]["translate-best"]["translate"].data[100].plan)
@@ -113,40 +136,42 @@ if __name__ == "__main__":
     # print(res["model"]["translate-neural"]["translate-best"]["translate"].data[100].plan)
     # print(res["model"]["translate-neural"]["translate-best"]["translate"].data[100].hyp)
 
-    # Coverage
-    table = []
-    for model_name in ["model", "model-feats"]:
-        model = res[model_name]
-        print(model_name)
-        for planner_name in ["naive", "neural"]:
-            print("\t", planner_name)
-            translation = model["translate-" + planner_name]
-
-            for decoding_method in ["best", "verify"]:
-                cov = translation["translate-" + decoding_method]["coverage"]
-                # print("\t\t", decoding_method, "\t", translation["translate-" + decoding_method]["coverage"])
-                tabbed = "\t".join([str(round(a * 100, 1)) for a in
-                                    [cov["seen"]["entities"], cov["seen"]["order"], cov["unseen"]["entities"],
-                                     cov["unseen"]["order"]]])
-                table.append(tabbed)
-                print("\t\t", decoding_method, "\t", tabbed)
-    print("\n".join(table))
-
-    # BLEU
-    bleu_table = []
-    for model_name in ["model", "model-feats"]:
-        model = res[model_name]
-        print(model_name)
-        for decoding_method in ["best", "verify"]:
-            bleus = []
-
+    for i, res in enumerate(all_res):
+        print("\n\n\n", i)
+        # Coverage
+        table = []
+        for model_name in ["model", "model-feats"]:
+            model = res[model_name]
+            print(model_name)
             for planner_name in ["naive", "neural"]:
-                translation = model["translate-" + planner_name]["translate-" + decoding_method]
-                for reg_name in ["naive", "bert"]:
-                    bleus.append(translation["eval-" + reg_name + "-reg"]["bleu"][0])
+                print("\t", planner_name)
+                translation = model["translate-" + planner_name]
 
-            tabbed = "\t".join([str(round(a, 2)) for a in bleus])
-            bleu_table.append(tabbed)
+                for decoding_method in ["best", "verify"]:
+                    cov = translation["translate-" + decoding_method]["coverage"]
+                    # print("\t\t", decoding_method, "\t", translation["translate-" + decoding_method]["coverage"])
+                    tabbed = "\t".join([str(round(a * 100, 1)) for a in
+                                        [cov["seen"]["entities"], cov["seen"]["order"], cov["unseen"]["entities"],
+                                         cov["unseen"]["order"]]])
+                    table.append(tabbed)
+                    print("\t\t", decoding_method, "\t", tabbed)
+        print("\n".join(table))
 
-            print("\t", decoding_method, "\t", tabbed)
-    print("\n".join(bleu_table))
+        # BLEU
+        bleu_table = []
+        for model_name in ["model", "model-feats"]:
+            model = res[model_name]
+            print(model_name)
+            for decoding_method in ["best", "verify"]:
+                bleus = []
+
+                for planner_name in ["naive", "neural"]:
+                    translation = model["translate-" + planner_name]["translate-" + decoding_method]
+                    for reg_name in ["naive", "bert"]:
+                        bleus.append(translation["eval-" + reg_name + "-reg"]["bleu"][0])
+
+                tabbed = "\t".join([str(round(a, 2)) for a in bleus])
+                bleu_table.append(tabbed)
+
+                print("\t", decoding_method, "\t", tabbed)
+        print("\n".join(bleu_table))

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const table = document.createElement("table");
         el.appendChild(table)
         const header = document.createElement("tr");
-        header.innerHTML = "<td>S</td><td>R</td><td>O</td><td>Exists</td><td>Doesn't exist</td><td>Wrong Lexicalization</td>";
+        header.innerHTML = "<td>S</td><td>R</td><td>O</td><td>Exists</td><td>Doesn't exist</td><td>Wrong Lexicalization</td><td>Wrong REG</td>";
         table.appendChild(header);
 
         rdf.forEach(([s, r, o, res], j) => {
@@ -34,18 +34,18 @@ document.addEventListener('DOMContentLoaded', async () => {
             row.innerHTML = "<td>" + s + "</td><td>" + r + "</td><td>" + o + "</td>";
             table.appendChild(row);
 
-            ["yes", "no", "no-lex"].forEach((val) => {
+            ["yes", "no", "no-lex", "no-reg"].forEach((val) => {
                 const radio = document.createElement("input");
                 radio.type = "radio";
                 radio.name = i + "_" + j;
-                if(res === val) {
+                if (res === val) {
                     radio.checked = true;
                 }
                 radio.addEventListener("change", e => {
                     samples[i].rdf[j][3] = val;
                 });
                 const td = document.createElement("td")
-                td.appendChild(radio)
+                td.appendChild(radio);
                 row.appendChild(td)
             });
         });

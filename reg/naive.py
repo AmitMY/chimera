@@ -4,7 +4,7 @@ from typing import Dict, List, Tuple
 
 from reg.base import REG
 from utils.delex import un_concat_entity
-from utils.relex import get_entities_set, RepresentsInt, Stringify
+from utils.relex import RepresentsInt, Stringify
 
 
 class NaiveREG(REG):

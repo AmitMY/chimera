@@ -35,7 +35,7 @@ def chunks(l, n):
 
 
 def get_entities(text: str):
-    return list(re.findall("ent_(.*?)_ent", text, flags=re.IGNORECASE))
+    return [s.lower() for s in list(re.findall("ent_(.*?)_ent", text, flags=re.IGNORECASE))]
 
 
 def find_best_out(plan, outs):

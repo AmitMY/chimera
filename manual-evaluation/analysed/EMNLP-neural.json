@@ -1,0 +1,3530 @@
+[
+  {
+    "sen": "ANTWERP INTERNATIONAL AIRPORT is operated by the FLEMISH GOVERNMENT .",
+    "rdf": [
+      [
+        "Antwerp_International_Airport",
+        "operatingOrganisation",
+        "Flemish_Government",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "DENMARK 's demonym is DANES .",
+    "rdf": [
+      [
+        "Denmark",
+        "demonym",
+        "Danes",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the UNITED STATES AIR FORCE fought in the 1986 UNITED STATES BOMBING OF LIBYA in 1986 .",
+    "rdf": [
+      [
+        "United_States_Air_Force",
+        "battles",
+        "1986_United_States_bombing_of_Libya",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "CARROLL COUNTY, MARYLAND is to the southeast of ADAMS COUNTY, PENNSYLVANIA .",
+    "rdf": [
+      [
+        "Adams_County,_Pennsylvania",
+        "has to its southeast",
+        "Carroll_County,_Maryland",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ARTUR RASIZADE is the leader of AZERBAIJAN .",
+    "rdf": [
+      [
+        "Azerbaijan",
+        "leader",
+        "Artur_Rasizade",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the leader of AZERBAIJAN is the PRIME MINISTER OF AZERBAIJAN .",
+    "rdf": [
+      [
+        "Azerbaijan",
+        "leaderTitle",
+        "Prime_Minister_of_Azerbaijan",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ASHER AND MARY ISABELLE RICHARDSON HOUSE has the reference number 88002539 in the national register of historic places .",
+    "rdf": [
+      [
+        "Asher_and_Mary_Isabelle_Richardson_House",
+        "ReferenceNumber in the National Register of Historic Places",
+        "\"88002539\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "one of the significant buildings designed by JULIA MORGAN is the LOS ANGELES HERALD-EXAMINER building .",
+    "rdf": [
+      [
+        "Julia_Morgan",
+        "significantBuilding",
+        "Los_Angeles_Herald-Examiner",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "NEW YORK CITY is part of NEW NETHERLAND .",
+    "rdf": [
+      [
+        "New_York_City",
+        "isPartOf",
+        "New_Netherland",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ENGLISH LANGUAGE of AENIR .",
+    "rdf": [
+      [
+        "Aenir",
+        "language",
+        "English_language",
+        "no-lex"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the academic discipline of the AMERICAN JOURNAL OF MATHEMATICS is MATHEMATICS .",
+    "rdf": [
+      [
+        "American_Journal_of_Mathematics",
+        "academicDiscipline",
+        "Mathematics",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ASIAN AMERICANS are an ethnic group in the UNITED STATES",
+    "rdf": [
+      [
+        "United_States",
+        "ethnicGroup",
+        "Asian_Americans",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "A.D. ISIDRO METAPÁN play in the SALVADORAN PRIMERA DIVISIÓN league .",
+    "rdf": [
+      [
+        "A.D._Isidro_Metapán",
+        "league",
+        "Salvadoran_Primera_División",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "GUBBIO is from the UMBRIA .",
+    "rdf": [
+      [
+        "Gubbio",
+        "region",
+        "Umbria",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ST. VINCENT–ST. MARY HIGH SCHOOL is in the UNITED STATES .",
+    "rdf": [
+      [
+        "St._Vincent–St._Mary_High_School",
+        "country",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the 1 DECEMBRIE 1918 UNIVERSITY is located in the state of ALBA .",
+    "rdf": [
+      [
+        "1_Decembrie_1918_University",
+        "state",
+        "Alba",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "to the northwest of KERALA is MAHÉ, INDIA .",
+    "rdf": [
+      [
+        "Kerala",
+        "has to its northwest",
+        "Mahé,_India",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the capital of ROMANIA is BUCHAREST .",
+    "rdf": [
+      [
+        "Romania",
+        "capital",
+        "Bucharest",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BUZZ ALDRIN was selected by nasa in 1963 .",
+    "rdf": [
+      [
+        "Buzz_Aldrin",
+        "was selected by NASA",
+        "1963",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the gemstone of CALIFORNIA is BENITOITE",
+    "rdf": [
+      [
+        "California",
+        "gemstone",
+        "Benitoite",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ELLIOT SEE died on February 28th, 1966 .",
+    "rdf": [
+      [
+        "Elliot_See",
+        "deathDate",
+        "\"1966-02-28\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the full minister of BEN URICH is BENJAMIN URICH .",
+    "rdf": [
+      [
+        "Ben_Urich",
+        "fullName",
+        "\"Benjamin Urich\"",
+        "no-lex"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "JERRY ORDWAY created BIBBO BIBBOWSKI .",
+    "rdf": [
+      [
+        "Bibbo_Bibbowski",
+        "creator",
+        "Jerry_Ordway",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "KARL KESEL is an AMERICANS .",
+    "rdf": [
+      [
+        "Karl_Kesel",
+        "nationality",
+        "Americans",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ANTIOCH, CALIFORNIA is part of CONTRA COSTA COUNTY, CALIFORNIA .",
+    "rdf": [
+      [
+        "Antioch,_California",
+        "isPartOf",
+        "Contra_Costa_County,_California",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ORANGE COUNTY, CALIFORNIA is located within the UNITED STATES .",
+    "rdf": [
+      [
+        "Orange_County,_California",
+        "country",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the UNITED STATES HOUSE OF REPRESENTATIVES is located in UNITED STATES CAPITOL .",
+    "rdf": [
+      [
+        "United_States_House_of_Representatives",
+        "location",
+        "United_States_Capitol",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "a variation of BATAGOR is SHUMAI .",
+    "rdf": [
+      [
+        "Batagor",
+        "dishVariation",
+        "Shumai",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BIONICO is a food found in the region of JALISCO .",
+    "rdf": [
+      [
+        "Bionico",
+        "region",
+        "Jalisco",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the language of INDONESIA is INDONESIAN LANGUAGE .",
+    "rdf": [
+      [
+        "Indonesia",
+        "language",
+        "Indonesian_language",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the 11TH MISSISSIPPI INFANTRY MONUMENT was established in 2000 and is categorised as a CONTRIBUTING PROPERTY .",
+    "rdf": [
+      [
+        "11th_Mississippi_Infantry_Monument",
+        "established",
+        "2000",
+        "yes"
+      ],
+      [
+        "11th_Mississippi_Infantry_Monument",
+        "category",
+        "Contributing_property",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the 14TH NEW JERSEY VOLUNTEER INFANTRY MONUMENT is located in the MONOCACY NATIONAL BATTLEFIELD where the nearest city is FREDERICK, MARYLAND .",
+    "rdf": [
+      [
+        "14th_New_Jersey_Volunteer_Infantry_Monument",
+        "district",
+        "Monocacy_National_Battlefield",
+        "yes"
+      ],
+      [
+        "Monocacy_National_Battlefield",
+        "nearestCity",
+        "Frederick,_Maryland",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the BAKU TURKISH MARTYRS' MEMORIAL in AZERBAIJAN is dedicated to the OTTOMAN ARMY SOLDIERS KILLED IN THE BATTLE OF BAKU .",
+    "rdf": [
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "dedicatedTo",
+        "\"Ottoman Army soldiers killed in the Battle of Baku\"",
+        "yes"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "location",
+        "Azerbaijan",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ARLINGTON, TEXAS is located at 184 and has a total area of 258.2 (SQUARE KILOMETRES) .",
+    "rdf": [
+      [
+        "Arlington,_Texas",
+        "elevationAboveTheSeaLevel",
+        "184.0",
+        "no-lex"
+      ],
+      [
+        "Arlington,_Texas",
+        "areaTotal",
+        "258.2 (square kilometres)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ATLANTIC CITY, NEW JERSEY is in the UNITED STATES where the capital is WASHINGTON, D.C.",
+    "rdf": [
+      [
+        "Atlantic_City,_New_Jersey",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "United_States",
+        "capital",
+        "Washington,_D.C.",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ALBANY, OREGON is part of the UNITED STATES where the capital is WASHINGTON, D.C.",
+    "rdf": [
+      [
+        "United_States",
+        "capital",
+        "Washington,_D.C.",
+        "yes"
+      ],
+      [
+        "Albany,_Oregon",
+        "isPartOf",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "AYAM PENYET is a dish from MALAYSIA and INDONESIA .",
+    "rdf": [
+      [
+        "Ayam_penyet",
+        "region",
+        "Malaysia",
+        "yes"
+      ],
+      [
+        "Ayam_penyet",
+        "country",
+        "Indonesia",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "SPONGE CAKE is an ingredient in BAKED ALASKA which comes from FRANCE .",
+    "rdf": [
+      [
+        "Baked_Alaska",
+        "country",
+        "France",
+        "yes"
+      ],
+      [
+        "Baked_Alaska",
+        "ingredient",
+        "Sponge_cake",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the main ingredient of BEEF KWAY TEOW , which is popular in SINGAPORE AND INDONESIA , is KWAY TEOW, BEEF TENDER LOIN, GULA MELAKA, SLICED, DRIED BLACK BEANS, GARLIC, DARK SOY SAUCE, LENGKUAS, OYSTER SAUCE, SOYA SAUCE, CHILLI AND SESAME OIL .",
+    "rdf": [
+      [
+        "Beef_kway_teow",
+        "mainIngredients",
+        "\"Kway teow, beef tender loin, gula Melaka, sliced, dried black beans, garlic, dark soy sauce, lengkuas, oyster sauce, soya sauce, chilli and sesame oil\"",
+        "yes"
+      ],
+      [
+        "Beef_kway_teow",
+        "country",
+        "\"Singapore and Indonesia\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ALLAMA IQBAL INTERNATIONAL AIRPORT is located in PAKISTAN where the leader is ANWAR ZAHEER JAMALI .",
+    "rdf": [
+      [
+        "Allama_Iqbal_International_Airport",
+        "location",
+        "Pakistan",
+        "yes"
+      ],
+      [
+        "Pakistan",
+        "leaderName",
+        "Anwar_Zaheer_Jamali",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ANGOLA INTERNATIONAL AIRPORT serves the city of LUANDA and is 3800 in length .",
+    "rdf": [
+      [
+        "Angola_International_Airport",
+        "runwayLength",
+        "3800.0",
+        "yes"
+      ],
+      [
+        "Angola_International_Airport",
+        "cityServed",
+        "Luanda",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ATLANTIC CITY INTERNATIONAL AIRPORT is located in EGG HARBOR TOWNSHIP, NEW JERSEY , UNITED STATES .",
+    "rdf": [
+      [
+        "Atlantic_City_International_Airport",
+        "location",
+        "Egg_Harbor_Township,_New_Jersey",
+        "yes"
+      ],
+      [
+        "Egg_Harbor_Township,_New_Jersey",
+        "country",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "VERONA, ITALY is the home to A.C. CHIEVO VERONA which has 39371 members .",
+    "rdf": [
+      [
+        "A.C._Chievo_Verona",
+        "ground",
+        "\"Verona, Italy\"",
+        "yes"
+      ],
+      [
+        "A.C._Chievo_Verona",
+        "numberOfMembers",
+        "39371",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the manager of A.C. CHIEVO VERONA is ROLANDO MARAN , who was born in ITALY .",
+    "rdf": [
+      [
+        "A.C._Chievo_Verona",
+        "manager",
+        "Rolando_Maran",
+        "yes"
+      ],
+      [
+        "Rolando_Maran",
+        "placeOfBirth",
+        "Italy",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "AZAL PFK is located in SHUVALAN, BAKU, AZERBAIJAN and their home ground is the AZAL ARENA .",
+    "rdf": [
+      [
+        "AZAL_PFK",
+        "ground",
+        "AZAL_Arena",
+        "yes"
+      ],
+      [
+        "AZAL_PFK",
+        "location",
+        "\"Shuvalan, Baku, Azerbaijan\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ERIC FLINT is the author of 1634: THE BAVARIAN CRISIS which was preceded by THE GRANTVILLE GAZETTES .",
+    "rdf": [
+      [
+        "1634:_The_Bavarian_Crisis",
+        "author",
+        "Eric_Flint",
+        "yes"
+      ],
+      [
+        "1634:_The_Bavarian_Crisis",
+        "precededBy",
+        "The_Grantville_Gazettes",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "A FORTRESS OF GREY ICE has 672 pages and the isbn number 0-7653-0633-6 .",
+    "rdf": [
+      [
+        "A_Fortress_of_Grey_Ice",
+        "numberOfPages",
+        "\"672\"",
+        "yes"
+      ],
+      [
+        "A_Fortress_of_Grey_Ice",
+        "ISBN_number",
+        "\"0-7653-0633-6\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "A LONG LONG WAY is 292 pages long and has the isbn number 0-670-03380-4 .",
+    "rdf": [
+      [
+        "A_Long_Long_Way",
+        "numberOfPages",
+        "\"292\"",
+        "yes"
+      ],
+      [
+        "A_Long_Long_Way",
+        "ISBN_number",
+        "\"0-670-03380-4\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the 1 DECEMBRIE 1918 UNIVERSITY in ALBA has the nickname UAB .",
+    "rdf": [
+      [
+        "1_Decembrie_1918_University",
+        "nickname",
+        "Uab",
+        "yes"
+      ],
+      [
+        "1_Decembrie_1918_University",
+        "state",
+        "Alba",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the ACHARYA INSTITUTE OF TECHNOLOGY is affiliated with the VISVESVARAYA TECHNOLOGICAL UNIVERSITY in BELGAUM .",
+    "rdf": [
+      [
+        "Acharya_Institute_of_Technology",
+        "affiliation",
+        "Visvesvaraya_Technological_University",
+        "yes"
+      ],
+      [
+        "Visvesvaraya_Technological_University",
+        "city",
+        "Belgaum",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AWH ENGINEERING COLLEGE is located in the state of KERALA , KOCHI .",
+    "rdf": [
+      [
+        "Kerala",
+        "leaderName",
+        "Kochi",
+        "no-lex"
+      ],
+      [
+        "AWH_Engineering_College",
+        "state",
+        "Kerala",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BANANAMAN , starring GRAEME GARDEN , was broadcast by STV .",
+    "rdf": [
+      [
+        "Bananaman",
+        "starring",
+        "Graeme_Garden",
+        "yes"
+      ],
+      [
+        "Bananaman",
+        "broadcastedBy",
+        "\"STV\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BAYMAX is a character in the BIG HERO 6 (FILM) and was created by STEVEN T. SEAGLE .",
+    "rdf": [
+      [
+        "Baymax",
+        "series",
+        "Big_Hero_6_(film)",
+        "yes"
+      ],
+      [
+        "Baymax",
+        "creator",
+        "Steven_T._Seagle",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BO BIBBOWSKI was the full name of BIBBO BIBBOWSKI , created by MARV WOLFMAN .",
+    "rdf": [
+      [
+        "Bibbo_Bibbowski",
+        "creator",
+        "Marv_Wolfman",
+        "yes"
+      ],
+      [
+        "Bibbo_Bibbowski",
+        "fullName",
+        "\"Bo Bibbowski\"",
+        "no-lex"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BUZZ ALDRIN was born in GLEN RIDGE, NEW JERSEY , in the ESSEX COUNTY, NEW JERSEY .",
+    "rdf": [
+      [
+        "Buzz_Aldrin",
+        "birthPlace",
+        "Glen_Ridge,_New_Jersey",
+        "yes"
+      ],
+      [
+        "Glen_Ridge,_New_Jersey",
+        "isPartOf",
+        "Essex_County,_New_Jersey",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "WILLIAM ANDERS was born in BRITISH HONG KONG and was a crew member of APOLLO 8 .",
+    "rdf": [
+      [
+        "William_Anders",
+        "birthPlace",
+        "British_Hong_Kong",
+        "yes"
+      ],
+      [
+        "William_Anders",
+        "was a crew member of",
+        "Apollo_8",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "WILLIAM ANDERS , RETIRED , graduated from AFIT, M.S. 1962 .",
+    "rdf": [
+      [
+        "William_Anders",
+        "status",
+        "\"Retired\"",
+        "yes"
+      ],
+      [
+        "William_Anders",
+        "almaMater",
+        "\"AFIT, M.S. 1962\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "108 ST GEORGES TERRACE has 50 floors and was completed in 1988 .",
+    "rdf": [
+      [
+        "108_St_Georges_Terrace",
+        "floorCount",
+        "50",
+        "yes"
+      ],
+      [
+        "108_St_Georges_Terrace",
+        "completionDate",
+        "1988",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the tenant of the AC HOTEL BELLA SKY COPENHAGEN in COPENHAGEN is the MARRIOTT INTERNATIONAL hotel .",
+    "rdf": [
+      [
+        "AC_Hotel_Bella_Sky_Copenhagen",
+        "tenant",
+        "Marriott_International",
+        "yes"
+      ],
+      [
+        "AC_Hotel_Bella_Sky_Copenhagen",
+        "location",
+        "Copenhagen",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "3ARENA is located in DUBLIN , REPUBLIC OF IRELAND .",
+    "rdf": [
+      [
+        "Dublin",
+        "isPartOf",
+        "Republic_of_Ireland",
+        "yes"
+      ],
+      [
+        "3Arena",
+        "location",
+        "Dublin",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ELLIOT SEE , who was born in DALLAS , is from the UNITED STATES and went to the UNIVERSITY OF TEXAS AT AUSTIN .",
+    "rdf": [
+      [
+        "Elliot_See",
+        "almaMater",
+        "University_of_Texas_at_Austin",
+        "yes"
+      ],
+      [
+        "Elliot_See",
+        "birthPlace",
+        "Dallas",
+        "yes"
+      ],
+      [
+        "Elliot_See",
+        "nationality",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ELLIOT SEE , who attended the UNIVERSITY OF TEXAS AT AUSTIN , died in ST. LOUIS where the leader is FRANCIS G. SLAY .",
+    "rdf": [
+      [
+        "Elliot_See",
+        "almaMater",
+        "University_of_Texas_at_Austin",
+        "yes"
+      ],
+      [
+        "St._Louis",
+        "leaderName",
+        "Francis_G._Slay",
+        "yes"
+      ],
+      [
+        "Elliot_See",
+        "deathPlace",
+        "St._Louis",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ELLIOT SEE died in ST. LOUIS on the KINGDOM OF FRANCE and died on February 28th, 1966 .",
+    "rdf": [
+      [
+        "Elliot_See",
+        "deathPlace",
+        "St._Louis",
+        "yes"
+      ],
+      [
+        "St._Louis",
+        "isPartOf",
+        "Kingdom_of_France",
+        "yes"
+      ],
+      [
+        "Elliot_See",
+        "deathDate",
+        "\"1966-02-28\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "A SEVERED WASP was written in the UNITED STATES and written in english which ENGLISH LANGUAGE spoken in GREAT BRITAIN .",
+    "rdf": [
+      [
+        "A_Severed_Wasp",
+        "language",
+        "English_language",
+        "yes"
+      ],
+      [
+        "English_language",
+        "spokenIn",
+        "Great_Britain",
+        "yes"
+      ],
+      [
+        "A_Severed_Wasp",
+        "country",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 1
+  },
+  {
+    "sen": "ABOVE THE VEIL , written by GARTH NIX , has 248 pages and is available in HARDCOVER .",
+    "rdf": [
+      [
+        "Above_the_Veil",
+        "numberOfPages",
+        "\"248\"",
+        "yes"
+      ],
+      [
+        "Above_the_Veil",
+        "author",
+        "Garth_Nix",
+        "yes"
+      ],
+      [
+        "Above_the_Veil",
+        "mediaType",
+        "Hardcover",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the book AENIR was written by GARTH NIX and written in the ENGLISH LANGUAGE and was followed by ABOVE THE VEIL .",
+    "rdf": [
+      [
+        "Aenir",
+        "author",
+        "Garth_Nix",
+        "yes"
+      ],
+      [
+        "Aenir",
+        "language",
+        "English_language",
+        "yes"
+      ],
+      [
+        "Aenir",
+        "followedBy",
+        "Above_the_Veil",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ASSOCIAZIONE CALCIO LUMEZZANE SPA ( abbreviated to A.C. LUMEZZANE ) has 4150 members and play in the LEGA PRO/A league .",
+    "rdf": [
+      [
+        "A.C._Lumezzane",
+        "fullname",
+        "\"Associazione Calcio Lumezzane SpA\"",
+        "yes"
+      ],
+      [
+        "A.C._Lumezzane",
+        "league",
+        "\"Lega Pro/A\"",
+        "yes"
+      ],
+      [
+        "A.C._Lumezzane",
+        "numberOfMembers",
+        "4150",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "AMSTERDAM-CENTRUM is part of AMSTERDAM , EBERHARD VAN DER LAAN and is the ground of AFC AJAX (AMATEURS) .",
+    "rdf": [
+      [
+        "AFC_Ajax_(amateurs)",
+        "ground",
+        "Amsterdam",
+        "yes"
+      ],
+      [
+        "Amsterdam",
+        "leader",
+        "Eberhard_van_der_Laan",
+        "no-lex"
+      ],
+      [
+        "Amsterdam",
+        "part",
+        "Amsterdam-Centrum",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "JOHN VAN DEN BROM manages the AZ ALKMAAR and plays for İSTANBULSPOR A.Ş. he is in the JONG AJAX club .",
+    "rdf": [
+      [
+        "AZ_Alkmaar",
+        "manager",
+        "John_van_den_Brom",
+        "yes"
+      ],
+      [
+        "John_van_den_Brom",
+        "club",
+        "Jong_Ajax",
+        "yes"
+      ],
+      [
+        "John_van_den_Brom",
+        "club",
+        "İstanbulspor_A.Ş.",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the MASON SCHOOL OF BUSINESS is the current tenants of ALAN B. MILLER HALL which was started on 30 MARCH 2007 and is located in the UNITED STATES .",
+    "rdf": [
+      [
+        "Alan_B._Miller_Hall",
+        "buildingStartDate",
+        "\"30 March 2007\"",
+        "yes"
+      ],
+      [
+        "Mason_School_of_Business",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "Alan_B._Miller_Hall",
+        "currentTenants",
+        "Mason_School_of_Business",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "JULIA MORGAN , who was born in SAN FRANCISCO , was the architect of ASILOMAR CONFERENCE GROUNDS and the RIVERSIDE ART MUSEUM .",
+    "rdf": [
+      [
+        "Asilomar_Conference_Grounds",
+        "architect",
+        "Julia_Morgan",
+        "yes"
+      ],
+      [
+        "Julia_Morgan",
+        "birthPlace",
+        "San_Francisco",
+        "yes"
+      ],
+      [
+        "Julia_Morgan",
+        "significantBuilding",
+        "Riverside_Art_Museum",
+        "no-lex"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ASSER LEVY PUBLIC BATHS , constructed in 1904 , is located in NEW YORK CITY and was added to the national register of historic places on April 23rd, 1980 .",
+    "rdf": [
+      [
+        "Asser_Levy_Public_Baths",
+        "location",
+        "New_York_City",
+        "yes"
+      ],
+      [
+        "Asser_Levy_Public_Baths",
+        "yearOfConstruction",
+        "1904",
+        "yes"
+      ],
+      [
+        "Asser_Levy_Public_Baths",
+        "added to the National Register of Historic Places",
+        "\"1980-04-23\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ALBUQUERQUE, NEW MEXICO , lead by the NEW MEXICO SENATE , has a population of 1142.3 (INHABITANTS PER SQUARE KILOMETRE) and a total of 490.9 (SQUARE KILOMETRES) .",
+    "rdf": [
+      [
+        "Albuquerque,_New_Mexico",
+        "populationDensity",
+        "1142.3 (inhabitants per square kilometre)",
+        "yes"
+      ],
+      [
+        "Albuquerque,_New_Mexico",
+        "leaderTitle",
+        "New_Mexico_Senate",
+        "yes"
+      ],
+      [
+        "Albuquerque,_New_Mexico",
+        "areaTotal",
+        "490.9 (square kilometres)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ATLANTIC CITY, NEW JERSEY is part of NEW JERSEY , the capital of which is TRENTON, NEW JERSEY , in the UNITED STATES .",
+    "rdf": [
+      [
+        "New_Jersey",
+        "capital",
+        "Trenton,_New_Jersey",
+        "yes"
+      ],
+      [
+        "New_Jersey",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "Atlantic_City,_New_Jersey",
+        "isPartOf",
+        "New_Jersey",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ANGOLA, INDIANA is in the UNITED STATES where the ENGLISH LANGUAGE is spoken and one of the ethnic groups is the ASIAN AMERICANS .",
+    "rdf": [
+      [
+        "United_States",
+        "language",
+        "English_language",
+        "yes"
+      ],
+      [
+        "Angola,_Indiana",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "United_States",
+        "ethnicGroup",
+        "Asian_Americans",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ADIRONDACK REGIONAL AIRPORT serves the city of LAKE PLACID, NEW YORK and serves the city of SARANAC LAKE, NEW YORK with a runway length of 2003 .",
+    "rdf": [
+      [
+        "Adirondack_Regional_Airport",
+        "cityServed",
+        "Lake_Placid,_New_York",
+        "yes"
+      ],
+      [
+        "Adirondack_Regional_Airport",
+        "runwayLength",
+        "2003.0",
+        "yes"
+      ],
+      [
+        "Adirondack_Regional_Airport",
+        "cityServed",
+        "Saranac_Lake,_New_York",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the UNITED STATES AIR FORCE is the operating organisation for AL ASAD AIRBASE , fought in the INVASION OF GRENADA and deploy the MCDONNELL DOUGLAS F-15 EAGLE aircraft fighter .",
+    "rdf": [
+      [
+        "Al_Asad_Airbase",
+        "operatingOrganisation",
+        "United_States_Air_Force",
+        "yes"
+      ],
+      [
+        "United_States_Air_Force",
+        "battles",
+        "Invasion_of_Grenada",
+        "yes"
+      ],
+      [
+        "United_States_Air_Force",
+        "aircraftFighter",
+        "McDonnell_Douglas_F-15_Eagle",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ANDREWS COUNTY AIRPORT is located in TEXAS where the ENGLISH LANGUAGE is spoken and the capital is AUSTIN, TEXAS .",
+    "rdf": [
+      [
+        "Andrews_County_Airport",
+        "location",
+        "Texas",
+        "yes"
+      ],
+      [
+        "Texas",
+        "capital",
+        "Austin,_Texas",
+        "yes"
+      ],
+      [
+        "Texas",
+        "language",
+        "English_language",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the 11TH MISSISSIPPI INFANTRY MONUMENT is located in the ADAMS COUNTY, PENNSYLVANIA in GETTYSBURG, PENNSYLVANIA . to the southeast of IT is CARROLL COUNTY, MARYLAND .",
+    "rdf": [
+      [
+        "Adams_County,_Pennsylvania",
+        "has to its southeast",
+        "Carroll_County,_Maryland",
+        "yes"
+      ],
+      [
+        "11th_Mississippi_Infantry_Monument",
+        "municipality",
+        "Gettysburg,_Pennsylvania",
+        "yes"
+      ],
+      [
+        "11th_Mississippi_Infantry_Monument",
+        "location",
+        "Adams_County,_Pennsylvania",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the BAKU TURKISH MARTYRS' MEMORIAL is known as TÜRK ŞEHITLERI ANITI and is located in AZERBAIJAN , where the capital is BAKU .",
+    "rdf": [
+      [
+        "Azerbaijan",
+        "capital",
+        "Baku",
+        "yes"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "location",
+        "Azerbaijan",
+        "yes"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "nativeName",
+        "\"Türk Şehitleri Anıtı\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the BAKU TURKISH MARTYRS' MEMORIAL is located in AZERBAIJAN where the leader is ARTUR RASIZADE and the legislature is NATIONAL ASSEMBLY (AZERBAIJAN)",
+    "rdf": [
+      [
+        "Azerbaijan",
+        "leader",
+        "Artur_Rasizade",
+        "yes"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "location",
+        "Azerbaijan",
+        "yes"
+      ],
+      [
+        "Azerbaijan",
+        "legislature",
+        "National_Assembly_(Azerbaijan)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BARNY CAKES are found in FRANCE , where CLAUDE BARTOLONE and MANUEL VALLS are leaders .",
+    "rdf": [
+      [
+        "Barny_Cakes",
+        "country",
+        "France",
+        "yes"
+      ],
+      [
+        "France",
+        "leaderName",
+        "Claude_Bartolone",
+        "yes"
+      ],
+      [
+        "France",
+        "leaderName",
+        "Manuel_Valls",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BINIGNIT is a DESSERT that can be served as a COOKIE and contains SAGO .",
+    "rdf": [
+      [
+        "Binignit",
+        "ingredient",
+        "Sago",
+        "yes"
+      ],
+      [
+        "Binignit",
+        "course",
+        "Dessert",
+        "yes"
+      ],
+      [
+        "Dessert",
+        "dishVariation",
+        "Cookie",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "TOMATO belongs to the family of SOLANACEAE and is part of the order of SOLANALES and is an ingredient in AMATRICIANA SAUCE .",
+    "rdf": [
+      [
+        "Tomato",
+        "family",
+        "Solanaceae",
+        "yes"
+      ],
+      [
+        "Amatriciana_sauce",
+        "ingredient",
+        "Tomato",
+        "yes"
+      ],
+      [
+        "Tomato",
+        "order",
+        "Solanales",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AWH ENGINEERING COLLEGE is located in the state of KERALA , KOCHI and has MAHÉ, INDIA to its northwest .",
+    "rdf": [
+      [
+        "Kerala",
+        "leaderName",
+        "Kochi",
+        "no-lex"
+      ],
+      [
+        "AWH_Engineering_College",
+        "state",
+        "Kerala",
+        "yes"
+      ],
+      [
+        "Kerala",
+        "has to its northwest",
+        "Mahé,_India",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the SCHOOL OF BUSINESS AND SOCIAL SCIENCES AT THE AARHUS UNIVERSITY was established in 1928 . the SCHOOL is affiliated with the EUROPEAN UNIVERSITY ASSOCIATION headquartered in BRUSSELS .",
+    "rdf": [
+      [
+        "School of Business and Social Sciences at the Aarhus University",
+        "affiliation",
+        "European_University_Association",
+        "yes"
+      ],
+      [
+        "European_University_Association",
+        "headquarters",
+        "Brussels",
+        "yes"
+      ],
+      [
+        "School of Business and Social Sciences at the Aarhus University",
+        "established",
+        "1928",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the SCHOOL OF BUSINESS AND SOCIAL SCIENCES AT THE AARHUS UNIVERSITY in AARHUS , DENMARK was established in 1928 .",
+    "rdf": [
+      [
+        "School of Business and Social Sciences at the Aarhus University",
+        "city",
+        "Aarhus",
+        "yes"
+      ],
+      [
+        "School of Business and Social Sciences at the Aarhus University",
+        "country",
+        "Denmark",
+        "yes"
+      ],
+      [
+        "School of Business and Social Sciences at the Aarhus University",
+        "established",
+        "1928",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the ASTERIX (COMICSCHARACTER) was created by ALBERT UDERZO and RENÉ GOSCINNY , is an FRENCH PEOPLE .",
+    "rdf": [
+      [
+        "Asterix_(comicsCharacter)",
+        "creator",
+        "René_Goscinny",
+        "yes"
+      ],
+      [
+        "René_Goscinny",
+        "nationality",
+        "French_people",
+        "no-lex"
+      ],
+      [
+        "Asterix_(comicsCharacter)",
+        "creator",
+        "Albert_Uderzo",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the BLOCKBUSTER (COMICSCHARACTER) , whose alternative name is MARK DESMOND , was created by CARMINE INFANTINO and GARDNER FOX .",
+    "rdf": [
+      [
+        "Blockbuster_(comicsCharacter)",
+        "creator",
+        "Gardner_Fox",
+        "yes"
+      ],
+      [
+        "Blockbuster_(comicsCharacter)",
+        "alternativeName",
+        "\"Mark Desmond\"",
+        "yes"
+      ],
+      [
+        "Blockbuster_(comicsCharacter)",
+        "creator",
+        "Carmine_Infantino",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the BOLT (COMICSCHARACTER) , whose alternative name is LARRY BOLATINSKY , was created by GARY COHN (COMICS) and ERNIE COLÓN .",
+    "rdf": [
+      [
+        "Bolt_(comicsCharacter)",
+        "creator",
+        "Ernie_Colón",
+        "yes"
+      ],
+      [
+        "Bolt_(comicsCharacter)",
+        "alternativeName",
+        "\"Larry Bolatinsky\"",
+        "yes"
+      ],
+      [
+        "Bolt_(comicsCharacter)",
+        "creator",
+        "Gary_Cohn_(comics)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ADARE MANOR is located in ADARE , COUNTY LIMERICK , MUNSTER , and is categorized as a LIMERICK CITY AND COUNTY COUNCIL .",
+    "rdf": [
+      [
+        "Adare_Manor",
+        "location",
+        "Adare",
+        "yes"
+      ],
+      [
+        "County_Limerick",
+        "isPartOf",
+        "Munster",
+        "yes"
+      ],
+      [
+        "Adare_Manor",
+        "location",
+        "County_Limerick",
+        "yes"
+      ],
+      [
+        "County_Limerick",
+        "governmentType",
+        "Limerick_City_and_County_Council",
+        "no-lex"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AKITA MUSEUM OF ART is located in AKITA, AKITA , part of the AKITA PREFECTURE in JAPAN . the ethnic group of JAPAN is the BRAZILIANS IN JAPAN .",
+    "rdf": [
+      [
+        "Akita_Museum_of_Art",
+        "country",
+        "Japan",
+        "yes"
+      ],
+      [
+        "Akita_Museum_of_Art",
+        "location",
+        "Akita,_Akita",
+        "yes"
+      ],
+      [
+        "Akita,_Akita",
+        "isPartOf",
+        "Akita_Prefecture",
+        "yes"
+      ],
+      [
+        "Japan",
+        "ethnicGroup",
+        "Brazilians_in_Japan",
+        "no-lex"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "250 DELAWARE AVENUE is located in the UNITED STATES where JOE BIDEN is a leader and the PRESIDENT OF THE UNITED STATES is a leader . the language of the UNITED STATES is the ENGLISH LANGUAGE .",
+    "rdf": [
+      [
+        "United_States",
+        "language",
+        "English_language",
+        "yes"
+      ],
+      [
+        "United_States",
+        "leaderTitle",
+        "President_of_the_United_States",
+        "no"
+      ],
+      [
+        "United_States",
+        "leaderName",
+        "Joe_Biden",
+        "yes"
+      ],
+      [
+        "250_Delaware_Avenue",
+        "location",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the BAKU TURKISH MARTYRS' MEMORIAL is located in AZERBAIJAN , where the capital is BAKU and the leaders are ARTUR RASIZADE and the PRIME MINISTER OF AZERBAIJAN .",
+    "rdf": [
+      [
+        "Azerbaijan",
+        "capital",
+        "Baku",
+        "yes"
+      ],
+      [
+        "Azerbaijan",
+        "leaderTitle",
+        "Prime_Minister_of_Azerbaijan",
+        "no-lex"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "location",
+        "Azerbaijan",
+        "yes"
+      ],
+      [
+        "Azerbaijan",
+        "leaderName",
+        "Artur_Rasizade",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the 14TH NEW JERSEY VOLUNTEER INFANTRY MONUMENT , established on July 11th, 1907 , is located in the MONOCACY NATIONAL BATTLEFIELD in FREDERICK COUNTY, MARYLAND . the nearest city to IT is FREDERICK, MARYLAND .",
+    "rdf": [
+      [
+        "Monocacy_National_Battlefield",
+        "location",
+        "Frederick_County,_Maryland",
+        "yes"
+      ],
+      [
+        "14th_New_Jersey_Volunteer_Infantry_Monument",
+        "established",
+        "\"1907-07-11\"",
+        "yes"
+      ],
+      [
+        "14th_New_Jersey_Volunteer_Infantry_Monument",
+        "district",
+        "Monocacy_National_Battlefield",
+        "yes"
+      ],
+      [
+        "Monocacy_National_Battlefield",
+        "nearestCity",
+        "Frederick,_Maryland",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the ATATÜRK MONUMENT (İZMIR) made of BRONZE . the MONUMENT is located in TURKEY , where the capital is ANKARA and the leader is AHMET DAVUTOĞLU .",
+    "rdf": [
+      [
+        "Turkey",
+        "leaderName",
+        "Ahmet_Davutoğlu",
+        "yes"
+      ],
+      [
+        "Turkey",
+        "capital",
+        "Ankara",
+        "yes"
+      ],
+      [
+        "Atatürk_Monument_(İzmir)",
+        "material",
+        "\"Bronze\"",
+        "yes"
+      ],
+      [
+        "Atatürk_Monument_(İzmir)",
+        "location",
+        "Turkey",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ANDERSON, INDIANA is part of ADAMS, FALL CREEK, LAFAYETTE, RICHLAND, UNION and is part of the 268 above sea level , has a total area of 107.43 (SQUARE KILOMETRES) and a population of 523.9 (INHABITANTS PER SQUARE KILOMETRE) .",
+    "rdf": [
+      [
+        "Anderson,_Indiana",
+        "populationDensity",
+        "523.9 (inhabitants per square kilometre)",
+        "yes"
+      ],
+      [
+        "Anderson,_Indiana",
+        "areaTotal",
+        "107.43 (square kilometres)",
+        "yes"
+      ],
+      [
+        "Anderson,_Indiana",
+        "elevationAboveTheSeaLevel",
+        "268.0",
+        "yes"
+      ],
+      [
+        "Anderson,_Indiana",
+        "isPartOf",
+        "\"Adams, Fall Creek, Lafayette, Richland, Union\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ANGOLA, INDIANA is part of PLEASANT TOWNSHIP, STEUBEN COUNTY, INDIANA in the INDIANA of the UNITED STATES and has a total area of 16.55 (SQUARE KILOMETRES) .",
+    "rdf": [
+      [
+        "Angola,_Indiana",
+        "isPartOf",
+        "Pleasant_Township,_Steuben_County,_Indiana",
+        "yes"
+      ],
+      [
+        "Angola,_Indiana",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "Angola,_Indiana",
+        "isPartOf",
+        "Indiana",
+        "yes"
+      ],
+      [
+        "Angola,_Indiana",
+        "areaTotal",
+        "16.55 (square kilometres)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the leader of ALBUQUERQUE, NEW MEXICO is the NEW MEXICO SENATE which is led by the JOHN SÁNCHEZ in the UNITED STATES , where there is an ethnic group called ASIAN AMERICANS .",
+    "rdf": [
+      [
+        "United_States",
+        "ethnicGroup",
+        "Asian_Americans",
+        "yes"
+      ],
+      [
+        "Albuquerque,_New_Mexico",
+        "leaderTitle",
+        "New_Mexico_Senate",
+        "yes"
+      ],
+      [
+        "New_Mexico_Senate",
+        "leader",
+        "John_Sánchez",
+        "yes"
+      ],
+      [
+        "Albuquerque,_New_Mexico",
+        "country",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "JOHN VAN DEN BROM has been manager of AZ ALKMAAR and plays for the NETHERLANDS NATIONAL FOOTBALL TEAM and plays for both AFC AJAX and VITESSE ARNHEM .",
+    "rdf": [
+      [
+        "AZ_Alkmaar",
+        "manager",
+        "John_van_den_Brom",
+        "yes"
+      ],
+      [
+        "John_van_den_Brom",
+        "club",
+        "Vitesse_Arnhem",
+        "yes"
+      ],
+      [
+        "John_van_den_Brom",
+        "club",
+        "AFC_Ajax",
+        "yes"
+      ],
+      [
+        "John_van_den_Brom",
+        "club",
+        "Netherlands_national_football_team",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "AGREMIAÇÃO SPORTIVA ARAPIRAQUENSE play at the ESTÁDIO MUNICIPAL COARACY DA MATA FONSECA in ARAPIRACA , in the CAMPEONATO BRASILEIRO SÉRIE C league in BRAZIL .",
+    "rdf": [
+      [
+        "Agremiação_Sportiva_Arapiraquense",
+        "league",
+        "Campeonato_Brasileiro_Série_C",
+        "yes"
+      ],
+      [
+        "Campeonato_Brasileiro_Série_C",
+        "country",
+        "Brazil",
+        "yes"
+      ],
+      [
+        "Agremiação_Sportiva_Arapiraquense",
+        "ground",
+        "Estádio_Municipal_Coaracy_da_Mata_Fonseca",
+        "yes"
+      ],
+      [
+        "Estádio_Municipal_Coaracy_da_Mata_Fonseca",
+        "location",
+        "Arapiraca",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "PETER STÖGER is in the SK VORWÄRTS STEYR club and is the manager of 1. FC KÖLN , plays for FC ADMIRA WACKER MÖDLING and FK AUSTRIA WIEN .",
+    "rdf": [
+      [
+        "Peter_Stöger",
+        "club",
+        "SK_Vorwärts_Steyr",
+        "yes"
+      ],
+      [
+        "Peter_Stöger",
+        "club",
+        "FC_Admira_Wacker_Mödling",
+        "yes"
+      ],
+      [
+        "1._FC_Köln",
+        "manager",
+        "Peter_Stöger",
+        "yes"
+      ],
+      [
+        "Peter_Stöger",
+        "club",
+        "FK_Austria_Wien",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ATLANTIC CITY INTERNATIONAL AIRPORT is located in EGG HARBOR TOWNSHIP, NEW JERSEY , UNITED STATES . IT is owned by SOUTH JERSEY TRANSPORTATION AUTHORITY whose leader is STEPHEN DILTS .",
+    "rdf": [
+      [
+        "Atlantic_City_International_Airport",
+        "owner",
+        "South_Jersey_Transportation_Authority",
+        "yes"
+      ],
+      [
+        "South_Jersey_Transportation_Authority",
+        "leaderName",
+        "Stephen_Dilts",
+        "yes"
+      ],
+      [
+        "Atlantic_City_International_Airport",
+        "location",
+        "Egg_Harbor_Township,_New_Jersey",
+        "yes"
+      ],
+      [
+        "Egg_Harbor_Township,_New_Jersey",
+        "country",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "AL-TAQADDUM AIR BASE serves the city of FALLUJAH in IRAQ where the KURDISH LANGUAGES is spoken . the leader of IRAQ is FUAD MASUM .",
+    "rdf": [
+      [
+        "Iraq",
+        "language",
+        "Kurdish_languages",
+        "yes"
+      ],
+      [
+        "Iraq",
+        "leaderName",
+        "Fuad_Masum",
+        "yes"
+      ],
+      [
+        "Al-Taqaddum_Air_Base",
+        "cityServed",
+        "Fallujah",
+        "yes"
+      ],
+      [
+        "Fallujah",
+        "country",
+        "Iraq",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "AL-TAQADDUM AIR BASE serves the city of FALLUJAH in IRAQ where the KURDISH LANGUAGES is spoken . the leader of IRAQ is HAIDER AL-ABADI .",
+    "rdf": [
+      [
+        "Iraq",
+        "leaderName",
+        "Haider_al-Abadi",
+        "yes"
+      ],
+      [
+        "Iraq",
+        "language",
+        "Kurdish_languages",
+        "yes"
+      ],
+      [
+        "Al-Taqaddum_Air_Base",
+        "cityServed",
+        "Fallujah",
+        "yes"
+      ],
+      [
+        "Fallujah",
+        "country",
+        "Iraq",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BANANAMAN was first broadcast by STV on October 3rd, 1983 and starred STEVE BRIGHT and starred JILL SHILLING .",
+    "rdf": [
+      [
+        "Bananaman",
+        "starring",
+        "Jill_Shilling",
+        "yes"
+      ],
+      [
+        "Bananaman",
+        "creator",
+        "Steve_Bright",
+        "no-lex"
+      ],
+      [
+        "Bananaman",
+        "firstAired",
+        "\"1983-10-03\"",
+        "yes"
+      ],
+      [
+        "Bananaman",
+        "broadcastedBy",
+        "\"STV\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BAYMAX is a character in the BIG HERO 6 (FILM) , which stars RYAN POTTER , was created by DUNCAN ROULEAU and is an AMERICANS .",
+    "rdf": [
+      [
+        "Big_Hero_6_(film)",
+        "starring",
+        "Ryan_Potter",
+        "yes"
+      ],
+      [
+        "Duncan_Rouleau",
+        "nationality",
+        "Americans",
+        "no-lex"
+      ],
+      [
+        "Baymax",
+        "creator",
+        "Duncan_Rouleau",
+        "yes"
+      ],
+      [
+        "Baymax",
+        "series",
+        "Big_Hero_6_(film)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the BOLT (COMICSCHARACTER) , aka LARRY BOLATINSKY , was created by GARY COHN (COMICS) and ERNIE COLÓN , is a PUERTO RICANS national .",
+    "rdf": [
+      [
+        "Bolt_(comicsCharacter)",
+        "creator",
+        "Gary_Cohn_(comics)",
+        "yes"
+      ],
+      [
+        "Ernie_Colón",
+        "nationality",
+        "Puerto_Ricans",
+        "no-lex"
+      ],
+      [
+        "Bolt_(comicsCharacter)",
+        "creator",
+        "Ernie_Colón",
+        "yes"
+      ],
+      [
+        "Bolt_(comicsCharacter)",
+        "alternativeName",
+        "\"Larry Bolatinsky\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "A FORTRESS OF GREY ICE , written by J. V. JONES , is available in HARDCOVER with an oclc number of 51969173 and an isbn number of 0-7653-0633-6 .",
+    "rdf": [
+      [
+        "A_Fortress_of_Grey_Ice",
+        "mediaType",
+        "Hardcover",
+        "yes"
+      ],
+      [
+        "A_Fortress_of_Grey_Ice",
+        "OCLC_number",
+        "51969173",
+        "yes"
+      ],
+      [
+        "A_Fortress_of_Grey_Ice",
+        "author",
+        "J._V._Jones",
+        "yes"
+      ],
+      [
+        "A_Fortress_of_Grey_Ice",
+        "ISBN_number",
+        "\"0-7653-0633-6\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "A LOYAL CHARACTER DANCER , written by QIU XIAOLONG , is available in HARDCOVER and has an oclc number of 49805501 and an isbn number 1-56947-301-3 .",
+    "rdf": [
+      [
+        "A_Loyal_Character_Dancer",
+        "author",
+        "Qiu_Xiaolong",
+        "yes"
+      ],
+      [
+        "A_Loyal_Character_Dancer",
+        "OCLC_number",
+        "49805501",
+        "yes"
+      ],
+      [
+        "A_Loyal_Character_Dancer",
+        "ISBN_number",
+        "\"1-56947-301-3\"",
+        "yes"
+      ],
+      [
+        "A_Loyal_Character_Dancer",
+        "mediaType",
+        "Hardcover",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the book ALCATRAZ VERSUS THE EVIL LIBRARIANS comes from the UNITED STATES where there is an ethnic group of AFRICAN AMERICANS . IT is written in ENGLISH LANGUAGE spoken in GREAT BRITAIN .",
+    "rdf": [
+      [
+        "Alcatraz_Versus_the_Evil_Librarians",
+        "language",
+        "English_language",
+        "yes"
+      ],
+      [
+        "English_language",
+        "spokenIn",
+        "Great_Britain",
+        "yes"
+      ],
+      [
+        "Alcatraz_Versus_the_Evil_Librarians",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "United_States",
+        "ethnicGroup",
+        "African_Americans",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ALAN BEAN was an UNITED STATES who was born in WHEELER, TEXAS and was selected by nasa in 1963 . HE spent 100305 MINUTES in space .",
+    "rdf": [
+      [
+        "Alan_Bean",
+        "nationality",
+        "United_States",
+        "yes"
+      ],
+      [
+        "Alan_Bean",
+        "birthPlace",
+        "Wheeler,_Texas",
+        "yes"
+      ],
+      [
+        "Alan_Bean",
+        "timeInSpace",
+        "\"100305.0\"(minutes)",
+        "yes"
+      ],
+      [
+        "Alan_Bean",
+        "was selected by NASA",
+        "1963",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "APOLLO 11 was operated by NASA . BUZZ ALDRIN , who was born with EDWIN EUGENE ALDRIN JR. , was a crew member of APOLLO and was commanded by 20 .",
+    "rdf": [
+      [
+        "Buzz_Aldrin",
+        "was a crew member of",
+        "Apollo_11",
+        "yes"
+      ],
+      [
+        "Buzz_Aldrin",
+        "birthName",
+        "\"Edwin Eugene Aldrin Jr.\"",
+        "yes"
+      ],
+      [
+        "Buzz_Aldrin",
+        "awards",
+        "20",
+        "no-lex"
+      ],
+      [
+        "Apollo_11",
+        "operator",
+        "NASA",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ALAN SHEPARD was born in NEW HAMPSHIRE and died in CALIFORNIA . HE was awarded the DISTINGUISHED SERVICE MEDAL (UNITED STATES NAVY) which ranks higher than DEPARTMENT OF COMMERCE GOLD MEDAL .",
+    "rdf": [
+      [
+        "Distinguished_Service_Medal_(United_States_Navy)",
+        "higher",
+        "Department_of_Commerce_Gold_Medal",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "deathPlace",
+        "California",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "birthPlace",
+        "New_Hampshire",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "awards",
+        "Distinguished_Service_Medal_(United_States_Navy)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AWH ENGINEERING COLLEGE was established in KUTTIKKATTOOR in 2001 , INDIA . the river of INDIA is the GANGES .",
+    "rdf": [
+      [
+        "AWH_Engineering_College",
+        "country",
+        "India",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "established",
+        "2001",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "city",
+        "\"Kuttikkattoor\"",
+        "yes"
+      ],
+      [
+        "India",
+        "river",
+        "Ganges",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the ACHARYA INSTITUTE OF TECHNOLOGY was given technical campus status by the ALL INDIA COUNCIL FOR TECHNICAL EDUCATION in MUMBAI . the INSTITUTE offers TENNIS as governed by the INTERNATIONAL TENNIS FEDERATION .",
+    "rdf": [
+      [
+        "Acharya_Institute_of_Technology",
+        "was given the 'Technical Campus' status by",
+        "All_India_Council_for_Technical_Education",
+        "yes"
+      ],
+      [
+        "All_India_Council_for_Technical_Education",
+        "location",
+        "Mumbai",
+        "yes"
+      ],
+      [
+        "Acharya_Institute_of_Technology",
+        "sportsOffered",
+        "Tennis",
+        "yes"
+      ],
+      [
+        "Tennis",
+        "sportsGoverningBody",
+        "International_Tennis_Federation",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AWH ENGINEERING COLLEGE is located in KUTTIKKATTOOR , KERALA , KOCHI and has a staff of 250 .",
+    "rdf": [
+      [
+        "Kerala",
+        "leaderName",
+        "Kochi",
+        "no-lex"
+      ],
+      [
+        "AWH_Engineering_College",
+        "academicStaffSize",
+        "250",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "state",
+        "Kerala",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "city",
+        "\"Kuttikkattoor\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BANDEJA PAISA is part of COLOMBIAN CUISINE from the PAISA REGION and has HOGAO as an ingredient . the main ingredients of IT are RED BEANS, PORK BELLY, WHITE RICE, GROUND MEAT, CHICHARON, FRIED EGG, PLANTAIN (PATACONES), CHORIZO, AREPA, HOGAO SAUCE, BLACK PUDDING (MORCILLA), AVOCADO AND LEMON .",
+    "rdf": [
+      [
+        "Bandeja_paisa",
+        "mainIngredients",
+        "\"red beans, pork belly, white rice, ground meat, chicharon, fried egg, plantain (patacones), chorizo, arepa, hogao sauce, black pudding (morcilla), avocado and lemon\"",
+        "yes"
+      ],
+      [
+        "Bandeja_paisa",
+        "region",
+        "Paisa_Region",
+        "yes"
+      ],
+      [
+        "Bandeja_paisa",
+        "country",
+        "Colombian_cuisine",
+        "yes"
+      ],
+      [
+        "Bandeja_paisa",
+        "ingredient",
+        "Hogao",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BEEF KWAY TEOW is a food found in SINGAPORE AND INDONESIA and originates from SINGAPORE . STANDARD CHINESE is a language in SINGAPORE where HALIMAH YACOB is a leader .",
+    "rdf": [
+      [
+        "Beef_kway_teow",
+        "region",
+        "Singapore",
+        "yes"
+      ],
+      [
+        "Beef_kway_teow",
+        "country",
+        "\"Singapore and Indonesia\"",
+        "yes"
+      ],
+      [
+        "Singapore",
+        "language",
+        "Standard_Chinese",
+        "yes"
+      ],
+      [
+        "Singapore",
+        "leaderName",
+        "Halimah_Yacob",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BINIGNIT is a DESSERT from the PHILIPPINES , where PHILIPPINE ENGLISH is spoken . SANDESH (CONFECTIONERY) is a DESSERT .",
+    "rdf": [
+      [
+        "Philippines",
+        "language",
+        "Philippine_English",
+        "yes"
+      ],
+      [
+        "Binignit",
+        "course",
+        "Dessert",
+        "yes"
+      ],
+      [
+        "Dessert",
+        "dishVariation",
+        "Sandesh_(confectionery)",
+        "yes"
+      ],
+      [
+        "Binignit",
+        "country",
+        "Philippines",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "A LOYAL CHARACTER DANCER was published by SOHO PRESS in the UNITED STATES , where the ENGLISH LANGUAGE is spoken in GREAT BRITAIN and the NATIVE AMERICANS IN THE UNITED STATES ethnic group .",
+    "rdf": [
+      [
+        "English_language",
+        "spokenIn",
+        "Great_Britain",
+        "yes"
+      ],
+      [
+        "A_Loyal_Character_Dancer",
+        "publisher",
+        "Soho_Press",
+        "yes"
+      ],
+      [
+        "A_Loyal_Character_Dancer",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "United_States",
+        "ethnicGroup",
+        "Native_Americans_in_the_United_States",
+        "no-lex"
+      ],
+      [
+        "United_States",
+        "language",
+        "English_language",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "A SEVERED WASP is from the UNITED STATES where the capital is WASHINGTON, D.C. and the ENGLISH LANGUAGE is spoken in GREAT BRITAIN . one of the ethnic groups of the STATES is NATIVE AMERICANS IN THE UNITED STATES .",
+    "rdf": [
+      [
+        "English_language",
+        "spokenIn",
+        "Great_Britain",
+        "yes"
+      ],
+      [
+        "United_States",
+        "language",
+        "English_language",
+        "no"
+      ],
+      [
+        "United_States",
+        "capital",
+        "Washington,_D.C.",
+        "yes"
+      ],
+      [
+        "A_Severed_Wasp",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "United_States",
+        "ethnicGroup",
+        "Native_Americans_in_the_United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "1634: THE RAM REBELLION was written in the UNITED STATES where the natives are the AMERICANS and BARACK OBAMA and the capital city is WASHINGTON, D.C. one of the ethnic groups of the STATES is the AFRICAN AMERICANS .",
+    "rdf": [
+      [
+        "United_States",
+        "leaderName",
+        "Barack_Obama",
+        "no-lex"
+      ],
+      [
+        "United_States",
+        "demonym",
+        "Americans",
+        "yes"
+      ],
+      [
+        "United_States",
+        "capital",
+        "Washington,_D.C.",
+        "yes"
+      ],
+      [
+        "1634:_The_Ram_Rebellion",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "United_States",
+        "ethnicGroup",
+        "African_Americans",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the state of TEXAS is located in POTTER COUNTY, TEXAS , AMARILLO, TEXAS , in the UNITED STATES , where the ENGLISH LANGUAGE is spoken and the capital is WASHINGTON, D.C.",
+    "rdf": [
+      [
+        "Amarillo,_Texas",
+        "isPartOf",
+        "Potter_County,_Texas",
+        "no-lex"
+      ],
+      [
+        "Potter_County,_Texas",
+        "state",
+        "Texas",
+        "no-lex"
+      ],
+      [
+        "Texas",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "United_States",
+        "capital",
+        "Washington,_D.C.",
+        "yes"
+      ],
+      [
+        "United_States",
+        "language",
+        "English_language",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "AUBURN, WASHINGTON is part of KING COUNTY, WASHINGTON , PIERCE COUNTY, WASHINGTON , UNITED STATES and has a total area of 77.41 (SQUARE KILOMETRES) which has a total density of 914.8 (INHABITANTS PER SQUARE KILOMETRE) .",
+    "rdf": [
+      [
+        "Auburn,_Washington",
+        "isPartOf",
+        "Pierce_County,_Washington",
+        "yes"
+      ],
+      [
+        "Auburn,_Washington",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "Auburn,_Washington",
+        "isPartOf",
+        "King_County,_Washington",
+        "yes"
+      ],
+      [
+        "Auburn,_Washington",
+        "populationDensity",
+        "914.8 (inhabitants per square kilometre)",
+        "yes"
+      ],
+      [
+        "Auburn,_Washington",
+        "areaTotal",
+        "77.41 (square kilometres)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ANGOLA, INDIANA is part of STEUBEN COUNTY, INDIANA in the UNITED STATES where the people of the natives are the AMERICANS and ENGLISH LANGUAGE . one of the ethnic groups of the STATES is the ASIAN AMERICANS .",
+    "rdf": [
+      [
+        "United_States",
+        "language",
+        "English_language",
+        "no-lex"
+      ],
+      [
+        "Angola,_Indiana",
+        "isPartOf",
+        "Steuben_County,_Indiana",
+        "yes"
+      ],
+      [
+        "United_States",
+        "demonym",
+        "Americans",
+        "yes"
+      ],
+      [
+        "Angola,_Indiana",
+        "country",
+        "United_States",
+        "yes"
+      ],
+      [
+        "United_States",
+        "ethnicGroup",
+        "Asian_Americans",
+        "yes"
+      ]
+    ],
+    "hal": 1
+  },
+  {
+    "sen": "the BAKU TURKISH MARTYRS' MEMORIAL is dedicated to the OTTOMAN ARMY SOLDIERS KILLED IN THE BATTLE OF BAKU . the MEMORIAL is located in AZERBAIJAN , where the capital is BAKU and the leaders are ARTUR RASIZADE and the PRIME MINISTER OF AZERBAIJAN .",
+    "rdf": [
+      [
+        "Azerbaijan",
+        "capital",
+        "Baku",
+        "yes"
+      ],
+      [
+        "Azerbaijan",
+        "leaderTitle",
+        "Prime_Minister_of_Azerbaijan",
+        "no-lex"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "dedicatedTo",
+        "\"Ottoman Army soldiers killed in the Battle of Baku\"",
+        "yes"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "location",
+        "Azerbaijan",
+        "yes"
+      ],
+      [
+        "Azerbaijan",
+        "leaderName",
+        "Artur_Rasizade",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the BAKU TURKISH MARTYRS' MEMORIAL is dedicated to the OTTOMAN ARMY SOLDIERS KILLED IN THE BATTLE OF BAKU . the MEMORIAL is located in AZERBAIJAN , where the capital is BAKU and the leaders are ARTUR RASIZADE and NATIONAL ASSEMBLY (AZERBAIJAN) .",
+    "rdf": [
+      [
+        "Azerbaijan",
+        "capital",
+        "Baku",
+        "yes"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "dedicatedTo",
+        "\"Ottoman Army soldiers killed in the Battle of Baku\"",
+        "yes"
+      ],
+      [
+        "Baku_Turkish_Martyrs'_Memorial",
+        "location",
+        "Azerbaijan",
+        "yes"
+      ],
+      [
+        "Azerbaijan",
+        "leaderName",
+        "Artur_Rasizade",
+        "yes"
+      ],
+      [
+        "Azerbaijan",
+        "legislature",
+        "National_Assembly_(Azerbaijan)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the ATATÜRK MONUMENT (İZMIR) is located in TURKEY , where the capital is ANKARA and the leaders are AHMET DAVUTOĞLU and the PRESIDENT OF TURKEY and the largest city is ISTANBUL .",
+    "rdf": [
+      [
+        "Turkey",
+        "leaderTitle",
+        "President_of_Turkey",
+        "no-lex"
+      ],
+      [
+        "Turkey",
+        "leader",
+        "Ahmet_Davutoğlu",
+        "yes"
+      ],
+      [
+        "Turkey",
+        "capital",
+        "Ankara",
+        "yes"
+      ],
+      [
+        "Turkey",
+        "largestCity",
+        "Istanbul",
+        "yes"
+      ],
+      [
+        "Atatürk_Monument_(İzmir)",
+        "location",
+        "Turkey",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AWH ENGINEERING COLLEGE in KUTTIKKATTOOR , KERALA was established in 2001 and has a staff of 250 . to the northwest of KERALA is MAHÉ, INDIA .",
+    "rdf": [
+      [
+        "AWH_Engineering_College",
+        "established",
+        "2001",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "academicStaffSize",
+        "250",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "state",
+        "Kerala",
+        "yes"
+      ],
+      [
+        "Kerala",
+        "has to its northwest",
+        "Mahé,_India",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "city",
+        "\"Kuttikkattoor\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AWH ENGINEERING COLLEGE is located in the state of KERALA in INDIA where the largest city is MUMBAI . the river of INDIA is the GANGES . the leader of KERALA is KOCHI .",
+    "rdf": [
+      [
+        "India",
+        "largestCity",
+        "Mumbai",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "country",
+        "India",
+        "yes"
+      ],
+      [
+        "Kerala",
+        "leaderName",
+        "Kochi",
+        "yes"
+      ],
+      [
+        "AWH_Engineering_College",
+        "state",
+        "Kerala",
+        "yes"
+      ],
+      [
+        "India",
+        "river",
+        "Ganges",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the SCHOOL OF BUSINESS AND SOCIAL SCIENCES AT THE AARHUS UNIVERSITY is located in the city of AARHUS , MAGISTRATE and has to its northeast MOLS . the SCHOOL is affiliated with the EUROPEAN UNIVERSITY ASSOCIATION headquartered in BRUSSELS .",
+    "rdf": [
+      [
+        "School of Business and Social Sciences at the Aarhus University",
+        "city",
+        "Aarhus",
+        "yes"
+      ],
+      [
+        "European_University_Association",
+        "headquarters",
+        "Brussels",
+        "yes"
+      ],
+      [
+        "Aarhus",
+        "has to its northeast",
+        "Mols",
+        "yes"
+      ],
+      [
+        "School of Business and Social Sciences at the Aarhus University",
+        "affiliation",
+        "European_University_Association",
+        "yes"
+      ],
+      [
+        "Aarhus",
+        "governmentType",
+        "Magistrate",
+        "no-lex"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BAYMAX is a character in the BIG HERO 6 (FILM) , which was created by ALAN TUDYK and STEVEN T. SEAGLE and DUNCAN ROULEAU , is an AMERICANS .",
+    "rdf": [
+      [
+        "Duncan_Rouleau",
+        "nationality",
+        "Americans",
+        "no-lex"
+      ],
+      [
+        "Baymax",
+        "creator",
+        "Duncan_Rouleau",
+        "yes"
+      ],
+      [
+        "Big_Hero_6_(film)",
+        "starring",
+        "Alan_Tudyk",
+        "no-lex"
+      ],
+      [
+        "Baymax",
+        "creator",
+        "Steven_T._Seagle",
+        "yes"
+      ],
+      [
+        "Baymax",
+        "series",
+        "Big_Hero_6_(film)",
+        "yes"
+      ]
+    ],
+    "hal": 1
+  },
+  {
+    "sen": "MICHELE MARCOLINI has been manager of A.C. LUMEZZANE which is based in ITALY , whose leader is PIETRO GRASSO , and plays for F.C. BARI 1908 and is in the VICENZA CALCIO club .",
+    "rdf": [
+      [
+        "A.C._Lumezzane",
+        "manager",
+        "Michele_Marcolini",
+        "yes"
+      ],
+      [
+        "A.C._Lumezzane",
+        "ground",
+        "Italy",
+        "yes"
+      ],
+      [
+        "Italy",
+        "leader",
+        "Pietro_Grasso",
+        "yes"
+      ],
+      [
+        "Michele_Marcolini",
+        "club",
+        "F.C._Bari_1908",
+        "yes"
+      ],
+      [
+        "Michele_Marcolini",
+        "club",
+        "Vicenza_Calcio",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the OLYMPIC STADIUM (ATHENS) in MAROUSI is the ground of AEK ATHENS F.C. . the manager of ATHENS is GUS POYET , who is in the REAL ZARAGOZA club and plays for CHELSEA F.C.",
+    "rdf": [
+      [
+        "AEK_Athens_F.C.",
+        "manager",
+        "Gus_Poyet",
+        "no-reg"
+      ],
+      [
+        "Gus_Poyet",
+        "club",
+        "Real_Zaragoza",
+        "yes"
+      ],
+      [
+        "Olympic_Stadium_(Athens)",
+        "location",
+        "Marousi",
+        "yes"
+      ],
+      [
+        "AEK_Athens_F.C.",
+        "ground",
+        "Olympic_Stadium_(Athens)",
+        "yes"
+      ],
+      [
+        "Gus_Poyet",
+        "club",
+        "Chelsea_F.C.",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the ground of A.S. GUBBIO 1910 is located in ITALY , where the capital is ROME and the country 's people are SERGIO MATTARELLA and ITALIANS people . the official language of ITALY is ITALIAN LANGUAGE .",
+    "rdf": [
+      [
+        "Italy",
+        "officialLanguage",
+        "Italian_language",
+        "yes"
+      ],
+      [
+        "Italy",
+        "demonym",
+        "Italians",
+        "yes"
+      ],
+      [
+        "Italy",
+        "capital",
+        "Rome",
+        "yes"
+      ],
+      [
+        "Italy",
+        "leader",
+        "Sergio_Mattarella",
+        "no-lex"
+      ],
+      [
+        "A.S._Gubbio_1910",
+        "ground",
+        "Italy",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BHAJJI originates from the country of INDIA and originates from the KARNATAKA region . an ingredient of BHAJJI , also known as BHAJI, BAJJI , is GRAM FLOUR . GRAM FLOUR, VEGETABLES are main ingredients in BHAJJI .",
+    "rdf": [
+      [
+        "Bhajji",
+        "country",
+        "India",
+        "yes"
+      ],
+      [
+        "Bhajji",
+        "region",
+        "Karnataka",
+        "yes"
+      ],
+      [
+        "Bhajji",
+        "mainIngredients",
+        "\"Gram flour, vegetables\"",
+        "yes"
+      ],
+      [
+        "Bhajji",
+        "alternativeName",
+        "\"Bhaji, bajji\"",
+        "yes"
+      ],
+      [
+        "Bhajji",
+        "ingredient",
+        "Gram_flour",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BATCHOY is eaten in the PHILIPPINES where PHILIPPINE SPANISH and ZAMBOANGANS are both groups and ARABIC is spoken . one of the ethnic groups in the PHILIPPINES is the CHINESE FILIPINO .",
+    "rdf": [
+      [
+        "Philippines",
+        "language",
+        "Arabic",
+        "yes"
+      ],
+      [
+        "Philippines",
+        "ethnicGroup",
+        "Zamboangans",
+        "yes"
+      ],
+      [
+        "Philippines",
+        "language",
+        "Philippine_Spanish",
+        "no-lex"
+      ],
+      [
+        "Batchoy",
+        "country",
+        "Philippines",
+        "yes"
+      ],
+      [
+        "Philippines",
+        "ethnicGroup",
+        "Chinese_Filipino",
+        "yes"
+      ]
+    ],
+    "hal": 1
+  },
+  {
+    "sen": "AJOBLANCO is from the ANDALUSIA region . IT is from SPAIN where the people are known as SPANIARDS and the leader is FELIPE VI OF SPAIN . SUSANA DÍAZ is a leader in IT .",
+    "rdf": [
+      [
+        "Spain",
+        "leaderName",
+        "Felipe_VI_of_Spain",
+        "yes"
+      ],
+      [
+        "Ajoblanco",
+        "region",
+        "Andalusia",
+        "yes"
+      ],
+      [
+        "Andalusia",
+        "leaderName",
+        "Susana_Díaz",
+        "no-reg"
+      ],
+      [
+        "Ajoblanco",
+        "country",
+        "Spain",
+        "no-reg"
+      ],
+      [
+        "Spain",
+        "demonym",
+        "Spaniards",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ALAN SHEPARD was born in NEW HAMPSHIRE . HE was a crew member of APOLLO 14 which was operated by NASA . HE was awarded the DISTINGUISHED SERVICE MEDAL (UNITED STATES NAVY) which ranks higher than DEPARTMENT OF COMMERCE GOLD MEDAL .",
+    "rdf": [
+      [
+        "Alan_Shepard",
+        "was a crew member of",
+        "Apollo_14",
+        "yes"
+      ],
+      [
+        "Distinguished_Service_Medal_(United_States_Navy)",
+        "higher",
+        "Department_of_Commerce_Gold_Medal",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "birthPlace",
+        "New_Hampshire",
+        "yes"
+      ],
+      [
+        "Apollo_14",
+        "operator",
+        "NASA",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "awards",
+        "Distinguished_Service_Medal_(United_States_Navy)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "BUZZ ALDRIN was an UNITED STATES who was born in GLEN RIDGE, NEW JERSEY and served as a FIGHTER PILOT . HE was a crew member of APOLLO 11 which was operated by NASA .",
+    "rdf": [
+      [
+        "Buzz_Aldrin",
+        "birthPlace",
+        "Glen_Ridge,_New_Jersey",
+        "yes"
+      ],
+      [
+        "Buzz_Aldrin",
+        "was a crew member of",
+        "Apollo_11",
+        "yes"
+      ],
+      [
+        "Buzz_Aldrin",
+        "nationality",
+        "United_States",
+        "yes"
+      ],
+      [
+        "Buzz_Aldrin",
+        "occupation",
+        "Fighter_pilot",
+        "yes"
+      ],
+      [
+        "Apollo_11",
+        "operator",
+        "NASA",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ALAN SHEPARD was an UNITED STATES who was born in NEW HAMPSHIRE . ALAN died in CALIFORNIA . ALAN was awarded the DISTINGUISHED SERVICE MEDAL (UNITED STATES NAVY) which ranks higher than DEPARTMENT OF COMMERCE GOLD MEDAL .",
+    "rdf": [
+      [
+        "Distinguished_Service_Medal_(United_States_Navy)",
+        "higher",
+        "Department_of_Commerce_Gold_Medal",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "nationality",
+        "United_States",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "deathPlace",
+        "California",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "birthPlace",
+        "New_Hampshire",
+        "yes"
+      ],
+      [
+        "Alan_Shepard",
+        "awards",
+        "Distinguished_Service_Medal_(United_States_Navy)",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the UNITED STATES AIR FORCE , who is the operating organisation for AL ASAD AIRBASE , fought in the OPERATION ENDURING FREEDOM , was involved in battles at the INVASION OF GRENADA and deploy the LOCKHEED AC-130 attack aircraft and deploy the LOCKHEED C-130 HERCULES attack aircraft .",
+    "rdf": [
+      [
+        "Al_Asad_Airbase",
+        "operatingOrganisation",
+        "United_States_Air_Force",
+        "yes"
+      ],
+      [
+        "United_States_Air_Force",
+        "battles",
+        "Invasion_of_Grenada",
+        "yes"
+      ],
+      [
+        "United_States_Air_Force",
+        "attackAircraft",
+        "Lockheed_AC-130",
+        "yes"
+      ],
+      [
+        "United_States_Air_Force",
+        "transportAircraft",
+        "Lockheed_C-130_Hercules",
+        "no-lex"
+      ],
+      [
+        "United_States_Air_Force",
+        "battles",
+        "Operation_Enduring_Freedom",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the ALLAMA IQBAL INTERNATIONAL AIRPORT in PAKISTAN , serves the city of LAHORE and is operated by the PAKISTAN CIVIL AVIATION AUTHORITY . the runway at the AIRPORT is named 18L/36R . the runway length of AIRPORT is 3310 .",
+    "rdf": [
+      [
+        "Allama_Iqbal_International_Airport",
+        "location",
+        "Pakistan",
+        "yes"
+      ],
+      [
+        "Allama_Iqbal_International_Airport",
+        "runwayLength",
+        "3310.0",
+        "yes"
+      ],
+      [
+        "Allama_Iqbal_International_Airport",
+        "operatingOrganisation",
+        "Pakistan_Civil_Aviation_Authority",
+        "yes"
+      ],
+      [
+        "Allama_Iqbal_International_Airport",
+        "cityServed",
+        "Lahore",
+        "yes"
+      ],
+      [
+        "Allama_Iqbal_International_Airport",
+        "runwayName",
+        "\"18L/36R\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "ATHENS INTERNATIONAL AIRPORT serves the city of ATHENS , in GREECE , where two of the leaders are ALEXIS TSIPRAS and PROKOPIS PAVLOPOULOS . the language of GREECE is the GREEK LANGUAGE .",
+    "rdf": [
+      [
+        "Athens_International_Airport",
+        "cityServed",
+        "Athens",
+        "yes"
+      ],
+      [
+        "Athens",
+        "country",
+        "Greece",
+        "yes"
+      ],
+      [
+        "Greece",
+        "leaderName",
+        "Alexis_Tsipras",
+        "yes"
+      ],
+      [
+        "Greece",
+        "language",
+        "Greek_language",
+        "yes"
+      ],
+      [
+        "Greece",
+        "leaderName",
+        "Prokopis_Pavlopoulos",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "200 PUBLIC SQUARE is located in CLEVELAND , OHIO , CUYAHOGA COUNTY, OHIO , UNITED STATES . IT was completed in 1985 .",
+    "rdf": [
+      [
+        "200_Public_Square",
+        "location",
+        "Cleveland",
+        "yes"
+      ],
+      [
+        "200_Public_Square",
+        "completionDate",
+        "1985",
+        "yes"
+      ],
+      [
+        "Cleveland",
+        "isPartOf",
+        "Cuyahoga_County,_Ohio",
+        "yes"
+      ],
+      [
+        "Cleveland",
+        "isPartOf",
+        "Ohio",
+        "yes"
+      ],
+      [
+        "Cleveland",
+        "country",
+        "United_States",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AC HOTEL BELLA SKY COPENHAGEN is located in DENMARK where the GREENLANDIC LANGUAGE is spoken and the leader is LARS LØKKE RASMUSSEN . the tenant of the HOTEL is the MARRIOTT INTERNATIONAL hotel which was founded in WASHINGTON, D.C.",
+    "rdf": [
+      [
+        "AC_Hotel_Bella_Sky_Copenhagen",
+        "location",
+        "Denmark",
+        "yes"
+      ],
+      [
+        "Marriott_International",
+        "foundationPlace",
+        "Washington,_D.C.",
+        "yes"
+      ],
+      [
+        "Denmark",
+        "leaderName",
+        "Lars_Løkke_Rasmussen",
+        "yes"
+      ],
+      [
+        "AC_Hotel_Bella_Sky_Copenhagen",
+        "tenant",
+        "Marriott_International",
+        "yes"
+      ],
+      [
+        "Denmark",
+        "language",
+        "Greenlandic_language",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  },
+  {
+    "sen": "the AKITA MUSEUM OF ART in AKITA, AKITA is located in AKITA PREFECTURE , JAPAN and has a 1-4-2 NAKADORI its address is 3 floors .",
+    "rdf": [
+      [
+        "Akita_Museum_of_Art",
+        "country",
+        "Japan",
+        "yes"
+      ],
+      [
+        "Akita_Museum_of_Art",
+        "floorCount",
+        "3",
+        "yes"
+      ],
+      [
+        "Akita_Museum_of_Art",
+        "location",
+        "Akita,_Akita",
+        "yes"
+      ],
+      [
+        "Akita_Museum_of_Art",
+        "location",
+        "Akita_Prefecture",
+        "yes"
+      ],
+      [
+        "Akita_Museum_of_Art",
+        "address",
+        "\"1-4-2 Nakadori\"",
+        "yes"
+      ]
+    ],
+    "hal": 0
+  }
+]
