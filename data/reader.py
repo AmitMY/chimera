@@ -389,3 +389,6 @@ class DataReader:
 
     def describe_entities(self):
         return self
+
+    def export(self):
+        return [{"rdf": d.graph.as_rdf(), "text": d.text, "delex": d.delex, "plan": d.plan} for d in self.data]

@@ -1,7 +1,5 @@
 import sys
 
-from planner.neural_planner import NeuralPlanner
-
 sys.path.append("../")
 
 import argparse

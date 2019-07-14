@@ -1,20 +1,30 @@
 # Chimera
 ![Chimera](git-assets/chimera.webp)
 
-Code from the paper ["Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://arxiv.org/pdf/1904.03396.pdf), to appear in NAACL-2019.
+#### Literature
+- NAACL-2019: ["Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://arxiv.org/pdf/1904.03396.pdf).
 
 ## Environment
-We recommend installing all dependencies in a separate Conda environment.
+We recommend installing all dependencies in a separate Conda environment, or in Docker.
 
-### GPU-support
+#### GPU-support
 This code will run with or without a CUDA, but we recommend using a machine with CUDA.
 
-### Dependencies
+#### Dependencies
 Execute `setup.sh`. This will install pip dependencies, as well as OpenNMT.
 
-### Demo
+## Demo
 To run the demo, execute `server/server.py`, preferably on a machine with a GPU. Running it for the first time will process the data and train the models, then expose a server for you to play with.
 
+## Enriched Corpus
+We enrich the corpus with data we create in pre-processing, and release it in JSON format.
+- Automatic entity extractions based on Levenshtein distance - `delex`
+- Text plans automatically matched to the entity marked text - `plan`
+- We tokenize `text`, `delex`, and `plan`, and join all tokens with the space character.
+
+[Training](git-assets/enriched/train.json) and [Development](git-assets/enriched/dev.json) sets can be found in the [git-assets/enriched/](git-assets/enriched/) directory.
+
+---
 
 ## Process
 For training, the main pipeline consists of these sub-pipelines:

@@ -17,6 +17,8 @@ CorpusPreProcessPipeline.enqueue("match-ents", "Match Entities", lambda f, _: f[
 CorpusPreProcessPipeline.enqueue("match-plans", "Match Plans", lambda f, _: f["match-ents"].copy().match_plans())
 CorpusPreProcessPipeline.enqueue("tokenize", "Tokenize Plans & Sentences",
                                  lambda f, _: f["match-plans"].copy().tokenize_plans().tokenize_delex())
+CorpusPreProcessPipeline.enqueue("to-json", "Export in a readable format",
+                                 lambda f, _: json.dumps(f["tokenize"].export()), ext="json")
 CorpusPreProcessPipeline.enqueue("out", "Make output for parent", lambda f, _: f["tokenize"].copy())
 
 TrainingPreProcessPipeline = ParallelPipeline()

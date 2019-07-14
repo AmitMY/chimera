@@ -44,16 +44,16 @@ MainPipeline.enqueue("translate", "Translate Test", TranslatePipeline)
 MainPipeline.enqueue("evaluate", "Evaluate Translations", EvaluationPipeline)
 
 if __name__ == "__main__":
-    naive_planner = NaivePlanner(WeightedProductOfExperts([
-        RelationDirectionExpert,
-        GlobalDirectionExpert,
-        SplittingTendenciesExpert,
-        RelationTransitionsExpert
-    ]))
+    # naive_planner = NaivePlanner(WeightedProductOfExperts([
+    #     RelationDirectionExpert,
+    #     GlobalDirectionExpert,
+    #     SplittingTendenciesExpert,
+    #     RelationTransitionsExpert
+    # ]))
     neural_planner = NeuralPlanner()
     # combined_planner = CombinedPlanner((neural_planner, naive_planner))
     config = Config(reader=WebNLGDataReader,
-                    planner=naive_planner,
+                    planner=neural_planner,
                     reg=BertREG)
 
     res = MainPipeline.mutate({"config": config}).execute("WebNLG", cache_name="WebNLG")
