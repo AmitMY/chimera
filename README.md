@@ -1,17 +1,14 @@
 # Chimera
 ![Chimera](git-assets/chimera.webp)
 
-#### Literature
-- NAACL-2019: ["Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://arxiv.org/pdf/1904.03396.pdf).
-
 ## Environment
 We recommend installing all dependencies in a separate Conda environment, or in Docker.
 
 #### GPU-support
-This code will run with or without a CUDA, but we recommend using a machine with CUDA.
+This code will run with or without `CUDA`, but we recommend using a machine with `CUDA`.
 
-#### Dependencies
-Execute `setup.sh`. This will install pip dependencies, as well as OpenNMT.
+#### Installation
+Execute `setup.sh`. This will install `pip` dependencies, as well as `OpenNMT`.
 
 ## Demo
 To run the demo, execute `server/server.py`, preferably on a machine with a GPU. Running it for the first time will process the data and train the models, then expose a server for you to play with.
@@ -105,3 +102,22 @@ The expected result is around:
 - BLEU [45.66, 80.2, 54.9, 37.8, 26.5] (20,000 steps)
 
 We attribute the worse BLEU to the fact the delexicalizations also remove articles and other text around it, and without proper referring expressions generations while the texts should have better structure, they are worse in fluency.
+
+
+
+## Literature
+This code is based on the following papers
+- NAACL-2019: [Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://arxiv.org/pdf/1904.03396.pdf).
+
+### Citations
+```
+@inproceedings{step-by-step,
+    title = "{S}tep-by-Step: {S}eparating Planning from Realization in Neural Data-to-Text Generation",
+    author = "Amit Moryossef and Yoav Goldberg and Ido Dagan",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    year = "2019",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N19-1236",
+    pages = "2267--2277",
+}
+```
