@@ -105,11 +105,11 @@ if __name__ == "__main__":
     config = Config(reader=WebNLGDataReader)
 
     all_res = [
-        ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp"),
-        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp1"),
-        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp2"),
-        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp3"),
-        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="WebNLG_Exp4")
+        ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="exp/WebNLG0"),
+        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="exp/WebNLG1"),
+        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="exp/WebNLG2"),
+        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="exp/WebNLG3"),
+        # ExperimentsPipeline.mutate({"config": config}).execute("WebNLG Experiments", cache_name="exp/WebNLG4")
     ]
 
     for model_name in ["model", "model-feats"]:
