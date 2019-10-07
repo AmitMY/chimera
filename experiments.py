@@ -62,6 +62,8 @@ TranslatePipeline.enqueue("translate", "Translate plans",
                           .translate_plans(x["train-model"],
                                            x[x["planner-name"] + "-planner"]["train-planner"],
                                            x["test-config"]))
+TranslatePipeline.enqueue("export", "Export plans and translations",
+                          lambda f, x: json.dumps(f["translate"].export()), ext="json")
 TranslatePipeline.enqueue("coverage", "Coverage of translation",
                           lambda f, x: f["translate"].coverage())
 TranslatePipeline.enqueue("retries", "Retries of translation",

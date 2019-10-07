@@ -391,4 +391,4 @@ class DataReader:
         return self
 
     def export(self):
-        return [{"rdf": d.graph.as_rdf(), "text": d.text, "delex": d.delex, "plan": d.plan} for d in self.data]
+        return [{"rdf": d.graph.as_rdf(), "text": d.text, "delex": d.delex, "plan": d.plan, "hyp": d.hyp} for d in self.data]

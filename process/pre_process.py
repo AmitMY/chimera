@@ -27,7 +27,8 @@ TrainingPreProcessPipeline.enqueue("dev", "Dev Set", CorpusPreProcessPipeline.mu
 
 TestCorpusPreProcessPipeline.enqueue("plan", "Generate best plan",
                                      lambda f, x: f["entities"].copy().create_plans(x["train-planner"]))
-TestCorpusPreProcessPipeline.enqueue("timing", "Chart the timing", lambda f, x: error_bar(f["plan"].timing), ext="png")
+TestCorpusPreProcessPipeline.enqueue("timing", "Chart the timing",
+                                     lambda f, x: error_bar(f["plan"].timing, "Time (seconds)", "#Edges"), ext="pdf")
 TestCorpusPreProcessPipeline.enqueue("tokenize", "Tokenize Plans", lambda f, _: f["plan"].copy().tokenize_plans())
 TestCorpusPreProcessPipeline.enqueue("out", "Make output for parent", lambda f, _: f["tokenize"].copy())
 

@@ -159,7 +159,7 @@ class Pipeline:
                     if qi.ext == "sav":
                         pickle.dump(params[qi.key], f)
                     else:
-                        if qi.ext in ["png", "jpg", "wav", "mp4"]:
+                        if qi.ext in ["png", "jpg", "wav", "mp4", "pdf"]:
                             params[qi.key] = get_file_bytes(params[qi.key], format=qi.ext)
                         f.write(params[qi.key])
                     f.close()
