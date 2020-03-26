@@ -108,6 +108,7 @@ We attribute the worse BLEU to the fact the delexicalizations also remove articl
 ## Literature
 This code is based on the following papers
 - NAACL-2019: [Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://arxiv.org/pdf/1904.03396.pdf).
+- INLG-2019: [Improving Quality and Efficiency in Plan-based Neural Data-to-Text Generation](https://arxiv.org/pdf/1909.09986.pdf).
 
 ### Citations
 ```
@@ -119,5 +120,16 @@ This code is based on the following papers
     publisher = "Association for Computational Linguistics",
     url = "https://www.aclweb.org/anthology/N19-1236",
     pages = "2267--2277",
+}
+
+@inproceedings{step-by-step-improvements,
+    title = "Improving Quality and Efficiency in Plan-based Neural Data-to-Text Generation",
+    author = "Amit Moryossef and Ido Dagan and Yoav Goldberg",
+    booktitle = "Proceedings of the 12th International Conference on Natural Language
+               Generation, {INLG} 2019, Tokyo, Japan, October 29 - November 1, 2019",
+    year = "2019",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/volumes/W19-86/",
+    pages = "377--382",
 }
 ```
