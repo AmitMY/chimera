@@ -6,7 +6,7 @@ dateparser==0.7.0
 nltk==3.6.6
 ordered_set==3.1
 regex==2018.11.22
-torch==1.0.0
+torch==1.13.1
 typing==3.6.6
 xmltodict==0.11.0
 Flask_Cors==3.0.9
